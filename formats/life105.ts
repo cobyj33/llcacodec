@@ -15,7 +15,13 @@ interface Life105Config {
   rule: string | LifeRuleData | [number[], number[]] | "N#"
 }
 
-export function writeLife105File(pattern: (0 | 1)[][], config: Life105Config): string {
+interface Life105InputPattern {
+    x: number,
+    y: number,
+    pattern: (0 | 1)[]
+}
+
+export function writeLife105File(pattern: Life105InputPattern[], config: Life105Config): string {
     const fileData = new ByteArray()
     fileData.writeUTFBytes(LIFE_105_HEADER + "\n");
     return fileData.getString();

@@ -83,3 +83,20 @@ export function numberPairArrayToMatrix(positions: [number, number][]): (0 | 1)[
     })
     return matrix;
 }
+
+export function isError(e: any): e is Error {
+    return typeof(e) === "object" && e !== null && "stack" in e && typeof(e.stack) === 'string' && "message" in e && typeof(e.message) === 'string';
+}
+
+export function getErrorMessage(e: any): string {
+    if (isError(e)) {
+        return e.message;
+    } else if (typeof(e) === "string") {
+        return e;
+    } else {
+        if ("toString" in e) {
+            return e.toString();
+        }
+    }
+    return ""
+}

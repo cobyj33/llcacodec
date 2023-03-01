@@ -1,4 +1,4 @@
-import { writePlainTextFromCoordinates, writePlainTextMatrix } from "../formats/plaintext";
+import { readPlainTextDiagramToXYCoordinates, writePlainTextFromCoordinates, writePlainTextMatrix } from "../formats/plaintext";
 
 describe("write plain text matrix", () => {
 
@@ -124,6 +124,51 @@ describe("write plain text matrix", () => {
             "..O......\n" +
             ".........\n"
         )
+    })
+
+    it("Acorn - Multi Line Description with string array and newlines", () => {
+        const acorn: (0 | 1)[][] = [[0, 0, 0, 0, 0, 0, 0, 0, 0],
+        [0, 1, 1, 0, 0, 1, 1, 1, 0],
+        [0, 0, 0, 0, 1, 0, 0, 0, 0],
+        [0, 0, 1, 0, 0, 0, 0, 0, 0],
+        [0, 0, 0, 0, 0, 0, 0, 0, 0]]
+    
+        expect(writePlainTextMatrix(acorn, "Acorn", ["A chaotic, classic pattern\nThe most popular methuselah pattern",
+                                                    "found by Charles Corderman",
+                                                    "Final bounding box of 215 by 168 cells\nProduces 13 gliders"])).toEqual(
+            "!Name: Acorn\n" +
+            "!A chaotic, classic pattern\n" +
+            "!The most popular methuselah pattern\n" +
+            "!found by Charles Corderman\n" +
+            "!Final bounding box of 215 by 168 cells\n" +
+            "!Produces 13 gliders\n" +
+            "!\n" + 
+            ".........\n" +
+            ".OO..OOO.\n" +
+            "....O....\n" + 
+            "..O......\n" +
+            ".........\n"
+        )
+    })
+
+    describe("readPlainTextDiagramToXYCoordinates", () => {
+
+        expect(readPlainTextDiagramToXYCoordinates(
+            ".........\n" +
+            ".OO..OOO.\n" +
+            "....O....\n" + 
+            "..O......\n" +
+            ".........\n"
+        )).toEqual([
+            [1, -1],
+            [2, -1],
+            [5, -1],
+            [6, -1],
+            [7, -1],
+            [4, -2],
+            [2, -3]
+        ])
+
     })
 
 })
