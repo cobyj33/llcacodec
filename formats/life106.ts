@@ -23,6 +23,15 @@ export function writeLife106String(data: [number, number][]): string {
     return byteArray.getString();
 }
 
+export function isLife106String(str: string): boolean {
+    try {
+        readLife106String(str);
+        return true;
+    } catch (e) {
+        return false;
+    }
+}
+
 export function readLife106String(str: string): [number, number][] {
     if (str.startsWith(LIFE_106_HEADER + "\n")) {
         const output: [number, number][] = []

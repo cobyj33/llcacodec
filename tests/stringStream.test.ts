@@ -15,8 +15,8 @@ describe("String Stream Testing", () => {
             })
     
             it("With a newline", () => {
-                const ss = new StringStream("libca\ngol");
-                expect(ss.remainingCharacters).toBe(11);
+                const ss = new StringStream("libcaread\ngol");
+                expect(ss.remainingCharacters).toBe(13);
             })
     
             it("newLines", () => {

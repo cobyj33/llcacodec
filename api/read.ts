@@ -1,5 +1,5 @@
-import { readLife106String } from "../formats/life106"
-import { readPlainTextString } from "../formats/plaintext"
+import { readLife106String, isLife106String } from "../formats/life106"
+import { readPlainTextString, isPlainTextString } from "../formats/plaintext"
 
 type SupportedLifeLikeFormats = "Life 1.06" | "plaintext"
 type ReturnedFileData<T> = 
@@ -13,4 +13,14 @@ export function readLifeFile<T extends SupportedLifeLikeFormats>(data: string, f
         case "Life 1.06": return readLife106String(data) as ReturnedFileData<T>;
     }
     throw new Error("")
+}
+
+export function getLifeFileFormat(data: string): SupportedLifeLikeFormats | "N/A" {
+    if (isLife106String(data)) {
+        return "Life 1.06"
+    }
+    if (isPlainTextString(data)) {
+        return "plaintext"
+    }
+    return "N/A"
 }

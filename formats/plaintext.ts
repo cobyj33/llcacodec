@@ -91,6 +91,15 @@ interface PlainTextStringDecodedContents {
 const VALID_DEAD_CELL_CHARACTERS = ["."] as const;
 const VALID_LIVE_CELL_CHARACTERS = ["O", "*"] as const;
 
+export function isPlainTextString(str: string): boolean {
+    try {
+        readPlainTextString(str);
+        return true;
+    } catch (e) {
+        return false;
+    }
+}
+
 export function readPlainTextString(str: string): PlainTextStringDecodedContents {
     if (str.length === 0) {
         throw new Error("")
