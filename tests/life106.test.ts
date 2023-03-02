@@ -4,7 +4,6 @@ import { readFile } from "fs/promises"
 // describe("conwaylife patterns *.cells", () => {
     
 // })
-
 describe("Writing", () => {
 
     it("Writing nothing", () => {
