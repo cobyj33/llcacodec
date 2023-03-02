@@ -1,4 +1,9 @@
 import { writeLife106String, readLife106String } from "../formats/life106"
+import { readFile } from "fs/promises"
+
+// describe("conwaylife patterns *.cells", () => {
+    
+// })
 
 describe("Writing", () => {
 
