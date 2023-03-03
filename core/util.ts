@@ -101,6 +101,10 @@ export function getErrorMessage(e: any): string {
     return ""
 }
 
-export function pushUTFBytes(data: number[], str: string) {
-    data.push(...str.split("").map(ch => ch.charCodeAt(0)))
+export function pushUTFBytes(byteData: number[], str: string) {
+    byteData.push(...str.split("").map(ch => ch.charCodeAt(0)))
+}
+
+export function byteArrayAsString(byteData: number[]): string {
+    return byteData.map(val => String.fromCharCode(val)).join("")
 }
