@@ -41,7 +41,7 @@ export function readLife106String(str: string): [number, number][] {
         for (let i = 1; i < lines.length; i++) {
             const nums = lines[i].trim().split(" ")
             if (nums.length !== 2) {
-                if (nums.length === 0 || nums.every(val => val.length === 0)) {
+                if (nums.length === 0 || nums.every(val => val.length === 0)) { // Check if there are any extra lines at the end. This is true if there is no input or if all input is empty strings
                     ended = true;
                     continue;
                 }

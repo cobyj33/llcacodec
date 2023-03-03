@@ -100,3 +100,7 @@ export function getErrorMessage(e: any): string {
     }
     return ""
 }
+
+export function pushUTFBytes(data: number[], str: string) {
+    data.push(...str.split("").map(ch => ch.charCodeAt(0)))
+}
