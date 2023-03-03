@@ -105,26 +105,39 @@ function isValidBSLifeString(lifeString: string) {
     return getBSLifeStringError(lifeString) === ""
 }
 
-
+/**
+ * 
+ * @param lifeString The B/S notation life rule to test for errors
+ * 
+ * @note These errors are very much not guaranteed to remain the same over releases. However, this function will always return an empty string when given a life rule without errors.
+ * @returns An error describing problems with the B/S notation lifeString, or an empty string if the lifeString has no errors
+ */
 function getBSLifeStringError(lifeString: string): string {
     const sides = lifeString.split("/");
-    if (sides.length !== 2) {
-        return "Error: Not able to split string into birth and survival counts, format must include a forward slash B<NUMS>/S<NUMS> "
+    if (sides.length < 2) {
+        return `B/S RuleString Error: Not able to split string into birth and survival counts, format must include a forward slash (B/S Notation: B<NUMS>/S<NUMS>) (got: ${lifeString})`
+    } 
+    if (sides.length > 2) {
+        return `B/S RuleString Error: Not able to split string into birth and survival counts, format must include a forward slash (B/S Notation: B<NUMS>/S<NUMS>) (got: ${lifeString})`
     }
 
-    if (sides[0].charAt(0) !== "B" || sides[1].charAt(0) !== "S") {
-       return "Error: B and S are backwards, please switch to B<NUMS>/S<NUMS> "
+    if (sides[0].charAt(0).toLowerCase() !== "b" || sides[1].charAt(0).toLowerCase() !== "s") {
+       return `B/S RuleString Error: B and S not declared correctly, please switch to B<NUMS>/S<NUMS>  (B/S Notation: B<NUMS>/S<NUMS>) (got: ${lifeString})`
     }
 
     const birthNums = sides[0].substring(1).split('').map(numChar => Number.parseInt(numChar))
     const survivalNums = sides[1].substring(1).split('').map(numChar => Number.parseInt(numChar))
     
     if (birthNums.some(num => isNaN(num)) || survivalNums.some(num => isNaN(num))) {
-       return "Error: Must include numbers after B and after /S B<NUMS>/S<NUMS> "
+       return `B/S RuleString Error: Must include numbers after B and after /S B<NUMS>/S<NUMS>. Found NaN (B/S Notation: B<NUMS>/S<NUMS>) (got: ${lifeString})`
     }
+
+    if (birthNums.some(num => num < 0 || num > 8) || survivalNums.some(num => num < 0 || num > 8)) {
+        return `B/S RuleString Error: All rule numbers must lie in the range 0 <= num <= 8 (B/S Notation: B<NUMS>/S<NUMS>) (got: ${lifeString})`
+     }
     
     if (new Set<number>(birthNums).size !== birthNums.length || new Set<number>(survivalNums).size !== survivalNums.length) {
-       return "Error: Replicate number on one side of B<NUMS>/S<NUMS> "
+       return `B/S RuleString Error: Replicate number on one side of B<NUMS>/S<NUMS>. All numbers must be unique (B/S Notation: B<NUMS>/S<NUMS>) (got: ${lifeString})`
     }
 
     return "";
@@ -133,11 +146,11 @@ function getBSLifeStringError(lifeString: string): string {
 
 
 function makeBSLifeString(birthNums: number[], survivalNums: number[]): string {
-    if (!canMakeLifeString(birthNums, survivalNums)) {
-        throw new Error(`Cannot make new life string from ${survivalNums} and ${birthNums}: ${getCanMakeLifeStringError(birthNums, survivalNums)}`);
+    if (canMakeLifeString(birthNums, survivalNums)) {
+        return `B${[...birthNums].sort((a, b) => a - b).join("")}/S${[...survivalNums].sort((a, b) => a - b).join("")}`
     }
     
-    return `B${birthNums.sort((a, b) => a - b).join("")}/S${survivalNums.sort((a, b) => a - b).join("")}`
+    throw new Error(`Cannot make new life string from (birthNums: [${birthNums}]) and (survivalNums: [${survivalNums}]): ${getCanMakeLifeStringError(birthNums, survivalNums)}`);
 }
 
 function parseBSLifeLikeString(lifeString: string): LifeRuleData {
@@ -176,7 +189,7 @@ function getSBLifeStringError(lifeString: string): string {
     } 
 
     if (survivalNums.some(num => num === 9) || birthNums.some(num => num === 9)) {
-        return "Error: 9 is an invalid input for S/B notation string"
+        return `Error: 9 is an invalid input for S/B notation string`
     }
     
     if (new Set<number>(survivalNums).size !== survivalNums.length || new Set<number>(birthNums).size !== birthNums.length) {
@@ -192,9 +205,9 @@ function isValidSBLifeString(lifeString: string): boolean {
 
 function makeSBLifeString(birthNums: number[], survivalNums: number[]): string {
     if (canMakeLifeString(birthNums, survivalNums)) {
-        return `${survivalNums.sort((a, b) => a - b).map(num => num.toString()).join("")}/${birthNums.sort((a, b) => a - b).map(num => num.toString()).join("")}`
+        return `${[...survivalNums].sort((a, b) => a - b).map(num => num.toString()).join("")}/${[...birthNums].sort((a, b) => a - b).map(num => num.toString()).join("")}`
     }
-    throw new Error()
+    throw new Error(`[makeSBLifeString] Error while creating lifeString from (birthNums: [${birthNums}]) and (survivalNums: [${survivalNums}]), ${getCanMakeLifeStringError(birthNums, survivalNums)}`)
 }
 
 function parseSBLifeLikeString(lifeString: string): LifeRuleData {
@@ -205,5 +218,5 @@ function parseSBLifeLikeString(lifeString: string): LifeRuleData {
             survival: sides[1].split("").map(digit => Number.parseInt(digit))
         }
     }
-    throw new Error(getSBLifeStringError(lifeString))
+    throw new Error(`[parseSBLifeLikeString] Error while parsing S/B notation ruleString: ${getSBLifeStringError(lifeString)}`)
 }

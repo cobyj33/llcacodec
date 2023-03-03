@@ -61,23 +61,29 @@ describe("String Stream Testing", () => {
 
     describe("Reading", () => {
 
-        describe("Errors", () => {
+        describe("readLine", () => {
+            it("Multiple empty lines", () => {
+                const ss = new StringStream(
+                    "\n\n\n"
+                    )
+                expect(ss.readLine()).toBe("")
+                expect(ss.readLine()).toBe("")
+                expect(ss.readLine()).toBe("")
+                expect(() => ss.readLine()).toThrow()
+            })
 
+            it("Words", () => {
+                const ss = new StringStream(
+                    "lorem\nipsum\ndolor\nsit\namet"
+                )
+                expect(ss.readLine()).toBe("lorem")
+                expect(ss.readLine()).toBe("ipsum")
+                expect(ss.readLine()).toBe("dolor")
+                expect(ss.readLine()).toBe("sit")
+                expect(ss.readLine()).toBe("amet")
+                expect(() => ss.readLine()).toThrow()
+            })
         })
-
-    //     describe("readLine", () => {
-    //         it("Multiple empty lines", () => {
-    //             const ss = new StringStream(
-    //                 ""
-    //                 )
-    //         })
-
-    //         it("Multiple empty lines", () => {
-    //             const ss = new StringStream(
-    //                 ""
-    //                 )
-    //         })
-    //     })
 
     //     describe("isFinished", () => {
     //         it("Multiple empty lines", () => {

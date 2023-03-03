@@ -7,6 +7,7 @@
  * StringStream's philosophy is to provide an easier API to make operating on string data formats easier through abstracting away common operations like reading lines, reading the next word, and querying if certain patterns appear in order
  * 
  */
+
 export class StringStream {
     /**
      * The internal string that was inputted onto the object during creation. This never changes for the entirety of a StringStream's lifetime
@@ -59,14 +60,14 @@ export class StringStream {
         return this.charBuffer[this._index] === "\n"
     }
 
-    readNextNotWhiteSpaceChar() {
+    readNextNotWhiteSpaceChar(): string {
         while (!this.isFinished() && this.charBuffer[this._index] !== "\n") {
             if (this.charBuffer[this._index] === " ") {
                 continue;
             }
             return this.charBuffer[this._index]
         }
-        return "\0"
+        throw new Error("")
     }
 
     advance() {
@@ -84,6 +85,10 @@ export class StringStream {
         const char = this.charBuffer[this._index]
         this._index++;
         return char;
+    }
+
+    readNumber() {
+
     }
 
     /**
@@ -116,6 +121,10 @@ export class StringStream {
      * @returns A string containing of all data until the next found newline character
      */
     readLine(): string {
+        if (this.isFinished()) {
+            throw new Error(`StringStream Error: Cannot read line from a finished stream`)
+        }
+        
         let line: string[] = []
         while (!this.isFinished() && this.charBuffer[this._index] !== "\n") {
             line.push(this.charBuffer[this._index])
