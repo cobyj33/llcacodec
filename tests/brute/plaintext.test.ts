@@ -1,4 +1,4 @@
-import { readPlainTextDiagramToMatrix } from "../../formats/life106"
+import { readPlainTextDiagramToMatrix } from "../../formats/plaintext"
 
 interface PlainTextFileData {
     fileName: string
