@@ -1,20 +1,22 @@
-import { ByteArray } from "../core/byteArray"
+import { pushUTFBytes, byteArrayAsString } from "../core/util";
 import { numberPairArrayToMatrix } from "../core/util"
 import { StringStream } from "../core/stringStream"
 
-function writePlainTextMetadata(byteArray: ByteArray, name: string, description: string | string[]): void {
-    byteArray.writeUTFBytes("!Name: " + name + "\n")
+function writePlainTextMetadata(byteArray: number[], name: string, description: string | string[]): number[] {
+    const newArray: number[] = [...byteArray]
+    pushUTFBytes(newArray, "!Name: " + name + "\n")
     if (description.length > 0) {
         if (typeof(description) === "string") {
                 const lines = description.split("\n")
-                lines.forEach(line => byteArray.writeUTFBytes(`!${line}\n`))
+                lines.forEach(line => pushUTFBytes(newArray, `!${line}\n`))
         } else {
             const lines = description.flatMap(lines => lines.split("\n"))
-            lines.forEach(line => byteArray.writeUTFBytes(`!${line}\n`))
+            lines.forEach(line => pushUTFBytes(newArray, `!${line}\n`))
         }
     }
 
-    byteArray.writeUTFBytes("!\n")
+    pushUTFBytes(newArray, "!\n")
+    return newArray
 }
 
 export function readPlainTextDiagramToXYCoordinates(str: string): [number, number][] {
@@ -60,8 +62,7 @@ export function writePlainTextFromCoordinates(positions: [number, number][], nam
 }
 
 export function writePlainTextMatrix(data: (0 | 1)[][], name: string, description: string | string[]): string {
-    const byteArray = new ByteArray();
-    writePlainTextMetadata(byteArray, name, description)
+    const byteArray = writePlainTextMetadata([], name, description)
 
     const height = data.length;
     const width = Math.max(...data.map(row => row.length))
@@ -69,15 +70,15 @@ export function writePlainTextMatrix(data: (0 | 1)[][], name: string, descriptio
     for (let row = 0; row < height; row++) {
         for (let col = 0; col < width; col++) {
             if (col >= data[row].length) {
-                byteArray.writeUTFBytes(".");
+                pushUTFBytes(byteArray, ".")
             } else {
-                byteArray.writeUTFBytes(data[row][col] === 0 ? "." : "O");
+                pushUTFBytes(byteArray, data[row][col] === 0 ? "." : "O")
             }
         }
-        byteArray.writeUTFBytes("\n")
+        pushUTFBytes(byteArray, "\n")
     }
 
-    return byteArray.getString();
+    return byteArrayAsString(byteArray)
 }
 
 

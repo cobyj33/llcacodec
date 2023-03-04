@@ -1,6 +1,6 @@
 // Life 1.05 File Format Spec: https://conwaylife.com/wiki/Life_1.05
 
-import { ByteArray } from "../core/byteArray";
+import { pushUTFBytes, byteArrayAsString } from "../core/util";
 
 const LIFE_105_HEADER = "#Life 1.05" as const
 const MAX_DESCRIPTION_LINE_COUNT = 22 as const
@@ -22,9 +22,9 @@ interface Life105InputPattern {
 }
 
 export function writeLife105File(pattern: Life105InputPattern[], config: Life105Config): string {
-    const fileData = new ByteArray()
-    fileData.writeUTFBytes(LIFE_105_HEADER + "\n");
-    return fileData.getString();
+    const fileData: number[] = []
+    pushUTFBytes(fileData, LIFE_105_HEADER + "\n");
+    return byteArrayAsString(fileData);
 }
 
 export function readLife105File(): (0 | 1)[][] {

@@ -8,7 +8,7 @@
  * @param matrix A matrix of a data type
  * @returns If the matrix is rectangular or not
  */
-export function isRectangularMatrix<T>(matrix: T[][]): boolean {
+export function isRectangularMatrix(matrix: any[][]): boolean {
     if (matrix.length === 0) return true;
     const width = matrix[0].length;
 
@@ -99,4 +99,12 @@ export function getErrorMessage(e: any): string {
         }
     }
     return ""
+}
+
+export function pushUTFBytes(byteData: number[], str: string) {
+    byteData.push(...str.split("").map(ch => ch.charCodeAt(0)))
+}
+
+export function byteArrayAsString(byteData: number[]): string {
+    return byteData.map(val => String.fromCharCode(val)).join("")
 }
