@@ -119,15 +119,7 @@ export function readPlainTextString(str: string): PlainTextStringDecodedContents
         throw new Error("")
     }
     
-    const trimmedStr = str.trim();
-    if (isPlainTextDiagram(trimmedStr)) {
-        return {
-            name: "",
-            description: [],
-            matrix: readPlainTextDiagramToMatrix(trimmedStr),
-            cellCoordinates: readPlainTextDiagramToXYCoordinates(trimmedStr)
-        }
-    }
+    
     
     const lines = str.split("\n").map(line => line.trim())
     if (lines.length === 0) {
@@ -151,6 +143,15 @@ export function readPlainTextString(str: string): PlainTextStringDecodedContents
             contents.name = afterHeaderExclamation.trim()
         }
     } else {
+        const trimmedStr = str.trim();
+        if (isPlainTextDiagram(trimmedStr)) {
+            return {
+                name: "",
+                description: [],
+                matrix: readPlainTextDiagramToMatrix(trimmedStr),
+                cellCoordinates: readPlainTextDiagramToXYCoordinates(trimmedStr)
+            }
+        }
         throw new Error("")
     }
 
