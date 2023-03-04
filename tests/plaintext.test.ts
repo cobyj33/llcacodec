@@ -1,6 +1,175 @@
-import { readPlainTextDiagramToXYCoordinates, writePlainTextFromCoordinates, writePlainTextMatrix } from "../formats/plaintext";
+import { readPlainTextDiagramToXYCoordinates, readPlainTextString, writePlainTextFromCoordinates, writePlainTextMatrix } from "../formats/plaintext";
+
+describe("Reading", () => {
+
+    describe("XY", () => {
+
+        it("Acorn", () => {
+            expect(readPlainTextString(
+                "!Name: Acorn\n" +
+                "!\n" + 
+                ".........\n" +
+                ".OO..OOO.\n" +
+                "....O....\n" + 
+                "..O......\n" +
+                ".........\n"
+            )).toEqual({
+                name: "Acorn",
+                description: [],
+                matrix: [[0, 0, 0, 0, 0, 0, 0, 0, 0],
+                [0, 1, 1, 0, 0, 1, 1, 1, 0],
+                [0, 0, 0, 0, 1, 0, 0, 0, 0],
+                [0, 0, 1, 0, 0, 0, 0, 0, 0],
+                [0, 0, 0, 0, 0, 0, 0, 0, 0]],
+                cellCoordinates: [
+                    [1, -1],
+                    [2, -1],
+                    [5, -1],
+                    [6, -1],
+                    [7, -1],
+                    [4, -2],
+                    [2, -3]
+                ]
+            })
+        })
+
+        it("Acorn w/ Description", () => {
+            expect(readPlainTextString(
+                "!Name: Acorn\n" +
+                "!Acorn is a popular methuselah pattern\n" +
+                "!Which grows chaotically over thousands of generations \n"+ 
+                "!\n"+ 
+                ".........\n" +
+                ".OO..OOO.\n" +
+                "....O....\n" + 
+                "..O......\n" +
+                ".........\n"
+            )).toEqual({
+                name: "Acorn",
+                description: [
+                    "Acorn is a popular methuselah pattern",
+                    "Which grows chaotically over thousands of generations"
+                    ],
+                matrix: [[0, 0, 0, 0, 0, 0, 0, 0, 0],
+                [0, 1, 1, 0, 0, 1, 1, 1, 0],
+                [0, 0, 0, 0, 1, 0, 0, 0, 0],
+                [0, 0, 1, 0, 0, 0, 0, 0, 0],
+                [0, 0, 0, 0, 0, 0, 0, 0, 0]],
+                cellCoordinates: [
+                    [1, -1],
+                    [2, -1],
+                    [5, -1],
+                    [6, -1],
+                    [7, -1],
+                    [4, -2],
+                    [2, -3]
+                ]
+            })
+        })
+
+        it("Acorn w/ Description and no trailing description line", () => {
+            expect(readPlainTextString(
+                "!Name: Acorn\n" +
+                "!Acorn is a popular methuselah pattern\n" +
+                "!Which grows chaotically over thousands of generations \n"+ 
+                ".........\n" +
+                ".OO..OOO.\n" +
+                "....O....\n" + 
+                "..O......\n" +
+                ".........\n"
+            )).toEqual({
+                name: "Acorn",
+                description: [
+                    "Acorn is a popular methuselah pattern",
+                    "Which grows chaotically over thousands of generations"
+                    ],
+                matrix: [[0, 0, 0, 0, 0, 0, 0, 0, 0],
+                [0, 1, 1, 0, 0, 1, 1, 1, 0],
+                [0, 0, 0, 0, 1, 0, 0, 0, 0],
+                [0, 0, 1, 0, 0, 0, 0, 0, 0],
+                [0, 0, 0, 0, 0, 0, 0, 0, 0]],
+                cellCoordinates: [
+                    [1, -1],
+                    [2, -1],
+                    [5, -1],
+                    [6, -1],
+                    [7, -1],
+                    [4, -2],
+                    [2, -3]
+                ]
+            })
+        })
+
+        it("Acorn w/ Name without Name: Identifier", () => {
+            expect(readPlainTextString(
+                "!Acorn\n" +
+                "!Acorn is a popular methuselah pattern\n" +
+                "!Which grows chaotically over thousands of generations \n"+ 
+                ".........\n" +
+                ".OO..OOO.\n" +
+                "....O....\n" + 
+                "..O......\n" +
+                ".........\n"
+            )).toEqual({
+                name: "Acorn",
+                description: [
+                    "Acorn is a popular methuselah pattern",
+                    "Which grows chaotically over thousands of generations"
+                    ],
+                matrix: [[0, 0, 0, 0, 0, 0, 0, 0, 0],
+                [0, 1, 1, 0, 0, 1, 1, 1, 0],
+                [0, 0, 0, 0, 1, 0, 0, 0, 0],
+                [0, 0, 1, 0, 0, 0, 0, 0, 0],
+                [0, 0, 0, 0, 0, 0, 0, 0, 0]],
+                cellCoordinates: [
+                    [1, -1],
+                    [2, -1],
+                    [5, -1],
+                    [6, -1],
+                    [7, -1],
+                    [4, -2],
+                    [2, -3]
+                ]
+            })
+        })
+
+        it("Acorn w/ Description and Name Lines with spaces around exclamation", () => {
+            expect(readPlainTextString(
+                " !Acorn\n" +
+                " !  Acorn is a popular methuselah pattern\n" +
+                " ! Which grows chaotically over thousands of generations \n"+ 
+                ".........\n" +
+                ".OO..OOO.\n" +
+                "....O....\n" + 
+                "..O......\n" +
+                ".........\n"
+            )).toEqual({
+                name: "Acorn",
+                description: [
+                    "Acorn is a popular methuselah pattern",
+                    "Which grows chaotically over thousands of generations"
+                    ],
+                matrix: [[0, 0, 0, 0, 0, 0, 0, 0, 0],
+                [0, 1, 1, 0, 0, 1, 1, 1, 0],
+                [0, 0, 0, 0, 1, 0, 0, 0, 0],
+                [0, 0, 1, 0, 0, 0, 0, 0, 0],
+                [0, 0, 0, 0, 0, 0, 0, 0, 0]],
+                cellCoordinates: [
+                    [1, -1],
+                    [2, -1],
+                    [5, -1],
+                    [6, -1],
+                    [7, -1],
+                    [4, -2],
+                    [2, -3]
+                ]
+            })
+        })
 
 
+
+    })
+})
 
 describe("write plain text matrix", () => {
 

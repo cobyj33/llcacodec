@@ -8,133 +8,183 @@
  * 
  */
 
-export class StringStream {
-    /**
-     * The internal string that was inputted onto the object during creation. This never changes for the entirety of a StringStream's lifetime
-     */
-    private readonly charBuffer: string;
+import { isNumericString } from "./util";
 
-    /**
-     * The current position of a StringStream object. This value never decrements as a way to simulate continuous reading from an I/O stream
-     */
-    private _index: number = 0;
-
-    get index() {
-        return this._index
+/**
+ * Reads the next non white-space character from the string
+ * If a char is specified, the next non white-space character must be that character or else an error is thrown
+ * @param data The string to read a character from
+ * @returns {[string, string]} where the first value is the read character and the second value is the remaining data string
+ */
+export function isNextChar(data: string, char: string): boolean {
+    if (char.length !== 1) {
+        throw new Error("")
+    } 
+    if (char === " ") {
+        throw new Error("unimplemented") 
     }
 
-    get remainingCharacters() {
-        return this.charBuffer.length - this._index;
-    }
-
-    /**
-     * The length of the inputted string object upon the StringStream's creation
-     * 
-     * I opted on using the name "inputLength" over the standard "length" because "length" could be confused for either the remaining length or the total original length.
-     */
-    get inputLength() {
-        return this.charBuffer.length;
-    }
-
-    /**
-     * Uses the inputted string as the stream data to operate on
-     * @param str the string for the StringStream object to operate on
-     */
-    constructor(str: string) {
-        this.charBuffer = str
-    }
-
-    /**
-     * Find if the stream has finished with it's reading of the inputted data and there is no more data to iterate over
-     * @returns If the stream has been completed
-     */
-    isFinished(): boolean {
-        return this._index >= this.charBuffer.length
-    }
-
-    /**
-     * Find if the stream is positioned at the end of a line. This is true if the current loaded character in the stream is a newline character (\n)
-     * @returns If the stream is positioned at the end of a line
-     */
-    isEOL(): boolean {
-        return this.charBuffer[this._index] === "\n"
-    }
-
-    readNextNotWhiteSpaceChar(): string {
-        while (!this.isFinished() && this.charBuffer[this._index] !== "\n") {
-            if (this.charBuffer[this._index] === " ") {
-                continue;
-            }
-            return this.charBuffer[this._index]
+    let index = 0;
+    while (index < data.length) {
+        if (data[index] !== " ") {
+            return data[index] === char
         }
+        index++;
+    }
+    throw new Error("")
+}
+
+
+/**
+ * Reads the next non white-space character from the string
+ * If a char is specified, the next non white-space character must be that character or else an error is thrown
+ * @param data The string to read a character from
+ * @returns {[string, string]} where the first value is the read character and the second value is the remaining data string
+ */
+export function readChar(data: string, char: string = ""): [string, string] {
+    if (char.length > 1) {
+        throw new Error("")
+    } 
+    if (char === " ") {
+        throw new Error("unimplemented") 
+    }
+
+    let index = 0;
+    while (index < data.length) {
+        if (data[index] !== " ") {
+            return [data[index], index + 1 < data.length ? data.substring(index + 1) : ""]
+        }
+        index++;
+    }
+    throw new Error("")
+}
+
+
+/**
+ * Returns if the next non-whitespace string in the data parameter matches the given sequence
+ * @param data 
+ * @param sequence 
+ * @returns 
+ */
+export function isNextSeq(data: string, sequence: string): boolean {
+    let line: string[] = []
+    let index = 0;
+    let seqIndex = 0;
+    while (index < data.length) {
+        if (data[index] === " ") {
+            if (line.length === 0) {
+                index++;
+                continue;
+            } else {
+                break;
+            }
+        }
+
+        line.push(data[index])
+        index++;
+    }
+
+    const str = line.join("")
+    return str === sequence
+}
+
+/**
+ * Reads the sequence from the string. If the next sequence in the string does not match the given sequence, an error is thrown
+ * @param data 
+ * @param sequence 
+ * @returns 
+ */
+export function readSeq(data: string, sequence: string): [string, string] {
+    let line: string[] = []
+    let index = 0;
+    while (index < data.length) {
+        if (data[index] === " ") {
+            if (line.length === 0) {
+                index++;
+                continue;
+            } else {
+                break;
+            }
+        }
+
+        line.push(data[index])
+        index++;
+    }
+
+    const str = line.join("")
+    if (str === sequence) {
+        return [str, index < data.length ? data.substring(index) : ""];
+    }
+    throw new Error("")
+}
+
+/**
+ * Reads the next line from the string. If the next line in the string is not available (i.e. the data parameter is empty), an error is thrown
+ * @param data 
+ * @param sequence 
+ * @returns 
+ */
+export function readLine(data: string): [string, string] {
+    let line: string[] = []
+    let index = 0;
+    while (index < data.length && data[index] !== "\n") {
+        line.push(data[index])
+        index++;
+    }
+
+    if (data[index] === "\n") {
+        index++;
+    }
+
+    if (line.length === 0) {
         throw new Error("")
     }
 
-    advance() {
-        if (this.isFinished()) {
-            throw new Error()
-        }
-
-        this._index++;
-    }
-
-    readChar() {
-        if (this.isFinished()) {
-            throw new Error()
-        }
-        const char = this.charBuffer[this._index]
-        this._index++;
-        return char;
-    }
-
-    readNumber() {
-
-    }
-
-    /**
-     * 
-     * @returns 
-     */
-    readNextNotWhiteSpaceSection() {
-        let line: string[] = []
-        while (!this.isFinished() && this.charBuffer[this._index] !== "\n") {
-            if (this.charBuffer[this._index] === " " && line) {
-                if (line.length === 0) {
-                    this._index++;
-                    continue;
-                } else {
-                    return line.join("");
-                }
-            }
-
-            line.push(this.charBuffer[this._index])
-            this._index++;
-        }
-
-        if (this.charBuffer[this._index] === "\n") {
-            this._index++;
-        }
-    }
-
-    /**
-     * Reads up to the next newline character and discards the next newline character, returning the characters before the next newline character and positioning the stream after the next newline character
-     * @returns A string containing of all data until the next found newline character
-     */
-    readLine(): string {
-        if (this.isFinished()) {
-            throw new Error(`StringStream Error: Cannot read line from a finished stream`)
-        }
-        
-        let line: string[] = []
-        while (!this.isFinished() && this.charBuffer[this._index] !== "\n") {
-            line.push(this.charBuffer[this._index])
-            this._index++;
-        }
-
-        if (this.charBuffer[this._index] === "\n") {
-            this._index++;
-        }
-
-        return line.join("");
-    }
+    return [line.join(""), index < data.length ? data.substring(index) : ""];
 }
+
+/**
+ * Reads the next string of non whitespace characters from the data as a number. If the next string of non whitespace characters does not convert to a number, an error is thrown
+ * @param data 
+ * @returns 
+ */
+export function readNumber(data: string): [number, string] {
+    const [numstr, stream] = readNext(data)
+    if (isNumericString(numstr)) {
+        const num = Number(numstr) 
+        if (isNaN(num)) {
+            return [num, stream];
+        } 
+        throw new Error("")
+    }
+    throw new Error("")
+}
+
+/**
+ * Reads the next string of non whitespace characters from the data. If the next string of non whitespace characters cannot be found, an error is thrown
+ * @param data 
+ * @returns 
+ */
+export function readNext(data: string): [string, string] {
+    let line: string[] = []
+    let index = 0;
+    while (index < data.length) {
+        if (data[index] === " ") {
+            if (line.length === 0) {
+                index++;
+                continue;
+            } else {
+                return [line.join(""), index < data.length ? data.substring(index) : ""];
+            }
+        }
+
+        line.push(data[index])
+        index++;
+    }
+
+    if (line.length === 0) {
+        throw new Error();
+    }
+
+    return [line.join(""), index < data.length ? data.substring(index) : ""];
+}   

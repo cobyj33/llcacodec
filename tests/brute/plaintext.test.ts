@@ -1,4 +1,4 @@
-import { readPlainTextDiagramToMatrix } from "../../formats/plaintext"
+import { readPlainTextString } from "../../formats/plaintext"
 
 interface PlainTextFileData {
     fileName: string
@@ -11329,10 +11329,9 @@ const CONWAY_LIFE_PLAINTEXT_CELLS_PATTERNS: PlainTextFileData[] = [
 ]
 
 
-console.log(CONWAY_LIFE_PLAINTEXT_CELLS_PATTERNS.length)
 describe.each(CONWAY_LIFE_PLAINTEXT_CELLS_PATTERNS)("Brute force plaintext", ({ fileName, content }) => {
     test(`Parsing ${fileName} Does Not Throw`, () => {
-        expect(readPlainTextDiagramToMatrix(content)).not.toThrow();
+        expect(() => readPlainTextString(content)).not.toThrow();
     })
 
 })

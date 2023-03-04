@@ -1,6 +1,16 @@
-import { pushUTFBytes, byteArrayAsString } from "../core/util";
+import { pushUTFBytes, byteArrayAsString, trimTrailing } from "../core/util";
 import { numberPairArrayToMatrix } from "../core/util"
-import { StringStream } from "../core/stringStream"
+import { isNextChar, isNextSeq, readChar, readSeq } from "../core/stringStream"
+
+const VALID_DEAD_CELL_CHARACTERS = ["."] as const;
+const VALID_LIVE_CELL_CHARACTERS = ["O", "*"] as const;
+
+interface PlainTextStringDecodedContents {
+    name: string
+    description: string[]
+    matrix: (0 | 1)[][]
+    cellCoordinates: [number, number][]
+}
 
 function writePlainTextMetadata(byteArray: number[], name: string, description: string | string[]): number[] {
     const newArray: number[] = [...byteArray]
@@ -20,29 +30,40 @@ function writePlainTextMetadata(byteArray: number[], name: string, description: 
 }
 
 export function readPlainTextDiagramToXYCoordinates(str: string): [number, number][] {
-    const lines = str.split("\n")
-    let currentLine = 0;
-    const cellCoordinates: [number, number][] = []
-    while (isPlainTextDiagramLine(lines[currentLine])) {
-        const row = readPlainTextDiagramLine(lines[currentLine])
-        for (let i = 0; i < row.length; i++) {
-            if (row[i] === 1) {
-                cellCoordinates.push([i, -currentLine])
-            }
-        }
-        currentLine++;
-
-        if (currentLine === lines.length) {
-            return cellCoordinates;
-        }
+    if (isPlainTextDiagram(str)) {
+        const lines = str.split("\n")
+        return lines.flatMap((line, row) => 
+            line.split("").map((char, col) => VALID_LIVE_CELL_CHARACTERS.some(valid => valid === char) ? [col, -row] : []).filter(point => point.length > 0) as [number, number][]
+        )
     }
 
     throw new Error("error")
 }
 
 export function readPlainTextDiagramToMatrix(str: string): (0 | 1)[][] {
-    const coordinates = readPlainTextDiagramToXYCoordinates(str);
-    return numberPairArrayToMatrix(coordinates);
+    if (isPlainTextDiagram(str)) {
+        const lines = trimTrailing(str, "\n").split("\n")
+        const width = Math.max(...lines.map(line => line.length))
+        return lines.map(line => {
+            const newLine = new Array<0 | 1>(width)
+            for (let i = 0; i < width; i++) {
+                if (i >= line.length) {
+                    newLine[i] = 0;
+                } else if (VALID_LIVE_CELL_CHARACTERS.some(ch => ch === line[i])) {
+                    newLine[i] = 1
+                } else if (VALID_DEAD_CELL_CHARACTERS.some(ch => ch === line[i])) {
+                    newLine[i] = 0
+                } else if (line[i] !== " ") {
+                    throw new Error()
+                }
+            }
+            return newLine
+        })
+
+
+    }
+    throw new Error("")
+
 }
 
 
@@ -82,15 +103,7 @@ export function writePlainTextMatrix(data: (0 | 1)[][], name: string, descriptio
 }
 
 
-interface PlainTextStringDecodedContents {
-    name: string
-    description: string[]
-    matrix: (0 | 1)[][]
-    cellCoordinates: [number, number][]
-}
 
-const VALID_DEAD_CELL_CHARACTERS = ["."] as const;
-const VALID_LIVE_CELL_CHARACTERS = ["O", "*"] as const;
 
 export function isPlainTextString(str: string): boolean {
     try {
@@ -105,7 +118,17 @@ export function readPlainTextString(str: string): PlainTextStringDecodedContents
     if (str.length === 0) {
         throw new Error("")
     }
-
+    
+    const trimmedStr = str.trim();
+    if (isPlainTextDiagram(trimmedStr)) {
+        return {
+            name: "",
+            description: [],
+            matrix: readPlainTextDiagramToMatrix(trimmedStr),
+            cellCoordinates: readPlainTextDiagramToXYCoordinates(trimmedStr)
+        }
+    }
+    
     const lines = str.split("\n").map(line => line.trim())
     if (lines.length === 0) {
         throw new Error("")
@@ -117,94 +140,40 @@ export function readPlainTextString(str: string): PlainTextStringDecodedContents
         matrix: [],
         cellCoordinates: []
     }
+    
 
-    if (isPlainTextHeaderLine(lines[0])) {
-        contents.name = readPlainTextHeaderLine(lines[0])
-    }
-
-    let currentLine = 1;
-    while (isPlainTextDescriptionLine(lines[currentLine])) {
-        contents.description.push(readPlainTextDescriptionLine(lines[currentLine]))
-        currentLine++;
-        if (currentLine >= lines.length) {
-            throw new Error()
+    //reads header line
+    if (isNextChar(lines[0], "!")) {
+        const [, afterHeaderExclamation] = readChar(lines[0], "!")
+        if (isNextSeq(afterHeaderExclamation, "Name:")) {
+            contents.name = readSeq(afterHeaderExclamation, "Name:")[1].trim();
+        } else {
+            contents.name = afterHeaderExclamation.trim()
         }
+    } else {
+        throw new Error("")
     }
 
-    const diagramStart = currentLine;
-    contents.cellCoordinates = readPlainTextDiagramToXYCoordinates(lines.slice(currentLine).join("\n"))
-    contents.matrix = numberPairArrayToMatrix(contents.cellCoordinates);
+    //reading description lines
+    let currentLine = 1;
+    while (isNextChar(lines[currentLine], "!")) {
+        const [, description] = readChar(lines[currentLine], "!")
+        if (description.trim().length > 0) {
+            contents.description.push(description.trim())
+        }
+        currentLine++;
+    }
+
+    const diagramLines = lines.slice(currentLine).join("\n")
+    if (isPlainTextDiagram(diagramLines)) {
+        contents.cellCoordinates = readPlainTextDiagramToXYCoordinates(diagramLines)
+        contents.matrix = readPlainTextDiagramToMatrix(diagramLines);
+    } else {
+        throw new Error("")
+    }
     return contents
 }
 
-function isPlainTextHeaderLine(headerLine: string) {
-    return isPlainTextDescriptionLine(headerLine)
-}
-
-function readPlainTextHeaderLine(headerLine: string): string {
-    const stringstream: StringStream = new StringStream(headerLine)
-    const exclamation = stringstream.readNextNotWhiteSpaceChar()
-    if (stringstream.isFinished()) {
-        throw new Error()
-    }
-    if (exclamation !== "!") {
-        throw new Error()
-    }
-
-    const nameDeclaration = stringstream.readNextNotWhiteSpaceSection();
-    if (nameDeclaration === "Name:") {
-        stringstream.advance();
-        const name = stringstream.readLine().trimStart();
-        return name;
-    } else {
-        const restOfName = stringstream.readLine();
-        return nameDeclaration + restOfName
-    }
-}
-
-function isPlainTextDescriptionLine(line: string): boolean {
-    const stringstream = new StringStream(line);
-    const exclamation = stringstream.readNextNotWhiteSpaceChar()
-    if (stringstream.isFinished()) {
-        return false;
-    }
-    if (exclamation !== "!") {
-        return false;
-    }
-
-    return true;
-}
-
-function readPlainTextDescriptionLine(line: string): string {
-    const stringstream = new StringStream(line);
-    const exclamation = stringstream.readNextNotWhiteSpaceChar()
-    if (stringstream.isFinished()) {
-        throw new Error()
-    }
-    if (exclamation !== "!") {
-        throw new Error()
-    }
-
-    return stringstream.readLine().trimStart();
-}
-
-function isPlainTextDiagramLine(line: string): boolean {
-    return line.split("").every(char => VALID_DEAD_CELL_CHARACTERS.some(ch => ch === char) || VALID_LIVE_CELL_CHARACTERS.some(ch => ch === char) || char === " ");
-}
-
-function readPlainTextDiagramLine(line: string): (0 | 1)[] {
-    const row: Array<0 | 1> = []
-    for (let i = 0; i < line.length; i++) {
-        if (!(VALID_DEAD_CELL_CHARACTERS.some(ch => ch === line[i]) || VALID_LIVE_CELL_CHARACTERS.some(ch => ch === line[i]) || line[i] === " ")) {
-            throw new Error()
-        }
-        if (VALID_LIVE_CELL_CHARACTERS.some(ch => ch === line[i])) {
-            row.push(1)
-        }
-        if (VALID_DEAD_CELL_CHARACTERS.some(ch => ch === line[i])) {
-            row.push(0)
-        }
-    }
-
-    return row;
+export function isPlainTextDiagram(line: string): boolean {
+    return line.split("").every(char => VALID_DEAD_CELL_CHARACTERS.some(ch => ch === char) || VALID_LIVE_CELL_CHARACTERS.some(ch => ch === char) || char === " " || char === "\n");
 }

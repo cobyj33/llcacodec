@@ -25,10 +25,25 @@ export function isDigit(digit: string): boolean {
     return digit.length === 1 && digit.charCodeAt(0) >= 48 && digit.charCodeAt(0) <= 57
 } 
 
+// An unnecessarily complicated problem in Javascript: https://stackoverflow.com/questions/175739/how-can-i-check-if-a-string-is-a-valid-number 
+export const isNumericString = (num: string) => num.trim() !== '' && !isNaN(num as unknown as number);
+
+
+export function trimTrailing(s: string, charToTrim: string) {
+    if (charToTrim.length !== 1) {
+        throw new Error("")
+    }
+
+    const regExp = new RegExp(charToTrim + "+$");
+    const result = s.replace(regExp, "");
+
+    return result;
+}
+
 export function isIntegerString(num: string): boolean {
     for (let i = 0; i < num.length; i++) {
         if (i === 0) {
-            if (!isDigit(num[i]) || num[i] === "-") {
+            if (!isDigit(num[i]) && num[i] !== "-") {
                 return false;
             }
         } else {

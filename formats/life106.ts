@@ -35,13 +35,14 @@ export function isLife106String(str: string): boolean {
 export function readLife106String(str: string): [number, number][] {
     if (str.startsWith(LIFE_106_HEADER + "\n")) {
         const output: [number, number][] = []
+        const set2D: Set2D = new Set2D()
         const lines = str.split("\n")
         let ended: boolean = false;
 
         for (let i = 1; i < lines.length; i++) {
-            const nums = lines[i].trim().split(" ")
+            const nums = lines[i].trim().split(" ").filter(val => val.length > 0)
             if (nums.length !== 2) {
-                if (nums.length === 0 || nums.every(val => val.length === 0)) { // Check if there are any extra lines at the end. This is true if there is no input or if all input is empty strings
+                if (nums.length === 0) { // Check if there are any extra lines at the end. This is true if there is no input or if all input is empty strings
                     ended = true;
                     continue;
                 }
@@ -53,7 +54,11 @@ export function readLife106String(str: string): [number, number][] {
             }
 
             if (isIntegerString(nums[0]) && isIntegerString(nums[1])) {
-                output.push([Number.parseInt(nums[0]), Number.parseInt(nums[1])])
+                const [x, y] = [Number.parseInt(nums[0]), Number.parseInt(nums[1])]
+                if (!set2D.has(x, y)) {
+                    set2D.add(x, y)
+                    output.push([x, y])
+                }
             } else {
                 throw new Error(`Invalid Life 1.06 string. Error at Line ${i}. Cell positions must be integers ( got ${nums[0]} and ${nums[1]}) \n${str}\n `)
             }
