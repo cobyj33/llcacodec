@@ -1,8 +1,14 @@
-type LifeRuleData = {
+export type LifeRuleData = {
     birth: number[];
     survival: number[];
 };
 type LifeRuleStringNotation = "B/S" | "S/B";
+export declare const CONWAY_RULE_STRING_BS = "B3/S23";
+export declare const CONWAY_RULE_STRING_SB = "23/3";
+export declare const CONWAY_LIFE_RULE_DATA: () => {
+    birth: number[];
+    survival: number[];
+};
 export declare function isValidLifeRuleString(lifeString: string, format?: LifeRuleStringNotation | ""): boolean;
 export declare function getLifeRuleStringFormat(lifeString: string): LifeRuleStringNotation | "N/A";
 export declare function readLifeRuleString(lifeString: string, format?: LifeRuleStringNotation | ""): LifeRuleData;

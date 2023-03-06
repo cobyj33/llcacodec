@@ -29,5 +29,18 @@ export declare function isError(e: any): e is Error;
 export declare function getErrorMessage(e: any): string;
 export declare function pushUTFBytes(byteData: number[], str: string): void;
 export declare function byteArrayAsString(byteData: number[]): string;
+/**
+ * Determines if two arrays are strictly the same
+ *
+ * Number arrays are considered the same if they have the same length and every data point at every index is the same
+ *
+ * @param first A number array
+ * @param second Another number array
+ * @returns Whether the two number arrays are considered equal according to the described conditions
+ */
+export declare function isStrictEqualArray(first: any[], second: any[]): boolean;
+export declare const isStrictEqualNumberArray: (first: number[], second: number[]) => boolean;
+export declare const isStrictEqualStringArray: (first: string[], second: string[]) => boolean;
+export declare const isStrictEqualBooleanArray: (first: boolean[], second: boolean[]) => boolean;
 export {};
 //# sourceMappingURL=util.d.ts.map

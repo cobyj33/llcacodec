@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.isPlainTextDiagram = exports.readPlainTextString = exports.isPlainTextString = exports.writePlainTextMatrix = exports.writePlainTextFromCoordinates = exports.readPlainTextDiagramToRowColCoordinates = exports.readPlainTextDiagramToMatrix = exports.readPlainTextDiagramToXYCoordinates = void 0;
+exports.isPlainTextDiagram = exports.readPlainTextString = exports.readPlainTextPattern = exports.isPlainTextString = exports.writePlainTextMatrix = exports.writePlainTextFromCoordinates = exports.readPlainTextDiagramToRowColCoordinates = exports.readPlainTextDiagramToMatrix = exports.readPlainTextDiagramToXYCoordinates = void 0;
 const util_1 = require("../core/util");
 const util_2 = require("../core/util");
 const stringStream_1 = require("../core/stringStream");
@@ -98,6 +98,10 @@ function isPlainTextString(str) {
     }
 }
 exports.isPlainTextString = isPlainTextString;
+function readPlainTextPattern(file) {
+    return readPlainTextString(file).cellCoordinates;
+}
+exports.readPlainTextPattern = readPlainTextPattern;
 function readPlainTextString(str) {
     if (str.length === 0) {
         throw new Error("");

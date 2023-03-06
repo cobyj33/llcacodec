@@ -1,8 +1,12 @@
 "use strict";
 // further reading at https://conwaylife.com/wiki/Rulestring
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.getLifeStringError = exports.canMakeLifeString = exports.getCanMakeLifeStringError = exports.makeLifeRuleString = exports.readLifeRuleString = exports.getLifeRuleStringFormat = exports.isValidLifeRuleString = void 0;
+exports.getLifeStringError = exports.canMakeLifeString = exports.getCanMakeLifeStringError = exports.makeLifeRuleString = exports.readLifeRuleString = exports.getLifeRuleStringFormat = exports.isValidLifeRuleString = exports.CONWAY_LIFE_RULE_DATA = exports.CONWAY_RULE_STRING_SB = exports.CONWAY_RULE_STRING_BS = void 0;
 const util_1 = require("../core/util");
+exports.CONWAY_RULE_STRING_BS = "B3/S23";
+exports.CONWAY_RULE_STRING_SB = "23/3";
+const CONWAY_LIFE_RULE_DATA = () => ({ birth: [3], survival: [2, 3] });
+exports.CONWAY_LIFE_RULE_DATA = CONWAY_LIFE_RULE_DATA;
 function isValidLifeRuleString(lifeString, format = "") {
     switch (format) {
         case "B/S": return isValidBSLifeString(lifeString);
@@ -108,24 +112,24 @@ function isValidBSLifeString(lifeString) {
 function getBSLifeStringError(lifeString) {
     const sides = lifeString.split("/");
     if (sides.length < 2) {
-        return `B/S RuleString Error: Not able to split string into birth and survival counts, format must include a forward slash (B/S Notation: B<NUMS>/S<NUMS>) (got: ${lifeString})`;
+        return `Not able to split string into birth and survival counts, format must include a forward slash (B/S Notation: B<NUMS>/S<NUMS>) (got: ${lifeString})`;
     }
     if (sides.length > 2) {
-        return `B/S RuleString Error: Not able to split string into birth and survival counts, format must include a forward slash (B/S Notation: B<NUMS>/S<NUMS>) (got: ${lifeString})`;
+        return `Not able to split string into birth and survival counts, format must include a forward slash (B/S Notation: B<NUMS>/S<NUMS>) (got: ${lifeString})`;
     }
     if (sides[0].charAt(0).toLowerCase() !== "b" || sides[1].charAt(0).toLowerCase() !== "s") {
-        return `B/S RuleString Error: B and S not declared correctly, please switch to B<NUMS>/S<NUMS>  (B/S Notation: B<NUMS>/S<NUMS>) (got: ${lifeString})`;
+        return `B and S not declared correctly, please switch to B<NUMS>/S<NUMS>  (B/S Notation: B<NUMS>/S<NUMS>) (got: ${lifeString})`;
     }
     const birthNums = sides[0].substring(1).split('').map(numChar => Number.parseInt(numChar));
     const survivalNums = sides[1].substring(1).split('').map(numChar => Number.parseInt(numChar));
     if (birthNums.some(num => isNaN(num)) || survivalNums.some(num => isNaN(num))) {
-        return `B/S RuleString Error: Must include numbers after B and after /S B<NUMS>/S<NUMS>. Found NaN (B/S Notation: B<NUMS>/S<NUMS>) (got: ${lifeString})`;
+        return `Must include numbers after B and after /S B<NUMS>/S<NUMS>. Found NaN (B/S Notation: B<NUMS>/S<NUMS>) (got: ${lifeString})`;
     }
     if (birthNums.some(num => num < 0 || num > 8) || survivalNums.some(num => num < 0 || num > 8)) {
-        return `B/S RuleString Error: All rule numbers must lie in the range 0 <= num <= 8 (B/S Notation: B<NUMS>/S<NUMS>) (got: ${lifeString})`;
+        return `All rule numbers must lie in the range 0 <= num <= 8 (B/S Notation: B<NUMS>/S<NUMS>) (got: ${lifeString})`;
     }
     if (new Set(birthNums).size !== birthNums.length || new Set(survivalNums).size !== survivalNums.length) {
-        return `B/S RuleString Error: Replicate number on one side of B<NUMS>/S<NUMS>. All numbers must be unique (B/S Notation: B<NUMS>/S<NUMS>) (got: ${lifeString})`;
+        return `Replicate number on one side of B<NUMS>/S<NUMS>. All numbers must be unique (B/S Notation: B<NUMS>/S<NUMS>) (got: ${lifeString})`;
     }
     return "";
 }
