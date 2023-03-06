@@ -1,4 +1,4 @@
-import { readLifeRuleString, makeLifeRuleString, canMakeLifeString, isValidLifeRuleString } from "../formats/rule"
+import { readLifeRuleString, makeLifeRuleString, canMakeLifeString, isValidLifeRuleString } from "../src/formats/rule"
 
 describe("canMakeLifeString", () => {
 

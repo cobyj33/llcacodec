@@ -1,4 +1,4 @@
-import { readLife106String } from "../../formats/life106";
+import { readLife106String } from "../../src/formats/life106";
 
 
 const CONWAY_LIFE_LIFE_106_PATTERNS = [

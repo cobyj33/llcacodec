@@ -1,4 +1,4 @@
-import { readChar } from "../core/stringStream";
+import { readChar } from "../src/core/stringStream";
 
 describe("String Stream Function Testing", () => {
 

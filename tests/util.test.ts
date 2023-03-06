@@ -1,4 +1,4 @@
-import { numberPairArrayToMatrix, getCellBoundingBox } from "../core/util";
+import { numberPairArrayToMatrix, getCellBoundingBox } from "../src/core/util";
 
 describe("Get bounding box", () => {
     it("Square 2x2", () => {
