@@ -1,8 +1,8 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.getLifeFileFormat = exports.readLifeFile = void 0;
-const life106_1 = require("../formats/life106");
-const plaintext_1 = require("../formats/plaintext");
+const life106_1 = require("./formats/life106");
+const plaintext_1 = require("./formats/plaintext");
 function readLifeFile(data, format) {
     switch (format) {
         case "plaintext": return (0, plaintext_1.readPlainTextString)(data);

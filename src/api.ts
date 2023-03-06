@@ -1,5 +1,5 @@
-import { readLife106String, isLife106String } from "../formats/life106"
-import { readPlainTextString, isPlainTextString } from "../formats/plaintext"
+import { readLife106String, isLife106String } from "./formats/life106"
+import { readPlainTextString, isPlainTextString } from "./formats/plaintext"
 
 type SupportedLifeLikeFormats = "Life 1.06" | "plaintext"
 type ReturnedFileData<T> = 

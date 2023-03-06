@@ -1,4 +1,4 @@
-import { readLifeFile } from "../src/api/read";
+import { readLifeFile } from "../src/api";
 
 describe("readLifeFile", () => {
 
