@@ -5,7 +5,7 @@ import { isNextChar, isNextSeq, readChar, readSeq } from "../core/stringStream"
 const VALID_DEAD_CELL_CHARACTERS = ["."] as const;
 const VALID_LIVE_CELL_CHARACTERS = ["O", "*"] as const;
 
-interface PlainTextStringDecodedContents {
+export interface PlainTextStringDecodedContents {
     name: string
     description: string[]
     matrix: (0 | 1)[][]
@@ -114,12 +114,14 @@ export function isPlainTextString(str: string): boolean {
     }
 }
 
+export function readPlainTextPattern(file: string): [number, number][] {
+    return readPlainTextString(file).cellCoordinates
+}
+
 export function readPlainTextString(str: string): PlainTextStringDecodedContents {
     if (str.length === 0) {
         throw new Error("")
     }
-    
-    
     
     const lines = str.split("\n").map(line => line.trim())
     if (lines.length === 0) {

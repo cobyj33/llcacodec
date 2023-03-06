@@ -9,6 +9,7 @@ describe("readLifeFile", () => {
             "1 0\n" +
             "2 0\n"
             , "Life 1.06")).toEqual([[0, 0], [1, 0], [2, 0]])
+
         })
     })
 

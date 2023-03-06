@@ -18,11 +18,15 @@ export function isRectangularMatrix(matrix: any[][]): boolean {
     return true;
 }
 
+const DIGIT_DECIMAL_CHARACTERS = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"] as const
+const DIGIT_BINARY_CHARACTERS = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"] as const
+const DIGIT_HEX_CHARACTERS = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "A", "B", "C", "D", "E", "F", "a", "b", "c", "d", "e", "f"] as const
+
 const ASCII_CHAR_CODE_0 = 48;
 const ASCII_CHAR_CODE_9 = 57;
 
 export function isDigit(digit: string): boolean {
-    return digit.length === 1 && digit.charCodeAt(0) >= 48 && digit.charCodeAt(0) <= 57
+    return digit.length === 1 && digit.charCodeAt(0) >= ASCII_CHAR_CODE_0 && digit.charCodeAt(0) <= ASCII_CHAR_CODE_9
 } 
 
 // An unnecessarily complicated problem in Javascript: https://stackoverflow.com/questions/175739/how-can-i-check-if-a-string-is-a-valid-number 
@@ -123,3 +127,30 @@ export function pushUTFBytes(byteData: number[], str: string) {
 export function byteArrayAsString(byteData: number[]): string {
     return byteData.map(val => String.fromCharCode(val)).join("")
 }
+
+/**
+ * Determines if two arrays are strictly the same
+ * 
+ * Number arrays are considered the same if they have the same length and every data point at every index is the same
+ * 
+ * @param first A number array
+ * @param second Another number array
+ * @returns Whether the two number arrays are considered equal according to the described conditions
+ */
+export function isStrictEqualArray(first: any[], second: any[]): boolean {
+    if (first.length !== second.length) {
+        return false;
+    }
+    const length = first.length
+
+    for (let i = 0; i < length; i++) {
+        if (first[i] !== second[i]) {
+            return false;
+        }
+    }
+    return true;
+}
+
+export const isStrictEqualNumberArray: (first: number[], second: number[]) => boolean = (first, second) => isStrictEqualArray(first, second)
+export const isStrictEqualStringArray: (first: string[], second: string[]) => boolean = (first, second) => isStrictEqualArray(first, second)
+export const isStrictEqualBooleanArray: (first: boolean[], second: boolean[]) => boolean = (first, second) => isStrictEqualArray(first, second)

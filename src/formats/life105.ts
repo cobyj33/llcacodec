@@ -19,13 +19,17 @@ interface Life105CellBlock {
     pattern: (0 | 1)[]
 }
 
+interface Life105FileData {
+    cellBlocks: Life105CellBlock[]
+}
+
 // export function writeLife105File(pattern: Life105InputPattern[], config: Life105Config): string {
 //     const fileData: number[] = []
 //     pushUTFBytes(fileData, LIFE_105_HEADER + "\n");
 //     return byteArrayAsString(fileData);
 // }
 
-export function readLife105File(): (0 | 1)[][] {
+export function readLife105File(): Life105CellBlock[] {
   return []
 }
 

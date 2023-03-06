@@ -4,7 +4,7 @@
 
 import { getErrorMessage } from "../core/util";
 
-type LifeRuleData = { birth: number[], survival: number[] }
+export type LifeRuleData = { birth: number[], survival: number[] }
 type LifeRuleStringNotation = "B/S" | "S/B"
 
 export function isValidLifeRuleString(lifeString: string, format: LifeRuleStringNotation | "" = ""): boolean {
@@ -115,29 +115,29 @@ function isValidBSLifeString(lifeString: string) {
 function getBSLifeStringError(lifeString: string): string {
     const sides = lifeString.split("/");
     if (sides.length < 2) {
-        return `B/S RuleString Error: Not able to split string into birth and survival counts, format must include a forward slash (B/S Notation: B<NUMS>/S<NUMS>) (got: ${lifeString})`
+        return `Not able to split string into birth and survival counts, format must include a forward slash (B/S Notation: B<NUMS>/S<NUMS>) (got: ${lifeString})`
     } 
     if (sides.length > 2) {
-        return `B/S RuleString Error: Not able to split string into birth and survival counts, format must include a forward slash (B/S Notation: B<NUMS>/S<NUMS>) (got: ${lifeString})`
+        return `Not able to split string into birth and survival counts, format must include a forward slash (B/S Notation: B<NUMS>/S<NUMS>) (got: ${lifeString})`
     }
 
     if (sides[0].charAt(0).toLowerCase() !== "b" || sides[1].charAt(0).toLowerCase() !== "s") {
-       return `B/S RuleString Error: B and S not declared correctly, please switch to B<NUMS>/S<NUMS>  (B/S Notation: B<NUMS>/S<NUMS>) (got: ${lifeString})`
+       return `B and S not declared correctly, please switch to B<NUMS>/S<NUMS>  (B/S Notation: B<NUMS>/S<NUMS>) (got: ${lifeString})`
     }
 
     const birthNums = sides[0].substring(1).split('').map(numChar => Number.parseInt(numChar))
     const survivalNums = sides[1].substring(1).split('').map(numChar => Number.parseInt(numChar))
     
     if (birthNums.some(num => isNaN(num)) || survivalNums.some(num => isNaN(num))) {
-       return `B/S RuleString Error: Must include numbers after B and after /S B<NUMS>/S<NUMS>. Found NaN (B/S Notation: B<NUMS>/S<NUMS>) (got: ${lifeString})`
+       return `Must include numbers after B and after /S B<NUMS>/S<NUMS>. Found NaN (B/S Notation: B<NUMS>/S<NUMS>) (got: ${lifeString})`
     }
 
     if (birthNums.some(num => num < 0 || num > 8) || survivalNums.some(num => num < 0 || num > 8)) {
-        return `B/S RuleString Error: All rule numbers must lie in the range 0 <= num <= 8 (B/S Notation: B<NUMS>/S<NUMS>) (got: ${lifeString})`
+        return `All rule numbers must lie in the range 0 <= num <= 8 (B/S Notation: B<NUMS>/S<NUMS>) (got: ${lifeString})`
      }
     
     if (new Set<number>(birthNums).size !== birthNums.length || new Set<number>(survivalNums).size !== survivalNums.length) {
-       return `B/S RuleString Error: Replicate number on one side of B<NUMS>/S<NUMS>. All numbers must be unique (B/S Notation: B<NUMS>/S<NUMS>) (got: ${lifeString})`
+       return `Replicate number on one side of B<NUMS>/S<NUMS>. All numbers must be unique (B/S Notation: B<NUMS>/S<NUMS>) (got: ${lifeString})`
     }
 
     return "";

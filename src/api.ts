@@ -1,18 +1,39 @@
 import { readLife106String, isLife106String } from "./formats/life106"
-import { readPlainTextString, isPlainTextString } from "./formats/plaintext"
+import { readPlainTextString, isPlainTextString, PlainTextStringDecodedContents } from "./formats/plaintext"
 
 type SupportedLifeLikeFormats = "Life 1.06" | "plaintext"
-type ReturnedFileData<T> = 
-    T extends "plaintext" ? ReturnType<typeof readPlainTextString> :
-    T extends "Life 1.06" ? ReturnType<typeof readLife106String> :
-    never;
-
-export function readLifeFile<T extends SupportedLifeLikeFormats>(data: string, format: T): ReturnedFileData<T> {
+    
+export function readPatternCoordinatesFromFile<T extends SupportedLifeLikeFormats>(data: string, format: T | ""): [number, number][] {
     switch (format) {
-        case "plaintext": return readPlainTextString(data) as ReturnedFileData<T>;
-        case "Life 1.06": return readLife106String(data) as ReturnedFileData<T>;
+        case "plaintext": return readPlainTextString(data).cellCoordinates
+        case "Life 1.06": return readLife106String(data)
+        case "": {
+            const format = getLifeFileFormat(data)
+            if (format !== "N/A") {
+                return readPatternCoordinatesFromFile(data, format)
+            }
+            throw new Error("")
+        }
     }
     throw new Error("")
+}
+
+export function readLifeFile(data: string, format: "plaintext"): PlainTextStringDecodedContents
+export function readLifeFile(data: string, format: "Life 1.06"): [number, number][]
+export function readLifeFile(data: string, format: SupportedLifeLikeFormats | "" = ""): [number, number][] | PlainTextStringDecodedContents {
+    switch (format) {
+        case "plaintext": return readPlainTextString(data);
+        case "Life 1.06": return readLife106String(data);
+        case "": {
+            const format = getLifeFileFormat(data)
+            if (format === "plaintext") {
+                return readLifeFile(data, format)
+            } else if (format === "Life 1.06") {
+                return readLifeFile(data, format)
+            }
+            throw new Error("") 
+        }
+    }
 }
 
 export function getLifeFileFormat(data: string): SupportedLifeLikeFormats | "N/A" {
