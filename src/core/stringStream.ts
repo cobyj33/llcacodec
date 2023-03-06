@@ -119,7 +119,7 @@ export function isNextChars(data: string, chars: string): boolean {
         dataIndex++;
     }
 
-    return charsIndex === chars.length - 1
+    return charsIndex === chars.length
 }
 
 /**
@@ -214,7 +214,7 @@ export function readNumber(data: string): [number, string] {
     const [numstr, stream] = readNext(data)
     if (isNumericString(numstr)) {
         const num = Number(numstr) 
-        if (isNaN(num)) {
+        if (!isNaN(num)) {
             return [num, stream];
         } 
         throw new Error("")
@@ -270,6 +270,14 @@ export function readNumbers(data: string, numOfNums: number): [number[], string]
     }
 
     return [numbers, remaining]
+}
+
+export function readIntegers(data: string, numOfIntegers: number): [number[], string] {
+    const [numbers, stream] = readNumbers(data, numOfIntegers)
+    if (numbers.every(num => Number.isInteger(num))) {
+        return [numbers, stream] 
+    }
+    throw new Error(`Cannot read ${numOfIntegers} integers: Found non integer values: ${ numbers.map((num, index) => [index, num] as [number, number]).filter(pair => !Number.isInteger(pair[1])) } `)
 }
 
 /**

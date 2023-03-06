@@ -1,6 +1,6 @@
 import { isNextChar, isNextChars, isNextSeq, readChar, readChars, readCrampedNumber, readNext, readNumber, readNumbers } from "../core/stringStream"
 import { isDigit, isStrictEqualStringArray } from "../core/util";
-import { LifeRuleData, readLifeRuleString, isValidLifeRuleString } from "./rule";
+import { LifeRuleData, readLifeRuleString, isValidLifeRuleString, CONWAY_RULE_STRING_BS, CONWAY_LIFE_RULE_DATA } from "./rule";
 
 interface HashLine {
     id: string,
@@ -158,8 +158,8 @@ export function readRLEFile(file: string): RLEFileData {
         topleft: null,
         width: 0,
         height: 0,
-        ruleString: "b3/s23",
-        rule: { birth: [3], survival: [2, 3] },
+        ruleString: CONWAY_RULE_STRING_BS,
+        rule: CONWAY_LIFE_RULE_DATA(),
         coordinates: [],
         hashLines: []
     }

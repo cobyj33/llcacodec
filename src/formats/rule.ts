@@ -7,6 +7,10 @@ import { getErrorMessage } from "../core/util";
 export type LifeRuleData = { birth: number[], survival: number[] }
 type LifeRuleStringNotation = "B/S" | "S/B"
 
+export const CONWAY_RULE_STRING_BS = "B3/S23"
+export const CONWAY_RULE_STRING_SB = "23/3"
+export const CONWAY_LIFE_RULE_DATA = () => ({ birth: [3], survival: [2, 3] })
+
 export function isValidLifeRuleString(lifeString: string, format: LifeRuleStringNotation | "" = ""): boolean {
     switch (format) {
         case "B/S": return isValidBSLifeString(lifeString);
