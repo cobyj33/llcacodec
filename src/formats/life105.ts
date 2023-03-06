@@ -75,16 +75,13 @@ function readLife105CellBlock(data: string): [Life105CellBlock, string] {
 
             
             const row = new Array<0 | 1>(cellBlock.width).fill(0);
-            if (currentLine.length > 1) {
-                for (let i = 0; i < cellBlock.width; i++) {
-                    if (currentLine[i] === LIFE_105_ALIVE_CHAR) {
-                        row[i] = 1
-                        cellBlock.cellCoordinates.push([x + i, y + cellBlock.height])
-                    }
+            for (let i = 0; i < cellBlock.width; i++) {
+                if (currentLine[i] === LIFE_105_ALIVE_CHAR) {
+                    row[i] = 1
+                    cellBlock.cellCoordinates.push([x + i, y - cellBlock.height])
                 }
             }
             cellBlock.pattern.push(row)
-            cellBlock.height++; // increments after setting the coordinates, 
 
             const [nextLine, nextRemainingStream] = readLine(currentRemainingStream)
             if (isNextChars(nextLine, "#P")) {
@@ -93,7 +90,7 @@ function readLife105CellBlock(data: string): [Life105CellBlock, string] {
 
             currentLine = nextLine
             currentRemainingStream = nextRemainingStream
-            
+            cellBlock.height++; // increments after setting the coordinates, 
         }
 
         for (let i = 0; i < cellBlock.height; i++) { // Correct all pattern rows to be the same size
