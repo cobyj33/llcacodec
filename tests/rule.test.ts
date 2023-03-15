@@ -1,72 +1,80 @@
-import { readLifeRuleString, makeLifeRuleString, canMakeLifeString, isValidLifeRuleString } from "../src/formats/rule"
+import { readLifeRuleString, makeLifeRuleString, isValidLifeRuleString, CONWAY_LIFE_RULE_DATA } from "../src/formats/rule"
+import { readLifeRuleInteger } from "../src/formats/rule/int"
+import { isValidLifeRuleData } from "../src/formats/rule/ruleData"
 
-describe("canMakeLifeString", () => {
+describe("readLifeRuleInteger", () => {
+    it("Conway", () => {
+        expect(readLifeRuleInteger(6152)).toEqual(CONWAY_LIFE_RULE_DATA())
+    })
+})
+
+describe("isValidLifeRuleData", () => {
 
     it("Conway", () => {
-        expect(canMakeLifeString([3], [2, 3])).toBe(true)
+        expect(isValidLifeRuleData({ birth: [3], survival: [2, 3] })).toBe(true)
     })
 
     it("Seeds", () => {
-        expect(canMakeLifeString([2], [])).toBe(true)
+        expect(isValidLifeRuleData({ birth: [2], survival: [] })).toBe(true)
     })
 
     describe("Births Parameter", () => {
         it("Duplicate", () => {
-            expect(canMakeLifeString([2, 3, 3, 4], [3, 4])).toBe(false)
+            expect(isValidLifeRuleData({ birth: [2, 3, 3, 4], survival: [3, 4] })).toBe(false)
         })
     
         it("Negative", () => {
-            expect(canMakeLifeString([2, -3, 4], [3, 4])).toBe(false)
+            expect(isValidLifeRuleData({ birth: [2, -3, 4], survival: [3, 4] })).toBe(false)
         })
     
         it("Decimal", () => {
-            expect(canMakeLifeString([2, 3.3, 4], [3, 4])).toBe(false)
+            expect(isValidLifeRuleData({ birth: [2, 3.3, 4], survival: [3, 4] })).toBe(false)
         })
 
         it("NaN", () => {
-            expect(canMakeLifeString([2, NaN, 4], [3, 4])).toBe(false)
+            expect(isValidLifeRuleData({ birth: [2, NaN, 4], survival: [3, 4] })).toBe(false)
         })
 
         it("Nine", () => {
-            expect(canMakeLifeString([2, 4, 9], [3, 4])).toBe(false)
+            expect(isValidLifeRuleData({ birth: [2, 4, 9], survival: [3, 4] })).toBe(false)
         })
 
         it("Larger than 8", () => {
-            expect(canMakeLifeString([2, 43, 293], [3, 4])).toBe(false)
+            expect(isValidLifeRuleData({ birth: [2, 43, 293], survival: [3, 4] })).toBe(false)
         })
 
         it("Empty", () => {
-            expect(canMakeLifeString([], [3, 4])).toBe(true);
+            expect(isValidLifeRuleData({ birth: [], survival: [3, 4] })).toBe(true);
         })
     })
 
     describe("Survival Parameter", () => {
         it("Duplicate", () => {
-            expect(canMakeLifeString([2, 3, 4], [1, 1, 3, 4])).toBe(false)
+            expect(isValidLifeRuleData({ birth: [2, 3, 4], survival: [1, 1, 3, 4] })).toBe(false)
         })
     
         it("Negative", () => {
-            expect(canMakeLifeString([2, 3, 4], [-1, 3, 4])).toBe(false)
+            expect(isValidLifeRuleData({ birth: [2, 3, 4], survival: [-1, 3, 4] })).toBe(false)
         })
     
         it("Decimal", () => {
-            expect(canMakeLifeString([2, 3, 4], [3, 4, 5.23])).toBe(false)
+            expect(isValidLifeRuleData({ birth: [2, 3, 4], survival: [3, 4, 5.23] })).toBe(false)
         })
 
         it("NaN", () => {
-            expect(canMakeLifeString([2, 4], [3, 4, NaN])).toBe(false)
+            expect(isValidLifeRuleData({ birth: [2, 4], survival: [3, 4, NaN] })).toBe(false)
         })
 
         it("Nine", () => {
-            expect(canMakeLifeString([2, 4], [3, 4, 9])).toBe(false)
+            expect(isValidLifeRuleData({ birth: [2, 4], survival: [3, 4, 9] })).toBe(false)
         })
 
         it("Larger than 8", () => {
-            expect(canMakeLifeString([2], [3, 43])).toBe(false)
+            expect(isValidLifeRuleData({ birth: [2], survival: [3, 43] })).toBe(false)
         })
 
         it("Empty", () => {
-            expect(canMakeLifeString([3, 4], [])).toBe(true);
+            expect(isValidLifeRuleData({ birth: [3, 4], survival: [] })).toBe(true);
         })
     })
 })
@@ -88,23 +96,23 @@ describe("canMakeLifeString", () => {
 describe("makeLifeRuleString", () => {
     describe("S/B", () => {
         it("Ideal", () => {
-            expect(makeLifeRuleString([2, 3, 4], [3, 4], "S/B")).toBe("34/234")
+            expect(makeLifeRuleString({ birth: [2, 3, 4], survival: [3, 4] }, "S/B")).toBe("34/234")
         })
 
         it("Decimal", () => {
-            expect(() => makeLifeRuleString([2.5, 3, 4], [3, 4], "S/B")).toThrow()
+            expect(() => makeLifeRuleString({ birth: [2.5, 3, 4], survival: [3, 4] }, "S/B")).toThrow()
         })
 
         it("Negative Number", () => {
-            expect(() => makeLifeRuleString([2, 3, 4], [-3, 4], "S/B")).toThrow()
+            expect(() => makeLifeRuleString({ birth: [2, 3, 4], survival: [-3, 4] }, "S/B")).toThrow()
         })
 
         it("Unsorted Numbers", () => {
-            expect(makeLifeRuleString([5, 2, 4, 3], [4, 3], "S/B")).toBe("34/2345")
+            expect(makeLifeRuleString({ birth: [5, 2, 4, 3], survival: [4, 3] }, "S/B")).toBe("34/2345")
         })
 
         it("NaN", () => {
-            expect(() => makeLifeRuleString([5, 2, NaN, 3], [4, 3], "S/B")).toThrow()
+            expect(() => makeLifeRuleString({ birth: [5, 2, NaN, 3], survival: [4, 3] }, "S/B")).toThrow()
         })
 
     })
@@ -112,23 +120,23 @@ describe("makeLifeRuleString", () => {
     describe("B/S", () => {
 
         it("Ideal", () => {
-            expect(makeLifeRuleString([2, 3, 4], [3, 4], "B/S")).toBe("B234/S34")
+            expect(makeLifeRuleString({ birth: [2, 3, 4], survival: [3, 4] }, "B/S")).toBe("B234/S34")
         })
 
         it("Decimal", () => {
-            expect(() => makeLifeRuleString([2.5, 3, 4], [3, 4], "B/S")).toThrow()
+            expect(() => makeLifeRuleString({ birth: [2.5, 3, 4], survival: [3, 4] }, "B/S")).toThrow()
         })
 
         it("Negative Number", () => {
-            expect(() => makeLifeRuleString([2, 3, 4], [-3, 4], "B/S")).toThrow()
+            expect(() => makeLifeRuleString({ birth: [2, 3, 4], survival: [-3, 4] }, "B/S")).toThrow()
         })
 
         it("Unsorted Numbers", () => {
-            expect(makeLifeRuleString([5, 2, 4, 3], [4, 3], "B/S")).toBe("B2345/S34")
+            expect(makeLifeRuleString({ birth: [5, 2, 4, 3], survival: [4, 3] }, "B/S")).toBe("B2345/S34")
         })
 
         it("NaN", () => {
-            expect(() => makeLifeRuleString([5, 2, NaN, 3], [4, 3], "B/S")).toThrow()
+            expect(() => makeLifeRuleString({ birth: [5, 2, NaN, 3], survival: [4, 3] }, "B/S")).toThrow()
         })
 
     })

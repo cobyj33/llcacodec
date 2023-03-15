@@ -40,7 +40,7 @@ interface Life105CellBlock {
     cellCoordinates: [number, number][]
 }
 
-interface Life105FileData {
+export interface Life105FileData {
     cellBlocks: Life105CellBlock[]
     cellCoordinates: [number, number][]
     descriptions: string[],
@@ -105,7 +105,11 @@ function readLife105CellBlock(data: string): [Life105CellBlock, string] {
     }
 }
 
-export function readLife105File(file: string): Life105FileData {
+export function isLife105String(file: string): boolean {
+    return file.trim().startsWith(LIFE_105_HEADER)
+}
+
+export function readLife105String(file: string): Life105FileData {
     file = file.replace("\r", "")
 
     const life105FileData: Life105FileData = {

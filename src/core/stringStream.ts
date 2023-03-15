@@ -65,6 +65,8 @@ export function readChar(data: string, char: string = ""): [string, string] {
  * @param charOrCount Either a string of the characters in a row to read, or the number of characters to read
  * @returns 
  */
+export function readChars(data: string, count: number): [string[], string]
+export function readChars(data: string, charsToRead: string): [string[], string]
 export function readChars(data: string, charOrCount: string | number): [string[], string] {
     if (typeof(charOrCount) === "string") {
         if (charOrCount.length === 0) {

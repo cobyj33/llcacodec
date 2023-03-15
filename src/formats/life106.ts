@@ -24,16 +24,11 @@ export function writeLife106String(data: [number, number][]): string {
 }
 
 export function isLife106String(str: string): boolean {
-    try {
-        readLife106String(str);
-        return true;
-    } catch (e) {
-        return false;
-    }
+    return str.trim().startsWith(LIFE_106_HEADER)
 }
 
 export function readLife106String(str: string): [number, number][] {
-    if (str.startsWith(LIFE_106_HEADER + "\n")) {
+    if (str.trim().startsWith(LIFE_106_HEADER)) {
         const output: [number, number][] = []
         const set2D: Set2D = new Set2D()
         const lines = str.split("\n")

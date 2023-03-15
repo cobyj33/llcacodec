@@ -1,5 +1,5 @@
 import { isNextChar, isNextChars, isNextSeq, readChar, readChars, readCrampedNumber, readNext, readNumber, readNumbers } from "../core/stringStream"
-import { isDigit, isStrictEqualStringArray } from "../core/util";
+import { isDigit, isStrictEqualStringArray, throws } from "../core/util";
 import { LifeRuleData, readLifeRuleString, isValidLifeRuleString, CONWAY_RULE_STRING_BS, CONWAY_LIFE_RULE_DATA } from "./rule";
 
 interface HashLine {
@@ -8,7 +8,7 @@ interface HashLine {
     full: string
 }
 
-interface RLEFileData {
+export interface RLEFileData {
     comments: string[],
     name: string,
     topleft: [number, number] | null,
@@ -40,7 +40,7 @@ function isValidRLEDataCharacter(char: string): boolean {
     return RLE_VALID_CHARACTERS.some(validChar => validChar === char)
 }
 
-interface RLEData {
+interface ParsedRLEData {
     coordinates: [number, number][],
     pattern: string,
     endingIndex: number,
@@ -54,11 +54,11 @@ interface RLEData {
  * 
  * @param rleData 
  */
-export function readRLEData(rlePattern: string, topleft: [number, number] = [0, 0]): RLEData {
+export function readRLEData(rlePattern: string, topleft: [number, number] = [0, 0]): ParsedRLEData {
     let i = 0;
     let currRun: string[] = []
 
-    const rleData: RLEData = {
+    const rleData: ParsedRLEData = {
         coordinates: [],
         pattern: "",
         endingIndex: 0,
@@ -113,7 +113,7 @@ export function readRLEData(rlePattern: string, topleft: [number, number] = [0, 
     throw new Error(`Unexpected ending to RLE Data. Ended at char (${rlePattern[i]} at index ${i} of ${rlePattern.length})`)
 }
 
-export function readRLEFileHeader(headerLine: string): RLEFileHeaderData {
+export function readRLEStringHeader(headerLine: string): RLEFileHeaderData {
     const trimmed = headerLine.trim();
 
     const ruleFileHeaderData: RLEFileHeaderData = {
@@ -146,9 +146,20 @@ export function readRLEFileHeader(headerLine: string): RLEFileHeaderData {
     return ruleFileHeaderData
 }
 
+export function isRLEString(file: string): boolean {
+    const lines = file.trim().split("\n")
+    for (let i = 0; i < lines.length; i++) {
+        if (!lines[i].trim().startsWith("#") && i < lines.length - 1) {
+            return throws(() => readRLEStringHeader(lines[i + 1].trim()))
+        }
+    }
 
-export function readRLEFile(file: string): RLEFileData {
-    const lines = file.split("\n")
+    return false;
+}
+
+
+export function readRLEString(file: string): RLEFileData {
+    const lines = file.trim().split("\n")
     let currentLine = 0;
 
     const rleFileData: RLEFileData = {
@@ -198,7 +209,7 @@ export function readRLEFile(file: string): RLEFileData {
     }
 
     //header line
-    const headerLineData = readRLEFileHeader(lines[currentLine])
+    const headerLineData = readRLEStringHeader(lines[currentLine])
     rleFileData.width = headerLineData.width;
     rleFileData.height = headerLineData.height
     if (headerLineData.ruleString !== null && headerLineData.rule !== null) {
@@ -225,8 +236,8 @@ export function readRLEFile(file: string): RLEFileData {
     return rleFileData
 }
 
-function readRLEFilePattern(file: string): [number, number][] {
-    return readRLEFile(file).coordinates
+function readRLEStringPattern(file: string): [number, number][] {
+    return readRLEString(file).coordinates
 }
 
 

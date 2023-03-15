@@ -8,7 +8,7 @@
  * @param matrix A matrix of a data type
  * @returns If the matrix is rectangular or not
  */
-export function isRectangularMatrix(matrix: any[][]): boolean {
+export function isRectangularMatrix(matrix: unknown[][]): boolean {
     if (matrix.length === 0) return true;
     const width = matrix[0].length;
 
@@ -16,6 +16,21 @@ export function isRectangularMatrix(matrix: any[][]): boolean {
         if (matrix[row].length !== width) return false;
     }
     return true;
+}
+
+/**
+ * Check whether a function throws an error when called
+ * 
+ * @param action The function to envoke to check if it throws an error
+ * @returns Whether the function throws an error upon invokation
+ */
+export function throws(action: () => unknown): boolean {
+    try {
+        action();
+        return true;
+    } catch (e) {
+        return false;
+    }
 }
 
 const DIGIT_DECIMAL_CHARACTERS = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"] as const
