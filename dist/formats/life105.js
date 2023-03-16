@@ -1,7 +1,7 @@
 "use strict";
 // Life 1.05 File Format Spec: https://conwaylife.com/wiki/Life_1.05
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.hello = exports.readLife105File = void 0;
+exports.hello = exports.readLife105String = exports.isLife105String = void 0;
 const stringStream_1 = require("../core/stringStream");
 const rule_1 = require("./rule");
 const LIFE_105_HEADER = "#Life 1.05";
@@ -29,22 +29,20 @@ function readLife105CellBlock(data) {
         while (!(0, stringStream_1.isNextChars)(currentLine, "#P")) { // exits when the next #P line is hit
             cellBlock.width = Math.max(cellBlock.width, currentLine.length);
             const row = new Array(cellBlock.width).fill(0);
-            if (currentLine.length > 1) {
-                for (let i = 0; i < cellBlock.width; i++) {
-                    if (currentLine[i] === LIFE_105_ALIVE_CHAR) {
-                        row[i] = 1;
-                        cellBlock.cellCoordinates.push([x + i, y + cellBlock.height]);
-                    }
+            for (let i = 0; i < cellBlock.width; i++) {
+                if (currentLine[i] === LIFE_105_ALIVE_CHAR) {
+                    row[i] = 1;
+                    cellBlock.cellCoordinates.push([x + i, y - cellBlock.height]);
                 }
             }
             cellBlock.pattern.push(row);
-            cellBlock.height++; // increments after setting the coordinates, 
             const [nextLine, nextRemainingStream] = (0, stringStream_1.readLine)(currentRemainingStream);
             if ((0, stringStream_1.isNextChars)(nextLine, "#P")) {
                 break;
             }
             currentLine = nextLine;
             currentRemainingStream = nextRemainingStream;
+            cellBlock.height++; // increments after setting the coordinates, 
         }
         for (let i = 0; i < cellBlock.height; i++) { // Correct all pattern rows to be the same size
             if (cellBlock.pattern[i].length < cellBlock.width) {
@@ -57,7 +55,11 @@ function readLife105CellBlock(data) {
         throw new Error(`Cannot read next Life 105 Cell Block, not positioned correctly. Must have "#P" next in the stream`);
     }
 }
-function readLife105File(file) {
+function isLife105String(file) {
+    return file.trim().startsWith(LIFE_105_HEADER);
+}
+exports.isLife105String = isLife105String;
+function readLife105String(file) {
     file = file.replace("\r", "");
     const life105FileData = {
         cellBlocks: [],
@@ -82,7 +84,7 @@ function readLife105File(file) {
         }
         else if (id === "R") {
             life105FileData.ruleString = trimmedContent;
-            life105FileData.rule = (0, rule_1.readLifeRuleString)(trimmedContent);
+            life105FileData.rule = (0, rule_1.readLifeRule)(trimmedContent);
         }
         else if (id === "N") {
             life105FileData.ruleString = rule_1.CONWAY_RULE_STRING_SB;
@@ -117,7 +119,7 @@ function readLife105File(file) {
     }
     return life105FileData;
 }
-exports.readLife105File = readLife105File;
+exports.readLife105String = readLife105String;
 function hello() {
     return 5;
 }

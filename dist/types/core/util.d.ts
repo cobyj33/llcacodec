@@ -6,7 +6,14 @@
  * @param matrix A matrix of a data type
  * @returns If the matrix is rectangular or not
  */
-export declare function isRectangularMatrix(matrix: any[][]): boolean;
+export declare function isRectangularMatrix(matrix: unknown[][]): boolean;
+/**
+ * Check whether a function throws an error when called
+ *
+ * @param action The function to envoke to check if it throws an error
+ * @returns Whether the function throws an error upon invokation
+ */
+export declare function throws(action: () => unknown): boolean;
 export declare function isDigit(digit: string): boolean;
 export declare const isNumericString: (num: string) => boolean;
 export declare function trimTrailing(s: string, charToTrim: string): string;
@@ -27,6 +34,7 @@ export declare function getCellBoundingBox(positions: [number, number][]): Bound
 export declare function numberPairArrayToMatrix(positions: [number, number][]): (0 | 1)[][];
 export declare function isError(e: any): e is Error;
 export declare function getErrorMessage(e: any): string;
+export declare function reverseBits(num: number): number;
 export declare function pushUTFBytes(byteData: number[], str: string): void;
 export declare function byteArrayAsString(byteData: number[]): string;
 /**

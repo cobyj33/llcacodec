@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.isStrictEqualBooleanArray = exports.isStrictEqualStringArray = exports.isStrictEqualNumberArray = exports.isStrictEqualArray = exports.byteArrayAsString = exports.pushUTFBytes = exports.getErrorMessage = exports.isError = exports.numberPairArrayToMatrix = exports.getCellBoundingBox = exports.isNumberPairArray = exports.isIntegerString = exports.trimTrailing = exports.isNumericString = exports.isDigit = exports.isRectangularMatrix = void 0;
+exports.isStrictEqualBooleanArray = exports.isStrictEqualStringArray = exports.isStrictEqualNumberArray = exports.isStrictEqualArray = exports.byteArrayAsString = exports.pushUTFBytes = exports.reverseBits = exports.getErrorMessage = exports.isError = exports.numberPairArrayToMatrix = exports.getCellBoundingBox = exports.isNumberPairArray = exports.isIntegerString = exports.trimTrailing = exports.isNumericString = exports.isDigit = exports.throws = exports.isRectangularMatrix = void 0;
 /**
  * Test if a matrix is rectangular or not
  *
@@ -20,6 +20,22 @@ function isRectangularMatrix(matrix) {
     return true;
 }
 exports.isRectangularMatrix = isRectangularMatrix;
+/**
+ * Check whether a function throws an error when called
+ *
+ * @param action The function to envoke to check if it throws an error
+ * @returns Whether the function throws an error upon invokation
+ */
+function throws(action) {
+    try {
+        action();
+        return true;
+    }
+    catch (e) {
+        return false;
+    }
+}
+exports.throws = throws;
 const DIGIT_DECIMAL_CHARACTERS = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"];
 const DIGIT_BINARY_CHARACTERS = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"];
 const DIGIT_HEX_CHARACTERS = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "A", "B", "C", "D", "E", "F", "a", "b", "c", "d", "e", "f"];
@@ -114,6 +130,14 @@ function getErrorMessage(e) {
     return "";
 }
 exports.getErrorMessage = getErrorMessage;
+function reverseBits(num) {
+    let o = 0;
+    for (let i = 0; i < 32; i++) {
+        o |= (num & 1 << (31 - i)) > 0 ? 1 << i : 0;
+    }
+    return o;
+}
+exports.reverseBits = reverseBits;
 function pushUTFBytes(byteData, str) {
     byteData.push(...str.split("").map(ch => ch.charCodeAt(0)));
 }

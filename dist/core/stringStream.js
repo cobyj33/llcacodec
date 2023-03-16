@@ -56,12 +56,6 @@ function readChar(data, char = "") {
     throw new Error("");
 }
 exports.readChar = readChar;
-/**
- *
- * @param data the data string to read from
- * @param charOrCount Either a string of the characters in a row to read, or the number of characters to read
- * @returns
- */
 function readChars(data, charOrCount) {
     if (typeof (charOrCount) === "string") {
         if (charOrCount.length === 0) {

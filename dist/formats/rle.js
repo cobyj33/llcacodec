@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.readRLEFile = exports.readRLEFileHeader = exports.readRLEData = void 0;
+exports.readRLEString = exports.isRLEString = exports.readRLEStringHeader = exports.readRLEData = void 0;
 const stringStream_1 = require("../core/stringStream");
 const util_1 = require("../core/util");
 const rule_1 = require("./rule");
@@ -68,7 +68,7 @@ function readRLEData(rlePattern, topleft = [0, 0]) {
     throw new Error(`Unexpected ending to RLE Data. Ended at char (${rlePattern[i]} at index ${i} of ${rlePattern.length})`);
 }
 exports.readRLEData = readRLEData;
-function readRLEFileHeader(headerLine) {
+function readRLEStringHeader(headerLine) {
     const trimmed = headerLine.trim();
     const ruleFileHeaderData = {
         width: 0,
@@ -86,8 +86,8 @@ function readRLEFileHeader(headerLine) {
     if ((0, stringStream_1.isNextChars)(afterHeight, ",rule=")) {
         const [, afterRule] = (0, stringStream_1.readChars)(afterHeight, ",rule=");
         const [rule, end] = (0, stringStream_1.readNext)(afterRule);
-        if ((0, rule_1.isValidLifeRuleString)(rule)) {
-            ruleFileHeaderData.rule = (0, rule_1.readLifeRuleString)(rule);
+        if ((0, rule_1.isValidLifeRule)(rule)) {
+            ruleFileHeaderData.rule = (0, rule_1.readLifeRule)(rule);
             ruleFileHeaderData.ruleString = rule;
         }
         else {
@@ -96,9 +96,19 @@ function readRLEFileHeader(headerLine) {
     }
     return ruleFileHeaderData;
 }
-exports.readRLEFileHeader = readRLEFileHeader;
-function readRLEFile(file) {
-    const lines = file.split("\n");
+exports.readRLEStringHeader = readRLEStringHeader;
+function isRLEString(file) {
+    const lines = file.trim().split("\n");
+    for (let i = 0; i < lines.length; i++) {
+        if (!lines[i].trim().startsWith("#") && i < lines.length - 1) {
+            return !(0, util_1.throws)(() => readRLEStringHeader(lines[i + 1].trim()));
+        }
+    }
+    return false;
+}
+exports.isRLEString = isRLEString;
+function readRLEString(file) {
+    const lines = file.trim().split("\n");
     let currentLine = 0;
     const rleFileData = {
         comments: [],
@@ -133,7 +143,7 @@ function readRLEFile(file) {
             }
             else if (id === "r") {
                 rleFileData.ruleString = content;
-                rleFileData.rule = (0, rule_1.readLifeRuleString)(content);
+                rleFileData.rule = (0, rule_1.readLifeRule)(content);
             }
         }
         rleFileData.hashLines.push({
@@ -144,7 +154,7 @@ function readRLEFile(file) {
         currentLine++;
     }
     //header line
-    const headerLineData = readRLEFileHeader(lines[currentLine]);
+    const headerLineData = readRLEStringHeader(lines[currentLine]);
     rleFileData.width = headerLineData.width;
     rleFileData.height = headerLineData.height;
     if (headerLineData.ruleString !== null && headerLineData.rule !== null) {
@@ -164,9 +174,9 @@ function readRLEFile(file) {
     //Everything after this is considered a comment
     return rleFileData;
 }
-exports.readRLEFile = readRLEFile;
-function readRLEFilePattern(file) {
-    return readRLEFile(file).coordinates;
+exports.readRLEString = readRLEString;
+function readRLEStringPattern(file) {
+    return readRLEString(file).coordinates;
 }
 // --------------------------------------------------------------
 // --------------------------------------------------------------

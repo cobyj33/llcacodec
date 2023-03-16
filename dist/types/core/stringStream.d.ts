@@ -26,7 +26,8 @@ export declare function readChar(data: string, char?: string): [string, string];
  * @param charOrCount Either a string of the characters in a row to read, or the number of characters to read
  * @returns
  */
-export declare function readChars(data: string, charOrCount: string | number): [string[], string];
+export declare function readChars(data: string, count: number): [string[], string];
+export declare function readChars(data: string, charsToRead: string): [string[], string];
 export declare function isNextChars(data: string, chars: string): boolean;
 /**
  * Returns if the next non-whitespace string in the data parameter matches the given sequence

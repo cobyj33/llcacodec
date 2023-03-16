@@ -22,17 +22,11 @@ function writeLife106String(data) {
 }
 exports.writeLife106String = writeLife106String;
 function isLife106String(str) {
-    try {
-        readLife106String(str);
-        return true;
-    }
-    catch (e) {
-        return false;
-    }
+    return str.trim().startsWith(LIFE_106_HEADER);
 }
 exports.isLife106String = isLife106String;
 function readLife106String(str) {
-    if (str.startsWith(LIFE_106_HEADER + "\n")) {
+    if (str.trim().startsWith(LIFE_106_HEADER)) {
         const output = [];
         const set2D = new set2D_1.Set2D();
         const lines = str.split("\n");

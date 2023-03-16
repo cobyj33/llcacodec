@@ -12,8 +12,31 @@
         "conway",
         "cellular-automata"
     ],
-    "main": "./dist/api",
-    "types": "./dist/types/api",
+    "exports": {
+        ".": {
+            "import": {
+                "default": "./dist/api.js"
+            },
+            "types": {
+                "default": "./dist/types/api.d.ts"
+            }
+        },
+        "./rule": {
+            "import": {
+                "default": "./dist/formats/rule.js"
+            },
+            "types": {
+                "default": "./dist/types/formats/rule.d.ts"
+            } 
+        }
+    },
+    "typesVersions": {
+        "*": {
+            "rule": ["./dist/types/formats/rule.d.ts"]
+        }
+    },
+    "main": "./dist/api.js",
+    "types": "./dist/types/api.d.ts",
     "devDependencies": {
         "@babel/core": "^7.21.0",
         "@babel/plugin-transform-modules-commonjs": "^7.21.2",
