@@ -1,6 +1,6 @@
 import { isNextChar, isNextChars, isNextSeq, readChar, readChars, readCrampedNumber, readNext, readNumber, readNumbers } from "../core/stringStream"
 import { isDigit, isStrictEqualStringArray, throws } from "../core/util";
-import { LifeRuleData, readLifeRuleString, isValidLifeRuleString, CONWAY_RULE_STRING_BS, CONWAY_LIFE_RULE_DATA } from "./rule";
+import { LifeRuleData, readLifeRule, isValidLifeRule, CONWAY_RULE_STRING_BS, CONWAY_LIFE_RULE_DATA } from "./rule";
 
 interface HashLine {
     id: string,
@@ -135,8 +135,8 @@ export function readRLEStringHeader(headerLine: string): RLEFileHeaderData {
     if (isNextChars(afterHeight, ",rule=")) {
         const [, afterRule] = readChars(afterHeight, ",rule=")
         const [rule, end] = readNext(afterRule)
-        if (isValidLifeRuleString(rule)) {
-            ruleFileHeaderData.rule = readLifeRuleString(rule)
+        if (isValidLifeRule(rule)) {
+            ruleFileHeaderData.rule = readLifeRule(rule)
             ruleFileHeaderData.ruleString = rule;
         } else {
             throw new Error(`Invalid Rule found in RLE Data while parsing RLE Header Line: "${rule}" ( passed in "${headerLine}") `)
@@ -150,7 +150,7 @@ export function isRLEString(file: string): boolean {
     const lines = file.trim().split("\n")
     for (let i = 0; i < lines.length; i++) {
         if (!lines[i].trim().startsWith("#") && i < lines.length - 1) {
-            return throws(() => readRLEStringHeader(lines[i + 1].trim()))
+            return !throws(() => readRLEStringHeader(lines[i + 1].trim()))
         }
     }
 
@@ -194,7 +194,7 @@ export function readRLEString(file: string): RLEFileData {
                 rleFileData.topleft = [x, y]
             } else if (id === "r") {
                 rleFileData.ruleString = content
-                rleFileData.rule = readLifeRuleString(content)
+                rleFileData.rule = readLifeRule(content)
             }
 
         }

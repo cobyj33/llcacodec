@@ -1,7 +1,7 @@
 // Life 1.05 File Format Spec: https://conwaylife.com/wiki/Life_1.05
 
 import { isNextChar, isNextChars, readChar, readChars, readIntegers, readLine } from "../core/stringStream";
-import { CONWAY_LIFE_RULE_DATA, CONWAY_RULE_STRING_SB, readLifeRuleString } from "./rule";
+import { CONWAY_LIFE_RULE_DATA, CONWAY_RULE_STRING_SB, readLifeRule } from "./rule";
 
 const LIFE_105_HEADER = "#Life 1.05"
 const MAX_DESCRIPTION_LINE_COUNT = 22
@@ -138,7 +138,7 @@ export function readLife105String(file: string): Life105FileData {
             life105FileData.descriptions.push(trimmedContent)
         } else if (id === "R") {
             life105FileData.ruleString = trimmedContent
-            life105FileData.rule = readLifeRuleString(trimmedContent)
+            life105FileData.rule = readLifeRule(trimmedContent)
         } else if (id === "N") {
             life105FileData.ruleString = CONWAY_RULE_STRING_SB
             life105FileData.rule = CONWAY_LIFE_RULE_DATA()

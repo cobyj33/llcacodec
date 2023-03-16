@@ -135,6 +135,14 @@ export function getErrorMessage(e: any): string {
     return ""
 }
 
+export function reverseBits(num: number): number {
+    let o = 0;
+    for (let i = 0; i < 32; i++) {
+        o |= (num & 1 << (31 - i)) > 0 ? 1 << i : 0;
+    }  
+    return o;
+}
+
 export function pushUTFBytes(byteData: number[], str: string) {
     byteData.push(...str.split("").map(ch => ch.charCodeAt(0)))
 }

@@ -1,13 +1,13 @@
 import { LifeRuleData, getLifeRuleDataError, isValidLifeRuleData } from "./ruleData";
 
 export const CONWAY_RULE_STRING_SB = "23/3"
-export type SBStringNotation = "S/B"
+export type SBStringNotation = "s/b"
 
 
 export function getSBLifeStringError(lifeString: string): string | "" {
     const sides = lifeString.split("/");
     if (sides.length !== 2) {
-        return "Not able to split S/B life-like rule string into birth and survival counts, format must include a forward slash <NUMS>/<NUMS> "
+        return "Not able to split s/b life-like rule string into birth and survival counts, format must include a forward slash <NUMS>/<NUMS> "
     }
 
     const survivalNums = sides[0].split('').map(numChar => Number.parseInt(numChar))
@@ -18,7 +18,7 @@ export function getSBLifeStringError(lifeString: string): string | "" {
     } 
 
     if (survivalNums.some(num => num === 9) || birthNums.some(num => num === 9)) {
-        return `9 is an invalid input for S/B notation string`
+        return `9 is an invalid input for s/b notation string`
     }
     
     if (new Set<number>(survivalNums).size !== survivalNums.length || new Set<number>(birthNums).size !== birthNums.length) {
@@ -40,7 +40,7 @@ export function makeSBLifeString(lifeRuleData: LifeRuleData): string {
     throw new Error(`[makeSBLifeString] Error while creating lifeString from (${JSON.stringify(lifeRuleData)}), ${getLifeRuleDataError(lifeRuleData)}`)
 }
 
-export function parseSBLifeLikeString(lifeString: string): LifeRuleData {
+export function readSBRuleString(lifeString: string): LifeRuleData {
     if (isValidSBLifeString(lifeString)) {
         const sides = lifeString.split("/")
         return {
@@ -48,5 +48,5 @@ export function parseSBLifeLikeString(lifeString: string): LifeRuleData {
             survival: sides[1].split("").map(digit => Number.parseInt(digit))
         }
     }
-    throw new Error(`[parseSBLifeLikeString] Error while parsing S/B notation ruleString: ${getSBLifeStringError(lifeString)}`)
+    throw new Error(`[readSBRuleString] Error while parsing s/b notation ruleString: ${getSBLifeStringError(lifeString)}`)
 }
