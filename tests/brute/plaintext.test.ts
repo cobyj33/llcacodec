@@ -1,4 +1,4 @@
-import { readPlainTextString } from "../../src/formats/plaintext"
+import { readPlainTextString } from "../../src/formats/file/plaintext"
 
 interface PlainTextFileData {
     fileName: string

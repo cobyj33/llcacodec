@@ -1,10 +1,10 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.getLifeFileFormat = exports.readLifeFile = exports.readPatternCoordinatesFromFile = void 0;
-const life106_1 = require("./formats/life106");
-const plaintext_1 = require("./formats/plaintext");
-const rle_1 = require("./formats/rle");
-const life105_1 = require("./formats/life105");
+const life106_1 = require("formats/file/life106");
+const plaintext_1 = require("formats/file/plaintext");
+const rle_1 = require("formats/file/rle");
+const life105_1 = require("formats/file/life105");
 function readPatternCoordinatesFromFile(data, format) {
     switch (format) {
         case "plaintext": return (0, plaintext_1.readPlainTextString)(data).cellCoordinates;

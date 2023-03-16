@@ -1,6 +1,6 @@
-import { PlainTextStringDecodedContents } from "./formats/plaintext";
-import { RLEFileData } from "./formats/rle";
-import { Life105FileData } from "./formats/life105";
+import { PlainTextStringDecodedContents } from "formats/file/plaintext";
+import { RLEFileData } from "formats/file/rle";
+import { Life105FileData } from "formats/file/life105";
 type SupportedLifeLikeFormats = "life 1.06" | "life 1.05" | "plaintext" | "rle";
 export declare function readPatternCoordinatesFromFile<T extends SupportedLifeLikeFormats>(data: string, format: T | ""): [number, number][];
 export declare function readLifeFile(data: string, format: "plaintext"): PlainTextStringDecodedContents;

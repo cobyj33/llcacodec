@@ -1,15 +1,22 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.readRLEString = exports.isRLEString = exports.readRLEStringHeader = exports.readRLEData = void 0;
-const stringStream_1 = require("../core/stringStream");
-const util_1 = require("../core/util");
-const rule_1 = require("./rule");
+const stringStream_1 = require("core/stringStream");
+const util_1 = require("core/util");
+const rule_1 = require("formats/rule");
 const RLE_DEAD_CELL_CHAR = "b";
 const RLE_LIVE_CELL_CHAR = "o";
 const RLE_NEW_LINE_CHAR = "$";
 const RLE_TERMINATION_CHAR = "!";
 const DIGIT_DECIMAL_CHARACTERS = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"];
 const RLE_VALID_CHARACTERS = [RLE_DEAD_CELL_CHAR, RLE_LIVE_CELL_CHAR, RLE_NEW_LINE_CHAR, RLE_TERMINATION_CHAR, ...DIGIT_DECIMAL_CHARACTERS, "\n", "\r"];
+// --------------------------------------------------------------
+// --------------------------------------------------------------
+// --------------------------------------------------------------
+// ------------------------- READING ----------------------------
+// --------------------------------------------------------------
+// --------------------------------------------------------------
+// --------------------------------------------------------------
 function isValidRLEDataCharacter(char) {
     return RLE_VALID_CHARACTERS.some(validChar => validChar === char);
 }

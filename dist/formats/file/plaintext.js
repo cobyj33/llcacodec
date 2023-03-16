@@ -1,9 +1,9 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.isPlainTextDiagram = exports.readPlainTextString = exports.readPlainTextPattern = exports.isPlainTextString = exports.writePlainTextMatrix = exports.writePlainTextFromCoordinates = exports.readPlainTextDiagramToRowColCoordinates = exports.readPlainTextDiagramToMatrix = exports.readPlainTextDiagramToXYCoordinates = void 0;
-const util_1 = require("../core/util");
-const util_2 = require("../core/util");
-const stringStream_1 = require("../core/stringStream");
+const util_1 = require("core/util");
+const util_2 = require("core/util");
+const stringStream_1 = require("core/stringStream");
 const VALID_DEAD_CELL_CHARACTERS = ["."];
 const VALID_LIVE_CELL_CHARACTERS = ["O", "*"];
 function writePlainTextMetadata(byteArray, name, description) {

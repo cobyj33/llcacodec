@@ -1,4 +1,4 @@
-import { readPlainTextDiagramToXYCoordinates, readPlainTextString, writePlainTextFromCoordinates, writePlainTextMatrix } from "../src/formats/plaintext";
+import { readPlainTextDiagramToXYCoordinates, readPlainTextString, writePlainTextFromCoordinates, writePlainTextMatrix } from "../src/formats/file/plaintext";
 
 describe("Reading", () => {
 

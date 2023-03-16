@@ -1,7 +1,7 @@
-import { readLife106String, isLife106String } from "./formats/life106"
-import { readPlainTextString, isPlainTextString, PlainTextStringDecodedContents } from "./formats/plaintext"
-import { RLEFileData, isRLEString, readRLEString } from "./formats/rle"
-import { Life105FileData, isLife105String, readLife105String } from "./formats/life105"
+import { readLife106String, isLife106String } from "formats/file/life106"
+import { readPlainTextString, isPlainTextString, PlainTextStringDecodedContents } from "formats/file/plaintext"
+import { RLEFileData, isRLEString, readRLEString } from "formats/file/rle"
+import { Life105FileData, isLife105String, readLife105String } from "formats/file/life105"
 
 type SupportedLifeLikeFormats = "life 1.06" | "life 1.05" | "plaintext" | "rle"
     

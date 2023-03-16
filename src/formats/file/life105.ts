@@ -1,7 +1,7 @@
 // Life 1.05 File Format Spec: https://conwaylife.com/wiki/Life_1.05
 
-import { isNextChar, isNextChars, readChar, readChars, readIntegers, readLine } from "../core/stringStream";
-import { CONWAY_LIFE_RULE_DATA, CONWAY_RULE_STRING_SB, readLifeRule } from "./rule";
+import { isNextChar, isNextChars, readChar, readChars, readIntegers, readLine } from "core/stringStream";
+import { CONWAY_LIFE_RULE_DATA, CONWAY_RULE_STRING_SB, readLifeRule } from "formats/rule";
 
 const LIFE_105_HEADER = "#Life 1.05"
 const MAX_DESCRIPTION_LINE_COUNT = 22

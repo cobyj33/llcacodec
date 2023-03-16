@@ -1,8 +1,8 @@
-import { BSStringNotation, CONWAY_RULE_STRING_BS, getBSLifeStringError, isValidBSLifeString, makeBSLifeString, readBSRuleString } from "./bs";
-import { CONWAY_RULE_STRING_SB, SBStringNotation, getSBLifeStringError, isValidSBLifeString, makeSBLifeString, readSBRuleString } from "./sb";
-import { CONWAY_LIFE_RULE_INTEGER, isValidLifeRuleInteger, makeLifeRuleInteger, readLifeRuleInteger } from "./int"
-import { getErrorMessage } from "../../core/util";
-import { CONWAY_LIFE_RULE_DATA, LifeRuleData } from "./ruleData";
+import { BSStringNotation, CONWAY_RULE_STRING_BS, getBSLifeStringError, isValidBSLifeString, makeBSLifeString, readBSRuleString } from "formats/rule/bs";
+import { CONWAY_RULE_STRING_SB, SBStringNotation, getSBLifeStringError, isValidSBLifeString, makeSBLifeString, readSBRuleString } from "formats/rule/sb";
+import { CONWAY_LIFE_RULE_INTEGER, isValidLifeRuleInteger, makeLifeRuleInteger, readLifeRuleInteger } from "formats/rule/int"
+import { getErrorMessage } from "core/util";
+import { CONWAY_LIFE_RULE_DATA, LifeRuleData } from "formats/rule/ruleData";
 
 export { CONWAY_LIFE_RULE_DATA, CONWAY_RULE_STRING_BS, CONWAY_RULE_STRING_SB, LifeRuleData, CONWAY_LIFE_RULE_INTEGER  }
 

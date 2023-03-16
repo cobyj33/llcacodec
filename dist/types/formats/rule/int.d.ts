@@ -1,4 +1,4 @@
-import { LifeRuleData } from "./ruleData";
+import { LifeRuleData } from "formats/rule/ruleData";
 export declare const MAX_LIFE_INTEGER = 131071;
 export declare const CONWAY_LIFE_RULE_INTEGER = 6152;
 export declare function isValidLifeRuleInteger(lifeInteger: number): boolean;

@@ -1,9 +1,10 @@
-import { pushUTFBytes, byteArrayAsString, trimTrailing } from "../core/util";
-import { numberPairArrayToMatrix } from "../core/util"
-import { isNextChar, isNextSeq, readChar, readSeq } from "../core/stringStream"
+import { pushUTFBytes, byteArrayAsString, trimTrailing } from "core/util";
+import { numberPairArrayToMatrix } from "core/util"
+import { isNextChar, isNextSeq, readChar, readSeq } from "core/stringStream"
 
 const VALID_DEAD_CELL_CHARACTERS = ["."] as const;
 const VALID_LIVE_CELL_CHARACTERS = ["O", "*"] as const;
+
 
 export interface PlainTextStringDecodedContents {
     name: string

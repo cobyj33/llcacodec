@@ -1,9 +1,21 @@
-import { pushUTFBytes, byteArrayAsString } from "../core/util";
-import { isIntegerString } from "../core/util"
-import { Set2D } from "../core/set2D"
+import { pushUTFBytes, byteArrayAsString } from "core/util";
+import { isIntegerString } from "core/util"
+import { Set2D } from "core/set2D"
 
 const LIFE_106_HEADER = "#Life 1.06" as const
 const LIFE_106_FILE_EXTENSIONS = [".lif", ".life"] as const
+
+export function isLife106String(str: string): boolean {
+    return str.trim().startsWith(LIFE_106_HEADER)
+}
+
+// --------------------------------------------------------------
+// --------------------------------------------------------------
+// --------------------------------------------------------------
+// ------------------------- WRITING ----------------------------
+// --------------------------------------------------------------
+// --------------------------------------------------------------
+// --------------------------------------------------------------
 
 export function writeLife106String(data: [number, number][]): string {
     const byteArray: number[] = []
@@ -23,9 +35,14 @@ export function writeLife106String(data: [number, number][]): string {
     return byteArrayAsString(byteArray)
 }
 
-export function isLife106String(str: string): boolean {
-    return str.trim().startsWith(LIFE_106_HEADER)
-}
+// --------------------------------------------------------------
+// --------------------------------------------------------------
+// --------------------------------------------------------------
+// ------------------------- READING ----------------------------
+// --------------------------------------------------------------
+// --------------------------------------------------------------
+// --------------------------------------------------------------
+
 
 export function readLife106String(str: string): [number, number][] {
     if (str.trim().startsWith(LIFE_106_HEADER)) {

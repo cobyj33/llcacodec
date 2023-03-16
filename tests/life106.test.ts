@@ -1,4 +1,4 @@
-import { writeLife106String, readLife106String } from "../src/formats/life106"
+import { writeLife106String, readLife106String } from "../src/formats/file/life106"
 
 
 describe("Reading", () => {

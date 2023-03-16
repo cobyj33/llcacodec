@@ -1,4 +1,4 @@
-import { hello } from "../src/formats/life105";
+import { hello } from "../src/formats/file/life105";
 
 it("hello", () => {
   expect(hello()).toBe(5)

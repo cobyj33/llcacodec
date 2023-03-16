@@ -1,6 +1,6 @@
-import { isNextChar, isNextChars, isNextSeq, readChar, readChars, readCrampedNumber, readNext, readNumber, readNumbers } from "../core/stringStream"
-import { isDigit, isStrictEqualStringArray, throws } from "../core/util";
-import { LifeRuleData, readLifeRule, isValidLifeRule, CONWAY_RULE_STRING_BS, CONWAY_LIFE_RULE_DATA } from "./rule";
+import { isNextChar, isNextChars, isNextSeq, readChar, readChars, readCrampedNumber, readNext, readNumber, readNumbers } from "core/stringStream"
+import { isDigit, isStrictEqualStringArray, throws } from "core/util";
+import { LifeRuleData, readLifeRule, isValidLifeRule, CONWAY_RULE_STRING_BS, CONWAY_LIFE_RULE_DATA } from "formats/rule";
 
 interface HashLine {
     id: string,
@@ -35,6 +35,16 @@ const RLE_NEW_LINE_CHAR = "$"
 const RLE_TERMINATION_CHAR = "!"
 const DIGIT_DECIMAL_CHARACTERS = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"] as const
 const RLE_VALID_CHARACTERS = [RLE_DEAD_CELL_CHAR, RLE_LIVE_CELL_CHAR, RLE_NEW_LINE_CHAR, RLE_TERMINATION_CHAR, ...DIGIT_DECIMAL_CHARACTERS, "\n", "\r"] as const
+
+// --------------------------------------------------------------
+// --------------------------------------------------------------
+// --------------------------------------------------------------
+// ------------------------- READING ----------------------------
+// --------------------------------------------------------------
+// --------------------------------------------------------------
+// --------------------------------------------------------------
+
+
 
 function isValidRLEDataCharacter(char: string): boolean {
     return RLE_VALID_CHARACTERS.some(validChar => validChar === char)
@@ -248,3 +258,4 @@ function readRLEStringPattern(file: string): [number, number][] {
 // --------------------------------------------------------------
 // --------------------------------------------------------------
 // --------------------------------------------------------------
+

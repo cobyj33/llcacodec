@@ -1,4 +1,4 @@
-import { LifeRuleData } from "./ruleData";
+import { LifeRuleData } from "formats/rule/ruleData";
 export declare const CONWAY_RULE_STRING_SB = "23/3";
 export type SBStringNotation = "s/b";
 export declare function getSBLifeStringError(lifeString: string): string | "";

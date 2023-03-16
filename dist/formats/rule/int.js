@@ -1,7 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.makeLifeRuleInteger = exports.readLifeRuleInteger = exports.isValidLifeRuleInteger = exports.CONWAY_LIFE_RULE_INTEGER = exports.MAX_LIFE_INTEGER = void 0;
-const ruleData_1 = require("./ruleData");
+const ruleData_1 = require("formats/rule/ruleData");
 exports.MAX_LIFE_INTEGER = 131071; // 2^17 - 1
 exports.CONWAY_LIFE_RULE_INTEGER = 6152;
 function getLifeRuleIntegerError(lifeInteger) {

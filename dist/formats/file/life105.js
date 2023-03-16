@@ -2,8 +2,8 @@
 // Life 1.05 File Format Spec: https://conwaylife.com/wiki/Life_1.05
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.hello = exports.readLife105String = exports.isLife105String = void 0;
-const stringStream_1 = require("../core/stringStream");
-const rule_1 = require("./rule");
+const stringStream_1 = require("core/stringStream");
+const rule_1 = require("formats/rule");
 const LIFE_105_HEADER = "#Life 1.05";
 const MAX_DESCRIPTION_LINE_COUNT = 22;
 const LIFE_105_MAX_LINE_LENGTH = 80;

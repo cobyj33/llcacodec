@@ -1,7 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.readBSRuleString = exports.makeBSLifeString = exports.isValidBSLifeString = exports.getBSLifeStringError = exports.CONWAY_RULE_STRING_BS = void 0;
-const ruleData_1 = require("./ruleData");
+const ruleData_1 = require("formats/rule/ruleData");
 exports.CONWAY_RULE_STRING_BS = "B3/S23";
 /**
  *

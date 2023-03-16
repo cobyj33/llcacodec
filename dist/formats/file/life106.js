@@ -1,11 +1,22 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.readLife106String = exports.isLife106String = exports.writeLife106String = void 0;
-const util_1 = require("../core/util");
-const util_2 = require("../core/util");
-const set2D_1 = require("../core/set2D");
+exports.readLife106String = exports.writeLife106String = exports.isLife106String = void 0;
+const util_1 = require("core/util");
+const util_2 = require("core/util");
+const set2D_1 = require("core/set2D");
 const LIFE_106_HEADER = "#Life 1.06";
 const LIFE_106_FILE_EXTENSIONS = [".lif", ".life"];
+function isLife106String(str) {
+    return str.trim().startsWith(LIFE_106_HEADER);
+}
+exports.isLife106String = isLife106String;
+// --------------------------------------------------------------
+// --------------------------------------------------------------
+// --------------------------------------------------------------
+// ------------------------- WRITING ----------------------------
+// --------------------------------------------------------------
+// --------------------------------------------------------------
+// --------------------------------------------------------------
 function writeLife106String(data) {
     const byteArray = [];
     (0, util_1.pushUTFBytes)(byteArray, LIFE_106_HEADER + "\n");
@@ -21,10 +32,13 @@ function writeLife106String(data) {
     return (0, util_1.byteArrayAsString)(byteArray);
 }
 exports.writeLife106String = writeLife106String;
-function isLife106String(str) {
-    return str.trim().startsWith(LIFE_106_HEADER);
-}
-exports.isLife106String = isLife106String;
+// --------------------------------------------------------------
+// --------------------------------------------------------------
+// --------------------------------------------------------------
+// ------------------------- READING ----------------------------
+// --------------------------------------------------------------
+// --------------------------------------------------------------
+// --------------------------------------------------------------
 function readLife106String(str) {
     if (str.trim().startsWith(LIFE_106_HEADER)) {
         const output = [];

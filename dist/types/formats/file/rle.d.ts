@@ -1,4 +1,4 @@
-import { LifeRuleData } from "./rule";
+import { LifeRuleData } from "formats/rule";
 interface HashLine {
     id: string;
     content: string;

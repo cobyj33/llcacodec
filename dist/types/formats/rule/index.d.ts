@@ -1,7 +1,7 @@
-import { CONWAY_RULE_STRING_BS } from "./bs";
-import { CONWAY_RULE_STRING_SB } from "./sb";
-import { CONWAY_LIFE_RULE_INTEGER } from "./int";
-import { CONWAY_LIFE_RULE_DATA, LifeRuleData } from "./ruleData";
+import { CONWAY_RULE_STRING_BS } from "formats/rule/bs";
+import { CONWAY_RULE_STRING_SB } from "formats/rule/sb";
+import { CONWAY_LIFE_RULE_INTEGER } from "formats/rule/int";
+import { CONWAY_LIFE_RULE_DATA, LifeRuleData } from "formats/rule/ruleData";
 export { CONWAY_LIFE_RULE_DATA, CONWAY_RULE_STRING_BS, CONWAY_RULE_STRING_SB, LifeRuleData, CONWAY_LIFE_RULE_INTEGER };
 export type LifeRuleStringNotation = "b/s" | "s/b" | "int";
 export declare function isValidLifeRule(rule: string, format: "b/s"): boolean;
