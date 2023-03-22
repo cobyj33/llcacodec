@@ -3,14 +3,19 @@ import { readPlainTextString, isPlainTextString, PlainTextStringDecodedContents 
 import { RLEFileData, isRLEString, readRLEString } from "./formats/file/rle"
 import { Life105FileData, isLife105String, readLife105String } from "./formats/file/life105"
 
+export { LifeRuleData, CONWAY_LIFE_RULE_DATA } from "./formats/rule/ruleData"
+export { readLifeRule, makeLifeRule, isValidLifeRule, getLifeRuleFormat } from "./formats/rule"
+
+
 type SupportedLifeLikeFormats = "life 1.06" | "life 1.05" | "plaintext" | "rle"
+type SupportedWriteFormats = "life 1.06" | "plaintext"
     
 export function readPatternCoordinatesFromFile<T extends SupportedLifeLikeFormats>(data: string, format: T | ""): [number, number][] {
     switch (format) {
-        case "plaintext": return readPlainTextString(data).cellCoordinates
+        case "plaintext": return readPlainTextString(data).liveCoordinates
         case "life 1.06": return readLife106String(data)
-        case "life 1.05": return readLife105String(data).cellCoordinates
-        case "rle": return readRLEString(data).coordinates
+        case "life 1.05": return readLife105String(data).liveCoordinates
+        case "rle": return readRLEString(data).liveCoordinates
         case "": {
             const format = getLifeFileFormat(data)
             if (format !== "N/A") {

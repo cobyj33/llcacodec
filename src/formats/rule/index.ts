@@ -4,7 +4,7 @@ import { CONWAY_LIFE_RULE_INTEGER, isValidLifeRuleInteger, makeLifeRuleInteger, 
 import { CONWAY_LIFE_RULE_DATA, LifeRuleData } from "./ruleData";
 import { getErrorMessage } from "../../core/util";
 
-export { CONWAY_LIFE_RULE_DATA, CONWAY_RULE_STRING_BS, CONWAY_RULE_STRING_SB, LifeRuleData, CONWAY_LIFE_RULE_INTEGER  }
+export { CONWAY_LIFE_RULE_DATA, CONWAY_RULE_STRING_BS, CONWAY_RULE_STRING_SB, LifeRuleData, CONWAY_LIFE_RULE_INTEGER }
 
 export type LifeRuleStringNotation = "b/s" | "s/b" | "int"
 

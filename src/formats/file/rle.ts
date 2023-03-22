@@ -16,7 +16,7 @@ export interface RLEFileData {
     height: number,
     ruleString: string,
     rule: LifeRuleData,
-    coordinates: [number, number][],
+    liveCoordinates: [number, number][],
     hashLines: HashLine[],
     creationData: string
 }
@@ -51,7 +51,7 @@ function isValidRLEDataCharacter(char: string): boolean {
 }
 
 interface ParsedRLEData {
-    coordinates: [number, number][],
+    liveCoordinates: [number, number][],
     pattern: string,
     endingIndex: number,
     readonly topleft: [number, number]
@@ -69,7 +69,7 @@ export function readRLEData(rlePattern: string, topleft: [number, number] = [0, 
     let currRun: string[] = []
 
     const rleData: ParsedRLEData = {
-        coordinates: [],
+        liveCoordinates: [],
         pattern: "",
         endingIndex: 0,
         topleft: [...topleft] 
@@ -103,7 +103,7 @@ export function readRLEData(rlePattern: string, topleft: [number, number] = [0, 
             currCoordinate[0] += runLength;
 
             if (rlePattern[i] === RLE_LIVE_CELL_CHAR) {
-                rleData.coordinates.push([...currCoordinate])
+                rleData.liveCoordinates.push([...currCoordinate])
             }
 
         } else if (rlePattern[i] === RLE_NEW_LINE_CHAR) {
@@ -181,7 +181,7 @@ export function readRLEString(file: string): RLEFileData {
         height: 0,
         ruleString: CONWAY_RULE_STRING_BS,
         rule: CONWAY_LIFE_RULE_DATA(),
-        coordinates: [],
+        liveCoordinates: [],
         hashLines: []
     }
     
@@ -233,7 +233,7 @@ export function readRLEString(file: string): RLEFileData {
     const afterHeader = lines.slice(currentLine).join("\n") 
     const data = readRLEData(afterHeader, rleFileData.topleft !== null ? rleFileData.topleft : [0, 0])
 
-    rleFileData.coordinates = data.coordinates
+    rleFileData.liveCoordinates = data.liveCoordinates
     if (data.endingIndex + 1 !== afterHeader.length - 1) {
         const afterRLEData = afterHeader.substring(data.endingIndex + 1)
         const linesAfterRLEData = afterRLEData.split("\n")

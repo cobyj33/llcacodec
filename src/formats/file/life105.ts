@@ -37,12 +37,12 @@ interface Life105CellBlock {
     width: number,
     height: number,
     pattern: (0 | 1)[][]
-    cellCoordinates: [number, number][]
+    liveCoordinates: [number, number][]
 }
 
 export interface Life105FileData {
     cellBlocks: Life105CellBlock[]
-    cellCoordinates: [number, number][]
+    liveCoordinates: [number, number][]
     descriptions: string[],
     ruleString: string | null,
     rule: LifeRuleData | null,
@@ -60,7 +60,7 @@ function readLife105CellBlock(data: string): [Life105CellBlock, string] {
             width: 0,
             height: 0,
             pattern: [],
-            cellCoordinates: []
+            liveCoordinates: []
         }
 
         const [pointLine, afterPointLine] = readLine(data)
@@ -78,7 +78,7 @@ function readLife105CellBlock(data: string): [Life105CellBlock, string] {
             for (let i = 0; i < cellBlock.width; i++) {
                 if (currentLine[i] === LIFE_105_ALIVE_CHAR) {
                     row[i] = 1
-                    cellBlock.cellCoordinates.push([x + i, y - cellBlock.height])
+                    cellBlock.liveCoordinates.push([x + i, y - cellBlock.height])
                 }
             }
             cellBlock.pattern.push(row)
@@ -114,7 +114,7 @@ export function readLife105String(file: string): Life105FileData {
 
     const life105FileData: Life105FileData = {
         cellBlocks: [],
-        cellCoordinates: [],
+        liveCoordinates: [],
         descriptions: [],
         ruleString: CONWAY_RULE_STRING_SB,
         rule: CONWAY_LIFE_RULE_DATA(),
@@ -166,7 +166,7 @@ export function readLife105String(file: string): Life105FileData {
                 console.log("Read cell block: ", cellBlockReadingData[0])
                 console.log("Remaining: ", cellBlockReadingData[1])
                 life105FileData.cellBlocks.push(cellBlockReadingData[0])
-                life105FileData.cellCoordinates.push(...cellBlockReadingData[0].cellCoordinates)
+                life105FileData.liveCoordinates.push(...cellBlockReadingData[0].liveCoordinates)
                 remainingCellBlocksString = cellBlockReadingData[1]
             } catch (err) {
                 break;

@@ -10,7 +10,18 @@ cacodec.js is a library written in Typescript to decode and encode [Life-Like Ce
 > improvements as well.
 
 cacodec.js can be used in both the browser and in node.js, and is compiled to ES6 syntax.
-cacodec.js has no dependencies 
+cacodec.js has no dependencies, but this isn't guaranteed to stay true as the library grows
+
+## Table of Contents
+
+- [cacodec.js](#cacodecjs)
+  - [Table of Contents](#table-of-contents)
+  - [API](#api)
+  - [Rules](#rules)
+  - [File Formats](#file-formats)
+    - [Supported File Formats](#supported-file-formats)
+    - [Unsupported File Formats](#unsupported-file-formats)
+
 
 ## API
 
@@ -18,23 +29,24 @@ cacodec.js comes with two main functions,
 
 ## Rules
 
-- B/S Notation [LifeWiki](https://conwaylife.com/wiki/Rulestring)
-- S/B Notation [LifeWiki](https://conwaylife.com/wiki/Rulestring)
-- Rule Integer [LifeWiki](https://conwaylife.com/wiki/Rulestring)
+- B/S Notation (Encoding and Decoding) [LifeWiki](https://conwaylife.com/wiki/Rulestring)
+- S/B Notation (Encoding and Decoding) [LifeWiki](https://conwaylife.com/wiki/Rulestring)
+- Rule Integer (Encoding and Decoding) [LifeWiki](https://conwaylife.com/wiki/Rulestring)
 
 ## File Formats
 
-### Supported (Encoding and Decoding)
+### Supported File Formats
 
-- Life 1.05 [LifeWiki](https://conwaylife.com/wiki/Life_1.05)
-- Life 1.06 [LifeWiki](https://conwaylife.com/wiki/Life_1.06)
-- plaintext [LifeWiki](https://conwaylife.com/wiki/Plaintext)
-- RLE (Run Length Encoded) [LifeWiki](https://conwaylife.com/wiki/Run_Length_Encoded)
+- Life 1.05 (Decoding and Encoding) [LifeWiki](https://conwaylife.com/wiki/Life_1.05)
+- Life 1.06 (Decoding and Encoding) [LifeWiki](https://conwaylife.com/wiki/Life_1.06)
+- plaintext (Decoding and Encoding) [LifeWiki](https://conwaylife.com/wiki/Plaintext)
+- RLE (Run Length Encoded) (Decoding) [LifeWiki](https://conwaylife.com/wiki/Run_Length_Encoded)
 
-### Unsupported & Further Reading
+### Unsupported File Formats
+
+- Extended RLE Format
+- MacroCell Format
+- Rule Format
+- Small Object Format [LifeWiki](https://conwaylife.com/wiki/Small_object_format) [Pentdecathlon](https://web.archive.org/web/20211102020428/http://pentadecathlon.com/objects/definitions/definitions.php)
 
 - [Golly](https://golly.sourceforge.net/) File Formats: [Golly Source Format Documentation](https://golly.sourceforge.net/Help/formats.html#rle)
-  - Extended RLE Format
-  - MacroCell Format
-  - Rule Format
-- Small Object Format [LifeWiki](https://conwaylife.com/wiki/Small_object_format) [Pentdecathlon](https://web.archive.org/web/20211102020428/http://pentadecathlon.com/objects/definitions/definitions.php)

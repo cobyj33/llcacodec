@@ -1,4 +1,4 @@
-import { readPlainTextDiagramToXYCoordinates, readPlainTextString, writePlainTextFromCoordinates, writePlainTextMatrix } from "../src/formats/file/plaintext";
+import { readPlainTextDiagramToXY, readPlainTextString, writePlainTextFromCoordinates, writePlainTextMatrix } from "../src/formats/file/plaintext";
 
 describe("Reading", () => {
 
@@ -21,7 +21,7 @@ describe("Reading", () => {
                 [0, 0, 0, 0, 1, 0, 0, 0, 0],
                 [0, 0, 1, 0, 0, 0, 0, 0, 0],
                 [0, 0, 0, 0, 0, 0, 0, 0, 0]],
-                cellCoordinates: [
+                liveCoordinates: [
                     [1, -1],
                     [2, -1],
                     [5, -1],
@@ -55,7 +55,7 @@ describe("Reading", () => {
                 [0, 0, 0, 0, 1, 0, 0, 0, 0],
                 [0, 0, 1, 0, 0, 0, 0, 0, 0],
                 [0, 0, 0, 0, 0, 0, 0, 0, 0]],
-                cellCoordinates: [
+                liveCoordinates: [
                     [1, -1],
                     [2, -1],
                     [5, -1],
@@ -88,7 +88,7 @@ describe("Reading", () => {
                 [0, 0, 0, 0, 1, 0, 0, 0, 0],
                 [0, 0, 1, 0, 0, 0, 0, 0, 0],
                 [0, 0, 0, 0, 0, 0, 0, 0, 0]],
-                cellCoordinates: [
+                liveCoordinates: [
                     [1, -1],
                     [2, -1],
                     [5, -1],
@@ -121,7 +121,7 @@ describe("Reading", () => {
                 [0, 0, 0, 0, 1, 0, 0, 0, 0],
                 [0, 0, 1, 0, 0, 0, 0, 0, 0],
                 [0, 0, 0, 0, 0, 0, 0, 0, 0]],
-                cellCoordinates: [
+                liveCoordinates: [
                     [1, -1],
                     [2, -1],
                     [5, -1],
@@ -154,7 +154,7 @@ describe("Reading", () => {
                 [0, 0, 0, 0, 1, 0, 0, 0, 0],
                 [0, 0, 1, 0, 0, 0, 0, 0, 0],
                 [0, 0, 0, 0, 0, 0, 0, 0, 0]],
-                cellCoordinates: [
+                liveCoordinates: [
                     [1, -1],
                     [2, -1],
                     [5, -1],
@@ -322,9 +322,9 @@ describe("write plain text matrix", () => {
         )
     })
 
-    describe("readPlainTextDiagramToXYCoordinates", () => {
+    describe("readPlainTextDiagramToXY", () => {
 
-        expect(readPlainTextDiagramToXYCoordinates(
+        expect(readPlainTextDiagramToXY(
             ".........\n" +
             ".OO..OOO.\n" +
             "....O....\n" + 
