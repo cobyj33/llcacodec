@@ -1,4 +1,4 @@
-import { LifeRuleData, getLifeRuleDataError, isValidLifeRuleData } from "formats/rule/ruleData";
+import { LifeRuleData, getLifeRuleDataError, isValidLifeRuleData } from "./ruleData";
 
 
 export const MAX_LIFE_INTEGER = 131071; // 2^17 - 1

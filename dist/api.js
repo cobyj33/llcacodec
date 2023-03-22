@@ -9,6 +9,8 @@ function readPatternCoordinatesFromFile(data, format) {
     switch (format) {
         case "plaintext": return (0, plaintext_1.readPlainTextString)(data).cellCoordinates;
         case "life 1.06": return (0, life106_1.readLife106String)(data);
+        case "life 1.05": return (0, life105_1.readLife105String)(data).cellCoordinates;
+        case "rle": return (0, rle_1.readRLEString)(data).coordinates;
         case "": {
             const format = getLifeFileFormat(data);
             if (format !== "N/A") {
@@ -35,13 +37,13 @@ function getLifeFileFormat(data) {
     if ((0, life106_1.isLife106String)(data)) {
         return "life 1.06";
     }
-    if ((0, plaintext_1.isPlainTextString)(data)) {
+    else if ((0, plaintext_1.isPlainTextString)(data)) {
         return "plaintext";
     }
-    if ((0, rle_1.isRLEString)(data)) {
+    else if ((0, rle_1.isRLEString)(data)) {
         return "rle";
     }
-    if ((0, life105_1.isLife105String)(data)) {
+    else if ((0, life105_1.isLife105String)(data)) {
         return "life 1.05";
     }
     return "N/A";

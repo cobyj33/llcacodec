@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.isStrictEqualBooleanArray = exports.isStrictEqualStringArray = exports.isStrictEqualNumberArray = exports.isStrictEqualArray = exports.byteArrayAsString = exports.pushUTFBytes = exports.reverseBits = exports.getErrorMessage = exports.isError = exports.numberPairArrayToMatrix = exports.getCellBoundingBox = exports.isNumberPairArray = exports.isIntegerString = exports.trimTrailing = exports.isNumericString = exports.isDigit = exports.throws = exports.isRectangularMatrix = void 0;
+exports.isStrictEqualBooleanArray = exports.isStrictEqualStringArray = exports.isStrictEqualNumberArray = exports.isStrictEqualArray = exports.byteArrayAsASCII = exports.pushASCIIBytes = exports.reverseBits = exports.getErrorMessage = exports.isError = exports.numberPairArrayToMatrix = exports.getCellBoundingBox = exports.isNumberPairArray = exports.isIntegerString = exports.trimTrailing = exports.isNumericString = exports.isDigit = exports.throws = exports.isRectangularMatrix = void 0;
 /**
  * Test if a matrix is rectangular or not
  *
@@ -138,14 +138,14 @@ function reverseBits(num) {
     return o;
 }
 exports.reverseBits = reverseBits;
-function pushUTFBytes(byteData, str) {
+function pushASCIIBytes(byteData, str) {
     byteData.push(...str.split("").map(ch => ch.charCodeAt(0)));
 }
-exports.pushUTFBytes = pushUTFBytes;
-function byteArrayAsString(byteData) {
+exports.pushASCIIBytes = pushASCIIBytes;
+function byteArrayAsASCII(byteData) {
     return byteData.map(val => String.fromCharCode(val)).join("");
 }
-exports.byteArrayAsString = byteArrayAsString;
+exports.byteArrayAsASCII = byteArrayAsASCII;
 /**
  * Determines if two arrays are strictly the same
  *

@@ -1,7 +1,7 @@
-import { readLife106String, isLife106String } from "formats/file/life106"
-import { readPlainTextString, isPlainTextString, PlainTextStringDecodedContents } from "formats/file/plaintext"
-import { RLEFileData, isRLEString, readRLEString } from "formats/file/rle"
-import { Life105FileData, isLife105String, readLife105String } from "formats/file/life105"
+import { readLife106String, isLife106String } from "./formats/file/life106"
+import { readPlainTextString, isPlainTextString, PlainTextStringDecodedContents } from "./formats/file/plaintext"
+import { RLEFileData, isRLEString, readRLEString } from "./formats/file/rle"
+import { Life105FileData, isLife105String, readLife105String } from "./formats/file/life105"
 
 type SupportedLifeLikeFormats = "life 1.06" | "life 1.05" | "plaintext" | "rle"
     
@@ -9,6 +9,8 @@ export function readPatternCoordinatesFromFile<T extends SupportedLifeLikeFormat
     switch (format) {
         case "plaintext": return readPlainTextString(data).cellCoordinates
         case "life 1.06": return readLife106String(data)
+        case "life 1.05": return readLife105String(data).cellCoordinates
+        case "rle": return readRLEString(data).coordinates
         case "": {
             const format = getLifeFileFormat(data)
             if (format !== "N/A") {
@@ -38,15 +40,13 @@ export function readLifeFile(data: string, format: SupportedLifeLikeFormats | ""
 export function getLifeFileFormat(data: string): SupportedLifeLikeFormats | "N/A" {
     if (isLife106String(data)) {
         return "life 1.06"
-    }
-    if (isPlainTextString(data)) {
+    } else if (isPlainTextString(data)) {
         return "plaintext"
-    }
-    if (isRLEString(data)) {
+    } else if (isRLEString(data)) {
         return "rle"
-    }
-    if (isLife105String(data)) {
+    } else if (isLife105String(data)) {
         return "life 1.05"
     }
+    
     return "N/A"
 }

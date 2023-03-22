@@ -1,25 +1,25 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.isPlainTextDiagram = exports.readPlainTextString = exports.readPlainTextPattern = exports.isPlainTextString = exports.writePlainTextMatrix = exports.writePlainTextFromCoordinates = exports.readPlainTextDiagramToRowColCoordinates = exports.readPlainTextDiagramToMatrix = exports.readPlainTextDiagramToXYCoordinates = void 0;
+exports.isPlainTextDiagram = exports.readPlainTextString = exports.isPlainTextString = exports.writePlainTextMatrix = exports.writePlainTextFromCoordinates = exports.readPlainTextDiagramToRowColCoordinates = exports.readPlainTextDiagramToMatrix = exports.readPlainTextDiagramToXYCoordinates = void 0;
 const util_1 = require("core/util");
 const util_2 = require("core/util");
-const stringStream_1 = require("core/stringStream");
+const strRead_1 = require("core/strRead");
 const VALID_DEAD_CELL_CHARACTERS = ["."];
 const VALID_LIVE_CELL_CHARACTERS = ["O", "*"];
 function writePlainTextMetadata(byteArray, name, description) {
     const newArray = [...byteArray];
-    (0, util_1.pushUTFBytes)(newArray, "!Name: " + name + "\n");
+    (0, util_1.pushASCIIBytes)(newArray, "!Name: " + name + "\n");
     if (description.length > 0) {
         if (typeof (description) === "string") {
             const lines = description.split("\n");
-            lines.forEach(line => (0, util_1.pushUTFBytes)(newArray, `!${line}\n`));
+            lines.forEach(line => (0, util_1.pushASCIIBytes)(newArray, `!${line}\n`));
         }
         else {
             const lines = description.flatMap(lines => lines.split("\n"));
-            lines.forEach(line => (0, util_1.pushUTFBytes)(newArray, `!${line}\n`));
+            lines.forEach(line => (0, util_1.pushASCIIBytes)(newArray, `!${line}\n`));
         }
     }
-    (0, util_1.pushUTFBytes)(newArray, "!\n");
+    (0, util_1.pushASCIIBytes)(newArray, "!\n");
     return newArray;
 }
 function readPlainTextDiagramToXYCoordinates(str) {
@@ -77,15 +77,15 @@ function writePlainTextMatrix(data, name, description) {
     for (let row = 0; row < height; row++) {
         for (let col = 0; col < width; col++) {
             if (col >= data[row].length) {
-                (0, util_1.pushUTFBytes)(byteArray, ".");
+                (0, util_1.pushASCIIBytes)(byteArray, ".");
             }
             else {
-                (0, util_1.pushUTFBytes)(byteArray, data[row][col] === 0 ? "." : "O");
+                (0, util_1.pushASCIIBytes)(byteArray, data[row][col] === 0 ? "." : "O");
             }
         }
-        (0, util_1.pushUTFBytes)(byteArray, "\n");
+        (0, util_1.pushASCIIBytes)(byteArray, "\n");
     }
-    return (0, util_1.byteArrayAsString)(byteArray);
+    return (0, util_1.byteArrayAsASCII)(byteArray);
 }
 exports.writePlainTextMatrix = writePlainTextMatrix;
 function isPlainTextString(str) {
@@ -98,10 +98,6 @@ function isPlainTextString(str) {
     }
 }
 exports.isPlainTextString = isPlainTextString;
-function readPlainTextPattern(file) {
-    return readPlainTextString(file).cellCoordinates;
-}
-exports.readPlainTextPattern = readPlainTextPattern;
 function readPlainTextString(str) {
     if (str.length === 0) {
         throw new Error("");
@@ -117,10 +113,10 @@ function readPlainTextString(str) {
         cellCoordinates: []
     };
     //reads header line
-    if ((0, stringStream_1.isNextChar)(lines[0], "!")) {
-        const [, afterHeaderExclamation] = (0, stringStream_1.readChar)(lines[0], "!");
-        if ((0, stringStream_1.isNextSeq)(afterHeaderExclamation, "Name:")) {
-            contents.name = (0, stringStream_1.readSeq)(afterHeaderExclamation, "Name:")[1].trim();
+    if ((0, strRead_1.isNextChar)(lines[0], "!")) {
+        const [, afterHeaderExclamation] = (0, strRead_1.readChar)(lines[0], "!");
+        if ((0, strRead_1.isNextSeq)(afterHeaderExclamation, "Name:")) {
+            contents.name = (0, strRead_1.readSeq)(afterHeaderExclamation, "Name:")[1].trim();
         }
         else {
             contents.name = afterHeaderExclamation.trim();
@@ -140,8 +136,8 @@ function readPlainTextString(str) {
     }
     //reading description lines
     let currentLine = 1;
-    while ((0, stringStream_1.isNextChar)(lines[currentLine], "!")) {
-        const [, description] = (0, stringStream_1.readChar)(lines[currentLine], "!");
+    while ((0, strRead_1.isNextChar)(lines[currentLine], "!")) {
+        const [, description] = (0, strRead_1.readChar)(lines[currentLine], "!");
         if (description.trim().length > 0) {
             contents.description.push(description.trim());
         }

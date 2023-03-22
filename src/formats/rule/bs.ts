@@ -1,4 +1,4 @@
-import { LifeRuleData, getLifeRuleDataError, isValidLifeRuleData } from "formats/rule/ruleData";
+import { LifeRuleData, getLifeRuleDataError, isValidLifeRuleData } from "../rule/ruleData";
 
 export const CONWAY_RULE_STRING_BS = "B3/S23"
 export type BSStringNotation = "b/s"

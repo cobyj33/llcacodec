@@ -2,7 +2,7 @@
 // Life 1.05 File Format Spec: https://conwaylife.com/wiki/Life_1.05
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.hello = exports.readLife105String = exports.isLife105String = void 0;
-const stringStream_1 = require("core/stringStream");
+const strRead_1 = require("core/strRead");
 const rule_1 = require("formats/rule");
 const LIFE_105_HEADER = "#Life 1.05";
 const MAX_DESCRIPTION_LINE_COUNT = 22;
@@ -11,7 +11,7 @@ const Life105FileExtensions = [".lif", ".life"];
 const LIFE_105_DEAD_CHAR = ".";
 const LIFE_105_ALIVE_CHAR = "*";
 function readLife105CellBlock(data) {
-    if ((0, stringStream_1.isNextChars)(data, "#P")) {
+    if ((0, strRead_1.isNextChars)(data, "#P")) {
         const cellBlock = {
             x: 0,
             y: 0,
@@ -20,13 +20,13 @@ function readLife105CellBlock(data) {
             pattern: [],
             cellCoordinates: []
         };
-        const [pointLine, afterPointLine] = (0, stringStream_1.readLine)(data);
-        const [, afterPointDeclaration] = (0, stringStream_1.readChars)(pointLine, "#P");
-        const [[x, y]] = (0, stringStream_1.readIntegers)(afterPointDeclaration, 2);
+        const [pointLine, afterPointLine] = (0, strRead_1.readLine)(data);
+        const [, afterPointDeclaration] = (0, strRead_1.readChars)(pointLine, "#P");
+        const [[x, y]] = (0, strRead_1.readIntegers)(afterPointDeclaration, 2);
         cellBlock.x = x;
         cellBlock.y = y;
-        let [currentLine, currentRemainingStream] = (0, stringStream_1.readLine)(afterPointLine);
-        while (!(0, stringStream_1.isNextChars)(currentLine, "#P")) { // exits when the next #P line is hit
+        let [currentLine, currentRemainingStream] = (0, strRead_1.readLine)(afterPointLine);
+        while (!(0, strRead_1.isNextChars)(currentLine, "#P")) { // exits when the next #P line is hit
             cellBlock.width = Math.max(cellBlock.width, currentLine.length);
             const row = new Array(cellBlock.width).fill(0);
             for (let i = 0; i < cellBlock.width; i++) {
@@ -36,8 +36,8 @@ function readLife105CellBlock(data) {
                 }
             }
             cellBlock.pattern.push(row);
-            const [nextLine, nextRemainingStream] = (0, stringStream_1.readLine)(currentRemainingStream);
-            if ((0, stringStream_1.isNextChars)(nextLine, "#P")) {
+            const [nextLine, nextRemainingStream] = (0, strRead_1.readLine)(currentRemainingStream);
+            if ((0, strRead_1.isNextChars)(nextLine, "#P")) {
                 break;
             }
             currentLine = nextLine;
@@ -75,9 +75,9 @@ function readLife105String(file) {
         throw new Error("");
     }
     let currentLine = 1;
-    while ((0, stringStream_1.isNextChar)(lines[currentLine], "#")) {
-        const [, afterHash] = (0, stringStream_1.readChar)(lines[currentLine], "#");
-        const [id, afterID] = (0, stringStream_1.readChar)(afterHash);
+    while ((0, strRead_1.isNextChar)(lines[currentLine], "#")) {
+        const [, afterHash] = (0, strRead_1.readChar)(lines[currentLine], "#");
+        const [id, afterID] = (0, strRead_1.readChar)(afterHash);
         const trimmedContent = afterID.trim();
         if (id === "D") {
             life105FileData.descriptions.push(trimmedContent);
@@ -100,7 +100,7 @@ function readLife105String(file) {
         });
         currentLine++;
     }
-    if ((0, stringStream_1.isNextChars)(lines[currentLine], "#P")) {
+    if ((0, strRead_1.isNextChars)(lines[currentLine], "#P")) {
         const cellBlocksString = lines.slice(currentLine).join("\n").trim();
         let remainingCellBlocksString = cellBlocksString;
         while (remainingCellBlocksString.length > 0) {

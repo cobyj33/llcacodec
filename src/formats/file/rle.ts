@@ -1,6 +1,6 @@
-import { isNextChar, isNextChars, isNextSeq, readChar, readChars, readCrampedNumber, readNext, readNumber, readNumbers } from "core/stringStream"
-import { isDigit, isStrictEqualStringArray, throws } from "core/util";
-import { LifeRuleData, readLifeRule, isValidLifeRule, CONWAY_RULE_STRING_BS, CONWAY_LIFE_RULE_DATA } from "formats/rule";
+import { isNextChar, isNextChars, isNextSeq, readChar, readChars, readCrampedNumber, readNext, readNumber, readNumbers } from "../../core/strRead"
+import { numberPairArrayToMatrix, isDigit, isStrictEqualStringArray, throws  } from "../../core/util"
+import { LifeRuleData, readLifeRule, isValidLifeRule, CONWAY_RULE_STRING_BS, CONWAY_LIFE_RULE_DATA } from "../rule";
 
 interface HashLine {
     id: string,
@@ -244,10 +244,6 @@ export function readRLEString(file: string): RLEFileData {
     //Everything after this is considered a comment
 
     return rleFileData
-}
-
-function readRLEStringPattern(file: string): [number, number][] {
-    return readRLEString(file).coordinates
 }
 
 

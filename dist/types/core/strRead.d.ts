@@ -77,4 +77,4 @@ export declare function readCrampedPositiveInteger(data: string): [number, strin
  * @returns
  */
 export declare function readNext(data: string): [string, string];
-//# sourceMappingURL=stringStream.d.ts.map
+//# sourceMappingURL=strRead.d.ts.map

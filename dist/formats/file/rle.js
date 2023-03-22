@@ -1,7 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.readRLEString = exports.isRLEString = exports.readRLEStringHeader = exports.readRLEData = void 0;
-const stringStream_1 = require("core/stringStream");
+const strRead_1 = require("core/strRead");
 const util_1 = require("core/util");
 const rule_1 = require("formats/rule");
 const RLE_DEAD_CELL_CHAR = "b";
@@ -84,15 +84,15 @@ function readRLEStringHeader(headerLine) {
         rule: null,
         full: trimmed
     };
-    const [, afterXEquals] = (0, stringStream_1.readChars)(trimmed, "x=");
-    const [width, afterWidth] = (0, stringStream_1.readCrampedNumber)(afterXEquals);
+    const [, afterXEquals] = (0, strRead_1.readChars)(trimmed, "x=");
+    const [width, afterWidth] = (0, strRead_1.readCrampedNumber)(afterXEquals);
     ruleFileHeaderData.width = width;
-    const [, afterYEquals] = (0, stringStream_1.readChars)(afterWidth, ",y=");
-    const [height, afterHeight] = (0, stringStream_1.readCrampedNumber)(afterYEquals);
+    const [, afterYEquals] = (0, strRead_1.readChars)(afterWidth, ",y=");
+    const [height, afterHeight] = (0, strRead_1.readCrampedNumber)(afterYEquals);
     ruleFileHeaderData.height = height;
-    if ((0, stringStream_1.isNextChars)(afterHeight, ",rule=")) {
-        const [, afterRule] = (0, stringStream_1.readChars)(afterHeight, ",rule=");
-        const [rule, end] = (0, stringStream_1.readNext)(afterRule);
+    if ((0, strRead_1.isNextChars)(afterHeight, ",rule=")) {
+        const [, afterRule] = (0, strRead_1.readChars)(afterHeight, ",rule=");
+        const [rule, end] = (0, strRead_1.readNext)(afterRule);
         if ((0, rule_1.isValidLifeRule)(rule)) {
             ruleFileHeaderData.rule = (0, rule_1.readLifeRule)(rule);
             ruleFileHeaderData.ruleString = rule;
@@ -130,9 +130,9 @@ function readRLEString(file) {
         hashLines: []
     };
     //commented lines
-    while ((0, stringStream_1.isNextChar)(lines[currentLine], "#")) {
-        const [, afterHashTag] = (0, stringStream_1.readChar)(lines[currentLine], "#");
-        const [id, afterID] = (0, stringStream_1.readChar)(afterHashTag);
+    while ((0, strRead_1.isNextChar)(lines[currentLine], "#")) {
+        const [, afterHashTag] = (0, strRead_1.readChar)(lines[currentLine], "#");
+        const [id, afterID] = (0, strRead_1.readChar)(afterHashTag);
         const content = afterID.trim();
         if (content.length > 0) {
             if (id === "C" || id === "c") {
@@ -145,7 +145,7 @@ function readRLEString(file) {
                 rleFileData.creationData = content;
             }
             else if (id === "P" || id === "R") {
-                const [[x, y]] = (0, stringStream_1.readNumbers)(afterID, 2);
+                const [[x, y]] = (0, strRead_1.readNumbers)(afterID, 2);
                 rleFileData.topleft = [x, y];
             }
             else if (id === "r") {
@@ -182,9 +182,6 @@ function readRLEString(file) {
     return rleFileData;
 }
 exports.readRLEString = readRLEString;
-function readRLEStringPattern(file) {
-    return readRLEString(file).coordinates;
-}
 // --------------------------------------------------------------
 // --------------------------------------------------------------
 // --------------------------------------------------------------

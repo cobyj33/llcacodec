@@ -143,11 +143,11 @@ export function reverseBits(num: number): number {
     return o;
 }
 
-export function pushUTFBytes(byteData: number[], str: string) {
+export function pushASCIIBytes(byteData: number[], str: string) {
     byteData.push(...str.split("").map(ch => ch.charCodeAt(0)))
 }
 
-export function byteArrayAsString(byteData: number[]): string {
+export function byteArrayAsASCII(byteData: number[]): string {
     return byteData.map(val => String.fromCharCode(val)).join("")
 }
 

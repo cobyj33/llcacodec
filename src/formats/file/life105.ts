@@ -1,7 +1,7 @@
 // Life 1.05 File Format Spec: https://conwaylife.com/wiki/Life_1.05
 
-import { isNextChar, isNextChars, readChar, readChars, readIntegers, readLine } from "core/stringStream";
-import { CONWAY_LIFE_RULE_DATA, CONWAY_RULE_STRING_SB, readLifeRule } from "formats/rule";
+import { isNextChar, isNextChars, readChar, readChars, readIntegers, readLine } from "../../core/strRead";
+import { CONWAY_LIFE_RULE_DATA, CONWAY_RULE_STRING_SB, readLifeRule } from "../rule";
 
 const LIFE_105_HEADER = "#Life 1.05"
 const MAX_DESCRIPTION_LINE_COUNT = 22
@@ -20,8 +20,8 @@ interface Life105Config {
 
 // export function writeLife105File(pattern: Life105InputPattern[], config: Life105Config): string {
     //     const fileData: number[] = []
-    //     pushUTFBytes(fileData, LIFE_105_HEADER + "\n");
-    //     return byteArrayAsString(fileData);
+    //     pushASCIIBytes(fileData, LIFE_105_HEADER + "\n");
+    //     return byteArrayAsASCII(fileData);
     // }
 
 interface HashLine {

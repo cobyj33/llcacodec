@@ -1,6 +1,5 @@
-import { pushUTFBytes, byteArrayAsString } from "core/util";
-import { isIntegerString } from "core/util"
-import { Set2D } from "core/set2D"
+import { pushASCIIBytes, byteArrayAsASCII, isIntegerString } from "../../core/util";
+import { Set2D } from "../../core/set2D"
 
 const LIFE_106_HEADER = "#Life 1.06" as const
 const LIFE_106_FILE_EXTENSIONS = [".lif", ".life"] as const
@@ -19,7 +18,7 @@ export function isLife106String(str: string): boolean {
 
 export function writeLife106String(data: [number, number][]): string {
     const byteArray: number[] = []
-    pushUTFBytes(byteArray, LIFE_106_HEADER + "\n")
+    pushASCIIBytes(byteArray, LIFE_106_HEADER + "\n")
     const dupSet: Set2D = new Set2D();
 
     for (let i = 0; i < data.length; i++) {
@@ -28,11 +27,11 @@ export function writeLife106String(data: [number, number][]): string {
             continue;
         }
 
-        pushUTFBytes(byteArray, `${x} ${y}\n`)
+        pushASCIIBytes(byteArray, `${x} ${y}\n`)
         dupSet.add(x, y)
     }
 
-    return byteArrayAsString(byteArray)
+    return byteArrayAsASCII(byteArray)
 }
 
 // --------------------------------------------------------------

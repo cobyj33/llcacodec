@@ -19,17 +19,17 @@ exports.isLife106String = isLife106String;
 // --------------------------------------------------------------
 function writeLife106String(data) {
     const byteArray = [];
-    (0, util_1.pushUTFBytes)(byteArray, LIFE_106_HEADER + "\n");
+    (0, util_1.pushASCIIBytes)(byteArray, LIFE_106_HEADER + "\n");
     const dupSet = new set2D_1.Set2D();
     for (let i = 0; i < data.length; i++) {
         const [x, y] = data[i];
         if (dupSet.has(x, y)) {
             continue;
         }
-        (0, util_1.pushUTFBytes)(byteArray, `${x} ${y}\n`);
+        (0, util_1.pushASCIIBytes)(byteArray, `${x} ${y}\n`);
         dupSet.add(x, y);
     }
-    return (0, util_1.byteArrayAsString)(byteArray);
+    return (0, util_1.byteArrayAsASCII)(byteArray);
 }
 exports.writeLife106String = writeLife106String;
 // --------------------------------------------------------------

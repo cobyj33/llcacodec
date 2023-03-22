@@ -1,6 +1,5 @@
-import { pushUTFBytes, byteArrayAsString, trimTrailing } from "core/util";
-import { numberPairArrayToMatrix } from "core/util"
-import { isNextChar, isNextSeq, readChar, readSeq } from "core/stringStream"
+import { pushASCIIBytes, byteArrayAsASCII, trimTrailing, numberPairArrayToMatrix } from "../../core/util";
+import { isNextChar, isNextSeq, readChar, readSeq } from "../../core/strRead"
 
 const VALID_DEAD_CELL_CHARACTERS = ["."] as const;
 const VALID_LIVE_CELL_CHARACTERS = ["O", "*"] as const;
@@ -15,18 +14,18 @@ export interface PlainTextStringDecodedContents {
 
 function writePlainTextMetadata(byteArray: number[], name: string, description: string | string[]): number[] {
     const newArray: number[] = [...byteArray]
-    pushUTFBytes(newArray, "!Name: " + name + "\n")
+    pushASCIIBytes(newArray, "!Name: " + name + "\n")
     if (description.length > 0) {
         if (typeof(description) === "string") {
                 const lines = description.split("\n")
-                lines.forEach(line => pushUTFBytes(newArray, `!${line}\n`))
+                lines.forEach(line => pushASCIIBytes(newArray, `!${line}\n`))
         } else {
             const lines = description.flatMap(lines => lines.split("\n"))
-            lines.forEach(line => pushUTFBytes(newArray, `!${line}\n`))
+            lines.forEach(line => pushASCIIBytes(newArray, `!${line}\n`))
         }
     }
 
-    pushUTFBytes(newArray, "!\n")
+    pushASCIIBytes(newArray, "!\n")
     return newArray
 }
 
@@ -92,15 +91,15 @@ export function writePlainTextMatrix(data: (0 | 1)[][], name: string, descriptio
     for (let row = 0; row < height; row++) {
         for (let col = 0; col < width; col++) {
             if (col >= data[row].length) {
-                pushUTFBytes(byteArray, ".")
+                pushASCIIBytes(byteArray, ".")
             } else {
-                pushUTFBytes(byteArray, data[row][col] === 0 ? "." : "O")
+                pushASCIIBytes(byteArray, data[row][col] === 0 ? "." : "O")
             }
         }
-        pushUTFBytes(byteArray, "\n")
+        pushASCIIBytes(byteArray, "\n")
     }
 
-    return byteArrayAsString(byteArray)
+    return byteArrayAsASCII(byteArray)
 }
 
 
@@ -113,10 +112,6 @@ export function isPlainTextString(str: string): boolean {
     } catch (e) {
         return false;
     }
-}
-
-export function readPlainTextPattern(file: string): [number, number][] {
-    return readPlainTextString(file).cellCoordinates
 }
 
 export function readPlainTextString(str: string): PlainTextStringDecodedContents {

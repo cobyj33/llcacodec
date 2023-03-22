@@ -62,10 +62,11 @@
 	},
 	"exclude": [
 		"node_modules",
-		"dist"
+		"dist",
+        "tests"
 	],
     "include": [
-        "src",
+        "src", "tests", "tests",
     ],
     "ts-node": {
         "esm": true
