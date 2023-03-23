@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.isStrictEqualBooleanArray = exports.isStrictEqualStringArray = exports.isStrictEqualNumberArray = exports.isStrictEqualArray = exports.byteArrayAsASCII = exports.pushASCIIBytes = exports.reverseBits = exports.getErrorMessage = exports.isError = exports.numberPairArrayToMatrix = exports.getCellBoundingBox = exports.isNumberPairArray = exports.isIntegerString = exports.trimTrailing = exports.isNumericString = exports.isDigit = exports.throws = exports.isRectangularMatrix = void 0;
+exports.isStrictEqualBooleanArray = exports.isStrictEqualStringArray = exports.isStrictEqualNumberArray = exports.isStrictEqualArray = exports.byteArrayAsASCII = exports.pushASCIIBytes = exports.reverseBits = exports.getErrorMessage = exports.isError = exports.numberPairArrayToMatrix = exports.getCellBoundingBox = exports.isStringArray = exports.isCellCoordinateArray = exports.isCellMatrix = exports.isNumberPairArray = exports.isIntegerString = exports.trimTrailing = exports.isNumericString = exports.isDigit = exports.throws = exports.isRectangularMatrix = void 0;
 /**
  * Test if a matrix is rectangular or not
  *
@@ -73,10 +73,22 @@ function isIntegerString(num) {
     return true;
 }
 exports.isIntegerString = isIntegerString;
-function isNumberPairArray(num) {
-    return num.every(row => row.length === 2);
+function isNumberPairArray(arr) {
+    return Array.isArray(arr) && arr.every(row => Array.isArray(row) && row.length === 2);
 }
 exports.isNumberPairArray = isNumberPairArray;
+function isCellMatrix(arr) {
+    return Array.isArray(arr) && arr.every(row => Array.isArray(row) && row.every(cell => cell === 0 || cell === 1));
+}
+exports.isCellMatrix = isCellMatrix;
+function isCellCoordinateArray(arr) {
+    return Array.isArray(arr) && arr.every(row => Array.isArray(row) && row.length === 2 && row.every(component => Number.isInteger(component)));
+}
+exports.isCellCoordinateArray = isCellCoordinateArray;
+function isStringArray(arr) {
+    return Array.isArray(arr) && arr.every(val => typeof (val) === "string");
+}
+exports.isStringArray = isStringArray;
 /**
  *
  * @param positions

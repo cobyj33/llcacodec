@@ -1,15 +1,15 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.makeLifeRule = exports.readLifeRule = exports.getLifeRuleFormat = exports.isValidLifeRule = exports.CONWAY_LIFE_RULE_INTEGER = exports.CONWAY_RULE_STRING_SB = exports.CONWAY_RULE_STRING_BS = exports.CONWAY_LIFE_RULE_DATA = void 0;
-const bs_1 = require("formats/rule/bs");
+const bs_1 = require("./bs");
 Object.defineProperty(exports, "CONWAY_RULE_STRING_BS", { enumerable: true, get: function () { return bs_1.CONWAY_RULE_STRING_BS; } });
-const sb_1 = require("formats/rule/sb");
+const sb_1 = require("./sb");
 Object.defineProperty(exports, "CONWAY_RULE_STRING_SB", { enumerable: true, get: function () { return sb_1.CONWAY_RULE_STRING_SB; } });
-const int_1 = require("formats/rule/int");
+const int_1 = require("./int");
 Object.defineProperty(exports, "CONWAY_LIFE_RULE_INTEGER", { enumerable: true, get: function () { return int_1.CONWAY_LIFE_RULE_INTEGER; } });
-const util_1 = require("core/util");
-const ruleData_1 = require("formats/rule/ruleData");
+const ruleData_1 = require("./ruleData");
 Object.defineProperty(exports, "CONWAY_LIFE_RULE_DATA", { enumerable: true, get: function () { return ruleData_1.CONWAY_LIFE_RULE_DATA; } });
+const util_1 = require("../../core/util");
 function isValidLifeRule(rule, format = "") {
     const foundFormat = format === "" ? getLifeRuleFormat(rule) : format;
     if (foundFormat === "N/A") {

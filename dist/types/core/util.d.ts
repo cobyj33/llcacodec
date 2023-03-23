@@ -18,7 +18,10 @@ export declare function isDigit(digit: string): boolean;
 export declare const isNumericString: (num: string) => boolean;
 export declare function trimTrailing(s: string, charToTrim: string): string;
 export declare function isIntegerString(num: string): boolean;
-export declare function isNumberPairArray(num: number[][]): num is [number, number][];
+export declare function isNumberPairArray(arr: unknown): arr is [number, number][];
+export declare function isCellMatrix(arr: unknown): arr is (0 | 1)[][];
+export declare function isCellCoordinateArray(arr: unknown): arr is [number, number][];
+export declare function isStringArray(arr: unknown): arr is string[];
 type Bounds = {
     x: number;
     y: number;

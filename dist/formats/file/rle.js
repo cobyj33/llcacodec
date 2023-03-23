@@ -1,9 +1,9 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.readRLEString = exports.isRLEString = exports.readRLEStringHeader = exports.readRLEData = void 0;
-const strRead_1 = require("core/strRead");
-const util_1 = require("core/util");
-const rule_1 = require("formats/rule");
+const strRead_1 = require("../../core/strRead");
+const util_1 = require("../../core/util");
+const rule_1 = require("../rule");
 const RLE_DEAD_CELL_CHAR = "b";
 const RLE_LIVE_CELL_CHAR = "o";
 const RLE_NEW_LINE_CHAR = "$";
@@ -31,7 +31,7 @@ function readRLEData(rlePattern, topleft = [0, 0]) {
     let i = 0;
     let currRun = [];
     const rleData = {
-        coordinates: [],
+        liveCoordinates: [],
         pattern: "",
         endingIndex: 0,
         topleft: [...topleft]
@@ -58,7 +58,7 @@ function readRLEData(rlePattern, topleft = [0, 0]) {
             }
             currCoordinate[0] += runLength;
             if (rlePattern[i] === RLE_LIVE_CELL_CHAR) {
-                rleData.coordinates.push([...currCoordinate]);
+                rleData.liveCoordinates.push([...currCoordinate]);
             }
         }
         else if (rlePattern[i] === RLE_NEW_LINE_CHAR) {
@@ -126,7 +126,7 @@ function readRLEString(file) {
         height: 0,
         ruleString: rule_1.CONWAY_RULE_STRING_BS,
         rule: (0, rule_1.CONWAY_LIFE_RULE_DATA)(),
-        coordinates: [],
+        liveCoordinates: [],
         hashLines: []
     };
     //commented lines
@@ -172,7 +172,7 @@ function readRLEString(file) {
     currentLine++;
     const afterHeader = lines.slice(currentLine).join("\n");
     const data = readRLEData(afterHeader, rleFileData.topleft !== null ? rleFileData.topleft : [0, 0]);
-    rleFileData.coordinates = data.coordinates;
+    rleFileData.liveCoordinates = data.liveCoordinates;
     if (data.endingIndex + 1 !== afterHeader.length - 1) {
         const afterRLEData = afterHeader.substring(data.endingIndex + 1);
         const linesAfterRLEData = afterRLEData.split("\n");

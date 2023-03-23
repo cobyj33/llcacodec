@@ -13,11 +13,11 @@ interface Life105CellBlock {
     width: number;
     height: number;
     pattern: (0 | 1)[][];
-    cellCoordinates: [number, number][];
+    liveCoordinates: [number, number][];
 }
 export interface Life105FileData {
     cellBlocks: Life105CellBlock[];
-    cellCoordinates: [number, number][];
+    liveCoordinates: [number, number][];
     descriptions: string[];
     ruleString: string | null;
     rule: LifeRuleData | null;

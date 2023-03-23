@@ -2,8 +2,8 @@
 // Life 1.05 File Format Spec: https://conwaylife.com/wiki/Life_1.05
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.hello = exports.readLife105String = exports.isLife105String = void 0;
-const strRead_1 = require("core/strRead");
-const rule_1 = require("formats/rule");
+const strRead_1 = require("../../core/strRead");
+const rule_1 = require("../rule");
 const LIFE_105_HEADER = "#Life 1.05";
 const MAX_DESCRIPTION_LINE_COUNT = 22;
 const LIFE_105_MAX_LINE_LENGTH = 80;
@@ -18,7 +18,7 @@ function readLife105CellBlock(data) {
             width: 0,
             height: 0,
             pattern: [],
-            cellCoordinates: []
+            liveCoordinates: []
         };
         const [pointLine, afterPointLine] = (0, strRead_1.readLine)(data);
         const [, afterPointDeclaration] = (0, strRead_1.readChars)(pointLine, "#P");
@@ -32,7 +32,7 @@ function readLife105CellBlock(data) {
             for (let i = 0; i < cellBlock.width; i++) {
                 if (currentLine[i] === LIFE_105_ALIVE_CHAR) {
                     row[i] = 1;
-                    cellBlock.cellCoordinates.push([x + i, y - cellBlock.height]);
+                    cellBlock.liveCoordinates.push([x + i, y - cellBlock.height]);
                 }
             }
             cellBlock.pattern.push(row);
@@ -63,7 +63,7 @@ function readLife105String(file) {
     file = file.replace("\r", "");
     const life105FileData = {
         cellBlocks: [],
-        cellCoordinates: [],
+        liveCoordinates: [],
         descriptions: [],
         ruleString: rule_1.CONWAY_RULE_STRING_SB,
         rule: (0, rule_1.CONWAY_LIFE_RULE_DATA)(),
@@ -109,7 +109,7 @@ function readLife105String(file) {
                 console.log("Read cell block: ", cellBlockReadingData[0]);
                 console.log("Remaining: ", cellBlockReadingData[1]);
                 life105FileData.cellBlocks.push(cellBlockReadingData[0]);
-                life105FileData.cellCoordinates.push(...cellBlockReadingData[0].cellCoordinates);
+                life105FileData.liveCoordinates.push(...cellBlockReadingData[0].liveCoordinates);
                 remainingCellBlocksString = cellBlockReadingData[1];
             }
             catch (err) {

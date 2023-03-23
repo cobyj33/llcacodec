@@ -1,9 +1,8 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.readLife106String = exports.writeLife106String = exports.isLife106String = void 0;
-const util_1 = require("core/util");
-const util_2 = require("core/util");
-const set2D_1 = require("core/set2D");
+const util_1 = require("../../core/util");
+const set2D_1 = require("../../core/set2D");
 const LIFE_106_HEADER = "#Life 1.06";
 const LIFE_106_FILE_EXTENSIONS = [".lif", ".life"];
 function isLife106String(str) {
@@ -57,7 +56,7 @@ function readLife106String(str) {
             if (ended) {
                 throw new Error(`Invalid Life 1.06 string: \n${str}\n Error at Line ${i}. X and Y Values must be on subsequent lines`);
             }
-            if ((0, util_2.isIntegerString)(nums[0]) && (0, util_2.isIntegerString)(nums[1])) {
+            if ((0, util_1.isIntegerString)(nums[0]) && (0, util_1.isIntegerString)(nums[1])) {
                 const [x, y] = [Number.parseInt(nums[0]), Number.parseInt(nums[1])];
                 if (!set2D.has(x, y)) {
                     set2D.add(x, y);

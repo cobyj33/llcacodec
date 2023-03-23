@@ -1,7 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.readSBRuleString = exports.makeSBLifeString = exports.isValidSBLifeString = exports.getSBLifeStringError = exports.CONWAY_RULE_STRING_SB = void 0;
-const ruleData_1 = require("formats/rule/ruleData");
+const ruleData_1 = require("./ruleData");
 exports.CONWAY_RULE_STRING_SB = "23/3";
 function getSBLifeStringError(lifeString) {
     const sides = lifeString.split("/");

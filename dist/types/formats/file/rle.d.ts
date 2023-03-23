@@ -1,4 +1,4 @@
-import { LifeRuleData } from "formats/rule";
+import { LifeRuleData } from "../rule";
 interface HashLine {
     id: string;
     content: string;
@@ -12,7 +12,7 @@ export interface RLEFileData {
     height: number;
     ruleString: string;
     rule: LifeRuleData;
-    coordinates: [number, number][];
+    liveCoordinates: [number, number][];
     hashLines: HashLine[];
     creationData: string;
 }
@@ -24,7 +24,7 @@ interface RLEFileHeaderData {
     full: string;
 }
 interface ParsedRLEData {
-    coordinates: [number, number][];
+    liveCoordinates: [number, number][];
     pattern: string;
     endingIndex: number;
     readonly topleft: [number, number];

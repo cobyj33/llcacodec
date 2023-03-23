@@ -24,10 +24,10 @@
         },
         "./rule": {
             "import": {
-                "default": "./dist/formats/rule.js"
+                "default": "./dist/formats/rule/index.js"
             },
             "types": {
-                "default": "./dist/types/formats/rule.d.ts"
+                "default": "./dist/types/formats/rule/index.d.ts"
             }
         }
     },
