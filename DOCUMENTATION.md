@@ -17,15 +17,54 @@ cacodec.js has no dependencies, but this isn't guaranteed to stay true as the li
 - [cacodec.js](#cacodecjs)
   - [Table of Contents](#table-of-contents)
   - [API](#api)
+    - [readLifeFile](#readlifefile)
+    - [readLifeFileLiveCoordinates](#readlifefilelivecoordinates)
+    - [getLifeFileFormat](#getlifefileformat)
+    - [readLifeRule](#readliferule)
+    - [makeLifeRule](#makeliferule)
+    - [isValidLifeRule](#isvalidliferule)
+    - [getLifeRuleFormat](#getliferuleformat)
   - [Rules](#rules)
   - [File Formats](#file-formats)
     - [Supported File Formats](#supported-file-formats)
     - [Unsupported File Formats](#unsupported-file-formats)
+  - [FAQ (not really)](#faq-not-really)
 
 
 ## API
 
-cacodec.js comes with two main functions, 
+llcacodecjs comes with 7 simple public functions:
+
+- readLifeFile
+- readLifeFileLiveCoordinates
+- getLifeFileFormat
+- readLifeRule
+- makeLifeRule
+- isValidLifeRule
+- getLifeRuleFormat
+
+### readLifeFile
+
+**readLifeFile** takes in a string representing the file data, as well as an optional format identifier representing either the inputted format or "". This optional format identifier cannot be null or undefined, or else an error is thrown. The optional format identifier can either 
+
+readLifeFile(data: string, format: "plaintext" | "life 1.06" | "rle" | "life 1.05" | "")
+
+upon 
+
+### readLifeFileLiveCoordinates
+
+### getLifeFileFormat
+
+### readLifeRule
+
+### makeLifeRule
+
+### isValidLifeRule
+
+### getLifeRuleFormat
+
+The implementation and specific overloads of each function
+can be found in the source files
 
 ## Rules
 
@@ -44,9 +83,61 @@ cacodec.js comes with two main functions,
 
 ### Unsupported File Formats
 
-- Extended RLE Format
-- MacroCell Format
-- Rule Format
-- Small Object Format [LifeWiki](https://conwaylife.com/wiki/Small_object_format) [Pentdecathlon](https://web.archive.org/web/20211102020428/http://pentadecathlon.com/objects/definitions/definitions.php)
+- Extended RLE Format | [Golly Source Format Documentation](https://golly.sourceforge.net/Help/formats.html#rle)
+- MacroCell Format | [Golly Source Format Documentation](https://golly.sourceforge.net/Help/formats.html#rle)
+- Rule Format | [Golly Source Format Documentation](https://golly.sourceforge.net/Help/formats.html#rle)
+- Small Object Format | [LifeWiki](https://conwaylife.com/wiki/Small_object_format) [Pentdecathlon](https://web.archive.org/web/20211102020428/http://pentadecathlon.com/objects/definitions/definitions.php)
 
-- [Golly](https://golly.sourceforge.net/) File Formats: [Golly Source Format Documentation](https://golly.sourceforge.net/Help/formats.html#rle)
+## FAQ (not really)
+
+- Can I use llcacodecjs with CommonJS modules
+
+Currently, no. It's coming, but not yet, as the API itself is not even stable, and I see that as more important
+
+- How can I get my file formats
+
+On browser, the preferred format would probably be using the fetch API, like this
+
+```js
+import { readLifeFile } from "llcacodecjs"
+
+// Using linked promises
+
+fetch("my/path")
+.then(res => res.text())
+.then(str => readLifeFile(str))
+.then(data => console.log("Do something with this data", data));
+
+// using an async function
+
+async function fetchLifeLikeFileData(pathOrURL) {
+    const textFile = await fetch(pathOrURL).then(res => res.text())
+    const data = readLifeFile(textFile)
+    return data;
+}
+
+fetchLifeLikeFileData("my/path");
+
+```
+
+Similarly, in node.js, the fs/promises module could be used
+
+```js
+import fs from "fs/promises"
+
+//through promises
+
+fs.readFileAsync("my/path")
+.then(buffer => readLifeFile(buffer.toString()))
+
+// using an async function
+
+async function fetchLifeLikeFileData(pathOrURL) {
+    const textFile = await fs.readFileAsync(pathOrURL).then(buffer => buffer.toString())
+    const data = readLifeFile(textFile)
+    return data;
+}
+
+fetchLifeLikeFileData("my/path")
+
+```

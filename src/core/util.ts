@@ -74,8 +74,20 @@ export function isIntegerString(num: string): boolean {
     return true;
 }
 
-export function isNumberPairArray(num: number[][]): num is [number, number][] {
-    return num.every(row => row.length === 2)
+export function isNumberPairArray(arr: unknown): arr is [number, number][] {
+    return Array.isArray(arr) && arr.every(row => Array.isArray(row) && row.length === 2)
+}
+
+export function isCellMatrix(arr: unknown): arr is (0 | 1)[][] {
+    return Array.isArray(arr) && arr.every(row => Array.isArray(row) && row.every(cell => cell === 0 || cell === 1))
+}
+
+export function isCellCoordinateArray(arr: unknown): arr is [number, number][] {
+    return Array.isArray(arr) && arr.every(row => Array.isArray(row) && row.length === 2 && row.every(component => Number.isInteger(component)))
+}
+
+export function isStringArray(arr: unknown): arr is string[] {
+    return Array.isArray(arr) && arr.every(val => typeof(val) === "string")
 }
 
 type Bounds = { x: number, y: number, width: number, height: number  }
