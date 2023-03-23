@@ -5,7 +5,7 @@
 
 llcacodecjs - Short for **L**ife-**L**ike **C**ellular **A**utomata **Codec** **Ja**vascript
 
-![llacodec logo](assets/llcacodec_static_112x112.png)
+![llacodec logo](assets/llcacodec_logo_112x112.png)
 
 Decoding and Encoding of Life-Like Cellular Automata Data Files implemented in Typescript
 
