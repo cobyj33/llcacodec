@@ -102,8 +102,10 @@ export function readRLEData(rlePattern: string, topleft: [number, number] = [0, 
             }
 
         } else if (rlePattern[i] === RLE_NEW_LINE_CHAR) {
+            const runLength = currRun.length === 0 ? 1 : Number.parseInt(currRun.join(""))
+            currRun = []
             currCoordinate[0] = topleft[0]
-            currCoordinate[1]--;
+            currCoordinate[1] -= runLength;
         }
 
         i++;
