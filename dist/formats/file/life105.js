@@ -2,6 +2,7 @@
 // Life 1.05 File Format Spec: https://conwaylife.com/wiki/Life_1.05
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.hello = exports.readLife105String = exports.isLife105String = void 0;
+const set2D_1 = require("core/set2D");
 const strRead_1 = require("../../core/strRead");
 const rule_1 = require("../rule");
 const LIFE_105_HEADER = "#Life 1.05";
@@ -30,9 +31,9 @@ function readLife105CellBlock(data) {
             cellBlock.width = Math.max(cellBlock.width, currentLine.length);
             const row = new Array(cellBlock.width).fill(0);
             for (let i = 0; i < cellBlock.width; i++) {
-                if (currentLine[i] === LIFE_105_ALIVE_CHAR) {
+                if (i < currentLine.length && currentLine[i] === LIFE_105_ALIVE_CHAR) {
                     row[i] = 1;
-                    cellBlock.liveCoordinates.push([x + i, y - cellBlock.height]);
+                    cellBlock.liveCoordinates.push([x + i, y - cellBlock.pattern.length]);
                 }
             }
             cellBlock.pattern.push(row);
@@ -42,8 +43,8 @@ function readLife105CellBlock(data) {
             }
             currentLine = nextLine;
             currentRemainingStream = nextRemainingStream;
-            cellBlock.height++; // increments after setting the coordinates, 
         }
+        cellBlock.height = cellBlock.pattern.length; // increments after setting the coordinates, 
         for (let i = 0; i < cellBlock.height; i++) { // Correct all pattern rows to be the same size
             if (cellBlock.pattern[i].length < cellBlock.width) {
                 cellBlock.pattern[i].push(...new Array(cellBlock.width - cellBlock.pattern[i].length).fill(0));
@@ -117,6 +118,7 @@ function readLife105String(file) {
             }
         }
     }
+    life105FileData.liveCoordinates = (0, set2D_1.uniqueNumberPairArray)(life105FileData.liveCoordinates);
     return life105FileData;
 }
 exports.readLife105String = readLife105String;

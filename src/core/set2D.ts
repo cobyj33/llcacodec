@@ -119,3 +119,18 @@ export class Set2D {
         return true;
     }
 }
+
+export function uniqueNumberPairArray(arr: [number, number][]) {
+    const set2D = new Set2D()
+    const output: [number, number][] = []
+    for (let i = 0; i < arr.length; i++) {
+        if (set2D.has(arr[i][0], arr[i][1])) {
+            continue;
+        }
+        output.push([...arr[i]])
+
+        set2D.add(arr[i][0], arr[i][1])
+    }
+    
+    return output;
+}

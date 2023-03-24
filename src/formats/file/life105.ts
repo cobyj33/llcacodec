@@ -1,5 +1,6 @@
 // Life 1.05 File Format Spec: https://conwaylife.com/wiki/Life_1.05
 
+import { uniqueNumberPairArray } from "core/set2D";
 import { isNextChar, isNextChars, readChar, readChars, readIntegers, readLine } from "../../core/strRead";
 import { CONWAY_LIFE_RULE_DATA, CONWAY_RULE_STRING_SB, readLifeRule } from "../rule";
 
@@ -64,13 +65,12 @@ function readLife105CellBlock(data: string): [Life105CellBlock, string] {
         let [currentLine, currentRemainingStream] = readLine(afterPointLine);
         while (!isNextChars(currentLine, "#P")) { // exits when the next #P line is hit
             cellBlock.width = Math.max(cellBlock.width, currentLine.length)
-
             
             const row = new Array<0 | 1>(cellBlock.width).fill(0);
             for (let i = 0; i < cellBlock.width; i++) {
-                if (currentLine[i] === LIFE_105_ALIVE_CHAR) {
+                if (i < currentLine.length && currentLine[i] === LIFE_105_ALIVE_CHAR) {
                     row[i] = 1
-                    cellBlock.liveCoordinates.push([x + i, y - cellBlock.height])
+                    cellBlock.liveCoordinates.push([x + i, y - cellBlock.pattern.length])
                 }
             }
             cellBlock.pattern.push(row)
@@ -82,8 +82,8 @@ function readLife105CellBlock(data: string): [Life105CellBlock, string] {
 
             currentLine = nextLine
             currentRemainingStream = nextRemainingStream
-            cellBlock.height++; // increments after setting the coordinates, 
         }
+        cellBlock.height = cellBlock.pattern.length; // increments after setting the coordinates, 
 
         for (let i = 0; i < cellBlock.height; i++) { // Correct all pattern rows to be the same size
             if (cellBlock.pattern[i].length < cellBlock.width) {
@@ -165,6 +165,8 @@ export function readLife105String(file: string): Life105FileData {
             }
         }
     }
+
+    life105FileData.liveCoordinates = uniqueNumberPairArray(life105FileData.liveCoordinates)
 
     return life105FileData
 }
