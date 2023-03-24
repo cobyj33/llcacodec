@@ -79,31 +79,26 @@ export function readRLEData(rlePattern: string, topleft: [number, number] = [0, 
 
     while (isValidRLEDataCharacter(rlePattern[i]) && i < rlePattern.length) {
 
-        if (rlePattern[i] === "\n" || rlePattern[i] === "\r") {
-            i++;
-            continue;
-        } else if (rlePattern[i] === RLE_TERMINATION_CHAR) {
-            
+        if (rlePattern[i] === RLE_TERMINATION_CHAR) {
             rleData.pattern = rlePattern.substring(0, i)
             rleData.endingIndex = i;
             return rleData;
-
         } else if (isDigit(rlePattern[i])) {
-
             currRun.push(rlePattern[i])
-
         } else if (rlePattern[i] === RLE_LIVE_CELL_CHAR || rlePattern[i] === RLE_DEAD_CELL_CHAR) {
-
             const runLength = currRun.length === 0 ? 1 : Number.parseInt(currRun.join(""))
             currRun = []
             if (isNaN(runLength)) {
                 throw new Error("")
             }
 
-            currCoordinate[0] += runLength;
-
             if (rlePattern[i] === RLE_LIVE_CELL_CHAR) {
-                rleData.liveCoordinates.push([...currCoordinate])
+                for (let j = 0; j < runLength; j++) {
+                    rleData.liveCoordinates.push([...currCoordinate])
+                    currCoordinate[0]++;
+                }
+            } else if (rlePattern[i] === RLE_DEAD_CELL_CHAR) {
+                currCoordinate[0] += runLength;
             }
 
         } else if (rlePattern[i] === RLE_NEW_LINE_CHAR) {
