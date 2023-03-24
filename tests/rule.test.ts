@@ -8,6 +8,61 @@ describe("readLifeRuleInteger", () => {
     })
 })
 
+describe("readSB", () => {
+    describe("S/B no leading letters", () => {
+        it("23/3", () => {
+            expect(readLifeRule("23/3", "s/b")).toEqual({ birth: [3], survival: [2, 3] })
+        })
+
+        it("345/34", () => {
+            expect(readLifeRule("345/34", "s/b")).toEqual({ birth: [3, 4], survival: [3, 4, 5] })
+        })
+
+        it("/34", () => {
+            expect(readLifeRule("/34", "s/b")).toEqual({ birth: [3, 4], survival: [] })
+        })
+
+        it("34/", () => {
+            expect(readLifeRule("34/", "s/b")).toEqual({ birth: [], survival: [3, 4] })
+        })
+
+        it("34/", () => {
+            expect(readLifeRule("34/", "s/b")).toEqual({ birth: [], survival: [3, 4] })
+        })
+
+        it("8/8", () => {
+            expect(readLifeRule("8/8", "s/b")).toEqual({ birth: [8], survival: [8] })
+        })
+    })
+
+    describe("S/B leading letters", () => {
+        it("S23/B3", () => {
+            expect(readLifeRule("S23/B3", "s/b")).toEqual({ birth: [3], survival: [2, 3] })
+        })
+
+        it("S345/B34", () => {
+            expect(readLifeRule("S345/B34", "s/b")).toEqual({ birth: [3, 4], survival: [3, 4, 5] })
+        })
+
+        it("S/B34", () => {
+            expect(readLifeRule("S/B34", "s/b")).toEqual({ birth: [3, 4], survival: [] })
+        })
+
+        it("S34/B", () => {
+            expect(readLifeRule("S34/B", "s/b")).toEqual({ birth: [], survival: [3, 4] })
+        })
+
+        it("S34/B", () => {
+            expect(readLifeRule("S34/B", "s/b")).toEqual({ birth: [], survival: [3, 4] })
+        })
+
+        it("S8/B8", () => {
+            expect(readLifeRule("S8/B8", "s/b")).toEqual({ birth: [8], survival: [8] })
+        })
+    })
+
+})
+
 describe("makeLifeRuleInteger", () => {
     it("Conway", () => {
         expect(makeLifeRuleInteger(CONWAY_LIFE_RULE_DATA())).toEqual(CONWAY_LIFE_RULE_INTEGER)
