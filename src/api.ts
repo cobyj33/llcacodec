@@ -51,12 +51,12 @@ export function readLifeFile(data: string, format: SupportedLifeLikeFormats | ""
 export function getLifeFileFormat(data: string): SupportedLifeLikeFormats | "N/A" {
     if (isLife106String(data)) {
         return "life 1.06"
-    } else if (isPlainTextString(data)) {
-        return "plaintext"
-    } else if (isRLEString(data)) {
-        return "rle"
     } else if (isLife105String(data)) {
         return "life 1.05"
+    } else if (isRLEString(data)) {
+        return "rle"
+    } else if (isPlainTextString(data)) {
+        return "plaintext"
     }
     
     return "N/A"

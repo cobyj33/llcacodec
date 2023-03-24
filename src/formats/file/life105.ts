@@ -3,7 +3,7 @@
 import { isNextChar, isNextChars, readChar, readChars, readIntegers, readLine } from "../../core/strRead";
 import { CONWAY_LIFE_RULE_DATA, CONWAY_RULE_STRING_SB, readLifeRule } from "../rule";
 
-const LIFE_105_HEADER = "#Life 1.05"
+const LIFE_105_HEADER = "#Life 1.05" as const
 const MAX_DESCRIPTION_LINE_COUNT = 22
 const LIFE_105_MAX_LINE_LENGTH = 80
 
@@ -13,7 +13,7 @@ type LifeRuleData = { birth: number[], survival: number[] }
 
 interface Life105Config {
   descriptions: string | string[],
-  rule: string | LifeRuleData | [number[], number[]] | "N#"
+  rule: string | LifeRuleData | number | "N#"
 }
 
 interface HashLine {

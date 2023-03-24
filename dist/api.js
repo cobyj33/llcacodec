@@ -49,14 +49,14 @@ function getLifeFileFormat(data) {
     if ((0, life106_1.isLife106String)(data)) {
         return "life 1.06";
     }
-    else if ((0, plaintext_1.isPlainTextString)(data)) {
-        return "plaintext";
+    else if ((0, life105_1.isLife105String)(data)) {
+        return "life 1.05";
     }
     else if ((0, rle_1.isRLEString)(data)) {
         return "rle";
     }
-    else if ((0, life105_1.isLife105String)(data)) {
-        return "life 1.05";
+    else if ((0, plaintext_1.isPlainTextString)(data)) {
+        return "plaintext";
     }
     return "N/A";
 }
