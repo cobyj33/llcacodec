@@ -266,9 +266,9 @@ export function readNumbers(data: string, numOfNums: number): [number[], string]
     const numbers: number[] = []
     let remaining = data;
     for (let i = 0; i < numOfNums; i++) {
-        const splitData = readNumber(data)
-        numbers.push(splitData[0])
-        remaining = splitData[1]
+        const [number, afterRead] = readNumber(data)
+        numbers.push(number)
+        remaining = afterRead
     }
 
     return [numbers, remaining]
@@ -345,6 +345,7 @@ export function readCrampedNumber(data: string): [number, string] {
         }
         throw new Error(`Cramped Number read as NaN (got "${numstr}" ) ( passed in: "${data}" )`)
     }
+    
     throw new Error(`Cramped Number not evaluated to numeric string (got ${numstr} ) ( passed in: ${data})`)
 }
 

@@ -31,6 +31,7 @@ export function readLifeFile(data: string, format: "plaintext"): PlainTextString
 export function readLifeFile(data: string, format: "life 1.06"): [number, number][]
 export function readLifeFile(data: string, format: "rle"): RLEFileData
 export function readLifeFile(data: string, format: "life 1.05"): Life105FileData
+export function readLifeFile(data: string, format: ""): [number, number][] | PlainTextStringDecodedContents | RLEFileData | Life105FileData
 export function readLifeFile(data: string, format: SupportedLifeLikeFormats | "" = ""): [number, number][] | PlainTextStringDecodedContents | RLEFileData | Life105FileData {
     if (format === null || format === undefined) {
         throw new Error("Cannot parse null or undefined life file")

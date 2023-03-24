@@ -16,14 +16,6 @@ interface Life105Config {
   rule: string | LifeRuleData | [number[], number[]] | "N#"
 }
 
-
-
-// export function writeLife105File(pattern: Life105InputPattern[], config: Life105Config): string {
-    //     const fileData: number[] = []
-    //     pushASCIIBytes(fileData, LIFE_105_HEADER + "\n");
-    //     return byteArrayAsASCII(fileData);
-    // }
-
 interface HashLine {
     id: string,
     content: string,
@@ -172,7 +164,6 @@ export function readLife105String(file: string): Life105FileData {
                 break;
             }
         }
-
     }
 
     return life105FileData
