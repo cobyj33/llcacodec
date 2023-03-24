@@ -247,9 +247,9 @@ function readNumbers(data, numOfNums) {
     const numbers = [];
     let remaining = data;
     for (let i = 0; i < numOfNums; i++) {
-        const splitData = readNumber(data);
-        numbers.push(splitData[0]);
-        remaining = splitData[1];
+        const [number, afterRead] = readNumber(data);
+        numbers.push(number);
+        remaining = afterRead;
     }
     return [numbers, remaining];
 }

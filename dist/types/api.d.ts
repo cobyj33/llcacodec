@@ -9,6 +9,7 @@ export declare function readLifeFile(data: string, format: "plaintext"): PlainTe
 export declare function readLifeFile(data: string, format: "life 1.06"): [number, number][];
 export declare function readLifeFile(data: string, format: "rle"): RLEFileData;
 export declare function readLifeFile(data: string, format: "life 1.05"): Life105FileData;
+export declare function readLifeFile(data: string, format: ""): [number, number][] | PlainTextStringDecodedContents | RLEFileData | Life105FileData;
 export declare function getLifeFileFormat(data: string): SupportedLifeLikeFormats | "N/A";
 interface PlainTextMatrixWriteData {
     name: string;
