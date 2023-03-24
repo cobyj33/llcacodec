@@ -247,7 +247,7 @@ function readNumbers(data, numOfNums) {
     const numbers = [];
     let remaining = data;
     for (let i = 0; i < numOfNums; i++) {
-        const [number, afterRead] = readNumber(data);
+        const [number, afterRead] = readNumber(remaining);
         numbers.push(number);
         remaining = afterRead;
     }
