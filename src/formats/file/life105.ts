@@ -131,10 +131,10 @@ export function readLife105String(file: string): Life105FileData {
         throw new Error("")
     }
 
-    let currentLine = 1;
+    let currentLineIndex = 1;
 
-    while (isNextChar(lines[currentLine], "#")) {
-        const [, afterHash] = readChar(lines[currentLine], "#")
+    while (isNextChar(lines[currentLineIndex], "#")) {
+        const [, afterHash] = readChar(lines[currentLineIndex], "#")
         const [id, afterID] = readChar(afterHash)
         const trimmedContent = afterID.trim();
 
@@ -154,17 +154,18 @@ export function readLife105String(file: string): Life105FileData {
         life105FileData.hashLines.push({
             id: id,
             content: trimmedContent,
-            full: lines[currentLine].trim()
+            full: lines[currentLineIndex].trim()
         })
 
-        currentLine++
+        currentLineIndex++
     }
 
-    if (isNextChars(lines[currentLine], "#P")) {
-        const cellBlocksString = lines.slice(currentLine).join("\n").trim()
+    if (isNextChars(lines[currentLineIndex], "#P")) {
+        const cellBlocksString = lines.slice(currentLineIndex).join("\n").trim()
         let remainingCellBlocksString = cellBlocksString
 
         while (remainingCellBlocksString.length > 0) {
+            console.log(remainingCellBlocksString)
             try {
                 const [cellBlock, remaining] = readLife105CellBlock(remainingCellBlocksString)
                 console.log("Read cell block: ", cellBlock)
