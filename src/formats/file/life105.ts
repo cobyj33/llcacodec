@@ -64,7 +64,19 @@ function readLife105CellBlock(data: string): [Life105CellBlock, string] {
         
         let [currentLine, currentRemainingStream] = readLine(afterPointLine);
         currentLine = currentLine.trim();
-        while (!isNextChars(currentLine, "#P")) { // exits when the next #P line is hit
+        while (!isNextChars(currentLine, "#P") || currentLine.length === 0) { // exits when the next #P line is hit
+
+            if (currentLine.length === 0) {
+                const [nextLine, nextRemainingStream] = readLine(currentRemainingStream)
+                if (isNextChars(nextLine, "#P")) {
+                    break;
+                }
+    
+                currentLine = nextLine
+                currentRemainingStream = nextRemainingStream
+                continue;
+            }
+
             cellBlock.width = Math.max(cellBlock.width, currentLine.length)
             const row = new Array<0 | 1>(cellBlock.width).fill(0);
             for (let i = 0; i < cellBlock.width; i++) {
@@ -75,10 +87,11 @@ function readLife105CellBlock(data: string): [Life105CellBlock, string] {
             }
             cellBlock.pattern.push(row)
             const [nextLine, nextRemainingStream] = readLine(currentRemainingStream)
-            if (isNextChars(nextLine, "#P") || nextLine.trim().length === 0) {
+            if (isNextChars(nextLine, "#P")) {
                 break;
             }
-            currentLine = nextLine.trim()
+
+            currentLine = nextLine
             currentRemainingStream = nextRemainingStream
         }
 
