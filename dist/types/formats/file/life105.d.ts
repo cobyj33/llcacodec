@@ -25,6 +25,5 @@ export interface Life105FileData {
 }
 export declare function isLife105String(file: string): boolean;
 export declare function readLife105String(file: string): Life105FileData;
-export declare function hello(): number;
 export {};
 //# sourceMappingURL=life105.d.ts.map

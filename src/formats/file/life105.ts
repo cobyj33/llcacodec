@@ -63,9 +63,9 @@ function readLife105CellBlock(data: string): [Life105CellBlock, string] {
         cellBlock.y = y;
         
         let [currentLine, currentRemainingStream] = readLine(afterPointLine);
+        currentLine = currentLine.trim();
         while (!isNextChars(currentLine, "#P")) { // exits when the next #P line is hit
             cellBlock.width = Math.max(cellBlock.width, currentLine.length)
-            
             const row = new Array<0 | 1>(cellBlock.width).fill(0);
             for (let i = 0; i < cellBlock.width; i++) {
                 if (i < currentLine.length && currentLine[i] === LIFE_105_ALIVE_CHAR) {
@@ -74,16 +74,15 @@ function readLife105CellBlock(data: string): [Life105CellBlock, string] {
                 }
             }
             cellBlock.pattern.push(row)
-
             const [nextLine, nextRemainingStream] = readLine(currentRemainingStream)
-            if (isNextChars(nextLine, "#P")) {
+            if (isNextChars(nextLine, "#P") || nextLine.trim().length === 0) {
                 break;
             }
-
-            currentLine = nextLine
+            currentLine = nextLine.trim()
             currentRemainingStream = nextRemainingStream
         }
-        cellBlock.height = cellBlock.pattern.length; // increments after setting the coordinates, 
+
+        cellBlock.height = cellBlock.pattern.length;
 
         for (let i = 0; i < cellBlock.height; i++) { // Correct all pattern rows to be the same size
             if (cellBlock.pattern[i].length < cellBlock.width) {
@@ -154,12 +153,12 @@ export function readLife105String(file: string): Life105FileData {
 
         while (remainingCellBlocksString.length > 0) {
             try {
-                const cellBlockReadingData = readLife105CellBlock(remainingCellBlocksString)
-                console.log("Read cell block: ", cellBlockReadingData[0])
-                console.log("Remaining: ", cellBlockReadingData[1])
-                life105FileData.cellBlocks.push(cellBlockReadingData[0])
-                life105FileData.liveCoordinates.push(...cellBlockReadingData[0].liveCoordinates)
-                remainingCellBlocksString = cellBlockReadingData[1]
+                const [cellBlock, remaining] = readLife105CellBlock(remainingCellBlocksString)
+                console.log("Read cell block: ", cellBlock)
+                console.log("Remaining: ", remaining)
+                life105FileData.cellBlocks.push(cellBlock)
+                life105FileData.liveCoordinates.push(...cellBlock.liveCoordinates)
+                remainingCellBlocksString = remaining
             } catch (err) {
                 break;
             }
@@ -169,8 +168,4 @@ export function readLife105String(file: string): Life105FileData {
     life105FileData.liveCoordinates = uniqueNumberPairArray(life105FileData.liveCoordinates)
 
     return life105FileData
-}
-
-export function hello(): number {
-  return 5;
 }

@@ -1,7 +1,7 @@
 "use strict";
 // Life 1.05 File Format Spec: https://conwaylife.com/wiki/Life_1.05
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.hello = exports.readLife105String = exports.isLife105String = void 0;
+exports.readLife105String = exports.isLife105String = void 0;
 const set2D_1 = require("core/set2D");
 const strRead_1 = require("../../core/strRead");
 const rule_1 = require("../rule");
@@ -27,6 +27,7 @@ function readLife105CellBlock(data) {
         cellBlock.x = x;
         cellBlock.y = y;
         let [currentLine, currentRemainingStream] = (0, strRead_1.readLine)(afterPointLine);
+        currentLine = currentLine.trim();
         while (!(0, strRead_1.isNextChars)(currentLine, "#P")) { // exits when the next #P line is hit
             cellBlock.width = Math.max(cellBlock.width, currentLine.length);
             const row = new Array(cellBlock.width).fill(0);
@@ -38,13 +39,13 @@ function readLife105CellBlock(data) {
             }
             cellBlock.pattern.push(row);
             const [nextLine, nextRemainingStream] = (0, strRead_1.readLine)(currentRemainingStream);
-            if ((0, strRead_1.isNextChars)(nextLine, "#P")) {
+            if ((0, strRead_1.isNextChars)(nextLine, "#P") || nextLine.trim().length === 0) {
                 break;
             }
-            currentLine = nextLine;
+            currentLine = nextLine.trim();
             currentRemainingStream = nextRemainingStream;
         }
-        cellBlock.height = cellBlock.pattern.length; // increments after setting the coordinates, 
+        cellBlock.height = cellBlock.pattern.length;
         for (let i = 0; i < cellBlock.height; i++) { // Correct all pattern rows to be the same size
             if (cellBlock.pattern[i].length < cellBlock.width) {
                 cellBlock.pattern[i].push(...new Array(cellBlock.width - cellBlock.pattern[i].length).fill(0));
@@ -106,12 +107,12 @@ function readLife105String(file) {
         let remainingCellBlocksString = cellBlocksString;
         while (remainingCellBlocksString.length > 0) {
             try {
-                const cellBlockReadingData = readLife105CellBlock(remainingCellBlocksString);
-                console.log("Read cell block: ", cellBlockReadingData[0]);
-                console.log("Remaining: ", cellBlockReadingData[1]);
-                life105FileData.cellBlocks.push(cellBlockReadingData[0]);
-                life105FileData.liveCoordinates.push(...cellBlockReadingData[0].liveCoordinates);
-                remainingCellBlocksString = cellBlockReadingData[1];
+                const [cellBlock, remaining] = readLife105CellBlock(remainingCellBlocksString);
+                console.log("Read cell block: ", cellBlock);
+                console.log("Remaining: ", remaining);
+                life105FileData.cellBlocks.push(cellBlock);
+                life105FileData.liveCoordinates.push(...cellBlock.liveCoordinates);
+                remainingCellBlocksString = remaining;
             }
             catch (err) {
                 break;
@@ -122,7 +123,3 @@ function readLife105String(file) {
     return life105FileData;
 }
 exports.readLife105String = readLife105String;
-function hello() {
-    return 5;
-}
-exports.hello = hello;
