@@ -1,27 +1,33 @@
 "use strict";
 /**
- * An abstraction to treat a string as a parsed stream of characters
+ * @file src/core/strRead.ts
+ * @author Jacoby Johnson
+ * @brief An abstraction to read tokens and patterns incrementally from a string
  *
  * Inspired from Java Scanner and C++ std::stringstream
  *
- * StringStream's philosophy is to provide an easier API to make operating on string data formats easier through abstracting away common operations like reading lines, reading the next word, and querying if certain patterns appear in order
- *
+ * @note These functions were made just for llcacodec, so if there are any weird design decisions and a lot of thrown errors, that's why.
+ * I wanted to write the functions in such a way that if I didn't account for any edge cases then I would break the library. It forces me to
+ * think about every edge case and that's honestly how I want it to be. Also, if a file fails to parse, it simply throws a corresponding error
  */
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.readNext = exports.readCrampedPositiveInteger = exports.readCrampedInteger = exports.readCrampedNumber = exports.readIntegers = exports.readNumbers = exports.readNegativeInteger = exports.readPositiveInteger = exports.readInteger = exports.readDecimal = exports.readNumber = exports.readLine = exports.readSeq = exports.isNextSeq = exports.isNextChars = exports.readChars = exports.readChar = exports.isNextChar = void 0;
+exports.readNext = exports.readCrampedPositiveInteger = exports.readCrampedInteger = exports.readCrampedNumber = exports.readIntegers = exports.readNumbers = exports.readNegativeInteger = exports.readPositiveInteger = exports.readInteger = exports.readFloat = exports.readNumber = exports.readLine = exports.isNextChars = exports.readChars = exports.readChar = exports.isNextChar = void 0;
 const util_1 = require("./util");
 /**
- * Reads the next non white-space character from the string
+ * @brief Checks if the next non white-space character from the string matches the given character
+ *
  * If a char is specified, the next non white-space character must be that character or else an error is thrown
+ *
  * @param data The string to read a character from
- * @returns {[string, string]} where the first value is the read character and the second value is the remaining data string
+ * @param char A character to read. This string must have a length of 1 and must NOT be whitespace
+ * @returns {boolean} If the next character in the given data string matches the provided character
  */
 function isNextChar(data, char) {
     if (char.length !== 1) {
-        throw new Error("");
+        throw new Error(`[llcacodec::isNextChar Cannot query for next ${char.length} length character. Character must have a length of 1`);
     }
     if (char === " ") {
-        throw new Error("unimplemented");
+        throw new Error(`[llcacodec::isNextChar Cannot query for next whitespace character`);
     }
     let index = 0;
     while (index < data.length) {
@@ -33,41 +39,41 @@ function isNextChar(data, char) {
     throw new Error("");
 }
 exports.isNextChar = isNextChar;
-/**
- * Reads the next non white-space character from the string
- * If a char is specified, the next non white-space character must be that character or else an error is thrown
- * @param data The string to read a character from
- * @returns {[string, string]} where the first value is the read character and the second value is the remaining data string
- */
 function readChar(data, char = "") {
     if (char.length > 1) {
-        throw new Error("");
+        throw new Error(`[llcacodec::readChar Cannot read next ${char.length} length character. Character must have a length of 1]`);
     }
     if (char === " ") {
-        throw new Error("unimplemented");
+        throw new Error(`[llcacodec::readChar Cannot read whitespace character]`);
+    }
+    if (char === undefined) {
+        throw new Error(`[llcacodec::readChar Cannot read undefined]`);
     }
     let index = 0;
     while (index < data.length) {
         if (data[index] !== " ") {
+            if (char !== "" && char !== data[index]) {
+                throw new Error(`[llcacodec::readChar Failed to read next character as ${char}, got ${data[index]}]`);
+            }
             return [data[index], index + 1 < data.length ? data.substring(index + 1) : ""];
         }
         index++;
     }
-    throw new Error("");
+    throw new Error("[strRead::readChar] Reached end of string and could not read any next characters");
 }
 exports.readChar = readChar;
 function readChars(data, charOrCount) {
     if (typeof (charOrCount) === "string") {
-        if (charOrCount.length === 0) {
+        const charsToRead = charOrCount.split("");
+        if (charsToRead.length === 0) {
             throw new Error("Cannot read 0 characters from a string");
         }
-        const charReadingArray = charOrCount.split("");
         let remainingString = data;
-        for (let i = 0; i < charReadingArray.length; i++) {
-            const [char, afterChar] = readChar(remainingString, charReadingArray[i]);
+        for (let i = 0; i < charsToRead.length; i++) {
+            const [, afterChar] = readChar(remainingString, charsToRead[i]);
             remainingString = afterChar;
         }
-        return [charReadingArray, remainingString];
+        return [charsToRead, remainingString];
     }
     else if (typeof (charOrCount) === "number") {
         if (!Number.isInteger(charOrCount)) {
@@ -90,13 +96,25 @@ function readChars(data, charOrCount) {
     }
 }
 exports.readChars = readChars;
+/**
+ * @brief Determine if the next non-whitespace characters available in the data string follow the provided sequence
+ *
+ * @param data The data string to validate against
+ * @param chars The characters
+ * @returns {boolean} whether the next non-whitespace characters found in the string follow the provided sequence
+ * @throws If any whitespace is passed into the "chars" string
+ * @throws If the length of the passed in characters is 0
+ */
 function isNextChars(data, chars) {
     if (chars.length === 0) {
-        throw new Error("Cannot check validity of empty char string in data");
+        throw new Error(`[llcacodec::isNextChars Cannot check if next characters in string is empty`);
     }
     let dataIndex = 0;
     let charsIndex = 0;
     while (dataIndex < data.length && charsIndex < chars.length) {
+        if (chars[charsIndex] === " ") {
+            throw new Error(`[llcacodec::isNextChars Cannot check if next character in string is whitespace`);
+        }
         if (data[dataIndex] !== " ") {
             if (data[dataIndex] === chars[charsIndex]) {
                 charsIndex++;
@@ -110,88 +128,82 @@ function isNextChars(data, chars) {
     return charsIndex === chars.length;
 }
 exports.isNextChars = isNextChars;
+// /**
+//  * Returns if the next non-whitespace string in the data parameter matches the given sequence
+//  * @param data 
+//  * @param sequence 
+//  * @returns 
+//  */
+// export function isNextSeq(data: string, sequence: string): boolean {
+//     let line: string[] = []
+//     let index = 0;
+//     let seqIndex = 0;
+//     while (index < data.length) {
+//         if (data[index] === " ") {
+//             if (line.length === 0) {
+//                 index++;
+//                 continue;
+//             } else {
+//                 break;
+//             }
+//         }
+//         line.push(data[index])
+//         index++;
+//     }
+//     const str = line.join("")
+//     return str === sequence
+// }
+// /**
+//  * Reads the sequence from the string. If the next sequence in the string does not match the given sequence, an error is thrown
+//  * @param data 
+//  * @param sequence 
+//  * @returns 
+//  */
+// export function readSeq(data: string, sequence: string): [string, string] {
+//     let line: string[] = []
+//     let index = 0;
+//     while (index < data.length) {
+//         if (data[index] === " ") {
+//             if (line.length === 0) {
+//                 index++;
+//                 continue;
+//             } else {
+//                 break;
+//             }
+//         }
+//         line.push(data[index])
+//         index++;
+//     }
+//     const str = line.join("")
+//     if (str === sequence) {
+//         return [str, index < data.length ? data.substring(index) : ""];
+//     }
+//     throw new Error("")
+// }
 /**
- * Returns if the next non-whitespace string in the data parameter matches the given sequence
- * @param data
- * @param sequence
- * @returns
- */
-function isNextSeq(data, sequence) {
-    let line = [];
-    let index = 0;
-    let seqIndex = 0;
-    while (index < data.length) {
-        if (data[index] === " ") {
-            if (line.length === 0) {
-                index++;
-                continue;
-            }
-            else {
-                break;
-            }
-        }
-        line.push(data[index]);
-        index++;
-    }
-    const str = line.join("");
-    return str === sequence;
-}
-exports.isNextSeq = isNextSeq;
-/**
- * Reads the sequence from the string. If the next sequence in the string does not match the given sequence, an error is thrown
- * @param data
- * @param sequence
- * @returns
- */
-function readSeq(data, sequence) {
-    let line = [];
-    let index = 0;
-    while (index < data.length) {
-        if (data[index] === " ") {
-            if (line.length === 0) {
-                index++;
-                continue;
-            }
-            else {
-                break;
-            }
-        }
-        line.push(data[index]);
-        index++;
-    }
-    const str = line.join("");
-    if (str === sequence) {
-        return [str, index < data.length ? data.substring(index) : ""];
-    }
-    throw new Error("");
-}
-exports.readSeq = readSeq;
-/**
- * Reads the next line from the string. If the next line in the string is not available (i.e. the data parameter is empty), an error is thrown
- * @param data
- * @param sequence
- * @returns
+ * @brief Reads the next line from the string.
+ * @note The newline character is not retained in the returned line.
+ * @param data The data string to read from
+ * @returns {[string, string]} A tuple where the first entry is the line read from the string and the second entry is the remaining data in the data string
+ * @throws If the next line in the string is not available (i.e. the data parameter is empty), an error is thrown
  */
 function readLine(data) {
-    let line = [];
+    if (data.length === 0) {
+        throw new Error(`[llcacodec::readLine] Attempted to read line from an empty string`);
+    }
     let index = 0;
     while (index < data.length && data[index] !== "\n") {
-        line.push(data[index]);
         index++;
     }
-    if (data[index] === "\n") {
-        index++;
-    }
-    if (line.length === 0) {
-        throw new Error("");
-    }
-    return [line.join(""), index < data.length ? data.substring(index) : ""];
+    //the value at data[index] is equal to \n, or it is at the end of the data string
+    return [data.substring(0, index > 0 && data[index - 1] === "\r" ? index - 1 : index), index + 1 < data.length ? data.substring(index + 1) : ""];
 }
 exports.readLine = readLine;
 /**
- * Reads the next string of non whitespace characters from the data as a number. If the next string of non whitespace characters does not convert to a number, an error is thrown
- * @param data
- * @returns
+ * @brief Reads the next string of non whitespace characters from the data as a number.
+ * @param data The data string to read from
+ * @returns {[string, string]} A tuple, where the first entry is the number read from the string and the second entry is the remaining string after reading
+ * @throws If the next string of non whitespace characters does not convert to a number
  */
 function readNumber(data) {
     const [numstr, stream] = readNext(data);
@@ -200,41 +212,69 @@ function readNumber(data) {
         if (!isNaN(num)) {
             return [num, stream];
         }
-        throw new Error("");
+        throw new Error(`[llcacodec::readNumber Number String ${numstr} incorrectly converted to NaN]`);
     }
-    throw new Error("");
+    throw new Error(`[llcacodec::readNumber Number String ${numstr} is not a numerical string]`);
 }
 exports.readNumber = readNumber;
-function readDecimal(data) {
+/**
+ * @brief Reads the next sequence of non whitespace characters from the data as a float. The number MUST be a float value or else an error is thrown
+ * @param data The data string to read from
+ * @returns {[string, string]} A tuple, where the first entry is the float read from the string and the second entry is the remaining string after reading
+ * @throws If the next string of non whitespace characters does not convert to a number
+ * @throws If the next string of non whitespace characters is a number, but is not a float
+ */
+function readFloat(data) {
     const [num, stream] = readNumber(data);
     if (!Number.isInteger(num)) {
         return [num, stream];
     }
-    throw new Error("Cannot read Decimal");
+    throw new Error(`[llcacodec::readFloat Cannot read Decimal, as returned number is an Integer value]`);
 }
-exports.readDecimal = readDecimal;
+exports.readFloat = readFloat;
+/**
+ * @brief Reads the next sequence of non whitespace characters from the data as a integer. The number MUST be a integer value or else an error is thrown
+ * @param data The data string to read from
+ * @returns {[string, string]} A tuple, where the first entry is the integer read from the string and the second entry is the remaining string after reading
+ * @throws If the next string of non whitespace characters does not convert to a number
+ * @throws If the next string of non whitespace characters is a number, but is not an integer
+ */
 function readInteger(data) {
     const [num, stream] = readNumber(data);
     if (Number.isInteger(num)) {
         return [num, stream];
     }
-    throw new Error("Cannot read Integer");
+    throw new Error(`[llcacodec::readInteger Cannot read Decimal, as returned number is a float value]`);
 }
 exports.readInteger = readInteger;
+/**
+ * @brief Reads the next sequence of non whitespace characters from the data as a positive integer. The number MUST be a positive integer value or else an error is thrown
+ * @param data The data string to read from
+ * @returns {[string, string]} A tuple, where the first entry is the positive integer read from the string and the second entry is the remaining string after reading
+ * @throws If the next string of non whitespace characters does not convert to a number
+ * @throws If the next string of non whitespace characters is a number, but is not a positive integer
+ */
 function readPositiveInteger(data) {
     const [num, stream] = readInteger(data);
     if (num > 0) {
         return [num, stream];
     }
-    throw new Error("Cannot read positive integer");
+    throw new Error(`[llcacodec::readPositiveInteger Cannot read Positive Integer, as returned integer is less than 0]`);
 }
 exports.readPositiveInteger = readPositiveInteger;
+/**
+ * @brief Reads the next sequence of non whitespace characters from the data as a negative integer. The number MUST be a negative integer value or else an error is thrown
+ * @param data The data string to read from
+ * @returns {[string, string]} A tuple, where the first entry is the negative integer read from the string and the second entry is the remaining string after reading
+ * @throws If the next string of non whitespace characters does not convert to a number
+ * @throws If the next string of non whitespace characters is a number, but is not a negative integer
+ */
 function readNegativeInteger(data) {
     const [num, stream] = readInteger(data);
     if (num < 0) {
         return [num, stream];
     }
-    throw new Error("Cannot read negative integer");
+    throw new Error(`[llcacodec::readNegativeInteger Cannot read Negative Integer, as returned integer is greater than 0]`);
 }
 exports.readNegativeInteger = readNegativeInteger;
 function readNumbers(data, numOfNums) {
@@ -341,29 +381,34 @@ function readCrampedPositiveInteger(data) {
 }
 exports.readCrampedPositiveInteger = readCrampedPositiveInteger;
 /**
- * Reads the next string of non whitespace characters from the data. If the next string of non whitespace characters cannot be found, an error is thrown
- * @param data
- * @returns
+ * @brief Reads the next sequence of non whitespace characters from the data.
+ * If the next string of non whitespace characters cannot be found, an error is thrown
+ * @param data The data string to read from
+ * @returns {[string, string]} A tuple where the first entry is the next string of non-whitespace characters found in the provided data,
+ * and the second entry is the remaining data after reading
+ * @throws If the next string of non whitespace characters cannot be found. (IE: The given string is empty or only contains whitespace)
  */
 function readNext(data) {
-    let line = [];
     let index = 0;
+    let startIndex = -1;
     while (index < data.length) {
         if (data[index] === " ") {
-            if (line.length === 0) {
+            if (startIndex === -1) {
                 index++;
                 continue;
             }
-            else {
-                return [line.join(""), index < data.length ? data.substring(index) : ""];
+            else { // note that data[index] is still equal to whitespace
+                return [index > 0 ? data.substring(startIndex, index) : "", index < data.length ? data.substring(index) : ""];
             }
         }
-        line.push(data[index]);
+        if (startIndex === -1) {
+            startIndex = index;
+        }
         index++;
     }
-    if (line.length === 0) {
-        throw new Error();
+    if (startIndex === -1) {
+        throw new Error(`[llcacodec::readNext could not read sequence, no beginning to a non-whitespace sequence could be found (data: ${data})]`);
     }
-    return [line.join(""), index < data.length ? data.substring(index) : ""];
+    return [data.substring(startIndex, index), index < data.length ? data.substring(index) : ""];
 }
 exports.readNext = readNext;

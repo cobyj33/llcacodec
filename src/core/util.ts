@@ -1,3 +1,4 @@
+import { Set2D } from "./set2D";
 
 
 /**
@@ -189,3 +190,18 @@ export function isStrictEqualArray(first: any[], second: any[]): boolean {
 export const isStrictEqualNumberArray: (first: number[], second: number[]) => boolean = (first, second) => isStrictEqualArray(first, second)
 export const isStrictEqualStringArray: (first: string[], second: string[]) => boolean = (first, second) => isStrictEqualArray(first, second)
 export const isStrictEqualBooleanArray: (first: boolean[], second: boolean[]) => boolean = (first, second) => isStrictEqualArray(first, second)
+
+export function uniqueNumberPairArray(arr: [number, number][]) {
+    const set2D = new Set2D()
+    const output: [number, number][] = []
+    for (let i = 0; i < arr.length; i++) {
+        if (set2D.has(arr[i][0], arr[i][1])) {
+            continue;
+        }
+        output.push([...arr[i]])
+
+        set2D.add(arr[i][0], arr[i][1])
+    }
+    
+    return output;
+}

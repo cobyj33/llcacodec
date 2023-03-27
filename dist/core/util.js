@@ -1,6 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.isStrictEqualBooleanArray = exports.isStrictEqualStringArray = exports.isStrictEqualNumberArray = exports.isStrictEqualArray = exports.byteArrayAsASCII = exports.pushASCIIBytes = exports.reverseBits = exports.getErrorMessage = exports.isError = exports.numberPairArrayToMatrix = exports.getCellBoundingBox = exports.isStringArray = exports.isCellCoordinateArray = exports.isCellMatrix = exports.isNumberPairArray = exports.isIntegerString = exports.trimTrailing = exports.isNumericString = exports.isDigit = exports.throws = exports.isRectangularMatrix = void 0;
+exports.uniqueNumberPairArray = exports.isStrictEqualBooleanArray = exports.isStrictEqualStringArray = exports.isStrictEqualNumberArray = exports.isStrictEqualArray = exports.byteArrayAsASCII = exports.pushASCIIBytes = exports.reverseBits = exports.getErrorMessage = exports.isError = exports.numberPairArrayToMatrix = exports.getCellBoundingBox = exports.isStringArray = exports.isCellCoordinateArray = exports.isCellMatrix = exports.isNumberPairArray = exports.isIntegerString = exports.trimTrailing = exports.isNumericString = exports.isDigit = exports.throws = exports.isRectangularMatrix = void 0;
+const set2D_1 = require("./set2D");
 /**
  * Test if a matrix is rectangular or not
  *
@@ -186,3 +187,16 @@ const isStrictEqualStringArray = (first, second) => isStrictEqualArray(first, se
 exports.isStrictEqualStringArray = isStrictEqualStringArray;
 const isStrictEqualBooleanArray = (first, second) => isStrictEqualArray(first, second);
 exports.isStrictEqualBooleanArray = isStrictEqualBooleanArray;
+function uniqueNumberPairArray(arr) {
+    const set2D = new set2D_1.Set2D();
+    const output = [];
+    for (let i = 0; i < arr.length; i++) {
+        if (set2D.has(arr[i][0], arr[i][1])) {
+            continue;
+        }
+        output.push([...arr[i]]);
+        set2D.add(arr[i][0], arr[i][1]);
+    }
+    return output;
+}
+exports.uniqueNumberPairArray = uniqueNumberPairArray;

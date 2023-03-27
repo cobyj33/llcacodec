@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.uniqueNumberPairArray = exports.Set2D = void 0;
+exports.Set2D = void 0;
 class Set2D {
     constructor(values = []) {
         this.map = new Map();
@@ -105,16 +105,3 @@ class Set2D {
     }
 }
 exports.Set2D = Set2D;
-function uniqueNumberPairArray(arr) {
-    const set2D = new Set2D();
-    const output = [];
-    for (let i = 0; i < arr.length; i++) {
-        if (set2D.has(arr[i][0], arr[i][1])) {
-            continue;
-        }
-        output.push([...arr[i]]);
-        set2D.add(arr[i][0], arr[i][1]);
-    }
-    return output;
-}
-exports.uniqueNumberPairArray = uniqueNumberPairArray;

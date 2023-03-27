@@ -53,5 +53,6 @@ export declare function isStrictEqualArray(first: any[], second: any[]): boolean
 export declare const isStrictEqualNumberArray: (first: number[], second: number[]) => boolean;
 export declare const isStrictEqualStringArray: (first: string[], second: string[]) => boolean;
 export declare const isStrictEqualBooleanArray: (first: boolean[], second: boolean[]) => boolean;
+export declare function uniqueNumberPairArray(arr: [number, number][]): [number, number][];
 export {};
 //# sourceMappingURL=util.d.ts.map

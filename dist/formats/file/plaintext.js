@@ -89,8 +89,8 @@ function readPlainTextString(str) {
     //reads header line
     if ((0, strRead_1.isNextChar)(lines[0], "!")) {
         const [, afterHeaderExclamation] = (0, strRead_1.readChar)(lines[0], "!");
-        if ((0, strRead_1.isNextSeq)(afterHeaderExclamation, "Name:")) {
-            contents.name = (0, strRead_1.readSeq)(afterHeaderExclamation, "Name:")[1].trim();
+        if ((0, strRead_1.isNextChars)(afterHeaderExclamation, "Name:")) {
+            contents.name = (0, strRead_1.readChars)(afterHeaderExclamation, "Name:")[1].trim();
         }
         else {
             contents.name = afterHeaderExclamation.trim();
@@ -123,7 +123,7 @@ function readPlainTextString(str) {
         contents.matrix = readPlainTextDiagramToMatrix(diagramLines);
     }
     else {
-        throw new Error("");
+        throw new Error(`[llcacodec::readPlainTextString could not read final section of PlainText string as PlainText diagram]`);
     }
     return contents;
 }

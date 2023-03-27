@@ -1,4 +1,4 @@
-import { numberPairArrayToMatrix, getCellBoundingBox } from "../src/core/util";
+import { numberPairArrayToMatrix, getCellBoundingBox, uniqueNumberPairArray } from "../src/core/util";
 
 describe("Get bounding box", () => {
     it("Square 2x2", () => {
@@ -35,6 +35,25 @@ describe("Get bounding box", () => {
             [2, -1],
             [2, -2],
         ])).toEqual({ x: 0, y: 0, width: 3, height: 3 })
+    })
+})
+
+describe("Unique Number pair array", () => {
+    it("Multiple Duplicates", () => {
+        expect(uniqueNumberPairArray([
+            [1, 2],
+            [2, 3],
+            [4, 7],
+            [1, 2],
+            [2, 3],
+            [2, 3],
+            [2, 3],
+            [1, 2]
+        ])).toEqual([
+            [1, 2],
+            [2, 3],
+            [4, 7]
+        ])
     })
 })
 
@@ -86,4 +105,5 @@ describe("Number pair array to matrix", () => {
             [1, 1, 1],
         ])
     })
+
 })

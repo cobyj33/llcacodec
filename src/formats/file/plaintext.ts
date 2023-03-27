@@ -1,5 +1,5 @@
 import { pushASCIIBytes, byteArrayAsASCII, trimTrailing, numberPairArrayToMatrix } from "../../core/util";
-import { isNextChar, isNextSeq, readChar, readSeq } from "../../core/strRead"
+import { isNextChar, isNextChars, readChar, readChars } from "../../core/strRead"
 
 const VALID_DEAD_CELL_CHARACTERS = ["."] as const;
 const VALID_LIVE_CELL_CHARACTERS = ["O", "*"] as const;
@@ -104,8 +104,8 @@ export function readPlainTextString(str: string): PlainTextStringDecodedContents
     //reads header line
     if (isNextChar(lines[0], "!")) {
         const [, afterHeaderExclamation] = readChar(lines[0], "!")
-        if (isNextSeq(afterHeaderExclamation, "Name:")) {
-            contents.name = readSeq(afterHeaderExclamation, "Name:")[1].trim();
+        if (isNextChars(afterHeaderExclamation, "Name:")) {
+            contents.name = readChars(afterHeaderExclamation, "Name:")[1].trim();
         } else {
             contents.name = afterHeaderExclamation.trim()
         }
@@ -137,7 +137,7 @@ export function readPlainTextString(str: string): PlainTextStringDecodedContents
         contents.liveCoordinates = readPlainTextDiagramToXY(diagramLines)
         contents.matrix = readPlainTextDiagramToMatrix(diagramLines);
     } else {
-        throw new Error("")
+        throw new Error(`[llcacodec::readPlainTextString could not read final section of PlainText string as PlainText diagram]`)
     }
     return contents
 }

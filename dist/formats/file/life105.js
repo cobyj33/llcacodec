@@ -2,7 +2,7 @@
 // Life 1.05 File Format Spec: https://conwaylife.com/wiki/Life_1.05
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.readLife105String = exports.isLife105String = void 0;
-const set2D_1 = require("../../core/set2D");
+const util_1 = require("../../core/util");
 const strRead_1 = require("../../core/strRead");
 const rule_1 = require("../rule");
 const LIFE_105_HEADER = "#Life 1.05";
@@ -12,6 +12,7 @@ const Life105FileExtensions = [".lif", ".life"];
 const LIFE_105_DEAD_CHAR = ".";
 const LIFE_105_ALIVE_CHAR = "*";
 function readLife105CellBlock(data) {
+    data = data.trim();
     if ((0, strRead_1.isNextChars)(data, "#P")) {
         const cellBlock = {
             x: 0,
@@ -29,8 +30,6 @@ function readLife105CellBlock(data) {
         let [currentLine, currentRemainingStream] = (0, strRead_1.readLine)(afterPointLine);
         currentLine = currentLine.trim();
         while (!(0, strRead_1.isNextChars)(currentLine, "#P") || currentLine.length === 0) { // exits when the next #P line is hit
-            console.log("Current Line: ", currentLine);
-            console.log("Remaining: ", currentRemainingStream);
             if (currentLine.length === 0) {
                 if (currentRemainingStream.trim().length === 0) {
                     break;
@@ -92,7 +91,7 @@ function readLife105String(file) {
     const lines = file.split("\n");
     const headerLine = lines[0];
     if (!headerLine.trim().startsWith(LIFE_105_HEADER)) {
-        throw new Error("");
+        throw new Error(`[llcacodec::readLife105String given Life105String does not begin with the required Life 1.05 header "#Life 1.05"]`);
     }
     let currentLineIndex = 1;
     while ((0, strRead_1.isNextChar)(lines[currentLineIndex], "#")) {
@@ -110,7 +109,7 @@ function readLife105String(file) {
             life105FileData.ruleString = rule_1.CONWAY_RULE_STRING_SB;
             life105FileData.rule = (0, rule_1.CONWAY_LIFE_RULE_DATA)();
         }
-        else if (id === "P") {
+        else if (id === "P") { // encountered beginning of Cell Block Data
             break;
         }
         life105FileData.hashLines.push({
@@ -123,22 +122,17 @@ function readLife105String(file) {
     if ((0, strRead_1.isNextChars)(lines[currentLineIndex], "#P")) {
         const cellBlocksString = lines.slice(currentLineIndex).join("\n").trim();
         let remainingCellBlocksString = cellBlocksString;
-        while (remainingCellBlocksString.length > 0) {
-            console.log(remainingCellBlocksString);
-            try {
-                const [cellBlock, remaining] = readLife105CellBlock(remainingCellBlocksString);
-                console.log("Read cell block: ", cellBlock);
-                console.log("Remaining: ", remaining);
-                life105FileData.cellBlocks.push(cellBlock);
-                life105FileData.liveCoordinates.push(...cellBlock.liveCoordinates);
-                remainingCellBlocksString = remaining;
-            }
-            catch (err) {
-                break;
-            }
+        while (remainingCellBlocksString.length > 0 && (0, strRead_1.isNextChars)(remainingCellBlocksString, "#P")) {
+            const [cellBlock, remaining] = readLife105CellBlock(remainingCellBlocksString);
+            life105FileData.cellBlocks.push(cellBlock);
+            life105FileData.liveCoordinates.push(...cellBlock.liveCoordinates.map(coordinate => ([coordinate[0], coordinate[1]])));
+            remainingCellBlocksString = remaining;
         }
     }
-    life105FileData.liveCoordinates = (0, set2D_1.uniqueNumberPairArray)(life105FileData.liveCoordinates);
+    else {
+        throw new Error(`[llcacodec::readLife105String given Life105String does not contain Cell Block data directly after hashed comments]`);
+    }
+    life105FileData.liveCoordinates = (0, util_1.uniqueNumberPairArray)(life105FileData.liveCoordinates);
     return life105FileData;
 }
 exports.readLife105String = readLife105String;

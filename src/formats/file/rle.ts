@@ -1,4 +1,4 @@
-import { isNextChar, isNextChars, isNextSeq, readChar, readChars, readCrampedNumber, readNext, readNumber, readNumbers } from "../../core/strRead"
+import { isNextChar, isNextChars, readChar, readChars, readCrampedNumber, readNext, readNumber, readNumbers } from "../../core/strRead"
 import { numberPairArrayToMatrix, isDigit, isStrictEqualStringArray, throws  } from "../../core/util"
 import { LifeRuleData, readLifeRule, isValidLifeRule, CONWAY_RULE_STRING_BS, CONWAY_LIFE_RULE_DATA } from "../rule";
 

@@ -18,5 +18,4 @@ export declare class Set2D {
     [Symbol.iterator](): IterableIterator<[number, number]>;
     equals(other: Set2D): boolean;
 }
-export declare function uniqueNumberPairArray(arr: [number, number][]): [number, number][];
 //# sourceMappingURL=set2D.d.ts.map
