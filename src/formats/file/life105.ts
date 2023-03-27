@@ -1,6 +1,6 @@
 // Life 1.05 File Format Spec: https://conwaylife.com/wiki/Life_1.05
 
-import { uniqueNumberPairArray } from "core/set2D";
+import { uniqueNumberPairArray } from "../../core/set2D";
 import { isNextChar, isNextChars, readChar, readChars, readIntegers, readLine } from "../../core/strRead";
 import { CONWAY_LIFE_RULE_DATA, CONWAY_RULE_STRING_SB, readLifeRule } from "../rule";
 
@@ -65,13 +65,17 @@ function readLife105CellBlock(data: string): [Life105CellBlock, string] {
         let [currentLine, currentRemainingStream] = readLine(afterPointLine);
         currentLine = currentLine.trim();
         while (!isNextChars(currentLine, "#P") || currentLine.length === 0) { // exits when the next #P line is hit
+            console.log("Current Line: ", currentLine)
+            console.log("Remaining: ", currentRemainingStream)
 
             if (currentLine.length === 0) {
+                if (currentRemainingStream.trim().length === 0) {
+                    break;
+                }
                 const [nextLine, nextRemainingStream] = readLine(currentRemainingStream)
                 if (isNextChars(nextLine, "#P")) {
                     break;
                 }
-    
                 currentLine = nextLine
                 currentRemainingStream = nextRemainingStream
                 continue;
@@ -86,6 +90,10 @@ function readLife105CellBlock(data: string): [Life105CellBlock, string] {
                 }
             }
             cellBlock.pattern.push(row)
+
+            if (currentRemainingStream.trim().length === 0) {
+                break;
+            }
             const [nextLine, nextRemainingStream] = readLine(currentRemainingStream)
             if (isNextChars(nextLine, "#P")) {
                 break;
@@ -94,6 +102,7 @@ function readLife105CellBlock(data: string): [Life105CellBlock, string] {
             currentLine = nextLine
             currentRemainingStream = nextRemainingStream
         }
+        console.log("Current Line Exited: ", currentLine)
 
         cellBlock.height = cellBlock.pattern.length;
 
