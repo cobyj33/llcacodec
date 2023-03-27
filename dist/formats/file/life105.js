@@ -2,7 +2,7 @@
 // Life 1.05 File Format Spec: https://conwaylife.com/wiki/Life_1.05
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.readLife105String = exports.isLife105String = void 0;
-const set2D_1 = require("core/set2D");
+const set2D_1 = require("../../core/set2D");
 const strRead_1 = require("../../core/strRead");
 const rule_1 = require("../rule");
 const LIFE_105_HEADER = "#Life 1.05";
@@ -28,7 +28,21 @@ function readLife105CellBlock(data) {
         cellBlock.y = y;
         let [currentLine, currentRemainingStream] = (0, strRead_1.readLine)(afterPointLine);
         currentLine = currentLine.trim();
-        while (!(0, strRead_1.isNextChars)(currentLine, "#P")) { // exits when the next #P line is hit
+        while (!(0, strRead_1.isNextChars)(currentLine, "#P") || currentLine.length === 0) { // exits when the next #P line is hit
+            console.log("Current Line: ", currentLine);
+            console.log("Remaining: ", currentRemainingStream);
+            if (currentLine.length === 0) {
+                if (currentRemainingStream.trim().length === 0) {
+                    break;
+                }
+                const [nextLine, nextRemainingStream] = (0, strRead_1.readLine)(currentRemainingStream);
+                if ((0, strRead_1.isNextChars)(nextLine, "#P")) {
+                    break;
+                }
+                currentLine = nextLine;
+                currentRemainingStream = nextRemainingStream;
+                continue;
+            }
             cellBlock.width = Math.max(cellBlock.width, currentLine.length);
             const row = new Array(cellBlock.width).fill(0);
             for (let i = 0; i < cellBlock.width; i++) {
@@ -38,13 +52,17 @@ function readLife105CellBlock(data) {
                 }
             }
             cellBlock.pattern.push(row);
-            const [nextLine, nextRemainingStream] = (0, strRead_1.readLine)(currentRemainingStream);
-            if ((0, strRead_1.isNextChars)(nextLine, "#P") || nextLine.trim().length === 0) {
+            if (currentRemainingStream.trim().length === 0) {
                 break;
             }
-            currentLine = nextLine.trim();
+            const [nextLine, nextRemainingStream] = (0, strRead_1.readLine)(currentRemainingStream);
+            if ((0, strRead_1.isNextChars)(nextLine, "#P")) {
+                break;
+            }
+            currentLine = nextLine;
             currentRemainingStream = nextRemainingStream;
         }
+        console.log("Current Line Exited: ", currentLine);
         cellBlock.height = cellBlock.pattern.length;
         for (let i = 0; i < cellBlock.height; i++) { // Correct all pattern rows to be the same size
             if (cellBlock.pattern[i].length < cellBlock.width) {
@@ -76,9 +94,9 @@ function readLife105String(file) {
     if (!headerLine.trim().startsWith(LIFE_105_HEADER)) {
         throw new Error("");
     }
-    let currentLine = 1;
-    while ((0, strRead_1.isNextChar)(lines[currentLine], "#")) {
-        const [, afterHash] = (0, strRead_1.readChar)(lines[currentLine], "#");
+    let currentLineIndex = 1;
+    while ((0, strRead_1.isNextChar)(lines[currentLineIndex], "#")) {
+        const [, afterHash] = (0, strRead_1.readChar)(lines[currentLineIndex], "#");
         const [id, afterID] = (0, strRead_1.readChar)(afterHash);
         const trimmedContent = afterID.trim();
         if (id === "D") {
@@ -98,14 +116,15 @@ function readLife105String(file) {
         life105FileData.hashLines.push({
             id: id,
             content: trimmedContent,
-            full: lines[currentLine].trim()
+            full: lines[currentLineIndex].trim()
         });
-        currentLine++;
+        currentLineIndex++;
     }
-    if ((0, strRead_1.isNextChars)(lines[currentLine], "#P")) {
-        const cellBlocksString = lines.slice(currentLine).join("\n").trim();
+    if ((0, strRead_1.isNextChars)(lines[currentLineIndex], "#P")) {
+        const cellBlocksString = lines.slice(currentLineIndex).join("\n").trim();
         let remainingCellBlocksString = cellBlocksString;
         while (remainingCellBlocksString.length > 0) {
+            console.log(remainingCellBlocksString);
             try {
                 const [cellBlock, remaining] = readLife105CellBlock(remainingCellBlocksString);
                 console.log("Read cell block: ", cellBlock);
