@@ -131,6 +131,19 @@ export function numberPairArrayToMatrix(positions: [number, number][]): (0 | 1)[
     return matrix;
 }
 
+export function matrixToNumberPairArray(matrix: (0 | 1)[][]): [number, number][] {
+    const output: [number, number][] = []
+    for (let row = 0; row < matrix.length; row++) {
+        for (let col = 0; col < matrix[row].length; col++) {
+            if (matrix[row][col] === 1) {
+                output.push([col, -row])
+            }
+        }
+    }
+
+    return output;
+}
+
 export function isError(e: any): e is Error {
     return typeof(e) === "object" && e !== null && "stack" in e && typeof(e.stack) === 'string' && "message" in e && typeof(e.message) === 'string';
 }
@@ -154,14 +167,6 @@ export function reverseBits(num: number): number {
         o |= (num & 1 << (31 - i)) > 0 ? 1 << i : 0;
     }  
     return o;
-}
-
-export function pushASCIIBytes(byteData: number[], str: string) {
-    byteData.push(...str.split("").map(ch => ch.charCodeAt(0)))
-}
-
-export function byteArrayAsASCII(byteData: number[]): string {
-    return byteData.map(val => String.fromCharCode(val)).join("")
 }
 
 /**

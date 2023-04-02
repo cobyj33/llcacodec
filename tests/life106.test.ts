@@ -6,7 +6,10 @@ describe("Reading", () => {
         expect(readLife106String("#Life 1.06\n" +
             "0 0\n" +
             "1 0\n" +
-            "2 0\n")).toEqual([[0, 0], [1, 0], [2, 0]])
+            "2 0\n")).toEqual({
+                format: "life 1.06",
+                liveCoordinates: [[0, 0], [1, 0], [2, 0]]
+            })
     })
 
     it("Negatives", () => {
@@ -14,7 +17,10 @@ describe("Reading", () => {
             "0 0\n" +
             "-1 0\n" +
             "2 0\n" +
-            "3 -1\n")).toEqual([[0, 0], [-1, 0], [2, 0], [3, -1]])
+            "3 -1\n")).toEqual({
+                format: "life 1.06",
+                liveCoordinates: [[0, 0], [-1, 0], [2, 0], [3, -1]]
+            })
     })
 
     it("Duplicates", () => {
@@ -23,7 +29,10 @@ describe("Reading", () => {
             "-1 0\n" +
             "2 0\n" +
             "2 0\n" +
-            "3 -1\n")).toEqual([[0, 0], [-1, 0], [2, 0], [3, -1]])
+            "3 -1\n")).toEqual({
+                format: "life 1.06",
+                liveCoordinates: [[0, 0], [-1, 0], [2, 0], [3, -1]]
+            })
     })
 
     it("Empty Lines at end", () => {
@@ -31,7 +40,10 @@ describe("Reading", () => {
             "0 0\n" +
             "-1 0\n" +
             "2 0\n" +
-            "3 -1\n\n\n")).toEqual([[0, 0], [-1, 0], [2, 0], [3, -1]])
+            "3 -1\n\n\n")).toEqual({
+                format: "life 1.06",
+                liveCoordinates: [[0, 0], [-1, 0], [2, 0], [3, -1]]   
+            })
     })
 
     it("No newline at end", () => {
@@ -39,7 +51,10 @@ describe("Reading", () => {
             "0 0\n" +
             "-1 0\n" +
             "2 0\n" +
-            "3 -1")).toEqual([[0, 0], [-1, 0], [2, 0], [3, -1]])
+            "3 -1")).toEqual({
+                format: "life 1.06",
+                liveCoordinates: [[0, 0], [-1, 0], [2, 0], [3, -1]]
+            })
     })
 
     it("Decimals", () => {
@@ -63,7 +78,10 @@ describe("Reading", () => {
             "0 0 \n" +
             "-1 0 \n" +
             "2 0 \n" +
-            "3 -1 \n")).toEqual([[0, 0], [-1, 0], [2, 0], [3, -1]])
+            "3 -1 \n")).toEqual({
+                format: "life 1.06",
+                liveCoordinates: [[0, 0], [-1, 0], [2, 0], [3, -1]]
+            })
     })
 
     it("Extra space at beginnings of coordinate lines", () => {
@@ -71,7 +89,10 @@ describe("Reading", () => {
             " 0 0 \n" +
             " -1 0 \n" +
             " 2 0 \n" +
-            " 3 -1 \n")).toEqual([[0, 0], [-1, 0], [2, 0], [3, -1]])
+            " 3 -1 \n")).toEqual({
+                format: "life 1.06",
+                liveCoordinates: [[0, 0], [-1, 0], [2, 0], [3, -1]]
+            })
     })
 
     it("Extra space between coordinates of coordinate lines", () => {
@@ -79,7 +100,10 @@ describe("Reading", () => {
             " 0  0 \n" +
             " -1  0 \n" +
             " 2       0 \n" +
-            " 3  -1 \n")).toEqual([[0, 0], [-1, 0], [2, 0], [3, -1]])
+            " 3  -1 \n")).toEqual({
+                format: "life 1.06",
+                liveCoordinates: [[0, 0], [-1, 0], [2, 0], [3, -1]]
+            })
     })
 
 
@@ -88,11 +112,17 @@ describe("Reading", () => {
 describe("Writing", () => {
 
     it("Writing nothing", () => {
-        expect(writeLife106String([])).toBe("#Life 1.06\n")
+        expect(writeLife106String({
+            format: "life 1.06",
+            liveCoordinates: []
+        })).toBe("#Life 1.06\n")
     })
 
     it("Writing values", () => {
-        expect(writeLife106String([[1, 1], [2, 2]])).toBe(
+        expect(writeLife106String({
+            format: "life 1.06",
+            liveCoordinates: [[1, 1], [2, 2]]
+        })).toBe(
             "#Life 1.06\n" +
             "1 1\n" +
             "2 2\n"
@@ -100,7 +130,10 @@ describe("Writing", () => {
     })
 
     it("Writing Duplicates", () => {
-        expect(writeLife106String([[1, 1], [2, 2], [2, 2]])).toBe(
+        expect(writeLife106String({
+            format: "life 1.06",
+            liveCoordinates: [[1, 1], [2, 2], [2, 2]]
+        })).toBe(
             "#Life 1.06\n" +
             "1 1\n" +
             "2 2\n"

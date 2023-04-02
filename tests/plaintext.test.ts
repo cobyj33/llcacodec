@@ -1,11 +1,11 @@
-import { readPlainTextDiagramToXY, readPlainTextString, writePlainTextFromCoordinates, writePlainTextMatrix } from "../src/formats/file/plaintext";
+import { PlaintextCoordinateWriteData, PlaintextMatrixWriteData, readPlaintextDiagramToXY, readPlaintextString, writePlaintextString } from "../src/formats/file/plaintext";
 
 describe("Reading", () => {
 
     describe("XY", () => {
 
         it("Acorn", () => {
-            expect(readPlainTextString(
+            expect(readPlaintextString(
                 "!Name: Acorn\n" +
                 "!\n" + 
                 ".........\n" +
@@ -14,6 +14,7 @@ describe("Reading", () => {
                 "..O......\n" +
                 ".........\n"
             )).toEqual({
+                format: "plaintext",
                 name: "Acorn",
                 description: [],
                 matrix: [[0, 0, 0, 0, 0, 0, 0, 0, 0],
@@ -34,7 +35,7 @@ describe("Reading", () => {
         })
 
         it("Acorn w/ Description", () => {
-            expect(readPlainTextString(
+            expect(readPlaintextString(
                 "!Name: Acorn\n" +
                 "!Acorn is a popular methuselah pattern\n" +
                 "!Which grows chaotically over thousands of generations \n"+ 
@@ -45,6 +46,7 @@ describe("Reading", () => {
                 "..O......\n" +
                 ".........\n"
             )).toEqual({
+                format: "plaintext",
                 name: "Acorn",
                 description: [
                     "Acorn is a popular methuselah pattern",
@@ -68,7 +70,7 @@ describe("Reading", () => {
         })
 
         it("Acorn w/ Description and no trailing description line", () => {
-            expect(readPlainTextString(
+            expect(readPlaintextString(
                 "!Name: Acorn\n" +
                 "!Acorn is a popular methuselah pattern\n" +
                 "!Which grows chaotically over thousands of generations \n"+ 
@@ -78,6 +80,7 @@ describe("Reading", () => {
                 "..O......\n" +
                 ".........\n"
             )).toEqual({
+                format: "plaintext",
                 name: "Acorn",
                 description: [
                     "Acorn is a popular methuselah pattern",
@@ -101,7 +104,7 @@ describe("Reading", () => {
         })
 
         it("Acorn w/ Name without Name: Identifier", () => {
-            expect(readPlainTextString(
+            expect(readPlaintextString(
                 "!Acorn\n" +
                 "!Acorn is a popular methuselah pattern\n" +
                 "!Which grows chaotically over thousands of generations \n"+ 
@@ -111,6 +114,7 @@ describe("Reading", () => {
                 "..O......\n" +
                 ".........\n"
             )).toEqual({
+                format: "plaintext",
                 name: "Acorn",
                 description: [
                     "Acorn is a popular methuselah pattern",
@@ -134,7 +138,7 @@ describe("Reading", () => {
         })
 
         it("Acorn w/ Description and Name Lines with spaces around exclamation", () => {
-            expect(readPlainTextString(
+            expect(readPlaintextString(
                 " !Acorn\n" +
                 " !  Acorn is a popular methuselah pattern\n" +
                 " ! Which grows chaotically over thousands of generations \n"+ 
@@ -144,6 +148,7 @@ describe("Reading", () => {
                 "..O......\n" +
                 ".........\n"
             )).toEqual({
+                format: "plaintext",
                 name: "Acorn",
                 description: [
                     "Acorn is a popular methuselah pattern",
@@ -180,7 +185,11 @@ describe("write plain text matrix", () => {
         [0, 0, 1, 0, 0, 0, 0, 0, 0],
         [0, 0, 0, 0, 0, 0, 0, 0, 0]]
     
-        expect(writePlainTextMatrix(acorn, "Acorn", "")).toEqual(
+        expect(writePlaintextString({
+            matrix: acorn,
+            name: "Acorn",
+            description: "" 
+        })).toEqual(
             "!Name: Acorn\n" +
             "!\n" + 
             ".........\n" +
@@ -198,7 +207,11 @@ describe("write plain text matrix", () => {
         [0, 0, 1, 0, 0, 0, 0, 0, 0],
         [0, 0, 0, 0, 0, 0, 0, 0, 0]]
     
-        expect(writePlainTextMatrix(acorn, "Acorn", [])).toEqual(
+        expect(writePlaintextString({
+            description: [],
+            name: "Acorn",
+            matrix: acorn
+        })).toBe(
             "!Name: Acorn\n" +
             "!\n" + 
             ".........\n" +
@@ -215,8 +228,13 @@ describe("write plain text matrix", () => {
         [0, 0, 0, 0, 1, 0, 0, 0, 0],
         [0, 0, 1, 0, 0, 0, 0, 0, 0],
         [0, 0, 0, 0, 0, 0, 0, 0, 0]]
+
     
-        expect(writePlainTextMatrix(acorn, "Acorn", "A chaotic, classic pattern")).toEqual(
+        expect(writePlaintextString({
+            name: "Acorn",
+            description: "A chaotic, classic pattern",
+            matrix: acorn
+        })).toBe(
             "!Name: Acorn\n" +
             "!A chaotic, classic pattern\n" +
             "!\n" + 
@@ -234,8 +252,14 @@ describe("write plain text matrix", () => {
         [0, 0, 0, 0, 1, 0, 0, 0, 0],
         [0, 0, 1, 0, 0, 0, 0, 0, 0],
         [0, 0, 0, 0, 0, 0, 0, 0, 0]]
+
+        
     
-        expect(writePlainTextMatrix(acorn, "Acorn", "A chaotic, classic pattern\nfound by Charles Corderman\nFinal bounding box of 215 by 168 cells")).toEqual(
+        expect(writePlaintextString({
+            name: "Acorn",
+            description:  "A chaotic, classic pattern\nfound by Charles Corderman\nFinal bounding box of 215 by 168 cells",
+            matrix: acorn
+        })).toEqual(
             "!Name: Acorn\n" +
             "!A chaotic, classic pattern\n" +
             "!found by Charles Corderman\n" +
@@ -255,10 +279,14 @@ describe("write plain text matrix", () => {
         [0, 0, 0, 0, 1, 0, 0, 0, 0],
         [0, 0, 1, 0, 0, 0, 0, 0, 0],
         [0, 0, 0, 0, 0, 0, 0, 0, 0]]
-    
-        expect(writePlainTextMatrix(acorn, "Acorn", ["A chaotic, classic pattern",
-                                                    "found by Charles Corderman",
-                                                    "Final bounding box of 215 by 168 cells"])).toEqual(
+
+        expect(writePlaintextString({ 
+            name: "Acorn",
+            description: ["A chaotic, classic pattern",
+            "found by Charles Corderman",
+            "Final bounding box of 215 by 168 cells"],
+            matrix: acorn
+        })).toEqual(
             "!Name: Acorn\n" +
             "!A chaotic, classic pattern\n" +
             "!found by Charles Corderman\n" +
@@ -278,10 +306,14 @@ describe("write plain text matrix", () => {
         [0, 0, 0, 0, 1, 0, 0, 0, 0],
         [0, 0, 1, 0, 0, 0, 0, 0, 0],
         [0, 0, 0, 0, 0, 0, 0, 0, 0]]
-    
-        expect(writePlainTextMatrix(acorn, "Acorn", ["A chaotic, classic pattern\nThe most popular methuselah pattern",
-                                                    "found by Charles Corderman",
-                                                    "Final bounding box of 215 by 168 cells\nProduces 13 gliders"])).toEqual(
+
+        expect(writePlaintextString({
+            name: "Acorn",
+            description: ["A chaotic, classic pattern\nThe most popular methuselah pattern",
+            "found by Charles Corderman",
+            "Final bounding box of 215 by 168 cells\nProduces 13 gliders"],
+            matrix: acorn
+        })).toBe(
             "!Name: Acorn\n" +
             "!A chaotic, classic pattern\n" +
             "!The most popular methuselah pattern\n" +
@@ -303,10 +335,14 @@ describe("write plain text matrix", () => {
         [0, 0, 0, 0, 1, 0, 0, 0, 0],
         [0, 0, 1, 0, 0, 0, 0, 0, 0],
         [0, 0, 0, 0, 0, 0, 0, 0, 0]]
-    
-        expect(writePlainTextMatrix(acorn, "Acorn", ["A chaotic, classic pattern\nThe most popular methuselah pattern",
-                                                    "found by Charles Corderman",
-                                                    "Final bounding box of 215 by 168 cells\nProduces 13 gliders"])).toEqual(
+
+        expect(writePlaintextString({
+            name: "Acorn",
+            description: ["A chaotic, classic pattern\nThe most popular methuselah pattern",
+            "found by Charles Corderman",
+            "Final bounding box of 215 by 168 cells\nProduces 13 gliders"],
+            matrix: acorn
+        })).toEqual(
             "!Name: Acorn\n" +
             "!A chaotic, classic pattern\n" +
             "!The most popular methuselah pattern\n" +
@@ -322,9 +358,9 @@ describe("write plain text matrix", () => {
         )
     })
 
-    describe("readPlainTextDiagramToXY", () => {
+    describe("readPlaintextDiagramToXY", () => {
 
-        expect(readPlainTextDiagramToXY(
+        expect(readPlaintextDiagramToXY(
             ".........\n" +
             ".OO..OOO.\n" +
             "....O....\n" + 

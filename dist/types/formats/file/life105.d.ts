@@ -15,7 +15,7 @@ interface Life105CellBlock {
     pattern: (0 | 1)[][];
     liveCoordinates: [number, number][];
 }
-export interface Life105FileData {
+export interface Life105DecodedData {
     cellBlocks: Life105CellBlock[];
     liveCoordinates: [number, number][];
     descriptions: string[];
@@ -24,6 +24,6 @@ export interface Life105FileData {
     hashLines: HashLine[];
 }
 export declare function isLife105String(file: string): boolean;
-export declare function readLife105String(file: string): Life105FileData;
+export declare function readLife105String(file: string): Life105DecodedData;
 export {};
 //# sourceMappingURL=life105.d.ts.map

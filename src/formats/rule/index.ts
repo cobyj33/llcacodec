@@ -75,6 +75,7 @@ export function readLifeRule(rule: string | number, format: LifeRuleStringNotati
 export function makeLifeRule(lifeRuleData: LifeRuleData, format: "b/s"): string
 export function makeLifeRule(lifeRuleData: LifeRuleData, format: "s/b"): string
 export function makeLifeRule(lifeRuleData: LifeRuleData, format: "int"): number
+export function makeLifeRule(lifeRuleData: LifeRuleData, format: LifeRuleStringNotation): string | number
 export function makeLifeRule(lifeRuleData: LifeRuleData, format: LifeRuleStringNotation): string | number {
     try {
         switch (format) {
@@ -85,4 +86,12 @@ export function makeLifeRule(lifeRuleData: LifeRuleData, format: LifeRuleStringN
     } catch (e) {
         throw new Error(`Could not make life rule string from life rule data object: (${JSON.stringify(lifeRuleData)}) : ${getErrorMessage(e)}`)
     }
+}
+
+export function convertLifeRule(original: string | number, dstFormat: "b/s"): string
+export function convertLifeRule(original: string | number, dstFormat: "s/b"): string
+export function convertLifeRule(original: string | number, dstFormat: "int"): number
+export function convertLifeRule(original: string | number, dstFormat: LifeRuleStringNotation): string | number {
+    const lifeRuleData = readLifeRule(original);
+    return makeLifeRule(lifeRuleData, dstFormat);
 }

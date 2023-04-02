@@ -23,7 +23,6 @@ interface HashLine {
     full: string
 }
 
-
 interface Life105CellBlock {
     x: number,
     y: number,
@@ -33,7 +32,8 @@ interface Life105CellBlock {
     liveCoordinates: [number, number][]
 }
 
-export interface Life105FileData {
+export interface Life105DecodedData {
+    format: "life 1.05"
     cellBlocks: Life105CellBlock[]
     liveCoordinates: [number, number][]
     descriptions: string[],
@@ -117,14 +117,36 @@ function readLife105CellBlock(data: string): [Life105CellBlock, string] {
     }
 }
 
+function extractLife105CellBlockStrings(data: string): string[] {
+    const lines = data.trim().split("\n")
+    const cellBlockStrings: string[] = [];
+
+    let cellBlockStart = -1;
+    for (let i = 0; i < lines.length; i++) {
+        if (isNextChars(lines[i].trim(), "#P")) {
+            if (cellBlockStart !== -1) {
+                cellBlockStrings.push(lines.slice(cellBlockStart, i).join("\n"));
+            }
+            cellBlockStart = i;
+        }
+    }
+
+    if (cellBlockStart !== -1) {
+        cellBlockStrings.push(lines.slice(cellBlockStart, lines.length).join("\n"));
+    }
+
+    return cellBlockStrings
+}
+ 
 export function isLife105String(file: string): boolean {
     return file.trim().startsWith(LIFE_105_HEADER)
 }
 
-export function readLife105String(file: string): Life105FileData {
+export function readLife105String(file: string): Life105DecodedData {
     file = file.replace("\r", "")
 
-    const life105FileData: Life105FileData = {
+    const life105FileData: Life105DecodedData = {
+        format: "life 1.05",
         cellBlocks: [],
         liveCoordinates: [],
         descriptions: [],
@@ -167,21 +189,31 @@ export function readLife105String(file: string): Life105FileData {
         currentLineIndex++
     }
 
-    if (isNextChars(lines[currentLineIndex], "#P")) {
-        const cellBlocksString = lines.slice(currentLineIndex).join("\n").trim()
-        let remainingCellBlocksString = cellBlocksString
+    const cellBlockStrings: string[] = extractLife105CellBlockStrings(lines.slice(currentLineIndex).join("\n"));
 
-        while (remainingCellBlocksString.length > 0 && isNextChars(remainingCellBlocksString, "#P")) {
-            const [cellBlock, remaining] = readLife105CellBlock(remainingCellBlocksString)
-            life105FileData.cellBlocks.push(cellBlock)
-            life105FileData.liveCoordinates.push(...cellBlock.liveCoordinates.map(coordinate => ([coordinate[0], coordinate[1]]) as [number, number] ))
-            remainingCellBlocksString = remaining
-        }
-    } else {
-        throw new Error(`[llcacodec::readLife105String given Life105String does not contain Cell Block data directly after hashed comments]`)
+    for (let i = 0; i < cellBlockStrings.length; i++) {
+        const [cellBlock] = readLife105CellBlock(cellBlockStrings[i])
+        life105FileData.cellBlocks.push(cellBlock)
+        life105FileData.liveCoordinates.push(...cellBlock.liveCoordinates)
     }
+
+    // if (isNextChars(lines[currentLineIndex], "#P")) {
+    //     const cellBlocksString = lines.slice(currentLineIndex).join("\n").trim()
+    //     let remainingCellBlocksString = cellBlocksString
+
+    //     while (remainingCellBlocksString.length > 0 && isNextChars(remainingCellBlocksString, "#P")) {
+    //         const [cellBlock, remaining] = readLife105CellBlock(remainingCellBlocksString)
+    //         life105FileData.cellBlocks.push(cellBlock)
+    //         life105FileData.liveCoordinates.push(...cellBlock.liveCoordinates)
+    //         remainingCellBlocksString = remaining
+    //     }
+    // } else {
+    //     throw new Error(`[llcacodec::readLife105String given Life105String does not contain Cell Block data directly after hashed comments]`)
+    // }
 
     life105FileData.liveCoordinates = uniqueNumberPairArray(life105FileData.liveCoordinates)
 
     return life105FileData
 }
+
+// function writeLife105String()

@@ -4,7 +4,7 @@ interface HashLine {
     content: string;
     full: string;
 }
-export interface RLEFileData {
+export interface RLEDecodedData {
     comments: string[];
     name: string;
     topleft: [number, number] | null;
@@ -39,6 +39,6 @@ interface ParsedRLEData {
 export declare function readRLEData(rlePattern: string, topleft?: [number, number]): ParsedRLEData;
 export declare function readRLEStringHeader(headerLine: string): RLEFileHeaderData;
 export declare function isRLEString(file: string): boolean;
-export declare function readRLEString(file: string): RLEFileData;
+export declare function readRLEString(file: string): RLEDecodedData;
 export {};
 //# sourceMappingURL=rle.d.ts.map

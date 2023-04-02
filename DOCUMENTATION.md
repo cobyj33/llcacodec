@@ -17,7 +17,7 @@ cacodec.js has no dependencies, but this isn't guaranteed to stay true as the li
 - [cacodec.js](#cacodecjs)
   - [Table of Contents](#table-of-contents)
   - [API](#api)
-    - [readLifeFile](#readlifefile)
+    - [readLifeString](#readlifefile)
     - [readLifeFileLiveCoordinates](#readlifefilelivecoordinates)
     - [getLifeFileFormat](#getlifefileformat)
     - [readLifeRule](#readliferule)
@@ -35,7 +35,7 @@ cacodec.js has no dependencies, but this isn't guaranteed to stay true as the li
 
 llcacodecjs comes with 7 simple public functions:
 
-- readLifeFile
+- readLifeString
 - readLifeFileLiveCoordinates
 - getLifeFileFormat
 - readLifeRule
@@ -43,11 +43,11 @@ llcacodecjs comes with 7 simple public functions:
 - isValidLifeRule
 - getLifeRuleFormat
 
-### readLifeFile
+### readLifeString
 
-**readLifeFile** takes in a string representing the file data, as well as an optional format identifier representing either the inputted format or "". This optional format identifier cannot be null or undefined, or else an error is thrown. The optional format identifier can either 
+**readLifeString** takes in a string representing the file data, as well as an optional format identifier representing either the inputted format or "". This optional format identifier cannot be null or undefined, or else an error is thrown. The optional format identifier can either 
 
-readLifeFile(data: string, format: "plaintext" | "life 1.06" | "rle" | "life 1.05" | "")
+readLifeString(data: string, format: "plaintext" | "life 1.06" | "rle" | "life 1.05" | "")
 
 upon 
 
@@ -99,20 +99,20 @@ Currently, no. It's coming, but not yet, as the API itself is not even stable, a
 On browser, the preferred format would probably be using the fetch API, like this
 
 ```js
-import { readLifeFile } from "llcacodecjs"
+import { readLifeString } from "llcacodecjs"
 
 // Using linked promises
 
 fetch("my/path")
 .then(res => res.text())
-.then(str => readLifeFile(str))
+.then(str => readLifeString(str))
 .then(data => console.log("Do something with this data", data));
 
 // using an async function
 
 async function fetchLifeLikeFileData(pathOrURL) {
     const textFile = await fetch(pathOrURL).then(res => res.text())
-    const data = readLifeFile(textFile)
+    const data = readLifeString(textFile)
     return data;
 }
 
@@ -128,13 +128,13 @@ import fs from "fs/promises"
 //through promises
 
 fs.readFileAsync("my/path")
-.then(buffer => readLifeFile(buffer.toString()))
+.then(buffer => readLifeString(buffer.toString()))
 
 // using an async function
 
 async function fetchLifeLikeFileData(pathOrURL) {
     const textFile = await fs.readFileAsync(pathOrURL).then(buffer => buffer.toString())
-    const data = readLifeFile(textFile)
+    const data = readLifeString(textFile)
     return data;
 }
 
