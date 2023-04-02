@@ -69,16 +69,16 @@ function isLife105CellBlock(data: string): boolean {
 function readLife105CellBlock(data: string): Life105CellBlock {
     const trimmedLines = data.split("\n").map(line => line.trim())
     const pointLine = trimmedLines[0]
-
     const [, afterPointDeclaration] = readChars(pointLine, "#P")
-    const [[x, y]] = readIntegers(afterPointDeclaration, 2)
+    const [[x, readY]] = readIntegers(afterPointDeclaration, 2)
+    const y = -readY; // positive y is down for life 1.05, so I flip it for compatibility with llcacodec where positive y is up
 
     let i = 1;
     const liveCoordinates: [number, number][] = []
     while (i < trimmedLines.length && !isNextChars(trimmedLines[i], "#P")) {
         for (let j = 0; j < trimmedLines[i].length; j++) {
             if (trimmedLines[i][j] === LIFE_105_ALIVE_CHAR) {
-                liveCoordinates.push([j + x,  y - (i - 1)])
+                liveCoordinates.push([x + j,  y - (i - 1)]) 
             } 
         }
         i++;
@@ -175,20 +175,6 @@ export function readLife105String(file: string): Life105DecodedData {
         life105FileData.cellBlocks.push(cellBlock)
         life105FileData.liveCoordinates.push(...cellBlock.liveCoordinates)
     }
-
-    // if (isNextChars(lines[currentLineIndex], "#P")) {
-    //     const cellBlocksString = lines.slice(currentLineIndex).join("\n").trim()
-    //     let remainingCellBlocksString = cellBlocksString
-
-    //     while (remainingCellBlocksString.length > 0 && isNextChars(remainingCellBlocksString, "#P")) {
-    //         const [cellBlock, remaining] = readLife105CellBlock(remainingCellBlocksString)
-    //         life105FileData.cellBlocks.push(cellBlock)
-    //         life105FileData.liveCoordinates.push(...cellBlock.liveCoordinates)
-    //         remainingCellBlocksString = remaining
-    //     }
-    // } else {
-    //     throw new Error(`[llcacodec::readLife105String given Life105String does not contain Cell Block data directly after hashed comments]`)
-    // }
 
     life105FileData.liveCoordinates = uniqueNumberPairArray(life105FileData.liveCoordinates)
 

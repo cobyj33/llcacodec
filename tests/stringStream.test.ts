@@ -1,4 +1,4 @@
-import { readChar, readLine, readNegativeInteger, readNext, readNumber } from "../src/core/strRead";
+import { readChar, readInteger, readIntegers, readLine, readNegativeInteger, readNext, readNumber } from "../src/core/strRead";
 
 describe("String Stream Function Testing", () => {
 
@@ -157,6 +157,55 @@ describe("String Stream Function Testing", () => {
 
     describe("readTest", () => {
 
+    })
+
+    describe("readInteger", () => {
+
+    })
+
+    describe("readIntegers", () => {
+
+        it("Reading two positive integers", () => {
+            expect(readIntegers(" 20 22", 2)).toEqual([[20, 22], ""])
+        })
+
+        it("Reading two negative integers", () => {
+            expect(readIntegers(" -20 -22", 2)).toEqual([[-20, -22], ""])
+        })
+
+        it("Reading two negative integers with no whitespace at beginning", () => {
+            expect(readIntegers("-20 -22", 2)).toEqual([[-20, -22], ""])
+        })
+
+        it("Reading two negative integers with whitespace at end", () => {
+            expect(readIntegers("-20 -22 ", 2)).toEqual([[-20, -22], " "])
+        })
+
+        it("Reading integer with leading zeros", () => {
+            expect(readIntegers("   0054 -00032 ", 2)).toEqual([[54, -32], " "])
+        })
+
+        it("Reading 5 alternative negative and positive integers with varying whitespace", () => {
+            expect(readIntegers("-20 22 1 2345 -43 Some words at the end", 5)).toEqual([[-20, 22, 1, 2345, -43], " Some words at the end"])
+        })
+
+        describe("readInteger equivalence", () => {
+            
+            it("Positive", () => {
+                expect(readIntegers("  35   ", 1)).toEqual([[35], "   "])
+                expect(readInteger("  35   ")).toEqual([35, "   "])
+            })
+        })
+
+        describe("Will throw", () => {
+            it("Reading a float", () => {
+                expect(() => readIntegers("23 3.45 words", 2)).toThrow()
+            })
+
+            it("Reading a number with a misplaced negative", () => {
+                expect( () => readIntegers(" 44 54-3 -33", 3)).toThrow()
+            })
+        })
     })
 
 

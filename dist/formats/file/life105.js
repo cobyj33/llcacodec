@@ -32,13 +32,14 @@ function readLife105CellBlock(data) {
     const trimmedLines = data.split("\n").map(line => line.trim());
     const pointLine = trimmedLines[0];
     const [, afterPointDeclaration] = (0, strRead_1.readChars)(pointLine, "#P");
-    const [[x, y]] = (0, strRead_1.readIntegers)(afterPointDeclaration, 2);
+    const [[x, readY]] = (0, strRead_1.readIntegers)(afterPointDeclaration, 2);
+    const y = -readY; // positive y is down for life 1.05, so I flip it for compatibility with llcacodec where positive y is up
     let i = 1;
     const liveCoordinates = [];
     while (i < trimmedLines.length && !(0, strRead_1.isNextChars)(trimmedLines[i], "#P")) {
         for (let j = 0; j < trimmedLines[i].length; j++) {
             if (trimmedLines[i][j] === LIFE_105_ALIVE_CHAR) {
-                liveCoordinates.push([j + x, y - (i - 1)]);
+                liveCoordinates.push([x + j, y - (i - 1)]);
             }
         }
         i++;
@@ -122,18 +123,6 @@ function readLife105String(file) {
         life105FileData.cellBlocks.push(cellBlock);
         life105FileData.liveCoordinates.push(...cellBlock.liveCoordinates);
     }
-    // if (isNextChars(lines[currentLineIndex], "#P")) {
-    //     const cellBlocksString = lines.slice(currentLineIndex).join("\n").trim()
-    //     let remainingCellBlocksString = cellBlocksString
-    //     while (remainingCellBlocksString.length > 0 && isNextChars(remainingCellBlocksString, "#P")) {
-    //         const [cellBlock, remaining] = readLife105CellBlock(remainingCellBlocksString)
-    //         life105FileData.cellBlocks.push(cellBlock)
-    //         life105FileData.liveCoordinates.push(...cellBlock.liveCoordinates)
-    //         remainingCellBlocksString = remaining
-    //     }
-    // } else {
-    //     throw new Error(`[llcacodec::readLife105String given Life105String does not contain Cell Block data directly after hashed comments]`)
-    // }
     life105FileData.liveCoordinates = (0, util_1.uniqueNumberPairArray)(life105FileData.liveCoordinates);
     return life105FileData;
 }
