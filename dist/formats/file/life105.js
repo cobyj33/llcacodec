@@ -74,6 +74,23 @@ function readLife105CellBlock(data) {
         throw new Error(`Cannot read next Life 105 Cell Block, not positioned correctly. Must have "#P" next in the stream`);
     }
 }
+function extractLife105CellBlockStrings(data) {
+    const lines = data.trim().split("\n");
+    const cellBlockStrings = [];
+    let cellBlockStart = -1;
+    for (let i = 0; i < lines.length; i++) {
+        if ((0, strRead_1.isNextChars)(lines[i].trim(), "#P")) {
+            if (cellBlockStart !== -1) {
+                cellBlockStrings.push(lines.slice(cellBlockStart, i).join("\n"));
+            }
+            cellBlockStart = i;
+        }
+    }
+    if (cellBlockStart !== -1) {
+        cellBlockStrings.push(lines.slice(cellBlockStart, lines.length).join("\n"));
+    }
+    return cellBlockStrings;
+}
 function isLife105String(file) {
     return file.trim().startsWith(LIFE_105_HEADER);
 }
@@ -81,6 +98,7 @@ exports.isLife105String = isLife105String;
 function readLife105String(file) {
     file = file.replace("\r", "");
     const life105FileData = {
+        format: "life 1.05",
         cellBlocks: [],
         liveCoordinates: [],
         descriptions: [],
@@ -119,20 +137,26 @@ function readLife105String(file) {
         });
         currentLineIndex++;
     }
-    if ((0, strRead_1.isNextChars)(lines[currentLineIndex], "#P")) {
-        const cellBlocksString = lines.slice(currentLineIndex).join("\n").trim();
-        let remainingCellBlocksString = cellBlocksString;
-        while (remainingCellBlocksString.length > 0 && (0, strRead_1.isNextChars)(remainingCellBlocksString, "#P")) {
-            const [cellBlock, remaining] = readLife105CellBlock(remainingCellBlocksString);
-            life105FileData.cellBlocks.push(cellBlock);
-            life105FileData.liveCoordinates.push(...cellBlock.liveCoordinates.map(coordinate => ([coordinate[0], coordinate[1]])));
-            remainingCellBlocksString = remaining;
-        }
+    const cellBlockStrings = extractLife105CellBlockStrings(lines.slice(currentLineIndex).join("\n"));
+    for (let i = 0; i < cellBlockStrings.length; i++) {
+        const [cellBlock] = readLife105CellBlock(cellBlockStrings[i]);
+        life105FileData.cellBlocks.push(cellBlock);
+        life105FileData.liveCoordinates.push(...cellBlock.liveCoordinates);
     }
-    else {
-        throw new Error(`[llcacodec::readLife105String given Life105String does not contain Cell Block data directly after hashed comments]`);
-    }
+    // if (isNextChars(lines[currentLineIndex], "#P")) {
+    //     const cellBlocksString = lines.slice(currentLineIndex).join("\n").trim()
+    //     let remainingCellBlocksString = cellBlocksString
+    //     while (remainingCellBlocksString.length > 0 && isNextChars(remainingCellBlocksString, "#P")) {
+    //         const [cellBlock, remaining] = readLife105CellBlock(remainingCellBlocksString)
+    //         life105FileData.cellBlocks.push(cellBlock)
+    //         life105FileData.liveCoordinates.push(...cellBlock.liveCoordinates)
+    //         remainingCellBlocksString = remaining
+    //     }
+    // } else {
+    //     throw new Error(`[llcacodec::readLife105String given Life105String does not contain Cell Block data directly after hashed comments]`)
+    // }
     life105FileData.liveCoordinates = (0, util_1.uniqueNumberPairArray)(life105FileData.liveCoordinates);
     return life105FileData;
 }
 exports.readLife105String = readLife105String;
+// function writeLife105String()

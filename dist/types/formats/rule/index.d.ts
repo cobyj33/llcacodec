@@ -13,4 +13,8 @@ export declare function readLifeRule(rule: string | number, format?: LifeRuleStr
 export declare function makeLifeRule(lifeRuleData: LifeRuleData, format: "b/s"): string;
 export declare function makeLifeRule(lifeRuleData: LifeRuleData, format: "s/b"): string;
 export declare function makeLifeRule(lifeRuleData: LifeRuleData, format: "int"): number;
+export declare function makeLifeRule(lifeRuleData: LifeRuleData, format: LifeRuleStringNotation): string | number;
+export declare function convertLifeRule(original: string | number, dstFormat: "b/s"): string;
+export declare function convertLifeRule(original: string | number, dstFormat: "s/b"): string;
+export declare function convertLifeRule(original: string | number, dstFormat: "int"): number;
 //# sourceMappingURL=index.d.ts.map

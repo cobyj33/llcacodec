@@ -5,9 +5,11 @@ interface HashLine {
     full: string;
 }
 export interface RLEDecodedData {
+    format: "rle";
     comments: string[];
     name: string;
-    topleft: [number, number] | null;
+    topleft: [number, number];
+    foundTopLeft: boolean;
     width: number;
     height: number;
     ruleString: string;
@@ -16,12 +18,25 @@ export interface RLEDecodedData {
     hashLines: HashLine[];
     creationData: string;
 }
-interface RLEFileHeaderData {
+interface RLEHeaderDecodedData {
     width: number;
     height: number;
     ruleString: string | null;
     rule: LifeRuleData | null;
     full: string;
+}
+interface RLECommonEncodingData {
+    name?: string;
+    rule?: string | number | LifeRuleData;
+    comments?: string[];
+    creationData?: string;
+}
+export interface RLEMatrixEncodingData extends RLECommonEncodingData {
+    topleft: [number, number];
+    matrix: (0 | 1)[][];
+}
+export interface RLECoordinateEncodingData extends RLECommonEncodingData {
+    liveCoordinates: [number, number][];
 }
 interface ParsedRLEData {
     liveCoordinates: [number, number][];
@@ -37,8 +52,9 @@ interface ParsedRLEData {
  * @param rleData
  */
 export declare function readRLEData(rlePattern: string, topleft?: [number, number]): ParsedRLEData;
-export declare function readRLEStringHeader(headerLine: string): RLEFileHeaderData;
+export declare function readRLEStringHeader(headerLine: string): RLEHeaderDecodedData;
 export declare function isRLEString(file: string): boolean;
 export declare function readRLEString(file: string): RLEDecodedData;
+export declare function writeRLEString(data: RLEMatrixEncodingData | RLECoordinateEncodingData): string;
 export {};
 //# sourceMappingURL=rle.d.ts.map

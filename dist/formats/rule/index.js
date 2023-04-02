@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.makeLifeRule = exports.readLifeRule = exports.getLifeRuleFormat = exports.isValidLifeRule = exports.CONWAY_LIFE_RULE_INTEGER = exports.CONWAY_RULE_STRING_SB = exports.CONWAY_RULE_STRING_BS = exports.CONWAY_LIFE_RULE_DATA = void 0;
+exports.convertLifeRule = exports.makeLifeRule = exports.readLifeRule = exports.getLifeRuleFormat = exports.isValidLifeRule = exports.CONWAY_LIFE_RULE_INTEGER = exports.CONWAY_RULE_STRING_SB = exports.CONWAY_RULE_STRING_BS = exports.CONWAY_LIFE_RULE_DATA = void 0;
 const bs_1 = require("./bs");
 Object.defineProperty(exports, "CONWAY_RULE_STRING_BS", { enumerable: true, get: function () { return bs_1.CONWAY_RULE_STRING_BS; } });
 const sb_1 = require("./sb");
@@ -78,3 +78,8 @@ function makeLifeRule(lifeRuleData, format) {
     }
 }
 exports.makeLifeRule = makeLifeRule;
+function convertLifeRule(original, dstFormat) {
+    const lifeRuleData = readLifeRule(original);
+    return makeLifeRule(lifeRuleData, dstFormat);
+}
+exports.convertLifeRule = convertLifeRule;

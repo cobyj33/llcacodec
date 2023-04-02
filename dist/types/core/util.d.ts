@@ -35,11 +35,10 @@ type Bounds = {
  */
 export declare function getCellBoundingBox(positions: [number, number][]): Bounds;
 export declare function numberPairArrayToMatrix(positions: [number, number][]): (0 | 1)[][];
+export declare function matrixToNumberPairArray(matrix: (0 | 1)[][]): [number, number][];
 export declare function isError(e: any): e is Error;
 export declare function getErrorMessage(e: any): string;
 export declare function reverseBits(num: number): number;
-export declare function pushASCIIBytes(byteData: number[], str: string): void;
-export declare function byteArrayAsASCII(byteData: number[]): string;
 /**
  * Determines if two arrays are strictly the same
  *

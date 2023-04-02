@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.readRLEString = exports.isRLEString = exports.readRLEStringHeader = exports.readRLEData = void 0;
+exports.writeRLEString = exports.readRLEString = exports.isRLEString = exports.readRLEStringHeader = exports.readRLEData = void 0;
 const strRead_1 = require("../../core/strRead");
 const util_1 = require("../../core/util");
 const rule_1 = require("../rule");
@@ -120,11 +120,13 @@ exports.isRLEString = isRLEString;
 function readRLEString(file) {
     const lines = file.trim().split("\n");
     let currentLine = 0;
-    const rleFileData = {
+    const rleDecodedData = {
+        format: "rle",
         comments: [],
         name: "",
         creationData: "",
-        topleft: null,
+        topleft: [0, 0],
+        foundTopLeft: false,
         width: 0,
         height: 0,
         ruleString: rule_1.CONWAY_RULE_STRING_BS,
@@ -139,24 +141,25 @@ function readRLEString(file) {
         const content = afterID.trim();
         if (content.length > 0) {
             if (id === "C" || id === "c") {
-                rleFileData.comments.push(content);
+                rleDecodedData.comments.push(content);
             }
             else if (id === "N") {
-                rleFileData.name = content;
+                rleDecodedData.name = content;
             }
             else if (id === "O") {
-                rleFileData.creationData = content;
+                rleDecodedData.creationData = content;
             }
             else if (id === "P" || id === "R") {
                 const [[x, y]] = (0, strRead_1.readNumbers)(afterID, 2);
-                rleFileData.topleft = [x, y];
+                rleDecodedData.topleft = [x, y];
+                rleDecodedData.foundTopLeft = true;
             }
             else if (id === "r") {
-                rleFileData.ruleString = content;
-                rleFileData.rule = (0, rule_1.readLifeRule)(content);
+                rleDecodedData.ruleString = content;
+                rleDecodedData.rule = (0, rule_1.readLifeRule)(content);
             }
         }
-        rleFileData.hashLines.push({
+        rleDecodedData.hashLines.push({
             content: afterID.trim(),
             id: id,
             full: lines[currentLine].trim()
@@ -165,24 +168,24 @@ function readRLEString(file) {
     }
     //header line
     const headerLineData = readRLEStringHeader(lines[currentLine]);
-    rleFileData.width = headerLineData.width;
-    rleFileData.height = headerLineData.height;
+    rleDecodedData.width = headerLineData.width;
+    rleDecodedData.height = headerLineData.height;
     if (headerLineData.ruleString !== null && headerLineData.rule !== null) {
-        rleFileData.rule = headerLineData.rule;
-        rleFileData.ruleString = headerLineData.ruleString;
+        rleDecodedData.rule = headerLineData.rule;
+        rleDecodedData.ruleString = headerLineData.ruleString;
     }
     //rle encoded data
     currentLine++;
     const afterHeader = lines.slice(currentLine).join("\n");
-    const data = readRLEData(afterHeader, rleFileData.topleft !== null ? rleFileData.topleft : [0, 0]);
-    rleFileData.liveCoordinates = data.liveCoordinates;
+    const data = readRLEData(afterHeader, rleDecodedData.topleft);
+    rleDecodedData.liveCoordinates = data.liveCoordinates;
     if (data.endingIndex + 1 !== afterHeader.length - 1) {
         const afterRLEData = afterHeader.substring(data.endingIndex + 1);
         const linesAfterRLEData = afterRLEData.split("\n");
-        rleFileData.comments.push(...linesAfterRLEData.map(line => line.trim()).filter(line => line.length > 0));
+        rleDecodedData.comments.push(...linesAfterRLEData.map(line => line.trim()).filter(line => line.length > 0));
     }
     //Everything after this is considered a comment
-    return rleFileData;
+    return rleDecodedData;
 }
 exports.readRLEString = readRLEString;
 // --------------------------------------------------------------
@@ -192,3 +195,112 @@ exports.readRLEString = readRLEString;
 // --------------------------------------------------------------
 // --------------------------------------------------------------
 // --------------------------------------------------------------
+function rleEncode(char, count) {
+    if (char.length !== 1) {
+        throw new Error(`[llcacodec] Cannot RLE Encode character ${char} with a length of ${char.length}. Length of character must be 1`);
+    }
+    if (count < 0 || !Number.isInteger(count)) {
+        throw new Error(`[llcacodec] Cannot RLE Encode character ${char} with a count of ${count}. The count must be an integer greater than or equal to 1`);
+    }
+    if (count === 0) {
+        return "";
+    }
+    else if (count === 1) {
+        return char;
+    }
+    else {
+        return `${count}${char}`;
+    }
+}
+function writeRLEDataM(matrix) {
+    const encoding = [];
+    for (let row = 0; row < matrix.length; row++) {
+        let anyInLine = false;
+        let currentLine = [];
+        for (let col = 0; col < matrix[row].length; col++) {
+            if (matrix[row][col] === 1) {
+                anyInLine = true;
+                currentLine.push(RLE_LIVE_CELL_CHAR);
+            }
+            else if (matrix[row][col] === 0) {
+                currentLine.push(RLE_DEAD_CELL_CHAR);
+            }
+            else {
+                throw new Error(`[llcacodec] Cannot write RLE data where matrix has values that are not 0 or 1 ( got ${matrix[row][col]} at row ${row} and col ${col}) `);
+            }
+        }
+        if (anyInLine) {
+            encoding.push(...currentLine);
+        }
+        encoding.push(RLE_NEW_LINE_CHAR);
+    }
+    encoding.push(RLE_TERMINATION_CHAR);
+    const rleEncodedBuffer = [];
+    let currentChar = encoding[0];
+    let currentCharCount = 1;
+    for (let i = 1; i < encoding.length; i++) {
+        if (encoding[i] === currentChar) {
+            currentCharCount++;
+        }
+        else {
+            rleEncodedBuffer.push(rleEncode(currentChar, currentCharCount));
+            currentChar = encoding[i];
+            currentCharCount = 1;
+        }
+    }
+    rleEncodedBuffer.push(RLE_TERMINATION_CHAR);
+    return rleEncodedBuffer.join("");
+}
+function writeRLEDataC(liveCoordinates) {
+    if (liveCoordinates.length === 0) {
+        return "";
+    }
+    return writeRLEDataM((0, util_1.numberPairArrayToMatrix)(liveCoordinates));
+}
+const MAX_RLE_CHARACTER_LINE_WIDTH = 70;
+function writeRLEString(data) {
+    const comments = data.comments !== undefined ? [...data.comments] : [];
+    const creationData = data.creationData !== undefined ? data.creationData : "";
+    const name = data.name !== undefined ? data.name : "";
+    let bsRule = rule_1.CONWAY_RULE_STRING_BS;
+    if (data.rule !== undefined) {
+        if (typeof (data.rule) === "string" || typeof (data.rule) === "number") {
+            bsRule = (0, rule_1.convertLifeRule)(data.rule, "b/s");
+        }
+        else {
+            bsRule = (0, rule_1.makeLifeRule)(data.rule, "b/s");
+        }
+    }
+    let topleft = [0, 0];
+    let width = 0;
+    let height = 0;
+    if ("matrix" in data) {
+        width = Math.max(...data.matrix.map(row => row.length));
+        height = data.matrix.length;
+        topleft = data.topleft;
+    }
+    else if ("liveCoordinates" in data) {
+        const bounds = (0, util_1.getCellBoundingBox)(data.liveCoordinates);
+        width = bounds.width;
+        height = bounds.height;
+        topleft = [bounds.x, bounds.y];
+    }
+    const lineBuilder = [];
+    if (name !== "") {
+        lineBuilder.push(`#N ${name}`);
+    }
+    if (creationData !== "") {
+        lineBuilder.push(`#O ${creationData}`);
+    }
+    const trimmedComments = [];
+    for (let i = 0; i < comments.length; i++) {
+        for (let j = 0; j < comments[i].length; j += MAX_RLE_CHARACTER_LINE_WIDTH) {
+            trimmedComments.push(comments[i].substring(j, Math.min(comments[i].length, j + MAX_RLE_CHARACTER_LINE_WIDTH)));
+        }
+    }
+    trimmedComments.forEach(trimmedComments => lineBuilder.push(`#C ${trimmedComments}`));
+    lineBuilder.push(`x = ${width}, y = ${height}, rule = ${bsRule}`);
+    lineBuilder.push("matrix" in data ? writeRLEDataM(data.matrix) : writeRLEDataC(data.liveCoordinates));
+    return lineBuilder.join("\n");
+}
+exports.writeRLEString = writeRLEString;

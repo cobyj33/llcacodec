@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.uniqueNumberPairArray = exports.isStrictEqualBooleanArray = exports.isStrictEqualStringArray = exports.isStrictEqualNumberArray = exports.isStrictEqualArray = exports.byteArrayAsASCII = exports.pushASCIIBytes = exports.reverseBits = exports.getErrorMessage = exports.isError = exports.numberPairArrayToMatrix = exports.getCellBoundingBox = exports.isStringArray = exports.isCellCoordinateArray = exports.isCellMatrix = exports.isNumberPairArray = exports.isIntegerString = exports.trimTrailing = exports.isNumericString = exports.isDigit = exports.throws = exports.isRectangularMatrix = void 0;
+exports.uniqueNumberPairArray = exports.isStrictEqualBooleanArray = exports.isStrictEqualStringArray = exports.isStrictEqualNumberArray = exports.isStrictEqualArray = exports.reverseBits = exports.getErrorMessage = exports.isError = exports.matrixToNumberPairArray = exports.numberPairArrayToMatrix = exports.getCellBoundingBox = exports.isStringArray = exports.isCellCoordinateArray = exports.isCellMatrix = exports.isNumberPairArray = exports.isIntegerString = exports.trimTrailing = exports.isNumericString = exports.isDigit = exports.throws = exports.isRectangularMatrix = void 0;
 const set2D_1 = require("./set2D");
 /**
  * Test if a matrix is rectangular or not
@@ -124,6 +124,18 @@ function numberPairArrayToMatrix(positions) {
     return matrix;
 }
 exports.numberPairArrayToMatrix = numberPairArrayToMatrix;
+function matrixToNumberPairArray(matrix) {
+    const output = [];
+    for (let row = 0; row < matrix.length; row++) {
+        for (let col = 0; col < matrix[row].length; col++) {
+            if (matrix[row][col] === 1) {
+                output.push([col, -row]);
+            }
+        }
+    }
+    return output;
+}
+exports.matrixToNumberPairArray = matrixToNumberPairArray;
 function isError(e) {
     return typeof (e) === "object" && e !== null && "stack" in e && typeof (e.stack) === 'string' && "message" in e && typeof (e.message) === 'string';
 }
@@ -151,14 +163,6 @@ function reverseBits(num) {
     return o;
 }
 exports.reverseBits = reverseBits;
-function pushASCIIBytes(byteData, str) {
-    byteData.push(...str.split("").map(ch => ch.charCodeAt(0)));
-}
-exports.pushASCIIBytes = pushASCIIBytes;
-function byteArrayAsASCII(byteData) {
-    return byteData.map(val => String.fromCharCode(val)).join("");
-}
-exports.byteArrayAsASCII = byteArrayAsASCII;
 /**
  * Determines if two arrays are strictly the same
  *

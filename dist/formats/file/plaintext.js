@@ -1,10 +1,30 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.isPlainTextDiagram = exports.readPlainTextDiagramToMatrix = exports.readPlainTextDiagramToXY = exports.readPlainTextString = exports.isPlainTextString = exports.writePlainTextMatrix = exports.writePlainTextFromCoordinates = void 0;
+exports.isPlaintextDiagram = exports.readPlaintextDiagramToMatrix = exports.readPlaintextDiagramToXY = exports.readPlaintextString = exports.isPlaintextString = exports.writePlaintextString = exports.isPlaintextCoordinateWriteData = exports.isPlaintextMatrixWriteData = exports.isPlaintextMetadata = void 0;
 const util_1 = require("../../core/util");
 const strRead_1 = require("../../core/strRead");
 const VALID_DEAD_CELL_CHARACTERS = ["."];
 const VALID_LIVE_CELL_CHARACTERS = ["O", "*"];
+function isPlaintextMetadata(data) {
+    return typeof (data) === "object" && data !== null &&
+        "name" in data && "description" in data &&
+        typeof (data.name) === "string" && (typeof (data.description) === "string" || (0, util_1.isStringArray)(data.description));
+}
+exports.isPlaintextMetadata = isPlaintextMetadata;
+function isPlaintextMatrixWriteData(data) {
+    return typeof (data) === "object" && data !== null &&
+        "name" in data && "description" in data && "matrix" in data &&
+        typeof (data.name) === "string" && (typeof (data.description) === "string" || (0, util_1.isStringArray)(data.description)) &&
+        (0, util_1.isCellMatrix)(data.matrix);
+}
+exports.isPlaintextMatrixWriteData = isPlaintextMatrixWriteData;
+function isPlaintextCoordinateWriteData(data) {
+    return typeof (data) === "object" && data !== null &&
+        "name" in data && "description" in data && "liveCoordinates" in data &&
+        typeof (data.name) === "string" && (typeof (data.description) === "string" || (0, util_1.isStringArray)(data.description)) &&
+        (0, util_1.isCellCoordinateArray)(data.liveCoordinates);
+}
+exports.isPlaintextCoordinateWriteData = isPlaintextCoordinateWriteData;
 // --------------------------------------------------------------
 // --------------------------------------------------------------
 // --------------------------------------------------------------
@@ -12,49 +32,48 @@ const VALID_LIVE_CELL_CHARACTERS = ["O", "*"];
 // --------------------------------------------------------------
 // --------------------------------------------------------------
 // --------------------------------------------------------------
-function writePlainTextMetadata(byteArray, name, description) {
-    const newArray = [...byteArray];
-    (0, util_1.pushASCIIBytes)(newArray, "!Name: " + name + "\n");
-    if (description.length > 0) {
-        if (typeof (description) === "string") {
-            const lines = description.replace("\r", "").split("\n");
-            lines.forEach(line => (0, util_1.pushASCIIBytes)(newArray, `!${line}\n`));
+function writePlaintextString(data) {
+    let matrix = [];
+    if ("matrix" in data) {
+        matrix = data.matrix;
+    }
+    else {
+        for (let i = 0; i < data.liveCoordinates.length; i++) {
+            if (!Number.isInteger(data.liveCoordinates[i][0]) || !Number.isInteger(data.liveCoordinates[i][1])) {
+                throw new Error(`Attempted to write plain text with Invalid Coordinates: Coordinates must all be integers (Error at coordinate #${i} x: ${data.liveCoordinates[i][0]} y: ${data.liveCoordinates[i][1]} `);
+            }
+        }
+        matrix = (0, util_1.numberPairArrayToMatrix)(data.liveCoordinates);
+    }
+    const builder = [];
+    builder.push("!Name: " + data.name + "\n");
+    if (data.description.length > 0) {
+        if (typeof (data.description) === "string") {
+            const lines = data.description.replace("\r", "").split("\n");
+            lines.forEach(line => builder.push(`!${line}\n`));
         }
         else {
-            const lines = description.flatMap(lines => lines.split("\n"));
-            lines.forEach(line => (0, util_1.pushASCIIBytes)(newArray, `!${line}\n`));
+            const lines = data.description.flatMap(lines => lines.split("\n"));
+            lines.forEach(line => builder.push(`!${line}\n`));
         }
     }
-    (0, util_1.pushASCIIBytes)(newArray, "!\n");
-    return newArray;
-}
-function writePlainTextFromCoordinates(positions, name, description) {
-    for (let i = 0; i < positions.length; i++) {
-        if (!Number.isInteger(positions[i][0]) || !Number.isInteger(positions[i][1])) {
-            throw new Error(`Attempted to write plain text with Invalid Coordinates: Coordinates must all be integers (Error at coordinate #${i} x: ${positions[i][0]} y: ${positions[i][1]} `);
-        }
-    }
-    return writePlainTextMatrix((0, util_1.numberPairArrayToMatrix)(positions), name, description);
-}
-exports.writePlainTextFromCoordinates = writePlainTextFromCoordinates;
-function writePlainTextMatrix(data, name, description) {
-    const byteArray = writePlainTextMetadata([], name, description);
-    const height = data.length;
-    const width = Math.max(...data.map(row => row.length));
+    builder.push("!\n");
+    const height = matrix.length;
+    const width = Math.max(...matrix.map(row => row.length));
     for (let row = 0; row < height; row++) {
         for (let col = 0; col < width; col++) {
-            if (col >= data[row].length) {
-                (0, util_1.pushASCIIBytes)(byteArray, ".");
+            if (col >= matrix[row].length) {
+                builder.push(".");
             }
             else {
-                (0, util_1.pushASCIIBytes)(byteArray, data[row][col] === 0 ? "." : "O");
+                builder.push(matrix[row][col] === 0 ? "." : "O");
             }
         }
-        (0, util_1.pushASCIIBytes)(byteArray, "\n");
+        builder.push("\n");
     }
-    return (0, util_1.byteArrayAsASCII)(byteArray);
+    return builder.join("");
 }
-exports.writePlainTextMatrix = writePlainTextMatrix;
+exports.writePlaintextString = writePlaintextString;
 // --------------------------------------------------------------
 // --------------------------------------------------------------
 // --------------------------------------------------------------
@@ -62,25 +81,26 @@ exports.writePlainTextMatrix = writePlainTextMatrix;
 // --------------------------------------------------------------
 // --------------------------------------------------------------
 // --------------------------------------------------------------
-function isPlainTextString(str) {
+function isPlaintextString(str) {
     try {
-        readPlainTextString(str);
+        readPlaintextString(str);
         return true;
     }
     catch (e) {
         return false;
     }
 }
-exports.isPlainTextString = isPlainTextString;
-function readPlainTextString(str) {
+exports.isPlaintextString = isPlaintextString;
+function readPlaintextString(str) {
     if (str.length === 0) {
-        throw new Error("");
+        throw new Error(`[llcacodec] Attempted to pass in empty string toward Plain Text Decoder`);
     }
     const lines = str.replace("\r", "").split("\n").map(line => line.trim());
     if (lines.length === 0) {
-        throw new Error("");
+        throw new Error(`[llcacodec] Could not find any unique lines in plain text string "${str}"`);
     }
     const contents = {
+        format: "plaintext",
         name: "",
         description: [],
         matrix: [],
@@ -90,7 +110,8 @@ function readPlainTextString(str) {
     if ((0, strRead_1.isNextChar)(lines[0], "!")) {
         const [, afterHeaderExclamation] = (0, strRead_1.readChar)(lines[0], "!");
         if ((0, strRead_1.isNextChars)(afterHeaderExclamation, "Name:")) {
-            contents.name = (0, strRead_1.readChars)(afterHeaderExclamation, "Name:")[1].trim();
+            const [, afterNameDeclaration] = (0, strRead_1.readChars)(afterHeaderExclamation, "Name:");
+            contents.name = afterNameDeclaration.trim();
         }
         else {
             contents.name = afterHeaderExclamation.trim();
@@ -98,15 +119,16 @@ function readPlainTextString(str) {
     }
     else {
         const trimmedStr = str.trim();
-        if (isPlainTextDiagram(trimmedStr)) {
+        if (isPlaintextDiagram(trimmedStr)) {
             return {
+                format: "plaintext",
                 name: "",
                 description: [],
-                matrix: readPlainTextDiagramToMatrix(trimmedStr),
-                liveCoordinates: readPlainTextDiagramToXY(trimmedStr)
+                matrix: readPlaintextDiagramToMatrix(trimmedStr),
+                liveCoordinates: readPlaintextDiagramToXY(trimmedStr)
             };
         }
-        throw new Error("");
+        throw new Error(`[llcacodec::readPlaintextString] attempted to read invalid plain text string ${str}. ${str} could neither be determined to be a plaintext string nor a plaintext diagram`);
     }
     //reading description lines
     let currentLine = 1;
@@ -118,51 +140,51 @@ function readPlainTextString(str) {
         currentLine++;
     }
     const diagramLines = lines.slice(currentLine).join("\n");
-    if (isPlainTextDiagram(diagramLines)) {
-        contents.liveCoordinates = readPlainTextDiagramToXY(diagramLines);
-        contents.matrix = readPlainTextDiagramToMatrix(diagramLines);
+    if (isPlaintextDiagram(diagramLines)) {
+        contents.liveCoordinates = readPlaintextDiagramToXY(diagramLines);
+        contents.matrix = readPlaintextDiagramToMatrix(diagramLines);
     }
     else {
-        throw new Error(`[llcacodec::readPlainTextString could not read final section of PlainText string as PlainText diagram]`);
+        throw new Error(`[llcacodec::readPlaintextString could not read final section of Plaintext string as Plaintext diagram]`);
     }
     return contents;
 }
-exports.readPlainTextString = readPlainTextString;
-function readPlainTextDiagramToXY(str) {
-    if (isPlainTextDiagram(str)) {
-        const lines = str.split("\n");
-        return lines.flatMap((line, row) => line.split("").map((char, col) => VALID_LIVE_CELL_CHARACTERS.some(valid => valid === char) ? [col, -row] : []).filter(point => point.length > 0));
+exports.readPlaintextString = readPlaintextString;
+function readPlaintextDiagramToXY(str) {
+    if (!isPlaintextDiagram(str)) {
+        throw new Error(`[llcacodec::readPlaintextDiagramToXY] attempted to read invalid plaintext diagram ${str}`);
     }
-    throw new Error("error");
+    const lines = str.split("\n");
+    return lines.flatMap((line, row) => line.split("").map((char, col) => VALID_LIVE_CELL_CHARACTERS.some(valid => valid === char) ? [col, -row] : []).filter(point => point.length > 0));
 }
-exports.readPlainTextDiagramToXY = readPlainTextDiagramToXY;
-function readPlainTextDiagramToMatrix(str) {
-    if (isPlainTextDiagram(str)) {
-        const lines = (0, util_1.trimTrailing)(str, "\n").split("\n");
-        const width = Math.max(...lines.map(line => line.length));
-        return lines.map(line => {
-            const newLine = new Array(width);
-            for (let i = 0; i < width; i++) {
-                if (i >= line.length) {
-                    newLine[i] = 0;
-                }
-                else if (VALID_LIVE_CELL_CHARACTERS.some(ch => ch === line[i])) {
-                    newLine[i] = 1;
-                }
-                else if (VALID_DEAD_CELL_CHARACTERS.some(ch => ch === line[i])) {
-                    newLine[i] = 0;
-                }
-                else if (line[i] !== " ") {
-                    throw new Error();
-                }
+exports.readPlaintextDiagramToXY = readPlaintextDiagramToXY;
+function readPlaintextDiagramToMatrix(str) {
+    if (!isPlaintextDiagram(str)) {
+        throw new Error(`[llcacodec::readPlaintextDiagramToXY] attempted to read invalid plaintext diagram ${str}`);
+    }
+    const lines = (0, util_1.trimTrailing)(str, "\n").split("\n");
+    const width = Math.max(...lines.map(line => line.length));
+    return lines.map(line => {
+        const newLine = new Array(width);
+        for (let i = 0; i < width; i++) {
+            if (i >= line.length) {
+                newLine[i] = 0;
             }
-            return newLine;
-        });
-    }
-    throw new Error("");
+            else if (VALID_LIVE_CELL_CHARACTERS.some(ch => ch === line[i])) {
+                newLine[i] = 1;
+            }
+            else if (VALID_DEAD_CELL_CHARACTERS.some(ch => ch === line[i])) {
+                newLine[i] = 0;
+            }
+            else if (line[i] !== " ") {
+                throw new Error();
+            }
+        }
+        return newLine;
+    });
 }
-exports.readPlainTextDiagramToMatrix = readPlainTextDiagramToMatrix;
-function isPlainTextDiagram(line) {
+exports.readPlaintextDiagramToMatrix = readPlaintextDiagramToMatrix;
+function isPlaintextDiagram(line) {
     return line.split("").every(char => VALID_DEAD_CELL_CHARACTERS.some(ch => ch === char) || VALID_LIVE_CELL_CHARACTERS.some(ch => ch === char) || char === " " || char === "\n");
 }
-exports.isPlainTextDiagram = isPlainTextDiagram;
+exports.isPlaintextDiagram = isPlaintextDiagram;

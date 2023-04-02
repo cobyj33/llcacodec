@@ -1,14 +1,31 @@
-export interface PlainTextDecodedData {
+export interface PlaintextDecodedData {
+    format: "plaintext";
     name: string;
     description: string[];
     matrix: (0 | 1)[][];
     liveCoordinates: [number, number][];
 }
-export declare function writePlainTextFromCoordinates(positions: [number, number][], name: string, description: string | string[]): string;
-export declare function writePlainTextMatrix(data: (0 | 1)[][], name: string, description: string | string[]): string;
-export declare function isPlainTextString(str: string): boolean;
-export declare function readPlainTextString(str: string): PlainTextDecodedData;
-export declare function readPlainTextDiagramToXY(str: string): [number, number][];
-export declare function readPlainTextDiagramToMatrix(str: string): (0 | 1)[][];
-export declare function isPlainTextDiagram(line: string): boolean;
+export interface PlaintextMetadata {
+    name: string;
+    description: string | string[];
+}
+export declare function isPlaintextMetadata(data: unknown): data is PlaintextMetadata;
+export interface PlaintextMatrixWriteData {
+    name: string;
+    description: string | string[];
+    matrix: (0 | 1)[][];
+}
+export declare function isPlaintextMatrixWriteData(data: unknown): data is PlaintextMatrixWriteData;
+export interface PlaintextCoordinateWriteData {
+    name: string;
+    description: string | string[];
+    liveCoordinates: [number, number][];
+}
+export declare function isPlaintextCoordinateWriteData(data: unknown): data is PlaintextCoordinateWriteData;
+export declare function writePlaintextString(data: PlaintextMatrixWriteData | PlaintextCoordinateWriteData): string;
+export declare function isPlaintextString(str: string): boolean;
+export declare function readPlaintextString(str: string): PlaintextDecodedData;
+export declare function readPlaintextDiagramToXY(str: string): [number, number][];
+export declare function readPlaintextDiagramToMatrix(str: string): (0 | 1)[][];
+export declare function isPlaintextDiagram(line: string): boolean;
 //# sourceMappingURL=plaintext.d.ts.map

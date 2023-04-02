@@ -16,6 +16,7 @@ interface Life105CellBlock {
     liveCoordinates: [number, number][];
 }
 export interface Life105DecodedData {
+    format: "life 1.05";
     cellBlocks: Life105CellBlock[];
     liveCoordinates: [number, number][];
     descriptions: string[];
