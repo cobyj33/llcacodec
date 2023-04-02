@@ -128,58 +128,6 @@ function isNextChars(data, chars) {
     return charsIndex === chars.length;
 }
 exports.isNextChars = isNextChars;
-// /**
-//  * Returns if the next non-whitespace string in the data parameter matches the given sequence
-//  * @param data 
-//  * @param sequence 
-//  * @returns 
-//  */
-// export function isNextSeq(data: string, sequence: string): boolean {
-//     let line: string[] = []
-//     let index = 0;
-//     let seqIndex = 0;
-//     while (index < data.length) {
-//         if (data[index] === " ") {
-//             if (line.length === 0) {
-//                 index++;
-//                 continue;
-//             } else {
-//                 break;
-//             }
-//         }
-//         line.push(data[index])
-//         index++;
-//     }
-//     const str = line.join("")
-//     return str === sequence
-// }
-// /**
-//  * Reads the sequence from the string. If the next sequence in the string does not match the given sequence, an error is thrown
-//  * @param data 
-//  * @param sequence 
-//  * @returns 
-//  */
-// export function readSeq(data: string, sequence: string): [string, string] {
-//     let line: string[] = []
-//     let index = 0;
-//     while (index < data.length) {
-//         if (data[index] === " ") {
-//             if (line.length === 0) {
-//                 index++;
-//                 continue;
-//             } else {
-//                 break;
-//             }
-//         }
-//         line.push(data[index])
-//         index++;
-//     }
-//     const str = line.join("")
-//     if (str === sequence) {
-//         return [str, index < data.length ? data.substring(index) : ""];
-//     }
-//     throw new Error("")
-// }
 /**
  * @brief Reads the next line from the string.
  * @note The newline character is not retained in the returned line.

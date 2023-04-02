@@ -11,68 +11,47 @@ const LIFE_105_MAX_LINE_LENGTH = 80;
 const Life105FileExtensions = [".lif", ".life"];
 const LIFE_105_DEAD_CHAR = ".";
 const LIFE_105_ALIVE_CHAR = "*";
+function isLife105CellBlock(data) {
+    if (!(0, strRead_1.isNextChars)(data, "#P")) {
+        return false;
+    }
+    const [pointLine, afterPointLine] = (0, strRead_1.readLine)(data);
+    const [, afterPointDeclaration] = (0, strRead_1.readChars)(pointLine, "#P");
+    const [[x, y]] = (0, strRead_1.readIntegers)(afterPointDeclaration, 2);
+    const trimmedPatternLines = afterPointLine.split("\n").map(line => line.trim());
+    for (let i = 0; i < trimmedPatternLines.length; i++) {
+        for (let j = 0; j < trimmedPatternLines[i].length; j++) {
+            if (!(trimmedPatternLines[i][j] === LIFE_105_DEAD_CHAR || trimmedPatternLines[i][j] === LIFE_105_ALIVE_CHAR)) {
+                return false;
+            }
+        }
+    }
+    return true;
+}
 function readLife105CellBlock(data) {
-    data = data.trim();
-    if ((0, strRead_1.isNextChars)(data, "#P")) {
-        const cellBlock = {
-            x: 0,
-            y: 0,
-            width: 0,
-            height: 0,
-            pattern: [],
-            liveCoordinates: []
-        };
-        const [pointLine, afterPointLine] = (0, strRead_1.readLine)(data);
-        const [, afterPointDeclaration] = (0, strRead_1.readChars)(pointLine, "#P");
-        const [[x, y]] = (0, strRead_1.readIntegers)(afterPointDeclaration, 2);
-        cellBlock.x = x;
-        cellBlock.y = y;
-        let [currentLine, currentRemainingStream] = (0, strRead_1.readLine)(afterPointLine);
-        currentLine = currentLine.trim();
-        while (!(0, strRead_1.isNextChars)(currentLine, "#P") || currentLine.length === 0) { // exits when the next #P line is hit
-            if (currentLine.length === 0) {
-                if (currentRemainingStream.trim().length === 0) {
-                    break;
-                }
-                const [nextLine, nextRemainingStream] = (0, strRead_1.readLine)(currentRemainingStream);
-                if ((0, strRead_1.isNextChars)(nextLine, "#P")) {
-                    break;
-                }
-                currentLine = nextLine;
-                currentRemainingStream = nextRemainingStream;
-                continue;
-            }
-            cellBlock.width = Math.max(cellBlock.width, currentLine.length);
-            const row = new Array(cellBlock.width).fill(0);
-            for (let i = 0; i < cellBlock.width; i++) {
-                if (i < currentLine.length && currentLine[i] === LIFE_105_ALIVE_CHAR) {
-                    row[i] = 1;
-                    cellBlock.liveCoordinates.push([x + i, y - cellBlock.pattern.length]);
-                }
-            }
-            cellBlock.pattern.push(row);
-            if (currentRemainingStream.trim().length === 0) {
-                break;
-            }
-            const [nextLine, nextRemainingStream] = (0, strRead_1.readLine)(currentRemainingStream);
-            if ((0, strRead_1.isNextChars)(nextLine, "#P")) {
-                break;
-            }
-            currentLine = nextLine;
-            currentRemainingStream = nextRemainingStream;
-        }
-        console.log("Current Line Exited: ", currentLine);
-        cellBlock.height = cellBlock.pattern.length;
-        for (let i = 0; i < cellBlock.height; i++) { // Correct all pattern rows to be the same size
-            if (cellBlock.pattern[i].length < cellBlock.width) {
-                cellBlock.pattern[i].push(...new Array(cellBlock.width - cellBlock.pattern[i].length).fill(0));
+    const trimmedLines = data.split("\n").map(line => line.trim());
+    const pointLine = trimmedLines[0];
+    const [, afterPointDeclaration] = (0, strRead_1.readChars)(pointLine, "#P");
+    const [[x, y]] = (0, strRead_1.readIntegers)(afterPointDeclaration, 2);
+    let i = 1;
+    const liveCoordinates = [];
+    while (i < trimmedLines.length && !(0, strRead_1.isNextChars)(trimmedLines[i], "#P")) {
+        for (let j = 0; j < trimmedLines[i].length; j++) {
+            if (trimmedLines[i][j] === LIFE_105_ALIVE_CHAR) {
+                liveCoordinates.push([j + x, y - (i - 1)]);
             }
         }
-        return [cellBlock, currentRemainingStream];
+        i++;
     }
-    else {
-        throw new Error(`Cannot read next Life 105 Cell Block, not positioned correctly. Must have "#P" next in the stream`);
-    }
+    const matrix = (0, util_1.numberPairArrayToMatrix)(liveCoordinates);
+    return {
+        x: x,
+        y: y,
+        width: matrix[0].length,
+        height: matrix.length,
+        pattern: matrix,
+        liveCoordinates: liveCoordinates
+    };
 }
 function extractLife105CellBlockStrings(data) {
     const lines = data.trim().split("\n");
@@ -139,7 +118,7 @@ function readLife105String(file) {
     }
     const cellBlockStrings = extractLife105CellBlockStrings(lines.slice(currentLineIndex).join("\n"));
     for (let i = 0; i < cellBlockStrings.length; i++) {
-        const [cellBlock] = readLife105CellBlock(cellBlockStrings[i]);
+        const cellBlock = readLife105CellBlock(cellBlockStrings[i]);
         life105FileData.cellBlocks.push(cellBlock);
         life105FileData.liveCoordinates.push(...cellBlock.liveCoordinates);
     }
