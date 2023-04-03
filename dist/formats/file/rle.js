@@ -80,7 +80,7 @@ function readRLEData(rlePattern, topleft = [0, 0]) {
 exports.readRLEData = readRLEData;
 function readRLEStringHeader(headerLine) {
     const trimmed = headerLine.trim();
-    const ruleFileHeaderData = {
+    const rleFileHeaderData = {
         width: 0,
         height: 0,
         ruleString: null,
@@ -89,22 +89,22 @@ function readRLEStringHeader(headerLine) {
     };
     const [, afterXEquals] = (0, strRead_1.readChars)(trimmed, "x=");
     const [width, afterWidth] = (0, strRead_1.readCrampedNumber)(afterXEquals);
-    ruleFileHeaderData.width = width;
+    rleFileHeaderData.width = width;
     const [, afterYEquals] = (0, strRead_1.readChars)(afterWidth, ",y=");
     const [height, afterHeight] = (0, strRead_1.readCrampedNumber)(afterYEquals);
-    ruleFileHeaderData.height = height;
+    rleFileHeaderData.height = height;
     if ((0, strRead_1.isNextChars)(afterHeight, ",rule=")) {
         const [, afterRule] = (0, strRead_1.readChars)(afterHeight, ",rule=");
         const [rule, end] = (0, strRead_1.readNext)(afterRule);
         if ((0, rule_1.isValidLifeRule)(rule)) {
-            ruleFileHeaderData.rule = (0, rule_1.readLifeRule)(rule);
-            ruleFileHeaderData.ruleString = rule;
+            rleFileHeaderData.rule = (0, rule_1.readLifeRule)(rule);
+            rleFileHeaderData.ruleString = rule;
         }
         else {
             throw new Error(`Invalid Rule found in RLE Data while parsing RLE Header Line: "${rule}" ( passed in "${headerLine}") `);
         }
     }
-    return ruleFileHeaderData;
+    return rleFileHeaderData;
 }
 exports.readRLEStringHeader = readRLEStringHeader;
 function isRLEString(file) {

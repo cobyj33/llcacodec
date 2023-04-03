@@ -5,11 +5,6 @@ export interface PlaintextDecodedData {
     matrix: (0 | 1)[][];
     liveCoordinates: [number, number][];
 }
-export interface PlaintextMetadata {
-    name: string;
-    description: string | string[];
-}
-export declare function isPlaintextMetadata(data: unknown): data is PlaintextMetadata;
 export interface PlaintextMatrixWriteData {
     name: string;
     description: string | string[];

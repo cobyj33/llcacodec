@@ -41,6 +41,13 @@ function isLifeRuleDataType(obj) {
     return typeof (obj) === "object" && obj !== null && "birth" in obj && "survival" in obj && Array.isArray(obj.birth) && Array.isArray(obj.survival);
 }
 exports.isLifeRuleDataType = isLifeRuleDataType;
+/**
+ *
+ * The validity of a LifeRuleData object is given
+ *
+ * @param lifeRuleData The LifeRuleData object to validate
+ * @returns Whether the provided LifeRuleData object is valid
+ */
 function isValidLifeRuleData(lifeRuleData) {
     return getLifeRuleDataError(lifeRuleData) === "";
 }

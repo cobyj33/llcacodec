@@ -14,7 +14,7 @@ Object.defineProperty(exports, "isValidLifeRule", { enumerable: true, get: funct
 Object.defineProperty(exports, "getLifeRuleFormat", { enumerable: true, get: function () { return rule_1.getLifeRuleFormat; } });
 function readLifeString(data, format = "") {
     if (format === undefined) {
-        throw new Error("Cannot parse undefined life file");
+        throw new Error("[llcacodec]: Cannot parse undefined life file");
     }
     const foundFormat = format === "" ? getLifeStringFormat(data) : format;
     switch (foundFormat) {
@@ -36,6 +36,10 @@ function isLifeStringFormat(data, format) {
 }
 exports.isLifeStringFormat = isLifeStringFormat;
 function getLifeStringFormat(data) {
+    // Note how the tests are ordered. They are ordered from the most simple to identify
+    // to the least simple to identify. Life 1.06 and Life 1.05 can simply be identified by
+    // if their file begins with the appropriate header data. isRLEString is identified by the existence of 
+    // a 
     if ((0, life106_1.isLife106String)(data)) {
         return "life 1.06";
     }

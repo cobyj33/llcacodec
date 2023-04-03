@@ -77,13 +77,13 @@ function isLife105String(file) {
 exports.isLife105String = isLife105String;
 function readLife105String(file) {
     file = file.replace("\r", "");
-    const life105FileData = {
+    const life105StringData = {
         format: "life 1.05",
         cellBlocks: [],
         liveCoordinates: [],
         descriptions: [],
-        ruleString: rule_1.CONWAY_RULE_STRING_SB,
-        rule: (0, rule_1.CONWAY_LIFE_RULE_DATA)(),
+        rule: null,
+        parsedRule: null,
         hashLines: []
     };
     const lines = file.split("\n");
@@ -97,20 +97,20 @@ function readLife105String(file) {
         const [id, afterID] = (0, strRead_1.readChar)(afterHash);
         const trimmedContent = afterID.trim();
         if (id === "D") {
-            life105FileData.descriptions.push(trimmedContent);
+            life105StringData.descriptions.push(trimmedContent);
         }
         else if (id === "R") {
-            life105FileData.ruleString = trimmedContent;
-            life105FileData.rule = (0, rule_1.readLifeRule)(trimmedContent);
+            life105StringData.rule = trimmedContent;
+            life105StringData.parsedRule = (0, rule_1.readLifeRule)(trimmedContent);
         }
         else if (id === "N") {
-            life105FileData.ruleString = rule_1.CONWAY_RULE_STRING_SB;
-            life105FileData.rule = (0, rule_1.CONWAY_LIFE_RULE_DATA)();
+            life105StringData.rule = rule_1.CONWAY_RULE_STRING_SB;
+            life105StringData.parsedRule = (0, rule_1.CONWAY_LIFE_RULE_DATA)();
         }
         else if (id === "P") { // encountered beginning of Cell Block Data
             break;
         }
-        life105FileData.hashLines.push({
+        life105StringData.hashLines.push({
             id: id,
             content: trimmedContent,
             full: lines[currentLineIndex].trim()
@@ -120,11 +120,10 @@ function readLife105String(file) {
     const cellBlockStrings = extractLife105CellBlockStrings(lines.slice(currentLineIndex).join("\n"));
     for (let i = 0; i < cellBlockStrings.length; i++) {
         const cellBlock = readLife105CellBlock(cellBlockStrings[i]);
-        life105FileData.cellBlocks.push(cellBlock);
-        life105FileData.liveCoordinates.push(...cellBlock.liveCoordinates);
+        life105StringData.cellBlocks.push(cellBlock);
+        life105StringData.liveCoordinates.push(...cellBlock.liveCoordinates);
     }
-    life105FileData.liveCoordinates = (0, util_1.uniqueNumberPairArray)(life105FileData.liveCoordinates);
-    return life105FileData;
+    life105StringData.liveCoordinates = (0, util_1.uniqueNumberPairArray)(life105StringData.liveCoordinates);
+    return life105StringData;
 }
 exports.readLife105String = readLife105String;
-// function writeLife105String()

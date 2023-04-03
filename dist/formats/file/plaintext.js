@@ -1,16 +1,10 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.isPlaintextDiagram = exports.readPlaintextDiagramToMatrix = exports.readPlaintextDiagramToXY = exports.readPlaintextString = exports.isPlaintextString = exports.writePlaintextString = exports.isPlaintextCoordinateWriteData = exports.isPlaintextMatrixWriteData = exports.isPlaintextMetadata = void 0;
+exports.isPlaintextDiagram = exports.readPlaintextDiagramToMatrix = exports.readPlaintextDiagramToXY = exports.readPlaintextString = exports.isPlaintextString = exports.writePlaintextString = exports.isPlaintextCoordinateWriteData = exports.isPlaintextMatrixWriteData = void 0;
 const util_1 = require("../../core/util");
 const strRead_1 = require("../../core/strRead");
 const VALID_DEAD_CELL_CHARACTERS = ["."];
 const VALID_LIVE_CELL_CHARACTERS = ["O", "*"];
-function isPlaintextMetadata(data) {
-    return typeof (data) === "object" && data !== null &&
-        "name" in data && "description" in data &&
-        typeof (data.name) === "string" && (typeof (data.description) === "string" || (0, util_1.isStringArray)(data.description));
-}
-exports.isPlaintextMetadata = isPlaintextMetadata;
 function isPlaintextMatrixWriteData(data) {
     return typeof (data) === "object" && data !== null &&
         "name" in data && "description" in data && "matrix" in data &&

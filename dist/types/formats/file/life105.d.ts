@@ -20,8 +20,8 @@ export interface Life105DecodedData {
     cellBlocks: Life105CellBlock[];
     liveCoordinates: [number, number][];
     descriptions: string[];
-    ruleString: string | null;
-    rule: LifeRuleData | null;
+    rule: string | null;
+    parsedRule: LifeRuleData | null;
     hashLines: HashLine[];
 }
 export declare function isLife105String(file: string): boolean;

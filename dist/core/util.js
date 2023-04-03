@@ -30,10 +30,10 @@ exports.isRectangularMatrix = isRectangularMatrix;
 function throws(action) {
     try {
         action();
-        return true;
+        return false;
     }
     catch (e) {
-        return false;
+        return true;
     }
 }
 exports.throws = throws;
