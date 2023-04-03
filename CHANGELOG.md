@@ -1,7 +1,12 @@
 
 # llcacodec Changelog
 
-# April 1, 2023
+# April 2, 2023: Version 0.1.0
+
+Fixed throws function, as output was returning true when not throwing and false when throwing, which is
+the opposite of what should have been happening
+
+# April 1, 2023: Version 0.1.0
 
 Changed all functions with "PlainText" in the name to "Plaintext" instead
 
@@ -11,7 +16,9 @@ Changed name to just be llcacodec from llcacodec.js
 
 Added RLE File Writing
 
-## March 30, 2023
+Fixed Life 1.05 Reading
+
+## March 30, 2023: Version 0.1.0
 
 Removed public api function readLifeFileLiveCoordinates. Now all file types return coordinates, and they can be read through readLifeFile(string, format).liveCoordinates
 

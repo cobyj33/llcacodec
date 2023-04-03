@@ -2,6 +2,7 @@
 export const CONWAY_LIFE_RULE_DATA = () => ({ birth: [3], survival: [2, 3]})
 export type LifeRuleData = { birth: number[], survival: number[] }
 
+
 export function getLifeRuleDataError({ birth, survival }: LifeRuleData): string | "" {
     if (survival.some(num => num < 0 || num > 8)) {
         return "Survival neighborhood rules must be between 0 and 8";
@@ -45,6 +46,13 @@ export function isLifeRuleDataType(obj: unknown): obj is LifeRuleData {
     return typeof(obj) === "object" && obj !== null && "birth" in obj && "survival" in obj && Array.isArray(obj.birth) && Array.isArray(obj.survival)
 }
 
+/**
+ * 
+ * The validity of a LifeRuleData object is given
+ * 
+ * @param lifeRuleData The LifeRuleData object to validate
+ * @returns Whether the provided LifeRuleData object is valid
+ */
 export function isValidLifeRuleData(lifeRuleData: LifeRuleData): boolean {
     return getLifeRuleDataError(lifeRuleData) === ""
 }

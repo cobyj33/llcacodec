@@ -34,6 +34,36 @@ describe("Reading", () => {
             })
         })
 
+        it("Acorn with asterisks instead of capitalized O's", () => {
+            expect(readPlaintextString(
+                "!Name: Acorn\n" +
+                "!\n" + 
+                ".........\n" +
+                ".**..***.\n" +
+                "....*....\n" + 
+                "..*......\n" +
+                ".........\n"
+            )).toEqual({
+                format: "plaintext",
+                name: "Acorn",
+                description: [],
+                matrix: [[0, 0, 0, 0, 0, 0, 0, 0, 0],
+                [0, 1, 1, 0, 0, 1, 1, 1, 0],
+                [0, 0, 0, 0, 1, 0, 0, 0, 0],
+                [0, 0, 1, 0, 0, 0, 0, 0, 0],
+                [0, 0, 0, 0, 0, 0, 0, 0, 0]],
+                liveCoordinates: [
+                    [1, -1],
+                    [2, -1],
+                    [5, -1],
+                    [6, -1],
+                    [7, -1],
+                    [4, -2],
+                    [2, -3]
+                ]
+            })
+        })
+
         it("Acorn w/ Description", () => {
             expect(readPlaintextString(
                 "!Name: Acorn\n" +

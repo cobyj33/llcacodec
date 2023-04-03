@@ -37,8 +37,8 @@ export interface Life105DecodedData {
     cellBlocks: Life105CellBlock[]
     liveCoordinates: [number, number][]
     descriptions: string[],
-    ruleString: string | null,
-    rule: LifeRuleData | null,
+    rule: string | null,
+    parsedRule: LifeRuleData | null,
     hashLines: HashLine[]
 }
 
@@ -124,13 +124,13 @@ export function isLife105String(file: string): boolean {
 export function readLife105String(file: string): Life105DecodedData {
     file = file.replace("\r", "")
 
-    const life105FileData: Life105DecodedData = {
+    const life105StringData: Life105DecodedData = {
         format: "life 1.05",
         cellBlocks: [],
         liveCoordinates: [],
         descriptions: [],
-        ruleString: CONWAY_RULE_STRING_SB,
-        rule: CONWAY_LIFE_RULE_DATA(),
+        rule: null,
+        parsedRule: null,
         hashLines: []
     }
 
@@ -148,18 +148,18 @@ export function readLife105String(file: string): Life105DecodedData {
         const trimmedContent = afterID.trim();
 
         if (id === "D") {
-            life105FileData.descriptions.push(trimmedContent)
+            life105StringData.descriptions.push(trimmedContent)
         } else if (id === "R") {
-            life105FileData.ruleString = trimmedContent
-            life105FileData.rule = readLifeRule(trimmedContent)
+            life105StringData.rule = trimmedContent
+            life105StringData.parsedRule = readLifeRule(trimmedContent)
         } else if (id === "N") {
-            life105FileData.ruleString = CONWAY_RULE_STRING_SB
-            life105FileData.rule = CONWAY_LIFE_RULE_DATA()
+            life105StringData.rule = CONWAY_RULE_STRING_SB
+            life105StringData.parsedRule = CONWAY_LIFE_RULE_DATA()
         } else if (id === "P") { // encountered beginning of Cell Block Data
             break;
         }
 
-        life105FileData.hashLines.push({
+        life105StringData.hashLines.push({
             id: id,
             content: trimmedContent,
             full: lines[currentLineIndex].trim()
@@ -172,13 +172,11 @@ export function readLife105String(file: string): Life105DecodedData {
 
     for (let i = 0; i < cellBlockStrings.length; i++) {
         const cellBlock = readLife105CellBlock(cellBlockStrings[i])
-        life105FileData.cellBlocks.push(cellBlock)
-        life105FileData.liveCoordinates.push(...cellBlock.liveCoordinates)
+        life105StringData.cellBlocks.push(cellBlock)
+        life105StringData.liveCoordinates.push(...cellBlock.liveCoordinates)
     }
 
-    life105FileData.liveCoordinates = uniqueNumberPairArray(life105FileData.liveCoordinates)
+    life105StringData.liveCoordinates = uniqueNumberPairArray(life105StringData.liveCoordinates)
 
-    return life105FileData
+    return life105StringData
 }
-
-// function writeLife105String()

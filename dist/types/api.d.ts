@@ -11,7 +11,7 @@ export declare function readLifeString(data: string, format: "rle"): RLEDecodedD
 export declare function readLifeString(data: string, format: "life 1.05"): Life105DecodedData;
 export declare function readLifeString(data: string): Life106DecodedData | PlaintextDecodedData | RLEDecodedData | Life105DecodedData;
 export declare function isLifeStringFormat(data: string, format: SupportedLifeLikeFormats): boolean;
-export declare function getLifeFileFormat(data: string): SupportedLifeLikeFormats | "";
+export declare function getLifeStringFormat(data: string): SupportedLifeLikeFormats | "";
 type FileFormatData = (Life106EncodingData & {
     format: "life 1.06";
 }) | (PlaintextMatrixWriteData & {

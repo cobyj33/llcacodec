@@ -1,17 +1,17 @@
 import { CONWAY_RULE_STRING_BS, isValidBSLifeString, makeBSLifeString, readBSRuleString } from "./bs";
 import { CONWAY_RULE_STRING_SB, isValidSBLifeString, makeSBLifeString, readSBRuleString } from "./sb";
 import { CONWAY_LIFE_RULE_INTEGER, isValidLifeRuleInteger, makeLifeRuleInteger, readLifeRuleInteger } from "./int"
-import { CONWAY_LIFE_RULE_DATA, LifeRuleData } from "./ruleData";
+import { CONWAY_LIFE_RULE_DATA, LifeRuleData, isValidLifeRuleData } from "./ruleData";
 import { getErrorMessage } from "../../core/util";
 
-export { CONWAY_LIFE_RULE_DATA, CONWAY_RULE_STRING_BS, CONWAY_RULE_STRING_SB, LifeRuleData, CONWAY_LIFE_RULE_INTEGER }
+export { CONWAY_LIFE_RULE_DATA, CONWAY_RULE_STRING_BS, CONWAY_RULE_STRING_SB, CONWAY_LIFE_RULE_INTEGER, LifeRuleData, isValidLifeRuleData }
 
 export type LifeRuleStringNotation = "b/s" | "s/b" | "int"
 
 export function isValidLifeRule(rule: string, format: "b/s"): boolean
 export function isValidLifeRule(rule: string, format: "s/b"): boolean
 export function isValidLifeRule(rule: number, format: "int"): boolean
-export function isValidLifeRule(rule: string | number, format?: ""): boolean
+export function isValidLifeRule(rule: string | number): boolean
 export function isValidLifeRule(rule: string | number, format: LifeRuleStringNotation | "" = ""): boolean {
     const foundFormat = format === "" ? getLifeRuleFormat(rule) : format
     if (foundFormat === "N/A") {

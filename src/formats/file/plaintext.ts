@@ -12,17 +12,6 @@ export interface PlaintextDecodedData {
     liveCoordinates: [number, number][]
 }
 
-export interface PlaintextMetadata {
-    name: string,
-    description: string | string[]
-}
-
-export function isPlaintextMetadata(data: unknown): data is PlaintextMetadata {
-    return typeof(data) === "object" && data !== null &&
-    "name" in data && "description" in data &&
-    typeof(data.name) === "string" && (typeof(data.description) === "string" || isStringArray(data.description))
-}
-
 export interface PlaintextMatrixWriteData {
     name: string,
     description: string | string[]

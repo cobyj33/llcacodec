@@ -141,7 +141,7 @@ export function readRLEData(rlePattern: string, topleft: [number, number] = [0, 
 export function readRLEStringHeader(headerLine: string): RLEHeaderDecodedData {
     const trimmed = headerLine.trim();
 
-    const ruleFileHeaderData: RLEHeaderDecodedData = {
+    const rleFileHeaderData: RLEHeaderDecodedData = {
         width: 0,
         height: 0,
         ruleString: null,
@@ -151,24 +151,24 @@ export function readRLEStringHeader(headerLine: string): RLEHeaderDecodedData {
 
     const [, afterXEquals] = readChars(trimmed, "x=")
     const [width, afterWidth] = readCrampedNumber(afterXEquals)
-    ruleFileHeaderData.width = width
+    rleFileHeaderData.width = width
 
     const [, afterYEquals] = readChars(afterWidth, ",y=")
     const [height, afterHeight] = readCrampedNumber(afterYEquals)
-    ruleFileHeaderData.height = height
+    rleFileHeaderData.height = height
 
     if (isNextChars(afterHeight, ",rule=")) {
         const [, afterRule] = readChars(afterHeight, ",rule=")
         const [rule, end] = readNext(afterRule)
         if (isValidLifeRule(rule)) {
-            ruleFileHeaderData.rule = readLifeRule(rule)
-            ruleFileHeaderData.ruleString = rule;
+            rleFileHeaderData.rule = readLifeRule(rule)
+            rleFileHeaderData.ruleString = rule;
         } else {
             throw new Error(`Invalid Rule found in RLE Data while parsing RLE Header Line: "${rule}" ( passed in "${headerLine}") `)
         }
     }
 
-    return ruleFileHeaderData
+    return rleFileHeaderData
 }
 
 export function isRLEString(file: string): boolean {

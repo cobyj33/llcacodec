@@ -1,4 +1,3 @@
-import { isDigit } from "core/util";
 import { LifeRuleData, getLifeRuleDataError, isValidLifeRuleData } from "./ruleData";
 
 export const CONWAY_RULE_STRING_SB = "23/3"

@@ -28,9 +28,9 @@ export function isRectangularMatrix(matrix: unknown[][]): boolean {
 export function throws(action: () => unknown): boolean {
     try {
         action();
-        return true;
-    } catch (e) {
         return false;
+    } catch (e) {
+        return true;
     }
 }
 

@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.writeLifeString = exports.getLifeFileFormat = exports.isLifeStringFormat = exports.readLifeString = exports.getLifeRuleFormat = exports.isValidLifeRule = exports.makeLifeRule = exports.readLifeRule = exports.CONWAY_LIFE_RULE_DATA = void 0;
+exports.writeLifeString = exports.getLifeStringFormat = exports.isLifeStringFormat = exports.readLifeString = exports.getLifeRuleFormat = exports.isValidLifeRule = exports.makeLifeRule = exports.readLifeRule = exports.CONWAY_LIFE_RULE_DATA = void 0;
 const life106_1 = require("./formats/file/life106");
 const plaintext_1 = require("./formats/file/plaintext");
 const rle_1 = require("./formats/file/rle");
@@ -16,7 +16,7 @@ function readLifeString(data, format = "") {
     if (format === undefined) {
         throw new Error("Cannot parse undefined life file");
     }
-    const foundFormat = format === "" ? getLifeFileFormat(data) : format;
+    const foundFormat = format === "" ? getLifeStringFormat(data) : format;
     switch (foundFormat) {
         case "plaintext": return (0, plaintext_1.readPlaintextString)(data);
         case "life 1.06": return (0, life106_1.readLife106String)(data);
@@ -35,7 +35,7 @@ function isLifeStringFormat(data, format) {
     }
 }
 exports.isLifeStringFormat = isLifeStringFormat;
-function getLifeFileFormat(data) {
+function getLifeStringFormat(data) {
     if ((0, life106_1.isLife106String)(data)) {
         return "life 1.06";
     }
@@ -50,7 +50,7 @@ function getLifeFileFormat(data) {
     }
     return "";
 }
-exports.getLifeFileFormat = getLifeFileFormat;
+exports.getLifeStringFormat = getLifeStringFormat;
 function writeLifeString(data) {
     switch (data.format) {
         case "life 1.06": return (0, life106_1.writeLife106String)(data);

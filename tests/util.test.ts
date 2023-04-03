@@ -1,4 +1,4 @@
-import { numberPairArrayToMatrix, getCellBoundingBox, uniqueNumberPairArray } from "../src/core/util";
+import { numberPairArrayToMatrix, getCellBoundingBox, uniqueNumberPairArray, throws } from "../src/core/util";
 
 describe("Get bounding box", () => {
     it("Square 2x2", () => {
@@ -104,6 +104,26 @@ describe("Number pair array to matrix", () => {
             [1, 0, 1],
             [1, 1, 1],
         ])
+    })
+
+})
+
+describe("throws", () => {
+
+    it("Consumes thrown error", () => {
+        expect(() => throws( () => { throw new Error("This is a thrown error") } )).not.toThrow()
+    })
+
+    it("Does not throw when passed function does not throw", () => {
+        expect(() => throws( () => 1 + 1 )).not.toThrow()
+    })
+
+    it("Does throw", () => {
+        expect(throws( () => { throw new Error("This is a thrown error") } )).toBe(true)
+    })
+
+    it("Does not throw", () => {
+        expect(throws(() => 1 + 1)).toBe(false)
     })
 
 })
