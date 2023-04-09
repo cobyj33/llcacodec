@@ -1,18 +1,33 @@
 {
     "name": "llcacodec",
     "description": "Read and Write Life-Like Cellular Automata Files",
-    "version": "0.1.0",
+    "homepage": "https://www.github.com/cobyj33/llcacodec",
+    "bugs": {
+        "url": "https://www.github.com/cobyj33/llcacodec/issues",
+        "email": "jacobyajohnson@gmail.com"
+    },
+    "license": "MIT",
+    "version": "0.1.1",
     "author": {
         "name": "Jacoby Johnson",
         "email": "jacobyajohnson@gmail.com",
         "url": "https://www.github.com/cobyj33"
     },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/cobyj33/llcacodec.git"
+    },
     "keywords": [
         "automata",
         "conway",
         "cellular-automata",
-        "life-like"
+        "life-like",
+        "game-of-life",
+        "life",
+        "life-like-cellular-automata",
+        "codec"
     ],
+    "files": ["./dist", "./LICENSE"],
     "exports": {
         ".": {
             "import": {
