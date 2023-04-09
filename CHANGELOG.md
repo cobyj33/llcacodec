@@ -1,12 +1,22 @@
 
 # llcacodec Changelog
 
-# April 2, 2023: Version 0.1.0
+## April 8, 2023: Version 0.1.1
+
+Pushed to npm registry, Bump version to 0.1.1
+
+Updated package.json with git repo, included files, license, bug report url, and more keywords
+
+Restructured README.md to contain the logo and description directly after the header
+
+Patch bug with RLE file format not being recognized
+
+## April 2, 2023: Version 0.1.0
 
 Fixed throws function, as output was returning true when not throwing and false when throwing, which is
 the opposite of what should have been happening
 
-# April 1, 2023: Version 0.1.0
+## April 1, 2023: Version 0.1.0
 
 Changed all functions with "PlainText" in the name to "Plaintext" instead
 

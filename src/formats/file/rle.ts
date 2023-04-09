@@ -175,7 +175,7 @@ export function isRLEString(file: string): boolean {
     const lines = file.trim().split("\n")
     for (let i = 0; i < lines.length; i++) {
         if (!lines[i].trim().startsWith("#") && i < lines.length - 1) {
-            return !throws(() => readRLEStringHeader(lines[i + 1].trim()))
+            return !throws(() => readRLEStringHeader(lines[i].trim()))
         }
     }
 
