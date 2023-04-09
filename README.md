@@ -1,6 +1,6 @@
 # llcacodec
 
-![llacodec logo](assets/llcacodec_logo_112x112.png)
+![llacodec logo](assets/logo/llcacodec_logo_112x112.png)
 
 llcacodec - Short for **L**ife-**L**ike **C**ellular **A**utomata **Codec**
 
@@ -16,6 +16,14 @@ npm install --save-exact llcacodec
 ```
 
 [Documentation, Supported File and Rule Formats](DOCUMENTATION.md)
+[Developer Documentation](DEV_DOCUMENTATION.md)
+
+Sources to find patterns are available in the Developer Documentation linked above.
+
+![sawtooth](assets/sawtooth.gif)
+![max](assets/max.gif)
+![ships](assets/ships.gif)
+![dendrite](assets/dendrite.gif)
 
 > **NOTE**: llcacodec is currently in pre-release testing, which means that there may be many unaccounted bugs and
 > unpredicted behaviors present, as well as that the API is subject to change at any time.

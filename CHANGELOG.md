@@ -11,6 +11,8 @@ Restructured README.md to contain the logo and description directly after the he
 
 Patch bug with RLE file format not being recognized
 
+Gifs added to README.md
+
 ## April 2, 2023: Version 0.1.0
 
 Fixed throws function, as output was returning true when not throwing and false when throwing, which is
