@@ -111,7 +111,7 @@ function isRLEString(file) {
     const lines = file.trim().split("\n");
     for (let i = 0; i < lines.length; i++) {
         if (!lines[i].trim().startsWith("#") && i < lines.length - 1) {
-            return !(0, util_1.throws)(() => readRLEStringHeader(lines[i + 1].trim()));
+            return !(0, util_1.throws)(() => readRLEStringHeader(lines[i].trim()));
         }
     }
     return false;
