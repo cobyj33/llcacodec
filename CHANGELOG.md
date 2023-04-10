@@ -1,6 +1,14 @@
 
 # llcacodec Changelog
 
+## April 10: Version 0.1.3
+
+Add documentation to src/core/set2D.ts
+
+Add documentation to src/api.ts
+
+Fold DOCUMENTATION.md to be no more than 90 characters per line
+
 ## April 8, 2023: Version 0.1.1
 
 Pushed to npm registry, Bump version to 0.1.1
@@ -12,8 +20,6 @@ Restructured README.md to contain the logo and description directly after the he
 Patch bug with RLE file format not being recognized
 
 Gifs added to README.md
-
-Add documentation to src/core/set2D.ts
 
 ## April 2, 2023: Version 0.1.0
 
