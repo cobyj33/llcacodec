@@ -21,6 +21,10 @@ Add link to PATTERNS.md in README.md
 
 Remove "unwritten" warning from DEV_DOCUMENTATION.md
 
+Fixed error with plaintext with reading carraige returns
+
+Fixed error with Life105 with the presence of empty cell blocks throwing errors.
+
 ## April 8, 2023: Version 0.1.1
 
 Pushed to npm registry, Bump version to 0.1.1
