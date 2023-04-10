@@ -5,6 +5,13 @@
 
 Bump to version 0.1.4
 
+Add "PATTERNS.md" to distributed files
+
+Add "DOCUMENTATION.md" to distributed files
+
+Remove "LICENSE" from distributed files, as the LICENSE file is
+automatically included by npm
+
 ## April 10: Version 0.1.3
 
 Add documentation to src/core/set2D.ts

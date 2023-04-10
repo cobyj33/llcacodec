@@ -27,7 +27,7 @@
         "life-like-cellular-automata",
         "codec"
     ],
-    "files": ["./dist", "./LICENSE"],
+    "files": ["./dist", "./DOCUMENTATION.md", "PATTERNS.md"],
     "exports": {
         ".": {
             "import": {
