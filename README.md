@@ -13,8 +13,8 @@ For easy decoding and encoding of Game-Of-Life patterns in Cellular Automata app
 > unpredicted behaviors present, as well as that the API is subject to change at any time.
 > **It is currently recommended to install the package using --save-exact with npm.**
 
-[Documentation, Quickstart, and Supported File and Rule Formats](DOCUMENTATION.md)
-[Developer Documentation, Pattern Sources, and Further Reading](DEV_DOCUMENTATION.md)
+[DOCUMENTATION.md: Documentation, Quickstart, and Supported File and Rule Formats](DOCUMENTATION.md)  
+[DEV_DOCUMENTATION.md: Developer Documentation, **Pattern Downloads**, and Further Reading](DEV_DOCUMENTATION.md)
 
 ---
 
