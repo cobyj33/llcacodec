@@ -7,7 +7,7 @@
 Decoding and Encoding of Life-Like Cellular Automata Data Files  
 For easy decoding and encoding of Game-Of-Life patterns in Cellular Automata applications
 
-```bash npm install --save-exact llcacodec```
+```npm install --save-exact llcacodec```
 
 > **NOTE**: llcacodec is currently in pre-release testing, which means that there may be many unaccounted bugs and
 > unpredicted behaviors present, as well as that the API is subject to change at any time.
