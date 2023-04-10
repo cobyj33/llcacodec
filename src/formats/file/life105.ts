@@ -89,7 +89,7 @@ function readLife105CellBlock(data: string): Life105CellBlock {
     return {
         x: x,
         y: y,
-        width: matrix[0].length,
+        width: matrix.length !== 0 ? matrix[0].length : 0,
         height: matrix.length,
         pattern: matrix,
         liveCoordinates: liveCoordinates
