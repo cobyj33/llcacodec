@@ -184,7 +184,7 @@ export function readPlaintextDiagramToMatrix(str: string): (0 | 1)[][] {
         throw new Error(`[llcacodec::readPlaintextDiagramToXY] attempted to read invalid plaintext diagram ${str}`)
     }
 
-    const lines = trimTrailing(str, "\n").split("\n")
+    const lines = str.trim().replace("\r", "").split("\n")
     const width = Math.max(...lines.map(line => line.length))
     return lines.map(line => {
         const newLine = new Array<0 | 1>(width)
@@ -195,8 +195,8 @@ export function readPlaintextDiagramToMatrix(str: string): (0 | 1)[][] {
                 newLine[i] = 1
             } else if (VALID_DEAD_CELL_CHARACTERS.some(ch => ch === line[i])) {
                 newLine[i] = 0
-            } else if (line[i] !== " ") {
-                throw new Error()
+            } else if (line[i] !== " " && line[i] !== "\r") {
+                throw new Error(`[llcacodec::readPlaintextDiagramToMatrix Found invalid character (UTF-8 code: ${line[i].charCodeAt(0)})`)
             }
         }
         return newLine
@@ -208,5 +208,9 @@ export function readPlaintextDiagramToMatrix(str: string): (0 | 1)[][] {
 
 
 export function isPlaintextDiagram(line: string): boolean {
-    return line.split("").every(char => VALID_DEAD_CELL_CHARACTERS.some(ch => ch === char) || VALID_LIVE_CELL_CHARACTERS.some(ch => ch === char) || char === " " || char === "\n");
+    return line.split("").every(char => VALID_DEAD_CELL_CHARACTERS.some(ch => ch === char) || 
+    VALID_LIVE_CELL_CHARACTERS.some(ch => ch === char) || 
+    char === " " 
+    || char === "\n" 
+    || char === "\r");
 }
