@@ -33,17 +33,19 @@ llcacodec should be present inside of this DOCUMENTATION.md file
     - [Quickstart - Continue](#quickstart---continue)
   - [Files](#files)
     - [Files - Reading](#files---reading)
-    - [Writing](#writing)
+    - [Files - Writing](#files---writing)
     - [Files - Querying](#files---querying)
     - [Files - Extra](#files---extra)
   - [Rules](#rules)
-    - [Parsed Rule Data](#parsed-rule-data)
-    - [Creating Rules](#creating-rules)
-    - [Reading Rules](#reading-rules)
-    - [Getting Rule Formats](#getting-rule-formats)
-    - [Validating Rules](#validating-rules)
-    - [Converting Rules](#converting-rules)
+    - [Rules - Parsed Rule Data](#rules---parsed-rule-data)
+    - [Rules - Creating Rules](#rules---creating-rules)
+    - [Rules - Reading Rules](#rules---reading-rules)
+    - [Rules - Getting Rule Formats](#rules---getting-rule-formats)
+    - [Rules - Validating Rules](#rules---validating-rules)
+    - [Rules - Converting Rules](#rules---converting-rules)
   - [FAQ (not really, but I suspect so)](#faq-not-really-but-i-suspect-so)
+
+---
 
 ## Quickstart
 
@@ -99,6 +101,8 @@ reading.
 > simply for the sake of robustness and clarity. All functions do
 > what they are literally named to do, so there should be no confusion on a
 > function's purpose even without reading this documentation
+
+---
 
 ## Files
 
@@ -219,7 +223,7 @@ interface RLEDecodedData {
 }
 ```
 
-### Writing
+### Files - Writing
 
 Files are written with the **writeLifeString** function, where the function is
 passed an object with the data necessary to create a Life-Like string with
@@ -316,6 +320,8 @@ a present file header.
 > what any intermediary implementation steps may be present in the actual
 > source code.
 
+---
+
 ## Rules
 
 llcacodec supports 3 different rule formats for Life-Like Cellular Automata:
@@ -336,7 +342,7 @@ from the ```js "llcacodec/rule"``` endpoint, which
 consists of the functions **makeLifeRule**, **readLifeRule**,
 **getLifeRuleFormat**, **isValidLifeRule**, and **convertLifeRule**
 
-### Parsed Rule Data
+### Rules - Parsed Rule Data
 
 Parsed rules are represented through the **LifeRuleData** object. A
 **LifeRuleData** object is any object with the keys **"birth"** and
@@ -347,7 +353,7 @@ survive to the next generation. Both **"birth"** and **"survival"** keys will
 MUST be arrays with no duplicates, or else the **LifeRuleData** object is
 invalid and the function **isValidLifeRuleData** will return false.
 
-### Creating Rules
+### Rules - Creating Rules
 
 Rules can be created with the **makeLifeRule** function, which takes in a
 **LifeRuleData** object containing the parsed Life-Like rule data. The
@@ -361,7 +367,7 @@ an error. The validity of this object can be checked with the function
 **makeLifeRule** will NOT throw an error when called with that same
 **LifeRuleData** object.
 
-### Reading Rules
+### Rules - Reading Rules
 
 Rules can be read with the **readLifeRule** function, which takes in a string
 in either [B/S notation or S/B notation](https://conwaylife.com/wiki/Rulestring),
@@ -376,7 +382,7 @@ Alternatively, the user could catch errors in a try/catch block, or catch errors
 in a Promise's .catch function if the call to **readLifeRule** is within
 Promise's callback function.
 
-### Getting Rule Formats
+### Rules - Getting Rule Formats
 
 If the format of a rule is unknown, the function **getLifeRuleFormat** will
 return the format of a given rule. **getLifeRuleFormat** takes in one argument,
@@ -388,7 +394,7 @@ provided string is in Rule Integer notation. If any error occurs, this function
 will not throw an error but will instead return the string "N/A", which
 dictates that no matching format could be found.
 
-### Validating Rules
+### Rules - Validating Rules
 
 Rules can be validated by the **isValidLifeRule** function, which takes in a
 string or number that will be validated to be a life rule or not.
@@ -406,7 +412,7 @@ to validate against. This second argument can ONLY be of the values "b/s",
 provided format. If the provided rule does not fit the provided format,
 **isValidLifeRule** will return false even if the rule fits another format.
 
-### Converting Rules
+### Rules - Converting Rules
 
 Rules can be converted from one format to another with the function
 **convertLifeRule**. **convertLifeRule** takes in two required values: the rule
@@ -421,6 +427,8 @@ function before use of **convertLifeRule**. If the life rule is invalud,
 **convertLifeRule** will throw an error. If the provided rule is already in the
 provided format, **convertLifeRule** will simply return the provided rule in
 the same format as before.
+
+---
 
 ## FAQ (not really, but I suspect so)
 
