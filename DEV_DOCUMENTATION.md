@@ -5,8 +5,8 @@ Currently unwritten, will be here soon.
 
 ## Test data downloads
 
-Here will reside some links to test files to download that can be read by llcacodec. Feel free to add any new links
-that could provide more data.
+Here will reside some links to test files to download that can be read by llcacodec.
+Feel free to add any new links that could provide more data.
 
 [Life Page Links](http://conwaylife.com/ref/DRH/lifelinks.html)
 
@@ -25,7 +25,12 @@ that could provide more data.
 
 ## Unsupported File Formats
 
-- Extended RLE Format | [Golly Source Format Documentation](https://golly.sourceforge.net/Help/formats.html#rle)
-- MacroCell Format | [Golly Source Format Documentation](https://golly.sourceforge.net/Help/formats.html#rle)
-- Rule Format | [Golly Source Format Documentation](https://golly.sourceforge.net/Help/formats.html#rle)
-- Small Object Format | [LifeWiki](https://conwaylife.com/wiki/Small_object_format) [Pentdecathlon](https://web.archive.org/web/20211102020428/http://pentadecathlon.com/objects/definitions/definitions.php)
+- Extended RLE Format
+  - [Golly Source Format Documentation](https://golly.sourceforge.net/Help/formats.html#rle)
+- MacroCell Format
+  - [Golly Source Format Documentation](https://golly.sourceforge.net/Help/formats.html#rle)
+- Rule Format
+  - [Golly Source Format Documentation](https://golly.sourceforge.net/Help/formats.html#rle)
+- Small Object Format
+  - [LifeWiki](https://conwaylife.com/wiki/Small_object_format)
+  - [Pentdecathlon](https://web.archive.org/web/20211102020428/http://pentadecathlon.com/objects/definitions/definitions.php)
