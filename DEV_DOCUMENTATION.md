@@ -1,5 +1,5 @@
 
-# llcacodec 0.1.3 Developer Documentation
+# llcacodec 0.1.4 Developer Documentation
 
 ## Unsupported File Formats
 

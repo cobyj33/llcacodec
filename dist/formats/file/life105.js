@@ -48,7 +48,7 @@ function readLife105CellBlock(data) {
     return {
         x: x,
         y: y,
-        width: matrix[0].length,
+        width: matrix.length !== 0 ? matrix[0].length : 0,
         height: matrix.length,
         pattern: matrix,
         liveCoordinates: liveCoordinates

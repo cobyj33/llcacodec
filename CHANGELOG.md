@@ -1,6 +1,10 @@
 
 # llcacodec Changelog
 
+## April 10: Version 0.1.4
+
+Bump to version 0.1.4
+
 ## April 10: Version 0.1.3
 
 Add documentation to src/core/set2D.ts

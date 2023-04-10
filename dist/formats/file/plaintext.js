@@ -156,7 +156,7 @@ function readPlaintextDiagramToMatrix(str) {
     if (!isPlaintextDiagram(str)) {
         throw new Error(`[llcacodec::readPlaintextDiagramToXY] attempted to read invalid plaintext diagram ${str}`);
     }
-    const lines = (0, util_1.trimTrailing)(str, "\n").split("\n");
+    const lines = str.trim().replace("\r", "").split("\n");
     const width = Math.max(...lines.map(line => line.length));
     return lines.map(line => {
         const newLine = new Array(width);
@@ -170,8 +170,8 @@ function readPlaintextDiagramToMatrix(str) {
             else if (VALID_DEAD_CELL_CHARACTERS.some(ch => ch === line[i])) {
                 newLine[i] = 0;
             }
-            else if (line[i] !== " ") {
-                throw new Error();
+            else if (line[i] !== " " && line[i] !== "\r") {
+                throw new Error(`[llcacodec::readPlaintextDiagramToMatrix Found invalid character (UTF-8 code: ${line[i].charCodeAt(0)})`);
             }
         }
         return newLine;
@@ -179,6 +179,10 @@ function readPlaintextDiagramToMatrix(str) {
 }
 exports.readPlaintextDiagramToMatrix = readPlaintextDiagramToMatrix;
 function isPlaintextDiagram(line) {
-    return line.split("").every(char => VALID_DEAD_CELL_CHARACTERS.some(ch => ch === char) || VALID_LIVE_CELL_CHARACTERS.some(ch => ch === char) || char === " " || char === "\n");
+    return line.split("").every(char => VALID_DEAD_CELL_CHARACTERS.some(ch => ch === char) ||
+        VALID_LIVE_CELL_CHARACTERS.some(ch => ch === char) ||
+        char === " "
+        || char === "\n"
+        || char === "\r");
 }
 exports.isPlaintextDiagram = isPlaintextDiagram;
