@@ -20,10 +20,10 @@ npm install --save-exact llcacodec
 
 Sources to find patterns are available in the Developer Documentation linked above.
 
-![sawtooth](assets/sawtooth.gif)
-![max](assets/max.gif)
-![ships](assets/ships.gif)
-![dendrite](assets/dendrite.gif)
+![sawtooth](assets/readme/sawtooth.gif)
+![max](assets/readme/max.gif)
+![ships](assets/readme/ships.gif)
+![dendrite](assets/readme/dendrite.gif)
 
 > **NOTE**: llcacodec is currently in pre-release testing, which means that there may be many unaccounted bugs and
 > unpredicted behaviors present, as well as that the API is subject to change at any time.
