@@ -11,9 +11,12 @@ import { readLife106String, isLife106String, writeLife106String, Life106DecodedD
 import { readPlaintextString, isPlaintextString, PlaintextDecodedData, PlaintextMatrixWriteData, PlaintextCoordinateWriteData, writePlaintextString } from "./formats/file/plaintext"
 import { RLECoordinateEncodingData, RLEDecodedData, RLEMatrixEncodingData, isRLEString, readRLEString, writeRLEString } from "./formats/file/rle"
 import { Life105DecodedData, isLife105String, readLife105String } from "./formats/file/life105"
+import { readLifeRule, makeLifeRule, isValidLifeRule, getLifeRuleFormat } from "./formats/rule"
 
 export { LifeRuleData, CONWAY_LIFE_RULE_DATA } from "./formats/rule/ruleData"
 export { readLifeRule, makeLifeRule, isValidLifeRule, getLifeRuleFormat } from "./formats/rule"
+
+
 
 type SupportedLifeLikeFormats = "life 1.06" | "life 1.05" | "plaintext" | "rle"
 
@@ -180,4 +183,15 @@ export function writeLifeString(data: FileFormatData): string {
         case "plaintext": return writePlaintextString(data);
         case "rle": return writeRLEString(data)
     }
+}
+
+export default {
+    readLifeString,
+    writeLifeString,
+    isLifeStringFormat,
+    getLifeStringFormat,
+    makeLifeRule, 
+    isValidLifeRule,
+    getLifeRuleFormat,
+    readLifeRule
 }

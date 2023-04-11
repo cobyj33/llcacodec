@@ -1,6 +1,18 @@
 
 # llcacodec Changelog
 
+## April 11: Version 0.1.4
+
+Add all exported functions as default from src/api.ts
+
+Add bundling for browser iife, cjs, and mjs minified versions
+
+Add esbuild developer dependency
+
+Add build scripts for iife, cjs, and mjs minified scripts
+
+Changed package.json "fies" to only include ./dist/api.js, ./dist/formats, ./dist/core, and ./dist/types
+
 ## April 10: Version 0.1.4
 
 Bump to version 0.1.4
