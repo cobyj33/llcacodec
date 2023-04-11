@@ -95,3 +95,11 @@ export function convertLifeRule(original: string | number, dstFormat: LifeRuleSt
     const lifeRuleData = readLifeRule(original);
     return makeLifeRule(lifeRuleData, dstFormat);
 }
+
+export default {
+    isValidLifeRule,
+    getLifeRuleFormat,
+    readLifeRule,
+    makeLifeRule,
+    convertLifeRule
+}

@@ -11,7 +11,12 @@ Add esbuild developer dependency
 
 Add build scripts for iife, cjs, and mjs minified scripts
 
-Changed package.json "fies" to only include ./dist/api.js, ./dist/formats, ./dist/core, and ./dist/types
+Changed package.json "files" to only include ./dist/api.js, ./dist/formats,
+./dist/core, and ./dist/types
+
+Add support for CommonJS modules through editing the "exports" package.json field
+
+Add default export of functions in src/formats/rule/index.ts
 
 ## April 10: Version 0.1.4
 

@@ -37,24 +37,17 @@
     ],
     "exports": {
         ".": {
-            "import": {
-                "default": "./dist/api.js"
-            },
-            "types": {
-                "default": "./dist/types/api.d.ts"
-            }
+            "default": "./dist/api.js",
+            "types": "./dist/types/api.d.ts"
         },
         "./rule": {
-            "import": {
-                "default": "./dist/formats/rule/index.js"
-            },
-            "types": {
-                "default": "./dist/types/formats/rule/index.d.ts"
-            }
+            "default": "./dist/formats/rule/index.js",
+            "types": "./dist/types/formats/rule/index.d.ts"
         }
     },
     "typesVersions": {
         "*": {
+            "*": ["./dist/types/api.d.ts"],
             "rule": [
                 "./dist/types/formats/rule.d.ts"
             ]
