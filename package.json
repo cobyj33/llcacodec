@@ -43,13 +43,20 @@
         "./rule": {
             "default": "./dist/formats/rule/index.js",
             "types": "./dist/types/formats/rule/index.d.ts"
+        },
+        "./file": {
+            "default": "./dist/formats/file/index.js",
+            "types": "./dist/types/formats/file/index.d.ts"
         }
     },
     "typesVersions": {
         "*": {
             "*": ["./dist/types/api.d.ts"],
             "rule": [
-                "./dist/types/formats/rule.d.ts"
+                "./dist/types/formats/rule/index.d.ts"
+            ],
+            "file": [
+                "./dist/types/formats/file/index.d.ts"
             ]
         }
     },

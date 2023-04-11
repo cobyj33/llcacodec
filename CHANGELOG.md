@@ -18,6 +18,12 @@ Add support for CommonJS modules through editing the "exports" package.json fiel
 
 Add default export of functions in src/formats/rule/index.ts
 
+Fix broken "rule" entrypoint on "typesVersions" in package.json
+
+Add entrypoint "file" to package.json
+
+Add src/formats/file/index.ts to define all public file manipulation functions
+
 ## April 10: Version 0.1.4
 
 Bump to version 0.1.4
