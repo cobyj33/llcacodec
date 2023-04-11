@@ -39,6 +39,10 @@ Change FileFormatData in src/formats/file/index.ts to FileFormatEncodingData
 
 Export type FileFormatData from "./file" and main entrypoints.
 
+Add special error message for empty strings in readLifeString
+
+Ensure failure in isLifeFileFormat and getLifeFileFormat for empty strings with if statements
+
 ## April 10: Version 0.1.4
 
 Bump to version 0.1.4

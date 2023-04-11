@@ -61,6 +61,9 @@ export function readLifeString(data: string, format: "rle"): RLEDecodedData
 export function readLifeString(data: string, format: "life 1.05"): Life105DecodedData
 export function readLifeString(data: string): Life106DecodedData | PlaintextDecodedData | RLEDecodedData | Life105DecodedData
 export function readLifeString(data: string, format: SupportedLifeLikeReadFileFormats | "" = ""): Life106DecodedData | PlaintextDecodedData | RLEDecodedData | Life105DecodedData {
+    if (data.length === 0) {
+        throw new Error("[llcacodec::readLifeString] Cannot read empty life string.");
+    }
     if (format === undefined) {
         throw new Error("[llcacodec]: Cannot parse undefined life file")
     }
@@ -88,6 +91,10 @@ export function readLifeString(data: string, format: SupportedLifeLikeReadFileFo
  * @returns Whether the given life string conforms with the given format
  */
 export function isLifeStringFormat(data: string, format: SupportedLifeLikeReadFileFormats): boolean {
+    if (data.length === 0) {
+        return false;
+    }
+
     switch (format) {
         case "life 1.06": return isLife106String(data);
         case "life 1.05": return isLife105String(data);
@@ -107,6 +114,10 @@ export function isLifeStringFormat(data: string, format: SupportedLifeLikeReadFi
  * of a successful format, and an empty string when no format could be found.
  */
 export function getLifeStringFormat(data: string): SupportedLifeLikeReadFileFormats | "" {
+    if (data.length === 0) {
+        return ""
+    }
+    
     // Note how the tests are ordered. They are ordered from the most simple to identify
     // to the least simple to identify. Life 1.06 and Life 1.05 can simply be identified by
     // if their file begins with the appropriate header data. isRLEString is identified by the existence of 
