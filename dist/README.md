@@ -60,6 +60,6 @@ best for running on browsers in scripts where
 
 > If the user would prefer a minified version for nodejs, both llcacodec.min.cjs and
 > llcacodec.min.mjs could be used with ES modules in nodejs. However, llcacodec.min.cjs
-> CANNOT be used in the browser, but llcacodec.min.mjs could beused in the browser as a module.
+> CANNOT be used in the browser, but llcacodec.min.mjs could be used in the browser as a module.
 > Additionally, llcacodec.min.mjs CANNOT be used with CommonJS modules, but llcacodec.min.cjs CAN
 > be used with ES modules.
