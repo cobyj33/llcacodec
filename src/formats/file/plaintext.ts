@@ -12,26 +12,26 @@ export interface PlaintextDecodedData {
     liveCoordinates: [number, number][]
 }
 
-export interface PlaintextMatrixWriteData {
+export interface PlaintextMatrixEncodingData {
     name: string,
     description: string | string[]
     matrix: (0 | 1)[][]
 }
 
-export function isPlaintextMatrixWriteData(data: unknown): data is PlaintextMatrixWriteData {
+export function isPlaintextMatrixEncodingData(data: unknown): data is PlaintextMatrixEncodingData {
     return typeof(data) === "object" && data !== null &&
     "name" in data && "description" in data && "matrix" in data &&
     typeof(data.name) === "string" && (typeof(data.description) === "string" || isStringArray(data.description)) &&
     isCellMatrix(data.matrix)
 }
 
-export interface PlaintextCoordinateWriteData {
+export interface PlaintextCoordinateEncodingData {
     name: string,
     description: string | string[]
     liveCoordinates: [number, number][]
 }
 
-export function isPlaintextCoordinateWriteData(data: unknown): data is PlaintextCoordinateWriteData {
+export function isPlaintextCoordinateEncodingData(data: unknown): data is PlaintextCoordinateEncodingData {
     return typeof(data) === "object" && data !== null &&
     "name" in data && "description" in data && "liveCoordinates" in data &&
     typeof(data.name) === "string" && (typeof(data.description) === "string" || isStringArray(data.description)) &&
@@ -46,7 +46,7 @@ export function isPlaintextCoordinateWriteData(data: unknown): data is Plaintext
 // --------------------------------------------------------------
 // --------------------------------------------------------------
 
-export function writePlaintextString(data: PlaintextMatrixWriteData | PlaintextCoordinateWriteData): string {
+export function writePlaintextString(data: PlaintextMatrixEncodingData | PlaintextCoordinateEncodingData): string {
     let matrix: (0 | 1)[][] = [];
     if ("matrix" in data) {
         matrix = data.matrix;

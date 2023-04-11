@@ -1,11 +1,12 @@
 
 
 import { readLife106String, isLife106String, writeLife106String, Life106DecodedData, Life106EncodingData } from "./life106"
-import { readPlaintextString, isPlaintextString, PlaintextDecodedData, PlaintextMatrixWriteData, PlaintextCoordinateWriteData, writePlaintextString } from "./plaintext"
+import { readPlaintextString, isPlaintextString, PlaintextDecodedData, PlaintextMatrixEncodingData, PlaintextCoordinateEncodingData, writePlaintextString } from "./plaintext"
 import { RLECoordinateEncodingData, RLEDecodedData, RLEMatrixEncodingData, isRLEString, readRLEString, writeRLEString } from "./rle"
 import { Life105DecodedData, isLife105String, readLife105String } from "./life105"
 
-type SupportedLifeLikeFormats = "life 1.06" | "life 1.05" | "plaintext" | "rle"
+export type SupportedLifeLikeReadFileFormats = "life 1.06" | "life 1.05" | "plaintext" | "rle"
+export type SupportedLifeLikeWriteFileFormats = "life 1.06" | "plaintext" | "rle"
 
 /**
  * Read a life string
@@ -59,7 +60,7 @@ export function readLifeString(data: string, format: "life 1.06"): Life106Decode
 export function readLifeString(data: string, format: "rle"): RLEDecodedData
 export function readLifeString(data: string, format: "life 1.05"): Life105DecodedData
 export function readLifeString(data: string): Life106DecodedData | PlaintextDecodedData | RLEDecodedData | Life105DecodedData
-export function readLifeString(data: string, format: SupportedLifeLikeFormats | "" = ""): Life106DecodedData | PlaintextDecodedData | RLEDecodedData | Life105DecodedData {
+export function readLifeString(data: string, format: SupportedLifeLikeReadFileFormats | "" = ""): Life106DecodedData | PlaintextDecodedData | RLEDecodedData | Life105DecodedData {
     if (format === undefined) {
         throw new Error("[llcacodec]: Cannot parse undefined life file")
     }
@@ -86,7 +87,7 @@ export function readLifeString(data: string, format: SupportedLifeLikeFormats | 
  * Can either be "plaintext", "life 1.05", "life 1.06", or "plaintext" 
  * @returns Whether the given life string conforms with the given format
  */
-export function isLifeStringFormat(data: string, format: SupportedLifeLikeFormats): boolean {
+export function isLifeStringFormat(data: string, format: SupportedLifeLikeReadFileFormats): boolean {
     switch (format) {
         case "life 1.06": return isLife106String(data);
         case "life 1.05": return isLife105String(data);
@@ -105,7 +106,7 @@ export function isLifeStringFormat(data: string, format: SupportedLifeLikeFormat
  * @returns Either "life 1.06", "life 1.05", "rle", or "plaintext" on the finding
  * of a successful format, and an empty string when no format could be found.
  */
-export function getLifeStringFormat(data: string): SupportedLifeLikeFormats | "" {
+export function getLifeStringFormat(data: string): SupportedLifeLikeReadFileFormats | "" {
     // Note how the tests are ordered. They are ordered from the most simple to identify
     // to the least simple to identify. Life 1.06 and Life 1.05 can simply be identified by
     // if their file begins with the appropriate header data. isRLEString is identified by the existence of 
@@ -125,9 +126,9 @@ export function getLifeStringFormat(data: string): SupportedLifeLikeFormats | ""
     return ""
 }
 
-type FileFormatData = ( Life106EncodingData & { format: "life 1.06"} ) | 
-( PlaintextMatrixWriteData & { format: "plaintext"} ) | 
-( PlaintextCoordinateWriteData & { format: "plaintext"} ) |
+export type FileFormatEncodingData = ( Life106EncodingData & { format: "life 1.06"} ) | 
+( PlaintextMatrixEncodingData & { format: "plaintext"} ) | 
+( PlaintextCoordinateEncodingData & { format: "plaintext"} ) |
 ( RLEMatrixEncodingData & { format: "rle" } ) |
 ( RLECoordinateEncodingData & { format: "rle" })
 
@@ -164,7 +165,7 @@ type FileFormatData = ( Life106EncodingData & { format: "life 1.06"} ) |
  * @param data The structured data to use when creating the life string
  * @returns A life string containing the passed in compiled data.
  */
-export function writeLifeString(data: FileFormatData): string {
+export function writeLifeString(data: FileFormatEncodingData): string {
     switch (data.format) {
         case "life 1.06": return writeLife106String(data);
         case "plaintext": return writePlaintextString(data);

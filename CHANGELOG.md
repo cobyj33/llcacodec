@@ -24,6 +24,21 @@ Add entrypoint "file" to package.json
 
 Add src/formats/file/index.ts to define all public file manipulation functions
 
+Change SupportedLifeLikeFormats type to SupportedLifeLikeReadFileFormats
+
+Add type SupportedLifeLikeWriteFileFormats
+
+Export types SupportedLifeLikeReadFileFormats and SupportedLifeLikeWriteFileFormats
+from "./file" and main entrypoints.
+
+Change PlaintextMatrixWriteData in src/formats/file/plaintext.ts to PlaintextMatrixEncodingData
+
+Change PlaintextCoordinateWriteData in src/formats/file/plaintext.ts to PlaintextMatrixEncodingData
+
+Change FileFormatData in src/formats/file/index.ts to FileFormatEncodingData
+
+Export type FileFormatData from "./file" and main entrypoints.
+
 ## April 10: Version 0.1.4
 
 Bump to version 0.1.4

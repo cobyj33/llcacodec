@@ -12,7 +12,7 @@ import { readLifeString, writeLifeString, isLifeStringFormat, getLifeStringForma
 
 export { LifeRuleData, CONWAY_LIFE_RULE_DATA } from "./formats/rule/ruleData"
 export { readLifeRule, makeLifeRule, isValidLifeRule, getLifeRuleFormat } from "./formats/rule"
-export { readLifeString, writeLifeString, isLifeStringFormat, getLifeStringFormat } from "./formats/file"
+export { readLifeString, writeLifeString, isLifeStringFormat, getLifeStringFormat, SupportedLifeLikeReadFileFormats, SupportedLifeLikeWriteFileFormats, FileFormatEncodingData } from "./formats/file"
 
 export default {
     readLifeString,
