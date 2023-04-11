@@ -7,11 +7,11 @@
  * @license MIT
  */
 
-import { readLifeRule, makeLifeRule, isValidLifeRule, getLifeRuleFormat } from "./formats/rule"
+import { readLifeRule, makeLifeRule, isValidLifeRule, getLifeRuleFormat, convertLifeRule } from "./formats/rule"
 import { readLifeString, writeLifeString, isLifeStringFormat, getLifeStringFormat } from "./formats/file"
 
 export { LifeRuleData, CONWAY_LIFE_RULE_DATA } from "./formats/rule/ruleData"
-export { readLifeRule, makeLifeRule, isValidLifeRule, getLifeRuleFormat } from "./formats/rule"
+export { readLifeRule, makeLifeRule, isValidLifeRule, getLifeRuleFormat, convertLifeRule } from "./formats/rule"
 export { readLifeString, writeLifeString, isLifeStringFormat, getLifeStringFormat, SupportedLifeLikeReadFileFormats, SupportedLifeLikeWriteFileFormats, FileFormatEncodingData } from "./formats/file"
 
 export default {
@@ -22,5 +22,6 @@ export default {
     makeLifeRule, 
     isValidLifeRule,
     getLifeRuleFormat,
-    readLifeRule
+    readLifeRule,
+    convertLifeRule
 }

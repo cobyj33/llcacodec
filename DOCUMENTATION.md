@@ -5,9 +5,6 @@ llcacodec is a library written in Typescript to decode and encode
 [Life-Like Cellular Automata](https://conwaylife.com/wiki/Life-like_cellular_automaton)
 data rules and files.
 
-Since this is a very simple, targeted library, all details concerning
-llcacodec should be present inside of this DOCUMENTATION.md file
-
 Install through npm:  
 ```npm install --save-exact llcacodec```
 
@@ -29,7 +26,7 @@ so anywhere that can run ES6 Javascript can run llcacodec.
 
 llcacodec is written in Typescript and compiled to ES6 Javascript.
 
-llcacodec ,when downloaded from npm or yarn, can be used from
+llcacodec, when downloaded from npm or yarn, can be used from
 both ES modules and CommonJS modules. Additionally, it is also built and distributed
 in minified versions in the dist/ directory of the llcacodec repository, which can be
 used in ES modules, CommonJS modules, or the ```<script></script>``` html tag. These minified
@@ -62,6 +59,12 @@ and they are explained further in [the dist README](dist/README.md)
 ---
 
 ## Quickstart
+
+The API for llcacodec consists of only 9 powerful functions:  
+**readLifeString**, **writeLifeString**, **isLifeStringFormat**,
+**getLifeStringFormat**, **makeLifeRule**,  **isValidLifeRule**,
+**getLifeRuleFormat**, **readLifeRule**, and **convertLifeRule**,
+which will all be thoroughly explained throughout this document.
 
 ### Quickstart - Files
 
@@ -273,14 +276,14 @@ If the targeted format for **writeLifeString** is "plaintext", the data can be
 provided in any one of these two forms:
 
 ```ts
-interface PlaintextMatrixWriteData {
+interface PlaintextMatrixEncodingData {
     format: "plaintext",
     name: string,
     description: string | string[]
     matrix: (0 | 1)[][]
 }
 
-interface PlaintextCoordinateWriteData {
+interface PlaintextCoordinateEncodingData {
     format: "plaintext",
     name: string,
     description: string | string[]

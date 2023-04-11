@@ -53,6 +53,12 @@ Add npm and yarn install commands into documentation
 
 Bump to version 0.1.5
 
+Update typo in DOCUMENTATION.md with comma
+
+Remove "simple library" clause from DOCUMENTATION.md
+
+Add function API list to DOCUMENTATION.md
+
 ## April 10: Version 0.1.4
 
 Bump to version 0.1.4
