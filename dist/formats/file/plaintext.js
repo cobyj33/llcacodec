@@ -1,24 +1,24 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.isPlaintextDiagram = exports.readPlaintextDiagramToMatrix = exports.readPlaintextDiagramToXY = exports.readPlaintextString = exports.isPlaintextString = exports.writePlaintextString = exports.isPlaintextCoordinateWriteData = exports.isPlaintextMatrixWriteData = void 0;
+exports.isPlaintextDiagram = exports.readPlaintextDiagramToMatrix = exports.readPlaintextDiagramToXY = exports.readPlaintextString = exports.isPlaintextString = exports.writePlaintextString = exports.isPlaintextCoordinateEncodingData = exports.isPlaintextMatrixEncodingData = void 0;
 const util_1 = require("../../core/util");
 const strRead_1 = require("../../core/strRead");
 const VALID_DEAD_CELL_CHARACTERS = ["."];
 const VALID_LIVE_CELL_CHARACTERS = ["O", "*"];
-function isPlaintextMatrixWriteData(data) {
+function isPlaintextMatrixEncodingData(data) {
     return typeof (data) === "object" && data !== null &&
         "name" in data && "description" in data && "matrix" in data &&
         typeof (data.name) === "string" && (typeof (data.description) === "string" || (0, util_1.isStringArray)(data.description)) &&
         (0, util_1.isCellMatrix)(data.matrix);
 }
-exports.isPlaintextMatrixWriteData = isPlaintextMatrixWriteData;
-function isPlaintextCoordinateWriteData(data) {
+exports.isPlaintextMatrixEncodingData = isPlaintextMatrixEncodingData;
+function isPlaintextCoordinateEncodingData(data) {
     return typeof (data) === "object" && data !== null &&
         "name" in data && "description" in data && "liveCoordinates" in data &&
         typeof (data.name) === "string" && (typeof (data.description) === "string" || (0, util_1.isStringArray)(data.description)) &&
         (0, util_1.isCellCoordinateArray)(data.liveCoordinates);
 }
-exports.isPlaintextCoordinateWriteData = isPlaintextCoordinateWriteData;
+exports.isPlaintextCoordinateEncodingData = isPlaintextCoordinateEncodingData;
 // --------------------------------------------------------------
 // --------------------------------------------------------------
 // --------------------------------------------------------------

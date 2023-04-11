@@ -84,3 +84,10 @@ function convertLifeRule(original, dstFormat) {
     return makeLifeRule(lifeRuleData, dstFormat);
 }
 exports.convertLifeRule = convertLifeRule;
+exports.default = {
+    isValidLifeRule,
+    getLifeRuleFormat,
+    readLifeRule,
+    makeLifeRule,
+    convertLifeRule
+};

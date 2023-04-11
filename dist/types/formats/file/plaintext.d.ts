@@ -5,19 +5,19 @@ export interface PlaintextDecodedData {
     matrix: (0 | 1)[][];
     liveCoordinates: [number, number][];
 }
-export interface PlaintextMatrixWriteData {
+export interface PlaintextMatrixEncodingData {
     name: string;
     description: string | string[];
     matrix: (0 | 1)[][];
 }
-export declare function isPlaintextMatrixWriteData(data: unknown): data is PlaintextMatrixWriteData;
-export interface PlaintextCoordinateWriteData {
+export declare function isPlaintextMatrixEncodingData(data: unknown): data is PlaintextMatrixEncodingData;
+export interface PlaintextCoordinateEncodingData {
     name: string;
     description: string | string[];
     liveCoordinates: [number, number][];
 }
-export declare function isPlaintextCoordinateWriteData(data: unknown): data is PlaintextCoordinateWriteData;
-export declare function writePlaintextString(data: PlaintextMatrixWriteData | PlaintextCoordinateWriteData): string;
+export declare function isPlaintextCoordinateEncodingData(data: unknown): data is PlaintextCoordinateEncodingData;
+export declare function writePlaintextString(data: PlaintextMatrixEncodingData | PlaintextCoordinateEncodingData): string;
 export declare function isPlaintextString(str: string): boolean;
 export declare function readPlaintextString(str: string): PlaintextDecodedData;
 export declare function readPlaintextDiagramToXY(str: string): [number, number][];

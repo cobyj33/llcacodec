@@ -17,4 +17,12 @@ export declare function makeLifeRule(lifeRuleData: LifeRuleData, format: LifeRul
 export declare function convertLifeRule(original: string | number, dstFormat: "b/s"): string;
 export declare function convertLifeRule(original: string | number, dstFormat: "s/b"): string;
 export declare function convertLifeRule(original: string | number, dstFormat: "int"): number;
+declare const _default: {
+    isValidLifeRule: typeof isValidLifeRule;
+    getLifeRuleFormat: typeof getLifeRuleFormat;
+    readLifeRule: typeof readLifeRule;
+    makeLifeRule: typeof makeLifeRule;
+    convertLifeRule: typeof convertLifeRule;
+};
+export default _default;
 //# sourceMappingURL=index.d.ts.map
