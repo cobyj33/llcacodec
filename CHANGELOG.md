@@ -1,6 +1,8 @@
 
 # llcacodec Changelog
 
+## April 11: Version 0.1.5
+
 ## April 11: Version 0.1.4
 
 Add all exported functions as default from src/api.ts
@@ -48,6 +50,8 @@ Add README.md to dist/ to explain different distribution formats
 Add documentation for all 3 entry points into llcacodec
 
 Add npm and yarn install commands into documentation
+
+Bump to version 0.1.5
 
 ## April 10: Version 0.1.4
 

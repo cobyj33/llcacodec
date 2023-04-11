@@ -1,5 +1,5 @@
 
-# llcacodec 0.1.4
+# llcacodec 0.1.5
 
 llcacodec is a library written in Typescript to decode and encode
 [Life-Like Cellular Automata](https://conwaylife.com/wiki/Life-like_cellular_automaton)
@@ -38,7 +38,7 @@ and they are explained further in [the dist README](dist/README.md)
 
 ## Table of Contents
 
-- [llcacodec 0.1.4](#llcacodec-014)
+- [llcacodec 0.1.5](#llcacodec-015)
   - [Table of Contents](#table-of-contents)
   - [Quickstart](#quickstart)
     - [Quickstart - Files](#quickstart---files)
@@ -554,5 +554,5 @@ fetchLifeLikeFileData("my/path")
 
 ---
 
-Written for llcacodec version 0.1.4
+Written for llcacodec version 0.1.5
 Written by [cobyj33](https://www.github.com/cobyj33)

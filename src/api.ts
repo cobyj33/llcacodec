@@ -2,8 +2,8 @@
  * @file api.ts
  * @description The public API for the llcacodec library
  * @author Jacoby Johnson
- * @version 0.1.4
- * @date April 9th, 2023
+ * @version 0.1.5
+ * @date April 11th, 2023
  * @license MIT
  */
 
