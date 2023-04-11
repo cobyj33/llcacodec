@@ -8,6 +8,12 @@ data rules and files.
 Since this is a very simple, targeted library, all details concerning
 llcacodec should be present inside of this DOCUMENTATION.md file
 
+Install through npm:  
+```npm install --save-exact llcacodec```
+
+Install through yarn:  
+```yarn add --exact llcacodec```
+
 > NOTE: This documentation is not meant to serve as a in-depth guide on
 > the intricacies and specifications of different file formats and rule
 > formats, but instead, this documentation shows **the abilities of llcacodec**.
@@ -17,11 +23,18 @@ llcacodec should be present inside of this DOCUMENTATION.md file
 > the [llcacodec github page](https://www.github.com/cobyj33/llcacodec), so
 > that the problem could be addressed accordingly.
 
-- llcacodec can be used in any javascript environment, node or browser.  
-- llcacodec is written in Typescript and compiled to Javascript.  
-- llcacodec is compiled to ES6 syntax.  
-- llcacodec has no dependencies, and has no plans to ever add any in the future.
-- llcacodec is currently only provided through ES modules.
+llcacodec can be used in any javascript environment: node or browser.
+This is because llcacodec has no dependencies, and is completely self-contained,
+so anywhere that can run ES6 Javascript can run llcacodec.
+
+llcacodec is written in Typescript and compiled to ES6 Javascript.
+
+llcacodec ,when downloaded from npm or yarn, can be used from
+both ES modules and CommonJS modules. Additionally, it is also built and distributed
+in minified versions in the dist/ directory of the llcacodec repository, which can be
+used in ES modules, CommonJS modules, or the ```<script></script>``` html tag. These minified
+versions and their source maps can simply be copied and used accordingly if the user so wishes,
+and they are explained further in [the dist README](dist/README.md)
 
 ## Table of Contents
 
@@ -31,6 +44,7 @@ llcacodec should be present inside of this DOCUMENTATION.md file
     - [Quickstart - Files](#quickstart---files)
     - [Quickstart - Rules](#quickstart---rules)
     - [Quickstart - Continue](#quickstart---continue)
+  - [Entry Points](#entry-points)
   - [Files](#files)
     - [Files - Reading](#files---reading)
     - [Files - Writing](#files---writing)
@@ -101,6 +115,18 @@ reading.
 > simply for the sake of robustness and clarity. All functions do
 > what they are literally named to do, so there should be no confusion on a
 > function's purpose even without reading this documentation
+
+---
+
+## Entry Points
+
+llcacodec ships three different entry points: "llcacodec", "llcacodec/file", and "llcacodec/rule".
+
+"llcacodec" is a congregated import for both file and rule manipulation functions, while "llcacodec/file"
+and "llcacodec/rule" are created to export file manipulation and rule manipulation functions respectively.
+
+Everything seen in the Files section below is included in llcacodec/file, while everything included in the
+Rules section below is included in llcacodec/rule.
 
 ---
 

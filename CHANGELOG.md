@@ -41,7 +41,13 @@ Export type FileFormatData from "./file" and main entrypoints.
 
 Add special error message for empty strings in readLifeString
 
-Ensure failure in isLifeFileFormat and getLifeFileFormat for empty strings with if statements
+Ensure false and "" in isLifeFileFormat and getLifeFileFormat when empty life string is passed in
+
+Add README.md to dist/ to explain different distribution formats
+
+Add documentation for all 3 entry points into llcacodec
+
+Add npm and yarn install commands into documentation
 
 ## April 10: Version 0.1.4
 

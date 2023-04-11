@@ -4,8 +4,8 @@
 
 **L**ife-**L**ike **C**ellular **A**utomata **Codec**
 
-Decoding and Encoding of Life-Like Cellular Automata Data Files  
-For easy decoding and encoding of Game-Of-Life patterns in Cellular Automata applications
+Decoding and Encoding of Life-Like Cellular Automata Data Files
+For easy decoding and encoding of Game-Of-Life patterns in Cellular Automata applications.
 
 ```npm install --save-exact llcacodec```
 
@@ -18,7 +18,7 @@ For easy decoding and encoding of Game-Of-Life patterns in Cellular Automata app
 
 ---
 
-Some examples of patterns loaded by llcacodec
+Some pretty examples of patterns loaded by llcacodec
 
 ![sawtooth](assets/readme/sawtooth.gif)
 ![max](assets/readme/max.gif)
