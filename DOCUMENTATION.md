@@ -27,11 +27,12 @@ so anywhere that can run ES6 Javascript can run llcacodec.
 llcacodec is written in Typescript and compiled to ES6 Javascript.
 
 llcacodec, when downloaded from npm or yarn, can be used from
-both ES modules and CommonJS modules. Additionally, it is also built and distributed
-in minified versions in the dist/ directory of the llcacodec repository, which can be
-used in ES modules, CommonJS modules, or the ```<script></script>``` html tag. These minified
-versions and their source maps can simply be copied and used accordingly if the user so wishes,
-and they are explained further in [the dist README](dist/README.md)
+both ES modules and CommonJS modules. Additionally, it is also built and
+distributed in minified versions in the dist/ directory of the llcacodec
+repository, which can be used in ES modules, CommonJS modules, or
+the ```<script></script>``` html tag. These minified versions and their
+source maps can simply be copied and used accordingly if the user so
+wishes, and they are explained further in [the dist README](dist/README.md)
 
 ## Table of Contents
 
@@ -83,12 +84,13 @@ downward. Some examples of reading can be found in the
 [FAQ](#faq-not-really-but-i-suspect-so). If you simply want to load files, you
 can stop reading here.
 
-> NOTE: It is good to remember that the coordinate data in the
-**liveCoordinates** key returned by **readLifeString** is similar to a
-mathematical plane where positive y is upward. If the user is parsing the data
-in an area for use in a program where positive y is downward, the coordinates
-would then have to simply be flipped to -y. This can be done with a simple call
-such as ```const coordinates = data.liveCoordinates.map(([x, y]) => ([x, -y]))```
+NOTE: It is good to remember that the coordinate data in the
+**liveCoordinates** key returned by **readLifeString** is similar
+to a mathematical plane where positive y is upward. If the user
+is parsing the data in an area for use in a program where positive y is
+downward, the coordinates would then have to simply be flipped to -y.
+This can be done with a simple call such as
+```const coordinates = data.liveCoordinates.map(([x, y]) => ([x, -y]))```
 
 ### Quickstart - Rules
 
@@ -123,13 +125,16 @@ reading.
 
 ## Entry Points
 
-llcacodec ships three different entry points: "llcacodec", "llcacodec/file", and "llcacodec/rule".
+llcacodec ships three different entry points: "llcacodec",
+"llcacodec/file", and "llcacodec/rule".
 
-"llcacodec" is a congregated import for both file and rule manipulation functions, while "llcacodec/file"
-and "llcacodec/rule" are created to export file manipulation and rule manipulation functions respectively.
+"llcacodec" is a congregated import for both file and rule manipulation
+functions, while "llcacodec/file" and "llcacodec/rule" are created to export
+file manipulation and rule manipulation functions respectively.
 
-Everything seen in the Files section below is included in llcacodec/file, while everything included in the
-Rules section below is included in llcacodec/rule.
+Everything seen in the Files section below is included in llcacodec/file,
+while everything included in the Rules section below is included
+in llcacodec/rule.
 
 ---
 
@@ -399,17 +404,18 @@ an error. The validity of this object can be checked with the function
 ### Rules - Reading Rules
 
 Rules can be read with the **readLifeRule** function, which takes in a string
-in either [B/S notation or S/B notation](https://conwaylife.com/wiki/Rulestring),
-or a number in [Rule Integer notation](https://conwaylife.com/wiki/Rule_integer).
+in either [B/S or S/B notation](https://conwaylife.com/wiki/Rulestring), or
+a number in [Rule Integer notation](https://conwaylife.com/wiki/Rule_integer).
 **readLifeRule** returns a **LifeRuleData** object as detailed above.
-**readLifeRule** WILL throw an error if the provided life rule's data cannot be read.
-However, **readLifeRule** will NOT throw an error if **isValidLifeRule** returns true
-when **isValidLifeRule** is provided with the same given rule. Therefore, if the
-origin of the given rule is unknown or may be invalid, users should always assert
-a rule's validity with **isValidLifeRule** before calling **readLifeRule**.
-Alternatively, the user could catch errors in a try/catch block, or catch errors
-in a Promise's .catch function if the call to **readLifeRule** is within
-Promise's callback function.
+**readLifeRule** WILL throw an error if
+the provided life rule's data cannot be read. However, **readLifeRule** will
+NOT throw an error if **isValidLifeRule** returns true when **isValidLifeRule**
+is provided with the same given rule. Therefore, if the
+origin of the given rule is unknown or may be invalid,
+users should always assert a rule's validity with **isValidLifeRule** before
+calling **readLifeRule**. Alternatively, the user could catch errors
+in a try/catch block, or catch errors in a Promise's .catch function if
+the call to **readLifeRule** is within Promise's callback function.
 
 ### Rules - Getting Rule Formats
 
@@ -430,16 +436,17 @@ string or number that will be validated to be a life rule or not.
 The provided string or number is validated if it's formatted in
 [B/S, S/B](https://conwaylife.com/wiki/Rulestring), or
 [Rule Integer notation](https://conwaylife.com/wiki/Rule_integer).
-**isValidLifeRule** is recommended to be checked before using the functions **readLifeRule** and
-**convertLifeRule**, as they both will throw errors if the provided rule is not
-valid. If **isValidLifeRule** returns true for a provided rule, then it is
-guaranteed that **readLifeRule** and **convertLifeRule** will not throw errors.
-Optionally, **isValidLifeRule** can also take a second argument of which format
-to validate against. This second argument can ONLY be of the values "b/s",
-"s/b" and "int". If the second argument is present, the function
-**isValidLifeRule** will only return true if the provided rule fits the
-provided format. If the provided rule does not fit the provided format,
-**isValidLifeRule** will return false even if the rule fits another format.
+**isValidLifeRule** is recommended to be checked before using the functions
+**readLifeRule** and **convertLifeRule**, as they both will throw errors if
+the provided rule is not valid. If **isValidLifeRule** returns true for a
+provided rule, then it is guaranteed that **readLifeRule** and
+**convertLifeRule** will not throw errors. Optionally, **isValidLifeRule**
+can also take a second argument of which format to validate against. This
+second argument can ONLY be of the values "b/s", "s/b" and "int". If the
+second argument is present, the function **isValidLifeRule** will only return
+true if the provided rule fits the provided format. If the provided rule does
+not fit the provided format, **isValidLifeRule** will return false even if the
+rule fits another format.
 
 ### Rules - Converting Rules
 

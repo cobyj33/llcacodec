@@ -3,4 +3,5 @@
 
 Start: Version 0.1.0
 
-- Create a function to test the validity of life-like strings before calling **readLifeString**. **isValidLifeString**.
+Create a function to test the validity of life-like strings before calling
+**readLifeString**. **isValidLifeString**.

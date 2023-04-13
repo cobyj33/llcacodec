@@ -1,7 +1,16 @@
 
 # llcacodec Changelog
 
-## April 11: Version 0.1.5
+## April 13: Version 0.1.5
+
+Remove dist/ directory from source control. It is still able to be built
+with the ```npm run build``` command at any time, but does not have to be
+tracked
+
+Moved dist/README.md to DIST.md, where users can still read about the multiple
+different minified files.
+
+Add the dist/ directory to .gitignore
 
 ## April 11: Version 0.1.4
 
@@ -16,7 +25,8 @@ Add build scripts for iife, cjs, and mjs minified scripts
 Changed package.json "files" to only include ./dist/api.js, ./dist/formats,
 ./dist/core, and ./dist/types
 
-Add support for CommonJS modules through editing the "exports" package.json field
+Add support for CommonJS modules through editing the "exports"
+package.json field
 
 Add default export of functions in src/formats/rule/index.ts
 
@@ -30,12 +40,14 @@ Change SupportedLifeLikeFormats type to SupportedLifeLikeReadFileFormats
 
 Add type SupportedLifeLikeWriteFileFormats
 
-Export types SupportedLifeLikeReadFileFormats and SupportedLifeLikeWriteFileFormats
-from "./file" and main entrypoints.
+Export types SupportedLifeLikeReadFileFormats and
+SupportedLifeLikeWriteFileFormats from "./file" and main entrypoints.
 
-Change PlaintextMatrixWriteData in src/formats/file/plaintext.ts to PlaintextMatrixEncodingData
+Change PlaintextMatrixWriteData in src/formats/file/plaintext.ts
+to PlaintextMatrixEncodingData
 
-Change PlaintextCoordinateWriteData in src/formats/file/plaintext.ts to PlaintextMatrixEncodingData
+Change PlaintextCoordinateWriteData in src/formats/file/plaintext.ts
+to PlaintextMatrixEncodingData
 
 Change FileFormatData in src/formats/file/index.ts to FileFormatEncodingData
 
@@ -43,7 +55,8 @@ Export type FileFormatData from "./file" and main entrypoints.
 
 Add special error message for empty strings in readLifeString
 
-Ensure false and "" in isLifeFileFormat and getLifeFileFormat when empty life string is passed in
+Ensure false and "" in isLifeFileFormat and getLifeFileFormat when empty
+life string is passed in
 
 Add README.md to dist/ to explain different distribution formats
 
