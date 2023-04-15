@@ -1,6 +1,38 @@
 
 # llcacodec Changelog
 
+# April 14: Version 0.1.5
+
+Remove "foundTopLeft" property of RLEDecodedData
+
+Changed "topleft" property of RLEDecodedData to [number, number] | null
+
+Now, the RLE decoder does not default to a topleft of [0, 0] if the topleft
+property is not found. If there is no topleft given in the RLE data, a topleft
+of "null" is returned to signify that no topleft could be found, but the
+liveCoordinates are still listed as if they were relative to the origin [0, 0].
+This change was for transparency, as the RLE "specification" does not mention
+that the topleft of every pattern is assumed to be [0, 0].
+
+When a topleft coordinate is found, the y property is now flipped to -y, as most
+cellular automata programs that write RLE files assume that -y is up, while
+llcacodec assumes that -y is downward. This discrepency can be seen in the
+[RLE](https://conwaylife.com/wiki/Run_Length_Encoded) conwaylife wiki page,
+where the "top-left" corner of a centered pattern
+is at a -x -y coordinate. The described entry can be seen below.
+
+```txt
+| -- | ------------------------------------------------------------------- |  
+|    |                                                                     |  
+|    |    Gives the coordinates of the top-left corner of the pattern.     |  
+|    |    RLE files produced by XLife usually have this line, and the      |  
+|  R |    coordinates are usually negative, with the intention of          |  
+|    |    placing the centre of the pattern at the origin.                 |  
+|    |    Example: #R -22 -57                                              |  
+|    |                                                                     |  
+| -- | ------------------------------------------------------------------- |  
+```
+
 ## April 13: Version 0.1.5
 
 Remove dist/ directory from source control. It is still able to be built

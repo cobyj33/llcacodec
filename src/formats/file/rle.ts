@@ -12,8 +12,7 @@ export interface RLEDecodedData {
     format: "rle"
     comments: string[],
     name: string,
-    topleft: [number, number],
-    foundTopLeft: boolean,
+    topleft: [number, number] | null,
     width: number,
     height: number,
     ruleString: string,
@@ -82,7 +81,7 @@ interface ParsedRLEData {
  * 
  * @param rleData 
  */
-export function readRLEData(rlePattern: string, topleft: [number, number] = [0, 0]): ParsedRLEData {
+export function readRLEData(rlePattern: string, topleft: [number, number]): ParsedRLEData {
     let i = 0;
     let currRun: string[] = []
 
@@ -192,8 +191,7 @@ export function readRLEString(file: string): RLEDecodedData {
         comments: [],
         name: "",
         creationData: "",
-        topleft: [0, 0],
-        foundTopLeft: false,
+        topleft: null,
         width: 0,
         height: 0,
         ruleString: CONWAY_RULE_STRING_BS,
@@ -218,8 +216,9 @@ export function readRLEString(file: string): RLEDecodedData {
                 rleDecodedData.creationData = content
             } else if (id === "P" || id === "R") {
                 const [[x, y]] = readNumbers(afterID, 2)
-                rleDecodedData.topleft = [x, y]
-                rleDecodedData.foundTopLeft = true
+                rleDecodedData.topleft = [x, -y] 
+                // y flipped to -y, as most programs consider negative y to be
+                // up, but llcacodec assumes negative y to be down.
             } else if (id === "r") {
                 rleDecodedData.ruleString = content
                 rleDecodedData.rule = readLifeRule(content)
@@ -249,17 +248,17 @@ export function readRLEString(file: string): RLEDecodedData {
     
     currentLine++;
     const afterHeader = lines.slice(currentLine).join("\n") 
-    const data = readRLEData(afterHeader, rleDecodedData.topleft)
-
+    const data = readRLEData(afterHeader, rleDecodedData.topleft !== null ? rleDecodedData.topleft : [0, 0])
+    
     rleDecodedData.liveCoordinates = data.liveCoordinates
     if (data.endingIndex + 1 !== afterHeader.length - 1) {
         const afterRLEData = afterHeader.substring(data.endingIndex + 1)
         const linesAfterRLEData = afterRLEData.split("\n")
+        //Everything after the rle data is considered a comment
         rleDecodedData.comments.push(...linesAfterRLEData.map(line => line.trim()).filter(line => line.length > 0))
     }
 
 
-    //Everything after this is considered a comment
 
     return rleDecodedData
 }
