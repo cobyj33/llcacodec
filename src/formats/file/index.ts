@@ -5,6 +5,18 @@ import { readPlaintextString, isPlaintextString, PlaintextDecodedData, Plaintext
 import { RLECoordinateEncodingData, RLEDecodedData, RLEMatrixEncodingData, isRLEString, readRLEString, writeRLEString } from "./rle"
 import { Life105DecodedData, isLife105String, readLife105String } from "./life105"
 
+export { PlaintextDecodedData, PlaintextMatrixEncodingData, PlaintextCoordinateEncodingData } from "./plaintext"
+export { RLEDecodedData, RLEMatrixEncodingData, RLECoordinateEncodingData } from "./rle"
+export { Life105DecodedData } from "./life105"
+export { Life106DecodedData, Life106EncodingData } from "./life106"
+
+export type FileFormatEncodingData = ( Life106EncodingData & { format: "life 1.06"} ) | 
+( PlaintextMatrixEncodingData & { format: "plaintext"} ) | 
+( PlaintextCoordinateEncodingData & { format: "plaintext"} ) |
+( RLEMatrixEncodingData & { format: "rle" } ) |
+( RLECoordinateEncodingData & { format: "rle" })
+
+
 export type SupportedLifeLikeReadFileFormats = "life 1.06" | "life 1.05" | "plaintext" | "rle"
 export type SupportedLifeLikeWriteFileFormats = "life 1.06" | "plaintext" | "rle"
 
@@ -136,12 +148,6 @@ export function getLifeStringFormat(data: string): SupportedLifeLikeReadFileForm
     
     return ""
 }
-
-export type FileFormatEncodingData = ( Life106EncodingData & { format: "life 1.06"} ) | 
-( PlaintextMatrixEncodingData & { format: "plaintext"} ) | 
-( PlaintextCoordinateEncodingData & { format: "plaintext"} ) |
-( RLEMatrixEncodingData & { format: "rle" } ) |
-( RLECoordinateEncodingData & { format: "rle" })
 
 /**
  * Write a Life String, keeping the passed data in a portable string format
