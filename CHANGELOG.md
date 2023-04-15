@@ -5,6 +5,8 @@
 
 Readme tutorial for reading files added
 
+Add exports for decoding and encoding object types
+
 # April 14: Version 0.1.5
 
 Remove "foundTopLeft" property of RLEDecodedData
