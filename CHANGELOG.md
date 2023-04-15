@@ -1,6 +1,10 @@
 
 # llcacodec Changelog
 
+# April 15: Version 0.1.5
+
+Readme tutorial for reading files added
+
 # April 14: Version 0.1.5
 
 Remove "foundTopLeft" property of RLEDecodedData
