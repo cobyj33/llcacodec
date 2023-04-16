@@ -33,4 +33,4 @@ tags.temp
 package-lock.json
 
 # Test file output
-tests/brute/output/life106/*
+tests/brute/output
