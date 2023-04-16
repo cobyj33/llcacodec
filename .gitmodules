@@ -1,0 +1,3 @@
+[submodule "tests/brute/llcacodec-test-data"]
+	path = tests/brute/llcacodec-test-data
+	url = https://www.github.com/cobyj33/llcacodec-test-data.git
