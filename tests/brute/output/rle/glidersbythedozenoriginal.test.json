@@ -1,0 +1,53 @@
+{
+  "format": "rle",
+  "comments": [
+    "https://conwaylife.com/wiki/Gliders_by_the_dozen",
+    "https://www.conwaylife.com/patterns/glidersbythedozenoriginal.rle"
+  ],
+  "name": "glidersbythedozenoriginal.rle",
+  "creationData": "",
+  "topleft": null,
+  "width": 9,
+  "height": 5,
+  "ruleString": "b3/s23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [2, 0],
+    [3, 0],
+    [5, 0],
+    [6, 0],
+    [1, -1],
+    [3, -1],
+    [5, -1],
+    [7, -1],
+    [0, -2],
+    [3, -2],
+    [5, -2],
+    [8, -2],
+    [1, -3],
+    [3, -3],
+    [5, -3],
+    [7, -3],
+    [2, -4],
+    [3, -4],
+    [5, -4],
+    [6, -4]
+  ],
+  "hashLines": [
+    {
+      "content": "glidersbythedozenoriginal.rle",
+      "id": "N",
+      "full": "#N glidersbythedozenoriginal.rle"
+    },
+    {
+      "content": "https://conwaylife.com/wiki/Gliders_by_the_dozen",
+      "id": "C",
+      "full": "#C https://conwaylife.com/wiki/Gliders_by_the_dozen"
+    },
+    {
+      "content": "https://www.conwaylife.com/patterns/glidersbythedozenoriginal.rle",
+      "id": "C",
+      "full": "#C https://www.conwaylife.com/patterns/glidersbythedozenoriginal.rle"
+    }
+  ]
+}

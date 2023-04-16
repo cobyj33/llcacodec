@@ -1,0 +1,32 @@
+{
+  "format": "plaintext",
+  "name": "hookwithtailhooksiamesesnake.cells",
+  "description": [
+    "https://conwaylife.com/wiki/Hook-with-tail_hook_siamese_snake",
+    "https://conwaylife.com/patterns/hookwithtailhooksiamesesnake.cells"
+  ],
+  "matrix": [
+    [1, 1, 0, 0],
+    [0, 1, 0, 0],
+    [1, 0, 0, 0],
+    [1, 1, 0, 0],
+    [0, 1, 0, 0],
+    [1, 0, 0, 0],
+    [0, 1, 1, 1],
+    [0, 0, 0, 1]
+  ],
+  "liveCoordinates": [
+    [0, 0],
+    [1, 0],
+    [1, -1],
+    [0, -2],
+    [0, -3],
+    [1, -3],
+    [1, -4],
+    [0, -5],
+    [1, -6],
+    [2, -6],
+    [3, -6],
+    [3, -7]
+  ]
+}

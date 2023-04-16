@@ -1,0 +1,84 @@
+{
+  "format": "rle",
+  "comments": [
+    "Repeat time 63 ticks",
+    "https://conwaylife.com/wiki/F117",
+    "https://www.conwaylife.com/patterns/f117.rle"
+  ],
+  "name": "F117",
+  "creationData": "Dave Buckingham, July 1996",
+  "topleft": null,
+  "width": 45,
+  "height": 22,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [22, 0],
+    [23, 0],
+    [23, -1],
+    [10, -2],
+    [22, -2],
+    [10, -3],
+    [11, -3],
+    [12, -3],
+    [22, -3],
+    [23, -3],
+    [13, -4],
+    [0, -5],
+    [1, -5],
+    [12, -5],
+    [13, -5],
+    [1, -6],
+    [1, -7],
+    [3, -7],
+    [2, -8],
+    [3, -8],
+    [25, -9],
+    [26, -9],
+    [42, -9],
+    [25, -10],
+    [26, -10],
+    [42, -10],
+    [42, -11],
+    [43, -11],
+    [44, -11],
+    [44, -12],
+    [2, -15],
+    [2, -16],
+    [4, -16],
+    [2, -17],
+    [3, -17],
+    [4, -17],
+    [4, -18],
+    [16, -18],
+    [17, -18],
+    [16, -19],
+    [17, -20],
+    [18, -20],
+    [19, -20],
+    [19, -21]
+  ],
+  "hashLines": [
+    {"content": "F117", "id": "N", "full": "#N F117"},
+    {
+      "content": "Dave Buckingham, July 1996",
+      "id": "O",
+      "full": "#O Dave Buckingham, July 1996"
+    },
+    {
+      "content": "Repeat time 63 ticks",
+      "id": "C",
+      "full": "#C Repeat time 63 ticks"
+    },
+    {
+      "content": "https://conwaylife.com/wiki/F117",
+      "id": "C",
+      "full": "#C https://conwaylife.com/wiki/F117"
+    },
+    {
+      "content": "https://www.conwaylife.com/patterns/f117.rle",
+      "id": "C",
+      "full": "#C https://www.conwaylife.com/patterns/f117.rle"
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "format": "plaintext",
+  "name": "housebridgehouse.cells",
+  "description": [
+    "https://conwaylife.com/wiki/House_bridge_house",
+    "https://www.conwaylife.com/patterns/housebridgehouse.cells"
+  ],
+  "matrix": [
+    [1, 1, 0, 0, 0, 0],
+    [1, 0, 1, 0, 0, 0],
+    [0, 0, 1, 0, 0, 0],
+    [1, 0, 1, 0, 1, 1],
+    [1, 1, 0, 1, 0, 1],
+    [0, 0, 0, 1, 0, 0],
+    [0, 0, 0, 1, 0, 1],
+    [0, 0, 0, 0, 1, 1]
+  ],
+  "liveCoordinates": [
+    [0, 0],
+    [1, 0],
+    [0, -1],
+    [2, -1],
+    [2, -2],
+    [0, -3],
+    [2, -3],
+    [4, -3],
+    [5, -3],
+    [0, -4],
+    [1, -4],
+    [3, -4],
+    [5, -4],
+    [3, -5],
+    [3, -6],
+    [5, -6],
+    [4, -7],
+    [5, -7]
+  ]
+}

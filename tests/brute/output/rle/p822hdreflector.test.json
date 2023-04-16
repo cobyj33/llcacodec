@@ -1,0 +1,90 @@
+{
+  "format": "rle",
+  "comments": [
+    "https://conwaylife.com/wiki/P8_glider_reflector",
+    "https://www.conwaylife.com/patterns/p822hdreflector.rle"
+  ],
+  "name": "p822hdreflector.rle",
+  "creationData": "Tanner Jacobi, 2022",
+  "topleft": null,
+  "width": 19,
+  "height": 20,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [14, 0],
+    [15, 0],
+    [14, -1],
+    [0, -2],
+    [2, -2],
+    [12, -2],
+    [14, -2],
+    [1, -3],
+    [2, -3],
+    [12, -3],
+    [13, -3],
+    [1, -4],
+    [11, -7],
+    [12, -7],
+    [11, -8],
+    [12, -8],
+    [16, -8],
+    [17, -8],
+    [15, -9],
+    [18, -9],
+    [14, -11],
+    [1, -12],
+    [2, -12],
+    [14, -12],
+    [17, -12],
+    [1, -13],
+    [7, -13],
+    [8, -13],
+    [12, -13],
+    [13, -13],
+    [15, -13],
+    [16, -13],
+    [2, -14],
+    [3, -14],
+    [4, -14],
+    [7, -14],
+    [8, -14],
+    [12, -14],
+    [13, -14],
+    [14, -14],
+    [4, -15],
+    [13, -15],
+    [2, -16],
+    [3, -16],
+    [2, -17],
+    [3, -18],
+    [12, -18],
+    [13, -18],
+    [2, -19],
+    [3, -19],
+    [12, -19],
+    [13, -19]
+  ],
+  "hashLines": [
+    {
+      "content": "p822hdreflector.rle",
+      "id": "N",
+      "full": "#N p822hdreflector.rle"
+    },
+    {
+      "content": "Tanner Jacobi, 2022",
+      "id": "O",
+      "full": "#O Tanner Jacobi, 2022"
+    },
+    {
+      "content": "https://conwaylife.com/wiki/P8_glider_reflector",
+      "id": "C",
+      "full": "#C https://conwaylife.com/wiki/P8_glider_reflector"
+    },
+    {
+      "content": "https://www.conwaylife.com/patterns/p822hdreflector.rle",
+      "id": "C",
+      "full": "#C https://www.conwaylife.com/patterns/p822hdreflector.rle"
+    }
+  ]
+}

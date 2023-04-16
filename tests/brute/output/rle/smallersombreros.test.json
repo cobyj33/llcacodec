@@ -1,0 +1,83 @@
+{
+  "format": "rle",
+  "comments": [
+    "https://conwaylife.com/wiki/Sombreros",
+    "https://www.conwaylife.com/patterns/smallersombreros.rle"
+  ],
+  "name": "smallersombreros.rle",
+  "creationData": "",
+  "topleft": null,
+  "width": 15,
+  "height": 11,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [3, 0],
+    [4, 0],
+    [10, 0],
+    [11, 0],
+    [3, -1],
+    [5, -1],
+    [9, -1],
+    [11, -1],
+    [5, -2],
+    [9, -2],
+    [3, -3],
+    [5, -3],
+    [6, -3],
+    [8, -3],
+    [9, -3],
+    [11, -3],
+    [1, -4],
+    [2, -4],
+    [3, -4],
+    [11, -4],
+    [12, -4],
+    [13, -4],
+    [0, -5],
+    [4, -5],
+    [6, -5],
+    [8, -5],
+    [10, -5],
+    [14, -5],
+    [1, -6],
+    [2, -6],
+    [3, -6],
+    [11, -6],
+    [12, -6],
+    [13, -6],
+    [3, -7],
+    [5, -7],
+    [6, -7],
+    [8, -7],
+    [9, -7],
+    [11, -7],
+    [5, -8],
+    [9, -8],
+    [3, -9],
+    [5, -9],
+    [9, -9],
+    [11, -9],
+    [3, -10],
+    [4, -10],
+    [10, -10],
+    [11, -10]
+  ],
+  "hashLines": [
+    {
+      "content": "smallersombreros.rle",
+      "id": "N",
+      "full": "#N smallersombreros.rle"
+    },
+    {
+      "content": "https://conwaylife.com/wiki/Sombreros",
+      "id": "C",
+      "full": "#C https://conwaylife.com/wiki/Sombreros"
+    },
+    {
+      "content": "https://www.conwaylife.com/patterns/smallersombreros.rle",
+      "id": "C",
+      "full": "#C https://www.conwaylife.com/patterns/smallersombreros.rle"
+    }
+  ]
+}

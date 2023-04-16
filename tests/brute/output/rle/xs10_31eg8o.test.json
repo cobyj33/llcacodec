@@ -1,0 +1,39 @@
+{
+  "format": "rle",
+  "comments": [
+    "https://conwaylife.com/wiki/Hooked_integral",
+    "https://www.conwaylife.com/patterns/xs10_31eg8o.rle"
+  ],
+  "name": "xs10_31eg8o.rle",
+  "creationData": "",
+  "topleft": null,
+  "width": 6,
+  "height": 5,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [0, 0],
+    [1, 0],
+    [0, -1],
+    [2, -1],
+    [2, -2],
+    [2, -3],
+    [4, -3],
+    [5, -3],
+    [3, -4],
+    [5, -4]
+  ],
+  "hashLines": [
+    {"content": "xs10_31eg8o.rle", "id": "N", "full": "#N xs10_31eg8o.rle"},
+    {
+      "content": "https://conwaylife.com/wiki/Hooked_integral",
+      "id": "C",
+      "full": "#C https://conwaylife.com/wiki/Hooked_integral"
+    },
+    {
+      "content": "https://www.conwaylife.com/patterns/xs10_31eg8o.rle",
+      "id": "C",
+      "full": "#C https://www.conwaylife.com/patterns/xs10_31eg8o.rle"
+    }
+  ]
+}

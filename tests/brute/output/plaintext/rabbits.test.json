@@ -1,0 +1,25 @@
+{
+  "format": "plaintext",
+  "name": "Rabbits",
+  "description": [
+    "Author: Andrew Trevorrow",
+    "A methuselah with lifespan 17331.",
+    "https://www.conwaylife.com/wiki/index.php?title=Rabbits"
+  ],
+  "matrix": [
+    [1, 0, 0, 0, 1, 1, 1],
+    [1, 1, 1, 0, 0, 1, 0],
+    [0, 1, 0, 0, 0, 0, 0]
+  ],
+  "liveCoordinates": [
+    [0, 0],
+    [4, 0],
+    [5, 0],
+    [6, 0],
+    [0, -1],
+    [1, -1],
+    [2, -1],
+    [5, -1],
+    [1, -2]
+  ]
+}

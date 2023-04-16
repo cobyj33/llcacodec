@@ -1,0 +1,40 @@
+{
+  "format": "rle",
+  "comments": [
+    "https://conwaylife.com/wiki/Long%5E3_canoe",
+    "https://www.conwaylife.com/patterns/long3canoe.rle"
+  ],
+  "name": "long3canoe.rle",
+  "creationData": "",
+  "topleft": null,
+  "width": 8,
+  "height": 8,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [6, 0],
+    [7, 0],
+    [5, -1],
+    [7, -1],
+    [4, -2],
+    [3, -3],
+    [2, -4],
+    [1, -5],
+    [0, -6],
+    [0, -7],
+    [1, -7]
+  ],
+  "hashLines": [
+    {"content": "long3canoe.rle", "id": "N", "full": "#N long3canoe.rle"},
+    {
+      "content": "https://conwaylife.com/wiki/Long%5E3_canoe",
+      "id": "C",
+      "full": "#C https://conwaylife.com/wiki/Long%5E3_canoe"
+    },
+    {
+      "content": "https://www.conwaylife.com/patterns/long3canoe.rle",
+      "id": "C",
+      "full": "#C https://www.conwaylife.com/patterns/long3canoe.rle"
+    }
+  ]
+}

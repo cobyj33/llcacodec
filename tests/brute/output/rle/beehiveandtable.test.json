@@ -1,0 +1,41 @@
+{
+  "format": "rle",
+  "comments": [
+    "A 12-cell still life.",
+    "https://www.conwaylife.com/wiki/index.php?title=Beehive_and_table"
+  ],
+  "name": "Beehive and table",
+  "creationData": "",
+  "topleft": null,
+  "width": 5,
+  "height": 6,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [2, 0],
+    [3, 0],
+    [1, -1],
+    [4, -1],
+    [2, -2],
+    [3, -2],
+    [0, -4],
+    [1, -4],
+    [2, -4],
+    [3, -4],
+    [0, -5],
+    [3, -5]
+  ],
+  "hashLines": [
+    {"content": "Beehive and table", "id": "N", "full": "#N Beehive and table"},
+    {
+      "content": "A 12-cell still life.",
+      "id": "C",
+      "full": "#C A 12-cell still life."
+    },
+    {
+      "content": "https://www.conwaylife.com/wiki/index.php?title=Beehive_and_table",
+      "id": "C",
+      "full": "#C https://www.conwaylife.com/wiki/index.php?title=Beehive_and_table"
+    }
+  ]
+}

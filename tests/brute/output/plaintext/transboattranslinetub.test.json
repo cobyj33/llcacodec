@@ -1,0 +1,31 @@
+{
+  "format": "plaintext",
+  "name": "transboattranslinetub.cells",
+  "description": [
+    "https://conwaylife.com/wiki/Trans-boat_trans-line_tub",
+    "https://www.conwaylife.com/patterns/transboattranslinetub.cells"
+  ],
+  "matrix": [
+    [0, 0, 0, 0, 0, 1, 0],
+    [0, 0, 0, 0, 1, 0, 1],
+    [0, 0, 0, 1, 0, 1, 0],
+    [0, 0, 0, 1, 0, 0, 0],
+    [0, 1, 0, 1, 0, 0, 0],
+    [1, 0, 1, 0, 0, 0, 0],
+    [1, 1, 0, 0, 0, 0, 0]
+  ],
+  "liveCoordinates": [
+    [5, 0],
+    [4, -1],
+    [6, -1],
+    [3, -2],
+    [5, -2],
+    [3, -3],
+    [1, -4],
+    [3, -4],
+    [0, -5],
+    [2, -5],
+    [0, -6],
+    [1, -6]
+  ]
+}

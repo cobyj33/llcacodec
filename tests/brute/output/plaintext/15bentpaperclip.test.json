@@ -1,0 +1,32 @@
+{
+  "format": "plaintext",
+  "name": "15bentpaperclip.cells",
+  "description": [
+    "https://conwaylife.com/wiki/15-bent-paperclip",
+    "https://conwaylife.com/patterns/15bentpaperclip.cells"
+  ],
+  "matrix": [
+    [0, 0, 1, 1, 0, 0, 0],
+    [0, 1, 0, 1, 1, 1, 0],
+    [1, 0, 0, 0, 0, 0, 1],
+    [0, 1, 1, 1, 1, 0, 1],
+    [0, 0, 0, 1, 0, 1, 0]
+  ],
+  "liveCoordinates": [
+    [2, 0],
+    [3, 0],
+    [1, -1],
+    [3, -1],
+    [4, -1],
+    [5, -1],
+    [0, -2],
+    [6, -2],
+    [1, -3],
+    [2, -3],
+    [3, -3],
+    [4, -3],
+    [6, -3],
+    [3, -4],
+    [5, -4]
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "format": "rle",
+  "comments": [
+    "https://conwaylife.com/wiki/Very_long_hook_with_tail",
+    "https://www.conwaylife.com/patterns/verylonghookwithtail.rle"
+  ],
+  "name": "verylonghookwithtail.rle",
+  "creationData": "",
+  "topleft": null,
+  "width": 7,
+  "height": 4,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [0, 0],
+    [1, 0],
+    [5, 0],
+    [6, 0],
+    [1, -1],
+    [4, -1],
+    [6, -1],
+    [1, -2],
+    [3, -2],
+    [2, -3]
+  ],
+  "hashLines": [
+    {
+      "content": "verylonghookwithtail.rle",
+      "id": "N",
+      "full": "#N verylonghookwithtail.rle"
+    },
+    {
+      "content": "https://conwaylife.com/wiki/Very_long_hook_with_tail",
+      "id": "C",
+      "full": "#C https://conwaylife.com/wiki/Very_long_hook_with_tail"
+    },
+    {
+      "content": "https://www.conwaylife.com/patterns/verylonghookwithtail.rle",
+      "id": "C",
+      "full": "#C https://www.conwaylife.com/patterns/verylonghookwithtail.rle"
+    }
+  ]
+}

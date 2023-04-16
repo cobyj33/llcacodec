@@ -1,0 +1,46 @@
+{
+  "format": "rle",
+  "comments": [
+    "https://conwaylife.com/wiki/Trans-boat_up_on_long_bookend",
+    "https://www.conwaylife.com/patterns/transboatuponlongbookend.rle"
+  ],
+  "name": "transboatuponlongbookend.rle",
+  "creationData": "",
+  "topleft": null,
+  "width": 5,
+  "height": 7,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [3, 0],
+    [2, -1],
+    [4, -1],
+    [2, -2],
+    [3, -2],
+    [0, -4],
+    [1, -4],
+    [2, -4],
+    [3, -4],
+    [0, -5],
+    [4, -5],
+    [3, -6],
+    [4, -6]
+  ],
+  "hashLines": [
+    {
+      "content": "transboatuponlongbookend.rle",
+      "id": "N",
+      "full": "#N transboatuponlongbookend.rle"
+    },
+    {
+      "content": "https://conwaylife.com/wiki/Trans-boat_up_on_long_bookend",
+      "id": "C",
+      "full": "#C https://conwaylife.com/wiki/Trans-boat_up_on_long_bookend"
+    },
+    {
+      "content": "https://www.conwaylife.com/patterns/transboatuponlongbookend.rle",
+      "id": "C",
+      "full": "#C https://www.conwaylife.com/patterns/transboatuponlongbookend.rle"
+    }
+  ]
+}

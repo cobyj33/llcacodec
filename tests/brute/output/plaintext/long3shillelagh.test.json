@@ -1,0 +1,31 @@
+{
+  "format": "plaintext",
+  "name": "long3shillelagh.cells",
+  "description": [
+    "https://conwaylife.com/wiki/Long%5E3_shillelagh",
+    "https://www.conwaylife.com/patterns/long3shillelagh.cells"
+  ],
+  "matrix": [
+    [0, 0, 0, 1, 1],
+    [0, 0, 0, 0, 1],
+    [0, 0, 0, 1, 0],
+    [0, 0, 1, 0, 0],
+    [0, 1, 0, 0, 0],
+    [1, 0, 0, 0, 0],
+    [1, 0, 1, 0, 0],
+    [0, 1, 1, 0, 0]
+  ],
+  "liveCoordinates": [
+    [3, 0],
+    [4, 0],
+    [4, -1],
+    [3, -2],
+    [2, -3],
+    [1, -4],
+    [0, -5],
+    [0, -6],
+    [2, -6],
+    [1, -7],
+    [2, -7]
+  ]
+}

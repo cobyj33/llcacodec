@@ -1,0 +1,10 @@
+{
+  "format": "plaintext",
+  "name": "stairstephexominogenerator.cells",
+  "description": [
+    "https://conwaylife.com/wiki/Lumps_of_muck",
+    "https://www.conwaylife.com/patterns/stairstephexominogenerator.cells"
+  ],
+  "matrix": [[0, 1, 1, 1], [0, 0, 0, 0], [1, 1, 1, 0]],
+  "liveCoordinates": [[1, 0], [2, 0], [3, 0], [0, -2], [1, -2], [2, -2]]
+}

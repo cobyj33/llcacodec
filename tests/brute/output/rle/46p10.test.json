@@ -1,0 +1,80 @@
+{
+  "format": "rle",
+  "comments": [
+    "https://conwaylife.com/wiki/46P10",
+    "https://www.conwaylife.com/patterns/46p10.rle"
+  ],
+  "name": "46p10.rle",
+  "creationData": "Nicolay Beluchenko, 2009",
+  "topleft": null,
+  "width": 19,
+  "height": 19,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [11, 0],
+    [11, -1],
+    [13, -1],
+    [10, -2],
+    [12, -2],
+    [12, -3],
+    [10, -5],
+    [17, -5],
+    [6, -6],
+    [7, -6],
+    [9, -6],
+    [11, -6],
+    [15, -6],
+    [16, -6],
+    [6, -7],
+    [7, -7],
+    [10, -7],
+    [12, -7],
+    [17, -7],
+    [18, -7],
+    [11, -8],
+    [13, -8],
+    [16, -8],
+    [12, -9],
+    [1, -10],
+    [6, -10],
+    [7, -10],
+    [1, -11],
+    [3, -11],
+    [6, -11],
+    [8, -11],
+    [11, -11],
+    [12, -11],
+    [0, -12],
+    [2, -12],
+    [7, -12],
+    [8, -12],
+    [11, -12],
+    [12, -12],
+    [2, -13],
+    [7, -15],
+    [5, -16],
+    [6, -16],
+    [7, -17],
+    [8, -17],
+    [6, -18]
+  ],
+  "hashLines": [
+    {"content": "46p10.rle", "id": "N", "full": "#N 46p10.rle"},
+    {
+      "content": "Nicolay Beluchenko, 2009",
+      "id": "O",
+      "full": "#O Nicolay Beluchenko, 2009"
+    },
+    {
+      "content": "https://conwaylife.com/wiki/46P10",
+      "id": "C",
+      "full": "#C https://conwaylife.com/wiki/46P10"
+    },
+    {
+      "content": "https://www.conwaylife.com/patterns/46p10.rle",
+      "id": "C",
+      "full": "#C https://www.conwaylife.com/patterns/46p10.rle"
+    }
+  ]
+}

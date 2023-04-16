@@ -1,0 +1,38 @@
+{
+  "format": "rle",
+  "comments": [
+    "A 9-cell still life.",
+    "https://www.conwaylife.com/wiki/index.php?title=Integral_sign"
+  ],
+  "name": "Integral sign",
+  "creationData": "",
+  "topleft": null,
+  "width": 5,
+  "height": 5,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [3, 0],
+    [4, 0],
+    [2, -1],
+    [4, -1],
+    [2, -2],
+    [0, -3],
+    [2, -3],
+    [0, -4],
+    [1, -4]
+  ],
+  "hashLines": [
+    {"content": "Integral sign", "id": "N", "full": "#N Integral sign"},
+    {
+      "content": "A 9-cell still life.",
+      "id": "C",
+      "full": "#C A 9-cell still life."
+    },
+    {
+      "content": "https://www.conwaylife.com/wiki/index.php?title=Integral_sign",
+      "id": "C",
+      "full": "#C https://www.conwaylife.com/wiki/index.php?title=Integral_sign"
+    }
+  ]
+}

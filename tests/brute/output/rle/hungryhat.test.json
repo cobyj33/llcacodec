@@ -1,0 +1,41 @@
+{
+  "format": "rle",
+  "comments": [
+    "https://conwaylife.com/wiki/Hungry_hat",
+    "https://conwaylife.com/patterns/hungryhat.rle"
+  ],
+  "name": "Hungry hat",
+  "creationData": "Unknown",
+  "topleft": null,
+  "width": 6,
+  "height": 5,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [4, 0],
+    [5, 0],
+    [0, -1],
+    [1, -1],
+    [3, -1],
+    [5, -1],
+    [1, -2],
+    [3, -2],
+    [1, -3],
+    [3, -3],
+    [2, -4]
+  ],
+  "hashLines": [
+    {"content": "Hungry hat", "id": "N", "full": "#N Hungry hat"},
+    {"content": "Unknown", "id": "O", "full": "#O Unknown"},
+    {
+      "content": "https://conwaylife.com/wiki/Hungry_hat",
+      "id": "C",
+      "full": "#C https://conwaylife.com/wiki/Hungry_hat"
+    },
+    {
+      "content": "https://conwaylife.com/patterns/hungryhat.rle",
+      "id": "C",
+      "full": "#C https://conwaylife.com/patterns/hungryhat.rle"
+    }
+  ]
+}

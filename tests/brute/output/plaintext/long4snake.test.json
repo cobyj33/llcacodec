@@ -1,0 +1,28 @@
+{
+  "format": "plaintext",
+  "name": "long4snake.cells",
+  "description": [
+    "https://conwaylife.com/wiki/Long%5E4_snake",
+    "https://www.conwaylife.com/patterns/long4snake.cells"
+  ],
+  "matrix": [
+    [1, 1, 0, 0, 0, 0, 0, 0],
+    [1, 0, 1, 0, 0, 0, 0, 0],
+    [0, 0, 0, 1, 0, 0, 0, 0],
+    [0, 0, 0, 0, 1, 0, 0, 0],
+    [0, 0, 0, 0, 0, 1, 0, 1],
+    [0, 0, 0, 0, 0, 0, 1, 1]
+  ],
+  "liveCoordinates": [
+    [0, 0],
+    [1, 0],
+    [0, -1],
+    [2, -1],
+    [3, -2],
+    [4, -3],
+    [5, -4],
+    [7, -4],
+    [6, -5],
+    [7, -5]
+  ]
+}

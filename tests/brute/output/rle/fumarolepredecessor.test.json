@@ -1,0 +1,51 @@
+{
+  "format": "rle",
+  "comments": [
+    "https://conwaylife.com/wiki/Fumarole",
+    "https://www.conwaylife.com/patterns/fumarolepredecessor.rle"
+  ],
+  "name": "fumarolepredecessor.rle",
+  "creationData": "",
+  "topleft": null,
+  "width": 9,
+  "height": 11,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [0, 0],
+    [6, 0],
+    [0, -1],
+    [3, -1],
+    [4, -1],
+    [2, -2],
+    [5, -2],
+    [3, -3],
+    [5, -3],
+    [4, -4],
+    [1, -9],
+    [2, -9],
+    [7, -9],
+    [8, -9],
+    [1, -10],
+    [2, -10],
+    [7, -10],
+    [8, -10]
+  ],
+  "hashLines": [
+    {
+      "content": "fumarolepredecessor.rle",
+      "id": "N",
+      "full": "#N fumarolepredecessor.rle"
+    },
+    {
+      "content": "https://conwaylife.com/wiki/Fumarole",
+      "id": "C",
+      "full": "#C https://conwaylife.com/wiki/Fumarole"
+    },
+    {
+      "content": "https://www.conwaylife.com/patterns/fumarolepredecessor.rle",
+      "id": "C",
+      "full": "#C https://www.conwaylife.com/patterns/fumarolepredecessor.rle"
+    }
+  ]
+}

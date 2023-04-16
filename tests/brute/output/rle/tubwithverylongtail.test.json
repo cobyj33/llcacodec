@@ -1,0 +1,43 @@
+{
+  "format": "rle",
+  "comments": [
+    "https://conwaylife.com/wiki/Tub_with_very_long_tail",
+    "https://www.conwaylife.com/patterns/tubwithverylongtail.rle"
+  ],
+  "name": "tubwithverylongtail.rle",
+  "creationData": "",
+  "topleft": null,
+  "width": 4,
+  "height": 7,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [1, 0],
+    [0, -1],
+    [2, -1],
+    [1, -2],
+    [3, -2],
+    [3, -3],
+    [2, -4],
+    [1, -5],
+    [1, -6],
+    [2, -6]
+  ],
+  "hashLines": [
+    {
+      "content": "tubwithverylongtail.rle",
+      "id": "N",
+      "full": "#N tubwithverylongtail.rle"
+    },
+    {
+      "content": "https://conwaylife.com/wiki/Tub_with_very_long_tail",
+      "id": "C",
+      "full": "#C https://conwaylife.com/wiki/Tub_with_very_long_tail"
+    },
+    {
+      "content": "https://www.conwaylife.com/patterns/tubwithverylongtail.rle",
+      "id": "C",
+      "full": "#C https://www.conwaylife.com/patterns/tubwithverylongtail.rle"
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "format": "plaintext",
+  "name": "octominoii.cells",
+  "description": [
+    "https://conwaylife.com/wiki/List_of_common_evolutionary_sequences",
+    "https://www.conwaylife.com/patterns/octominoii.cells"
+  ],
+  "matrix": [[0, 1, 0, 0], [1, 1, 1, 0], [1, 0, 1, 1], [0, 0, 0, 1]],
+  "liveCoordinates": [
+    [1, 0],
+    [0, -1],
+    [1, -1],
+    [2, -1],
+    [0, -2],
+    [2, -2],
+    [3, -2],
+    [3, -3]
+  ]
+}

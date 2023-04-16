@@ -1,0 +1,53 @@
+{
+  "format": "rle",
+  "comments": [
+    "A small period-3 oscillator found by Nicolay Beluchenko in September 2003.",
+    "https://conwaylife.com/wiki/Fire-spitting"
+  ],
+  "name": "Fire-spitting",
+  "creationData": "Nicolay Beluchenko",
+  "topleft": null,
+  "width": 8,
+  "height": 10,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [5, 0],
+    [3, -1],
+    [4, -1],
+    [6, -1],
+    [1, -2],
+    [2, -2],
+    [6, -2],
+    [4, -3],
+    [6, -3],
+    [7, -3],
+    [1, -4],
+    [4, -4],
+    [2, -5],
+    [4, -5],
+    [1, -7],
+    [3, -7],
+    [0, -8],
+    [0, -9],
+    [1, -9]
+  ],
+  "hashLines": [
+    {"content": "Fire-spitting", "id": "N", "full": "#N Fire-spitting"},
+    {
+      "content": "Nicolay Beluchenko",
+      "id": "O",
+      "full": "#O Nicolay Beluchenko"
+    },
+    {
+      "content": "A small period-3 oscillator found by Nicolay Beluchenko in September 2003.",
+      "id": "C",
+      "full": "#C A small period-3 oscillator found by Nicolay Beluchenko in September 2003."
+    },
+    {
+      "content": "https://conwaylife.com/wiki/Fire-spitting",
+      "id": "C",
+      "full": "#C https://conwaylife.com/wiki/Fire-spitting"
+    }
+  ]
+}

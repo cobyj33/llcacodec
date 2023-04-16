@@ -1,0 +1,81 @@
+{
+  "format": "rle",
+  "comments": [
+    "Some alternate stabilizations of the period 46 twin bees shuttle os",
+    "cillator.",
+    "www.conwaylife.com/wiki/index.php?title=Twin_bees_shuttle"
+  ],
+  "name": "Twin bees shuttle v2",
+  "creationData": "David Bell, Bill Gosper and Heinrich Koenig",
+  "topleft": null,
+  "width": 27,
+  "height": 17,
+  "ruleString": "b3/s23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [1, 0],
+    [2, 0],
+    [1, -1],
+    [2, -1],
+    [15, -3],
+    [16, -3],
+    [0, -4],
+    [1, -4],
+    [15, -4],
+    [17, -4],
+    [0, -5],
+    [1, -5],
+    [17, -5],
+    [15, -6],
+    [16, -6],
+    [17, -6],
+    [23, -6],
+    [23, -7],
+    [24, -7],
+    [25, -7],
+    [26, -8],
+    [23, -9],
+    [24, -9],
+    [25, -9],
+    [15, -10],
+    [16, -10],
+    [17, -10],
+    [23, -10],
+    [0, -11],
+    [1, -11],
+    [17, -11],
+    [0, -12],
+    [1, -12],
+    [15, -12],
+    [17, -12],
+    [15, -13],
+    [16, -13],
+    [1, -15],
+    [2, -15],
+    [1, -16],
+    [2, -16]
+  ],
+  "hashLines": [
+    {
+      "content": "Twin bees shuttle v2",
+      "id": "N",
+      "full": "#N Twin bees shuttle v2"
+    },
+    {
+      "content": "David Bell, Bill Gosper and Heinrich Koenig",
+      "id": "O",
+      "full": "#O David Bell, Bill Gosper and Heinrich Koenig"
+    },
+    {
+      "content": "Some alternate stabilizations of the period 46 twin bees shuttle os",
+      "id": "C",
+      "full": "#C Some alternate stabilizations of the period 46 twin bees shuttle os"
+    },
+    {"content": "cillator.", "id": "C", "full": "#C cillator."},
+    {
+      "content": "www.conwaylife.com/wiki/index.php?title=Twin_bees_shuttle",
+      "id": "C",
+      "full": "#C www.conwaylife.com/wiki/index.php?title=Twin_bees_shuttle"
+    }
+  ]
+}

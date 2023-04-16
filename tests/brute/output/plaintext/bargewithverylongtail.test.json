@@ -1,0 +1,29 @@
+{
+  "format": "plaintext",
+  "name": "bargewithverylongtail.cells",
+  "description": [
+    "https://conwaylife.com/wiki/Barge_with_very_long_tail",
+    "https://conwaylife.com/patterns/bargewithverylongtail.cells"
+  ],
+  "matrix": [
+    [0, 1, 0, 0, 0, 0, 0, 0],
+    [1, 0, 1, 0, 0, 0, 0, 0],
+    [0, 1, 0, 1, 0, 0, 1, 1],
+    [0, 0, 1, 0, 0, 1, 0, 1],
+    [0, 0, 0, 1, 1, 0, 0, 0]
+  ],
+  "liveCoordinates": [
+    [1, 0],
+    [0, -1],
+    [2, -1],
+    [1, -2],
+    [3, -2],
+    [6, -2],
+    [7, -2],
+    [2, -3],
+    [5, -3],
+    [7, -3],
+    [3, -4],
+    [4, -4]
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "format": "rle",
+  "comments": [
+    "https://conwaylife.com/wiki/HRx65R",
+    "https://www.conwaylife.com/patterns/hrx65r.rle"
+  ],
+  "name": "hrx65r.rle",
+  "creationData": "Mitchell Riley, 2022",
+  "topleft": null,
+  "width": 29,
+  "height": 21,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [9, 0],
+    [0, -1],
+    [9, -1],
+    [10, -1],
+    [11, -1],
+    [0, -2],
+    [1, -2],
+    [2, -2],
+    [12, -2],
+    [3, -3],
+    [11, -3],
+    [12, -3],
+    [2, -4],
+    [3, -4],
+    [1, -11],
+    [28, -11],
+    [1, -12],
+    [3, -12],
+    [17, -12],
+    [26, -12],
+    [28, -12],
+    [1, -13],
+    [2, -13],
+    [3, -13],
+    [16, -13],
+    [18, -13],
+    [27, -13],
+    [3, -14],
+    [15, -14],
+    [18, -14],
+    [16, -15],
+    [17, -15],
+    [13, -17],
+    [14, -17],
+    [12, -18],
+    [14, -18],
+    [12, -19],
+    [11, -20],
+    [12, -20]
+  ],
+  "hashLines": [
+    {"content": "hrx65r.rle", "id": "N", "full": "#N hrx65r.rle"},
+    {
+      "content": "Mitchell Riley, 2022",
+      "id": "O",
+      "full": "#O Mitchell Riley, 2022"
+    },
+    {
+      "content": "https://conwaylife.com/wiki/HRx65R",
+      "id": "C",
+      "full": "#C https://conwaylife.com/wiki/HRx65R"
+    },
+    {
+      "content": "https://www.conwaylife.com/patterns/hrx65r.rle",
+      "id": "C",
+      "full": "#C https://www.conwaylife.com/patterns/hrx65r.rle"
+    }
+  ]
+}

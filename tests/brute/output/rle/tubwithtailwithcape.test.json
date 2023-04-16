@@ -1,0 +1,45 @@
+{
+  "format": "rle",
+  "comments": [
+    "https://conwaylife.com/wiki/Tub_with_tail_with_cape",
+    "https://conwaylife.com/patterns/tubwithtailwithcape.rle"
+  ],
+  "name": "tubwithtailwithcape.rle",
+  "creationData": "",
+  "topleft": null,
+  "width": 7,
+  "height": 5,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [1, 0],
+    [0, -1],
+    [2, -1],
+    [5, -1],
+    [6, -1],
+    [1, -2],
+    [3, -2],
+    [6, -2],
+    [3, -3],
+    [5, -3],
+    [3, -4],
+    [4, -4]
+  ],
+  "hashLines": [
+    {
+      "content": "tubwithtailwithcape.rle",
+      "id": "N",
+      "full": "#N tubwithtailwithcape.rle"
+    },
+    {
+      "content": "https://conwaylife.com/wiki/Tub_with_tail_with_cape",
+      "id": "C",
+      "full": "#C https://conwaylife.com/wiki/Tub_with_tail_with_cape"
+    },
+    {
+      "content": "https://conwaylife.com/patterns/tubwithtailwithcape.rle",
+      "id": "C",
+      "full": "#C https://conwaylife.com/patterns/tubwithtailwithcape.rle"
+    }
+  ]
+}

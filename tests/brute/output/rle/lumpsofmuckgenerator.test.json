@@ -1,0 +1,32 @@
+{
+  "format": "rle",
+  "comments": [
+    "https://conwaylife.com/wiki/Lumps_of_muck",
+    "https://www.conwaylife.com/patterns/lumpsofmuckgenerator.rle"
+  ],
+  "name": "lumpsofmuckgenerator.rle",
+  "creationData": "",
+  "topleft": null,
+  "width": 4,
+  "height": 3,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [[0, 0], [0, -1], [1, -1], [1, -2], [2, -2], [3, -2]],
+  "hashLines": [
+    {
+      "content": "lumpsofmuckgenerator.rle",
+      "id": "N",
+      "full": "#N lumpsofmuckgenerator.rle"
+    },
+    {
+      "content": "https://conwaylife.com/wiki/Lumps_of_muck",
+      "id": "C",
+      "full": "#C https://conwaylife.com/wiki/Lumps_of_muck"
+    },
+    {
+      "content": "https://www.conwaylife.com/patterns/lumpsofmuckgenerator.rle",
+      "id": "C",
+      "full": "#C https://www.conwaylife.com/patterns/lumpsofmuckgenerator.rle"
+    }
+  ]
+}

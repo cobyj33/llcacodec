@@ -1,0 +1,45 @@
+{
+  "format": "rle",
+  "comments": [
+    "A 16-cell still life consisting of two caps.",
+    "www.conwaylife.com/wiki/index.php?title=Bi-cap"
+  ],
+  "name": "Bi-cap",
+  "creationData": "",
+  "topleft": null,
+  "width": 4,
+  "height": 7,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [1, 0],
+    [2, 0],
+    [0, -1],
+    [3, -1],
+    [0, -2],
+    [1, -2],
+    [2, -2],
+    [3, -2],
+    [0, -4],
+    [1, -4],
+    [2, -4],
+    [3, -4],
+    [0, -5],
+    [3, -5],
+    [1, -6],
+    [2, -6]
+  ],
+  "hashLines": [
+    {"content": "Bi-cap", "id": "N", "full": "#N Bi-cap"},
+    {
+      "content": "A 16-cell still life consisting of two caps.",
+      "id": "C",
+      "full": "#C A 16-cell still life consisting of two caps."
+    },
+    {
+      "content": "www.conwaylife.com/wiki/index.php?title=Bi-cap",
+      "id": "C",
+      "full": "#C www.conwaylife.com/wiki/index.php?title=Bi-cap"
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "format": "rle",
+  "comments": [
+    "An orthogonal period 4 c/2 pushalong that attaches to the front of a middleweight spaceship.",
+    "Found in 1992.",
+    "www.conwaylife.com/wiki/index.php?title=Pushalong_1"
+  ],
+  "name": "Pushalong 1",
+  "creationData": "David Bell",
+  "topleft": null,
+  "width": 11,
+  "height": 12,
+  "ruleString": "23/3",
+  "rule": {"survival": [2, 3], "birth": [3]},
+  "liveCoordinates": [
+    [3, 0],
+    [1, -1],
+    [4, -1],
+    [0, -2],
+    [4, -2],
+    [0, -3],
+    [4, -3],
+    [0, -4],
+    [1, -4],
+    [3, -4],
+    [5, -5],
+    [6, -5],
+    [2, -6],
+    [5, -6],
+    [6, -6],
+    [4, -7],
+    [7, -8],
+    [8, -8],
+    [9, -8],
+    [6, -9],
+    [7, -9],
+    [8, -9],
+    [9, -9],
+    [10, -9],
+    [5, -10],
+    [6, -10],
+    [8, -10],
+    [9, -10],
+    [10, -10],
+    [6, -11],
+    [7, -11]
+  ],
+  "hashLines": [
+    {"content": "Pushalong 1", "id": "N", "full": "#N Pushalong 1"},
+    {"content": "David Bell", "id": "O", "full": "#O David Bell"},
+    {
+      "content": "An orthogonal period 4 c/2 pushalong that attaches to the front of a middleweight spaceship.",
+      "id": "C",
+      "full": "#C An orthogonal period 4 c/2 pushalong that attaches to the front of a middleweight spaceship."
+    },
+    {"content": "Found in 1992.", "id": "C", "full": "#C Found in 1992."},
+    {
+      "content": "www.conwaylife.com/wiki/index.php?title=Pushalong_1",
+      "id": "C",
+      "full": "#C www.conwaylife.com/wiki/index.php?title=Pushalong_1"
+    }
+  ]
+}

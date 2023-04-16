@@ -1,0 +1,47 @@
+{
+  "format": "rle",
+  "comments": [
+    "https://conwaylife.com/wiki/Rotated_house",
+    "https://www.conwaylife.com/patterns/rotatedhouse.rle"
+  ],
+  "name": "rotatedhouse.rle",
+  "creationData": "",
+  "topleft": null,
+  "width": 7,
+  "height": 7,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [0, 0],
+    [1, 0],
+    [0, -1],
+    [2, -1],
+    [2, -2],
+    [5, -2],
+    [6, -2],
+    [0, -3],
+    [2, -3],
+    [4, -3],
+    [6, -3],
+    [0, -4],
+    [1, -4],
+    [4, -4],
+    [4, -5],
+    [6, -5],
+    [5, -6],
+    [6, -6]
+  ],
+  "hashLines": [
+    {"content": "rotatedhouse.rle", "id": "N", "full": "#N rotatedhouse.rle"},
+    {
+      "content": "https://conwaylife.com/wiki/Rotated_house",
+      "id": "C",
+      "full": "#C https://conwaylife.com/wiki/Rotated_house"
+    },
+    {
+      "content": "https://www.conwaylife.com/patterns/rotatedhouse.rle",
+      "id": "C",
+      "full": "#C https://www.conwaylife.com/patterns/rotatedhouse.rle"
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "format": "rle",
+  "comments": [
+    "A methuselah and parent of rabbits with lifespan 17332.",
+    "www.conwaylife.com/wiki/index.php?title=Bunnies"
+  ],
+  "name": "Bunnies",
+  "creationData": "Robert Wainwright and Andrew Trevorrow",
+  "topleft": null,
+  "width": 8,
+  "height": 4,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [0, 0],
+    [6, 0],
+    [2, -1],
+    [6, -1],
+    [2, -2],
+    [5, -2],
+    [7, -2],
+    [1, -3],
+    [3, -3]
+  ],
+  "hashLines": [
+    {"content": "Bunnies", "id": "N", "full": "#N Bunnies"},
+    {
+      "content": "Robert Wainwright and Andrew Trevorrow",
+      "id": "O",
+      "full": "#O Robert Wainwright and Andrew Trevorrow"
+    },
+    {
+      "content": "A methuselah and parent of rabbits with lifespan 17332.",
+      "id": "C",
+      "full": "#C A methuselah and parent of rabbits with lifespan 17332."
+    },
+    {
+      "content": "www.conwaylife.com/wiki/index.php?title=Bunnies",
+      "id": "C",
+      "full": "#C www.conwaylife.com/wiki/index.php?title=Bunnies"
+    }
+  ]
+}

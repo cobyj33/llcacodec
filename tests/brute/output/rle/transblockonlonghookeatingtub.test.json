@@ -1,0 +1,49 @@
+{
+  "format": "rle",
+  "comments": [
+    "https://conwaylife.com/wiki/Trans-block_on_long_hook_eating_tub",
+    "https://www.conwaylife.com/patterns/transblockonlonghookeatingtub.rle"
+  ],
+  "name": "transblockonlonghookeatingtub.rle",
+  "creationData": "",
+  "topleft": null,
+  "width": 5,
+  "height": 10,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [0, 0],
+    [1, 0],
+    [0, -1],
+    [1, -1],
+    [0, -3],
+    [1, -3],
+    [2, -3],
+    [3, -3],
+    [0, -4],
+    [4, -4],
+    [3, -5],
+    [3, -6],
+    [2, -7],
+    [1, -8],
+    [3, -8],
+    [2, -9]
+  ],
+  "hashLines": [
+    {
+      "content": "transblockonlonghookeatingtub.rle",
+      "id": "N",
+      "full": "#N transblockonlonghookeatingtub.rle"
+    },
+    {
+      "content": "https://conwaylife.com/wiki/Trans-block_on_long_hook_eating_tub",
+      "id": "C",
+      "full": "#C https://conwaylife.com/wiki/Trans-block_on_long_hook_eating_tub"
+    },
+    {
+      "content": "https://www.conwaylife.com/patterns/transblockonlonghookeatingtub.rle",
+      "id": "C",
+      "full": "#C https://www.conwaylife.com/patterns/transblockonlonghookeatingtub.rle"
+    }
+  ]
+}

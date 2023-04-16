@@ -1,0 +1,25 @@
+{
+  "format": "plaintext",
+  "name": "Hat",
+  "description": [
+    "The twenty-fifth most common still life.",
+    "https://www.conwaylife.com/wiki/index.php?title=Hat"
+  ],
+  "matrix": [
+    [0, 0, 1, 0, 0],
+    [0, 1, 0, 1, 0],
+    [0, 1, 0, 1, 0],
+    [1, 1, 0, 1, 1]
+  ],
+  "liveCoordinates": [
+    [2, 0],
+    [1, -1],
+    [3, -1],
+    [1, -2],
+    [3, -2],
+    [0, -3],
+    [1, -3],
+    [3, -3],
+    [4, -3]
+  ]
+}

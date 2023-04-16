@@ -1,0 +1,55 @@
+{
+  "format": "rle",
+  "comments": [
+    "A queen bee shuttle predecessor found in April 1992.",
+    "www.conwaylife.com/wiki/index.php?title=Queen_bee_shuttle"
+  ],
+  "name": "Queen bee shuttle pi predecessor",
+  "creationData": "Bill Gosper",
+  "topleft": null,
+  "width": 35,
+  "height": 7,
+  "ruleString": "b3/s23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [0, 0],
+    [1, 0],
+    [33, 0],
+    [34, 0],
+    [0, -1],
+    [1, -1],
+    [33, -1],
+    [34, -1],
+    [16, -4],
+    [17, -4],
+    [18, -4],
+    [5, -5],
+    [6, -5],
+    [7, -5],
+    [16, -5],
+    [18, -5],
+    [27, -5],
+    [28, -5],
+    [29, -5],
+    [16, -6],
+    [18, -6]
+  ],
+  "hashLines": [
+    {
+      "content": "Queen bee shuttle pi predecessor",
+      "id": "N",
+      "full": "#N Queen bee shuttle pi predecessor"
+    },
+    {"content": "Bill Gosper", "id": "O", "full": "#O Bill Gosper"},
+    {
+      "content": "A queen bee shuttle predecessor found in April 1992.",
+      "id": "C",
+      "full": "#C A queen bee shuttle predecessor found in April 1992."
+    },
+    {
+      "content": "www.conwaylife.com/wiki/index.php?title=Queen_bee_shuttle",
+      "id": "C",
+      "full": "#C www.conwaylife.com/wiki/index.php?title=Queen_bee_shuttle"
+    }
+  ]
+}

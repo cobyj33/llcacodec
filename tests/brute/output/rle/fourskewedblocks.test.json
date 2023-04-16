@@ -1,0 +1,49 @@
+{
+  "format": "rle",
+  "comments": [
+    "https://conwaylife.com/wiki/Four_skewed_blocks",
+    "https://www.conwaylife.com/patterns/fourskewedblocks.rle"
+  ],
+  "name": "fourskewedblocks.rle",
+  "creationData": "",
+  "topleft": null,
+  "width": 10,
+  "height": 13,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [3, 0],
+    [4, 0],
+    [3, -1],
+    [4, -1],
+    [8, -5],
+    [9, -5],
+    [0, -6],
+    [1, -6],
+    [8, -6],
+    [9, -6],
+    [0, -7],
+    [1, -7],
+    [5, -11],
+    [6, -11],
+    [5, -12],
+    [6, -12]
+  ],
+  "hashLines": [
+    {
+      "content": "fourskewedblocks.rle",
+      "id": "N",
+      "full": "#N fourskewedblocks.rle"
+    },
+    {
+      "content": "https://conwaylife.com/wiki/Four_skewed_blocks",
+      "id": "C",
+      "full": "#C https://conwaylife.com/wiki/Four_skewed_blocks"
+    },
+    {
+      "content": "https://www.conwaylife.com/patterns/fourskewedblocks.rle",
+      "id": "C",
+      "full": "#C https://www.conwaylife.com/patterns/fourskewedblocks.rle"
+    }
+  ]
+}

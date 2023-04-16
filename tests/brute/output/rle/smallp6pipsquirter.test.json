@@ -1,0 +1,69 @@
+{
+  "format": "rle",
+  "comments": [
+    "https://conwaylife.com/wiki/P6_pipsquirter",
+    "https://www.conwaylife.com/patterns/smallp6pipsquirter.rle"
+  ],
+  "name": "smallp6pipsquirter.rle",
+  "creationData": "",
+  "topleft": null,
+  "width": 14,
+  "height": 10,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [4, 0],
+    [3, -1],
+    [4, -1],
+    [5, -1],
+    [6, -1],
+    [2, -2],
+    [6, -2],
+    [3, -3],
+    [9, -3],
+    [10, -3],
+    [0, -4],
+    [1, -4],
+    [2, -4],
+    [5, -4],
+    [6, -4],
+    [7, -4],
+    [11, -4],
+    [0, -5],
+    [3, -5],
+    [4, -5],
+    [8, -5],
+    [11, -5],
+    [1, -6],
+    [2, -6],
+    [5, -6],
+    [6, -6],
+    [10, -6],
+    [3, -7],
+    [5, -7],
+    [11, -7],
+    [12, -7],
+    [13, -7],
+    [3, -8],
+    [5, -8],
+    [13, -8],
+    [4, -9]
+  ],
+  "hashLines": [
+    {
+      "content": "smallp6pipsquirter.rle",
+      "id": "N",
+      "full": "#N smallp6pipsquirter.rle"
+    },
+    {
+      "content": "https://conwaylife.com/wiki/P6_pipsquirter",
+      "id": "C",
+      "full": "#C https://conwaylife.com/wiki/P6_pipsquirter"
+    },
+    {
+      "content": "https://www.conwaylife.com/patterns/smallp6pipsquirter.rle",
+      "id": "C",
+      "full": "#C https://www.conwaylife.com/patterns/smallp6pipsquirter.rle"
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "format": "rle",
+  "comments": [
+    "https://conwaylife.com/wiki/Two_cis_griddles_with_two_tubs",
+    "https://conwaylife.com/patterns/twocisgriddleswtwotubs.rle"
+  ],
+  "name": "Two cis griddles with two tubs",
+  "creationData": "Unknown",
+  "topleft": null,
+  "width": 8,
+  "height": 7,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [4, 0],
+    [2, -1],
+    [4, -1],
+    [1, -2],
+    [6, -2],
+    [0, -3],
+    [2, -3],
+    [3, -3],
+    [4, -3],
+    [5, -3],
+    [7, -3],
+    [1, -4],
+    [6, -4],
+    [2, -5],
+    [4, -5],
+    [4, -6]
+  ],
+  "hashLines": [
+    {
+      "content": "Two cis griddles with two tubs",
+      "id": "N",
+      "full": "#N Two cis griddles with two tubs"
+    },
+    {"content": "Unknown", "id": "O", "full": "#O Unknown"},
+    {
+      "content": "https://conwaylife.com/wiki/Two_cis_griddles_with_two_tubs",
+      "id": "C",
+      "full": "#C https://conwaylife.com/wiki/Two_cis_griddles_with_two_tubs"
+    },
+    {
+      "content": "https://conwaylife.com/patterns/twocisgriddleswtwotubs.rle",
+      "id": "C",
+      "full": "#C https://conwaylife.com/patterns/twocisgriddleswtwotubs.rle"
+    }
+  ]
+}

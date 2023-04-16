@@ -1,0 +1,38 @@
+{
+  "format": "plaintext",
+  "name": "cisbeacononanvilpredecessor.cells",
+  "description": [
+    "https://conwaylife.com/wiki/Beacon_variants",
+    "https://www.conwaylife.com/patterns/cisbeacononanvilpredecessor.cells"
+  ],
+  "matrix": [
+    [0, 0, 1, 1, 0, 0],
+    [0, 0, 0, 1, 0, 0],
+    [1, 0, 0, 0, 0, 0],
+    [1, 1, 0, 0, 0, 0],
+    [0, 0, 0, 0, 0, 0],
+    [0, 0, 0, 0, 0, 0],
+    [0, 0, 0, 0, 0, 0],
+    [0, 1, 1, 1, 0, 0],
+    [0, 1, 0, 0, 1, 0],
+    [0, 0, 0, 0, 0, 1],
+    [0, 0, 0, 0, 0, 1],
+    [0, 0, 0, 0, 0, 1]
+  ],
+  "liveCoordinates": [
+    [2, 0],
+    [3, 0],
+    [3, -1],
+    [0, -2],
+    [0, -3],
+    [1, -3],
+    [1, -7],
+    [2, -7],
+    [3, -7],
+    [1, -8],
+    [4, -8],
+    [5, -9],
+    [5, -10],
+    [5, -11]
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "format": "plaintext",
+  "name": "Figure eight",
+  "description": [
+    "Author: Simon Norton",
+    "A period 8 oscillator found in 1970.",
+    "www.conwaylife.com/wiki/index.php?title=Figure_eight"
+  ],
+  "matrix": [
+    [1, 1, 0, 0, 0, 0],
+    [1, 1, 0, 1, 0, 0],
+    [0, 0, 0, 0, 1, 0],
+    [0, 1, 0, 0, 0, 0],
+    [0, 0, 1, 0, 1, 1],
+    [0, 0, 0, 0, 1, 1]
+  ],
+  "liveCoordinates": [
+    [0, 0],
+    [1, 0],
+    [0, -1],
+    [1, -1],
+    [3, -1],
+    [4, -2],
+    [1, -3],
+    [2, -4],
+    [4, -4],
+    [5, -4],
+    [4, -5],
+    [5, -5]
+  ]
+}

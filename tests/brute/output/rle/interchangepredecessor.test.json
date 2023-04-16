@@ -1,0 +1,40 @@
+{
+  "format": "rle",
+  "comments": [
+    "https://conwaylife.com/wiki/Interchange",
+    "https://www.conwaylife.com/patterns/interchangepredecessor.rle"
+  ],
+  "name": "interchangepredecessor.rle",
+  "creationData": "",
+  "topleft": null,
+  "width": 7,
+  "height": 4,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [3, 0],
+    [1, -1],
+    [2, -1],
+    [4, -1],
+    [5, -1],
+    [6, -2],
+    [0, -3]
+  ],
+  "hashLines": [
+    {
+      "content": "interchangepredecessor.rle",
+      "id": "N",
+      "full": "#N interchangepredecessor.rle"
+    },
+    {
+      "content": "https://conwaylife.com/wiki/Interchange",
+      "id": "C",
+      "full": "#C https://conwaylife.com/wiki/Interchange"
+    },
+    {
+      "content": "https://www.conwaylife.com/patterns/interchangepredecessor.rle",
+      "id": "C",
+      "full": "#C https://www.conwaylife.com/patterns/interchangepredecessor.rle"
+    }
+  ]
+}

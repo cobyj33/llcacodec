@@ -1,0 +1,48 @@
+{
+  "format": "rle",
+  "comments": [
+    "A period 3 oscillator found in July 1973.",
+    "www.conwaylife.com/wiki/index.php?title=Pulsar_quadrant"
+  ],
+  "name": "Pulsar quadrant",
+  "creationData": "David Buckingham",
+  "topleft": null,
+  "width": 8,
+  "height": 8,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [5, 0],
+    [3, -1],
+    [4, -1],
+    [5, -1],
+    [2, -2],
+    [6, -2],
+    [7, -2],
+    [0, -3],
+    [3, -3],
+    [6, -3],
+    [0, -4],
+    [4, -4],
+    [6, -4],
+    [0, -5],
+    [5, -5],
+    [2, -7],
+    [3, -7],
+    [4, -7]
+  ],
+  "hashLines": [
+    {"content": "Pulsar quadrant", "id": "N", "full": "#N Pulsar quadrant"},
+    {"content": "David Buckingham", "id": "O", "full": "#O David Buckingham"},
+    {
+      "content": "A period 3 oscillator found in July 1973.",
+      "id": "C",
+      "full": "#C A period 3 oscillator found in July 1973."
+    },
+    {
+      "content": "www.conwaylife.com/wiki/index.php?title=Pulsar_quadrant",
+      "id": "C",
+      "full": "#C www.conwaylife.com/wiki/index.php?title=Pulsar_quadrant"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "format": "rle",
+  "comments": [
+    "https://conwaylife.com/wiki/Pre-pre-block",
+    "https://www.conwaylife.com/patterns/prepreblock.rle"
+  ],
+  "name": "prepreblock.rle",
+  "creationData": "",
+  "topleft": null,
+  "width": 2,
+  "height": 3,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [[0, 0], [1, 0], [1, -1], [0, -2]],
+  "hashLines": [
+    {"content": "prepreblock.rle", "id": "N", "full": "#N prepreblock.rle"},
+    {
+      "content": "https://conwaylife.com/wiki/Pre-pre-block",
+      "id": "C",
+      "full": "#C https://conwaylife.com/wiki/Pre-pre-block"
+    },
+    {
+      "content": "https://www.conwaylife.com/patterns/prepreblock.rle",
+      "id": "C",
+      "full": "#C https://www.conwaylife.com/patterns/prepreblock.rle"
+    }
+  ]
+}

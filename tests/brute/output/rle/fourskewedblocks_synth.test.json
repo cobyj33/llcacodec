@@ -1,0 +1,65 @@
+{
+  "format": "rle",
+  "comments": [
+    "https://conwaylife.com/wiki/Four_skewed_blocks",
+    "https://conwaylife.com/patterns/fourskewedblocks_synth.rle",
+    "https://conwaylife.com/ref/mniemiec/16/16blocks.rle"
+  ],
+  "name": "fourskewedblocks_synth.rle",
+  "creationData": "",
+  "topleft": null,
+  "width": 29,
+  "height": 10,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [21, 0],
+    [22, 0],
+    [21, -1],
+    [22, -1],
+    [2, -2],
+    [4, -2],
+    [3, -3],
+    [4, -3],
+    [27, -3],
+    [28, -3],
+    [3, -4],
+    [27, -4],
+    [28, -4],
+    [1, -5],
+    [16, -5],
+    [17, -5],
+    [0, -6],
+    [1, -6],
+    [16, -6],
+    [17, -6],
+    [0, -7],
+    [2, -7],
+    [22, -8],
+    [23, -8],
+    [22, -9],
+    [23, -9]
+  ],
+  "hashLines": [
+    {
+      "content": "fourskewedblocks_synth.rle",
+      "id": "N",
+      "full": "#N fourskewedblocks_synth.rle"
+    },
+    {
+      "content": "https://conwaylife.com/wiki/Four_skewed_blocks",
+      "id": "C",
+      "full": "#C https://conwaylife.com/wiki/Four_skewed_blocks"
+    },
+    {
+      "content": "https://conwaylife.com/patterns/fourskewedblocks_synth.rle",
+      "id": "C",
+      "full": "#C https://conwaylife.com/patterns/fourskewedblocks_synth.rle"
+    },
+    {
+      "content": "https://conwaylife.com/ref/mniemiec/16/16blocks.rle",
+      "id": "C",
+      "full": "#C https://conwaylife.com/ref/mniemiec/16/16blocks.rle"
+    }
+  ]
+}

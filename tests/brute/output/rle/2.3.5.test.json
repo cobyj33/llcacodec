@@ -1,0 +1,54 @@
+{
+  "format": "rle",
+  "comments": [
+    "https://conwaylife.com/wiki/2.3.5",
+    "https://www.conwaylife.com/patterns/2.3.5.rle"
+  ],
+  "name": "2.3.5.rle",
+  "creationData": "Dean Hickerson, 1993",
+  "topleft": null,
+  "width": 10,
+  "height": 8,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [7, 0],
+    [1, -1],
+    [2, -1],
+    [3, -1],
+    [7, -1],
+    [6, -2],
+    [9, -2],
+    [0, -3],
+    [1, -3],
+    [4, -3],
+    [5, -4],
+    [8, -4],
+    [9, -4],
+    [0, -5],
+    [3, -5],
+    [2, -6],
+    [6, -6],
+    [7, -6],
+    [8, -6],
+    [2, -7]
+  ],
+  "hashLines": [
+    {"content": "2.3.5.rle", "id": "N", "full": "#N 2.3.5.rle"},
+    {
+      "content": "Dean Hickerson, 1993",
+      "id": "O",
+      "full": "#O Dean Hickerson, 1993"
+    },
+    {
+      "content": "https://conwaylife.com/wiki/2.3.5",
+      "id": "C",
+      "full": "#C https://conwaylife.com/wiki/2.3.5"
+    },
+    {
+      "content": "https://www.conwaylife.com/patterns/2.3.5.rle",
+      "id": "C",
+      "full": "#C https://www.conwaylife.com/patterns/2.3.5.rle"
+    }
+  ]
+}

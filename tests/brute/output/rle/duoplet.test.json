@@ -1,0 +1,29 @@
+{
+  "format": "rle",
+  "comments": [
+    "https://conwaylife.com/wiki/Duoplet",
+    "https://conwaylife.com/patterns/duoplet.rle"
+  ],
+  "name": "Duoplet",
+  "creationData": "Unknown",
+  "topleft": null,
+  "width": 2,
+  "height": 2,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [[1, 0], [0, -1]],
+  "hashLines": [
+    {"content": "Duoplet", "id": "N", "full": "#N Duoplet"},
+    {"content": "Unknown", "id": "O", "full": "#O Unknown"},
+    {
+      "content": "https://conwaylife.com/wiki/Duoplet",
+      "id": "C",
+      "full": "#C https://conwaylife.com/wiki/Duoplet"
+    },
+    {
+      "content": "https://conwaylife.com/patterns/duoplet.rle",
+      "id": "C",
+      "full": "#C https://conwaylife.com/patterns/duoplet.rle"
+    }
+  ]
+}

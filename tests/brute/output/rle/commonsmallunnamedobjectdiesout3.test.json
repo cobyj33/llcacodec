@@ -1,0 +1,41 @@
+{
+  "format": "rle",
+  "comments": [
+    "https://conwaylife.com/wiki/List_of_common_evolutionary_sequences",
+    "https://www.conwaylife.com/patterns/commonsmallunnamedobjectdiesout3.rle"
+  ],
+  "name": "commonsmallunnamedobjectdiesout3.rle",
+  "creationData": "",
+  "topleft": null,
+  "width": 4,
+  "height": 4,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [1, 0],
+    [0, -1],
+    [1, -1],
+    [3, -1],
+    [1, -2],
+    [3, -2],
+    [2, -3],
+    [3, -3]
+  ],
+  "hashLines": [
+    {
+      "content": "commonsmallunnamedobjectdiesout3.rle",
+      "id": "N",
+      "full": "#N commonsmallunnamedobjectdiesout3.rle"
+    },
+    {
+      "content": "https://conwaylife.com/wiki/List_of_common_evolutionary_sequences",
+      "id": "C",
+      "full": "#C https://conwaylife.com/wiki/List_of_common_evolutionary_sequences"
+    },
+    {
+      "content": "https://www.conwaylife.com/patterns/commonsmallunnamedobjectdiesout3.rle",
+      "id": "C",
+      "full": "#C https://www.conwaylife.com/patterns/commonsmallunnamedobjectdiesout3.rle"
+    }
+  ]
+}

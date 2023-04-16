@@ -1,0 +1,19 @@
+{
+  "format": "plaintext",
+  "name": "Eater 1",
+  "description": [
+    "Author: Bill Gosper",
+    "The first discovered eater.",
+    "https://www.conwaylife.com/wiki/index.php?title=Eater_1"
+  ],
+  "matrix": [[1, 1, 0, 0], [1, 0, 1, 0], [0, 0, 1, 0], [0, 0, 1, 1]],
+  "liveCoordinates": [
+    [0, 0],
+    [1, 0],
+    [0, -1],
+    [2, -1],
+    [2, -2],
+    [2, -3],
+    [3, -3]
+  ]
+}

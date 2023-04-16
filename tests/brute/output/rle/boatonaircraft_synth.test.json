@@ -1,0 +1,70 @@
+{
+  "format": "rle",
+  "comments": [
+    "Glider synthesis of Boat on aircraft",
+    "https://conwaylife.com/wiki/boat_on_aircraft"
+  ],
+  "name": "boatonaircraft_synth",
+  "creationData": "",
+  "topleft": null,
+  "width": 44,
+  "height": 45,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [43, 0],
+    [41, -1],
+    [42, -1],
+    [42, -2],
+    [43, -2],
+    [18, -17],
+    [17, -18],
+    [17, -19],
+    [18, -19],
+    [19, -19],
+    [34, -19],
+    [33, -20],
+    [35, -20],
+    [18, -21],
+    [34, -21],
+    [35, -21],
+    [17, -22],
+    [18, -22],
+    [36, -22],
+    [37, -22],
+    [17, -23],
+    [19, -23],
+    [36, -23],
+    [38, -24],
+    [37, -25],
+    [38, -25],
+    [39, -34],
+    [40, -34],
+    [41, -34],
+    [39, -35],
+    [40, -36],
+    [1, -42],
+    [1, -43],
+    [2, -43],
+    [0, -44],
+    [2, -44]
+  ],
+  "hashLines": [
+    {
+      "content": "boatonaircraft_synth",
+      "id": "N",
+      "full": "#N boatonaircraft_synth"
+    },
+    {"content": "", "id": "O", "full": "#O"},
+    {
+      "content": "Glider synthesis of Boat on aircraft",
+      "id": "C",
+      "full": "#C Glider synthesis of Boat on aircraft"
+    },
+    {
+      "content": "https://conwaylife.com/wiki/boat_on_aircraft",
+      "id": "C",
+      "full": "#C https://conwaylife.com/wiki/boat_on_aircraft"
+    }
+  ]
+}

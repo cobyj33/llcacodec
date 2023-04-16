@@ -1,0 +1,71 @@
+{
+  "format": "rle",
+  "comments": [
+    "https://conwaylife.com/wiki/Period-8_sparkers",
+    "https://www.conwaylife.com/patterns/36p8sparker.rle"
+  ],
+  "name": "36p8sparker.rle",
+  "creationData": "",
+  "topleft": null,
+  "width": 12,
+  "height": 12,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [6, 0],
+    [7, 0],
+    [10, -1],
+    [11, -1],
+    [5, -2],
+    [6, -2],
+    [8, -2],
+    [11, -2],
+    [6, -3],
+    [8, -3],
+    [9, -3],
+    [10, -3],
+    [7, -4],
+    [2, -5],
+    [7, -5],
+    [8, -5],
+    [9, -5],
+    [10, -5],
+    [0, -6],
+    [2, -6],
+    [3, -6],
+    [7, -6],
+    [10, -6],
+    [0, -7],
+    [4, -7],
+    [5, -7],
+    [6, -7],
+    [8, -7],
+    [9, -7],
+    [2, -8],
+    [3, -8],
+    [5, -8],
+    [7, -8],
+    [3, -9],
+    [5, -9],
+    [7, -9],
+    [1, -10],
+    [3, -10],
+    [5, -10],
+    [6, -10],
+    [1, -11],
+    [2, -11]
+  ],
+  "hashLines": [
+    {"content": "36p8sparker.rle", "id": "N", "full": "#N 36p8sparker.rle"},
+    {
+      "content": "https://conwaylife.com/wiki/Period-8_sparkers",
+      "id": "C",
+      "full": "#C https://conwaylife.com/wiki/Period-8_sparkers"
+    },
+    {
+      "content": "https://www.conwaylife.com/patterns/36p8sparker.rle",
+      "id": "C",
+      "full": "#C https://www.conwaylife.com/patterns/36p8sparker.rle"
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "format": "rle",
+  "comments": [
+    "A period 8 oscillator found in August 1997.",
+    "https://www.conwaylife.com/wiki/index.php?title=Coe's_p8"
+  ],
+  "name": "Coe's p8",
+  "creationData": "Tim Coe",
+  "topleft": null,
+  "width": 12,
+  "height": 6,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [0, 0],
+    [1, 0],
+    [0, -1],
+    [1, -1],
+    [4, -1],
+    [5, -1],
+    [5, -2],
+    [6, -2],
+    [4, -3],
+    [7, -3],
+    [7, -4],
+    [10, -4],
+    [11, -4],
+    [5, -5],
+    [7, -5],
+    [10, -5],
+    [11, -5]
+  ],
+  "hashLines": [
+    {"content": "Coe's p8", "id": "N", "full": "#N Coe's p8"},
+    {"content": "Tim Coe", "id": "O", "full": "#O Tim Coe"},
+    {
+      "content": "A period 8 oscillator found in August 1997.",
+      "id": "C",
+      "full": "#C A period 8 oscillator found in August 1997."
+    },
+    {
+      "content": "https://www.conwaylife.com/wiki/index.php?title=Coe's_p8",
+      "id": "C",
+      "full": "#C https://www.conwaylife.com/wiki/index.php?title=Coe's_p8"
+    }
+  ]
+}

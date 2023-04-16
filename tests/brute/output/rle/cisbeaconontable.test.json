@@ -1,0 +1,45 @@
+{
+  "format": "rle",
+  "comments": [
+    "https://conwaylife.com/wiki/Cis-beacon_on_table",
+    "https://www.conwaylife.com/patterns/cisbeaconontable.rle"
+  ],
+  "name": "cisbeaconontable.rle",
+  "creationData": "",
+  "topleft": null,
+  "width": 4,
+  "height": 7,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [2, 0],
+    [3, 0],
+    [3, -1],
+    [0, -2],
+    [0, -3],
+    [1, -3],
+    [0, -5],
+    [1, -5],
+    [2, -5],
+    [3, -5],
+    [0, -6],
+    [3, -6]
+  ],
+  "hashLines": [
+    {
+      "content": "cisbeaconontable.rle",
+      "id": "N",
+      "full": "#N cisbeaconontable.rle"
+    },
+    {
+      "content": "https://conwaylife.com/wiki/Cis-beacon_on_table",
+      "id": "C",
+      "full": "#C https://conwaylife.com/wiki/Cis-beacon_on_table"
+    },
+    {
+      "content": "https://www.conwaylife.com/patterns/cisbeaconontable.rle",
+      "id": "C",
+      "full": "#C https://www.conwaylife.com/patterns/cisbeaconontable.rle"
+    }
+  ]
+}

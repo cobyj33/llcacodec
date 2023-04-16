@@ -1,0 +1,82 @@
+{
+  "format": "rle",
+  "comments": [
+    "The smallest known period-55 oscillator.",
+    "https://conwaylife.com/wiki/Pseudo-barberpole_on_rattlesnake"
+  ],
+  "name": "Pseudo-barberpole on rattlesnake",
+  "creationData": "",
+  "topleft": null,
+  "width": 13,
+  "height": 22,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [11, 0],
+    [12, 0],
+    [12, -1],
+    [9, -2],
+    [10, -2],
+    [7, -4],
+    [9, -4],
+    [5, -6],
+    [7, -6],
+    [10, -7],
+    [11, -7],
+    [3, -8],
+    [5, -8],
+    [9, -8],
+    [11, -8],
+    [3, -9],
+    [9, -9],
+    [1, -10],
+    [8, -10],
+    [9, -10],
+    [1, -11],
+    [2, -11],
+    [5, -14],
+    [5, -15],
+    [6, -15],
+    [0, -16],
+    [1, -16],
+    [3, -16],
+    [5, -16],
+    [7, -16],
+    [8, -16],
+    [9, -16],
+    [0, -17],
+    [2, -17],
+    [3, -17],
+    [5, -17],
+    [7, -17],
+    [9, -17],
+    [6, -18],
+    [9, -18],
+    [10, -18],
+    [11, -18],
+    [7, -19],
+    [8, -19],
+    [12, -19],
+    [9, -20],
+    [10, -20],
+    [11, -20],
+    [9, -21]
+  ],
+  "hashLines": [
+    {
+      "content": "Pseudo-barberpole on rattlesnake",
+      "id": "N",
+      "full": "#N Pseudo-barberpole on rattlesnake"
+    },
+    {
+      "content": "The smallest known period-55 oscillator.",
+      "id": "C",
+      "full": "#C The smallest known period-55 oscillator."
+    },
+    {
+      "content": "https://conwaylife.com/wiki/Pseudo-barberpole_on_rattlesnake",
+      "id": "C",
+      "full": "#C https://conwaylife.com/wiki/Pseudo-barberpole_on_rattlesnake"
+    }
+  ]
+}

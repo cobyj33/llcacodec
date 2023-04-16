@@ -1,0 +1,48 @@
+{
+  "format": "rle",
+  "comments": [
+    "A period 5 oscillator found in September 1989.",
+    "www.conwaylife.com/wiki/index.php?title=Fumarole"
+  ],
+  "name": "Fumarole",
+  "creationData": "Dean Hickerson",
+  "topleft": null,
+  "width": 8,
+  "height": 7,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [3, 0],
+    [4, 0],
+    [1, -1],
+    [6, -1],
+    [1, -2],
+    [6, -2],
+    [1, -3],
+    [6, -3],
+    [2, -4],
+    [5, -4],
+    [0, -5],
+    [2, -5],
+    [5, -5],
+    [7, -5],
+    [0, -6],
+    [1, -6],
+    [6, -6],
+    [7, -6]
+  ],
+  "hashLines": [
+    {"content": "Fumarole", "id": "N", "full": "#N Fumarole"},
+    {"content": "Dean Hickerson", "id": "O", "full": "#O Dean Hickerson"},
+    {
+      "content": "A period 5 oscillator found in September 1989.",
+      "id": "C",
+      "full": "#C A period 5 oscillator found in September 1989."
+    },
+    {
+      "content": "www.conwaylife.com/wiki/index.php?title=Fumarole",
+      "id": "C",
+      "full": "#C www.conwaylife.com/wiki/index.php?title=Fumarole"
+    }
+  ]
+}

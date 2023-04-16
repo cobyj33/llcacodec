@@ -1,0 +1,28 @@
+{
+  "format": "rle",
+  "comments": [
+    "The only 5-cell still life.",
+    "www.conwaylife.com/wiki/index.php?title=Boat"
+  ],
+  "name": "Boat",
+  "creationData": "",
+  "topleft": null,
+  "width": 3,
+  "height": 3,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [[0, 0], [1, 0], [0, -1], [2, -1], [1, -2]],
+  "hashLines": [
+    {"content": "Boat", "id": "N", "full": "#N Boat"},
+    {
+      "content": "The only 5-cell still life.",
+      "id": "C",
+      "full": "#C The only 5-cell still life."
+    },
+    {
+      "content": "www.conwaylife.com/wiki/index.php?title=Boat",
+      "id": "C",
+      "full": "#C www.conwaylife.com/wiki/index.php?title=Boat"
+    }
+  ]
+}

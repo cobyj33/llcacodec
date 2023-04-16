@@ -1,0 +1,46 @@
+{
+  "format": "rle",
+  "comments": ["Glider synthesis of blom.", "https://conwaylife.com/wiki/Blom"],
+  "name": "blom_synth.rle",
+  "creationData": "",
+  "topleft": null,
+  "width": 13,
+  "height": 7,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [1, 0],
+    [3, 0],
+    [1, -1],
+    [2, -1],
+    [11, -1],
+    [12, -1],
+    [2, -2],
+    [10, -2],
+    [11, -2],
+    [6, -3],
+    [7, -3],
+    [12, -3],
+    [1, -4],
+    [2, -4],
+    [5, -4],
+    [7, -4],
+    [0, -5],
+    [2, -5],
+    [7, -5],
+    [2, -6]
+  ],
+  "hashLines": [
+    {"content": "blom_synth.rle", "id": "N", "full": "#N blom_synth.rle"},
+    {
+      "content": "Glider synthesis of blom.",
+      "id": "C",
+      "full": "#C Glider synthesis of blom."
+    },
+    {
+      "content": "https://conwaylife.com/wiki/Blom",
+      "id": "C",
+      "full": "#C https://conwaylife.com/wiki/Blom"
+    }
+  ]
+}

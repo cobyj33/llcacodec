@@ -1,0 +1,32 @@
+{
+  "format": "plaintext",
+  "name": "Paperclip",
+  "description": [
+    "The sixteenth most common still life.",
+    "https://www.conwaylife.com/wiki/index.php?title=Paperclip"
+  ],
+  "matrix": [
+    [0, 0, 1, 1, 0],
+    [0, 1, 0, 0, 1],
+    [0, 1, 0, 1, 1],
+    [1, 1, 0, 1, 0],
+    [1, 0, 0, 1, 0],
+    [0, 1, 1, 0, 0]
+  ],
+  "liveCoordinates": [
+    [2, 0],
+    [3, 0],
+    [1, -1],
+    [4, -1],
+    [1, -2],
+    [3, -2],
+    [4, -2],
+    [0, -3],
+    [1, -3],
+    [3, -3],
+    [0, -4],
+    [3, -4],
+    [1, -5],
+    [2, -5]
+  ]
+}

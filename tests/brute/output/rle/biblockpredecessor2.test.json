@@ -1,0 +1,40 @@
+{
+  "format": "rle",
+  "comments": [
+    "https://conwaylife.com/wiki/Bi-block",
+    "https://www.conwaylife.com/patterns/biblockpredecessor2.rle"
+  ],
+  "name": "biblockpredecessor2.rle",
+  "creationData": "",
+  "topleft": null,
+  "width": 5,
+  "height": 3,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [0, 0],
+    [2, 0],
+    [0, -1],
+    [1, -1],
+    [3, -1],
+    [4, -1],
+    [2, -2]
+  ],
+  "hashLines": [
+    {
+      "content": "biblockpredecessor2.rle",
+      "id": "N",
+      "full": "#N biblockpredecessor2.rle"
+    },
+    {
+      "content": "https://conwaylife.com/wiki/Bi-block",
+      "id": "C",
+      "full": "#C https://conwaylife.com/wiki/Bi-block"
+    },
+    {
+      "content": "https://www.conwaylife.com/patterns/biblockpredecessor2.rle",
+      "id": "C",
+      "full": "#C https://www.conwaylife.com/patterns/biblockpredecessor2.rle"
+    }
+  ]
+}

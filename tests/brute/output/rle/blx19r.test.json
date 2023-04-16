@@ -1,0 +1,53 @@
+{
+  "format": "rle",
+  "comments": [
+    "https://conwaylife.com/wiki/BLx19R",
+    "https://conwaylife.com/patterns/blx19r.rle"
+  ],
+  "name": "blx19r.rle",
+  "creationData": "",
+  "topleft": null,
+  "width": 10,
+  "height": 13,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [0, 0],
+    [1, 0],
+    [1, -1],
+    [2, -1],
+    [0, -2],
+    [1, -2],
+    [0, -3],
+    [7, -5],
+    [8, -5],
+    [1, -6],
+    [2, -6],
+    [7, -6],
+    [9, -6],
+    [1, -7],
+    [2, -7],
+    [8, -7],
+    [9, -7],
+    [5, -9],
+    [6, -9],
+    [6, -10],
+    [3, -11],
+    [4, -11],
+    [5, -11],
+    [3, -12]
+  ],
+  "hashLines": [
+    {"content": "blx19r.rle", "id": "N", "full": "#N blx19r.rle"},
+    {
+      "content": "https://conwaylife.com/wiki/BLx19R",
+      "id": "C",
+      "full": "#C https://conwaylife.com/wiki/BLx19R"
+    },
+    {
+      "content": "https://conwaylife.com/patterns/blx19r.rle",
+      "id": "C",
+      "full": "#C https://conwaylife.com/patterns/blx19r.rle"
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "format": "rle",
+  "comments": [
+    "https://conwaylife.com/wiki/Carrier_tie_boat",
+    "https://conwaylife.com/patterns/carriertieboat.rle"
+  ],
+  "name": "carriertieboat.rle",
+  "creationData": "",
+  "topleft": null,
+  "width": 6,
+  "height": 7,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [1, 0],
+    [0, -1],
+    [2, -1],
+    [1, -2],
+    [2, -2],
+    [3, -3],
+    [4, -3],
+    [3, -4],
+    [5, -5],
+    [4, -6],
+    [5, -6]
+  ],
+  "hashLines": [
+    {
+      "content": "carriertieboat.rle",
+      "id": "N",
+      "full": "#N carriertieboat.rle"
+    },
+    {
+      "content": "https://conwaylife.com/wiki/Carrier_tie_boat",
+      "id": "C",
+      "full": "#C https://conwaylife.com/wiki/Carrier_tie_boat"
+    },
+    {
+      "content": "https://conwaylife.com/patterns/carriertieboat.rle",
+      "id": "C",
+      "full": "#C https://conwaylife.com/patterns/carriertieboat.rle"
+    }
+  ]
+}

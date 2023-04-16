@@ -1,0 +1,85 @@
+{
+  "format": "rle",
+  "comments": [
+    "Century eater ( https://conwaylife.com/wiki/Century_eater )",
+    "replacing a constellation in Paul Callahan's bistable switch:",
+    "https://conwaylife.com/wiki/Bistable_switch",
+    "https://conwaylife.com/patterns/centuryeaterreaction.rle"
+  ],
+  "name": "centuryeaterreaction.rle",
+  "creationData": "",
+  "topleft": null,
+  "width": 30,
+  "height": 43,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [12, 0],
+    [14, 0],
+    [15, 0],
+    [12, -1],
+    [13, -1],
+    [15, -1],
+    [10, -3],
+    [11, -3],
+    [12, -3],
+    [13, -3],
+    [14, -3],
+    [9, -4],
+    [12, -4],
+    [15, -4],
+    [9, -5],
+    [10, -5],
+    [14, -5],
+    [16, -5],
+    [15, -6],
+    [16, -6],
+    [28, -22],
+    [29, -22],
+    [28, -23],
+    [29, -23],
+    [0, -25],
+    [1, -26],
+    [2, -26],
+    [0, -27],
+    [1, -27],
+    [4, -38],
+    [5, -38],
+    [3, -39],
+    [5, -39],
+    [3, -40],
+    [2, -41],
+    [3, -41],
+    [12, -41],
+    [13, -41],
+    [12, -42],
+    [13, -42]
+  ],
+  "hashLines": [
+    {
+      "content": "centuryeaterreaction.rle",
+      "id": "N",
+      "full": "#N centuryeaterreaction.rle"
+    },
+    {
+      "content": "Century eater ( https://conwaylife.com/wiki/Century_eater )",
+      "id": "C",
+      "full": "#C Century eater ( https://conwaylife.com/wiki/Century_eater )"
+    },
+    {
+      "content": "replacing a constellation in Paul Callahan's bistable switch:",
+      "id": "C",
+      "full": "#C replacing a constellation in Paul Callahan's bistable switch:"
+    },
+    {
+      "content": "https://conwaylife.com/wiki/Bistable_switch",
+      "id": "C",
+      "full": "#C https://conwaylife.com/wiki/Bistable_switch"
+    },
+    {
+      "content": "https://conwaylife.com/patterns/centuryeaterreaction.rle",
+      "id": "C",
+      "full": "#C https://conwaylife.com/patterns/centuryeaterreaction.rle"
+    }
+  ]
+}

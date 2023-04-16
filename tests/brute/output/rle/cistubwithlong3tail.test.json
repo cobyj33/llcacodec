@@ -1,0 +1,44 @@
+{
+  "format": "rle",
+  "comments": [
+    "https://conwaylife.com/wiki/Cis-tub_with_long%5E3_tail",
+    "https://www.conwaylife.com/patterns/cistubwithlong3tail.rle"
+  ],
+  "name": "cistubwithlong3tail.rle",
+  "creationData": "",
+  "topleft": null,
+  "width": 7,
+  "height": 5,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [0, 0],
+    [1, 0],
+    [0, -1],
+    [5, -1],
+    [1, -2],
+    [4, -2],
+    [6, -2],
+    [2, -3],
+    [5, -3],
+    [3, -4],
+    [4, -4]
+  ],
+  "hashLines": [
+    {
+      "content": "cistubwithlong3tail.rle",
+      "id": "N",
+      "full": "#N cistubwithlong3tail.rle"
+    },
+    {
+      "content": "https://conwaylife.com/wiki/Cis-tub_with_long%5E3_tail",
+      "id": "C",
+      "full": "#C https://conwaylife.com/wiki/Cis-tub_with_long%5E3_tail"
+    },
+    {
+      "content": "https://www.conwaylife.com/patterns/cistubwithlong3tail.rle",
+      "id": "C",
+      "full": "#C https://www.conwaylife.com/patterns/cistubwithlong3tail.rle"
+    }
+  ]
+}

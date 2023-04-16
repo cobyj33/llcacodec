@@ -1,0 +1,47 @@
+{
+  "format": "rle",
+  "comments": [
+    "A very well-known period 4 c/2 orthogonal spaceship.",
+    "www.conwaylife.com/wiki/index.php?title=Heavyweight_spaceship"
+  ],
+  "name": "Heavyweight spaceship",
+  "creationData": "John Conway",
+  "topleft": null,
+  "width": 7,
+  "height": 5,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [3, 0],
+    [4, 0],
+    [1, -1],
+    [6, -1],
+    [0, -2],
+    [0, -3],
+    [6, -3],
+    [0, -4],
+    [1, -4],
+    [2, -4],
+    [3, -4],
+    [4, -4],
+    [5, -4]
+  ],
+  "hashLines": [
+    {
+      "content": "Heavyweight spaceship",
+      "id": "N",
+      "full": "#N Heavyweight spaceship"
+    },
+    {"content": "John Conway", "id": "O", "full": "#O John Conway"},
+    {
+      "content": "A very well-known period 4 c/2 orthogonal spaceship.",
+      "id": "C",
+      "full": "#C A very well-known period 4 c/2 orthogonal spaceship."
+    },
+    {
+      "content": "www.conwaylife.com/wiki/index.php?title=Heavyweight_spaceship",
+      "id": "C",
+      "full": "#C www.conwaylife.com/wiki/index.php?title=Heavyweight_spaceship"
+    }
+  ]
+}

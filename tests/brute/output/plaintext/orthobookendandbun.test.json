@@ -1,0 +1,31 @@
+{
+  "format": "plaintext",
+  "name": "orthobookendandbun.cells",
+  "description": [
+    "https://conwaylife.com/wiki/Ortho-bookend_and_bun",
+    "https://www.conwaylife.com/patterns/orthobookendandbun.cells"
+  ],
+  "matrix": [
+    [0, 0, 0, 0, 1, 1, 0],
+    [1, 1, 0, 0, 1, 0, 1],
+    [1, 0, 1, 0, 1, 0, 1],
+    [0, 0, 1, 0, 0, 1, 0],
+    [0, 1, 1, 0, 0, 0, 0]
+  ],
+  "liveCoordinates": [
+    [4, 0],
+    [5, 0],
+    [0, -1],
+    [1, -1],
+    [4, -1],
+    [6, -1],
+    [0, -2],
+    [2, -2],
+    [4, -2],
+    [6, -2],
+    [2, -3],
+    [5, -3],
+    [1, -4],
+    [2, -4]
+  ]
+}

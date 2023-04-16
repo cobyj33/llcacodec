@@ -1,0 +1,68 @@
+{
+  "format": "rle",
+  "comments": [
+    "https://conwaylife.com/wiki/Glider-to-Herschel_converter",
+    "https://www.conwaylife.com/patterns/perkinsgtoh.rle"
+  ],
+  "name": "perkinsgtoh.rle",
+  "creationData": "",
+  "topleft": null,
+  "width": 24,
+  "height": 14,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [10, 0],
+    [20, 0],
+    [10, -1],
+    [12, -1],
+    [18, -1],
+    [19, -1],
+    [10, -2],
+    [11, -2],
+    [19, -2],
+    [20, -2],
+    [21, -5],
+    [21, -6],
+    [3, -7],
+    [5, -7],
+    [6, -7],
+    [10, -7],
+    [11, -7],
+    [21, -7],
+    [22, -7],
+    [23, -7],
+    [1, -8],
+    [2, -8],
+    [3, -8],
+    [5, -8],
+    [6, -8],
+    [10, -8],
+    [11, -8],
+    [23, -8],
+    [0, -9],
+    [1, -10],
+    [2, -10],
+    [3, -10],
+    [5, -10],
+    [6, -10],
+    [3, -11],
+    [5, -11],
+    [3, -12],
+    [5, -12],
+    [4, -13]
+  ],
+  "hashLines": [
+    {"content": "perkinsgtoh.rle", "id": "N", "full": "#N perkinsgtoh.rle"},
+    {
+      "content": "https://conwaylife.com/wiki/Glider-to-Herschel_converter",
+      "id": "C",
+      "full": "#C https://conwaylife.com/wiki/Glider-to-Herschel_converter"
+    },
+    {
+      "content": "https://www.conwaylife.com/patterns/perkinsgtoh.rle",
+      "id": "C",
+      "full": "#C https://www.conwaylife.com/patterns/perkinsgtoh.rle"
+    }
+  ]
+}

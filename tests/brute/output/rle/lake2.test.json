@@ -1,0 +1,53 @@
+{
+  "format": "rle",
+  "comments": [
+    "A 24-cell still life.",
+    "https://www.conwaylife.com/wiki/index.php?title=Lake_2"
+  ],
+  "name": "Lake 2",
+  "creationData": "",
+  "topleft": null,
+  "width": 10,
+  "height": 10,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [4, 0],
+    [5, 0],
+    [3, -1],
+    [6, -1],
+    [3, -2],
+    [6, -2],
+    [1, -3],
+    [2, -3],
+    [7, -3],
+    [8, -3],
+    [0, -4],
+    [9, -4],
+    [0, -5],
+    [9, -5],
+    [1, -6],
+    [2, -6],
+    [7, -6],
+    [8, -6],
+    [3, -7],
+    [6, -7],
+    [3, -8],
+    [6, -8],
+    [4, -9],
+    [5, -9]
+  ],
+  "hashLines": [
+    {"content": "Lake 2", "id": "N", "full": "#N Lake 2"},
+    {
+      "content": "A 24-cell still life.",
+      "id": "C",
+      "full": "#C A 24-cell still life."
+    },
+    {
+      "content": "https://www.conwaylife.com/wiki/index.php?title=Lake_2",
+      "id": "C",
+      "full": "#C https://www.conwaylife.com/wiki/index.php?title=Lake_2"
+    }
+  ]
+}

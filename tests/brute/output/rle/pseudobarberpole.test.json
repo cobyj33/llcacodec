@@ -1,0 +1,39 @@
+{
+  "format": "rle",
+  "comments": [
+    "Found in August 1994. In terms of its minimum population of 15, this is the smallest known period 5 oscillator (as of January 2009)."
+  ],
+  "name": "Pseudo-barberpole",
+  "creationData": "Achim Flammenkamp",
+  "topleft": null,
+  "width": 12,
+  "height": 12,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [10, 0],
+    [11, 0],
+    [11, -1],
+    [9, -2],
+    [7, -3],
+    [9, -3],
+    [5, -5],
+    [7, -5],
+    [3, -7],
+    [5, -7],
+    [2, -9],
+    [3, -9],
+    [0, -10],
+    [0, -11],
+    [1, -11]
+  ],
+  "hashLines": [
+    {"content": "Pseudo-barberpole", "id": "N", "full": "#N Pseudo-barberpole"},
+    {"content": "Achim Flammenkamp", "id": "O", "full": "#O Achim Flammenkamp"},
+    {
+      "content": "Found in August 1994. In terms of its minimum population of 15, this is the smallest known period 5 oscillator (as of January 2009).",
+      "id": "C",
+      "full": "#C Found in August 1994. In terms of its minimum population of 15, this is the smallest known period 5 oscillator (as of January 2009)."
+    }
+  ]
+}

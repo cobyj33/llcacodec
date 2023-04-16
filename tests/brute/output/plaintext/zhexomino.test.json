@@ -1,0 +1,10 @@
+{
+  "format": "plaintext",
+  "name": "Z-hexomino",
+  "description": [
+    "One of 35 hexominoes. It appears in pentoad and Achim's p144.",
+    "www.conwaylife.com/wiki/index.php?title=Z-hexomino"
+  ],
+  "matrix": [[1, 1, 0], [0, 1, 0], [0, 1, 0], [0, 1, 1]],
+  "liveCoordinates": [[0, 0], [1, 0], [1, -1], [1, -2], [1, -3], [2, -3]]
+}

@@ -1,0 +1,18 @@
+{
+  "format": "plaintext",
+  "name": "iheptomino.cells",
+  "description": [
+    "https://conwaylife.com/wiki/I-heptomino",
+    "https://www.conwaylife.com/patterns/iheptomino.cells"
+  ],
+  "matrix": [[1, 1, 0, 0], [0, 1, 0, 0], [0, 1, 1, 0], [0, 0, 1, 1]],
+  "liveCoordinates": [
+    [0, 0],
+    [1, 0],
+    [1, -1],
+    [1, -2],
+    [2, -2],
+    [2, -3],
+    [3, -3]
+  ]
+}

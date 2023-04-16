@@ -1,0 +1,66 @@
+{
+  "format": "rle",
+  "comments": [
+    "A period 9 thumb oscillator found in October 1998.",
+    "www.conwaylife.com/wiki/index.php?title=Thumb_1"
+  ],
+  "name": "Thumb 1",
+  "creationData": "Dean Hickerson",
+  "topleft": null,
+  "width": 13,
+  "height": 9,
+  "ruleString": "23/3",
+  "rule": {"survival": [2, 3], "birth": [3]},
+  "liveCoordinates": [
+    [3, 0],
+    [4, 0],
+    [3, -1],
+    [5, -1],
+    [7, -1],
+    [8, -1],
+    [11, -1],
+    [12, -1],
+    [0, -2],
+    [1, -2],
+    [3, -2],
+    [7, -2],
+    [9, -2],
+    [12, -2],
+    [0, -3],
+    [1, -3],
+    [3, -3],
+    [7, -3],
+    [9, -3],
+    [10, -3],
+    [11, -3],
+    [3, -4],
+    [7, -4],
+    [3, -5],
+    [5, -5],
+    [7, -5],
+    [8, -5],
+    [9, -5],
+    [4, -6],
+    [6, -6],
+    [10, -6],
+    [6, -7],
+    [9, -7],
+    [10, -7],
+    [6, -8],
+    [7, -8]
+  ],
+  "hashLines": [
+    {"content": "Thumb 1", "id": "N", "full": "#N Thumb 1"},
+    {"content": "Dean Hickerson", "id": "O", "full": "#O Dean Hickerson"},
+    {
+      "content": "A period 9 thumb oscillator found in October 1998.",
+      "id": "C",
+      "full": "#C A period 9 thumb oscillator found in October 1998."
+    },
+    {
+      "content": "www.conwaylife.com/wiki/index.php?title=Thumb_1",
+      "id": "C",
+      "full": "#C www.conwaylife.com/wiki/index.php?title=Thumb_1"
+    }
+  ]
+}

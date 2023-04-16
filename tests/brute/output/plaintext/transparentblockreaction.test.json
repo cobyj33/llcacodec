@@ -1,0 +1,28 @@
+{
+  "format": "plaintext",
+  "name": "Transparent block reaction",
+  "description": [
+    "David Buckingham",
+    "A reaction in which a B-heptomino passes through a block.",
+    "www.conwaylife.com/wiki/index.php?title=Transparent_debris_effect"
+  ],
+  "matrix": [
+    [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+    [1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1],
+    [0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1],
+    [1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  ],
+  "liveCoordinates": [
+    [0, 0],
+    [0, -1],
+    [1, -1],
+    [12, -1],
+    [13, -1],
+    [1, -2],
+    [2, -2],
+    [12, -2],
+    [13, -2],
+    [0, -3],
+    [1, -3]
+  ]
+}

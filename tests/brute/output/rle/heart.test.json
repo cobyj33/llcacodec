@@ -1,0 +1,52 @@
+{
+  "format": "rle",
+  "comments": ["A period 5 oscillator.", "www.conwaylife.com/wiki/Heart"],
+  "name": "Heart",
+  "creationData": "",
+  "topleft": null,
+  "width": 11,
+  "height": 11,
+  "ruleString": "b3/s23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [5, 0],
+    [4, -1],
+    [7, -1],
+    [1, -2],
+    [4, -2],
+    [7, -2],
+    [0, -3],
+    [2, -3],
+    [4, -3],
+    [6, -3],
+    [8, -3],
+    [9, -3],
+    [1, -4],
+    [4, -4],
+    [7, -4],
+    [4, -5],
+    [10, -5],
+    [5, -6],
+    [6, -6],
+    [7, -6],
+    [8, -6],
+    [9, -6],
+    [7, -8],
+    [6, -9],
+    [8, -9],
+    [7, -10]
+  ],
+  "hashLines": [
+    {"content": "Heart", "id": "N", "full": "#N Heart"},
+    {
+      "content": "A period 5 oscillator.",
+      "id": "C",
+      "full": "#C A period 5 oscillator."
+    },
+    {
+      "content": "www.conwaylife.com/wiki/Heart",
+      "id": "C",
+      "full": "#C www.conwaylife.com/wiki/Heart"
+    }
+  ]
+}

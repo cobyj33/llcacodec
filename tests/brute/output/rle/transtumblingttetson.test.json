@@ -1,0 +1,67 @@
+{
+  "format": "rle",
+  "comments": [
+    "https://conwaylife.com/wiki/Tumbling_T-tetson",
+    "https://www.conwaylife.com/patterns/transtumblingttetson.rle"
+  ],
+  "name": "transtumblingttetson.rle",
+  "creationData": "",
+  "topleft": null,
+  "width": 21,
+  "height": 16,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [0, 0],
+    [1, 0],
+    [0, -1],
+    [1, -1],
+    [3, -1],
+    [4, -2],
+    [1, -3],
+    [2, -4],
+    [4, -4],
+    [5, -4],
+    [4, -5],
+    [5, -5],
+    [9, -6],
+    [10, -7],
+    [11, -7],
+    [9, -8],
+    [14, -8],
+    [15, -8],
+    [16, -8],
+    [13, -9],
+    [13, -10],
+    [17, -10],
+    [13, -11],
+    [16, -11],
+    [18, -11],
+    [15, -12],
+    [17, -12],
+    [20, -12],
+    [16, -13],
+    [20, -13],
+    [20, -14],
+    [17, -15],
+    [18, -15],
+    [19, -15]
+  ],
+  "hashLines": [
+    {
+      "content": "transtumblingttetson.rle",
+      "id": "N",
+      "full": "#N transtumblingttetson.rle"
+    },
+    {
+      "content": "https://conwaylife.com/wiki/Tumbling_T-tetson",
+      "id": "C",
+      "full": "#C https://conwaylife.com/wiki/Tumbling_T-tetson"
+    },
+    {
+      "content": "https://www.conwaylife.com/patterns/transtumblingttetson.rle",
+      "id": "C",
+      "full": "#C https://www.conwaylife.com/patterns/transtumblingttetson.rle"
+    }
+  ]
+}

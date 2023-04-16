@@ -1,0 +1,50 @@
+{
+  "format": "rle",
+  "comments": [
+    "A period 4 oscillator found in 1976 or earlier.",
+    "www.conwaylife.com/wiki/index.php?title=Eater/block_frob"
+  ],
+  "name": "Eater/block frob",
+  "creationData": "David Buckingham",
+  "topleft": null,
+  "width": 10,
+  "height": 10,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [1, 0],
+    [2, 0],
+    [2, -1],
+    [2, -2],
+    [4, -2],
+    [3, -3],
+    [5, -3],
+    [5, -4],
+    [6, -4],
+    [8, -4],
+    [9, -4],
+    [8, -5],
+    [9, -5],
+    [2, -6],
+    [3, -6],
+    [3, -7],
+    [0, -8],
+    [1, -8],
+    [2, -8],
+    [0, -9]
+  ],
+  "hashLines": [
+    {"content": "Eater/block frob", "id": "N", "full": "#N Eater/block frob"},
+    {"content": "David Buckingham", "id": "O", "full": "#O David Buckingham"},
+    {
+      "content": "A period 4 oscillator found in 1976 or earlier.",
+      "id": "C",
+      "full": "#C A period 4 oscillator found in 1976 or earlier."
+    },
+    {
+      "content": "www.conwaylife.com/wiki/index.php?title=Eater/block_frob",
+      "id": "C",
+      "full": "#C www.conwaylife.com/wiki/index.php?title=Eater/block_frob"
+    }
+  ]
+}

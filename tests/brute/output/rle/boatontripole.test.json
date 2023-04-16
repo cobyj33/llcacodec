@@ -1,0 +1,43 @@
+{
+  "format": "rle",
+  "comments": [
+    "https://conwaylife.com/wiki/Boat_tie_tripole",
+    "https://conwaylife.com/patterns/boatontripole.rle"
+  ],
+  "name": "boatontripole.rle",
+  "creationData": "",
+  "topleft": null,
+  "width": 9,
+  "height": 9,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [1, 0],
+    [0, -1],
+    [2, -1],
+    [1, -2],
+    [2, -2],
+    [3, -3],
+    [4, -3],
+    [3, -4],
+    [5, -4],
+    [5, -6],
+    [7, -6],
+    [8, -7],
+    [7, -8],
+    [8, -8]
+  ],
+  "hashLines": [
+    {"content": "boatontripole.rle", "id": "N", "full": "#N boatontripole.rle"},
+    {
+      "content": "https://conwaylife.com/wiki/Boat_tie_tripole",
+      "id": "C",
+      "full": "#C https://conwaylife.com/wiki/Boat_tie_tripole"
+    },
+    {
+      "content": "https://conwaylife.com/patterns/boatontripole.rle",
+      "id": "C",
+      "full": "#C https://conwaylife.com/patterns/boatontripole.rle"
+    }
+  ]
+}

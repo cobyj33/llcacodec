@@ -1,0 +1,47 @@
+{
+  "format": "rle",
+  "comments": [
+    "https://conwaylife.com/wiki/Sliding_block_memory",
+    "https://www.conwaylife.com/patterns/originalsbmpull.rle"
+  ],
+  "name": "originalsbmpull.rle",
+  "creationData": "",
+  "topleft": null,
+  "width": 12,
+  "height": 9,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [0, 0],
+    [1, 0],
+    [0, -1],
+    [1, -1],
+    [9, -5],
+    [10, -5],
+    [11, -5],
+    [0, -6],
+    [1, -6],
+    [2, -6],
+    [9, -6],
+    [0, -7],
+    [10, -7],
+    [1, -8]
+  ],
+  "hashLines": [
+    {
+      "content": "originalsbmpull.rle",
+      "id": "N",
+      "full": "#N originalsbmpull.rle"
+    },
+    {
+      "content": "https://conwaylife.com/wiki/Sliding_block_memory",
+      "id": "C",
+      "full": "#C https://conwaylife.com/wiki/Sliding_block_memory"
+    },
+    {
+      "content": "https://www.conwaylife.com/patterns/originalsbmpull.rle",
+      "id": "C",
+      "full": "#C https://www.conwaylife.com/patterns/originalsbmpull.rle"
+    }
+  ]
+}

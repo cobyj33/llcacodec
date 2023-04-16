@@ -1,0 +1,67 @@
+{
+  "format": "rle",
+  "comments": [
+    "A small period 7 sparker discovered in October, 2005",
+    "www.conwaylife.com/wiki/index.php?title=37P7.1"
+  ],
+  "name": "37P7.1",
+  "creationData": "Scot Ellison",
+  "topleft": null,
+  "width": 12,
+  "height": 10,
+  "ruleString": "b3/s23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [4, 0],
+    [5, 0],
+    [0, -1],
+    [1, -1],
+    [5, -1],
+    [1, -2],
+    [5, -2],
+    [7, -2],
+    [1, -3],
+    [3, -3],
+    [4, -3],
+    [6, -3],
+    [8, -3],
+    [10, -3],
+    [11, -3],
+    [2, -4],
+    [4, -4],
+    [6, -4],
+    [8, -4],
+    [9, -4],
+    [11, -4],
+    [4, -5],
+    [2, -6],
+    [8, -6],
+    [9, -6],
+    [10, -6],
+    [0, -7],
+    [10, -7],
+    [0, -8],
+    [4, -8],
+    [5, -8],
+    [6, -8],
+    [7, -8],
+    [9, -8],
+    [1, -9],
+    [7, -9],
+    [8, -9]
+  ],
+  "hashLines": [
+    {"content": "37P7.1", "id": "N", "full": "#N 37P7.1"},
+    {"content": "Scot Ellison", "id": "O", "full": "#O Scot Ellison"},
+    {
+      "content": "A small period 7 sparker discovered in October, 2005",
+      "id": "C",
+      "full": "#C A small period 7 sparker discovered in October, 2005"
+    },
+    {
+      "content": "www.conwaylife.com/wiki/index.php?title=37P7.1",
+      "id": "C",
+      "full": "#C www.conwaylife.com/wiki/index.php?title=37P7.1"
+    }
+  ]
+}

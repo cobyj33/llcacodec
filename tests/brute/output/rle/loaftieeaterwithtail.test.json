@@ -1,0 +1,51 @@
+{
+  "format": "rle",
+  "comments": [
+    "The third most common naturally-occurring 18-bit still life.",
+    "https://conwaylife.com/wiki/Loaf_tie_eater-with-tail"
+  ],
+  "name": "Loaf tie eater-with-tail",
+  "creationData": "",
+  "topleft": null,
+  "width": 8,
+  "height": 7,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [2, 0],
+    [1, -1],
+    [3, -1],
+    [6, -1],
+    [7, -1],
+    [0, -2],
+    [3, -2],
+    [7, -2],
+    [1, -3],
+    [2, -3],
+    [4, -3],
+    [5, -3],
+    [6, -3],
+    [4, -4],
+    [1, -5],
+    [2, -5],
+    [3, -5],
+    [1, -6]
+  ],
+  "hashLines": [
+    {
+      "content": "Loaf tie eater-with-tail",
+      "id": "N",
+      "full": "#N Loaf tie eater-with-tail"
+    },
+    {
+      "content": "The third most common naturally-occurring 18-bit still life.",
+      "id": "C",
+      "full": "#C The third most common naturally-occurring 18-bit still life."
+    },
+    {
+      "content": "https://conwaylife.com/wiki/Loaf_tie_eater-with-tail",
+      "id": "C",
+      "full": "#C https://conwaylife.com/wiki/Loaf_tie_eater-with-tail"
+    }
+  ]
+}

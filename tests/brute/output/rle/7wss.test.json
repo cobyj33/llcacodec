@@ -1,0 +1,45 @@
+{
+  "format": "rle",
+  "comments": [
+    "https://conwaylife.com/wiki/Overweight_spaceship",
+    "https://www.conwaylife.com/patterns/7wss.rle"
+  ],
+  "name": "7wss.rle",
+  "creationData": "John Conway, 1970",
+  "topleft": null,
+  "width": 8,
+  "height": 5,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [3, 0],
+    [4, 0],
+    [5, 0],
+    [1, -1],
+    [7, -1],
+    [0, -2],
+    [0, -3],
+    [7, -3],
+    [0, -4],
+    [1, -4],
+    [2, -4],
+    [3, -4],
+    [4, -4],
+    [5, -4],
+    [6, -4]
+  ],
+  "hashLines": [
+    {"content": "7wss.rle", "id": "N", "full": "#N 7wss.rle"},
+    {"content": "John Conway, 1970", "id": "O", "full": "#O John Conway, 1970"},
+    {
+      "content": "https://conwaylife.com/wiki/Overweight_spaceship",
+      "id": "C",
+      "full": "#C https://conwaylife.com/wiki/Overweight_spaceship"
+    },
+    {
+      "content": "https://www.conwaylife.com/patterns/7wss.rle",
+      "id": "C",
+      "full": "#C https://www.conwaylife.com/patterns/7wss.rle"
+    }
+  ]
+}

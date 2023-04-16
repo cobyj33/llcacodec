@@ -1,0 +1,22 @@
+{
+  "format": "plaintext",
+  "name": "Die hard",
+  "description": [
+    "A methuselah that vanishes at generation 130, which is conjectured to be maximal for patterns of 7 or fewer cells.",
+    "https://www.conwaylife.com/wiki/index.php?title=Die_hard"
+  ],
+  "matrix": [
+    [0, 0, 0, 0, 0, 0, 1, 0],
+    [1, 1, 0, 0, 0, 0, 0, 0],
+    [0, 1, 0, 0, 0, 1, 1, 1]
+  ],
+  "liveCoordinates": [
+    [6, 0],
+    [0, -1],
+    [1, -1],
+    [1, -2],
+    [5, -2],
+    [6, -2],
+    [7, -2]
+  ]
+}

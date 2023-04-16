@@ -1,0 +1,45 @@
+{
+  "format": "rle",
+  "comments": [
+    "https://conwaylife.com/wiki/Integral_with_two_tubs",
+    "https://conwaylife.com/patterns/integralwithtwotubs.rle"
+  ],
+  "name": "Integral with two tubs",
+  "creationData": "Unknown",
+  "topleft": null,
+  "width": 7,
+  "height": 7,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [5, 0],
+    [4, -1],
+    [6, -1],
+    [5, -2],
+    [2, -3],
+    [3, -3],
+    [4, -3],
+    [1, -4],
+    [0, -5],
+    [2, -5],
+    [1, -6]
+  ],
+  "hashLines": [
+    {
+      "content": "Integral with two tubs",
+      "id": "N",
+      "full": "#N Integral with two tubs"
+    },
+    {"content": "Unknown", "id": "O", "full": "#O Unknown"},
+    {
+      "content": "https://conwaylife.com/wiki/Integral_with_two_tubs",
+      "id": "C",
+      "full": "#C https://conwaylife.com/wiki/Integral_with_two_tubs"
+    },
+    {
+      "content": "https://conwaylife.com/patterns/integralwithtwotubs.rle",
+      "id": "C",
+      "full": "#C https://conwaylife.com/patterns/integralwithtwotubs.rle"
+    }
+  ]
+}

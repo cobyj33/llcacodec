@@ -1,0 +1,28 @@
+{
+  "format": "rle",
+  "comments": [
+    "https://conwaylife.com/wiki/Blinker_(rotor)",
+    "https://conwaylife.com/patterns/blinkerrotor.rle"
+  ],
+  "name": "Blinker (rotor)",
+  "creationData": "",
+  "topleft": null,
+  "width": 3,
+  "height": 1,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [[0, 0], [2, 0]],
+  "hashLines": [
+    {"content": "Blinker (rotor)", "id": "N", "full": "#N Blinker (rotor)"},
+    {
+      "content": "https://conwaylife.com/wiki/Blinker_(rotor)",
+      "id": "C",
+      "full": "#C https://conwaylife.com/wiki/Blinker_(rotor)"
+    },
+    {
+      "content": "https://conwaylife.com/patterns/blinkerrotor.rle",
+      "id": "C",
+      "full": "#C https://conwaylife.com/patterns/blinkerrotor.rle"
+    }
+  ]
+}

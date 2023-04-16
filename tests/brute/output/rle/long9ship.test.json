@@ -1,0 +1,53 @@
+{
+  "format": "rle",
+  "comments": [
+    "https://conwaylife.com/wiki/Long%5E9_ship",
+    "https://www.conwaylife.com/patterns/long9ship.rle"
+  ],
+  "name": "long9ship.rle",
+  "creationData": "",
+  "topleft": null,
+  "width": 12,
+  "height": 12,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [0, 0],
+    [1, 0],
+    [0, -1],
+    [2, -1],
+    [1, -2],
+    [3, -2],
+    [2, -3],
+    [4, -3],
+    [3, -4],
+    [5, -4],
+    [4, -5],
+    [6, -5],
+    [5, -6],
+    [7, -6],
+    [6, -7],
+    [8, -7],
+    [7, -8],
+    [9, -8],
+    [8, -9],
+    [10, -9],
+    [9, -10],
+    [11, -10],
+    [10, -11],
+    [11, -11]
+  ],
+  "hashLines": [
+    {"content": "long9ship.rle", "id": "N", "full": "#N long9ship.rle"},
+    {
+      "content": "https://conwaylife.com/wiki/Long%5E9_ship",
+      "id": "C",
+      "full": "#C https://conwaylife.com/wiki/Long%5E9_ship"
+    },
+    {
+      "content": "https://www.conwaylife.com/patterns/long9ship.rle",
+      "id": "C",
+      "full": "#C https://www.conwaylife.com/patterns/long9ship.rle"
+    }
+  ]
+}

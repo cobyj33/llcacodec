@@ -1,0 +1,40 @@
+{
+  "format": "rle",
+  "comments": [
+    "https://conwaylife.com/wiki/Tub_cis-line_tub",
+    "https://www.conwaylife.com/patterns/tubcislinetub.rle"
+  ],
+  "name": "tubcislinetub.rle",
+  "creationData": "",
+  "topleft": null,
+  "width": 4,
+  "height": 7,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [1, 0],
+    [0, -1],
+    [2, -1],
+    [1, -2],
+    [3, -2],
+    [3, -3],
+    [1, -4],
+    [3, -4],
+    [0, -5],
+    [2, -5],
+    [1, -6]
+  ],
+  "hashLines": [
+    {"content": "tubcislinetub.rle", "id": "N", "full": "#N tubcislinetub.rle"},
+    {
+      "content": "https://conwaylife.com/wiki/Tub_cis-line_tub",
+      "id": "C",
+      "full": "#C https://conwaylife.com/wiki/Tub_cis-line_tub"
+    },
+    {
+      "content": "https://www.conwaylife.com/patterns/tubcislinetub.rle",
+      "id": "C",
+      "full": "#C https://www.conwaylife.com/patterns/tubcislinetub.rle"
+    }
+  ]
+}

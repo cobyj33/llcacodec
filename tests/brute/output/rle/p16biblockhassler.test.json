@@ -1,0 +1,70 @@
+{
+  "format": "rle",
+  "comments": [
+    "https://conwaylife.com/wiki/Bi-block_hassler",
+    "https://www.conwaylife.com/patterns/p16biblockhassler.rle"
+  ],
+  "name": "p16biblockhassler.rle",
+  "creationData": "",
+  "topleft": null,
+  "width": 11,
+  "height": 19,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [1, 0],
+    [2, 0],
+    [1, -1],
+    [2, -1],
+    [1, -3],
+    [0, -4],
+    [2, -4],
+    [0, -5],
+    [3, -5],
+    [1, -6],
+    [4, -6],
+    [1, -8],
+    [4, -8],
+    [1, -9],
+    [2, -9],
+    [6, -9],
+    [7, -9],
+    [9, -9],
+    [10, -9],
+    [6, -10],
+    [7, -10],
+    [9, -10],
+    [10, -10],
+    [4, -13],
+    [5, -13],
+    [4, -14],
+    [5, -14],
+    [6, -14],
+    [4, -15],
+    [5, -15],
+    [7, -15],
+    [6, -16],
+    [8, -16],
+    [5, -17],
+    [8, -17],
+    [6, -18],
+    [7, -18]
+  ],
+  "hashLines": [
+    {
+      "content": "p16biblockhassler.rle",
+      "id": "N",
+      "full": "#N p16biblockhassler.rle"
+    },
+    {
+      "content": "https://conwaylife.com/wiki/Bi-block_hassler",
+      "id": "C",
+      "full": "#C https://conwaylife.com/wiki/Bi-block_hassler"
+    },
+    {
+      "content": "https://www.conwaylife.com/patterns/p16biblockhassler.rle",
+      "id": "C",
+      "full": "#C https://www.conwaylife.com/patterns/p16biblockhassler.rle"
+    }
+  ]
+}

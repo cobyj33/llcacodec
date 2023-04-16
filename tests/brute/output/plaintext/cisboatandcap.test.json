@@ -1,0 +1,29 @@
+{
+  "format": "plaintext",
+  "name": "cisboatandcap.cells",
+  "description": [
+    "https://conwaylife.com/wiki/Cis-boat_and_cap",
+    "https://conwaylife.com/patterns/cisboatandcap.cells"
+  ],
+  "matrix": [
+    [0, 1, 1, 0, 1, 1, 0],
+    [1, 0, 1, 0, 1, 0, 1],
+    [0, 1, 0, 0, 1, 0, 1],
+    [0, 0, 0, 0, 1, 1, 0]
+  ],
+  "liveCoordinates": [
+    [1, 0],
+    [2, 0],
+    [4, 0],
+    [5, 0],
+    [0, -1],
+    [2, -1],
+    [4, -1],
+    [6, -1],
+    [1, -2],
+    [4, -2],
+    [6, -2],
+    [4, -3],
+    [5, -3]
+  ]
+}

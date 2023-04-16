@@ -1,0 +1,10 @@
+{
+  "format": "plaintext",
+  "name": "Tail",
+  "description": [
+    "A tetromino often attached to still lifes to create larger still lifes.",
+    "www.conwaylife.com/wiki/index.php?title=Tail"
+  ],
+  "matrix": [[1, 0], [1, 0], [1, 1]],
+  "liveCoordinates": [[0, 0], [0, -1], [0, -2], [1, -2]]
+}

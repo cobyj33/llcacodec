@@ -1,0 +1,45 @@
+{
+  "format": "rle",
+  "comments": [
+    "https://conwaylife.com/wiki/Long_integral_with_boat",
+    "https://conwaylife.com/patterns/longintegralwithboat.rle"
+  ],
+  "name": "longintegralwithboat.rle",
+  "creationData": "",
+  "topleft": null,
+  "width": 7,
+  "height": 5,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [0, 0],
+    [1, 0],
+    [0, -1],
+    [3, -1],
+    [4, -1],
+    [1, -2],
+    [2, -2],
+    [5, -2],
+    [4, -3],
+    [6, -3],
+    [5, -4],
+    [6, -4]
+  ],
+  "hashLines": [
+    {
+      "content": "longintegralwithboat.rle",
+      "id": "N",
+      "full": "#N longintegralwithboat.rle"
+    },
+    {
+      "content": "https://conwaylife.com/wiki/Long_integral_with_boat",
+      "id": "C",
+      "full": "#C https://conwaylife.com/wiki/Long_integral_with_boat"
+    },
+    {
+      "content": "https://conwaylife.com/patterns/longintegralwithboat.rle",
+      "id": "C",
+      "full": "#C https://conwaylife.com/patterns/longintegralwithboat.rle"
+    }
+  ]
+}

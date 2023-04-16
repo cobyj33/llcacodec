@@ -1,0 +1,61 @@
+{
+  "format": "rle",
+  "comments": [
+    "https://conwaylife.com/wiki/31P8H4V0",
+    "https://conwaylife.com/patterns/31p8h4v0.rle"
+  ],
+  "name": "31P8H4V0",
+  "creationData": "Unknown",
+  "topleft": null,
+  "width": 11,
+  "height": 11,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [1, 0],
+    [2, 0],
+    [3, 0],
+    [4, 0],
+    [5, 0],
+    [1, -1],
+    [6, -1],
+    [1, -2],
+    [2, -3],
+    [7, -3],
+    [4, -4],
+    [5, -5],
+    [6, -5],
+    [9, -5],
+    [3, -6],
+    [6, -6],
+    [10, -6],
+    [1, -7],
+    [9, -7],
+    [0, -8],
+    [6, -8],
+    [9, -8],
+    [0, -9],
+    [4, -9],
+    [5, -9],
+    [0, -10],
+    [1, -10],
+    [2, -10],
+    [3, -10],
+    [6, -10],
+    [7, -10]
+  ],
+  "hashLines": [
+    {"content": "31P8H4V0", "id": "N", "full": "#N 31P8H4V0"},
+    {"content": "Unknown", "id": "O", "full": "#O Unknown"},
+    {
+      "content": "https://conwaylife.com/wiki/31P8H4V0",
+      "id": "C",
+      "full": "#C https://conwaylife.com/wiki/31P8H4V0"
+    },
+    {
+      "content": "https://conwaylife.com/patterns/31p8h4v0.rle",
+      "id": "C",
+      "full": "#C https://conwaylife.com/patterns/31p8h4v0.rle"
+    }
+  ]
+}

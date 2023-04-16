@@ -1,0 +1,20 @@
+{
+  "format": "plaintext",
+  "name": "Coolout Conjecture",
+  "description": [
+    "Richard Schroeppel",
+    "A counterexample disproving the Coolout Conjecture, found by Richard Schroeppel in 2001.",
+    "https://conwaylife.com/wiki/Coolout_Conjecture"
+  ],
+  "matrix": [[1, 1, 0, 0, 1, 1], [1, 0, 1, 1, 0, 1]],
+  "liveCoordinates": [
+    [0, 0],
+    [1, 0],
+    [4, 0],
+    [5, 0],
+    [0, -1],
+    [2, -1],
+    [3, -1],
+    [5, -1]
+  ]
+}

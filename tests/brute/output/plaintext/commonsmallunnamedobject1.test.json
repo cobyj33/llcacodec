@@ -1,0 +1,10 @@
+{
+  "format": "plaintext",
+  "name": "commonsmallunnamedobject1.cells",
+  "description": [
+    "https://conwaylife.com/wiki/List_of_common_evolutionary_sequences",
+    "https://www.conwaylife.com/patterns/commonsmallunnamedobject1.cells"
+  ],
+  "matrix": [[1, 1, 1, 0, 0], [0, 0, 0, 0, 1], [0, 0, 0, 1, 1]],
+  "liveCoordinates": [[0, 0], [1, 0], [2, 0], [4, -1], [3, -2], [4, -2]]
+}

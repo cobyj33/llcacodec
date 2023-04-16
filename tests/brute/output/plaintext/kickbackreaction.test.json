@@ -1,0 +1,30 @@
+{
+  "format": "plaintext",
+  "name": "Kickback reaction",
+  "description": [
+    "Unknown",
+    "https://conwaylife.com/wiki/Kickback_reaction",
+    "https://conwaylife.com/patterns/kickbackreaction.cells"
+  ],
+  "matrix": [
+    [0, 0, 0, 0, 0, 1, 0, 0],
+    [0, 0, 0, 0, 0, 0, 1, 1],
+    [0, 0, 0, 0, 0, 1, 1, 0],
+    [0, 0, 0, 0, 0, 0, 0, 0],
+    [0, 1, 1, 0, 0, 0, 0, 0],
+    [1, 0, 1, 0, 0, 0, 0, 0],
+    [0, 0, 1, 0, 0, 0, 0, 0]
+  ],
+  "liveCoordinates": [
+    [5, 0],
+    [6, -1],
+    [7, -1],
+    [5, -2],
+    [6, -2],
+    [1, -4],
+    [2, -4],
+    [0, -5],
+    [2, -5],
+    [2, -6]
+  ]
+}

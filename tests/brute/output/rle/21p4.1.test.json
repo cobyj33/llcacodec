@@ -1,0 +1,50 @@
+{
+  "format": "rle",
+  "comments": [
+    "https://conwaylife.com/wiki/21P4.1",
+    "https://www.conwaylife.com/patterns/21p4.1.rle"
+  ],
+  "name": "21p4.1.rle",
+  "creationData": "",
+  "topleft": null,
+  "width": 12,
+  "height": 7,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [5, 0],
+    [5, -1],
+    [7, -1],
+    [4, -2],
+    [2, -3],
+    [3, -3],
+    [4, -3],
+    [8, -3],
+    [6, -4],
+    [8, -4],
+    [9, -4],
+    [10, -4],
+    [0, -5],
+    [3, -5],
+    [4, -5],
+    [9, -5],
+    [11, -5],
+    [0, -6],
+    [1, -6],
+    [10, -6],
+    [11, -6]
+  ],
+  "hashLines": [
+    {"content": "21p4.1.rle", "id": "N", "full": "#N 21p4.1.rle"},
+    {
+      "content": "https://conwaylife.com/wiki/21P4.1",
+      "id": "C",
+      "full": "#C https://conwaylife.com/wiki/21P4.1"
+    },
+    {
+      "content": "https://www.conwaylife.com/patterns/21p4.1.rle",
+      "id": "C",
+      "full": "#C https://www.conwaylife.com/patterns/21p4.1.rle"
+    }
+  ]
+}

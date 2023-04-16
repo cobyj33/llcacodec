@@ -1,0 +1,63 @@
+{
+  "format": "rle",
+  "comments": [
+    "https://conwaylife.com/wiki/One-cell-thick_pattern",
+    "https://www.conwaylife.com/patterns/1x256schickengine.rle"
+  ],
+  "name": "1x256schickengine.rle",
+  "creationData": "",
+  "topleft": null,
+  "width": 63,
+  "height": 1,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [0, 0],
+    [1, 0],
+    [2, 0],
+    [3, 0],
+    [4, 0],
+    [6, 0],
+    [7, 0],
+    [8, 0],
+    [9, 0],
+    [12, 0],
+    [13, 0],
+    [14, 0],
+    [17, 0],
+    [18, 0],
+    [19, 0],
+    [20, 0],
+    [21, 0],
+    [23, 0],
+    [24, 0],
+    [25, 0],
+    [26, 0],
+    [28, 0],
+    [29, 0],
+    [30, 0],
+    [31, 0],
+    [58, 0],
+    [59, 0],
+    [60, 0],
+    [61, 0],
+    [62, 0]
+  ],
+  "hashLines": [
+    {
+      "content": "1x256schickengine.rle",
+      "id": "N",
+      "full": "#N 1x256schickengine.rle"
+    },
+    {
+      "content": "https://conwaylife.com/wiki/One-cell-thick_pattern",
+      "id": "C",
+      "full": "#C https://conwaylife.com/wiki/One-cell-thick_pattern"
+    },
+    {
+      "content": "https://www.conwaylife.com/patterns/1x256schickengine.rle",
+      "id": "C",
+      "full": "#C https://www.conwaylife.com/patterns/1x256schickengine.rle"
+    }
+  ]
+}

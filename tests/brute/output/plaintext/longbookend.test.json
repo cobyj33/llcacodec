@@ -1,0 +1,19 @@
+{
+  "format": "plaintext",
+  "name": "longbookend.cells",
+  "description": [
+    "https://conwaylife.com/wiki/Long_bookend",
+    "https://www.conwaylife.com/patterns/longbookend.cells"
+  ],
+  "matrix": [[0, 0, 0, 1, 1], [1, 0, 0, 0, 1], [1, 1, 1, 1, 0]],
+  "liveCoordinates": [
+    [3, 0],
+    [4, 0],
+    [0, -1],
+    [4, -1],
+    [0, -2],
+    [1, -2],
+    [2, -2],
+    [3, -2]
+  ]
+}

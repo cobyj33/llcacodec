@@ -1,0 +1,78 @@
+{
+  "format": "rle",
+  "comments": [
+    "4-glider synthesis of cis-hook and R-bee",
+    "https://conwaylife.com/wiki/Cis-hook_and_R-bee",
+    "https://conwaylife.com/forums/viewtopic.php?p=12276#p12276"
+  ],
+  "name": "cishookandrbee_synth.rle",
+  "creationData": "Bob Shemyakin, 16 June 2014",
+  "topleft": null,
+  "width": 29,
+  "height": 12,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [2, 0],
+    [0, -1],
+    [2, -1],
+    [23, -1],
+    [27, -1],
+    [28, -1],
+    [1, -2],
+    [2, -2],
+    [22, -2],
+    [24, -2],
+    [26, -2],
+    [28, -2],
+    [6, -3],
+    [22, -3],
+    [24, -3],
+    [26, -3],
+    [5, -4],
+    [23, -4],
+    [24, -4],
+    [26, -4],
+    [27, -4],
+    [5, -5],
+    [6, -5],
+    [7, -5],
+    [6, -9],
+    [10, -9],
+    [11, -9],
+    [6, -10],
+    [7, -10],
+    [10, -10],
+    [12, -10],
+    [5, -11],
+    [7, -11],
+    [10, -11]
+  ],
+  "hashLines": [
+    {
+      "content": "cishookandrbee_synth.rle",
+      "id": "N",
+      "full": "#N cishookandrbee_synth.rle"
+    },
+    {
+      "content": "Bob Shemyakin, 16 June 2014",
+      "id": "O",
+      "full": "#O Bob Shemyakin, 16 June 2014"
+    },
+    {
+      "content": "4-glider synthesis of cis-hook and R-bee",
+      "id": "C",
+      "full": "#C 4-glider synthesis of cis-hook and R-bee"
+    },
+    {
+      "content": "https://conwaylife.com/wiki/Cis-hook_and_R-bee",
+      "id": "C",
+      "full": "#C https://conwaylife.com/wiki/Cis-hook_and_R-bee"
+    },
+    {
+      "content": "https://conwaylife.com/forums/viewtopic.php?p=12276#p12276",
+      "id": "C",
+      "full": "#C https://conwaylife.com/forums/viewtopic.php?p=12276#p12276"
+    }
+  ]
+}

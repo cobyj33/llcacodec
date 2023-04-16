@@ -1,0 +1,31 @@
+{
+  "format": "plaintext",
+  "name": "eatertieboat.cells",
+  "description": [
+    "https://conwaylife.com/wiki/Boat_tie_eater_head",
+    "https://conwaylife.com/patterns/eatertieboat.cells"
+  ],
+  "matrix": [
+    [0, 0, 0, 0, 0, 1, 0],
+    [0, 0, 0, 0, 1, 0, 1],
+    [0, 0, 0, 0, 1, 1, 0],
+    [0, 0, 1, 1, 0, 0, 0],
+    [0, 1, 0, 1, 0, 0, 0],
+    [0, 1, 0, 0, 0, 0, 0],
+    [1, 1, 0, 0, 0, 0, 0]
+  ],
+  "liveCoordinates": [
+    [5, 0],
+    [4, -1],
+    [6, -1],
+    [4, -2],
+    [5, -2],
+    [2, -3],
+    [3, -3],
+    [1, -4],
+    [3, -4],
+    [1, -5],
+    [0, -6],
+    [1, -6]
+  ]
+}

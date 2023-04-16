@@ -1,0 +1,29 @@
+{
+  "format": "plaintext",
+  "name": "Bunnies 9",
+  "description": [
+    "Author: Paul Callahan",
+    "A methuselah with lifespan 17410 that evolves similarly to bunnies after generation 91.",
+    "www.conwaylife.com/wiki/index.php?title=Bunnies_9"
+  ],
+  "matrix": [
+    [0, 1, 0, 0, 0, 0, 0, 0],
+    [1, 1, 0, 0, 0, 0, 0, 1],
+    [0, 0, 0, 0, 0, 0, 1, 0],
+    [0, 0, 0, 0, 0, 0, 1, 0],
+    [0, 0, 0, 0, 0, 1, 0, 0],
+    [0, 0, 0, 0, 1, 0, 0, 0],
+    [0, 0, 0, 0, 1, 0, 0, 0]
+  ],
+  "liveCoordinates": [
+    [1, 0],
+    [0, -1],
+    [1, -1],
+    [7, -1],
+    [6, -2],
+    [6, -3],
+    [5, -4],
+    [4, -5],
+    [4, -6]
+  ]
+}

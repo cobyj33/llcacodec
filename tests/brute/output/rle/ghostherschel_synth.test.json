@@ -1,0 +1,43 @@
+{
+  "format": "rle",
+  "comments": [
+    "https://conwaylife.com/wiki/Ghost_Herschel",
+    "https://www.conwaylife.com/patterns/ghostherschel_synth.rle"
+  ],
+  "name": "ghostherschel_synth.rle",
+  "creationData": "",
+  "topleft": null,
+  "width": 11,
+  "height": 4,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [0, 0],
+    [1, -1],
+    [2, -1],
+    [8, -1],
+    [0, -2],
+    [1, -2],
+    [8, -2],
+    [10, -2],
+    [8, -3],
+    [9, -3]
+  ],
+  "hashLines": [
+    {
+      "content": "ghostherschel_synth.rle",
+      "id": "N",
+      "full": "#N ghostherschel_synth.rle"
+    },
+    {
+      "content": "https://conwaylife.com/wiki/Ghost_Herschel",
+      "id": "C",
+      "full": "#C https://conwaylife.com/wiki/Ghost_Herschel"
+    },
+    {
+      "content": "https://www.conwaylife.com/patterns/ghostherschel_synth.rle",
+      "id": "C",
+      "full": "#C https://www.conwaylife.com/patterns/ghostherschel_synth.rle"
+    }
+  ]
+}

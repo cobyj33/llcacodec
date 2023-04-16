@@ -1,0 +1,42 @@
+{
+  "format": "rle",
+  "comments": [
+    "A period 4 oscillator.",
+    "www.conwaylife.com/wiki/index.php?title=Mazing"
+  ],
+  "name": "Mazing",
+  "creationData": "David Buckingham",
+  "topleft": null,
+  "width": 7,
+  "height": 7,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [3, 0],
+    [4, 0],
+    [1, -1],
+    [3, -1],
+    [0, -2],
+    [6, -2],
+    [1, -3],
+    [5, -3],
+    [6, -3],
+    [3, -5],
+    [5, -5],
+    [4, -6]
+  ],
+  "hashLines": [
+    {"content": "Mazing", "id": "N", "full": "#N Mazing"},
+    {"content": "David Buckingham", "id": "O", "full": "#O David Buckingham"},
+    {
+      "content": "A period 4 oscillator.",
+      "id": "C",
+      "full": "#C A period 4 oscillator."
+    },
+    {
+      "content": "www.conwaylife.com/wiki/index.php?title=Mazing",
+      "id": "C",
+      "full": "#C www.conwaylife.com/wiki/index.php?title=Mazing"
+    }
+  ]
+}

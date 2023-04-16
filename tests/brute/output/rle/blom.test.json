@@ -1,0 +1,43 @@
+{
+  "format": "rle",
+  "comments": [
+    "A methuselah with lifespan 23314 found in July 2002.",
+    "www.conwaylife.com/wiki/index.php?title=Blom"
+  ],
+  "name": "Blom",
+  "creationData": "Dean Hickerson",
+  "topleft": null,
+  "width": 12,
+  "height": 5,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [0, 0],
+    [11, 0],
+    [1, -1],
+    [2, -1],
+    [3, -1],
+    [4, -1],
+    [11, -1],
+    [2, -2],
+    [3, -2],
+    [11, -2],
+    [10, -3],
+    [8, -4],
+    [10, -4]
+  ],
+  "hashLines": [
+    {"content": "Blom", "id": "N", "full": "#N Blom"},
+    {"content": "Dean Hickerson", "id": "O", "full": "#O Dean Hickerson"},
+    {
+      "content": "A methuselah with lifespan 23314 found in July 2002.",
+      "id": "C",
+      "full": "#C A methuselah with lifespan 23314 found in July 2002."
+    },
+    {
+      "content": "www.conwaylife.com/wiki/index.php?title=Blom",
+      "id": "C",
+      "full": "#C www.conwaylife.com/wiki/index.php?title=Blom"
+    }
+  ]
+}

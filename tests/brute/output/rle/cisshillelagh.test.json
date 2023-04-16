@@ -1,0 +1,39 @@
+{
+  "format": "rle",
+  "comments": [
+    "A 10-cell still life similar to the long long shillelagh.",
+    "https://www.conwaylife.com/wiki/index.php?title=Cis-shillelagh"
+  ],
+  "name": "Cis-shillelagh",
+  "creationData": "",
+  "topleft": null,
+  "width": 6,
+  "height": 5,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [4, 0],
+    [5, 0],
+    [5, -1],
+    [0, -2],
+    [1, -2],
+    [4, -2],
+    [0, -3],
+    [3, -3],
+    [1, -4],
+    [2, -4]
+  ],
+  "hashLines": [
+    {"content": "Cis-shillelagh", "id": "N", "full": "#N Cis-shillelagh"},
+    {
+      "content": "A 10-cell still life similar to the long long shillelagh.",
+      "id": "C",
+      "full": "#C A 10-cell still life similar to the long long shillelagh."
+    },
+    {
+      "content": "https://www.conwaylife.com/wiki/index.php?title=Cis-shillelagh",
+      "id": "C",
+      "full": "#C https://www.conwaylife.com/wiki/index.php?title=Cis-shillelagh"
+    }
+  ]
+}

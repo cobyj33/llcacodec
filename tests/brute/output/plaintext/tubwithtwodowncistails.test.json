@@ -1,0 +1,29 @@
+{
+  "format": "plaintext",
+  "name": "tubwithtwodowncistails.cells",
+  "description": [
+    "https://conwaylife.com/wiki/Tub_with_two_down_cis_tails",
+    "https://conwaylife.com/patterns/tubwithtwodowncistails.cells"
+  ],
+  "matrix": [
+    [1, 1, 0, 0, 0, 1, 1],
+    [0, 1, 0, 0, 0, 1, 0],
+    [0, 1, 0, 1, 0, 1, 0],
+    [0, 0, 1, 0, 1, 0, 0],
+    [0, 0, 0, 1, 0, 0, 0]
+  ],
+  "liveCoordinates": [
+    [0, 0],
+    [1, 0],
+    [5, 0],
+    [6, 0],
+    [1, -1],
+    [5, -1],
+    [1, -2],
+    [3, -2],
+    [5, -2],
+    [2, -3],
+    [4, -3],
+    [3, -4]
+  ]
+}

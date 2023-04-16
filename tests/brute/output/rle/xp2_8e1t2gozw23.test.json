@@ -1,0 +1,54 @@
+{
+  "format": "rle",
+  "comments": [
+    "https://conwaylife.com/wiki/Xp2_8e1t2gozw23",
+    "https://www.conwaylife.com/patterns/xp2_8e1t2gozw23.rle"
+  ],
+  "name": "xp2_8e1t2gozw23.rle",
+  "creationData": "Achim Flammenkamp, 2004",
+  "topleft": null,
+  "width": 7,
+  "height": 7,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [3, 0],
+    [1, -1],
+    [2, -1],
+    [3, -1],
+    [0, -2],
+    [6, -2],
+    [0, -3],
+    [2, -3],
+    [3, -3],
+    [4, -3],
+    [5, -3],
+    [6, -3],
+    [1, -4],
+    [4, -5],
+    [3, -6],
+    [4, -6]
+  ],
+  "hashLines": [
+    {
+      "content": "xp2_8e1t2gozw23.rle",
+      "id": "N",
+      "full": "#N xp2_8e1t2gozw23.rle"
+    },
+    {
+      "content": "Achim Flammenkamp, 2004",
+      "id": "O",
+      "full": "#O Achim Flammenkamp, 2004"
+    },
+    {
+      "content": "https://conwaylife.com/wiki/Xp2_8e1t2gozw23",
+      "id": "C",
+      "full": "#C https://conwaylife.com/wiki/Xp2_8e1t2gozw23"
+    },
+    {
+      "content": "https://www.conwaylife.com/patterns/xp2_8e1t2gozw23.rle",
+      "id": "C",
+      "full": "#C https://www.conwaylife.com/patterns/xp2_8e1t2gozw23.rle"
+    }
+  ]
+}

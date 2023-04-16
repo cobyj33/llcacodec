@@ -1,0 +1,63 @@
+{
+  "format": "rle",
+  "comments": [
+    "An extension of the period 3 oscillator \"biting off more than they can chew\".",
+    "www.conwaylife.com/wiki/index.php?title=Biting_off_more_than_they_can_chew"
+  ],
+  "name": "Biting off more than they can chew extended",
+  "creationData": "",
+  "topleft": null,
+  "width": 16,
+  "height": 15,
+  "ruleString": "23/3",
+  "rule": {"survival": [2, 3], "birth": [3]},
+  "liveCoordinates": [
+    [0, 0],
+    [1, 0],
+    [1, -1],
+    [1, -2],
+    [3, -2],
+    [2, -3],
+    [3, -3],
+    [7, -3],
+    [5, -4],
+    [6, -4],
+    [8, -4],
+    [5, -5],
+    [7, -5],
+    [6, -6],
+    [7, -6],
+    [8, -8],
+    [9, -8],
+    [8, -9],
+    [10, -9],
+    [7, -10],
+    [9, -10],
+    [10, -10],
+    [8, -11],
+    [12, -11],
+    [13, -11],
+    [12, -12],
+    [14, -12],
+    [14, -13],
+    [14, -14],
+    [15, -14]
+  ],
+  "hashLines": [
+    {
+      "content": "Biting off more than they can chew extended",
+      "id": "N",
+      "full": "#N Biting off more than they can chew extended"
+    },
+    {
+      "content": "An extension of the period 3 oscillator \"biting off more than they can chew\".",
+      "id": "C",
+      "full": "#C An extension of the period 3 oscillator \"biting off more than they can chew\"."
+    },
+    {
+      "content": "www.conwaylife.com/wiki/index.php?title=Biting_off_more_than_they_can_chew",
+      "id": "C",
+      "full": "#C www.conwaylife.com/wiki/index.php?title=Biting_off_more_than_they_can_chew"
+    }
+  ]
+}

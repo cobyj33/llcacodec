@@ -1,0 +1,57 @@
+{
+  "format": "rle",
+  "comments": [
+    "https://conwaylife.com/wiki/Buckaroo",
+    "https://www.conwaylife.com/patterns/buckaroo180.rle"
+  ],
+  "name": "buckaroo180.rle",
+  "creationData": "",
+  "topleft": null,
+  "width": 23,
+  "height": 27,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [20, 0],
+    [20, -1],
+    [22, -1],
+    [20, -2],
+    [21, -2],
+    [10, -18],
+    [8, -19],
+    [10, -19],
+    [7, -20],
+    [9, -20],
+    [6, -21],
+    [9, -21],
+    [21, -21],
+    [22, -21],
+    [7, -22],
+    [9, -22],
+    [21, -22],
+    [22, -22],
+    [2, -23],
+    [3, -23],
+    [8, -23],
+    [10, -23],
+    [1, -24],
+    [3, -24],
+    [10, -24],
+    [1, -25],
+    [0, -26],
+    [1, -26]
+  ],
+  "hashLines": [
+    {"content": "buckaroo180.rle", "id": "N", "full": "#N buckaroo180.rle"},
+    {
+      "content": "https://conwaylife.com/wiki/Buckaroo",
+      "id": "C",
+      "full": "#C https://conwaylife.com/wiki/Buckaroo"
+    },
+    {
+      "content": "https://www.conwaylife.com/patterns/buckaroo180.rle",
+      "id": "C",
+      "full": "#C https://www.conwaylife.com/patterns/buckaroo180.rle"
+    }
+  ]
+}

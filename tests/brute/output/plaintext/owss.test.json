@@ -1,0 +1,32 @@
+{
+  "format": "plaintext",
+  "name": "OWSS",
+  "description": [
+    "A would-be spaceship similar to the LWSS, MWSS and HWSS, but longer. It is unstable by itself, but can be escorted by other spaceships to produce a flotilla.",
+    "www.conwaylife.com/wiki/index.php?title=Overweight_spaceship"
+  ],
+  "matrix": [
+    [0, 0, 0, 1, 1, 1, 0, 0],
+    [0, 1, 0, 0, 0, 0, 0, 1],
+    [1, 0, 0, 0, 0, 0, 0, 0],
+    [1, 0, 0, 0, 0, 0, 0, 1],
+    [1, 1, 1, 1, 1, 1, 1, 0]
+  ],
+  "liveCoordinates": [
+    [3, 0],
+    [4, 0],
+    [5, 0],
+    [1, -1],
+    [7, -1],
+    [0, -2],
+    [0, -3],
+    [7, -3],
+    [0, -4],
+    [1, -4],
+    [2, -4],
+    [3, -4],
+    [4, -4],
+    [5, -4],
+    [6, -4]
+  ]
+}

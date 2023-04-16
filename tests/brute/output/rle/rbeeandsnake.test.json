@@ -1,0 +1,42 @@
+{
+  "format": "rle",
+  "comments": [
+    "A 13-cell still life.",
+    "https://www.conwaylife.com/wiki/index.php?title=R-bee_and_snake"
+  ],
+  "name": "R-bee and snake",
+  "creationData": "",
+  "topleft": null,
+  "width": 5,
+  "height": 6,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [0, 0],
+    [1, 0],
+    [3, 0],
+    [0, -1],
+    [2, -1],
+    [3, -1],
+    [1, -3],
+    [2, -3],
+    [3, -3],
+    [1, -4],
+    [4, -4],
+    [2, -5],
+    [3, -5]
+  ],
+  "hashLines": [
+    {"content": "R-bee and snake", "id": "N", "full": "#N R-bee and snake"},
+    {
+      "content": "A 13-cell still life.",
+      "id": "C",
+      "full": "#C A 13-cell still life."
+    },
+    {
+      "content": "https://www.conwaylife.com/wiki/index.php?title=R-bee_and_snake",
+      "id": "C",
+      "full": "#C https://www.conwaylife.com/wiki/index.php?title=R-bee_and_snake"
+    }
+  ]
+}

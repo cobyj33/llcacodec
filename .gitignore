@@ -31,3 +31,6 @@ yarn-error.log*
 tags.lock
 tags.temp
 package-lock.json
+
+# Test file output
+tests/brute/output/life106/*

@@ -1,0 +1,27 @@
+{
+  "format": "plaintext",
+  "name": "17c/45_Reaction",
+  "description": [
+    "A reaction between a pi-heptomino and a blinker in which the pi moves forward 17 cells in the course of 45 generations while the blinker moves back 6 cells and is rephased."
+  ],
+  "matrix": [
+    [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1],
+    [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1],
+    [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0],
+    [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1],
+    [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1]
+  ],
+  "liveCoordinates": [
+    [15, 0],
+    [0, -1],
+    [14, -1],
+    [15, -1],
+    [0, -2],
+    [13, -2],
+    [14, -2],
+    [0, -3],
+    [14, -3],
+    [15, -3],
+    [15, -4]
+  ]
+}

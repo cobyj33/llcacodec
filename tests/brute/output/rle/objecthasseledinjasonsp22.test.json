@@ -1,0 +1,44 @@
+{
+  "format": "rle",
+  "comments": [
+    "https://conwaylife.com/wiki/List_of_common_evolutionary_sequences",
+    "https://www.conwaylife.com/patterns/objecthasseledinjasonsp22.rle"
+  ],
+  "name": "objecthasseledinjasonsp22.rle",
+  "creationData": "",
+  "topleft": null,
+  "width": 6,
+  "height": 5,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [2, 0],
+    [3, 0],
+    [4, 0],
+    [1, -1],
+    [5, -1],
+    [0, -2],
+    [5, -2],
+    [1, -3],
+    [3, -3],
+    [4, -3],
+    [2, -4]
+  ],
+  "hashLines": [
+    {
+      "content": "objecthasseledinjasonsp22.rle",
+      "id": "N",
+      "full": "#N objecthasseledinjasonsp22.rle"
+    },
+    {
+      "content": "https://conwaylife.com/wiki/List_of_common_evolutionary_sequences",
+      "id": "C",
+      "full": "#C https://conwaylife.com/wiki/List_of_common_evolutionary_sequences"
+    },
+    {
+      "content": "https://www.conwaylife.com/patterns/objecthasseledinjasonsp22.rle",
+      "id": "C",
+      "full": "#C https://www.conwaylife.com/patterns/objecthasseledinjasonsp22.rle"
+    }
+  ]
+}

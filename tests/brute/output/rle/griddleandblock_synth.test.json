@@ -1,0 +1,64 @@
+{
+  "format": "rle",
+  "comments": [
+    "Glider synthesis of griddle and block",
+    "https://conwaylife.com/wiki/griddle_and_block"
+  ],
+  "name": "griddleandblock_synth",
+  "creationData": "Ivan Fomichev",
+  "topleft": null,
+  "width": 20,
+  "height": 24,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [8, 0],
+    [8, -1],
+    [10, -1],
+    [8, -2],
+    [9, -2],
+    [2, -3],
+    [0, -4],
+    [2, -4],
+    [1, -5],
+    [2, -5],
+    [17, -6],
+    [19, -6],
+    [17, -7],
+    [18, -7],
+    [7, -8],
+    [18, -8],
+    [8, -9],
+    [6, -10],
+    [7, -10],
+    [8, -10],
+    [2, -11],
+    [0, -12],
+    [2, -12],
+    [1, -13],
+    [2, -13],
+    [2, -21],
+    [3, -21],
+    [4, -21],
+    [4, -22],
+    [3, -23]
+  ],
+  "hashLines": [
+    {
+      "content": "griddleandblock_synth",
+      "id": "N",
+      "full": "#N griddleandblock_synth"
+    },
+    {"content": "Ivan Fomichev", "id": "O", "full": "#O Ivan Fomichev"},
+    {
+      "content": "Glider synthesis of griddle and block",
+      "id": "C",
+      "full": "#C Glider synthesis of griddle and block"
+    },
+    {
+      "content": "https://conwaylife.com/wiki/griddle_and_block",
+      "id": "C",
+      "full": "#C https://conwaylife.com/wiki/griddle_and_block"
+    }
+  ]
+}

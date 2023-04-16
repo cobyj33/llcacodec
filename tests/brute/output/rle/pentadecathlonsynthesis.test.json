@@ -1,0 +1,48 @@
+{
+  "format": "rle",
+  "comments": [
+    "https://conwaylife.com/wiki/3-glider_collision",
+    "https://www.conwaylife.com/patterns/pentadecathlonsynthesis.rle"
+  ],
+  "name": "pentadecathlonsynthesis.rle",
+  "creationData": "",
+  "topleft": null,
+  "width": 10,
+  "height": 9,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [6, 0],
+    [6, -1],
+    [8, -1],
+    [6, -2],
+    [7, -2],
+    [0, -4],
+    [1, -4],
+    [2, -4],
+    [2, -5],
+    [1, -6],
+    [7, -6],
+    [8, -6],
+    [8, -7],
+    [9, -7],
+    [7, -8]
+  ],
+  "hashLines": [
+    {
+      "content": "pentadecathlonsynthesis.rle",
+      "id": "N",
+      "full": "#N pentadecathlonsynthesis.rle"
+    },
+    {
+      "content": "https://conwaylife.com/wiki/3-glider_collision",
+      "id": "C",
+      "full": "#C https://conwaylife.com/wiki/3-glider_collision"
+    },
+    {
+      "content": "https://www.conwaylife.com/patterns/pentadecathlonsynthesis.rle",
+      "id": "C",
+      "full": "#C https://www.conwaylife.com/patterns/pentadecathlonsynthesis.rle"
+    }
+  ]
+}

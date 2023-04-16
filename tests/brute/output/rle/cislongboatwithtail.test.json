@@ -1,0 +1,45 @@
+{
+  "format": "rle",
+  "comments": [
+    "https://conwaylife.com/wiki/Cis-long_boat_with_tail",
+    "https://conwaylife.com/patterns/cislongboatwithtail.rle"
+  ],
+  "name": "Cis-long boat with tail",
+  "creationData": "Unknown",
+  "topleft": null,
+  "width": 6,
+  "height": 5,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [0, 0],
+    [1, 0],
+    [1, -1],
+    [4, -1],
+    [5, -1],
+    [1, -2],
+    [3, -2],
+    [5, -2],
+    [2, -3],
+    [4, -3],
+    [3, -4]
+  ],
+  "hashLines": [
+    {
+      "content": "Cis-long boat with tail",
+      "id": "N",
+      "full": "#N Cis-long boat with tail"
+    },
+    {"content": "Unknown", "id": "O", "full": "#O Unknown"},
+    {
+      "content": "https://conwaylife.com/wiki/Cis-long_boat_with_tail",
+      "id": "C",
+      "full": "#C https://conwaylife.com/wiki/Cis-long_boat_with_tail"
+    },
+    {
+      "content": "https://conwaylife.com/patterns/cislongboatwithtail.rle",
+      "id": "C",
+      "full": "#C https://conwaylife.com/patterns/cislongboatwithtail.rle"
+    }
+  ]
+}

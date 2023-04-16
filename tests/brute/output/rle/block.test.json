@@ -1,0 +1,28 @@
+{
+  "format": "rle",
+  "comments": [
+    "An extremely common 4-cell still life.",
+    "www.conwaylife.com/wiki/index.php?title=Block"
+  ],
+  "name": "Block",
+  "creationData": "",
+  "topleft": null,
+  "width": 2,
+  "height": 2,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [[0, 0], [1, 0], [0, -1], [1, -1]],
+  "hashLines": [
+    {"content": "Block", "id": "N", "full": "#N Block"},
+    {
+      "content": "An extremely common 4-cell still life.",
+      "id": "C",
+      "full": "#C An extremely common 4-cell still life."
+    },
+    {
+      "content": "www.conwaylife.com/wiki/index.php?title=Block",
+      "id": "C",
+      "full": "#C www.conwaylife.com/wiki/index.php?title=Block"
+    }
+  ]
+}

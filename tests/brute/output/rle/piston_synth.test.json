@@ -1,0 +1,60 @@
+{
+  "format": "rle",
+  "comments": [
+    "Glider synthesis of piston",
+    "https://conwaylife.com/wiki/piston"
+  ],
+  "name": "piston_synth",
+  "creationData": "gmc_nxtman",
+  "topleft": null,
+  "width": 32,
+  "height": 12,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [25, 0],
+    [27, 0],
+    [25, -1],
+    [26, -1],
+    [26, -2],
+    [13, -3],
+    [14, -3],
+    [9, -4],
+    [10, -4],
+    [13, -4],
+    [15, -4],
+    [10, -5],
+    [11, -5],
+    [13, -5],
+    [9, -6],
+    [0, -8],
+    [1, -8],
+    [1, -9],
+    [2, -9],
+    [17, -9],
+    [18, -9],
+    [30, -9],
+    [0, -10],
+    [17, -10],
+    [19, -10],
+    [29, -10],
+    [30, -10],
+    [17, -11],
+    [29, -11],
+    [31, -11]
+  ],
+  "hashLines": [
+    {"content": "piston_synth", "id": "N", "full": "#N piston_synth"},
+    {"content": "gmc_nxtman", "id": "O", "full": "#O gmc_nxtman"},
+    {
+      "content": "Glider synthesis of piston",
+      "id": "C",
+      "full": "#C Glider synthesis of piston"
+    },
+    {
+      "content": "https://conwaylife.com/wiki/piston",
+      "id": "C",
+      "full": "#C https://conwaylife.com/wiki/piston"
+    }
+  ]
+}

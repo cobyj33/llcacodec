@@ -1,0 +1,72 @@
+{
+  "format": "rle",
+  "comments": [
+    "https://conwaylife.com/wiki/Stop_and_go",
+    "https://www.conwaylife.com/patterns/stopandgo.rle"
+  ],
+  "name": "stopandgo.rle",
+  "creationData": "",
+  "topleft": null,
+  "width": 42,
+  "height": 11,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [40, 0],
+    [39, -1],
+    [0, -2],
+    [1, -2],
+    [16, -2],
+    [17, -2],
+    [27, -2],
+    [28, -2],
+    [39, -2],
+    [40, -2],
+    [41, -2],
+    [0, -3],
+    [1, -3],
+    [17, -3],
+    [18, -3],
+    [27, -3],
+    [28, -3],
+    [13, -4],
+    [14, -4],
+    [15, -4],
+    [16, -4],
+    [17, -4],
+    [13, -5],
+    [14, -5],
+    [15, -5],
+    [16, -5],
+    [13, -7],
+    [14, -7],
+    [15, -7],
+    [16, -7],
+    [13, -8],
+    [14, -8],
+    [15, -8],
+    [16, -8],
+    [17, -8],
+    [0, -9],
+    [1, -9],
+    [17, -9],
+    [18, -9],
+    [0, -10],
+    [1, -10],
+    [16, -10],
+    [17, -10]
+  ],
+  "hashLines": [
+    {"content": "stopandgo.rle", "id": "N", "full": "#N stopandgo.rle"},
+    {
+      "content": "https://conwaylife.com/wiki/Stop_and_go",
+      "id": "C",
+      "full": "#C https://conwaylife.com/wiki/Stop_and_go"
+    },
+    {
+      "content": "https://www.conwaylife.com/patterns/stopandgo.rle",
+      "id": "C",
+      "full": "#C https://www.conwaylife.com/patterns/stopandgo.rle"
+    }
+  ]
+}

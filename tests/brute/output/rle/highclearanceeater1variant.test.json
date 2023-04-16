@@ -1,0 +1,55 @@
+{
+  "format": "rle",
+  "comments": [
+    "https://conwaylife.com/wiki/Clearance",
+    "https://www.conwaylife.com/patterns/highclearanceeater1variant.rle"
+  ],
+  "name": "highclearanceeater1variant.rle",
+  "creationData": "",
+  "topleft": null,
+  "width": 16,
+  "height": 13,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [1, 0],
+    [2, -1],
+    [0, -2],
+    [1, -2],
+    [2, -2],
+    [14, -6],
+    [15, -6],
+    [11, -7],
+    [12, -7],
+    [15, -7],
+    [12, -8],
+    [14, -8],
+    [12, -9],
+    [14, -9],
+    [15, -9],
+    [9, -10],
+    [10, -10],
+    [12, -10],
+    [9, -11],
+    [12, -11],
+    [10, -12],
+    [11, -12]
+  ],
+  "hashLines": [
+    {
+      "content": "highclearanceeater1variant.rle",
+      "id": "N",
+      "full": "#N highclearanceeater1variant.rle"
+    },
+    {
+      "content": "https://conwaylife.com/wiki/Clearance",
+      "id": "C",
+      "full": "#C https://conwaylife.com/wiki/Clearance"
+    },
+    {
+      "content": "https://www.conwaylife.com/patterns/highclearanceeater1variant.rle",
+      "id": "C",
+      "full": "#C https://www.conwaylife.com/patterns/highclearanceeater1variant.rle"
+    }
+  ]
+}

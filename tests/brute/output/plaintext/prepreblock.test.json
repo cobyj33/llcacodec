@@ -1,0 +1,10 @@
+{
+  "format": "plaintext",
+  "name": "prepreblock.cells",
+  "description": [
+    "https://conwaylife.com/wiki/Pre-pre-block",
+    "https://www.conwaylife.com/patterns/prepreblock.cells"
+  ],
+  "matrix": [[1, 1], [0, 1], [1, 0]],
+  "liveCoordinates": [[0, 0], [1, 0], [1, -1], [0, -2]]
+}

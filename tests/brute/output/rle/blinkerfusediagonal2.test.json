@@ -1,0 +1,81 @@
+{
+  "format": "rle",
+  "comments": [
+    "https://conwaylife.com/wiki/Blinker_fuse",
+    "https://www.conwaylife.com/patterns/blinkerfusediagonal2.rle"
+  ],
+  "name": "blinkerfusediagonal2.rle",
+  "creationData": "",
+  "topleft": null,
+  "width": 29,
+  "height": 26,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [20, 0],
+    [21, 0],
+    [22, 0],
+    [17, -3],
+    [18, -3],
+    [19, -3],
+    [28, -3],
+    [28, -4],
+    [28, -5],
+    [14, -6],
+    [15, -6],
+    [16, -6],
+    [25, -6],
+    [25, -7],
+    [25, -8],
+    [11, -9],
+    [12, -9],
+    [13, -9],
+    [22, -9],
+    [22, -10],
+    [22, -11],
+    [8, -12],
+    [9, -12],
+    [10, -12],
+    [19, -12],
+    [19, -13],
+    [19, -14],
+    [5, -15],
+    [6, -15],
+    [7, -15],
+    [16, -15],
+    [16, -16],
+    [16, -17],
+    [2, -18],
+    [3, -18],
+    [4, -18],
+    [13, -18],
+    [13, -19],
+    [13, -20],
+    [10, -21],
+    [10, -22],
+    [0, -23],
+    [1, -23],
+    [10, -23],
+    [0, -24],
+    [2, -24],
+    [2, -25],
+    [3, -25]
+  ],
+  "hashLines": [
+    {
+      "content": "blinkerfusediagonal2.rle",
+      "id": "N",
+      "full": "#N blinkerfusediagonal2.rle"
+    },
+    {
+      "content": "https://conwaylife.com/wiki/Blinker_fuse",
+      "id": "C",
+      "full": "#C https://conwaylife.com/wiki/Blinker_fuse"
+    },
+    {
+      "content": "https://www.conwaylife.com/patterns/blinkerfusediagonal2.rle",
+      "id": "C",
+      "full": "#C https://www.conwaylife.com/patterns/blinkerfusediagonal2.rle"
+    }
+  ]
+}

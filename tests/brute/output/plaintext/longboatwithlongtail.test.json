@@ -1,0 +1,29 @@
+{
+  "format": "plaintext",
+  "name": "longboatwithlongtail.cells",
+  "description": [
+    "https://conwaylife.com/wiki/Long_boat_with_long_tail",
+    "https://conwaylife.com/patterns/longboatwithlongtail.cells"
+  ],
+  "matrix": [
+    [1, 0, 1, 1, 0, 0, 0],
+    [1, 1, 0, 0, 1, 0, 0],
+    [0, 0, 0, 1, 0, 1, 0],
+    [0, 0, 0, 0, 1, 0, 1],
+    [0, 0, 0, 0, 0, 1, 1]
+  ],
+  "liveCoordinates": [
+    [0, 0],
+    [2, 0],
+    [3, 0],
+    [0, -1],
+    [1, -1],
+    [4, -1],
+    [3, -2],
+    [5, -2],
+    [4, -3],
+    [6, -3],
+    [5, -4],
+    [6, -4]
+  ]
+}

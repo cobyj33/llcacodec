@@ -1,0 +1,44 @@
+{
+  "format": "rle",
+  "comments": [
+    "https://conwaylife.com/wiki/Long%5E3_hook_with_tail",
+    "https://www.conwaylife.com/patterns/long3hookwithtail.rle"
+  ],
+  "name": "long3hookwithtail.rle",
+  "creationData": "",
+  "topleft": null,
+  "width": 5,
+  "height": 8,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [1, 0],
+    [1, -1],
+    [2, -1],
+    [3, -1],
+    [4, -2],
+    [3, -3],
+    [2, -4],
+    [1, -5],
+    [0, -6],
+    [0, -7],
+    [1, -7]
+  ],
+  "hashLines": [
+    {
+      "content": "long3hookwithtail.rle",
+      "id": "N",
+      "full": "#N long3hookwithtail.rle"
+    },
+    {
+      "content": "https://conwaylife.com/wiki/Long%5E3_hook_with_tail",
+      "id": "C",
+      "full": "#C https://conwaylife.com/wiki/Long%5E3_hook_with_tail"
+    },
+    {
+      "content": "https://www.conwaylife.com/patterns/long3hookwithtail.rle",
+      "id": "C",
+      "full": "#C https://www.conwaylife.com/patterns/long3hookwithtail.rle"
+    }
+  ]
+}

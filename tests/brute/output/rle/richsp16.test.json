@@ -1,0 +1,64 @@
+{
+  "format": "rle",
+  "comments": [
+    "https://conwaylife.com/wiki/Rich%27s_p16",
+    "https://conwaylife.com/patterns/richsp16.rle"
+  ],
+  "name": "Rich's p16",
+  "creationData": "Rich Holmes",
+  "topleft": null,
+  "width": 13,
+  "height": 10,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [4, 0],
+    [8, 0],
+    [2, -1],
+    [3, -1],
+    [5, -1],
+    [7, -1],
+    [9, -1],
+    [10, -1],
+    [1, -2],
+    [5, -2],
+    [7, -2],
+    [11, -2],
+    [0, -3],
+    [4, -3],
+    [5, -3],
+    [7, -3],
+    [8, -3],
+    [12, -3],
+    [0, -4],
+    [2, -4],
+    [10, -4],
+    [12, -4],
+    [1, -5],
+    [11, -5],
+    [4, -7],
+    [5, -7],
+    [7, -7],
+    [8, -7],
+    [3, -8],
+    [5, -8],
+    [7, -8],
+    [9, -8],
+    [4, -9],
+    [8, -9]
+  ],
+  "hashLines": [
+    {"content": "Rich's p16", "id": "N", "full": "#N Rich's p16"},
+    {"content": "Rich Holmes", "id": "O", "full": "#O Rich Holmes"},
+    {
+      "content": "https://conwaylife.com/wiki/Rich%27s_p16",
+      "id": "C",
+      "full": "#C https://conwaylife.com/wiki/Rich%27s_p16"
+    },
+    {
+      "content": "https://conwaylife.com/patterns/richsp16.rle",
+      "id": "C",
+      "full": "#C https://conwaylife.com/patterns/richsp16.rle"
+    }
+  ]
+}

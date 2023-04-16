@@ -1,0 +1,52 @@
+{
+  "format": "rle",
+  "comments": [
+    "A period 36 oscillator, discovered on January 29, 1995.",
+    "www.conwaylife.com/wiki/index.php?title=22P36"
+  ],
+  "name": "22P36",
+  "creationData": "Noam Elkies",
+  "topleft": null,
+  "width": 14,
+  "height": 18,
+  "ruleString": "b3/s23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [0, 0],
+    [1, 0],
+    [1, -1],
+    [1, -2],
+    [3, -2],
+    [2, -3],
+    [3, -3],
+    [8, -4],
+    [7, -5],
+    [8, -5],
+    [8, -6],
+    [5, -11],
+    [5, -12],
+    [6, -12],
+    [5, -13],
+    [10, -14],
+    [11, -14],
+    [10, -15],
+    [12, -15],
+    [12, -16],
+    [12, -17],
+    [13, -17]
+  ],
+  "hashLines": [
+    {"content": "22P36", "id": "N", "full": "#N 22P36"},
+    {"content": "Noam Elkies", "id": "O", "full": "#O Noam Elkies"},
+    {
+      "content": "A period 36 oscillator, discovered on January 29, 1995.",
+      "id": "C",
+      "full": "#C A period 36 oscillator, discovered on January 29, 1995."
+    },
+    {
+      "content": "www.conwaylife.com/wiki/index.php?title=22P36",
+      "id": "C",
+      "full": "#C www.conwaylife.com/wiki/index.php?title=22P36"
+    }
+  ]
+}

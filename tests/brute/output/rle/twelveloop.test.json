@@ -1,0 +1,41 @@
+{
+  "format": "rle",
+  "comments": [
+    "https://conwaylife.com/wiki/Twelve_loop",
+    "https://conwaylife.com/patterns/twelveloop.rle"
+  ],
+  "name": "twelveloop.rle",
+  "creationData": "",
+  "topleft": null,
+  "width": 6,
+  "height": 5,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [0, 0],
+    [1, 0],
+    [0, -1],
+    [2, -1],
+    [4, -1],
+    [5, -1],
+    [2, -2],
+    [4, -2],
+    [2, -3],
+    [5, -3],
+    [3, -4],
+    [4, -4]
+  ],
+  "hashLines": [
+    {"content": "twelveloop.rle", "id": "N", "full": "#N twelveloop.rle"},
+    {
+      "content": "https://conwaylife.com/wiki/Twelve_loop",
+      "id": "C",
+      "full": "#C https://conwaylife.com/wiki/Twelve_loop"
+    },
+    {
+      "content": "https://conwaylife.com/patterns/twelveloop.rle",
+      "id": "C",
+      "full": "#C https://conwaylife.com/patterns/twelveloop.rle"
+    }
+  ]
+}

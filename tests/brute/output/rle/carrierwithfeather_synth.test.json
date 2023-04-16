@@ -1,0 +1,70 @@
+{
+  "format": "rle",
+  "comments": [
+    "4-glider synthesis of aircraft carrier with feather",
+    "https://conwaylife.com/wiki/Aircraft_carrier_with_feather",
+    "https://conwaylife.com/patterns/carrierwithfeather_synth.rle"
+  ],
+  "name": "carrierwithfeather_synth.rle",
+  "creationData": "",
+  "topleft": null,
+  "width": 52,
+  "height": 12,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [18, 0],
+    [19, 0],
+    [17, -1],
+    [19, -1],
+    [22, -1],
+    [23, -1],
+    [9, -2],
+    [10, -2],
+    [19, -2],
+    [22, -2],
+    [24, -2],
+    [10, -3],
+    [11, -3],
+    [22, -3],
+    [9, -4],
+    [45, -4],
+    [46, -4],
+    [49, -4],
+    [45, -5],
+    [48, -5],
+    [50, -5],
+    [47, -6],
+    [48, -6],
+    [51, -6],
+    [50, -7],
+    [51, -7],
+    [1, -9],
+    [2, -9],
+    [0, -10],
+    [2, -10],
+    [2, -11]
+  ],
+  "hashLines": [
+    {
+      "content": "carrierwithfeather_synth.rle",
+      "id": "N",
+      "full": "#N carrierwithfeather_synth.rle"
+    },
+    {
+      "content": "4-glider synthesis of aircraft carrier with feather",
+      "id": "C",
+      "full": "#C 4-glider synthesis of aircraft carrier with feather"
+    },
+    {
+      "content": "https://conwaylife.com/wiki/Aircraft_carrier_with_feather",
+      "id": "C",
+      "full": "#C https://conwaylife.com/wiki/Aircraft_carrier_with_feather"
+    },
+    {
+      "content": "https://conwaylife.com/patterns/carrierwithfeather_synth.rle",
+      "id": "C",
+      "full": "#C https://conwaylife.com/patterns/carrierwithfeather_synth.rle"
+    }
+  ]
+}

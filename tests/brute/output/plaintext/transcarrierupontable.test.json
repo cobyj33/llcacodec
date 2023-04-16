@@ -1,0 +1,28 @@
+{
+  "format": "plaintext",
+  "name": "transcarrierupontable.cells",
+  "description": [
+    "https://conwaylife.com/wiki/Trans-aircraft_carrier_up_on_table",
+    "https://conwaylife.com/patterns/transcarrierupontable.cells"
+  ],
+  "matrix": [
+    [0, 0, 0, 0, 0, 1, 1],
+    [1, 1, 0, 0, 0, 1, 0],
+    [1, 0, 0, 1, 0, 1, 0],
+    [0, 0, 1, 1, 0, 1, 1]
+  ],
+  "liveCoordinates": [
+    [5, 0],
+    [6, 0],
+    [0, -1],
+    [1, -1],
+    [5, -1],
+    [0, -2],
+    [3, -2],
+    [5, -2],
+    [2, -3],
+    [3, -3],
+    [5, -3],
+    [6, -3]
+  ]
+}

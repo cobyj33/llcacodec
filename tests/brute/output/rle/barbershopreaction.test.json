@@ -1,0 +1,61 @@
+{
+  "format": "rle",
+  "comments": [
+    "https://conwaylife.com/wiki/Barbershop",
+    "https://www.conwaylife.com/patterns/barbershopreaction.rle"
+  ],
+  "name": "barbershopreaction.rle",
+  "creationData": "",
+  "topleft": null,
+  "width": 20,
+  "height": 16,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [10, 0],
+    [12, 0],
+    [11, -1],
+    [12, -1],
+    [1, -2],
+    [11, -2],
+    [17, -2],
+    [2, -3],
+    [17, -3],
+    [19, -3],
+    [0, -4],
+    [1, -4],
+    [2, -4],
+    [17, -4],
+    [18, -4],
+    [17, -8],
+    [16, -9],
+    [17, -9],
+    [16, -10],
+    [18, -10],
+    [8, -11],
+    [9, -11],
+    [7, -12],
+    [9, -12],
+    [5, -14],
+    [7, -14],
+    [5, -15],
+    [6, -15]
+  ],
+  "hashLines": [
+    {
+      "content": "barbershopreaction.rle",
+      "id": "N",
+      "full": "#N barbershopreaction.rle"
+    },
+    {
+      "content": "https://conwaylife.com/wiki/Barbershop",
+      "id": "C",
+      "full": "#C https://conwaylife.com/wiki/Barbershop"
+    },
+    {
+      "content": "https://www.conwaylife.com/patterns/barbershopreaction.rle",
+      "id": "C",
+      "full": "#C https://www.conwaylife.com/patterns/barbershopreaction.rle"
+    }
+  ]
+}

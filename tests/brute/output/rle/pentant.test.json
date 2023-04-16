@@ -1,0 +1,58 @@
+{
+  "format": "rle",
+  "comments": [
+    "A period 5 oscillator found in July 1976.",
+    "www.conwaylife.com/wiki/index.php?title=Pentant"
+  ],
+  "name": "Pentant",
+  "creationData": "David Buckingham",
+  "topleft": null,
+  "width": 10,
+  "height": 12,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [0, 0],
+    [1, 0],
+    [1, -1],
+    [1, -2],
+    [3, -2],
+    [2, -3],
+    [3, -3],
+    [8, -3],
+    [9, -3],
+    [9, -4],
+    [5, -5],
+    [6, -5],
+    [7, -5],
+    [8, -5],
+    [5, -6],
+    [2, -7],
+    [6, -7],
+    [7, -7],
+    [8, -7],
+    [2, -8],
+    [3, -8],
+    [4, -8],
+    [5, -8],
+    [8, -8],
+    [5, -9],
+    [4, -10],
+    [4, -11],
+    [5, -11]
+  ],
+  "hashLines": [
+    {"content": "Pentant", "id": "N", "full": "#N Pentant"},
+    {"content": "David Buckingham", "id": "O", "full": "#O David Buckingham"},
+    {
+      "content": "A period 5 oscillator found in July 1976.",
+      "id": "C",
+      "full": "#C A period 5 oscillator found in July 1976."
+    },
+    {
+      "content": "www.conwaylife.com/wiki/index.php?title=Pentant",
+      "id": "C",
+      "full": "#C www.conwaylife.com/wiki/index.php?title=Pentant"
+    }
+  ]
+}

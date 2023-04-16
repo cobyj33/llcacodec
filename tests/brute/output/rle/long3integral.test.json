@@ -1,0 +1,41 @@
+{
+  "format": "rle",
+  "comments": [
+    "https://conwaylife.com/wiki/Long%5E3_integral",
+    "https://www.conwaylife.com/patterns/long3integral.rle"
+  ],
+  "name": "long3integral.rle",
+  "creationData": "",
+  "topleft": null,
+  "width": 4,
+  "height": 8,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [1, 0],
+    [2, 0],
+    [1, -1],
+    [3, -1],
+    [3, -2],
+    [2, -3],
+    [1, -4],
+    [0, -5],
+    [0, -6],
+    [2, -6],
+    [1, -7],
+    [2, -7]
+  ],
+  "hashLines": [
+    {"content": "long3integral.rle", "id": "N", "full": "#N long3integral.rle"},
+    {
+      "content": "https://conwaylife.com/wiki/Long%5E3_integral",
+      "id": "C",
+      "full": "#C https://conwaylife.com/wiki/Long%5E3_integral"
+    },
+    {
+      "content": "https://www.conwaylife.com/patterns/long3integral.rle",
+      "id": "C",
+      "full": "#C https://www.conwaylife.com/patterns/long3integral.rle"
+    }
+  ]
+}

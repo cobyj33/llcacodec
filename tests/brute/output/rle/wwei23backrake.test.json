@@ -1,0 +1,67 @@
+{
+  "format": "rle",
+  "comments": [
+    "https://conwaylife.com/wiki/Backrake_2",
+    "https://www.conwaylife.com/patterns/Wwei23backrake.rle"
+  ],
+  "name": "wwei23backrake.rle",
+  "creationData": "",
+  "topleft": null,
+  "width": 20,
+  "height": 6,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [9, 0],
+    [17, 0],
+    [1, -1],
+    [2, -1],
+    [3, -1],
+    [8, -1],
+    [9, -1],
+    [10, -1],
+    [16, -1],
+    [17, -1],
+    [18, -1],
+    [0, -2],
+    [3, -2],
+    [7, -2],
+    [10, -2],
+    [11, -2],
+    [16, -2],
+    [18, -2],
+    [19, -2],
+    [3, -3],
+    [7, -3],
+    [11, -3],
+    [17, -3],
+    [18, -3],
+    [19, -3],
+    [3, -4],
+    [8, -4],
+    [9, -4],
+    [12, -4],
+    [17, -4],
+    [18, -4],
+    [0, -5],
+    [2, -5],
+    [11, -5]
+  ],
+  "hashLines": [
+    {
+      "content": "wwei23backrake.rle",
+      "id": "N",
+      "full": "#N wwei23backrake.rle"
+    },
+    {
+      "content": "https://conwaylife.com/wiki/Backrake_2",
+      "id": "C",
+      "full": "#C https://conwaylife.com/wiki/Backrake_2"
+    },
+    {
+      "content": "https://www.conwaylife.com/patterns/Wwei23backrake.rle",
+      "id": "C",
+      "full": "#C https://www.conwaylife.com/patterns/Wwei23backrake.rle"
+    }
+  ]
+}

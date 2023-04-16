@@ -1,0 +1,68 @@
+{
+  "format": "rle",
+  "comments": [
+    "A period-24 oscillator found on 17 Oct 2002 using Gabriel Nivasch's",
+    "random agar program"
+  ],
+  "name": "38P24",
+  "creationData": "Karel Suhajda",
+  "topleft": null,
+  "width": 20,
+  "height": 20,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [7, 0],
+    [8, 0],
+    [7, -1],
+    [8, -1],
+    [8, -4],
+    [7, -5],
+    [8, -5],
+    [9, -5],
+    [6, -6],
+    [9, -6],
+    [0, -7],
+    [1, -7],
+    [7, -7],
+    [8, -7],
+    [0, -8],
+    [1, -8],
+    [13, -10],
+    [14, -10],
+    [5, -11],
+    [6, -11],
+    [12, -11],
+    [14, -11],
+    [15, -11],
+    [18, -11],
+    [19, -11],
+    [6, -12],
+    [12, -12],
+    [14, -12],
+    [18, -12],
+    [19, -12],
+    [7, -13],
+    [8, -13],
+    [13, -13],
+    [8, -14],
+    [11, -18],
+    [12, -18],
+    [11, -19],
+    [12, -19]
+  ],
+  "hashLines": [
+    {"content": "38P24", "id": "N", "full": "#N 38P24"},
+    {"content": "Karel Suhajda", "id": "O", "full": "#O Karel Suhajda"},
+    {
+      "content": "A period-24 oscillator found on 17 Oct 2002 using Gabriel Nivasch's",
+      "id": "C",
+      "full": "#C A period-24 oscillator found on 17 Oct 2002 using Gabriel Nivasch's"
+    },
+    {
+      "content": "random agar program",
+      "id": "C",
+      "full": "#C random agar program"
+    }
+  ]
+}

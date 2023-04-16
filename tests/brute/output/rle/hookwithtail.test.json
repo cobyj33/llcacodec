@@ -1,0 +1,37 @@
+{
+  "format": "rle",
+  "comments": [
+    "An 8-cell still life that went for a long time with no well-established name.",
+    "https://www.conwaylife.com/wiki/index.php?title=Hook_with_tail"
+  ],
+  "name": "Hook with tail",
+  "creationData": "",
+  "topleft": null,
+  "width": 5,
+  "height": 4,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [0, 0],
+    [1, 0],
+    [1, -1],
+    [1, -2],
+    [3, -2],
+    [4, -2],
+    [2, -3],
+    [4, -3]
+  ],
+  "hashLines": [
+    {"content": "Hook with tail", "id": "N", "full": "#N Hook with tail"},
+    {
+      "content": "An 8-cell still life that went for a long time with no well-established name.",
+      "id": "C",
+      "full": "#C An 8-cell still life that went for a long time with no well-established name."
+    },
+    {
+      "content": "https://www.conwaylife.com/wiki/index.php?title=Hook_with_tail",
+      "id": "C",
+      "full": "#C https://www.conwaylife.com/wiki/index.php?title=Hook_with_tail"
+    }
+  ]
+}

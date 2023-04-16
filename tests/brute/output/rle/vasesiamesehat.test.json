@@ -1,0 +1,57 @@
+{
+  "format": "rle",
+  "comments": [
+    "The most common 27-bit still life on Catagolue",
+    "https://conwaylife.com/wiki/Vase_siamese_hat"
+  ],
+  "name": "Vase siamese hat",
+  "creationData": "",
+  "topleft": null,
+  "width": 9,
+  "height": 9,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [1, 0],
+    [2, 0],
+    [6, 0],
+    [7, 0],
+    [0, -1],
+    [3, -1],
+    [5, -1],
+    [8, -1],
+    [0, -2],
+    [1, -2],
+    [3, -2],
+    [5, -2],
+    [7, -2],
+    [8, -2],
+    [3, -3],
+    [5, -3],
+    [3, -4],
+    [5, -4],
+    [2, -5],
+    [3, -5],
+    [5, -5],
+    [6, -5],
+    [3, -6],
+    [5, -6],
+    [3, -7],
+    [5, -7],
+    [4, -8]
+  ],
+  "hashLines": [
+    {"content": "Vase siamese hat", "id": "N", "full": "#N Vase siamese hat"},
+    {"content": "", "id": "O", "full": "#O"},
+    {
+      "content": "The most common 27-bit still life on Catagolue",
+      "id": "C",
+      "full": "#C The most common 27-bit still life on Catagolue"
+    },
+    {
+      "content": "https://conwaylife.com/wiki/Vase_siamese_hat",
+      "id": "C",
+      "full": "#C https://conwaylife.com/wiki/Vase_siamese_hat"
+    }
+  ]
+}

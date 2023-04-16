@@ -1,0 +1,31 @@
+{
+  "format": "plaintext",
+  "name": "Test tube baby",
+  "description": [
+    "A period 2 oscillator.",
+    "www.conwaylife.com/wiki/index.php?title=Test_tube_baby"
+  ],
+  "matrix": [
+    [1, 1, 0, 0, 0, 0, 1, 1],
+    [1, 0, 1, 0, 0, 1, 0, 1],
+    [0, 0, 1, 0, 0, 1, 0, 0],
+    [0, 0, 1, 0, 0, 1, 0, 0],
+    [0, 0, 0, 1, 1, 0, 0, 0]
+  ],
+  "liveCoordinates": [
+    [0, 0],
+    [1, 0],
+    [6, 0],
+    [7, 0],
+    [0, -1],
+    [2, -1],
+    [5, -1],
+    [7, -1],
+    [2, -2],
+    [5, -2],
+    [2, -3],
+    [5, -3],
+    [3, -4],
+    [4, -4]
+  ]
+}

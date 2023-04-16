@@ -1,0 +1,58 @@
+{
+  "format": "rle",
+  "comments": [
+    "https://conwaylife.com/wiki/Boat-bit",
+    "https://conwaylife.com/patterns/boatbitmwss.rle"
+  ],
+  "name": "boatbitmwss.rle",
+  "creationData": "",
+  "topleft": null,
+  "width": 21,
+  "height": 23,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [9, 0],
+    [11, 0],
+    [12, -1],
+    [8, -2],
+    [12, -2],
+    [12, -3],
+    [9, -4],
+    [12, -4],
+    [10, -5],
+    [11, -5],
+    [12, -5],
+    [0, -14],
+    [1, -14],
+    [1, -15],
+    [1, -16],
+    [3, -16],
+    [2, -17],
+    [3, -17],
+    [14, -20],
+    [13, -21],
+    [15, -21],
+    [17, -21],
+    [19, -21],
+    [20, -21],
+    [14, -22],
+    [15, -22],
+    [17, -22],
+    [18, -22],
+    [20, -22]
+  ],
+  "hashLines": [
+    {"content": "boatbitmwss.rle", "id": "N", "full": "#N boatbitmwss.rle"},
+    {
+      "content": "https://conwaylife.com/wiki/Boat-bit",
+      "id": "C",
+      "full": "#C https://conwaylife.com/wiki/Boat-bit"
+    },
+    {
+      "content": "https://conwaylife.com/patterns/boatbitmwss.rle",
+      "id": "C",
+      "full": "#C https://conwaylife.com/patterns/boatbitmwss.rle"
+    }
+  ]
+}

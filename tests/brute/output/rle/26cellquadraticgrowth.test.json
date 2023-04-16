@@ -1,0 +1,60 @@
+{
+  "format": "rle",
+  "comments": [
+    "A 26-cell pattern that exhibits quadratic growth (the smallest known such pattern).",
+    "www.conwaylife.com/wiki/index.php?title=26-cell_quadratic_growth"
+  ],
+  "name": "26-cell quadratic growth",
+  "creationData": "Nick Gotts",
+  "topleft": null,
+  "width": 16193,
+  "height": 15089,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [1, 0],
+    [2, 0],
+    [0, -1],
+    [1, -1],
+    [1, -2],
+    [16, -31],
+    [15, -32],
+    [17, -32],
+    [15, -33],
+    [14, -34],
+    [16187, -15058],
+    [16191, -15058],
+    [16188, -15059],
+    [16190, -15059],
+    [16189, -15060],
+    [16192, -15060],
+    [16192, -15061],
+    [16192, -15062],
+    [16159, -15083],
+    [16160, -15084],
+    [16161, -15085],
+    [16160, -15086],
+    [16159, -15087],
+    [16161, -15088],
+    [16162, -15088],
+    [16163, -15088]
+  ],
+  "hashLines": [
+    {
+      "content": "26-cell quadratic growth",
+      "id": "N",
+      "full": "#N 26-cell quadratic growth"
+    },
+    {"content": "Nick Gotts", "id": "O", "full": "#O Nick Gotts"},
+    {
+      "content": "A 26-cell pattern that exhibits quadratic growth (the smallest known such pattern).",
+      "id": "C",
+      "full": "#C A 26-cell pattern that exhibits quadratic growth (the smallest known such pattern)."
+    },
+    {
+      "content": "www.conwaylife.com/wiki/index.php?title=26-cell_quadratic_growth",
+      "id": "C",
+      "full": "#C www.conwaylife.com/wiki/index.php?title=26-cell_quadratic_growth"
+    }
+  ]
+}

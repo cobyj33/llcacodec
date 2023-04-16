@@ -1,0 +1,61 @@
+{
+  "format": "rle",
+  "comments": [
+    "A period 4 oscillator found in October 1989.",
+    "www.conwaylife.com/wiki/index.php?title=T-nosed_p4"
+  ],
+  "name": "T-nosed p4",
+  "creationData": "Robert Wainwright",
+  "topleft": null,
+  "width": 11,
+  "height": 10,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [4, 0],
+    [5, 0],
+    [6, 0],
+    [5, -1],
+    [4, -3],
+    [5, -3],
+    [6, -3],
+    [3, -4],
+    [7, -4],
+    [2, -5],
+    [8, -5],
+    [2, -6],
+    [4, -6],
+    [6, -6],
+    [8, -6],
+    [1, -7],
+    [2, -7],
+    [4, -7],
+    [6, -7],
+    [8, -7],
+    [9, -7],
+    [0, -8],
+    [3, -8],
+    [4, -8],
+    [6, -8],
+    [7, -8],
+    [10, -8],
+    [0, -9],
+    [1, -9],
+    [9, -9],
+    [10, -9]
+  ],
+  "hashLines": [
+    {"content": "T-nosed p4", "id": "N", "full": "#N T-nosed p4"},
+    {"content": "Robert Wainwright", "id": "O", "full": "#O Robert Wainwright"},
+    {
+      "content": "A period 4 oscillator found in October 1989.",
+      "id": "C",
+      "full": "#C A period 4 oscillator found in October 1989."
+    },
+    {
+      "content": "www.conwaylife.com/wiki/index.php?title=T-nosed_p4",
+      "id": "C",
+      "full": "#C www.conwaylife.com/wiki/index.php?title=T-nosed_p4"
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "format": "rle",
+  "comments": [
+    "https://conwaylife.com/wiki/P5_pipsquirter",
+    "https://www.conwaylife.com/patterns/p5pipsquirter.rle"
+  ],
+  "name": "p5pipsquirter.rle",
+  "creationData": "Dongook Lee, 2018",
+  "topleft": null,
+  "width": 15,
+  "height": 13,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [6, -2],
+    [7, -2],
+    [8, -2],
+    [5, -3],
+    [7, -3],
+    [9, -3],
+    [3, -4],
+    [4, -4],
+    [5, -4],
+    [9, -4],
+    [10, -4],
+    [11, -4],
+    [2, -5],
+    [7, -5],
+    [12, -5],
+    [1, -6],
+    [3, -6],
+    [11, -6],
+    [13, -6],
+    [0, -7],
+    [3, -7],
+    [11, -7],
+    [14, -7],
+    [0, -8],
+    [1, -8],
+    [4, -8],
+    [5, -8],
+    [6, -8],
+    [8, -8],
+    [9, -8],
+    [10, -8],
+    [13, -8],
+    [14, -8],
+    [4, -11],
+    [5, -11],
+    [9, -11],
+    [10, -11],
+    [4, -12],
+    [5, -12],
+    [9, -12],
+    [10, -12]
+  ],
+  "hashLines": [
+    {"content": "p5pipsquirter.rle", "id": "N", "full": "#N p5pipsquirter.rle"},
+    {"content": "Dongook Lee, 2018", "id": "O", "full": "#O Dongook Lee, 2018"},
+    {
+      "content": "https://conwaylife.com/wiki/P5_pipsquirter",
+      "id": "C",
+      "full": "#C https://conwaylife.com/wiki/P5_pipsquirter"
+    },
+    {
+      "content": "https://www.conwaylife.com/patterns/p5pipsquirter.rle",
+      "id": "C",
+      "full": "#C https://www.conwaylife.com/patterns/p5pipsquirter.rle"
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "format": "plaintext",
+  "name": "Blom",
+  "description": [
+    "Author: Dean Hickerson",
+    "A methuselah with lifespan 23314 found in July 2002.",
+    "www.conwaylife.com/wiki/index.php?title=Blom"
+  ],
+  "matrix": [
+    [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1],
+    [0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1],
+    [0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1],
+    [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0],
+    [0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0]
+  ],
+  "liveCoordinates": [
+    [0, 0],
+    [11, 0],
+    [1, -1],
+    [2, -1],
+    [3, -1],
+    [4, -1],
+    [11, -1],
+    [2, -2],
+    [3, -2],
+    [11, -2],
+    [10, -3],
+    [8, -4],
+    [10, -4]
+  ]
+}

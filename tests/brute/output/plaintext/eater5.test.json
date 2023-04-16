@@ -1,0 +1,30 @@
+{
+  "format": "plaintext",
+  "name": "Eater 5",
+  "description": [
+    "An eater composed of a tub with tail and a block that is capable of eating gliders that approach from the top-right.",
+    "https://www.conwaylife.com/wiki/index.php?title=Eater_5"
+  ],
+  "matrix": [
+    [0, 0, 0, 0, 0, 0, 0, 1, 1],
+    [0, 0, 0, 1, 0, 0, 0, 1, 1],
+    [0, 0, 1, 0, 1, 0, 0, 0, 0],
+    [0, 1, 0, 1, 0, 0, 0, 0, 0],
+    [0, 1, 0, 0, 0, 0, 0, 0, 0],
+    [1, 1, 0, 0, 0, 0, 0, 0, 0]
+  ],
+  "liveCoordinates": [
+    [7, 0],
+    [8, 0],
+    [3, -1],
+    [7, -1],
+    [8, -1],
+    [2, -2],
+    [4, -2],
+    [1, -3],
+    [3, -3],
+    [1, -4],
+    [0, -5],
+    [1, -5]
+  ]
+}

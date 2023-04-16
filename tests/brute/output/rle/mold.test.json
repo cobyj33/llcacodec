@@ -1,0 +1,42 @@
+{
+  "format": "rle",
+  "comments": [
+    "The smallest period 4 oscillator.",
+    "https://www.conwaylife.com/wiki/index.php?title=Mold"
+  ],
+  "name": "Mold",
+  "creationData": "Achim Flammenkamp",
+  "topleft": null,
+  "width": 6,
+  "height": 6,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [3, 0],
+    [4, 0],
+    [2, -1],
+    [5, -1],
+    [0, -2],
+    [3, -2],
+    [5, -2],
+    [4, -3],
+    [0, -4],
+    [2, -4],
+    [3, -4],
+    [1, -5]
+  ],
+  "hashLines": [
+    {"content": "Mold", "id": "N", "full": "#N Mold"},
+    {"content": "Achim Flammenkamp", "id": "O", "full": "#O Achim Flammenkamp"},
+    {
+      "content": "The smallest period 4 oscillator.",
+      "id": "C",
+      "full": "#C The smallest period 4 oscillator."
+    },
+    {
+      "content": "https://www.conwaylife.com/wiki/index.php?title=Mold",
+      "id": "C",
+      "full": "#C https://www.conwaylife.com/wiki/index.php?title=Mold"
+    }
+  ]
+}

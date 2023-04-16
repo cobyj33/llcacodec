@@ -1,0 +1,32 @@
+{
+  "format": "plaintext",
+  "name": "Phoenix 1",
+  "description": [
+    "A period 2 oscillator found in December 1971. It is the smallest known phoenix.",
+    "www.conwaylife.com/wiki/index.php?title=Phoenix_1"
+  ],
+  "matrix": [
+    [0, 0, 0, 1, 0, 0, 0, 0],
+    [0, 0, 0, 1, 0, 1, 0, 0],
+    [0, 1, 0, 0, 0, 0, 0, 0],
+    [0, 0, 0, 0, 0, 0, 1, 1],
+    [1, 1, 0, 0, 0, 0, 0, 0],
+    [0, 0, 0, 0, 0, 0, 1, 0],
+    [0, 0, 1, 0, 1, 0, 0, 0],
+    [0, 0, 0, 0, 1, 0, 0, 0]
+  ],
+  "liveCoordinates": [
+    [3, 0],
+    [3, -1],
+    [5, -1],
+    [1, -2],
+    [6, -3],
+    [7, -3],
+    [0, -4],
+    [1, -4],
+    [6, -5],
+    [2, -6],
+    [4, -6],
+    [4, -7]
+  ]
+}

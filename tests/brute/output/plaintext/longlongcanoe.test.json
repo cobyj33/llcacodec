@@ -1,0 +1,29 @@
+{
+  "format": "plaintext",
+  "name": "Long long canoe",
+  "description": [
+    "A still life.",
+    "https://www.conwaylife.com/wiki/index.php?title=Long_long_canoe"
+  ],
+  "matrix": [
+    [0, 0, 0, 0, 0, 1, 1],
+    [0, 0, 0, 0, 0, 0, 1],
+    [0, 0, 0, 0, 0, 1, 0],
+    [0, 0, 0, 0, 1, 0, 0],
+    [0, 0, 0, 1, 0, 0, 0],
+    [1, 0, 1, 0, 0, 0, 0],
+    [1, 1, 0, 0, 0, 0, 0]
+  ],
+  "liveCoordinates": [
+    [5, 0],
+    [6, 0],
+    [6, -1],
+    [5, -2],
+    [4, -3],
+    [3, -4],
+    [0, -5],
+    [2, -5],
+    [0, -6],
+    [1, -6]
+  ]
+}

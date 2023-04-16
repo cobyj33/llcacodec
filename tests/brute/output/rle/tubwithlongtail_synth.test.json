@@ -1,0 +1,73 @@
+{
+  "format": "rle",
+  "comments": [
+    "4-glider synthesis of tub with long tail",
+    "https://conwaylife.com/wiki/Tub_with_long_tail",
+    "https://conwaylife.com/forums/viewtopic.php?p=12276#p12276"
+  ],
+  "name": "tubwithlongtail_synth.rle",
+  "creationData": "Bob Shemyakin, 16 June 2014",
+  "topleft": null,
+  "width": 26,
+  "height": 12,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [0, 0],
+    [1, -1],
+    [2, -1],
+    [0, -2],
+    [1, -2],
+    [4, -4],
+    [2, -5],
+    [3, -5],
+    [7, -5],
+    [8, -5],
+    [9, -5],
+    [3, -6],
+    [4, -6],
+    [7, -6],
+    [22, -6],
+    [23, -6],
+    [25, -6],
+    [8, -7],
+    [21, -7],
+    [24, -7],
+    [25, -7],
+    [20, -8],
+    [22, -8],
+    [4, -9],
+    [5, -9],
+    [6, -9],
+    [21, -9],
+    [6, -10],
+    [5, -11]
+  ],
+  "hashLines": [
+    {
+      "content": "tubwithlongtail_synth.rle",
+      "id": "N",
+      "full": "#N tubwithlongtail_synth.rle"
+    },
+    {
+      "content": "Bob Shemyakin, 16 June 2014",
+      "id": "O",
+      "full": "#O Bob Shemyakin, 16 June 2014"
+    },
+    {
+      "content": "4-glider synthesis of tub with long tail",
+      "id": "C",
+      "full": "#C 4-glider synthesis of tub with long tail"
+    },
+    {
+      "content": "https://conwaylife.com/wiki/Tub_with_long_tail",
+      "id": "C",
+      "full": "#C https://conwaylife.com/wiki/Tub_with_long_tail"
+    },
+    {
+      "content": "https://conwaylife.com/forums/viewtopic.php?p=12276#p12276",
+      "id": "C",
+      "full": "#C https://conwaylife.com/forums/viewtopic.php?p=12276#p12276"
+    }
+  ]
+}

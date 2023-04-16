@@ -1,0 +1,47 @@
+{
+  "format": "rle",
+  "comments": ["An eater 5 eating gliders from different directions"],
+  "name": "Eater 5 eating gliders",
+  "creationData": "",
+  "topleft": null,
+  "width": 13,
+  "height": 14,
+  "ruleString": "b3/s23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [2, 0],
+    [0, -1],
+    [2, -1],
+    [1, -2],
+    [2, -2],
+    [7, -4],
+    [7, -5],
+    [9, -5],
+    [7, -6],
+    [8, -6],
+    [11, -8],
+    [12, -8],
+    [7, -9],
+    [11, -9],
+    [12, -9],
+    [6, -10],
+    [8, -10],
+    [5, -11],
+    [7, -11],
+    [5, -12],
+    [4, -13],
+    [5, -13]
+  ],
+  "hashLines": [
+    {
+      "content": "Eater 5 eating gliders",
+      "id": "N",
+      "full": "#N Eater 5 eating gliders"
+    },
+    {
+      "content": "An eater 5 eating gliders from different directions",
+      "id": "C",
+      "full": "#C An eater 5 eating gliders from different directions"
+    }
+  ]
+}

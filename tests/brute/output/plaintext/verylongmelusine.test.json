@@ -1,0 +1,28 @@
+{
+  "format": "plaintext",
+  "name": "verylongmelusine.cells",
+  "description": [
+    "https://conwaylife.com/wiki/Very_long_melusine",
+    "https://www.conwaylife.com/patterns/verylongmelusine.cells"
+  ],
+  "matrix": [
+    [1, 1, 0, 0, 0, 1, 0, 0],
+    [0, 1, 0, 0, 1, 0, 1, 0],
+    [0, 1, 0, 1, 0, 0, 1, 0],
+    [0, 0, 1, 0, 0, 0, 1, 1]
+  ],
+  "liveCoordinates": [
+    [0, 0],
+    [1, 0],
+    [5, 0],
+    [1, -1],
+    [4, -1],
+    [6, -1],
+    [1, -2],
+    [3, -2],
+    [6, -2],
+    [2, -3],
+    [6, -3],
+    [7, -3]
+  ]
+}

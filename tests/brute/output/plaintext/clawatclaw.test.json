@@ -1,0 +1,30 @@
+{
+  "format": "plaintext",
+  "name": "clawatclaw.cells",
+  "description": [
+    "https://conwaylife.com/wiki/Claw_at_claw",
+    "https://www.conwaylife.com/patterns/clawatclaw.cells"
+  ],
+  "matrix": [
+    [0, 0, 0, 0, 1, 1],
+    [0, 0, 1, 0, 0, 1],
+    [0, 1, 0, 1, 1, 0],
+    [0, 0, 1, 0, 0, 0],
+    [1, 0, 1, 0, 0, 0],
+    [1, 1, 0, 0, 0, 0]
+  ],
+  "liveCoordinates": [
+    [4, 0],
+    [5, 0],
+    [2, -1],
+    [5, -1],
+    [1, -2],
+    [3, -2],
+    [4, -2],
+    [2, -3],
+    [0, -4],
+    [2, -4],
+    [0, -5],
+    [1, -5]
+  ]
+}

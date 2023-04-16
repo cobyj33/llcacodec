@@ -1,0 +1,23 @@
+{
+  "format": "plaintext",
+  "name": "interchangepredecessor.cells",
+  "description": [
+    "https://conwaylife.com/wiki/Interchange",
+    "https://www.conwaylife.com/patterns/interchangepredecessor.cells"
+  ],
+  "matrix": [
+    [0, 0, 0, 1, 0, 0, 0],
+    [0, 1, 1, 0, 1, 1, 0],
+    [0, 0, 0, 0, 0, 0, 1],
+    [1, 0, 0, 0, 0, 0, 0]
+  ],
+  "liveCoordinates": [
+    [3, 0],
+    [1, -1],
+    [2, -1],
+    [4, -1],
+    [5, -1],
+    [6, -2],
+    [0, -3]
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "format": "rle",
+  "comments": [
+    "https://conwaylife.com/wiki/Eater_head_siamese_eater_tail",
+    "https://conwaylife.com/patterns/eaterheadsiameseeatertail.rle"
+  ],
+  "name": "eaterheadsiameseeatertail.rle",
+  "creationData": "",
+  "topleft": null,
+  "width": 7,
+  "height": 4,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [0, 0],
+    [1, 0],
+    [5, 0],
+    [6, 0],
+    [1, -1],
+    [6, -1],
+    [1, -2],
+    [3, -2],
+    [4, -2],
+    [5, -2],
+    [2, -3],
+    [3, -3]
+  ],
+  "hashLines": [
+    {
+      "content": "eaterheadsiameseeatertail.rle",
+      "id": "N",
+      "full": "#N eaterheadsiameseeatertail.rle"
+    },
+    {
+      "content": "https://conwaylife.com/wiki/Eater_head_siamese_eater_tail",
+      "id": "C",
+      "full": "#C https://conwaylife.com/wiki/Eater_head_siamese_eater_tail"
+    },
+    {
+      "content": "https://conwaylife.com/patterns/eaterheadsiameseeatertail.rle",
+      "id": "C",
+      "full": "#C https://conwaylife.com/patterns/eaterheadsiameseeatertail.rle"
+    }
+  ]
+}

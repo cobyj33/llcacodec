@@ -1,0 +1,55 @@
+{
+  "format": "rle",
+  "comments": [
+    "https://conwaylife.com/wiki/Beacon_variants",
+    "https://www.conwaylife.com/patterns/1beaconpredecessor.rle"
+  ],
+  "name": "1beaconpredecessor.rle",
+  "creationData": "",
+  "topleft": null,
+  "width": 15,
+  "height": 12,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [10, 0],
+    [11, 0],
+    [12, 0],
+    [10, -1],
+    [12, -1],
+    [10, -2],
+    [12, -2],
+    [4, -3],
+    [4, -4],
+    [14, -4],
+    [4, -5],
+    [14, -5],
+    [14, -6],
+    [0, -7],
+    [1, -7],
+    [2, -7],
+    [6, -7],
+    [7, -7],
+    [8, -7],
+    [4, -9],
+    [4, -10],
+    [4, -11]
+  ],
+  "hashLines": [
+    {
+      "content": "1beaconpredecessor.rle",
+      "id": "N",
+      "full": "#N 1beaconpredecessor.rle"
+    },
+    {
+      "content": "https://conwaylife.com/wiki/Beacon_variants",
+      "id": "C",
+      "full": "#C https://conwaylife.com/wiki/Beacon_variants"
+    },
+    {
+      "content": "https://www.conwaylife.com/patterns/1beaconpredecessor.rle",
+      "id": "C",
+      "full": "#C https://www.conwaylife.com/patterns/1beaconpredecessor.rle"
+    }
+  ]
+}

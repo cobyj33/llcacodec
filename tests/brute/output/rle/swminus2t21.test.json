@@ -1,0 +1,55 @@
+{
+  "format": "rle",
+  "comments": [
+    "SW-2T21",
+    "The beehive variant of a common Herschel-to-glider converter that",
+    "allows a Herschel's first natural glider to escape",
+    "https://www.conwaylife.com/wiki/SW-2",
+    "https://www.conwaylife.com/patterns/swminus2t21.rle"
+  ],
+  "name": "",
+  "creationData": "",
+  "topleft": null,
+  "width": 13,
+  "height": 8,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [11, 0],
+    [10, -1],
+    [12, -1],
+    [10, -2],
+    [12, -2],
+    [11, -3],
+    [0, -4],
+    [0, -5],
+    [2, -5],
+    [0, -6],
+    [1, -6],
+    [2, -6],
+    [2, -7]
+  ],
+  "hashLines": [
+    {"content": "SW-2T21", "id": "C", "full": "#C SW-2T21"},
+    {
+      "content": "The beehive variant of a common Herschel-to-glider converter that",
+      "id": "C",
+      "full": "#C The beehive variant of a common Herschel-to-glider converter that"
+    },
+    {
+      "content": "allows a Herschel's first natural glider to escape",
+      "id": "C",
+      "full": "#C   allows a Herschel's first natural glider to escape"
+    },
+    {
+      "content": "https://www.conwaylife.com/wiki/SW-2",
+      "id": "C",
+      "full": "#C https://www.conwaylife.com/wiki/SW-2"
+    },
+    {
+      "content": "https://www.conwaylife.com/patterns/swminus2t21.rle",
+      "id": "C",
+      "full": "#C https://www.conwaylife.com/patterns/swminus2t21.rle"
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "format": "rle",
+  "comments": [
+    "A very well-known period 4 c/2 orthogonal spaceship.",
+    "www.conwaylife.com/wiki/index.php?title=Middleweight_spaceship"
+  ],
+  "name": "Middleweight spaceship",
+  "creationData": "John Conway",
+  "topleft": null,
+  "width": 6,
+  "height": 5,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [3, 0],
+    [1, -1],
+    [5, -1],
+    [0, -2],
+    [0, -3],
+    [5, -3],
+    [0, -4],
+    [1, -4],
+    [2, -4],
+    [3, -4],
+    [4, -4]
+  ],
+  "hashLines": [
+    {
+      "content": "Middleweight spaceship",
+      "id": "N",
+      "full": "#N Middleweight spaceship"
+    },
+    {"content": "John Conway", "id": "O", "full": "#O John Conway"},
+    {
+      "content": "A very well-known period 4 c/2 orthogonal spaceship.",
+      "id": "C",
+      "full": "#C A very well-known period 4 c/2 orthogonal spaceship."
+    },
+    {
+      "content": "www.conwaylife.com/wiki/index.php?title=Middleweight_spaceship",
+      "id": "C",
+      "full": "#C www.conwaylife.com/wiki/index.php?title=Middleweight_spaceship"
+    }
+  ]
+}

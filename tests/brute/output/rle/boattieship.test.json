@@ -1,0 +1,40 @@
+{
+  "format": "rle",
+  "comments": [
+    "https://conwaylife.com/wiki/Boat_tie_ship",
+    "https://www.conwaylife.com/patterns/boattieship.rle"
+  ],
+  "name": "boattieship.rle",
+  "creationData": "",
+  "topleft": null,
+  "width": 6,
+  "height": 6,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [0, 0],
+    [1, 0],
+    [0, -1],
+    [2, -1],
+    [1, -2],
+    [2, -2],
+    [3, -3],
+    [4, -3],
+    [3, -4],
+    [5, -4],
+    [4, -5]
+  ],
+  "hashLines": [
+    {"content": "boattieship.rle", "id": "N", "full": "#N boattieship.rle"},
+    {
+      "content": "https://conwaylife.com/wiki/Boat_tie_ship",
+      "id": "C",
+      "full": "#C https://conwaylife.com/wiki/Boat_tie_ship"
+    },
+    {
+      "content": "https://www.conwaylife.com/patterns/boattieship.rle",
+      "id": "C",
+      "full": "#C https://www.conwaylife.com/patterns/boattieship.rle"
+    }
+  ]
+}

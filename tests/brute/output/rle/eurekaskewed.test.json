@@ -1,0 +1,57 @@
+{
+  "format": "rle",
+  "comments": [
+    "https://conwaylife.com/wiki/Eureka",
+    "https://www.conwaylife.com/patterns/eurekaskewed.rle"
+  ],
+  "name": "eurekaskewed.rle",
+  "creationData": "",
+  "topleft": null,
+  "width": 19,
+  "height": 11,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [15, 0],
+    [6, -1],
+    [14, -1],
+    [16, -1],
+    [0, -2],
+    [1, -2],
+    [4, -2],
+    [5, -2],
+    [7, -2],
+    [8, -2],
+    [15, -2],
+    [0, -3],
+    [1, -3],
+    [6, -3],
+    [8, -7],
+    [2, -8],
+    [6, -8],
+    [7, -8],
+    [9, -8],
+    [10, -8],
+    [17, -8],
+    [1, -9],
+    [3, -9],
+    [8, -9],
+    [16, -9],
+    [18, -9],
+    [2, -10],
+    [17, -10]
+  ],
+  "hashLines": [
+    {"content": "eurekaskewed.rle", "id": "N", "full": "#N eurekaskewed.rle"},
+    {
+      "content": "https://conwaylife.com/wiki/Eureka",
+      "id": "C",
+      "full": "#C https://conwaylife.com/wiki/Eureka"
+    },
+    {
+      "content": "https://www.conwaylife.com/patterns/eurekaskewed.rle",
+      "id": "C",
+      "full": "#C https://www.conwaylife.com/patterns/eurekaskewed.rle"
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "format": "rle",
+  "comments": [
+    "https://conwaylife.com/wiki/Honey_farm_hassler",
+    "https://www.conwaylife.com/patterns/p32honeyfarmhassler.rle"
+  ],
+  "name": "p32honeyfarmhassler.rle",
+  "creationData": "",
+  "topleft": null,
+  "width": 27,
+  "height": 16,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [21, 0],
+    [19, -1],
+    [20, -1],
+    [21, -1],
+    [18, -2],
+    [18, -3],
+    [19, -3],
+    [11, -6],
+    [13, -6],
+    [15, -7],
+    [17, -7],
+    [11, -8],
+    [13, -8],
+    [17, -8],
+    [24, -8],
+    [25, -8],
+    [14, -9],
+    [15, -9],
+    [17, -9],
+    [23, -9],
+    [26, -9],
+    [4, -10],
+    [5, -10],
+    [21, -10],
+    [24, -10],
+    [26, -10],
+    [2, -11],
+    [4, -11],
+    [5, -11],
+    [25, -11],
+    [1, -12],
+    [21, -12],
+    [23, -12],
+    [24, -12],
+    [4, -13],
+    [22, -13],
+    [0, -14],
+    [1, -14],
+    [3, -14],
+    [9, -14],
+    [10, -14],
+    [0, -15],
+    [1, -15],
+    [9, -15],
+    [10, -15]
+  ],
+  "hashLines": [
+    {
+      "content": "p32honeyfarmhassler.rle",
+      "id": "N",
+      "full": "#N p32honeyfarmhassler.rle"
+    },
+    {
+      "content": "https://conwaylife.com/wiki/Honey_farm_hassler",
+      "id": "C",
+      "full": "#C https://conwaylife.com/wiki/Honey_farm_hassler"
+    },
+    {
+      "content": "https://www.conwaylife.com/patterns/p32honeyfarmhassler.rle",
+      "id": "C",
+      "full": "#C https://www.conwaylife.com/patterns/p32honeyfarmhassler.rle"
+    }
+  ]
+}

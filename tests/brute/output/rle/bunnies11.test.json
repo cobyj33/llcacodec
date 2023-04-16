@@ -1,0 +1,47 @@
+{
+  "format": "rle",
+  "comments": [
+    "A methuselah with lifespan 17465 that evolves similarly to bunnies",
+    "after generation 146.",
+    "www.conwaylife.com/wiki/index.php?title=Bunnies_11"
+  ],
+  "name": "Bunnies 11",
+  "creationData": "Tomas Rokicki",
+  "topleft": null,
+  "width": 6,
+  "height": 4,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [0, 0],
+    [2, 0],
+    [3, 0],
+    [4, 0],
+    [0, -1],
+    [5, -1],
+    [0, -2],
+    [2, -2],
+    [4, -2],
+    [1, -3],
+    [4, -3]
+  ],
+  "hashLines": [
+    {"content": "Bunnies 11", "id": "N", "full": "#N Bunnies 11"},
+    {"content": "Tomas Rokicki", "id": "O", "full": "#O Tomas Rokicki"},
+    {
+      "content": "A methuselah with lifespan 17465 that evolves similarly to bunnies",
+      "id": "C",
+      "full": "#C A methuselah with lifespan 17465 that evolves similarly to bunnies"
+    },
+    {
+      "content": "after generation 146.",
+      "id": "C",
+      "full": "#C after generation 146."
+    },
+    {
+      "content": "www.conwaylife.com/wiki/index.php?title=Bunnies_11",
+      "id": "C",
+      "full": "#C www.conwaylife.com/wiki/index.php?title=Bunnies_11"
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "format": "plaintext",
+  "name": "eater bridge eater",
+  "description": [
+    "https://conwaylife.com/wiki/Eater_bridge_eater",
+    "https://www.conwaylife.com/patterns/eaterbridgeeater.cells"
+  ],
+  "matrix": [
+    [1, 1, 0, 0, 0, 0, 0, 0],
+    [1, 0, 0, 0, 0, 0, 1, 1],
+    [0, 1, 1, 1, 0, 1, 0, 1],
+    [0, 0, 0, 1, 0, 1, 0, 0],
+    [0, 0, 0, 0, 1, 1, 0, 0]
+  ],
+  "liveCoordinates": [
+    [0, 0],
+    [1, 0],
+    [0, -1],
+    [6, -1],
+    [7, -1],
+    [1, -2],
+    [2, -2],
+    [3, -2],
+    [5, -2],
+    [7, -2],
+    [3, -3],
+    [5, -3],
+    [4, -4],
+    [5, -4]
+  ]
+}

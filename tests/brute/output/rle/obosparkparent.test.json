@@ -1,0 +1,40 @@
+{
+  "format": "rle",
+  "comments": [
+    "https://conwaylife.com/wiki/Obo!_spark",
+    "https://www.conwaylife.com/patterns/obosparkparent.rle"
+  ],
+  "name": "obosparkparent.rle",
+  "creationData": "",
+  "topleft": null,
+  "width": 3,
+  "height": 3,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [1, 0],
+    [2, 0],
+    [0, -1],
+    [1, -1],
+    [2, -1],
+    [0, -2],
+    [1, -2]
+  ],
+  "hashLines": [
+    {
+      "content": "obosparkparent.rle",
+      "id": "N",
+      "full": "#N obosparkparent.rle"
+    },
+    {
+      "content": "https://conwaylife.com/wiki/Obo!_spark",
+      "id": "C",
+      "full": "#C https://conwaylife.com/wiki/Obo!_spark"
+    },
+    {
+      "content": "https://www.conwaylife.com/patterns/obosparkparent.rle",
+      "id": "C",
+      "full": "#C https://www.conwaylife.com/patterns/obosparkparent.rle"
+    }
+  ]
+}

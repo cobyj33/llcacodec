@@ -1,0 +1,49 @@
+{
+  "format": "rle",
+  "comments": [
+    "https://conwaylife.com/wiki/Octomino_II",
+    "https://www.conwaylife.com/patterns/octominoiiash.rle"
+  ],
+  "name": "octominoiiash.rle",
+  "creationData": "",
+  "topleft": null,
+  "width": 13,
+  "height": 13,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [10, 0],
+    [10, -1],
+    [10, -2],
+    [6, -5],
+    [7, -5],
+    [5, -6],
+    [7, -6],
+    [5, -7],
+    [6, -7],
+    [11, -7],
+    [12, -7],
+    [11, -8],
+    [12, -8],
+    [0, -10],
+    [1, -10],
+    [2, -10],
+    [7, -11],
+    [8, -11],
+    [7, -12],
+    [8, -12]
+  ],
+  "hashLines": [
+    {"content": "octominoiiash.rle", "id": "N", "full": "#N octominoiiash.rle"},
+    {
+      "content": "https://conwaylife.com/wiki/Octomino_II",
+      "id": "C",
+      "full": "#C https://conwaylife.com/wiki/Octomino_II"
+    },
+    {
+      "content": "https://www.conwaylife.com/patterns/octominoiiash.rle",
+      "id": "C",
+      "full": "#C https://www.conwaylife.com/patterns/octominoiiash.rle"
+    }
+  ]
+}

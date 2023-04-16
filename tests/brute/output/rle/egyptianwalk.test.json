@@ -1,0 +1,41 @@
+{
+  "format": "rle",
+  "comments": [
+    "https://conwaylife.com/wiki/Egyptian_walk",
+    "https://conwaylife.com/patterns/egyptianwalk.rle"
+  ],
+  "name": "egyptianwalk.rle",
+  "creationData": "",
+  "topleft": null,
+  "width": 7,
+  "height": 4,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [0, 0],
+    [2, 0],
+    [3, 0],
+    [0, -1],
+    [1, -1],
+    [3, -1],
+    [3, -2],
+    [5, -2],
+    [6, -2],
+    [3, -3],
+    [4, -3],
+    [6, -3]
+  ],
+  "hashLines": [
+    {"content": "egyptianwalk.rle", "id": "N", "full": "#N egyptianwalk.rle"},
+    {
+      "content": "https://conwaylife.com/wiki/Egyptian_walk",
+      "id": "C",
+      "full": "#C https://conwaylife.com/wiki/Egyptian_walk"
+    },
+    {
+      "content": "https://conwaylife.com/patterns/egyptianwalk.rle",
+      "id": "C",
+      "full": "#C https://conwaylife.com/patterns/egyptianwalk.rle"
+    }
+  ]
+}

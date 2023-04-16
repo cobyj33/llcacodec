@@ -1,0 +1,39 @@
+{
+  "format": "rle",
+  "comments": [
+    "A 10-cell still life.",
+    "https://www.conwaylife.com/wiki/index.php?title=Loop"
+  ],
+  "name": "Loop",
+  "creationData": "",
+  "topleft": null,
+  "width": 5,
+  "height": 4,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [1, 0],
+    [2, 0],
+    [0, -1],
+    [3, -1],
+    [1, -2],
+    [3, -2],
+    [0, -3],
+    [1, -3],
+    [3, -3],
+    [4, -3]
+  ],
+  "hashLines": [
+    {"content": "Loop", "id": "N", "full": "#N Loop"},
+    {
+      "content": "A 10-cell still life.",
+      "id": "C",
+      "full": "#C A 10-cell still life."
+    },
+    {
+      "content": "https://www.conwaylife.com/wiki/index.php?title=Loop",
+      "id": "C",
+      "full": "#C https://www.conwaylife.com/wiki/index.php?title=Loop"
+    }
+  ]
+}

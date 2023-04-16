@@ -1,0 +1,62 @@
+{
+  "format": "rle",
+  "comments": [
+    "An orthogonal spaceship with period 5. The smallest known 2c/5 spac",
+    "eship.",
+    "www.conwaylife.com/wiki/index.php?title=30P5H2V0"
+  ],
+  "name": "30P5H2V0",
+  "creationData": "Paul Tooke",
+  "topleft": null,
+  "width": 13,
+  "height": 11,
+  "ruleString": "b3/s23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [4, 0],
+    [3, -1],
+    [4, -1],
+    [5, -1],
+    [2, -2],
+    [3, -2],
+    [5, -2],
+    [6, -2],
+    [1, -4],
+    [3, -4],
+    [5, -4],
+    [7, -4],
+    [10, -4],
+    [0, -5],
+    [1, -5],
+    [5, -5],
+    [9, -5],
+    [10, -5],
+    [11, -5],
+    [0, -6],
+    [1, -6],
+    [5, -6],
+    [12, -6],
+    [10, -7],
+    [12, -7],
+    [8, -8],
+    [10, -8],
+    [9, -9],
+    [12, -9],
+    [12, -10]
+  ],
+  "hashLines": [
+    {"content": "30P5H2V0", "id": "N", "full": "#N 30P5H2V0"},
+    {"content": "Paul Tooke", "id": "O", "full": "#O Paul Tooke"},
+    {
+      "content": "An orthogonal spaceship with period 5. The smallest known 2c/5 spac",
+      "id": "C",
+      "full": "#C An orthogonal spaceship with period 5. The smallest known 2c/5 spac"
+    },
+    {"content": "eship.", "id": "C", "full": "#C eship."},
+    {
+      "content": "www.conwaylife.com/wiki/index.php?title=30P5H2V0",
+      "id": "C",
+      "full": "#C www.conwaylife.com/wiki/index.php?title=30P5H2V0"
+    }
+  ]
+}

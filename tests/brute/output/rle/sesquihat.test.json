@@ -1,0 +1,42 @@
+{
+  "format": "rle",
+  "comments": [
+    "A 13-cell still life that is roughly halfway between a hat and twin hat.",
+    "https://www.conwaylife.com/wiki/index.php?title=Sesquihat"
+  ],
+  "name": "Sesquihat",
+  "creationData": "",
+  "topleft": null,
+  "width": 7,
+  "height": 5,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [4, 0],
+    [0, -1],
+    [1, -1],
+    [3, -1],
+    [5, -1],
+    [1, -2],
+    [3, -2],
+    [5, -2],
+    [1, -3],
+    [3, -3],
+    [5, -3],
+    [6, -3],
+    [2, -4]
+  ],
+  "hashLines": [
+    {"content": "Sesquihat", "id": "N", "full": "#N Sesquihat"},
+    {
+      "content": "A 13-cell still life that is roughly halfway between a hat and twin hat.",
+      "id": "C",
+      "full": "#C A 13-cell still life that is roughly halfway between a hat and twin hat."
+    },
+    {
+      "content": "https://www.conwaylife.com/wiki/index.php?title=Sesquihat",
+      "id": "C",
+      "full": "#C https://www.conwaylife.com/wiki/index.php?title=Sesquihat"
+    }
+  ]
+}

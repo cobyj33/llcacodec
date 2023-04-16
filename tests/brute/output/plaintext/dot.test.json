@@ -1,0 +1,11 @@
+{
+  "format": "plaintext",
+  "name": "dot.cells",
+  "description": [
+    "John Conway, 1969",
+    "https://conwaylife.com/wiki/Dot",
+    "https://www.conwaylife.com/patterns/dot.cells"
+  ],
+  "matrix": [[1]],
+  "liveCoordinates": [[0, 0]]
+}

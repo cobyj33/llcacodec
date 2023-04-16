@@ -1,0 +1,76 @@
+{
+  "format": "rle",
+  "comments": [
+    "https://conwaylife.com/wiki/P129_R-pentomino_hassler",
+    "https://www.conwaylife.com/patterns/p129rpentominohassler.rle"
+  ],
+  "name": "p129rpentominohassler.rle",
+  "creationData": "Luka Okanishi, 2022",
+  "topleft": null,
+  "width": 65,
+  "height": 29,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [26, 0],
+    [24, -1],
+    [25, -1],
+    [26, -1],
+    [23, -2],
+    [23, -3],
+    [24, -3],
+    [0, -4],
+    [1, -4],
+    [1, -5],
+    [1, -6],
+    [3, -6],
+    [2, -7],
+    [3, -7],
+    [20, -9],
+    [21, -9],
+    [19, -10],
+    [20, -10],
+    [20, -11],
+    [44, -17],
+    [44, -18],
+    [45, -18],
+    [43, -19],
+    [44, -19],
+    [61, -21],
+    [62, -21],
+    [61, -22],
+    [63, -22],
+    [63, -23],
+    [63, -24],
+    [64, -24],
+    [40, -25],
+    [41, -25],
+    [41, -26],
+    [38, -27],
+    [39, -27],
+    [40, -27],
+    [38, -28]
+  ],
+  "hashLines": [
+    {
+      "content": "p129rpentominohassler.rle",
+      "id": "N",
+      "full": "#N p129rpentominohassler.rle"
+    },
+    {
+      "content": "Luka Okanishi, 2022",
+      "id": "O",
+      "full": "#O Luka Okanishi, 2022"
+    },
+    {
+      "content": "https://conwaylife.com/wiki/P129_R-pentomino_hassler",
+      "id": "C",
+      "full": "#C https://conwaylife.com/wiki/P129_R-pentomino_hassler"
+    },
+    {
+      "content": "https://www.conwaylife.com/patterns/p129rpentominohassler.rle",
+      "id": "C",
+      "full": "#C https://www.conwaylife.com/patterns/p129rpentominohassler.rle"
+    }
+  ]
+}

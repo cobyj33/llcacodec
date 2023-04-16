@@ -1,0 +1,41 @@
+{
+  "format": "rle",
+  "comments": [
+    "https://conwaylife.com/wiki/Tub_with_cis-tail",
+    "https://conwaylife.com/patterns/tubwithcistail.rle"
+  ],
+  "name": "Tub with cis-tail",
+  "creationData": "Unknown",
+  "topleft": null,
+  "width": 7,
+  "height": 5,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [0, 0],
+    [1, 0],
+    [0, -1],
+    [5, -1],
+    [1, -2],
+    [4, -2],
+    [6, -2],
+    [2, -3],
+    [5, -3],
+    [3, -4],
+    [4, -4]
+  ],
+  "hashLines": [
+    {"content": "Tub with cis-tail", "id": "N", "full": "#N Tub with cis-tail"},
+    {"content": "Unknown", "id": "O", "full": "#O Unknown"},
+    {
+      "content": "https://conwaylife.com/wiki/Tub_with_cis-tail",
+      "id": "C",
+      "full": "#C https://conwaylife.com/wiki/Tub_with_cis-tail"
+    },
+    {
+      "content": "https://conwaylife.com/patterns/tubwithcistail.rle",
+      "id": "C",
+      "full": "#C https://conwaylife.com/patterns/tubwithcistail.rle"
+    }
+  ]
+}

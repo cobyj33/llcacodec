@@ -1,0 +1,43 @@
+{
+  "format": "rle",
+  "comments": [
+    "https://conwaylife.com/wiki/Cis-rotated_bun",
+    "https://www.conwaylife.com/patterns/cisrotatedbun.rle"
+  ],
+  "name": "cisrotatedbun.rle",
+  "creationData": "",
+  "topleft": null,
+  "width": 7,
+  "height": 5,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [4, 0],
+    [5, 0],
+    [1, -1],
+    [4, -1],
+    [6, -1],
+    [0, -2],
+    [2, -2],
+    [4, -2],
+    [6, -2],
+    [0, -3],
+    [2, -3],
+    [5, -3],
+    [1, -4],
+    [2, -4]
+  ],
+  "hashLines": [
+    {"content": "cisrotatedbun.rle", "id": "N", "full": "#N cisrotatedbun.rle"},
+    {
+      "content": "https://conwaylife.com/wiki/Cis-rotated_bun",
+      "id": "C",
+      "full": "#C https://conwaylife.com/wiki/Cis-rotated_bun"
+    },
+    {
+      "content": "https://www.conwaylife.com/patterns/cisrotatedbun.rle",
+      "id": "C",
+      "full": "#C https://www.conwaylife.com/patterns/cisrotatedbun.rle"
+    }
+  ]
+}

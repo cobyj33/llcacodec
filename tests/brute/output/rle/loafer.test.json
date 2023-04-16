@@ -1,0 +1,56 @@
+{
+  "format": "rle",
+  "comments": [
+    "small c/7 orthogonal spaceship found 17 February 2013",
+    "https://www.conwaylife.com/forums/viewtopic.php?f=2&t=1031#p7450",
+    "https://conwaylife.com/wiki/Loafer"
+  ],
+  "name": "loafer.rle",
+  "creationData": "Josh Ball",
+  "topleft": null,
+  "width": 9,
+  "height": 9,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [1, 0],
+    [2, 0],
+    [5, 0],
+    [7, 0],
+    [8, 0],
+    [0, -1],
+    [3, -1],
+    [6, -1],
+    [7, -1],
+    [1, -2],
+    [3, -2],
+    [2, -3],
+    [8, -4],
+    [6, -5],
+    [7, -5],
+    [8, -5],
+    [5, -6],
+    [6, -7],
+    [7, -8],
+    [8, -8]
+  ],
+  "hashLines": [
+    {"content": "loafer.rle", "id": "N", "full": "#N loafer.rle"},
+    {"content": "Josh Ball", "id": "O", "full": "#O Josh Ball"},
+    {
+      "content": "small c/7 orthogonal spaceship found 17 February 2013",
+      "id": "C",
+      "full": "#C small c/7 orthogonal spaceship found 17 February 2013"
+    },
+    {
+      "content": "https://www.conwaylife.com/forums/viewtopic.php?f=2&t=1031#p7450",
+      "id": "C",
+      "full": "#C https://www.conwaylife.com/forums/viewtopic.php?f=2&t=1031#p7450"
+    },
+    {
+      "content": "https://conwaylife.com/wiki/Loafer",
+      "id": "C",
+      "full": "#C https://conwaylife.com/wiki/Loafer"
+    }
+  ]
+}

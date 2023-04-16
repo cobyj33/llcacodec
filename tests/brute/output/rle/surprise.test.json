@@ -1,0 +1,66 @@
+{
+  "format": "rle",
+  "comments": [
+    "A period 3 oscillator found in November 1972.",
+    "www.conwaylife.com/wiki/index.php?title=Surprise"
+  ],
+  "name": "Surprise",
+  "creationData": "David Buckingham",
+  "topleft": null,
+  "width": 10,
+  "height": 9,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [3, 0],
+    [8, 0],
+    [9, 0],
+    [3, -1],
+    [4, -1],
+    [5, -1],
+    [8, -1],
+    [1, -2],
+    [2, -2],
+    [6, -2],
+    [8, -2],
+    [0, -3],
+    [3, -3],
+    [4, -3],
+    [6, -3],
+    [8, -3],
+    [9, -3],
+    [1, -4],
+    [8, -4],
+    [0, -5],
+    [1, -5],
+    [3, -5],
+    [5, -5],
+    [6, -5],
+    [9, -5],
+    [1, -6],
+    [3, -6],
+    [7, -6],
+    [8, -6],
+    [1, -7],
+    [4, -7],
+    [5, -7],
+    [6, -7],
+    [0, -8],
+    [1, -8],
+    [6, -8]
+  ],
+  "hashLines": [
+    {"content": "Surprise", "id": "N", "full": "#N Surprise"},
+    {"content": "David Buckingham", "id": "O", "full": "#O David Buckingham"},
+    {
+      "content": "A period 3 oscillator found in November 1972.",
+      "id": "C",
+      "full": "#C A period 3 oscillator found in November 1972."
+    },
+    {
+      "content": "www.conwaylife.com/wiki/index.php?title=Surprise",
+      "id": "C",
+      "full": "#C www.conwaylife.com/wiki/index.php?title=Surprise"
+    }
+  ]
+}

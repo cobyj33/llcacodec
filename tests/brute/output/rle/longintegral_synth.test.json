@@ -1,0 +1,74 @@
+{
+  "format": "rle",
+  "comments": [
+    "4-glider synthesis of long integral",
+    "https://conwaylife.com/wiki/Long_integral",
+    "https://conwaylife.com/forums/viewtopic.php?p=47449#p47449"
+  ],
+  "name": "longintegral_synth.rle",
+  "creationData": "Simon Ekstrom, 30 July 2017",
+  "topleft": null,
+  "width": 32,
+  "height": 15,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [8, 0],
+    [10, 0],
+    [8, -1],
+    [9, -1],
+    [9, -2],
+    [1, -3],
+    [2, -4],
+    [0, -5],
+    [1, -5],
+    [2, -5],
+    [30, -6],
+    [31, -6],
+    [29, -7],
+    [31, -7],
+    [1, -8],
+    [2, -8],
+    [3, -8],
+    [29, -8],
+    [3, -9],
+    [30, -9],
+    [2, -10],
+    [28, -10],
+    [30, -10],
+    [28, -11],
+    [29, -11],
+    [19, -12],
+    [18, -13],
+    [19, -13],
+    [18, -14],
+    [20, -14]
+  ],
+  "hashLines": [
+    {
+      "content": "longintegral_synth.rle",
+      "id": "N",
+      "full": "#N longintegral_synth.rle"
+    },
+    {
+      "content": "Simon Ekstrom, 30 July 2017",
+      "id": "O",
+      "full": "#O Simon Ekstrom, 30 July 2017"
+    },
+    {
+      "content": "4-glider synthesis of long integral",
+      "id": "C",
+      "full": "#C 4-glider synthesis of long integral"
+    },
+    {
+      "content": "https://conwaylife.com/wiki/Long_integral",
+      "id": "C",
+      "full": "#C https://conwaylife.com/wiki/Long_integral"
+    },
+    {
+      "content": "https://conwaylife.com/forums/viewtopic.php?p=47449#p47449",
+      "id": "C",
+      "full": "#C https://conwaylife.com/forums/viewtopic.php?p=47449#p47449"
+    }
+  ]
+}

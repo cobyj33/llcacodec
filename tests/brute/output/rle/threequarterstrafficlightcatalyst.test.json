@@ -1,0 +1,50 @@
+{
+  "format": "rle",
+  "comments": [
+    "https://conwaylife.com/wiki/Three_quarters_traffic_light_catalyst",
+    "https://www.conwaylife.com/patterns/threequarterstrafficlightcatalyst.rle"
+  ],
+  "name": "threequarterstrafficlightcatalyst.rle",
+  "creationData": "cvojan, 2021",
+  "topleft": null,
+  "width": 9,
+  "height": 12,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [8, 0],
+    [6, -1],
+    [7, -1],
+    [8, -1],
+    [5, -2],
+    [5, -3],
+    [6, -3],
+    [0, -7],
+    [6, -7],
+    [0, -8],
+    [6, -8],
+    [0, -9],
+    [6, -9],
+    [2, -11],
+    [3, -11],
+    [4, -11]
+  ],
+  "hashLines": [
+    {
+      "content": "threequarterstrafficlightcatalyst.rle",
+      "id": "N",
+      "full": "#N threequarterstrafficlightcatalyst.rle"
+    },
+    {"content": "cvojan, 2021", "id": "O", "full": "#O cvojan, 2021"},
+    {
+      "content": "https://conwaylife.com/wiki/Three_quarters_traffic_light_catalyst",
+      "id": "C",
+      "full": "#C https://conwaylife.com/wiki/Three_quarters_traffic_light_catalyst"
+    },
+    {
+      "content": "https://www.conwaylife.com/patterns/threequarterstrafficlightcatalyst.rle",
+      "id": "C",
+      "full": "#C https://www.conwaylife.com/patterns/threequarterstrafficlightcatalyst.rle"
+    }
+  ]
+}

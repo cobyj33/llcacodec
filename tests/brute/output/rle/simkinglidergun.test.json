@@ -1,0 +1,66 @@
+{
+  "format": "rle",
+  "comments": [
+    "A true period 120 glider gun, found on April 28, 2015.",
+    "www.conwaylife.com/wiki/Simkin_glider_gun"
+  ],
+  "name": "Simkin glider gun",
+  "creationData": "Michael Simkin",
+  "topleft": null,
+  "width": 33,
+  "height": 21,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [0, 0],
+    [1, 0],
+    [7, 0],
+    [8, 0],
+    [0, -1],
+    [1, -1],
+    [7, -1],
+    [8, -1],
+    [4, -3],
+    [5, -3],
+    [4, -4],
+    [5, -4],
+    [22, -9],
+    [23, -9],
+    [25, -9],
+    [26, -9],
+    [21, -10],
+    [27, -10],
+    [21, -11],
+    [28, -11],
+    [31, -11],
+    [32, -11],
+    [21, -12],
+    [22, -12],
+    [23, -12],
+    [27, -12],
+    [31, -12],
+    [32, -12],
+    [26, -13],
+    [20, -17],
+    [21, -17],
+    [20, -18],
+    [21, -19],
+    [22, -19],
+    [23, -19],
+    [23, -20]
+  ],
+  "hashLines": [
+    {"content": "Simkin glider gun", "id": "N", "full": "#N Simkin glider gun"},
+    {"content": "Michael Simkin", "id": "O", "full": "#O Michael Simkin"},
+    {
+      "content": "A true period 120 glider gun, found on April 28, 2015.",
+      "id": "C",
+      "full": "#C A true period 120 glider gun, found on April 28, 2015."
+    },
+    {
+      "content": "www.conwaylife.com/wiki/Simkin_glider_gun",
+      "id": "C",
+      "full": "#C www.conwaylife.com/wiki/Simkin_glider_gun"
+    }
+  ]
+}

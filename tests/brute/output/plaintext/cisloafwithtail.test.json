@@ -1,0 +1,28 @@
+{
+  "format": "plaintext",
+  "name": "Cis-loaf with tail",
+  "description": [
+    "The seventy-fourth most common still life.",
+    "https://www.conwaylife.com/wiki/index.php?title=Cis-loaf_with_tail"
+  ],
+  "matrix": [
+    [0, 0, 0, 1, 1, 0],
+    [0, 0, 1, 0, 0, 1],
+    [0, 1, 0, 1, 0, 1],
+    [0, 1, 0, 0, 1, 0],
+    [1, 1, 0, 0, 0, 0]
+  ],
+  "liveCoordinates": [
+    [3, 0],
+    [4, 0],
+    [2, -1],
+    [5, -1],
+    [1, -2],
+    [3, -2],
+    [5, -2],
+    [1, -3],
+    [4, -3],
+    [0, -4],
+    [1, -4]
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "format": "plaintext",
+  "name": "Carrier siamese carrier",
+  "description": [
+    "A still life composed of two aircraft carriers attached together.",
+    "https://www.conwaylife.com/wiki/index.php?title=Carrier_siamese_carrier"
+  ],
+  "matrix": [
+    [1, 1, 0, 0, 0, 0, 0],
+    [1, 0, 0, 1, 1, 0, 0],
+    [0, 0, 1, 1, 0, 0, 1],
+    [0, 0, 0, 0, 0, 1, 1]
+  ],
+  "liveCoordinates": [
+    [0, 0],
+    [1, 0],
+    [0, -1],
+    [3, -1],
+    [4, -1],
+    [2, -2],
+    [3, -2],
+    [6, -2],
+    [5, -3],
+    [6, -3]
+  ]
+}

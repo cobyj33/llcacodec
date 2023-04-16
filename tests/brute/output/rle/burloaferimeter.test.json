@@ -1,0 +1,58 @@
+{
+  "format": "rle",
+  "comments": [
+    "A period 7 oscillator.",
+    "www.conwaylife.com/wiki/index.php?title=Burloaferimeter"
+  ],
+  "name": "Burloaferimeter",
+  "creationData": "David Buckingham",
+  "topleft": null,
+  "width": 10,
+  "height": 11,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [4, 0],
+    [5, 0],
+    [5, -1],
+    [4, -2],
+    [3, -3],
+    [5, -3],
+    [6, -3],
+    [7, -3],
+    [3, -4],
+    [5, -4],
+    [8, -4],
+    [0, -5],
+    [1, -5],
+    [3, -5],
+    [7, -5],
+    [9, -5],
+    [0, -6],
+    [1, -6],
+    [3, -6],
+    [8, -6],
+    [4, -7],
+    [5, -7],
+    [6, -7],
+    [7, -7],
+    [4, -9],
+    [5, -9],
+    [4, -10],
+    [5, -10]
+  ],
+  "hashLines": [
+    {"content": "Burloaferimeter", "id": "N", "full": "#N Burloaferimeter"},
+    {"content": "David Buckingham", "id": "O", "full": "#O David Buckingham"},
+    {
+      "content": "A period 7 oscillator.",
+      "id": "C",
+      "full": "#C A period 7 oscillator."
+    },
+    {
+      "content": "www.conwaylife.com/wiki/index.php?title=Burloaferimeter",
+      "id": "C",
+      "full": "#C www.conwaylife.com/wiki/index.php?title=Burloaferimeter"
+    }
+  ]
+}

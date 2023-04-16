@@ -1,0 +1,10 @@
+{
+  "format": "plaintext",
+  "name": "pole3rotor.cells",
+  "description": [
+    "https://conwaylife.com/wiki/Pole_3",
+    "https://www.conwaylife.com/patterns/pole3rotor.cells"
+  ],
+  "matrix": [[1, 0, 1], [0, 0, 0], [0, 0, 1]],
+  "liveCoordinates": [[0, 0], [2, 0], [2, -2]]
+}

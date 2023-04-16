@@ -1,0 +1,35 @@
+{
+  "format": "plaintext",
+  "name": "Muttering moat 1",
+  "description": [
+    "Author: Dean Hickerson",
+    "A period 2 oscillator and a muttering moat, found in May 1993.",
+    "www.conwaylife.com/wiki/index.php?title=Muttering_moat_1"
+  ],
+  "matrix": [
+    [1, 1, 0, 0, 0, 0, 0],
+    [1, 0, 0, 0, 1, 1, 0],
+    [0, 1, 0, 1, 0, 1, 0],
+    [0, 0, 0, 0, 0, 0, 0],
+    [0, 1, 1, 0, 0, 1, 0],
+    [0, 0, 0, 1, 0, 0, 1],
+    [0, 0, 0, 0, 0, 1, 1]
+  ],
+  "liveCoordinates": [
+    [0, 0],
+    [1, 0],
+    [0, -1],
+    [4, -1],
+    [5, -1],
+    [1, -2],
+    [3, -2],
+    [5, -2],
+    [1, -4],
+    [2, -4],
+    [5, -4],
+    [3, -5],
+    [6, -5],
+    [5, -6],
+    [6, -6]
+  ]
+}

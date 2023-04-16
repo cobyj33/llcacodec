@@ -1,0 +1,41 @@
+{
+  "format": "rle",
+  "comments": [
+    "A 12-cell still life made up of two tables.",
+    "https://www.conwaylife.com/wiki/index.php?title=Table_on_table"
+  ],
+  "name": "Table on table",
+  "creationData": "",
+  "topleft": null,
+  "width": 4,
+  "height": 5,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [0, 0],
+    [3, 0],
+    [0, -1],
+    [1, -1],
+    [2, -1],
+    [3, -1],
+    [0, -3],
+    [1, -3],
+    [2, -3],
+    [3, -3],
+    [0, -4],
+    [3, -4]
+  ],
+  "hashLines": [
+    {"content": "Table on table", "id": "N", "full": "#N Table on table"},
+    {
+      "content": "A 12-cell still life made up of two tables.",
+      "id": "C",
+      "full": "#C A 12-cell still life made up of two tables."
+    },
+    {
+      "content": "https://www.conwaylife.com/wiki/index.php?title=Table_on_table",
+      "id": "C",
+      "full": "#C https://www.conwaylife.com/wiki/index.php?title=Table_on_table"
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "format": "rle",
+  "comments": [
+    "https://conwaylife.com/wiki/Loaf",
+    "https://www.conwaylife.com/patterns/loafglidermovementreactions.rle"
+  ],
+  "name": "loafglidermovementreactions.rle",
+  "creationData": "",
+  "topleft": null,
+  "width": 46,
+  "height": 9,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [6, 0],
+    [24, 0],
+    [43, 0],
+    [6, -1],
+    [8, -1],
+    [24, -1],
+    [26, -1],
+    [43, -1],
+    [45, -1],
+    [6, -2],
+    [7, -2],
+    [24, -2],
+    [25, -2],
+    [43, -2],
+    [44, -2],
+    [18, -4],
+    [1, -5],
+    [2, -5],
+    [17, -5],
+    [19, -5],
+    [37, -5],
+    [0, -6],
+    [3, -6],
+    [16, -6],
+    [19, -6],
+    [36, -6],
+    [38, -6],
+    [1, -7],
+    [3, -7],
+    [17, -7],
+    [18, -7],
+    [35, -7],
+    [38, -7],
+    [2, -8],
+    [36, -8],
+    [37, -8]
+  ],
+  "hashLines": [
+    {
+      "content": "loafglidermovementreactions.rle",
+      "id": "N",
+      "full": "#N loafglidermovementreactions.rle"
+    },
+    {
+      "content": "https://conwaylife.com/wiki/Loaf",
+      "id": "C",
+      "full": "#C https://conwaylife.com/wiki/Loaf"
+    },
+    {
+      "content": "https://www.conwaylife.com/patterns/loafglidermovementreactions.rle",
+      "id": "C",
+      "full": "#C https://www.conwaylife.com/patterns/loafglidermovementreactions.rle"
+    }
+  ]
+}

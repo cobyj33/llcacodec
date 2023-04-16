@@ -1,0 +1,29 @@
+{
+  "format": "plaintext",
+  "name": "cissnakeonbun.cells",
+  "description": [
+    "https://conwaylife.com/wiki/Cis-snake_on_bun",
+    "https://www.conwaylife.com/patterns/cissnakeonbun.cells"
+  ],
+  "matrix": [
+    [1, 1, 0, 0, 1, 0],
+    [1, 0, 0, 1, 0, 1],
+    [0, 1, 0, 1, 0, 1],
+    [1, 1, 0, 1, 1, 0]
+  ],
+  "liveCoordinates": [
+    [0, 0],
+    [1, 0],
+    [4, 0],
+    [0, -1],
+    [3, -1],
+    [5, -1],
+    [1, -2],
+    [3, -2],
+    [5, -2],
+    [0, -3],
+    [1, -3],
+    [3, -3],
+    [4, -3]
+  ]
+}

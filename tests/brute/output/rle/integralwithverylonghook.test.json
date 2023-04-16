@@ -1,0 +1,45 @@
+{
+  "format": "rle",
+  "comments": [
+    "https://conwaylife.com/wiki/Integral_with_very_long_hook",
+    "https://conwaylife.com/patterns/integralwithverylonghook.rle"
+  ],
+  "name": "integralwithverylonghook.rle",
+  "creationData": "",
+  "topleft": null,
+  "width": 8,
+  "height": 5,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [0, 0],
+    [1, 0],
+    [0, -1],
+    [2, -1],
+    [6, -1],
+    [7, -1],
+    [2, -2],
+    [5, -2],
+    [7, -2],
+    [2, -3],
+    [4, -3],
+    [3, -4]
+  ],
+  "hashLines": [
+    {
+      "content": "integralwithverylonghook.rle",
+      "id": "N",
+      "full": "#N integralwithverylonghook.rle"
+    },
+    {
+      "content": "https://conwaylife.com/wiki/Integral_with_very_long_hook",
+      "id": "C",
+      "full": "#C https://conwaylife.com/wiki/Integral_with_very_long_hook"
+    },
+    {
+      "content": "https://conwaylife.com/patterns/integralwithverylonghook.rle",
+      "id": "C",
+      "full": "#C https://conwaylife.com/patterns/integralwithverylonghook.rle"
+    }
+  ]
+}

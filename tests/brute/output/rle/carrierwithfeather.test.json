@@ -1,0 +1,45 @@
+{
+  "format": "rle",
+  "comments": [
+    "https://conwaylife.com/wiki/Carrier_with_feather",
+    "https://conwaylife.com/patterns/carrierwithfeather.rle"
+  ],
+  "name": "Carrier with feather",
+  "creationData": "Unknown",
+  "topleft": null,
+  "width": 7,
+  "height": 4,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [0, 0],
+    [1, 0],
+    [4, 0],
+    [0, -1],
+    [3, -1],
+    [5, -1],
+    [2, -2],
+    [3, -2],
+    [6, -2],
+    [5, -3],
+    [6, -3]
+  ],
+  "hashLines": [
+    {
+      "content": "Carrier with feather",
+      "id": "N",
+      "full": "#N Carrier with feather"
+    },
+    {"content": "Unknown", "id": "O", "full": "#O Unknown"},
+    {
+      "content": "https://conwaylife.com/wiki/Carrier_with_feather",
+      "id": "C",
+      "full": "#C https://conwaylife.com/wiki/Carrier_with_feather"
+    },
+    {
+      "content": "https://conwaylife.com/patterns/carrierwithfeather.rle",
+      "id": "C",
+      "full": "#C https://conwaylife.com/patterns/carrierwithfeather.rle"
+    }
+  ]
+}

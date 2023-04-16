@@ -1,0 +1,49 @@
+{
+  "format": "rle",
+  "comments": [
+    "https://conwaylife.com/wiki/Para-bookend_and_house",
+    "https://www.conwaylife.com/patterns/parabookendandhouse.rle"
+  ],
+  "name": "parabookendandhouse.rle",
+  "creationData": "",
+  "topleft": null,
+  "width": 7,
+  "height": 6,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [5, 0],
+    [6, 0],
+    [4, -1],
+    [6, -1],
+    [0, -2],
+    [1, -2],
+    [4, -2],
+    [0, -3],
+    [2, -3],
+    [4, -3],
+    [6, -3],
+    [2, -4],
+    [5, -4],
+    [6, -4],
+    [1, -5],
+    [2, -5]
+  ],
+  "hashLines": [
+    {
+      "content": "parabookendandhouse.rle",
+      "id": "N",
+      "full": "#N parabookendandhouse.rle"
+    },
+    {
+      "content": "https://conwaylife.com/wiki/Para-bookend_and_house",
+      "id": "C",
+      "full": "#C https://conwaylife.com/wiki/Para-bookend_and_house"
+    },
+    {
+      "content": "https://www.conwaylife.com/patterns/parabookendandhouse.rle",
+      "id": "C",
+      "full": "#C https://www.conwaylife.com/patterns/parabookendandhouse.rle"
+    }
+  ]
+}

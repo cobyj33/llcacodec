@@ -1,0 +1,41 @@
+{
+  "format": "rle",
+  "comments": [
+    "https://conwaylife.com/wiki/Long_ship",
+    "https://www.conwaylife.com/patterns/longshipgenerator.rle"
+  ],
+  "name": "longshipgenerator.rle",
+  "creationData": "",
+  "topleft": null,
+  "width": 7,
+  "height": 5,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [0, 0],
+    [0, -1],
+    [1, -1],
+    [0, -2],
+    [5, -2],
+    [4, -3],
+    [6, -3],
+    [5, -4]
+  ],
+  "hashLines": [
+    {
+      "content": "longshipgenerator.rle",
+      "id": "N",
+      "full": "#N longshipgenerator.rle"
+    },
+    {
+      "content": "https://conwaylife.com/wiki/Long_ship",
+      "id": "C",
+      "full": "#C https://conwaylife.com/wiki/Long_ship"
+    },
+    {
+      "content": "https://www.conwaylife.com/patterns/longshipgenerator.rle",
+      "id": "C",
+      "full": "#C https://www.conwaylife.com/patterns/longshipgenerator.rle"
+    }
+  ]
+}

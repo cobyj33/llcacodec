@@ -1,0 +1,53 @@
+{
+  "format": "rle",
+  "comments": [
+    "A period 3 oscillator that has the same rotor as loading dock.",
+    "www.conwaylife.com/wiki/index.php?title=Six_Ls"
+  ],
+  "name": "Six Ls",
+  "creationData": "",
+  "topleft": null,
+  "width": 7,
+  "height": 8,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [3, 0],
+    [1, -1],
+    [2, -1],
+    [3, -1],
+    [6, -1],
+    [0, -2],
+    [4, -2],
+    [5, -2],
+    [6, -2],
+    [0, -3],
+    [1, -3],
+    [2, -3],
+    [4, -4],
+    [5, -4],
+    [6, -4],
+    [0, -5],
+    [1, -5],
+    [2, -5],
+    [6, -5],
+    [0, -6],
+    [3, -6],
+    [4, -6],
+    [5, -6],
+    [3, -7]
+  ],
+  "hashLines": [
+    {"content": "Six Ls", "id": "N", "full": "#N Six Ls"},
+    {
+      "content": "A period 3 oscillator that has the same rotor as loading dock.",
+      "id": "C",
+      "full": "#C A period 3 oscillator that has the same rotor as loading dock."
+    },
+    {
+      "content": "www.conwaylife.com/wiki/index.php?title=Six_Ls",
+      "id": "C",
+      "full": "#C www.conwaylife.com/wiki/index.php?title=Six_Ls"
+    }
+  ]
+}

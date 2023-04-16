@@ -1,0 +1,79 @@
+{
+  "format": "rle",
+  "comments": [
+    "https://conwaylife.com/wiki/Twin_bees_shuttle",
+    "https://www.conwaylife.com/patterns/fumaroleontwinbeesshuttle.rle"
+  ],
+  "name": "fumaroleontwinbeesshuttle.rle",
+  "creationData": "",
+  "topleft": null,
+  "width": 11,
+  "height": 40,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [1, 0],
+    [2, 0],
+    [8, 0],
+    [9, 0],
+    [1, -1],
+    [2, -1],
+    [8, -1],
+    [9, -1],
+    [0, -17],
+    [1, -17],
+    [3, -17],
+    [7, -17],
+    [9, -17],
+    [10, -17],
+    [0, -18],
+    [3, -18],
+    [7, -18],
+    [10, -18],
+    [1, -19],
+    [2, -19],
+    [3, -19],
+    [7, -19],
+    [8, -19],
+    [9, -19],
+    [8, -27],
+    [9, -27],
+    [8, -28],
+    [9, -28],
+    [3, -34],
+    [4, -34],
+    [1, -35],
+    [2, -35],
+    [5, -35],
+    [6, -35],
+    [1, -36],
+    [6, -36],
+    [2, -37],
+    [5, -37],
+    [0, -38],
+    [2, -38],
+    [5, -38],
+    [7, -38],
+    [0, -39],
+    [1, -39],
+    [6, -39],
+    [7, -39]
+  ],
+  "hashLines": [
+    {
+      "content": "fumaroleontwinbeesshuttle.rle",
+      "id": "N",
+      "full": "#N fumaroleontwinbeesshuttle.rle"
+    },
+    {
+      "content": "https://conwaylife.com/wiki/Twin_bees_shuttle",
+      "id": "C",
+      "full": "#C https://conwaylife.com/wiki/Twin_bees_shuttle"
+    },
+    {
+      "content": "https://www.conwaylife.com/patterns/fumaroleontwinbeesshuttle.rle",
+      "id": "C",
+      "full": "#C https://www.conwaylife.com/patterns/fumaroleontwinbeesshuttle.rle"
+    }
+  ]
+}

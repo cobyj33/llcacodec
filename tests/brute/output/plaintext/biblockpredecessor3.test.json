@@ -1,0 +1,24 @@
+{
+  "format": "plaintext",
+  "name": "biblockpredecessor3.cells",
+  "description": [
+    "https://conwaylife.com/wiki/Bi-block",
+    "https://www.conwaylife.com/patterns/biblockpredecessor3.cells"
+  ],
+  "matrix": [
+    [0, 0, 1, 0, 0, 0],
+    [0, 1, 0, 0, 0, 0],
+    [1, 0, 0, 0, 0, 0],
+    [1, 1, 0, 1, 1, 1]
+  ],
+  "liveCoordinates": [
+    [2, 0],
+    [1, -1],
+    [0, -2],
+    [0, -3],
+    [1, -3],
+    [3, -3],
+    [4, -3],
+    [5, -3]
+  ]
+}

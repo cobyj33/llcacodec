@@ -1,0 +1,28 @@
+{
+  "format": "rle",
+  "comments": [
+    "One of the 12 pentominoes.",
+    "www.conwaylife.com/wiki/index.php?title=Polyomino#Pentominoes"
+  ],
+  "name": "W-pentomino",
+  "creationData": "",
+  "topleft": null,
+  "width": 3,
+  "height": 3,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [[0, 0], [0, -1], [1, -1], [1, -2], [2, -2]],
+  "hashLines": [
+    {"content": "W-pentomino", "id": "N", "full": "#N W-pentomino"},
+    {
+      "content": "One of the 12 pentominoes.",
+      "id": "C",
+      "full": "#C One of the 12 pentominoes."
+    },
+    {
+      "content": "www.conwaylife.com/wiki/index.php?title=Polyomino#Pentominoes",
+      "id": "C",
+      "full": "#C www.conwaylife.com/wiki/index.php?title=Polyomino#Pentominoes"
+    }
+  ]
+}

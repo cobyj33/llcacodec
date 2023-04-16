@@ -1,0 +1,37 @@
+{
+  "format": "rle",
+  "comments": [
+    "An induction coil that is a longer version of a bookend (aka. a hook).",
+    "https://www.conwaylife.com/wiki/index.php?title=Long_hook"
+  ],
+  "name": "Long hook",
+  "creationData": "",
+  "topleft": null,
+  "width": 5,
+  "height": 3,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [3, 0],
+    [4, 0],
+    [0, -1],
+    [4, -1],
+    [0, -2],
+    [1, -2],
+    [2, -2],
+    [3, -2]
+  ],
+  "hashLines": [
+    {"content": "Long hook", "id": "N", "full": "#N Long hook"},
+    {
+      "content": "An induction coil that is a longer version of a bookend (aka. a hook).",
+      "id": "C",
+      "full": "#C An induction coil that is a longer version of a bookend (aka. a hook)."
+    },
+    {
+      "content": "https://www.conwaylife.com/wiki/index.php?title=Long_hook",
+      "id": "C",
+      "full": "#C https://www.conwaylife.com/wiki/index.php?title=Long_hook"
+    }
+  ]
+}

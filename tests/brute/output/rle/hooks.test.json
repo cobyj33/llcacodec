@@ -1,0 +1,47 @@
+{
+  "format": "rle",
+  "comments": ["A period 5 oscillator.", "www.conwaylife.com/wiki/Hooks"],
+  "name": "Hooks",
+  "creationData": "",
+  "topleft": null,
+  "width": 11,
+  "height": 10,
+  "ruleString": "b3/s23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [6, 0],
+    [7, 0],
+    [0, -1],
+    [2, -1],
+    [3, -1],
+    [5, -1],
+    [7, -1],
+    [0, -2],
+    [1, -2],
+    [3, -2],
+    [5, -2],
+    [4, -3],
+    [5, -3],
+    [5, -4],
+    [7, -6],
+    [8, -6],
+    [7, -7],
+    [8, -8],
+    [9, -8],
+    [10, -8],
+    [10, -9]
+  ],
+  "hashLines": [
+    {"content": "Hooks", "id": "N", "full": "#N Hooks"},
+    {
+      "content": "A period 5 oscillator.",
+      "id": "C",
+      "full": "#C A period 5 oscillator."
+    },
+    {
+      "content": "www.conwaylife.com/wiki/Hooks",
+      "id": "C",
+      "full": "#C www.conwaylife.com/wiki/Hooks"
+    }
+  ]
+}

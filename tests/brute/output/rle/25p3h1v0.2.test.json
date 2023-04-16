@@ -1,0 +1,61 @@
+{
+  "format": "rle",
+  "comments": [
+    "A c/3 orthogonal period 3 spaceship with a minimum of 25 cells -- the lowest",
+    "number of cells known for any such spaceship.",
+    "https://conwaylife.com/wiki/Edge-repair_spaceship_1"
+  ],
+  "name": "25P3H1V0.2",
+  "creationData": "David Bell",
+  "topleft": null,
+  "width": 16,
+  "height": 8,
+  "ruleString": "b3/s23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [10, 0],
+    [8, -1],
+    [9, -1],
+    [10, -1],
+    [12, -1],
+    [13, -1],
+    [14, -1],
+    [7, -2],
+    [8, -2],
+    [15, -2],
+    [2, -3],
+    [6, -3],
+    [9, -3],
+    [13, -3],
+    [14, -3],
+    [1, -4],
+    [2, -4],
+    [3, -4],
+    [4, -4],
+    [0, -5],
+    [4, -5],
+    [1, -6],
+    [3, -6],
+    [6, -6],
+    [5, -7]
+  ],
+  "hashLines": [
+    {"content": "25P3H1V0.2", "id": "N", "full": "#N 25P3H1V0.2"},
+    {"content": "David Bell", "id": "O", "full": "#O David Bell"},
+    {
+      "content": "A c/3 orthogonal period 3 spaceship with a minimum of 25 cells -- the lowest",
+      "id": "C",
+      "full": "#C A c/3 orthogonal period 3 spaceship with a minimum of 25 cells -- the lowest"
+    },
+    {
+      "content": "number of cells known for any such spaceship.",
+      "id": "C",
+      "full": "#C number of cells known for any such spaceship."
+    },
+    {
+      "content": "https://conwaylife.com/wiki/Edge-repair_spaceship_1",
+      "id": "C",
+      "full": "#C https://conwaylife.com/wiki/Edge-repair_spaceship_1"
+    }
+  ]
+}

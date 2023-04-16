@@ -1,0 +1,58 @@
+{
+  "format": "rle",
+  "comments": [
+    "https://conwaylife.com/wiki/5blink",
+    "https://conwaylife.com/patterns/5blink.rle"
+  ],
+  "name": "5blink",
+  "creationData": "Scot Ellison",
+  "topleft": null,
+  "width": 13,
+  "height": 9,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [5, 0],
+    [4, -1],
+    [6, -1],
+    [7, -1],
+    [0, -2],
+    [4, -2],
+    [8, -2],
+    [9, -2],
+    [0, -3],
+    [9, -3],
+    [0, -4],
+    [4, -4],
+    [3, -5],
+    [4, -5],
+    [5, -5],
+    [7, -5],
+    [11, -5],
+    [1, -6],
+    [3, -6],
+    [6, -6],
+    [7, -6],
+    [10, -6],
+    [12, -6],
+    [0, -7],
+    [2, -7],
+    [11, -7],
+    [0, -8],
+    [1, -8]
+  ],
+  "hashLines": [
+    {"content": "5blink", "id": "N", "full": "#N 5blink"},
+    {"content": "Scot Ellison", "id": "O", "full": "#O Scot Ellison"},
+    {
+      "content": "https://conwaylife.com/wiki/5blink",
+      "id": "C",
+      "full": "#C https://conwaylife.com/wiki/5blink"
+    },
+    {
+      "content": "https://conwaylife.com/patterns/5blink.rle",
+      "id": "C",
+      "full": "#C https://conwaylife.com/patterns/5blink.rle"
+    }
+  ]
+}

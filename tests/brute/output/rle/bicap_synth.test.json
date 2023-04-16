@@ -1,0 +1,76 @@
+{
+  "format": "rle",
+  "comments": [
+    "4-glider synthesis of bi-cap",
+    "https://conwaylife.com/wiki/Bi-cap",
+    "https://conwaylife.com/forums/viewtopic.php?p=12406#p12406"
+  ],
+  "name": "bicap_synth.rle",
+  "creationData": "Bob Shemyakin, 28 June 2014",
+  "topleft": null,
+  "width": 32,
+  "height": 17,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [9, 0],
+    [8, -1],
+    [8, -2],
+    [9, -2],
+    [10, -2],
+    [2, -6],
+    [0, -7],
+    [2, -7],
+    [8, -7],
+    [9, -7],
+    [10, -7],
+    [1, -8],
+    [2, -8],
+    [8, -8],
+    [26, -8],
+    [27, -8],
+    [29, -8],
+    [30, -8],
+    [9, -9],
+    [25, -9],
+    [27, -9],
+    [29, -9],
+    [31, -9],
+    [25, -10],
+    [27, -10],
+    [29, -10],
+    [31, -10],
+    [26, -11],
+    [27, -11],
+    [29, -11],
+    [30, -11],
+    [8, -14],
+    [9, -14],
+    [8, -15],
+    [10, -15],
+    [8, -16]
+  ],
+  "hashLines": [
+    {"content": "bicap_synth.rle", "id": "N", "full": "#N bicap_synth.rle"},
+    {
+      "content": "Bob Shemyakin, 28 June 2014",
+      "id": "O",
+      "full": "#O Bob Shemyakin, 28 June 2014"
+    },
+    {
+      "content": "4-glider synthesis of bi-cap",
+      "id": "C",
+      "full": "#C 4-glider synthesis of bi-cap"
+    },
+    {
+      "content": "https://conwaylife.com/wiki/Bi-cap",
+      "id": "C",
+      "full": "#C https://conwaylife.com/wiki/Bi-cap"
+    },
+    {
+      "content": "https://conwaylife.com/forums/viewtopic.php?p=12406#p12406",
+      "id": "C",
+      "full": "#C https://conwaylife.com/forums/viewtopic.php?p=12406#p12406"
+    }
+  ]
+}

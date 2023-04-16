@@ -1,0 +1,78 @@
+{
+  "format": "rle",
+  "comments": [
+    "https://conwaylife.com/wiki/44P10",
+    "https://www.conwaylife.com/patterns/44p10.rle"
+  ],
+  "name": "44p10.rle",
+  "creationData": "Matthias Merzenich, 2010",
+  "topleft": null,
+  "width": 14,
+  "height": 14,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [12, 0],
+    [0, -1],
+    [1, -1],
+    [2, -1],
+    [10, -1],
+    [12, -1],
+    [5, -2],
+    [10, -2],
+    [12, -2],
+    [1, -3],
+    [2, -3],
+    [4, -3],
+    [6, -3],
+    [7, -3],
+    [4, -4],
+    [9, -4],
+    [10, -4],
+    [6, -5],
+    [11, -5],
+    [3, -6],
+    [8, -6],
+    [10, -6],
+    [3, -7],
+    [5, -7],
+    [10, -7],
+    [2, -8],
+    [7, -8],
+    [3, -9],
+    [4, -9],
+    [9, -9],
+    [6, -10],
+    [7, -10],
+    [9, -10],
+    [11, -10],
+    [12, -10],
+    [1, -11],
+    [3, -11],
+    [8, -11],
+    [1, -12],
+    [3, -12],
+    [11, -12],
+    [12, -12],
+    [13, -12],
+    [1, -13]
+  ],
+  "hashLines": [
+    {"content": "44p10.rle", "id": "N", "full": "#N 44p10.rle"},
+    {
+      "content": "Matthias Merzenich, 2010",
+      "id": "O",
+      "full": "#O Matthias Merzenich, 2010"
+    },
+    {
+      "content": "https://conwaylife.com/wiki/44P10",
+      "id": "C",
+      "full": "#C https://conwaylife.com/wiki/44P10"
+    },
+    {
+      "content": "https://www.conwaylife.com/patterns/44p10.rle",
+      "id": "C",
+      "full": "#C https://www.conwaylife.com/patterns/44p10.rle"
+    }
+  ]
+}

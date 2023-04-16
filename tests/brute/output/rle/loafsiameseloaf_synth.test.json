@@ -1,0 +1,65 @@
+{
+  "format": "rle",
+  "comments": [
+    "Glider synthesis of loaf siamese loaf",
+    "https://conwaylife.com/wiki/loaf_siamese_loaf"
+  ],
+  "name": "loafsiameseloaf_synth",
+  "creationData": "Boris Shemyakin",
+  "topleft": null,
+  "width": 44,
+  "height": 19,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [25, -5],
+    [27, -5],
+    [3, -6],
+    [4, -6],
+    [26, -6],
+    [27, -6],
+    [2, -7],
+    [5, -7],
+    [26, -7],
+    [2, -8],
+    [4, -8],
+    [6, -8],
+    [22, -8],
+    [3, -9],
+    [6, -9],
+    [22, -9],
+    [23, -9],
+    [28, -9],
+    [30, -9],
+    [4, -10],
+    [5, -10],
+    [21, -10],
+    [23, -10],
+    [28, -10],
+    [29, -10],
+    [38, -10],
+    [29, -11],
+    [37, -11],
+    [38, -11],
+    [37, -12],
+    [39, -12]
+  ],
+  "hashLines": [
+    {
+      "content": "loafsiameseloaf_synth",
+      "id": "N",
+      "full": "#N loafsiameseloaf_synth"
+    },
+    {"content": "Boris Shemyakin", "id": "O", "full": "#O Boris Shemyakin"},
+    {
+      "content": "Glider synthesis of loaf siamese loaf",
+      "id": "C",
+      "full": "#C Glider synthesis of loaf siamese loaf"
+    },
+    {
+      "content": "https://conwaylife.com/wiki/loaf_siamese_loaf",
+      "id": "C",
+      "full": "#C https://conwaylife.com/wiki/loaf_siamese_loaf"
+    }
+  ]
+}

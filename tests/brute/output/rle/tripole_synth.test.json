@@ -1,0 +1,66 @@
+{
+  "format": "rle",
+  "comments": [
+    "Glider synthesis of tripole.",
+    "https://conwaylife.com/wiki/Tripole",
+    "https://conwaylife.com/forums/viewtopic.php?p=45062#p45062"
+  ],
+  "name": "Tripole_synth",
+  "creationData": "Extremeenthusiast",
+  "topleft": null,
+  "width": 22,
+  "height": 17,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [16, 0],
+    [18, 0],
+    [16, -1],
+    [17, -1],
+    [17, -2],
+    [6, -5],
+    [7, -5],
+    [5, -6],
+    [7, -6],
+    [7, -7],
+    [8, -9],
+    [9, -9],
+    [8, -10],
+    [10, -10],
+    [8, -11],
+    [20, -11],
+    [21, -11],
+    [0, -12],
+    [1, -12],
+    [2, -12],
+    [19, -12],
+    [20, -12],
+    [2, -13],
+    [21, -13],
+    [1, -14],
+    [12, -14],
+    [11, -15],
+    [12, -15],
+    [11, -16],
+    [13, -16]
+  ],
+  "hashLines": [
+    {"content": "Tripole_synth", "id": "N", "full": "#N Tripole_synth"},
+    {"content": "Extremeenthusiast", "id": "O", "full": "#O Extremeenthusiast"},
+    {
+      "content": "Glider synthesis of tripole.",
+      "id": "C",
+      "full": "#C Glider synthesis of tripole."
+    },
+    {
+      "content": "https://conwaylife.com/wiki/Tripole",
+      "id": "C",
+      "full": "#C https://conwaylife.com/wiki/Tripole"
+    },
+    {
+      "content": "https://conwaylife.com/forums/viewtopic.php?p=45062#p45062",
+      "id": "C",
+      "full": "#C https://conwaylife.com/forums/viewtopic.php?p=45062#p45062"
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "format": "rle",
+  "comments": [
+    "https://conwaylife.com/wiki/Trans-boat_with_long%5E4_tail",
+    "https://www.conwaylife.com/patterns/transboatwithlong4tail.rle"
+  ],
+  "name": "transboatwithlong4tail.rle",
+  "creationData": "",
+  "topleft": null,
+  "width": 5,
+  "height": 9,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [1, 0],
+    [2, 0],
+    [1, -1],
+    [3, -1],
+    [2, -2],
+    [4, -2],
+    [4, -3],
+    [3, -4],
+    [2, -5],
+    [1, -6],
+    [0, -7],
+    [0, -8],
+    [1, -8]
+  ],
+  "hashLines": [
+    {
+      "content": "transboatwithlong4tail.rle",
+      "id": "N",
+      "full": "#N transboatwithlong4tail.rle"
+    },
+    {
+      "content": "https://conwaylife.com/wiki/Trans-boat_with_long%5E4_tail",
+      "id": "C",
+      "full": "#C https://conwaylife.com/wiki/Trans-boat_with_long%5E4_tail"
+    },
+    {
+      "content": "https://www.conwaylife.com/patterns/transboatwithlong4tail.rle",
+      "id": "C",
+      "full": "#C https://www.conwaylife.com/patterns/transboatwithlong4tail.rle"
+    }
+  ]
+}

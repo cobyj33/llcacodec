@@ -1,0 +1,54 @@
+{
+  "format": "rle",
+  "comments": [
+    "https://conwaylife.com/wiki/Loaf",
+    "https://www.conwaylife.com/patterns/honeyfarmrestoringloaf.rle"
+  ],
+  "name": "honeyfarmrestoringloaf.rle",
+  "creationData": "",
+  "topleft": null,
+  "width": 23,
+  "height": 8,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [21, 0],
+    [22, 0],
+    [21, -1],
+    [19, -2],
+    [21, -2],
+    [19, -3],
+    [20, -3],
+    [1, -4],
+    [2, -4],
+    [10, -4],
+    [11, -4],
+    [0, -5],
+    [3, -5],
+    [9, -5],
+    [12, -5],
+    [1, -6],
+    [2, -6],
+    [3, -6],
+    [10, -6],
+    [12, -6],
+    [11, -7]
+  ],
+  "hashLines": [
+    {
+      "content": "honeyfarmrestoringloaf.rle",
+      "id": "N",
+      "full": "#N honeyfarmrestoringloaf.rle"
+    },
+    {
+      "content": "https://conwaylife.com/wiki/Loaf",
+      "id": "C",
+      "full": "#C https://conwaylife.com/wiki/Loaf"
+    },
+    {
+      "content": "https://www.conwaylife.com/patterns/honeyfarmrestoringloaf.rle",
+      "id": "C",
+      "full": "#C https://www.conwaylife.com/patterns/honeyfarmrestoringloaf.rle"
+    }
+  ]
+}

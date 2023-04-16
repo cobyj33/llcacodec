@@ -1,0 +1,43 @@
+{
+  "format": "rle",
+  "comments": [
+    "A 14-cell still life made up of a block and a dock.",
+    "www.conwaylife.com/wiki/index.php?title=Block_and_dock"
+  ],
+  "name": "Block and dock",
+  "creationData": "",
+  "topleft": null,
+  "width": 6,
+  "height": 6,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [3, 0],
+    [4, 0],
+    [3, -1],
+    [4, -1],
+    [1, -3],
+    [2, -3],
+    [3, -3],
+    [4, -3],
+    [0, -4],
+    [5, -4],
+    [0, -5],
+    [1, -5],
+    [4, -5],
+    [5, -5]
+  ],
+  "hashLines": [
+    {"content": "Block and dock", "id": "N", "full": "#N Block and dock"},
+    {
+      "content": "A 14-cell still life made up of a block and a dock.",
+      "id": "C",
+      "full": "#C A 14-cell still life made up of a block and a dock."
+    },
+    {
+      "content": "www.conwaylife.com/wiki/index.php?title=Block_and_dock",
+      "id": "C",
+      "full": "#C www.conwaylife.com/wiki/index.php?title=Block_and_dock"
+    }
+  ]
+}

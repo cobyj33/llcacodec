@@ -1,0 +1,42 @@
+{
+  "format": "rle",
+  "comments": [
+    "https://conwaylife.com/wiki/Krake",
+    "https://www.conwaylife.com/patterns/krake.rle"
+  ],
+  "name": "krake.rle",
+  "creationData": "",
+  "topleft": null,
+  "width": 7,
+  "height": 5,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [0, 0],
+    [1, 0],
+    [5, 0],
+    [6, 0],
+    [0, -1],
+    [2, -1],
+    [4, -1],
+    [6, -1],
+    [2, -2],
+    [4, -2],
+    [2, -3],
+    [4, -3],
+    [3, -4]
+  ],
+  "hashLines": [
+    {"content": "krake.rle", "id": "N", "full": "#N krake.rle"},
+    {
+      "content": "https://conwaylife.com/wiki/Krake",
+      "id": "C",
+      "full": "#C https://conwaylife.com/wiki/Krake"
+    },
+    {
+      "content": "https://www.conwaylife.com/patterns/krake.rle",
+      "id": "C",
+      "full": "#C https://www.conwaylife.com/patterns/krake.rle"
+    }
+  ]
+}

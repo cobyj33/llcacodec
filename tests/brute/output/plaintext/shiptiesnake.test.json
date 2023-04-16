@@ -1,0 +1,29 @@
+{
+  "format": "plaintext",
+  "name": "shiptiesnake.cells",
+  "description": [
+    "https://conwaylife.com/wiki/Ship_tie_snake",
+    "https://www.conwaylife.com/patterns/shiptiesnake.cells"
+  ],
+  "matrix": [
+    [1, 1, 0, 1, 0, 0, 0],
+    [1, 0, 1, 1, 0, 0, 0],
+    [0, 0, 0, 0, 1, 1, 0],
+    [0, 0, 0, 0, 1, 0, 1],
+    [0, 0, 0, 0, 0, 1, 1]
+  ],
+  "liveCoordinates": [
+    [0, 0],
+    [1, 0],
+    [3, 0],
+    [0, -1],
+    [2, -1],
+    [3, -1],
+    [4, -2],
+    [5, -2],
+    [4, -3],
+    [6, -3],
+    [5, -4],
+    [6, -4]
+  ]
+}

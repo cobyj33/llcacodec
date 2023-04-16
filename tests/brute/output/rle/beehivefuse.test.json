@@ -1,0 +1,68 @@
+{
+  "format": "rle",
+  "comments": [
+    "A diagonal 3c/32 period 128 fuse.",
+    "www.conwaylife.com/wiki/index.php?title=Beehive_fuse"
+  ],
+  "name": "Beehive fuse",
+  "creationData": "",
+  "topleft": null,
+  "width": 30,
+  "height": 32,
+  "ruleString": "b3/s23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [0, 0],
+    [1, 0],
+    [3, 0],
+    [4, 0],
+    [0, -1],
+    [4, -1],
+    [1, -2],
+    [2, -2],
+    [3, -2],
+    [3, -5],
+    [4, -5],
+    [2, -6],
+    [5, -6],
+    [3, -7],
+    [4, -7],
+    [7, -13],
+    [6, -14],
+    [8, -14],
+    [6, -15],
+    [8, -15],
+    [7, -16],
+    [15, -17],
+    [16, -17],
+    [14, -18],
+    [17, -18],
+    [15, -19],
+    [16, -19],
+    [19, -25],
+    [18, -26],
+    [20, -26],
+    [18, -27],
+    [20, -27],
+    [19, -28],
+    [27, -29],
+    [28, -29],
+    [26, -30],
+    [29, -30],
+    [27, -31],
+    [28, -31]
+  ],
+  "hashLines": [
+    {"content": "Beehive fuse", "id": "N", "full": "#N Beehive fuse"},
+    {
+      "content": "A diagonal 3c/32 period 128 fuse.",
+      "id": "C",
+      "full": "#C A diagonal 3c/32 period 128 fuse."
+    },
+    {
+      "content": "www.conwaylife.com/wiki/index.php?title=Beehive_fuse",
+      "id": "C",
+      "full": "#C www.conwaylife.com/wiki/index.php?title=Beehive_fuse"
+    }
+  ]
+}

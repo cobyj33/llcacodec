@@ -1,0 +1,51 @@
+{
+  "format": "rle",
+  "comments": [
+    "https://conwaylife.com/wiki/Beehive_at_loaf",
+    "https://www.conwaylife.com/patterns/bakeryandangel2beehiveatloaf.rle"
+  ],
+  "name": "bakeryandangel2beehiveatloaf.rle",
+  "creationData": "",
+  "topleft": null,
+  "width": 13,
+  "height": 6,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [11, 0],
+    [2, -1],
+    [10, -1],
+    [11, -1],
+    [1, -2],
+    [3, -2],
+    [9, -2],
+    [12, -2],
+    [0, -3],
+    [4, -3],
+    [10, -3],
+    [11, -3],
+    [1, -4],
+    [4, -4],
+    [11, -4],
+    [2, -5],
+    [3, -5],
+    [4, -5]
+  ],
+  "hashLines": [
+    {
+      "content": "bakeryandangel2beehiveatloaf.rle",
+      "id": "N",
+      "full": "#N bakeryandangel2beehiveatloaf.rle"
+    },
+    {
+      "content": "https://conwaylife.com/wiki/Beehive_at_loaf",
+      "id": "C",
+      "full": "#C https://conwaylife.com/wiki/Beehive_at_loaf"
+    },
+    {
+      "content": "https://www.conwaylife.com/patterns/bakeryandangel2beehiveatloaf.rle",
+      "id": "C",
+      "full": "#C https://www.conwaylife.com/patterns/bakeryandangel2beehiveatloaf.rle"
+    }
+  ]
+}

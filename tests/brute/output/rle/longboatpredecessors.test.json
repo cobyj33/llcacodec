@@ -1,0 +1,45 @@
+{
+  "format": "rle",
+  "comments": [
+    "https://conwaylife.com/wiki/Long_boat",
+    "https://www.conwaylife.com/patterns/longboatpredecessors.rle"
+  ],
+  "name": "longboatpredecessors.rle",
+  "creationData": "",
+  "topleft": null,
+  "width": 12,
+  "height": 5,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [0, 0],
+    [8, 0],
+    [0, -1],
+    [8, -1],
+    [0, -2],
+    [8, -2],
+    [1, -3],
+    [3, -3],
+    [9, -3],
+    [2, -4],
+    [10, -4],
+    [11, -4]
+  ],
+  "hashLines": [
+    {
+      "content": "longboatpredecessors.rle",
+      "id": "N",
+      "full": "#N longboatpredecessors.rle"
+    },
+    {
+      "content": "https://conwaylife.com/wiki/Long_boat",
+      "id": "C",
+      "full": "#C https://conwaylife.com/wiki/Long_boat"
+    },
+    {
+      "content": "https://www.conwaylife.com/patterns/longboatpredecessors.rle",
+      "id": "C",
+      "full": "#C https://www.conwaylife.com/patterns/longboatpredecessors.rle"
+    }
+  ]
+}

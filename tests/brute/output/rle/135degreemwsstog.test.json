@@ -1,0 +1,66 @@
+{
+  "format": "rle",
+  "comments": [
+    "https://www.conwaylife.com/wiki/135-degree_MWSS-to-G",
+    "https://www.conwaylife.com/patterns/135degreemwsstog.rle"
+  ],
+  "name": "135-degree MWSS-to-G",
+  "creationData": "Matthias Merzenich, June 2013",
+  "topleft": null,
+  "width": 14,
+  "height": 11,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [6, 0],
+    [7, 0],
+    [6, -1],
+    [8, -1],
+    [10, -1],
+    [11, -1],
+    [13, -1],
+    [8, -2],
+    [10, -2],
+    [12, -2],
+    [13, -2],
+    [8, -3],
+    [9, -3],
+    [1, -6],
+    [2, -6],
+    [3, -6],
+    [4, -6],
+    [5, -6],
+    [11, -6],
+    [12, -6],
+    [0, -7],
+    [5, -7],
+    [11, -7],
+    [12, -7],
+    [5, -8],
+    [0, -9],
+    [4, -9],
+    [2, -10]
+  ],
+  "hashLines": [
+    {
+      "content": "135-degree MWSS-to-G",
+      "id": "N",
+      "full": "#N 135-degree MWSS-to-G"
+    },
+    {
+      "content": "Matthias Merzenich, June 2013",
+      "id": "O",
+      "full": "#O Matthias Merzenich, June 2013"
+    },
+    {
+      "content": "https://www.conwaylife.com/wiki/135-degree_MWSS-to-G",
+      "id": "C",
+      "full": "#C https://www.conwaylife.com/wiki/135-degree_MWSS-to-G"
+    },
+    {
+      "content": "https://www.conwaylife.com/patterns/135degreemwsstog.rle",
+      "id": "C",
+      "full": "#C https://www.conwaylife.com/patterns/135degreemwsstog.rle"
+    }
+  ]
+}

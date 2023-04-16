@@ -1,0 +1,44 @@
+{
+  "format": "rle",
+  "comments": [
+    "An 11-cell still life.",
+    "https://www.conwaylife.com/wiki/index.php?title=Trans-boat_with_nine"
+  ],
+  "name": "Trans-boat with nine",
+  "creationData": "",
+  "topleft": null,
+  "width": 6,
+  "height": 6,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [0, 0],
+    [1, 0],
+    [0, -1],
+    [2, -1],
+    [1, -2],
+    [2, -3],
+    [3, -3],
+    [4, -3],
+    [5, -4],
+    [4, -5],
+    [5, -5]
+  ],
+  "hashLines": [
+    {
+      "content": "Trans-boat with nine",
+      "id": "N",
+      "full": "#N Trans-boat with nine"
+    },
+    {
+      "content": "An 11-cell still life.",
+      "id": "C",
+      "full": "#C An 11-cell still life."
+    },
+    {
+      "content": "https://www.conwaylife.com/wiki/index.php?title=Trans-boat_with_nine",
+      "id": "C",
+      "full": "#C https://www.conwaylife.com/wiki/index.php?title=Trans-boat_with_nine"
+    }
+  ]
+}

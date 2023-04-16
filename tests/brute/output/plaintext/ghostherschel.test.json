@@ -1,0 +1,10 @@
+{
+  "format": "plaintext",
+  "name": "ghostherschel.cells",
+  "description": [
+    "https://conwaylife.com/wiki/Ghost_Herschel",
+    "https://www.conwaylife.com/patterns/ghostherschel.cells"
+  ],
+  "matrix": [[1, 0, 0], [1, 0, 0], [1, 1, 1], [0, 0, 1]],
+  "liveCoordinates": [[0, 0], [0, -1], [0, -2], [1, -2], [2, -2], [2, -3]]
+}

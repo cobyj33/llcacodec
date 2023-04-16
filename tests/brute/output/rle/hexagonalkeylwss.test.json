@@ -1,0 +1,51 @@
+{
+  "format": "rle",
+  "comments": [
+    "https://conwaylife.com/wiki/Hexagonal_key",
+    "https://www.conwaylife.com/patterns/hexagonalkeylwss.rle"
+  ],
+  "name": "hexagonalkeylwss.rle",
+  "creationData": "",
+  "topleft": null,
+  "width": 6,
+  "height": 10,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [2, 0],
+    [4, 0],
+    [2, -1],
+    [3, -1],
+    [3, -2],
+    [2, -4],
+    [3, -4],
+    [2, -5],
+    [4, -6],
+    [0, -7],
+    [1, -7],
+    [2, -7],
+    [3, -7],
+    [5, -7],
+    [0, -8],
+    [3, -8],
+    [5, -8],
+    [4, -9]
+  ],
+  "hashLines": [
+    {
+      "content": "hexagonalkeylwss.rle",
+      "id": "N",
+      "full": "#N hexagonalkeylwss.rle"
+    },
+    {
+      "content": "https://conwaylife.com/wiki/Hexagonal_key",
+      "id": "C",
+      "full": "#C https://conwaylife.com/wiki/Hexagonal_key"
+    },
+    {
+      "content": "https://www.conwaylife.com/patterns/hexagonalkeylwss.rle",
+      "id": "C",
+      "full": "#C https://www.conwaylife.com/patterns/hexagonalkeylwss.rle"
+    }
+  ]
+}

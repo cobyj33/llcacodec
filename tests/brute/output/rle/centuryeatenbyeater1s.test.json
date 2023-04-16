@@ -1,0 +1,66 @@
+{
+  "format": "rle",
+  "comments": [
+    "https://conwaylife.com/wiki/Century",
+    "https://www.conwaylife.com/patterns/centuryeatenbyeater1s.rle"
+  ],
+  "name": "centuryeatenbyeater1s.rle",
+  "creationData": "",
+  "topleft": null,
+  "width": 21,
+  "height": 21,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [17, 0],
+    [18, 0],
+    [15, -1],
+    [16, -1],
+    [17, -1],
+    [16, -2],
+    [10, -4],
+    [9, -5],
+    [11, -5],
+    [9, -6],
+    [11, -6],
+    [10, -7],
+    [2, -12],
+    [3, -12],
+    [17, -12],
+    [18, -12],
+    [1, -13],
+    [3, -13],
+    [17, -13],
+    [19, -13],
+    [1, -14],
+    [19, -14],
+    [0, -15],
+    [1, -15],
+    [19, -15],
+    [20, -15],
+    [7, -17],
+    [8, -17],
+    [8, -18],
+    [5, -19],
+    [6, -19],
+    [7, -19],
+    [5, -20]
+  ],
+  "hashLines": [
+    {
+      "content": "centuryeatenbyeater1s.rle",
+      "id": "N",
+      "full": "#N centuryeatenbyeater1s.rle"
+    },
+    {
+      "content": "https://conwaylife.com/wiki/Century",
+      "id": "C",
+      "full": "#C https://conwaylife.com/wiki/Century"
+    },
+    {
+      "content": "https://www.conwaylife.com/patterns/centuryeatenbyeater1s.rle",
+      "id": "C",
+      "full": "#C https://www.conwaylife.com/patterns/centuryeatenbyeater1s.rle"
+    }
+  ]
+}

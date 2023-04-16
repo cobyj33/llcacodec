@@ -1,0 +1,52 @@
+{
+  "format": "rle",
+  "comments": [
+    "A period 2 oscillator that was found in 1971.",
+    "www.conwaylife.com/wiki/index.php?title=Light_bulb"
+  ],
+  "name": "Light bulb",
+  "creationData": "",
+  "topleft": null,
+  "width": 7,
+  "height": 9,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [1, 0],
+    [2, 0],
+    [4, 0],
+    [1, -1],
+    [3, -1],
+    [4, -1],
+    [2, -3],
+    [3, -3],
+    [4, -3],
+    [1, -4],
+    [5, -4],
+    [1, -5],
+    [5, -5],
+    [2, -6],
+    [4, -6],
+    [0, -7],
+    [2, -7],
+    [4, -7],
+    [6, -7],
+    [0, -8],
+    [1, -8],
+    [5, -8],
+    [6, -8]
+  ],
+  "hashLines": [
+    {"content": "Light bulb", "id": "N", "full": "#N Light bulb"},
+    {
+      "content": "A period 2 oscillator that was found in 1971.",
+      "id": "C",
+      "full": "#C A period 2 oscillator that was found in 1971."
+    },
+    {
+      "content": "www.conwaylife.com/wiki/index.php?title=Light_bulb",
+      "id": "C",
+      "full": "#C www.conwaylife.com/wiki/index.php?title=Light_bulb"
+    }
+  ]
+}

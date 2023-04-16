@@ -1,0 +1,71 @@
+{
+  "format": "rle",
+  "comments": [
+    "It had been the smallest known pattern, that exhibits quadratic population",
+    "growth, before it was superseded by 24-cell quadratic growth and",
+    "switch engine ping-pong.",
+    "www.conwaylife.com/wiki/25-cell_quadratic_growth"
+  ],
+  "name": "25-cell quadratic growth",
+  "creationData": "Michael Simkin",
+  "topleft": null,
+  "width": 21372,
+  "height": 172,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [21368, 0],
+    [21368, -1],
+    [21369, -2],
+    [21370, -2],
+    [21371, -3],
+    [21371, -4],
+    [21324, -5],
+    [21371, -5],
+    [21325, -6],
+    [21371, -6],
+    [21326, -7],
+    [21325, -8],
+    [21324, -9],
+    [21326, -10],
+    [21327, -10],
+    [21328, -10],
+    [70, -161],
+    [71, -161],
+    [71, -162],
+    [8, -163],
+    [9, -163],
+    [9, -164],
+    [0, -169],
+    [0, -170],
+    [0, -171]
+  ],
+  "hashLines": [
+    {
+      "content": "25-cell quadratic growth",
+      "id": "N",
+      "full": "#N 25-cell quadratic growth"
+    },
+    {"content": "Michael Simkin", "id": "O", "full": "#O Michael Simkin"},
+    {
+      "content": "It had been the smallest known pattern, that exhibits quadratic population",
+      "id": "C",
+      "full": "#C It had been the smallest known pattern, that exhibits quadratic population"
+    },
+    {
+      "content": "growth, before it was superseded by 24-cell quadratic growth and",
+      "id": "C",
+      "full": "#C growth, before it was superseded by 24-cell quadratic growth and"
+    },
+    {
+      "content": "switch engine ping-pong.",
+      "id": "C",
+      "full": "#C switch engine ping-pong."
+    },
+    {
+      "content": "www.conwaylife.com/wiki/25-cell_quadratic_growth",
+      "id": "C",
+      "full": "#C www.conwaylife.com/wiki/25-cell_quadratic_growth"
+    }
+  ]
+}

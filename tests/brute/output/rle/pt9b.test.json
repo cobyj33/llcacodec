@@ -1,0 +1,51 @@
+{
+  "format": "rle",
+  "comments": [
+    "https://conwaylife.com/wiki/PT9B",
+    "https://conwaylife.com/patterns/pt9b.rle"
+  ],
+  "name": "pt9b.rle",
+  "creationData": "",
+  "topleft": null,
+  "width": 11,
+  "height": 10,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [10, 0],
+    [1, -1],
+    [2, -1],
+    [8, -1],
+    [9, -1],
+    [10, -1],
+    [1, -2],
+    [2, -2],
+    [7, -2],
+    [7, -3],
+    [8, -3],
+    [6, -6],
+    [7, -6],
+    [0, -7],
+    [1, -7],
+    [2, -7],
+    [6, -7],
+    [7, -7],
+    [0, -8],
+    [2, -8],
+    [0, -9],
+    [2, -9]
+  ],
+  "hashLines": [
+    {"content": "pt9b.rle", "id": "N", "full": "#N pt9b.rle"},
+    {
+      "content": "https://conwaylife.com/wiki/PT9B",
+      "id": "C",
+      "full": "#C https://conwaylife.com/wiki/PT9B"
+    },
+    {
+      "content": "https://conwaylife.com/patterns/pt9b.rle",
+      "id": "C",
+      "full": "#C https://conwaylife.com/patterns/pt9b.rle"
+    }
+  ]
+}

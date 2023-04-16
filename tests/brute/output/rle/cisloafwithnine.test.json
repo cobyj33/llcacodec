@@ -1,0 +1,46 @@
+{
+  "format": "rle",
+  "comments": [
+    "https://conwaylife.com/wiki/Cis-loaf_with_nine",
+    "https://www.conwaylife.com/patterns/cisloafwithnine.rle"
+  ],
+  "name": "cisloafwithnine.rle",
+  "creationData": "",
+  "topleft": null,
+  "width": 7,
+  "height": 6,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [4, 0],
+    [5, 0],
+    [3, -1],
+    [6, -1],
+    [2, -2],
+    [4, -2],
+    [6, -2],
+    [2, -3],
+    [5, -3],
+    [0, -4],
+    [2, -4],
+    [0, -5],
+    [1, -5]
+  ],
+  "hashLines": [
+    {
+      "content": "cisloafwithnine.rle",
+      "id": "N",
+      "full": "#N cisloafwithnine.rle"
+    },
+    {
+      "content": "https://conwaylife.com/wiki/Cis-loaf_with_nine",
+      "id": "C",
+      "full": "#C https://conwaylife.com/wiki/Cis-loaf_with_nine"
+    },
+    {
+      "content": "https://www.conwaylife.com/patterns/cisloafwithnine.rle",
+      "id": "C",
+      "full": "#C https://www.conwaylife.com/patterns/cisloafwithnine.rle"
+    }
+  ]
+}

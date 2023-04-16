@@ -1,0 +1,28 @@
+{
+  "format": "plaintext",
+  "name": "xs10_ggka23z1.cells",
+  "description": [
+    "https://conwaylife.com/wiki/Melusine",
+    "https://www.conwaylife.com/patterns/xs10_ggka23z1.cells"
+  ],
+  "matrix": [
+    [1, 1, 0, 0, 0, 0],
+    [0, 1, 0, 0, 0, 0],
+    [0, 1, 0, 1, 0, 0],
+    [0, 0, 1, 0, 1, 0],
+    [0, 0, 0, 0, 1, 0],
+    [0, 0, 0, 0, 1, 1]
+  ],
+  "liveCoordinates": [
+    [0, 0],
+    [1, 0],
+    [1, -1],
+    [1, -2],
+    [3, -2],
+    [2, -3],
+    [4, -3],
+    [4, -4],
+    [4, -5],
+    [5, -5]
+  ]
+}

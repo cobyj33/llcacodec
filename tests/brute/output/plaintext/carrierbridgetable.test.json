@@ -1,0 +1,29 @@
+{
+  "format": "plaintext",
+  "name": "carrierbridgetable.cells",
+  "description": [
+    "https://conwaylife.com/wiki/Carrier_bridge_table",
+    "https://www.conwaylife.com/patterns/carrierbridgetable.cells"
+  ],
+  "matrix": [
+    [1, 0, 0, 1, 0, 0],
+    [1, 1, 1, 1, 0, 0],
+    [0, 0, 0, 0, 1, 1],
+    [0, 0, 1, 0, 0, 1],
+    [0, 0, 1, 1, 0, 0]
+  ],
+  "liveCoordinates": [
+    [0, 0],
+    [3, 0],
+    [0, -1],
+    [1, -1],
+    [2, -1],
+    [3, -1],
+    [4, -2],
+    [5, -2],
+    [2, -3],
+    [5, -3],
+    [2, -4],
+    [3, -4]
+  ]
+}

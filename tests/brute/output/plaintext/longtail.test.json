@@ -1,0 +1,10 @@
+{
+  "format": "plaintext",
+  "name": "longtail.cells",
+  "description": [
+    "https://conwaylife.com/wiki/Long_tail",
+    "https://www.conwaylife.com/patterns/longtail.cells"
+  ],
+  "matrix": [[0, 1], [0, 1], [1, 0], [1, 1]],
+  "liveCoordinates": [[1, 0], [1, -1], [0, -2], [0, -3], [1, -3]]
+}

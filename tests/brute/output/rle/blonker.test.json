@@ -1,0 +1,54 @@
+{
+  "format": "rle",
+  "comments": [
+    "https://conwaylife.com/wiki/Blonker",
+    "https://conwaylife.com/patterns/blonker.rle"
+  ],
+  "name": "Blonker",
+  "creationData": "Nicolay Beluchenko",
+  "topleft": null,
+  "width": 12,
+  "height": 8,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [0, 0],
+    [3, 0],
+    [4, 0],
+    [9, 0],
+    [0, -1],
+    [1, -1],
+    [4, -1],
+    [6, -1],
+    [7, -1],
+    [9, -1],
+    [4, -2],
+    [6, -2],
+    [5, -3],
+    [6, -3],
+    [7, -4],
+    [7, -5],
+    [11, -5],
+    [9, -6],
+    [11, -6],
+    [10, -7]
+  ],
+  "hashLines": [
+    {"content": "Blonker", "id": "N", "full": "#N Blonker"},
+    {
+      "content": "Nicolay Beluchenko",
+      "id": "O",
+      "full": "#O Nicolay Beluchenko"
+    },
+    {
+      "content": "https://conwaylife.com/wiki/Blonker",
+      "id": "C",
+      "full": "#C https://conwaylife.com/wiki/Blonker"
+    },
+    {
+      "content": "https://conwaylife.com/patterns/blonker.rle",
+      "id": "C",
+      "full": "#C https://conwaylife.com/patterns/blonker.rle"
+    }
+  ]
+}

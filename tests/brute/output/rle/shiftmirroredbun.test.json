@@ -1,0 +1,47 @@
+{
+  "format": "rle",
+  "comments": [
+    "https://conwaylife.com/wiki/Shift-mirrored_bun",
+    "https://www.conwaylife.com/patterns/shiftmirroredbun.rle"
+  ],
+  "name": "shiftmirroredbun.rle",
+  "creationData": "",
+  "topleft": null,
+  "width": 7,
+  "height": 6,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [1, 0],
+    [0, -1],
+    [2, -1],
+    [0, -2],
+    [2, -2],
+    [5, -2],
+    [1, -3],
+    [2, -3],
+    [4, -3],
+    [6, -3],
+    [4, -4],
+    [6, -4],
+    [4, -5],
+    [5, -5]
+  ],
+  "hashLines": [
+    {
+      "content": "shiftmirroredbun.rle",
+      "id": "N",
+      "full": "#N shiftmirroredbun.rle"
+    },
+    {
+      "content": "https://conwaylife.com/wiki/Shift-mirrored_bun",
+      "id": "C",
+      "full": "#C https://conwaylife.com/wiki/Shift-mirrored_bun"
+    },
+    {
+      "content": "https://www.conwaylife.com/patterns/shiftmirroredbun.rle",
+      "id": "C",
+      "full": "#C https://www.conwaylife.com/patterns/shiftmirroredbun.rle"
+    }
+  ]
+}

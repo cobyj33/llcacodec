@@ -1,0 +1,44 @@
+{
+  "format": "rle",
+  "comments": [
+    "https://conwaylife.com/wiki/Octapole",
+    "https://conwaylife.com/patterns/octapole.rle"
+  ],
+  "name": "Octapole",
+  "creationData": "Unknown",
+  "topleft": null,
+  "width": 11,
+  "height": 11,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [9, 0],
+    [10, 0],
+    [8, -1],
+    [10, -1],
+    [6, -3],
+    [8, -3],
+    [4, -5],
+    [6, -5],
+    [2, -7],
+    [4, -7],
+    [0, -9],
+    [2, -9],
+    [0, -10],
+    [1, -10]
+  ],
+  "hashLines": [
+    {"content": "Octapole", "id": "N", "full": "#N Octapole"},
+    {"content": "Unknown", "id": "O", "full": "#O Unknown"},
+    {
+      "content": "https://conwaylife.com/wiki/Octapole",
+      "id": "C",
+      "full": "#C https://conwaylife.com/wiki/Octapole"
+    },
+    {
+      "content": "https://conwaylife.com/patterns/octapole.rle",
+      "id": "C",
+      "full": "#C https://conwaylife.com/patterns/octapole.rle"
+    }
+  ]
+}

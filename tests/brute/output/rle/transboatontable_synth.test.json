@@ -1,0 +1,64 @@
+{
+  "format": "rle",
+  "comments": [
+    "https://conwaylife.com/wiki/Trans-boat_on_table",
+    "https://conwaylife.com/patterns/transboatontable_synth.rle"
+  ],
+  "name": "transboatontable_synth.rle",
+  "creationData": "",
+  "topleft": null,
+  "width": 40,
+  "height": 10,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [10, 0],
+    [11, 0],
+    [0, -1],
+    [2, -1],
+    [9, -1],
+    [10, -1],
+    [1, -2],
+    [2, -2],
+    [7, -2],
+    [11, -2],
+    [1, -3],
+    [5, -3],
+    [7, -3],
+    [35, -3],
+    [6, -4],
+    [7, -4],
+    [34, -4],
+    [36, -4],
+    [38, -4],
+    [39, -4],
+    [35, -5],
+    [36, -5],
+    [38, -5],
+    [38, -6],
+    [5, -7],
+    [38, -7],
+    [39, -7],
+    [5, -8],
+    [6, -8],
+    [4, -9],
+    [6, -9]
+  ],
+  "hashLines": [
+    {
+      "content": "transboatontable_synth.rle",
+      "id": "N",
+      "full": "#N transboatontable_synth.rle"
+    },
+    {
+      "content": "https://conwaylife.com/wiki/Trans-boat_on_table",
+      "id": "C",
+      "full": "#C https://conwaylife.com/wiki/Trans-boat_on_table"
+    },
+    {
+      "content": "https://conwaylife.com/patterns/transboatontable_synth.rle",
+      "id": "C",
+      "full": "#C https://conwaylife.com/patterns/transboatontable_synth.rle"
+    }
+  ]
+}

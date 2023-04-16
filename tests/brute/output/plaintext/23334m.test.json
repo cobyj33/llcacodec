@@ -1,0 +1,33 @@
+{
+  "format": "plaintext",
+  "name": "23334M",
+  "description": [
+    "Author: Tomas Rokicki",
+    "A methuselah with lifespan 23334 found on February 20, 2005.",
+    "www.conwaylife.com/wiki/index.php?title=23334M"
+  ],
+  "matrix": [
+    [0, 0, 1, 0, 0],
+    [1, 1, 0, 0, 0],
+    [0, 1, 0, 0, 0],
+    [1, 0, 0, 1, 0],
+    [0, 0, 0, 0, 1],
+    [0, 1, 0, 0, 1],
+    [0, 0, 1, 0, 1],
+    [0, 1, 0, 0, 0]
+  ],
+  "liveCoordinates": [
+    [2, 0],
+    [0, -1],
+    [1, -1],
+    [1, -2],
+    [0, -3],
+    [3, -3],
+    [4, -4],
+    [1, -5],
+    [4, -5],
+    [2, -6],
+    [4, -6],
+    [1, -7]
+  ]
+}

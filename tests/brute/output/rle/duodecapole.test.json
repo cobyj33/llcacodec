@@ -1,0 +1,48 @@
+{
+  "format": "rle",
+  "comments": [
+    "https://conwaylife.com/wiki/Duodecapole",
+    "https://conwaylife.com/patterns/duodecapole.rle"
+  ],
+  "name": "Duodecapole",
+  "creationData": "Unknown",
+  "topleft": null,
+  "width": 15,
+  "height": 15,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [13, 0],
+    [14, 0],
+    [12, -1],
+    [14, -1],
+    [10, -3],
+    [12, -3],
+    [8, -5],
+    [10, -5],
+    [6, -7],
+    [8, -7],
+    [4, -9],
+    [6, -9],
+    [2, -11],
+    [4, -11],
+    [0, -13],
+    [2, -13],
+    [0, -14],
+    [1, -14]
+  ],
+  "hashLines": [
+    {"content": "Duodecapole", "id": "N", "full": "#N Duodecapole"},
+    {"content": "Unknown", "id": "O", "full": "#O Unknown"},
+    {
+      "content": "https://conwaylife.com/wiki/Duodecapole",
+      "id": "C",
+      "full": "#C https://conwaylife.com/wiki/Duodecapole"
+    },
+    {
+      "content": "https://conwaylife.com/patterns/duodecapole.rle",
+      "id": "C",
+      "full": "#C https://conwaylife.com/patterns/duodecapole.rle"
+    }
+  ]
+}

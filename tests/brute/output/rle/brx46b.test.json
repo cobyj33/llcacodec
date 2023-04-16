@@ -1,0 +1,61 @@
+{
+  "format": "rle",
+  "comments": [
+    "Repeat time with standard connections is 60 ticks.",
+    "https://conwaylife.com/wiki/BRx46B",
+    "https://www.conwaylife.com/patterns/brx46b.rle"
+  ],
+  "name": "BRx46B",
+  "creationData": "Michael Simkin, 25 April 2016",
+  "topleft": null,
+  "width": 13,
+  "height": 10,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [11, 0],
+    [12, 0],
+    [2, -1],
+    [3, -1],
+    [11, -1],
+    [12, -1],
+    [2, -2],
+    [3, -2],
+    [0, -5],
+    [11, -5],
+    [1, -6],
+    [10, -6],
+    [12, -6],
+    [1, -7],
+    [2, -7],
+    [10, -7],
+    [12, -7],
+    [0, -8],
+    [1, -8],
+    [11, -8],
+    [0, -9]
+  ],
+  "hashLines": [
+    {"content": "BRx46B", "id": "N", "full": "#N BRx46B"},
+    {
+      "content": "Michael Simkin, 25 April 2016",
+      "id": "O",
+      "full": "#O Michael Simkin, 25 April 2016"
+    },
+    {
+      "content": "Repeat time with standard connections is 60 ticks.",
+      "id": "C",
+      "full": "#C Repeat time with standard connections is 60 ticks."
+    },
+    {
+      "content": "https://conwaylife.com/wiki/BRx46B",
+      "id": "C",
+      "full": "#C https://conwaylife.com/wiki/BRx46B"
+    },
+    {
+      "content": "https://www.conwaylife.com/patterns/brx46b.rle",
+      "id": "C",
+      "full": "#C https://www.conwaylife.com/patterns/brx46b.rle"
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "format": "rle",
+  "comments": [
+    "https://conwaylife.com/wiki/Aircraft_carrier_siamese_canoe",
+    "https://conwaylife.com/patterns/carriersiamesecanoe.rle"
+  ],
+  "name": "carriersiamesecanoe.rle",
+  "creationData": "",
+  "topleft": null,
+  "width": 6,
+  "height": 8,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [0, 0],
+    [1, 0],
+    [0, -1],
+    [2, -2],
+    [1, -3],
+    [2, -3],
+    [1, -4],
+    [2, -5],
+    [3, -6],
+    [5, -6],
+    [4, -7],
+    [5, -7]
+  ],
+  "hashLines": [
+    {
+      "content": "carriersiamesecanoe.rle",
+      "id": "N",
+      "full": "#N carriersiamesecanoe.rle"
+    },
+    {
+      "content": "https://conwaylife.com/wiki/Aircraft_carrier_siamese_canoe",
+      "id": "C",
+      "full": "#C https://conwaylife.com/wiki/Aircraft_carrier_siamese_canoe"
+    },
+    {
+      "content": "https://conwaylife.com/patterns/carriersiamesecanoe.rle",
+      "id": "C",
+      "full": "#C https://conwaylife.com/patterns/carriersiamesecanoe.rle"
+    }
+  ]
+}

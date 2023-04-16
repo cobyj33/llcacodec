@@ -1,0 +1,26 @@
+{
+  "format": "plaintext",
+  "name": "transverylonghookwithtail.cells",
+  "description": [
+    "https://conwaylife.com/wiki/Trans-very_long_hook_with_tail",
+    "https://www.conwaylife.com/patterns/transverylonghookwithtail.cells"
+  ],
+  "matrix": [
+    [0, 0, 0, 0, 1, 0, 0],
+    [0, 0, 0, 1, 0, 1, 0],
+    [1, 0, 1, 0, 0, 1, 0],
+    [1, 1, 0, 0, 0, 1, 1]
+  ],
+  "liveCoordinates": [
+    [4, 0],
+    [3, -1],
+    [5, -1],
+    [0, -2],
+    [2, -2],
+    [5, -2],
+    [0, -3],
+    [1, -3],
+    [5, -3],
+    [6, -3]
+  ]
+}

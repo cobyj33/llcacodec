@@ -1,0 +1,10 @@
+{
+  "format": "plaintext",
+  "name": "cavity.cells",
+  "description": [
+    "https://conwaylife.com/wiki/Cavity",
+    "https://www.conwaylife.com/patterns/cavity.cells"
+  ],
+  "matrix": [[0, 1, 0, 1], [1, 0, 0, 1], [0, 1, 1, 0]],
+  "liveCoordinates": [[1, 0], [3, 0], [0, -1], [3, -1], [1, -2], [2, -2]]
+}

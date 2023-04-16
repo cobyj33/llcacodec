@@ -1,0 +1,38 @@
+{
+  "format": "rle",
+  "comments": ["An 11-bit induction coil.", "https://conwaylife.com/wiki/Worm"],
+  "name": "Worm",
+  "creationData": "?",
+  "topleft": null,
+  "width": 6,
+  "height": 4,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [1, 0],
+    [2, 0],
+    [0, -1],
+    [2, -1],
+    [0, -2],
+    [5, -2],
+    [1, -3],
+    [2, -3],
+    [3, -3],
+    [4, -3],
+    [5, -3]
+  ],
+  "hashLines": [
+    {"content": "Worm", "id": "N", "full": "#N Worm"},
+    {"content": "?", "id": "O", "full": "#O ?"},
+    {
+      "content": "An 11-bit induction coil.",
+      "id": "C",
+      "full": "#C An 11-bit induction coil."
+    },
+    {
+      "content": "https://conwaylife.com/wiki/Worm",
+      "id": "C",
+      "full": "#C https://conwaylife.com/wiki/Worm"
+    }
+  ]
+}

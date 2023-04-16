@@ -1,0 +1,40 @@
+{
+  "format": "rle",
+  "comments": [
+    "An 11-cell still life made up of a ship and a boat.",
+    "www.conwaylife.com/wiki/index.php?title=Boat-ship-tie"
+  ],
+  "name": "Boat-ship-tie",
+  "creationData": "",
+  "topleft": null,
+  "width": 6,
+  "height": 6,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [0, 0],
+    [1, 0],
+    [0, -1],
+    [2, -1],
+    [1, -2],
+    [2, -2],
+    [3, -3],
+    [4, -3],
+    [3, -4],
+    [5, -4],
+    [4, -5]
+  ],
+  "hashLines": [
+    {"content": "Boat-ship-tie", "id": "N", "full": "#N Boat-ship-tie"},
+    {
+      "content": "An 11-cell still life made up of a ship and a boat.",
+      "id": "C",
+      "full": "#C An 11-cell still life made up of a ship and a boat."
+    },
+    {
+      "content": "www.conwaylife.com/wiki/index.php?title=Boat-ship-tie",
+      "id": "C",
+      "full": "#C www.conwaylife.com/wiki/index.php?title=Boat-ship-tie"
+    }
+  ]
+}

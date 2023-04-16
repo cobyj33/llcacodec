@@ -1,0 +1,29 @@
+{
+  "format": "rle",
+  "comments": [
+    "https://conwaylife.com/wiki/Feather",
+    "https://conwaylife.com/patterns/feather.rle"
+  ],
+  "name": "Feather",
+  "creationData": "Unknown",
+  "topleft": null,
+  "width": 3,
+  "height": 4,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [[0, 0], [1, 0], [0, -1], [1, -2], [2, -3]],
+  "hashLines": [
+    {"content": "Feather", "id": "N", "full": "#N Feather"},
+    {"content": "Unknown", "id": "O", "full": "#O Unknown"},
+    {
+      "content": "https://conwaylife.com/wiki/Feather",
+      "id": "C",
+      "full": "#C https://conwaylife.com/wiki/Feather"
+    },
+    {
+      "content": "https://conwaylife.com/patterns/feather.rle",
+      "id": "C",
+      "full": "#C https://conwaylife.com/patterns/feather.rle"
+    }
+  ]
+}

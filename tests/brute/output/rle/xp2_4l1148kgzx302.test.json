@@ -1,0 +1,47 @@
+{
+  "format": "rle",
+  "comments": [
+    "https://conwaylife.com/wiki/Xp2_4l1148kgzx302",
+    "https://www.conwaylife.com/patterns/xp2_4l1148kgzx302.rle"
+  ],
+  "name": "xp2_4l1148kgzx302.rle",
+  "creationData": "",
+  "topleft": null,
+  "width": 8,
+  "height": 7,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [1, 0],
+    [2, 0],
+    [3, 0],
+    [0, -2],
+    [1, -2],
+    [4, -2],
+    [6, -2],
+    [5, -3],
+    [1, -4],
+    [6, -4],
+    [7, -4],
+    [3, -5],
+    [3, -6],
+    [5, -6]
+  ],
+  "hashLines": [
+    {
+      "content": "xp2_4l1148kgzx302.rle",
+      "id": "N",
+      "full": "#N xp2_4l1148kgzx302.rle"
+    },
+    {
+      "content": "https://conwaylife.com/wiki/Xp2_4l1148kgzx302",
+      "id": "C",
+      "full": "#C https://conwaylife.com/wiki/Xp2_4l1148kgzx302"
+    },
+    {
+      "content": "https://www.conwaylife.com/patterns/xp2_4l1148kgzx302.rle",
+      "id": "C",
+      "full": "#C https://www.conwaylife.com/patterns/xp2_4l1148kgzx302.rle"
+    }
+  ]
+}

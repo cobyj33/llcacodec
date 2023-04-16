@@ -1,0 +1,45 @@
+{
+  "format": "rle",
+  "comments": [
+    "https://conwaylife.com/wiki/Trans-ship_on_table",
+    "https://conwaylife.com/patterns/transshipontable.rle"
+  ],
+  "name": "transshipontable.rle",
+  "creationData": "",
+  "topleft": null,
+  "width": 6,
+  "height": 5,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [0, 0],
+    [1, 0],
+    [0, -1],
+    [2, -1],
+    [4, -1],
+    [5, -1],
+    [1, -2],
+    [2, -2],
+    [4, -2],
+    [4, -3],
+    [4, -4],
+    [5, -4]
+  ],
+  "hashLines": [
+    {
+      "content": "transshipontable.rle",
+      "id": "N",
+      "full": "#N transshipontable.rle"
+    },
+    {
+      "content": "https://conwaylife.com/wiki/Trans-ship_on_table",
+      "id": "C",
+      "full": "#C https://conwaylife.com/wiki/Trans-ship_on_table"
+    },
+    {
+      "content": "https://conwaylife.com/patterns/transshipontable.rle",
+      "id": "C",
+      "full": "#C https://conwaylife.com/patterns/transshipontable.rle"
+    }
+  ]
+}

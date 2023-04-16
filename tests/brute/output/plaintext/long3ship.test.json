@@ -1,0 +1,30 @@
+{
+  "format": "plaintext",
+  "name": "long3ship.cells",
+  "description": [
+    "https://conwaylife.com/wiki/Long%5E3_ship",
+    "https://www.conwaylife.com/patterns/long3ship.cells"
+  ],
+  "matrix": [
+    [1, 1, 0, 0, 0, 0],
+    [1, 0, 1, 0, 0, 0],
+    [0, 1, 0, 1, 0, 0],
+    [0, 0, 1, 0, 1, 0],
+    [0, 0, 0, 1, 0, 1],
+    [0, 0, 0, 0, 1, 1]
+  ],
+  "liveCoordinates": [
+    [0, 0],
+    [1, 0],
+    [0, -1],
+    [2, -1],
+    [1, -2],
+    [3, -2],
+    [2, -3],
+    [4, -3],
+    [3, -4],
+    [5, -4],
+    [4, -5],
+    [5, -5]
+  ]
+}

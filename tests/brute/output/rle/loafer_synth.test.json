@@ -1,0 +1,86 @@
+{
+  "format": "rle",
+  "comments": [
+    "8-glider synthesis of loafer found 18 February 2013,",
+    "based on 18-glider synthesis found by Adam Goucher on 17 February.",
+    "https://www.conwaylife.com/forums/viewtopic.php?f=2&t=1031#p7465",
+    "https://conwaylife.com/wiki/Loafer"
+  ],
+  "name": "loafer_synth.rle",
+  "creationData": "Matthias Merzenich",
+  "topleft": null,
+  "width": 34,
+  "height": 31,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [33, 0],
+    [31, -1],
+    [32, -1],
+    [32, -2],
+    [33, -2],
+    [9, -3],
+    [1, -4],
+    [10, -4],
+    [2, -5],
+    [8, -5],
+    [9, -5],
+    [10, -5],
+    [0, -6],
+    [1, -6],
+    [2, -6],
+    [5, -9],
+    [6, -10],
+    [4, -11],
+    [5, -11],
+    [6, -11],
+    [24, -12],
+    [26, -12],
+    [25, -13],
+    [26, -13],
+    [25, -14],
+    [27, -16],
+    [29, -16],
+    [27, -17],
+    [28, -17],
+    [28, -18],
+    [31, -19],
+    [32, -19],
+    [33, -19],
+    [31, -20],
+    [32, -21],
+    [5, -28],
+    [6, -28],
+    [6, -29],
+    [7, -29],
+    [5, -30]
+  ],
+  "hashLines": [
+    {"content": "loafer_synth.rle", "id": "N", "full": "#N loafer_synth.rle"},
+    {
+      "content": "Matthias Merzenich",
+      "id": "O",
+      "full": "#O Matthias Merzenich"
+    },
+    {
+      "content": "8-glider synthesis of loafer found 18 February 2013,",
+      "id": "C",
+      "full": "#C 8-glider synthesis of loafer found 18 February 2013,"
+    },
+    {
+      "content": "based on 18-glider synthesis found by Adam Goucher on 17 February.",
+      "id": "C",
+      "full": "#C based on 18-glider synthesis found by Adam Goucher on 17 February."
+    },
+    {
+      "content": "https://www.conwaylife.com/forums/viewtopic.php?f=2&t=1031#p7465",
+      "id": "C",
+      "full": "#C https://www.conwaylife.com/forums/viewtopic.php?f=2&t=1031#p7465"
+    },
+    {
+      "content": "https://conwaylife.com/wiki/Loafer",
+      "id": "C",
+      "full": "#C https://conwaylife.com/wiki/Loafer"
+    }
+  ]
+}

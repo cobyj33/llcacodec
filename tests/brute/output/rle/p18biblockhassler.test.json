@@ -1,0 +1,77 @@
+{
+  "format": "rle",
+  "comments": [
+    "https://conwaylife.com/wiki/P18_bi-block_hassler",
+    "https://conwaylife.com/patterns/p18biblockhassler.rle"
+  ],
+  "name": "p18biblockhassler.rle",
+  "creationData": "Noam Elkies, 1995",
+  "topleft": null,
+  "width": 15,
+  "height": 20,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [4, 0],
+    [0, -1],
+    [1, -1],
+    [2, -1],
+    [3, -1],
+    [5, -1],
+    [0, -2],
+    [1, -2],
+    [2, -2],
+    [4, -2],
+    [6, -2],
+    [5, -3],
+    [7, -3],
+    [6, -4],
+    [5, -5],
+    [6, -5],
+    [5, -6],
+    [6, -6],
+    [10, -6],
+    [5, -7],
+    [6, -7],
+    [9, -7],
+    [11, -7],
+    [13, -7],
+    [14, -7],
+    [13, -8],
+    [14, -8],
+    [7, -11],
+    [10, -11],
+    [7, -12],
+    [6, -13],
+    [11, -13],
+    [5, -14],
+    [7, -14],
+    [10, -14],
+    [11, -14],
+    [3, -15],
+    [4, -15],
+    [6, -15],
+    [3, -18],
+    [6, -18],
+    [5, -19],
+    [6, -19]
+  ],
+  "hashLines": [
+    {
+      "content": "p18biblockhassler.rle",
+      "id": "N",
+      "full": "#N p18biblockhassler.rle"
+    },
+    {"content": "Noam Elkies, 1995", "id": "O", "full": "#O Noam Elkies, 1995"},
+    {
+      "content": "https://conwaylife.com/wiki/P18_bi-block_hassler",
+      "id": "C",
+      "full": "#C https://conwaylife.com/wiki/P18_bi-block_hassler"
+    },
+    {
+      "content": "https://conwaylife.com/patterns/p18biblockhassler.rle",
+      "id": "C",
+      "full": "#C https://conwaylife.com/patterns/p18biblockhassler.rle"
+    }
+  ]
+}

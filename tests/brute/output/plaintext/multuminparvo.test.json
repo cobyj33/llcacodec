@@ -1,0 +1,24 @@
+{
+  "format": "plaintext",
+  "name": "Multum in parvo",
+  "description": [
+    "Author: Charles Corderman",
+    "A methuselah with lifespan 3933.",
+    "www.conwaylife.com/wiki/index.php?title=Multum_in_parvo"
+  ],
+  "matrix": [
+    [0, 0, 0, 1, 1, 1],
+    [0, 0, 1, 0, 0, 1],
+    [0, 1, 0, 0, 0, 0],
+    [1, 0, 0, 0, 0, 0]
+  ],
+  "liveCoordinates": [
+    [3, 0],
+    [4, 0],
+    [5, 0],
+    [2, -1],
+    [5, -1],
+    [1, -2],
+    [0, -3]
+  ]
+}

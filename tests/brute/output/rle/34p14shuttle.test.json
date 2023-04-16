@@ -1,0 +1,64 @@
+{
+  "format": "rle",
+  "comments": [
+    "https://conwaylife.com/wiki/34P14_shuttle",
+    "https://conwaylife.com/patterns/34p14shuttle.rle"
+  ],
+  "name": "34p14shuttle.rle",
+  "creationData": "carybe, 2018",
+  "topleft": null,
+  "width": 15,
+  "height": 11,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [5, 0],
+    [6, 0],
+    [0, -1],
+    [1, -1],
+    [4, -1],
+    [5, -1],
+    [7, -1],
+    [13, -1],
+    [14, -1],
+    [0, -2],
+    [1, -2],
+    [5, -2],
+    [7, -2],
+    [13, -2],
+    [14, -2],
+    [7, -3],
+    [9, -4],
+    [9, -6],
+    [7, -7],
+    [0, -8],
+    [1, -8],
+    [5, -8],
+    [7, -8],
+    [13, -8],
+    [14, -8],
+    [0, -9],
+    [1, -9],
+    [4, -9],
+    [5, -9],
+    [7, -9],
+    [13, -9],
+    [14, -9],
+    [5, -10],
+    [6, -10]
+  ],
+  "hashLines": [
+    {"content": "34p14shuttle.rle", "id": "N", "full": "#N 34p14shuttle.rle"},
+    {"content": "carybe, 2018", "id": "O", "full": "#O carybe, 2018"},
+    {
+      "content": "https://conwaylife.com/wiki/34P14_shuttle",
+      "id": "C",
+      "full": "#C https://conwaylife.com/wiki/34P14_shuttle"
+    },
+    {
+      "content": "https://conwaylife.com/patterns/34p14shuttle.rle",
+      "id": "C",
+      "full": "#C https://conwaylife.com/patterns/34p14shuttle.rle"
+    }
+  ]
+}

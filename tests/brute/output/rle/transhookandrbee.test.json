@@ -1,0 +1,47 @@
+{
+  "format": "rle",
+  "comments": [
+    "A 14-cell still life composed of a bookend and a bun.",
+    "https://www.conwaylife.com/wiki/index.php?title=Trans-hook_and_R-bee"
+  ],
+  "name": "Trans-hook and R-bee",
+  "creationData": "",
+  "topleft": null,
+  "width": 5,
+  "height": 7,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [3, 0],
+    [4, 0],
+    [1, -1],
+    [4, -1],
+    [1, -2],
+    [2, -2],
+    [3, -2],
+    [1, -4],
+    [2, -4],
+    [3, -4],
+    [0, -5],
+    [3, -5],
+    [1, -6],
+    [2, -6]
+  ],
+  "hashLines": [
+    {
+      "content": "Trans-hook and R-bee",
+      "id": "N",
+      "full": "#N Trans-hook and R-bee"
+    },
+    {
+      "content": "A 14-cell still life composed of a bookend and a bun.",
+      "id": "C",
+      "full": "#C A 14-cell still life composed of a bookend and a bun."
+    },
+    {
+      "content": "https://www.conwaylife.com/wiki/index.php?title=Trans-hook_and_R-bee",
+      "id": "C",
+      "full": "#C https://www.conwaylife.com/wiki/index.php?title=Trans-hook_and_R-bee"
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "format": "plaintext",
+  "name": "verylongshipgenerator.cells",
+  "description": [
+    "https://conwaylife.com/wiki/Very_long_ship",
+    "https://www.conwaylife.com/patterns/verylongshipgenerator.cells"
+  ],
+  "matrix": [
+    [0, 1, 1, 1, 0, 0, 0],
+    [1, 0, 0, 0, 1, 0, 0],
+    [1, 0, 0, 0, 0, 1, 0],
+    [1, 0, 0, 0, 0, 0, 1],
+    [0, 1, 0, 0, 0, 1, 0],
+    [0, 0, 1, 1, 1, 0, 0]
+  ],
+  "liveCoordinates": [
+    [1, 0],
+    [2, 0],
+    [3, 0],
+    [0, -1],
+    [4, -1],
+    [0, -2],
+    [5, -2],
+    [0, -3],
+    [6, -3],
+    [1, -4],
+    [5, -4],
+    [2, -5],
+    [3, -5],
+    [4, -5]
+  ]
+}

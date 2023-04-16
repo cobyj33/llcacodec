@@ -1,0 +1,31 @@
+{
+  "format": "plaintext",
+  "name": "transcarriertiesnake.cells",
+  "description": [
+    "https://conwaylife.com/wiki/Trans-aircraft_carrier_tie_snake",
+    "https://conwaylife.com/patterns/transcarriertiesnake.cells"
+  ],
+  "matrix": [
+    [0, 0, 0, 0, 1, 1],
+    [0, 0, 1, 0, 0, 1],
+    [0, 0, 1, 1, 0, 0],
+    [1, 1, 0, 0, 0, 0],
+    [0, 1, 0, 0, 0, 0],
+    [1, 0, 0, 0, 0, 0],
+    [1, 1, 0, 0, 0, 0]
+  ],
+  "liveCoordinates": [
+    [4, 0],
+    [5, 0],
+    [2, -1],
+    [5, -1],
+    [2, -2],
+    [3, -2],
+    [0, -3],
+    [1, -3],
+    [1, -4],
+    [0, -5],
+    [0, -6],
+    [1, -6]
+  ]
+}

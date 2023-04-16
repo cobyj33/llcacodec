@@ -1,0 +1,24 @@
+{
+  "format": "rle",
+  "comments": [
+    "A block parent.",
+    "https://www.conwaylife.com/wiki/index.php?title=Pre-block"
+  ],
+  "name": "Pre-block",
+  "creationData": "",
+  "topleft": null,
+  "width": 2,
+  "height": 2,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [[0, 0], [0, -1], [1, -1]],
+  "hashLines": [
+    {"content": "Pre-block", "id": "N", "full": "#N Pre-block"},
+    {"content": "A block parent.", "id": "C", "full": "#C A block parent."},
+    {
+      "content": "https://www.conwaylife.com/wiki/index.php?title=Pre-block",
+      "id": "C",
+      "full": "#C https://www.conwaylife.com/wiki/index.php?title=Pre-block"
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "format": "plaintext",
+  "name": "Glider",
+  "description": [
+    "Author: Richard K. Guy",
+    "The smallest, most common, and first discovered spaceship.",
+    "www.conwaylife.com/wiki/index.php?title=Glider"
+  ],
+  "matrix": [[0, 1, 0], [0, 0, 1], [1, 1, 1]],
+  "liveCoordinates": [[1, 0], [2, -1], [0, -2], [1, -2], [2, -2]]
+}

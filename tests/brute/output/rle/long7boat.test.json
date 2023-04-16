@@ -1,0 +1,48 @@
+{
+  "format": "rle",
+  "comments": [
+    "https://conwaylife.com/wiki/Long%5E7_boat",
+    "https://www.conwaylife.com/patterns/long7boat.rle"
+  ],
+  "name": "long7boat.rle",
+  "creationData": "",
+  "topleft": null,
+  "width": 10,
+  "height": 10,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [8, 0],
+    [7, -1],
+    [9, -1],
+    [6, -2],
+    [8, -2],
+    [5, -3],
+    [7, -3],
+    [4, -4],
+    [6, -4],
+    [3, -5],
+    [5, -5],
+    [2, -6],
+    [4, -6],
+    [1, -7],
+    [3, -7],
+    [0, -8],
+    [2, -8],
+    [0, -9],
+    [1, -9]
+  ],
+  "hashLines": [
+    {"content": "long7boat.rle", "id": "N", "full": "#N long7boat.rle"},
+    {
+      "content": "https://conwaylife.com/wiki/Long%5E7_boat",
+      "id": "C",
+      "full": "#C https://conwaylife.com/wiki/Long%5E7_boat"
+    },
+    {
+      "content": "https://www.conwaylife.com/patterns/long7boat.rle",
+      "id": "C",
+      "full": "#C https://www.conwaylife.com/patterns/long7boat.rle"
+    }
+  ]
+}

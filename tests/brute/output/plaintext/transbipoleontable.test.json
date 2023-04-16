@@ -1,0 +1,34 @@
+{
+  "format": "plaintext",
+  "name": "transbipoleontable.cells",
+  "description": [
+    "https://conwaylife.com/wiki/Trans-bipole_on_table",
+    "https://www.conwaylife.com/patterns/transbipoleontable.cells"
+  ],
+  "matrix": [
+    [1, 1, 0, 0, 0, 0, 0],
+    [1, 0, 1, 0, 0, 0, 0],
+    [0, 0, 0, 0, 0, 0, 0],
+    [0, 0, 1, 0, 1, 0, 0],
+    [0, 0, 0, 1, 1, 0, 0],
+    [0, 0, 0, 0, 0, 0, 0],
+    [0, 0, 0, 1, 1, 1, 1],
+    [0, 0, 0, 1, 0, 0, 1]
+  ],
+  "liveCoordinates": [
+    [0, 0],
+    [1, 0],
+    [0, -1],
+    [2, -1],
+    [2, -3],
+    [4, -3],
+    [3, -4],
+    [4, -4],
+    [3, -6],
+    [4, -6],
+    [5, -6],
+    [6, -6],
+    [3, -7],
+    [6, -7]
+  ]
+}

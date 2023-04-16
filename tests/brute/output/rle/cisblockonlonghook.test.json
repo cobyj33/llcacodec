@@ -1,0 +1,45 @@
+{
+  "format": "rle",
+  "comments": [
+    "https://conwaylife.com/wiki/Cis-block_on_long_hook",
+    "https://conwaylife.com/patterns/cisblockonlonghook.rle"
+  ],
+  "name": "cisblockonlonghook.rle",
+  "creationData": "",
+  "topleft": null,
+  "width": 5,
+  "height": 6,
+  "ruleString": "b3/s23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [3, 0],
+    [4, 0],
+    [0, -1],
+    [4, -1],
+    [0, -2],
+    [1, -2],
+    [2, -2],
+    [3, -2],
+    [2, -4],
+    [3, -4],
+    [2, -5],
+    [3, -5]
+  ],
+  "hashLines": [
+    {
+      "content": "cisblockonlonghook.rle",
+      "id": "N",
+      "full": "#N cisblockonlonghook.rle"
+    },
+    {
+      "content": "https://conwaylife.com/wiki/Cis-block_on_long_hook",
+      "id": "C",
+      "full": "#C https://conwaylife.com/wiki/Cis-block_on_long_hook"
+    },
+    {
+      "content": "https://conwaylife.com/patterns/cisblockonlonghook.rle",
+      "id": "C",
+      "full": "#C https://conwaylife.com/patterns/cisblockonlonghook.rle"
+    }
+  ]
+}

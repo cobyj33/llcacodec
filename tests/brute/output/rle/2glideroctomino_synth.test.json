@@ -1,0 +1,57 @@
+{
+  "format": "rle",
+  "comments": [
+    "https://conwaylife.com/wiki/List_of_common_evolutionary_sequences",
+    "https://www.conwaylife.com/patterns/2glideroctomino_synth.rle"
+  ],
+  "name": "2glideroctomino_synth.rle",
+  "creationData": "",
+  "topleft": null,
+  "width": 46,
+  "height": 13,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [11, 0],
+    [11, -1],
+    [13, -1],
+    [33, -1],
+    [11, -2],
+    [12, -2],
+    [34, -2],
+    [35, -2],
+    [33, -3],
+    [34, -3],
+    [43, -4],
+    [43, -5],
+    [45, -5],
+    [43, -6],
+    [44, -6],
+    [0, -10],
+    [1, -10],
+    [2, -10],
+    [2, -11],
+    [43, -11],
+    [44, -11],
+    [1, -12],
+    [43, -12],
+    [44, -12]
+  ],
+  "hashLines": [
+    {
+      "content": "2glideroctomino_synth.rle",
+      "id": "N",
+      "full": "#N 2glideroctomino_synth.rle"
+    },
+    {
+      "content": "https://conwaylife.com/wiki/List_of_common_evolutionary_sequences",
+      "id": "C",
+      "full": "#C https://conwaylife.com/wiki/List_of_common_evolutionary_sequences"
+    },
+    {
+      "content": "https://www.conwaylife.com/patterns/2glideroctomino_synth.rle",
+      "id": "C",
+      "full": "#C https://www.conwaylife.com/patterns/2glideroctomino_synth.rle"
+    }
+  ]
+}

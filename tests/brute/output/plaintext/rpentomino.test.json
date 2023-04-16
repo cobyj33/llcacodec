@@ -1,0 +1,10 @@
+{
+  "format": "plaintext",
+  "name": "R-pentomino",
+  "description": [
+    "The most active polyomino with less than six cells; all of the others stabilize in at most 10 generations, but the R-pentomino does not do so until generation 1103, by which time it has a population of 116.",
+    "www.conwaylife.com/wiki/index.php?title=R-pentomino"
+  ],
+  "matrix": [[0, 1, 1], [1, 1, 0], [0, 1, 0]],
+  "liveCoordinates": [[1, 0], [2, 0], [0, -1], [1, -1], [1, -2]]
+}

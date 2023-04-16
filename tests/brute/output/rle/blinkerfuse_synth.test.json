@@ -1,0 +1,73 @@
+{
+  "format": "rle",
+  "comments": [
+    "Glider synthesis of blinker fuse.",
+    "www.conwaylife.com/wiki/index.php?title=Blinker_fuse"
+  ],
+  "name": "Blinker fuse_synth",
+  "creationData": "",
+  "topleft": null,
+  "width": 39,
+  "height": 11,
+  "ruleString": "b3/s23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [0, 0],
+    [2, 0],
+    [0, -1],
+    [1, -1],
+    [1, -2],
+    [0, -5],
+    [1, -5],
+    [2, -5],
+    [4, -5],
+    [5, -5],
+    [6, -5],
+    [8, -5],
+    [9, -5],
+    [10, -5],
+    [12, -5],
+    [13, -5],
+    [14, -5],
+    [16, -5],
+    [17, -5],
+    [18, -5],
+    [20, -5],
+    [21, -5],
+    [22, -5],
+    [24, -5],
+    [25, -5],
+    [26, -5],
+    [28, -5],
+    [29, -5],
+    [30, -5],
+    [32, -5],
+    [33, -5],
+    [34, -5],
+    [36, -5],
+    [37, -5],
+    [38, -5],
+    [1, -8],
+    [0, -9],
+    [1, -9],
+    [0, -10],
+    [2, -10]
+  ],
+  "hashLines": [
+    {
+      "content": "Blinker fuse_synth",
+      "id": "N",
+      "full": "#N Blinker fuse_synth"
+    },
+    {
+      "content": "Glider synthesis of blinker fuse.",
+      "id": "C",
+      "full": "#C Glider synthesis of blinker fuse."
+    },
+    {
+      "content": "www.conwaylife.com/wiki/index.php?title=Blinker_fuse",
+      "id": "C",
+      "full": "#C www.conwaylife.com/wiki/index.php?title=Blinker_fuse"
+    }
+  ]
+}

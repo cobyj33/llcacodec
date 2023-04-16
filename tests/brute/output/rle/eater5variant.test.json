@@ -1,0 +1,46 @@
+{
+  "format": "rle",
+  "comments": [
+    "https://conwaylife.com/wiki/Tub-with-tail_eater",
+    "https://www.conwaylife.com/patterns/eater5variant.rle"
+  ],
+  "name": "eater5variant.rle",
+  "creationData": "",
+  "topleft": null,
+  "width": 10,
+  "height": 6,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [3, 0],
+    [7, 0],
+    [8, 0],
+    [2, -1],
+    [4, -1],
+    [8, -1],
+    [1, -2],
+    [3, -2],
+    [7, -2],
+    [1, -3],
+    [6, -3],
+    [0, -4],
+    [1, -4],
+    [7, -4],
+    [8, -4],
+    [9, -4],
+    [9, -5]
+  ],
+  "hashLines": [
+    {"content": "eater5variant.rle", "id": "N", "full": "#N eater5variant.rle"},
+    {
+      "content": "https://conwaylife.com/wiki/Tub-with-tail_eater",
+      "id": "C",
+      "full": "#C https://conwaylife.com/wiki/Tub-with-tail_eater"
+    },
+    {
+      "content": "https://www.conwaylife.com/patterns/eater5variant.rle",
+      "id": "C",
+      "full": "#C https://www.conwaylife.com/patterns/eater5variant.rle"
+    }
+  ]
+}

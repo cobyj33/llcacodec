@@ -1,0 +1,82 @@
+{
+  "format": "rle",
+  "comments": [
+    "The first known period-31 oscillator",
+    "https://www.conwaylife.com/wiki/index.php?title=48P31"
+  ],
+  "name": "48P31",
+  "creationData": "Matthias Merzenich",
+  "topleft": null,
+  "width": 24,
+  "height": 13,
+  "ruleString": "b3/s23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [7, 0],
+    [8, 0],
+    [10, 0],
+    [13, 0],
+    [15, 0],
+    [16, 0],
+    [0, -1],
+    [1, -1],
+    [6, -1],
+    [9, -1],
+    [14, -1],
+    [17, -1],
+    [22, -1],
+    [23, -1],
+    [0, -2],
+    [1, -2],
+    [7, -2],
+    [9, -2],
+    [14, -2],
+    [16, -2],
+    [22, -2],
+    [23, -2],
+    [8, -3],
+    [15, -3],
+    [8, -9],
+    [15, -9],
+    [0, -10],
+    [1, -10],
+    [7, -10],
+    [9, -10],
+    [14, -10],
+    [16, -10],
+    [22, -10],
+    [23, -10],
+    [0, -11],
+    [1, -11],
+    [6, -11],
+    [9, -11],
+    [14, -11],
+    [17, -11],
+    [22, -11],
+    [23, -11],
+    [7, -12],
+    [8, -12],
+    [10, -12],
+    [13, -12],
+    [15, -12],
+    [16, -12]
+  ],
+  "hashLines": [
+    {"content": "48P31", "id": "N", "full": "#N 48P31"},
+    {
+      "content": "Matthias Merzenich",
+      "id": "O",
+      "full": "#O Matthias Merzenich"
+    },
+    {
+      "content": "The first known period-31 oscillator",
+      "id": "C",
+      "full": "#C The first known period-31 oscillator"
+    },
+    {
+      "content": "https://www.conwaylife.com/wiki/index.php?title=48P31",
+      "id": "C",
+      "full": "#C https://www.conwaylife.com/wiki/index.php?title=48P31"
+    }
+  ]
+}

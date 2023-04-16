@@ -1,0 +1,50 @@
+{
+  "format": "rle",
+  "comments": [
+    "https://conwaylife.com/wiki/Hook_test_tube_baby",
+    "https://conwaylife.com/patterns/hooktesttubebaby.rle"
+  ],
+  "name": "Hook test tube baby",
+  "creationData": "Unknown",
+  "topleft": null,
+  "width": 10,
+  "height": 5,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [0, 0],
+    [2, 0],
+    [7, 0],
+    [9, 0],
+    [0, -1],
+    [1, -1],
+    [3, -1],
+    [6, -1],
+    [8, -1],
+    [9, -1],
+    [3, -2],
+    [6, -2],
+    [3, -3],
+    [6, -3],
+    [4, -4],
+    [5, -4]
+  ],
+  "hashLines": [
+    {
+      "content": "Hook test tube baby",
+      "id": "N",
+      "full": "#N Hook test tube baby"
+    },
+    {"content": "Unknown", "id": "O", "full": "#O Unknown"},
+    {
+      "content": "https://conwaylife.com/wiki/Hook_test_tube_baby",
+      "id": "C",
+      "full": "#C https://conwaylife.com/wiki/Hook_test_tube_baby"
+    },
+    {
+      "content": "https://conwaylife.com/patterns/hooktesttubebaby.rle",
+      "id": "C",
+      "full": "#C https://conwaylife.com/patterns/hooktesttubebaby.rle"
+    }
+  ]
+}

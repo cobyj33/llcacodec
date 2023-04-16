@@ -1,0 +1,15 @@
+{
+  "format": "plaintext",
+  "name": "pre4block.cells",
+  "description": [
+    "https://conwaylife.com/wiki/Pre%5E4-block",
+    "https://www.conwaylife.com/patterns/pre4block.cells"
+  ],
+  "matrix": [
+    [0, 0, 0, 0, 1],
+    [0, 0, 0, 1, 0],
+    [1, 0, 1, 0, 0],
+    [1, 1, 0, 0, 0]
+  ],
+  "liveCoordinates": [[4, 0], [3, -1], [0, -2], [2, -2], [0, -3], [1, -3]]
+}

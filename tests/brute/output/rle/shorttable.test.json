@@ -1,0 +1,28 @@
+{
+  "format": "rle",
+  "comments": [
+    "https://conwaylife.com/wiki/Short_table",
+    "https://www.conwaylife.com/patterns/shorttable.rle"
+  ],
+  "name": "shorttable.rle",
+  "creationData": "",
+  "topleft": null,
+  "width": 3,
+  "height": 2,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [[0, 0], [1, 0], [2, 0], [0, -1], [2, -1]],
+  "hashLines": [
+    {"content": "shorttable.rle", "id": "N", "full": "#N shorttable.rle"},
+    {
+      "content": "https://conwaylife.com/wiki/Short_table",
+      "id": "C",
+      "full": "#C https://conwaylife.com/wiki/Short_table"
+    },
+    {
+      "content": "https://www.conwaylife.com/patterns/shorttable.rle",
+      "id": "C",
+      "full": "#C https://www.conwaylife.com/patterns/shorttable.rle"
+    }
+  ]
+}

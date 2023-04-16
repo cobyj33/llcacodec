@@ -1,0 +1,44 @@
+{
+  "format": "rle",
+  "comments": [
+    "Glider synthesis of a century.",
+    "https://conwaylife.com/wiki/Century"
+  ],
+  "name": "century_synth.rle",
+  "creationData": "",
+  "topleft": null,
+  "width": 7,
+  "height": 12,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [4, 0],
+    [6, 0],
+    [5, -1],
+    [6, -1],
+    [5, -2],
+    [3, -4],
+    [4, -5],
+    [2, -6],
+    [3, -6],
+    [4, -6],
+    [1, -9],
+    [1, -10],
+    [2, -10],
+    [0, -11],
+    [2, -11]
+  ],
+  "hashLines": [
+    {"content": "century_synth.rle", "id": "N", "full": "#N century_synth.rle"},
+    {
+      "content": "Glider synthesis of a century.",
+      "id": "C",
+      "full": "#C Glider synthesis of a century."
+    },
+    {
+      "content": "https://conwaylife.com/wiki/Century",
+      "id": "C",
+      "full": "#C https://conwaylife.com/wiki/Century"
+    }
+  ]
+}

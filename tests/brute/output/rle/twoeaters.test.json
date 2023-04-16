@@ -1,0 +1,44 @@
+{
+  "format": "rle",
+  "comments": [
+    "A period 3 oscillator that was found in September 1971.",
+    "www.conwaylife.com/wiki/index.php?title=Two_eaters"
+  ],
+  "name": "Two eaters",
+  "creationData": "Bill Gosper",
+  "topleft": null,
+  "width": 9,
+  "height": 8,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [0, 0],
+    [1, 0],
+    [1, -1],
+    [1, -2],
+    [3, -2],
+    [2, -3],
+    [3, -3],
+    [5, -4],
+    [6, -4],
+    [5, -5],
+    [7, -5],
+    [7, -6],
+    [7, -7],
+    [8, -7]
+  ],
+  "hashLines": [
+    {"content": "Two eaters", "id": "N", "full": "#N Two eaters"},
+    {"content": "Bill Gosper", "id": "O", "full": "#O Bill Gosper"},
+    {
+      "content": "A period 3 oscillator that was found in September 1971.",
+      "id": "C",
+      "full": "#C A period 3 oscillator that was found in September 1971."
+    },
+    {
+      "content": "www.conwaylife.com/wiki/index.php?title=Two_eaters",
+      "id": "C",
+      "full": "#C www.conwaylife.com/wiki/index.php?title=Two_eaters"
+    }
+  ]
+}

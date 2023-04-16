@@ -1,0 +1,46 @@
+{
+  "format": "rle",
+  "comments": [
+    "A period 3 oscillator found in August 1989.",
+    "www.conwaylife.com/wiki/index.php?title=Bent_keys"
+  ],
+  "name": "Bent keys",
+  "creationData": "Dean Hickerson",
+  "topleft": null,
+  "width": 12,
+  "height": 5,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [1, 0],
+    [10, 0],
+    [0, -1],
+    [2, -1],
+    [9, -1],
+    [11, -1],
+    [1, -2],
+    [3, -2],
+    [4, -2],
+    [7, -2],
+    [8, -2],
+    [10, -2],
+    [4, -3],
+    [7, -3],
+    [4, -4],
+    [7, -4]
+  ],
+  "hashLines": [
+    {"content": "Bent keys", "id": "N", "full": "#N Bent keys"},
+    {"content": "Dean Hickerson", "id": "O", "full": "#O Dean Hickerson"},
+    {
+      "content": "A period 3 oscillator found in August 1989.",
+      "id": "C",
+      "full": "#C A period 3 oscillator found in August 1989."
+    },
+    {
+      "content": "www.conwaylife.com/wiki/index.php?title=Bent_keys",
+      "id": "C",
+      "full": "#C www.conwaylife.com/wiki/index.php?title=Bent_keys"
+    }
+  ]
+}

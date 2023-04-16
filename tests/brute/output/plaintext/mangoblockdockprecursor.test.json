@@ -1,0 +1,29 @@
+{
+  "format": "plaintext",
+  "name": "mangoblockdockprecursor.cells",
+  "description": [
+    "https://conwaylife.com/wiki/Mango_with_block_on_dock",
+    "https://www.conwaylife.com/patterns/mangoblockdockprecursor.cells"
+  ],
+  "matrix": [
+    [1, 0, 0, 0, 0, 0, 1, 1, 1, 0],
+    [1, 0, 0, 0, 0, 1, 0, 0, 0, 1],
+    [1, 0, 0, 0, 1, 0, 0, 0, 0, 0],
+    [0, 0, 0, 0, 1, 0, 0, 0, 0, 0],
+    [0, 0, 0, 0, 1, 1, 0, 0, 0, 0]
+  ],
+  "liveCoordinates": [
+    [0, 0],
+    [6, 0],
+    [7, 0],
+    [8, 0],
+    [0, -1],
+    [5, -1],
+    [9, -1],
+    [0, -2],
+    [4, -2],
+    [4, -3],
+    [4, -4],
+    [5, -4]
+  ]
+}

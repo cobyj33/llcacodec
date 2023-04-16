@@ -1,0 +1,32 @@
+{
+  "format": "plaintext",
+  "name": "bookendbridgebun.cells",
+  "description": [
+    "https://conwaylife.com/wiki/Bookend_bridge_bun",
+    "https://www.conwaylife.com/patterns/bookendbridgebun.cells"
+  ],
+  "matrix": [
+    [0, 0, 0, 1, 1, 0],
+    [0, 0, 0, 1, 0, 1],
+    [1, 1, 0, 1, 0, 1],
+    [1, 0, 1, 0, 1, 0],
+    [0, 0, 1, 0, 0, 0],
+    [0, 1, 1, 0, 0, 0]
+  ],
+  "liveCoordinates": [
+    [3, 0],
+    [4, 0],
+    [3, -1],
+    [5, -1],
+    [0, -2],
+    [1, -2],
+    [3, -2],
+    [5, -2],
+    [0, -3],
+    [2, -3],
+    [4, -3],
+    [2, -4],
+    [1, -5],
+    [2, -5]
+  ]
+}

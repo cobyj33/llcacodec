@@ -1,0 +1,52 @@
+{
+  "format": "rle",
+  "comments": [
+    "https://conwaylife.com/wiki/Figure_eight",
+    "https://www.conwaylife.com/patterns/figure8glidersynth.rle"
+  ],
+  "name": "figure8glidersynth.rle",
+  "creationData": "",
+  "topleft": null,
+  "width": 11,
+  "height": 11,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [1, 0],
+    [2, 0],
+    [0, -1],
+    [3, -1],
+    [0, -2],
+    [3, -2],
+    [1, -3],
+    [2, -3],
+    [3, -3],
+    [9, -4],
+    [10, -4],
+    [8, -5],
+    [9, -5],
+    [10, -6],
+    [5, -8],
+    [4, -9],
+    [5, -9],
+    [4, -10],
+    [6, -10]
+  ],
+  "hashLines": [
+    {
+      "content": "figure8glidersynth.rle",
+      "id": "N",
+      "full": "#N figure8glidersynth.rle"
+    },
+    {
+      "content": "https://conwaylife.com/wiki/Figure_eight",
+      "id": "C",
+      "full": "#C https://conwaylife.com/wiki/Figure_eight"
+    },
+    {
+      "content": "https://www.conwaylife.com/patterns/figure8glidersynth.rle",
+      "id": "C",
+      "full": "#C https://www.conwaylife.com/patterns/figure8glidersynth.rle"
+    }
+  ]
+}

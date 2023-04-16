@@ -1,0 +1,59 @@
+{
+  "format": "rle",
+  "comments": [
+    "The smallest known period 120 oscillator.",
+    "https://www.conwaylife.com/wiki/index.php?title=Figure_eight_on_pent",
+    "adecathlon"
+  ],
+  "name": "Figure eight on pentadecathlon",
+  "creationData": "",
+  "topleft": null,
+  "width": 14,
+  "height": 10,
+  "ruleString": "23/3",
+  "rule": {"survival": [2, 3], "birth": [3]},
+  "liveCoordinates": [
+    [1, 0],
+    [8, 0],
+    [9, 0],
+    [1, -1],
+    [8, -1],
+    [9, -1],
+    [11, -1],
+    [0, -2],
+    [2, -2],
+    [12, -2],
+    [1, -3],
+    [9, -3],
+    [1, -4],
+    [10, -4],
+    [12, -4],
+    [13, -4],
+    [1, -5],
+    [12, -5],
+    [13, -5],
+    [1, -6],
+    [0, -7],
+    [2, -7],
+    [1, -8],
+    [1, -9]
+  ],
+  "hashLines": [
+    {
+      "content": "Figure eight on pentadecathlon",
+      "id": "N",
+      "full": "#N Figure eight on pentadecathlon"
+    },
+    {
+      "content": "The smallest known period 120 oscillator.",
+      "id": "C",
+      "full": "#C The smallest known period 120 oscillator."
+    },
+    {
+      "content": "https://www.conwaylife.com/wiki/index.php?title=Figure_eight_on_pent",
+      "id": "C",
+      "full": "#C https://www.conwaylife.com/wiki/index.php?title=Figure_eight_on_pent"
+    },
+    {"content": "adecathlon", "id": "C", "full": "#C adecathlon"}
+  ]
+}

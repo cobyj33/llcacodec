@@ -1,0 +1,57 @@
+{
+  "format": "rle",
+  "comments": [
+    "https://conwaylife.com/wiki/Isomer",
+    "https://www.conwaylife.com/patterns/beaconontableisomers.rle"
+  ],
+  "name": "beaconontableisomers.rle",
+  "creationData": "",
+  "topleft": null,
+  "width": 15,
+  "height": 7,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [2, 0],
+    [3, 0],
+    [13, 0],
+    [14, 0],
+    [3, -1],
+    [14, -1],
+    [0, -2],
+    [11, -2],
+    [0, -3],
+    [1, -3],
+    [11, -3],
+    [12, -3],
+    [0, -5],
+    [1, -5],
+    [2, -5],
+    [3, -5],
+    [9, -5],
+    [10, -5],
+    [11, -5],
+    [12, -5],
+    [0, -6],
+    [3, -6],
+    [9, -6],
+    [12, -6]
+  ],
+  "hashLines": [
+    {
+      "content": "beaconontableisomers.rle",
+      "id": "N",
+      "full": "#N beaconontableisomers.rle"
+    },
+    {
+      "content": "https://conwaylife.com/wiki/Isomer",
+      "id": "C",
+      "full": "#C https://conwaylife.com/wiki/Isomer"
+    },
+    {
+      "content": "https://www.conwaylife.com/patterns/beaconontableisomers.rle",
+      "id": "C",
+      "full": "#C https://www.conwaylife.com/patterns/beaconontableisomers.rle"
+    }
+  ]
+}

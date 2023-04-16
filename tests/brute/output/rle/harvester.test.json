@@ -1,0 +1,56 @@
+{
+  "format": "rle",
+  "comments": [
+    "A diagonal period 4 lightspeed fuse that was the first published example of a fuse.",
+    "www.conwaylife.com/wiki/index.php?title=Harvester"
+  ],
+  "name": "Harvester",
+  "creationData": "David Poyner",
+  "topleft": null,
+  "width": 18,
+  "height": 15,
+  "ruleString": "23/3",
+  "rule": {"survival": [2, 3], "birth": [3]},
+  "liveCoordinates": [
+    [16, 0],
+    [17, 0],
+    [15, -1],
+    [17, -1],
+    [14, -2],
+    [13, -3],
+    [12, -4],
+    [11, -5],
+    [10, -6],
+    [9, -7],
+    [8, -8],
+    [7, -9],
+    [6, -10],
+    [5, -11],
+    [0, -12],
+    [1, -12],
+    [2, -12],
+    [3, -12],
+    [4, -12],
+    [0, -13],
+    [1, -13],
+    [2, -13],
+    [3, -13],
+    [0, -14],
+    [2, -14],
+    [3, -14]
+  ],
+  "hashLines": [
+    {"content": "Harvester", "id": "N", "full": "#N Harvester"},
+    {"content": "David Poyner", "id": "O", "full": "#O David Poyner"},
+    {
+      "content": "A diagonal period 4 lightspeed fuse that was the first published example of a fuse.",
+      "id": "C",
+      "full": "#C A diagonal period 4 lightspeed fuse that was the first published example of a fuse."
+    },
+    {
+      "content": "www.conwaylife.com/wiki/index.php?title=Harvester",
+      "id": "C",
+      "full": "#C www.conwaylife.com/wiki/index.php?title=Harvester"
+    }
+  ]
+}

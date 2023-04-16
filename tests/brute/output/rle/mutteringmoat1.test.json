@@ -1,0 +1,45 @@
+{
+  "format": "rle",
+  "comments": [
+    "A period 2 oscillator and a muttering moat, found in May 1993.",
+    "www.conwaylife.com/wiki/index.php?title=Muttering_moat_1"
+  ],
+  "name": "Muttering moat 1",
+  "creationData": "Dean Hickerson",
+  "topleft": null,
+  "width": 7,
+  "height": 7,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [0, 0],
+    [1, 0],
+    [0, -1],
+    [4, -1],
+    [5, -1],
+    [1, -2],
+    [3, -2],
+    [5, -2],
+    [1, -4],
+    [2, -4],
+    [5, -4],
+    [3, -5],
+    [6, -5],
+    [5, -6],
+    [6, -6]
+  ],
+  "hashLines": [
+    {"content": "Muttering moat 1", "id": "N", "full": "#N Muttering moat 1"},
+    {"content": "Dean Hickerson", "id": "O", "full": "#O Dean Hickerson"},
+    {
+      "content": "A period 2 oscillator and a muttering moat, found in May 1993.",
+      "id": "C",
+      "full": "#C A period 2 oscillator and a muttering moat, found in May 1993."
+    },
+    {
+      "content": "www.conwaylife.com/wiki/index.php?title=Muttering_moat_1",
+      "id": "C",
+      "full": "#C www.conwaylife.com/wiki/index.php?title=Muttering_moat_1"
+    }
+  ]
+}

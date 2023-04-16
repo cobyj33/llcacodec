@@ -1,0 +1,47 @@
+{
+  "format": "rle",
+  "comments": [
+    "https://conwaylife.com/wiki/Trans-bipole_on_table",
+    "https://www.conwaylife.com/patterns/transbipoleontable.rle"
+  ],
+  "name": "transbipoleontable.rle",
+  "creationData": "",
+  "topleft": null,
+  "width": 7,
+  "height": 8,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [0, 0],
+    [1, 0],
+    [0, -1],
+    [2, -1],
+    [2, -3],
+    [4, -3],
+    [3, -4],
+    [4, -4],
+    [3, -6],
+    [4, -6],
+    [5, -6],
+    [6, -6],
+    [3, -7],
+    [6, -7]
+  ],
+  "hashLines": [
+    {
+      "content": "transbipoleontable.rle",
+      "id": "N",
+      "full": "#N transbipoleontable.rle"
+    },
+    {
+      "content": "https://conwaylife.com/wiki/Trans-bipole_on_table",
+      "id": "C",
+      "full": "#C https://conwaylife.com/wiki/Trans-bipole_on_table"
+    },
+    {
+      "content": "https://www.conwaylife.com/patterns/transbipoleontable.rle",
+      "id": "C",
+      "full": "#C https://www.conwaylife.com/patterns/transbipoleontable.rle"
+    }
+  ]
+}

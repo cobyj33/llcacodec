@@ -1,0 +1,26 @@
+{
+  "format": "plaintext",
+  "name": "Trans-boat with tail",
+  "description": [
+    "The twenty-fourth most common still life.",
+    "https://www.conwaylife.com/wiki/index.php?title=Trans-boat_with_tail"
+  ],
+  "matrix": [
+    [1, 1, 0, 0, 0],
+    [1, 0, 1, 0, 0],
+    [0, 1, 0, 1, 0],
+    [0, 0, 0, 1, 0],
+    [0, 0, 0, 1, 1]
+  ],
+  "liveCoordinates": [
+    [0, 0],
+    [1, 0],
+    [0, -1],
+    [2, -1],
+    [1, -2],
+    [3, -2],
+    [3, -3],
+    [3, -4],
+    [4, -4]
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "format": "rle",
+  "comments": [
+    "https://conwaylife.com/wiki/Cis-mango_with_tail",
+    "https://conwaylife.com/patterns/cismangowithtail.rle"
+  ],
+  "name": "cismangowithtail.rle",
+  "creationData": "",
+  "topleft": null,
+  "width": 7,
+  "height": 5,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [0, 0],
+    [1, 0],
+    [1, -1],
+    [4, -1],
+    [5, -1],
+    [1, -2],
+    [3, -2],
+    [6, -2],
+    [2, -3],
+    [5, -3],
+    [3, -4],
+    [4, -4]
+  ],
+  "hashLines": [
+    {
+      "content": "cismangowithtail.rle",
+      "id": "N",
+      "full": "#N cismangowithtail.rle"
+    },
+    {
+      "content": "https://conwaylife.com/wiki/Cis-mango_with_tail",
+      "id": "C",
+      "full": "#C https://conwaylife.com/wiki/Cis-mango_with_tail"
+    },
+    {
+      "content": "https://conwaylife.com/patterns/cismangowithtail.rle",
+      "id": "C",
+      "full": "#C https://conwaylife.com/patterns/cismangowithtail.rle"
+    }
+  ]
+}

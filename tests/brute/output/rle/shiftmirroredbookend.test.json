@@ -1,0 +1,47 @@
+{
+  "format": "rle",
+  "comments": [
+    "https://conwaylife.com/wiki/Shift-mirrored_bookend",
+    "https://www.conwaylife.com/patterns/shiftmirroredbookend.rle"
+  ],
+  "name": "shiftmirroredbookend.rle",
+  "creationData": "",
+  "topleft": null,
+  "width": 7,
+  "height": 6,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [0, 0],
+    [1, 0],
+    [0, -1],
+    [2, -1],
+    [2, -2],
+    [5, -2],
+    [6, -2],
+    [1, -3],
+    [2, -3],
+    [4, -3],
+    [6, -3],
+    [4, -4],
+    [4, -5],
+    [5, -5]
+  ],
+  "hashLines": [
+    {
+      "content": "shiftmirroredbookend.rle",
+      "id": "N",
+      "full": "#N shiftmirroredbookend.rle"
+    },
+    {
+      "content": "https://conwaylife.com/wiki/Shift-mirrored_bookend",
+      "id": "C",
+      "full": "#C https://conwaylife.com/wiki/Shift-mirrored_bookend"
+    },
+    {
+      "content": "https://www.conwaylife.com/patterns/shiftmirroredbookend.rle",
+      "id": "C",
+      "full": "#C https://www.conwaylife.com/patterns/shiftmirroredbookend.rle"
+    }
+  ]
+}

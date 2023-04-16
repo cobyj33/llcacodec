@@ -1,0 +1,44 @@
+{
+  "format": "rle",
+  "comments": [
+    "https://conwaylife.com/wiki/Integral_sign",
+    "https://www.conwaylife.com/patterns/piheptomino2integral.rle"
+  ],
+  "name": "piheptomino2integral.rle",
+  "creationData": "",
+  "topleft": null,
+  "width": 13,
+  "height": 3,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [0, 0],
+    [1, 0],
+    [2, 0],
+    [11, 0],
+    [12, 0],
+    [0, -1],
+    [2, -1],
+    [11, -1],
+    [12, -1],
+    [0, -2],
+    [2, -2]
+  ],
+  "hashLines": [
+    {
+      "content": "piheptomino2integral.rle",
+      "id": "N",
+      "full": "#N piheptomino2integral.rle"
+    },
+    {
+      "content": "https://conwaylife.com/wiki/Integral_sign",
+      "id": "C",
+      "full": "#C https://conwaylife.com/wiki/Integral_sign"
+    },
+    {
+      "content": "https://www.conwaylife.com/patterns/piheptomino2integral.rle",
+      "id": "C",
+      "full": "#C https://www.conwaylife.com/patterns/piheptomino2integral.rle"
+    }
+  ]
+}

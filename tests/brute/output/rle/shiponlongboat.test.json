@@ -1,0 +1,42 @@
+{
+  "format": "rle",
+  "comments": [
+    "A 13-cell still life.",
+    "https://www.conwaylife.com/wiki/index.php?title=Ship_on_long_boat"
+  ],
+  "name": "Ship on long boat",
+  "creationData": "",
+  "topleft": null,
+  "width": 7,
+  "height": 7,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [0, 0],
+    [1, 0],
+    [0, -1],
+    [2, -1],
+    [1, -2],
+    [2, -2],
+    [3, -3],
+    [4, -3],
+    [3, -4],
+    [5, -4],
+    [4, -5],
+    [6, -5],
+    [5, -6]
+  ],
+  "hashLines": [
+    {"content": "Ship on long boat", "id": "N", "full": "#N Ship on long boat"},
+    {
+      "content": "A 13-cell still life.",
+      "id": "C",
+      "full": "#C A 13-cell still life."
+    },
+    {
+      "content": "https://www.conwaylife.com/wiki/index.php?title=Ship_on_long_boat",
+      "id": "C",
+      "full": "#C https://www.conwaylife.com/wiki/index.php?title=Ship_on_long_boat"
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "format": "rle",
+  "comments": [
+    "https://conwaylife.com/wiki/Bi-boat",
+    "https://conwaylife.com/patterns/biboat.rle"
+  ],
+  "name": "Bi-boat",
+  "creationData": "Unknown",
+  "topleft": null,
+  "width": 7,
+  "height": 3,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [1, 0],
+    [5, 0],
+    [0, -1],
+    [2, -1],
+    [4, -1],
+    [6, -1],
+    [1, -2],
+    [2, -2],
+    [4, -2],
+    [5, -2]
+  ],
+  "hashLines": [
+    {"content": "Bi-boat", "id": "N", "full": "#N Bi-boat"},
+    {"content": "Unknown", "id": "O", "full": "#O Unknown"},
+    {
+      "content": "https://conwaylife.com/wiki/Bi-boat",
+      "id": "C",
+      "full": "#C https://conwaylife.com/wiki/Bi-boat"
+    },
+    {
+      "content": "https://conwaylife.com/patterns/biboat.rle",
+      "id": "C",
+      "full": "#C https://conwaylife.com/patterns/biboat.rle"
+    }
+  ]
+}

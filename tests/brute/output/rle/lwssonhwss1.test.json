@@ -1,0 +1,51 @@
+{
+  "format": "rle",
+  "comments": [
+    "https://conwaylife.com/wiki/LWSS_on_HWSS_1",
+    "https://www.conwaylife.com/patterns/lwssonhwss1.rle"
+  ],
+  "name": "lwssonhwss1.rle",
+  "creationData": "",
+  "topleft": null,
+  "width": 7,
+  "height": 12,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [3, 0],
+    [4, 0],
+    [1, -1],
+    [6, -1],
+    [0, -2],
+    [0, -3],
+    [6, -3],
+    [0, -4],
+    [1, -4],
+    [2, -4],
+    [3, -4],
+    [4, -4],
+    [5, -4],
+    [0, -8],
+    [1, -8],
+    [2, -8],
+    [3, -8],
+    [0, -9],
+    [4, -9],
+    [0, -10],
+    [1, -11],
+    [4, -11]
+  ],
+  "hashLines": [
+    {"content": "lwssonhwss1.rle", "id": "N", "full": "#N lwssonhwss1.rle"},
+    {
+      "content": "https://conwaylife.com/wiki/LWSS_on_HWSS_1",
+      "id": "C",
+      "full": "#C https://conwaylife.com/wiki/LWSS_on_HWSS_1"
+    },
+    {
+      "content": "https://www.conwaylife.com/patterns/lwssonhwss1.rle",
+      "id": "C",
+      "full": "#C https://www.conwaylife.com/patterns/lwssonhwss1.rle"
+    }
+  ]
+}

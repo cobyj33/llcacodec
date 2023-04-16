@@ -1,0 +1,24 @@
+{
+  "format": "plaintext",
+  "name": "trafficlighthitsblock6.cells",
+  "description": [
+    "https://conwaylife.com/wiki/List_of_common_evolutionary_sequences",
+    "https://www.conwaylife.com/patterns/trafficlighthitsblock6.cells"
+  ],
+  "matrix": [
+    [0, 0, 0, 0, 0, 0, 1, 1],
+    [1, 0, 0, 0, 0, 0, 1, 1],
+    [1, 1, 0, 0, 0, 0, 0, 0],
+    [1, 0, 0, 0, 0, 0, 0, 0]
+  ],
+  "liveCoordinates": [
+    [6, 0],
+    [7, 0],
+    [0, -1],
+    [6, -1],
+    [7, -1],
+    [0, -2],
+    [1, -2],
+    [0, -3]
+  ]
+}

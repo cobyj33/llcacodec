@@ -1,0 +1,39 @@
+{
+  "format": "rle",
+  "comments": [
+    "This pattern evolves similarly to a pre-pulsar, but it is unstable."
+  ],
+  "name": "Skewed pre-pulsar",
+  "creationData": "",
+  "topleft": null,
+  "width": 9,
+  "height": 5,
+  "ruleString": "b3/s23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [6, 0],
+    [7, 0],
+    [8, 0],
+    [6, -1],
+    [8, -1],
+    [0, -2],
+    [1, -2],
+    [2, -2],
+    [6, -2],
+    [7, -2],
+    [8, -2],
+    [0, -3],
+    [2, -3],
+    [0, -4],
+    [1, -4],
+    [2, -4]
+  ],
+  "hashLines": [
+    {"content": "Skewed pre-pulsar", "id": "N", "full": "#N Skewed pre-pulsar"},
+    {
+      "content": "This pattern evolves similarly to a pre-pulsar, but it is unstable.",
+      "id": "C",
+      "full": "#C This pattern evolves similarly to a pre-pulsar, but it is unstable."
+    }
+  ]
+}

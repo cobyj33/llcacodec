@@ -1,0 +1,72 @@
+{
+  "format": "rle",
+  "comments": [
+    "https://conwaylife.com/wiki/Period-184_glider_gun",
+    "https://www.conwaylife.com/patterns/p184gun.rle"
+  ],
+  "name": "p184gun.rle",
+  "creationData": "David Buckingham, 1996",
+  "topleft": null,
+  "width": 31,
+  "height": 31,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [19, 0],
+    [17, -1],
+    [18, -1],
+    [19, -1],
+    [16, -2],
+    [16, -3],
+    [17, -3],
+    [30, -4],
+    [28, -5],
+    [29, -5],
+    [30, -5],
+    [27, -6],
+    [27, -7],
+    [28, -7],
+    [20, -12],
+    [21, -12],
+    [19, -13],
+    [21, -13],
+    [19, -14],
+    [19, -15],
+    [20, -15],
+    [22, -15],
+    [2, -16],
+    [3, -16],
+    [21, -16],
+    [22, -16],
+    [1, -17],
+    [3, -17],
+    [1, -18],
+    [0, -19],
+    [1, -19],
+    [6, -27],
+    [7, -27],
+    [5, -28],
+    [7, -28],
+    [5, -29],
+    [4, -30],
+    [5, -30]
+  ],
+  "hashLines": [
+    {"content": "p184gun.rle", "id": "N", "full": "#N p184gun.rle"},
+    {
+      "content": "David Buckingham, 1996",
+      "id": "O",
+      "full": "#O David Buckingham, 1996"
+    },
+    {
+      "content": "https://conwaylife.com/wiki/Period-184_glider_gun",
+      "id": "C",
+      "full": "#C https://conwaylife.com/wiki/Period-184_glider_gun"
+    },
+    {
+      "content": "https://www.conwaylife.com/patterns/p184gun.rle",
+      "id": "C",
+      "full": "#C https://www.conwaylife.com/patterns/p184gun.rle"
+    }
+  ]
+}

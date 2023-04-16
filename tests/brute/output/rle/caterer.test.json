@@ -1,0 +1,42 @@
+{
+  "format": "rle",
+  "comments": [
+    "A period 3 oscillator.",
+    "www.conwaylife.com/wiki/index.php?title=Caterer"
+  ],
+  "name": "Caterer",
+  "creationData": "Dean Hickerson",
+  "topleft": null,
+  "width": 8,
+  "height": 6,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [2, 0],
+    [0, -1],
+    [4, -1],
+    [5, -1],
+    [6, -1],
+    [7, -1],
+    [0, -2],
+    [4, -2],
+    [0, -3],
+    [3, -4],
+    [1, -5],
+    [2, -5]
+  ],
+  "hashLines": [
+    {"content": "Caterer", "id": "N", "full": "#N Caterer"},
+    {"content": "Dean Hickerson", "id": "O", "full": "#O Dean Hickerson"},
+    {
+      "content": "A period 3 oscillator.",
+      "id": "C",
+      "full": "#C A period 3 oscillator."
+    },
+    {
+      "content": "www.conwaylife.com/wiki/index.php?title=Caterer",
+      "id": "C",
+      "full": "#C www.conwaylife.com/wiki/index.php?title=Caterer"
+    }
+  ]
+}

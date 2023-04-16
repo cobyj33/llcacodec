@@ -1,0 +1,45 @@
+{
+  "format": "rle",
+  "comments": [
+    "https://conwaylife.com/wiki/Tub_with_two_down_trans_tails",
+    "https://conwaylife.com/patterns/tubwithtwodowntranstails.rle"
+  ],
+  "name": "tubwithtwodowntranstails.rle",
+  "creationData": "",
+  "topleft": null,
+  "width": 7,
+  "height": 7,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [5, 0],
+    [6, 0],
+    [5, -1],
+    [3, -2],
+    [5, -2],
+    [2, -3],
+    [4, -3],
+    [1, -4],
+    [3, -4],
+    [1, -5],
+    [0, -6],
+    [1, -6]
+  ],
+  "hashLines": [
+    {
+      "content": "tubwithtwodowntranstails.rle",
+      "id": "N",
+      "full": "#N tubwithtwodowntranstails.rle"
+    },
+    {
+      "content": "https://conwaylife.com/wiki/Tub_with_two_down_trans_tails",
+      "id": "C",
+      "full": "#C https://conwaylife.com/wiki/Tub_with_two_down_trans_tails"
+    },
+    {
+      "content": "https://conwaylife.com/patterns/tubwithtwodowntranstails.rle",
+      "id": "C",
+      "full": "#C https://conwaylife.com/patterns/tubwithtwodowntranstails.rle"
+    }
+  ]
+}

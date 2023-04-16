@@ -1,0 +1,45 @@
+{
+  "format": "rle",
+  "comments": [
+    "https://conwaylife.com/wiki/Eater_head_siamese_carrier",
+    "https://conwaylife.com/patterns/eaterheadsiamesecarrier.rle"
+  ],
+  "name": "Eater head siamese carrier",
+  "creationData": "Unknown",
+  "topleft": null,
+  "width": 7,
+  "height": 5,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [5, 0],
+    [6, 0],
+    [2, -1],
+    [3, -1],
+    [6, -1],
+    [1, -2],
+    [3, -2],
+    [4, -2],
+    [1, -3],
+    [0, -4],
+    [1, -4]
+  ],
+  "hashLines": [
+    {
+      "content": "Eater head siamese carrier",
+      "id": "N",
+      "full": "#N Eater head siamese carrier"
+    },
+    {"content": "Unknown", "id": "O", "full": "#O Unknown"},
+    {
+      "content": "https://conwaylife.com/wiki/Eater_head_siamese_carrier",
+      "id": "C",
+      "full": "#C https://conwaylife.com/wiki/Eater_head_siamese_carrier"
+    },
+    {
+      "content": "https://conwaylife.com/patterns/eaterheadsiamesecarrier.rle",
+      "id": "C",
+      "full": "#C https://conwaylife.com/patterns/eaterheadsiamesecarrier.rle"
+    }
+  ]
+}

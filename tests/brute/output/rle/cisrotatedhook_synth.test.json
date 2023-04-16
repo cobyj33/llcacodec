@@ -1,0 +1,78 @@
+{
+  "format": "rle",
+  "comments": [
+    "4-glider synthesis of cis-rotated hook",
+    "https://conwaylife.com/wiki/Cis-rotated_hook",
+    "https://conwaylife.com/forums/viewtopic.php?p=12276#p12276"
+  ],
+  "name": "cisrotatedhook_synth.rle",
+  "creationData": "Bob Shemyakin, 16 June 2014",
+  "topleft": null,
+  "width": 33,
+  "height": 15,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [13, 0],
+    [12, -1],
+    [12, -2],
+    [13, -2],
+    [14, -2],
+    [1, -5],
+    [9, -5],
+    [11, -5],
+    [1, -6],
+    [2, -6],
+    [10, -6],
+    [11, -6],
+    [0, -7],
+    [2, -7],
+    [10, -7],
+    [11, -10],
+    [12, -10],
+    [13, -10],
+    [30, -10],
+    [31, -10],
+    [11, -11],
+    [26, -11],
+    [27, -11],
+    [30, -11],
+    [12, -12],
+    [26, -12],
+    [28, -12],
+    [30, -12],
+    [32, -12],
+    [28, -13],
+    [31, -13],
+    [32, -13],
+    [27, -14],
+    [28, -14]
+  ],
+  "hashLines": [
+    {
+      "content": "cisrotatedhook_synth.rle",
+      "id": "N",
+      "full": "#N cisrotatedhook_synth.rle"
+    },
+    {
+      "content": "Bob Shemyakin, 16 June 2014",
+      "id": "O",
+      "full": "#O Bob Shemyakin, 16 June 2014"
+    },
+    {
+      "content": "4-glider synthesis of cis-rotated hook",
+      "id": "C",
+      "full": "#C 4-glider synthesis of cis-rotated hook"
+    },
+    {
+      "content": "https://conwaylife.com/wiki/Cis-rotated_hook",
+      "id": "C",
+      "full": "#C https://conwaylife.com/wiki/Cis-rotated_hook"
+    },
+    {
+      "content": "https://conwaylife.com/forums/viewtopic.php?p=12276#p12276",
+      "id": "C",
+      "full": "#C https://conwaylife.com/forums/viewtopic.php?p=12276#p12276"
+    }
+  ]
+}

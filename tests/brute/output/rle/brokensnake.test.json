@@ -1,0 +1,39 @@
+{
+  "format": "rle",
+  "comments": [
+    "https://conwaylife.com/wiki/Broken_snake",
+    "https://conwaylife.com/patterns/brokensnake.rle"
+  ],
+  "name": "brokensnake.rle",
+  "creationData": "",
+  "topleft": null,
+  "width": 3,
+  "height": 7,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [1, 0],
+    [2, 0],
+    [2, -1],
+    [1, -2],
+    [1, -3],
+    [2, -3],
+    [2, -4],
+    [0, -5],
+    [0, -6],
+    [1, -6]
+  ],
+  "hashLines": [
+    {"content": "brokensnake.rle", "id": "N", "full": "#N brokensnake.rle"},
+    {
+      "content": "https://conwaylife.com/wiki/Broken_snake",
+      "id": "C",
+      "full": "#C https://conwaylife.com/wiki/Broken_snake"
+    },
+    {
+      "content": "https://conwaylife.com/patterns/brokensnake.rle",
+      "id": "C",
+      "full": "#C https://conwaylife.com/patterns/brokensnake.rle"
+    }
+  ]
+}

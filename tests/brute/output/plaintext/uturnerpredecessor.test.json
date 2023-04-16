@@ -1,0 +1,10 @@
+{
+  "format": "plaintext",
+  "name": "uturnerpredecessor.cells",
+  "description": [
+    "https://conwaylife.com/wiki/U-turner",
+    "https://www.conwaylife.com/patterns/uturnerpredecessor.cells"
+  ],
+  "matrix": [[1, 0, 0], [1, 0, 0], [1, 0, 0], [0, 0, 0], [1, 1, 0], [0, 0, 1]],
+  "liveCoordinates": [[0, 0], [0, -1], [0, -2], [0, -4], [1, -4], [2, -5]]
+}

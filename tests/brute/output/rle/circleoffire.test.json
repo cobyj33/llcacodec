@@ -1,0 +1,72 @@
+{
+  "format": "rle",
+  "comments": [
+    "https://conwaylife.com/wiki/Circle_of_fire",
+    "https://conwaylife.com/patterns/circleoffire.rle"
+  ],
+  "name": "Circle of fire",
+  "creationData": "Unknown",
+  "topleft": null,
+  "width": 11,
+  "height": 11,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [4, 0],
+    [6, 0],
+    [2, -1],
+    [5, -1],
+    [8, -1],
+    [3, -2],
+    [5, -2],
+    [7, -2],
+    [1, -3],
+    [2, -3],
+    [3, -3],
+    [5, -3],
+    [7, -3],
+    [8, -3],
+    [9, -3],
+    [5, -4],
+    [0, -5],
+    [1, -5],
+    [2, -5],
+    [3, -5],
+    [4, -5],
+    [6, -5],
+    [7, -5],
+    [8, -5],
+    [9, -5],
+    [10, -5],
+    [5, -6],
+    [1, -7],
+    [2, -7],
+    [3, -7],
+    [5, -7],
+    [7, -7],
+    [8, -7],
+    [9, -7],
+    [3, -8],
+    [5, -8],
+    [7, -8],
+    [2, -9],
+    [5, -9],
+    [8, -9],
+    [4, -10],
+    [6, -10]
+  ],
+  "hashLines": [
+    {"content": "Circle of fire", "id": "N", "full": "#N Circle of fire"},
+    {"content": "Unknown", "id": "O", "full": "#O Unknown"},
+    {
+      "content": "https://conwaylife.com/wiki/Circle_of_fire",
+      "id": "C",
+      "full": "#C https://conwaylife.com/wiki/Circle_of_fire"
+    },
+    {
+      "content": "https://conwaylife.com/patterns/circleoffire.rle",
+      "id": "C",
+      "full": "#C https://conwaylife.com/patterns/circleoffire.rle"
+    }
+  ]
+}

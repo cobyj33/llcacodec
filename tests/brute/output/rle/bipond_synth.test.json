@@ -1,0 +1,71 @@
+{
+  "format": "rle",
+  "comments": [
+    "3-glider synthesis of bi-pond",
+    "https://conwaylife.com/wiki/Bi-pond",
+    "https://conwaylife.com/forums/viewtopic.php?p=12276#p12276"
+  ],
+  "name": "bipond_synth.rle",
+  "creationData": "Bob Shemyakin, 16 June 2014",
+  "topleft": null,
+  "width": 41,
+  "height": 16,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [11, 0],
+    [10, -1],
+    [10, -2],
+    [11, -2],
+    [12, -2],
+    [35, -5],
+    [36, -5],
+    [34, -6],
+    [37, -6],
+    [34, -7],
+    [37, -7],
+    [35, -8],
+    [36, -8],
+    [38, -8],
+    [39, -8],
+    [37, -9],
+    [40, -9],
+    [37, -10],
+    [40, -10],
+    [38, -11],
+    [39, -11],
+    [0, -12],
+    [2, -12],
+    [1, -13],
+    [2, -13],
+    [8, -13],
+    [9, -13],
+    [1, -14],
+    [7, -14],
+    [8, -14],
+    [9, -15]
+  ],
+  "hashLines": [
+    {"content": "bipond_synth.rle", "id": "N", "full": "#N bipond_synth.rle"},
+    {
+      "content": "Bob Shemyakin, 16 June 2014",
+      "id": "O",
+      "full": "#O Bob Shemyakin, 16 June 2014"
+    },
+    {
+      "content": "3-glider synthesis of bi-pond",
+      "id": "C",
+      "full": "#C 3-glider synthesis of bi-pond"
+    },
+    {
+      "content": "https://conwaylife.com/wiki/Bi-pond",
+      "id": "C",
+      "full": "#C https://conwaylife.com/wiki/Bi-pond"
+    },
+    {
+      "content": "https://conwaylife.com/forums/viewtopic.php?p=12276#p12276",
+      "id": "C",
+      "full": "#C https://conwaylife.com/forums/viewtopic.php?p=12276#p12276"
+    }
+  ]
+}

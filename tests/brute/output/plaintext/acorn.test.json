@@ -1,0 +1,23 @@
+{
+  "format": "plaintext",
+  "name": "Acorn",
+  "description": [
+    "Author: Charles Corderman",
+    "A methuselah that stabilizes after 5206 generations.",
+    "www.conwaylife.com/wiki/index.php?title=Acorn"
+  ],
+  "matrix": [
+    [0, 1, 0, 0, 0, 0, 0],
+    [0, 0, 0, 1, 0, 0, 0],
+    [1, 1, 0, 0, 1, 1, 1]
+  ],
+  "liveCoordinates": [
+    [1, 0],
+    [3, -1],
+    [0, -2],
+    [1, -2],
+    [4, -2],
+    [5, -2],
+    [6, -2]
+  ]
+}

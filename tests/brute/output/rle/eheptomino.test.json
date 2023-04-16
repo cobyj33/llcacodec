@@ -1,0 +1,37 @@
+{
+  "format": "rle",
+  "comments": [
+    "https://conwaylife.com/wiki/E-heptomino",
+    "https://conwaylife.com/patterns/eheptomino.rle"
+  ],
+  "name": "E-heptomino",
+  "creationData": "Unknown",
+  "topleft": null,
+  "width": 4,
+  "height": 3,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [1, 0],
+    [2, 0],
+    [3, 0],
+    [0, -1],
+    [1, -1],
+    [1, -2],
+    [2, -2]
+  ],
+  "hashLines": [
+    {"content": "E-heptomino", "id": "N", "full": "#N E-heptomino"},
+    {"content": "Unknown", "id": "O", "full": "#O Unknown"},
+    {
+      "content": "https://conwaylife.com/wiki/E-heptomino",
+      "id": "C",
+      "full": "#C https://conwaylife.com/wiki/E-heptomino"
+    },
+    {
+      "content": "https://conwaylife.com/patterns/eheptomino.rle",
+      "id": "C",
+      "full": "#C https://conwaylife.com/patterns/eheptomino.rle"
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "format": "rle",
+  "comments": [
+    "https://conwaylife.com/wiki/180-degree_kickback",
+    "https://www.conwaylife.com/patterns/180degreekickback.rle"
+  ],
+  "name": "180degreekickback.rle",
+  "creationData": "",
+  "topleft": null,
+  "width": 13,
+  "height": 18,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [11, 0],
+    [10, -1],
+    [10, -2],
+    [11, -2],
+    [12, -2],
+    [1, -15],
+    [2, -15],
+    [0, -16],
+    [2, -16],
+    [2, -17]
+  ],
+  "hashLines": [
+    {
+      "content": "180degreekickback.rle",
+      "id": "N",
+      "full": "#N 180degreekickback.rle"
+    },
+    {
+      "content": "https://conwaylife.com/wiki/180-degree_kickback",
+      "id": "C",
+      "full": "#C https://conwaylife.com/wiki/180-degree_kickback"
+    },
+    {
+      "content": "https://www.conwaylife.com/patterns/180degreekickback.rle",
+      "id": "C",
+      "full": "#C https://www.conwaylife.com/patterns/180degreekickback.rle"
+    }
+  ]
+}

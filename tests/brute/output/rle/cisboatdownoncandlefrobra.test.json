@@ -1,0 +1,50 @@
+{
+  "format": "rle",
+  "comments": [
+    "https://conwaylife.com/wiki/Cis-boat_down_on_candlefrobra",
+    "https://www.conwaylife.com/patterns/cisboatdownoncandlefrobra.rle"
+  ],
+  "name": "cisboatdownoncandlefrobra.rle",
+  "creationData": "",
+  "topleft": null,
+  "width": 5,
+  "height": 11,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [2, 0],
+    [1, -1],
+    [3, -1],
+    [2, -2],
+    [3, -2],
+    [0, -4],
+    [1, -4],
+    [2, -4],
+    [3, -4],
+    [0, -5],
+    [4, -5],
+    [3, -6],
+    [3, -7],
+    [2, -8],
+    [1, -9],
+    [3, -9],
+    [2, -10]
+  ],
+  "hashLines": [
+    {
+      "content": "cisboatdownoncandlefrobra.rle",
+      "id": "N",
+      "full": "#N cisboatdownoncandlefrobra.rle"
+    },
+    {
+      "content": "https://conwaylife.com/wiki/Cis-boat_down_on_candlefrobra",
+      "id": "C",
+      "full": "#C https://conwaylife.com/wiki/Cis-boat_down_on_candlefrobra"
+    },
+    {
+      "content": "https://www.conwaylife.com/patterns/cisboatdownoncandlefrobra.rle",
+      "id": "C",
+      "full": "#C https://www.conwaylife.com/patterns/cisboatdownoncandlefrobra.rle"
+    }
+  ]
+}

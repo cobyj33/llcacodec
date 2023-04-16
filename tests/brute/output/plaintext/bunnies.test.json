@@ -1,0 +1,26 @@
+{
+  "format": "plaintext",
+  "name": "Bunnies",
+  "description": [
+    "Author: Robert Wainwright and Andrew Trevorrow",
+    "A parent of rabbits.",
+    "www.conwaylife.com/wiki/index.php?title=Bunnies"
+  ],
+  "matrix": [
+    [1, 0, 0, 0, 0, 0, 1, 0],
+    [0, 0, 1, 0, 0, 0, 1, 0],
+    [0, 0, 1, 0, 0, 1, 0, 1],
+    [0, 1, 0, 1, 0, 0, 0, 0]
+  ],
+  "liveCoordinates": [
+    [0, 0],
+    [6, 0],
+    [2, -1],
+    [6, -1],
+    [2, -2],
+    [5, -2],
+    [7, -2],
+    [1, -3],
+    [3, -3]
+  ]
+}

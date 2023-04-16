@@ -1,0 +1,46 @@
+{
+  "format": "rle",
+  "comments": [
+    "https://conwaylife.com/wiki/Up_wing_on_wing",
+    "https://conwaylife.com/patterns/upwingonwing.rle"
+  ],
+  "name": "Up wing on wing",
+  "creationData": "Unknown",
+  "topleft": null,
+  "width": 9,
+  "height": 4,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [1, 0],
+    [2, 0],
+    [6, 0],
+    [7, 0],
+    [0, -1],
+    [3, -1],
+    [5, -1],
+    [8, -1],
+    [1, -2],
+    [3, -2],
+    [5, -2],
+    [7, -2],
+    [2, -3],
+    [3, -3],
+    [5, -3],
+    [6, -3]
+  ],
+  "hashLines": [
+    {"content": "Up wing on wing", "id": "N", "full": "#N Up wing on wing"},
+    {"content": "Unknown", "id": "O", "full": "#O Unknown"},
+    {
+      "content": "https://conwaylife.com/wiki/Up_wing_on_wing",
+      "id": "C",
+      "full": "#C https://conwaylife.com/wiki/Up_wing_on_wing"
+    },
+    {
+      "content": "https://conwaylife.com/patterns/upwingonwing.rle",
+      "id": "C",
+      "full": "#C https://conwaylife.com/patterns/upwingonwing.rle"
+    }
+  ]
+}

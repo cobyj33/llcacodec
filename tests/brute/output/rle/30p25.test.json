@@ -1,0 +1,64 @@
+{
+  "format": "rle",
+  "comments": [
+    "https://conwaylife.com/wiki/30P25",
+    "https://www.conwaylife.com/patterns/30p25.rle"
+  ],
+  "name": "30p25.rle",
+  "creationData": "Charity Engine, 2022",
+  "topleft": null,
+  "width": 20,
+  "height": 20,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [0, 0],
+    [0, -1],
+    [1, -1],
+    [2, -1],
+    [3, -2],
+    [2, -3],
+    [2, -4],
+    [5, -4],
+    [6, -6],
+    [7, -6],
+    [7, -7],
+    [5, -8],
+    [7, -8],
+    [4, -9],
+    [5, -9],
+    [14, -10],
+    [15, -10],
+    [12, -11],
+    [14, -11],
+    [12, -12],
+    [12, -13],
+    [13, -13],
+    [14, -15],
+    [17, -15],
+    [17, -16],
+    [16, -17],
+    [17, -18],
+    [18, -18],
+    [19, -18],
+    [19, -19]
+  ],
+  "hashLines": [
+    {"content": "30p25.rle", "id": "N", "full": "#N 30p25.rle"},
+    {
+      "content": "Charity Engine, 2022",
+      "id": "O",
+      "full": "#O Charity Engine, 2022"
+    },
+    {
+      "content": "https://conwaylife.com/wiki/30P25",
+      "id": "C",
+      "full": "#C https://conwaylife.com/wiki/30P25"
+    },
+    {
+      "content": "https://www.conwaylife.com/patterns/30p25.rle",
+      "id": "C",
+      "full": "#C https://www.conwaylife.com/patterns/30p25.rle"
+    }
+  ]
+}

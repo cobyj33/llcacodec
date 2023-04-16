@@ -1,0 +1,41 @@
+{
+  "format": "plaintext",
+  "name": "cisbeehiveoncandlefrobra.cells",
+  "description": [
+    "https://conwaylife.com/wiki/Cis-beehive_on_candlefrobra",
+    "https://www.conwaylife.com/patterns/cisbeehiveoncandlefrobra.cells"
+  ],
+  "matrix": [
+    [0, 0, 1, 1, 0],
+    [0, 1, 0, 0, 1],
+    [0, 0, 1, 1, 0],
+    [0, 0, 0, 0, 0],
+    [1, 1, 1, 1, 0],
+    [1, 0, 0, 0, 1],
+    [0, 0, 0, 1, 0],
+    [0, 0, 0, 1, 0],
+    [0, 0, 1, 0, 0],
+    [0, 1, 0, 1, 0],
+    [0, 0, 1, 0, 0]
+  ],
+  "liveCoordinates": [
+    [2, 0],
+    [3, 0],
+    [1, -1],
+    [4, -1],
+    [2, -2],
+    [3, -2],
+    [0, -4],
+    [1, -4],
+    [2, -4],
+    [3, -4],
+    [0, -5],
+    [4, -5],
+    [3, -6],
+    [3, -7],
+    [2, -8],
+    [1, -9],
+    [3, -9],
+    [2, -10]
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "format": "rle",
+  "comments": [
+    "https://conwaylife.com/wiki/Trans-carrier-tie",
+    "https://conwaylife.com/patterns/transcarriertie.rle"
+  ],
+  "name": "transcarriertie.rle",
+  "creationData": "",
+  "topleft": null,
+  "width": 7,
+  "height": 7,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [5, 0],
+    [6, 0],
+    [3, -1],
+    [6, -1],
+    [3, -2],
+    [4, -2],
+    [1, -3],
+    [2, -3],
+    [2, -4],
+    [0, -5],
+    [0, -6],
+    [1, -6]
+  ],
+  "hashLines": [
+    {
+      "content": "transcarriertie.rle",
+      "id": "N",
+      "full": "#N transcarriertie.rle"
+    },
+    {
+      "content": "https://conwaylife.com/wiki/Trans-carrier-tie",
+      "id": "C",
+      "full": "#C https://conwaylife.com/wiki/Trans-carrier-tie"
+    },
+    {
+      "content": "https://conwaylife.com/patterns/transcarriertie.rle",
+      "id": "C",
+      "full": "#C https://conwaylife.com/patterns/transcarriertie.rle"
+    }
+  ]
+}

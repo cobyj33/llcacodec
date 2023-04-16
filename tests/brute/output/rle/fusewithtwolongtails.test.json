@@ -1,0 +1,45 @@
+{
+  "format": "rle",
+  "comments": [
+    "https://conwaylife.com/wiki/Fuse_with_two_long_tails",
+    "https://conwaylife.com/patterns/fusewithtwolongtails.rle"
+  ],
+  "name": "fusewithtwolongtails.rle",
+  "creationData": "",
+  "topleft": null,
+  "width": 4,
+  "height": 8,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [2, 0],
+    [3, 0],
+    [2, -1],
+    [3, -2],
+    [1, -3],
+    [3, -3],
+    [0, -4],
+    [2, -4],
+    [0, -5],
+    [1, -6],
+    [0, -7],
+    [1, -7]
+  ],
+  "hashLines": [
+    {
+      "content": "fusewithtwolongtails.rle",
+      "id": "N",
+      "full": "#N fusewithtwolongtails.rle"
+    },
+    {
+      "content": "https://conwaylife.com/wiki/Fuse_with_two_long_tails",
+      "id": "C",
+      "full": "#C https://conwaylife.com/wiki/Fuse_with_two_long_tails"
+    },
+    {
+      "content": "https://conwaylife.com/patterns/fusewithtwolongtails.rle",
+      "id": "C",
+      "full": "#C https://conwaylife.com/patterns/fusewithtwolongtails.rle"
+    }
+  ]
+}

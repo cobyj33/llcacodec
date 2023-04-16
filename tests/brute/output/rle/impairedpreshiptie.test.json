@@ -1,0 +1,55 @@
+{
+  "format": "rle",
+  "comments": [
+    "https://conwaylife.com/wiki/Boat_tie_ship",
+    "https://www.conwaylife.com/patterns/impairedpreshiptie.rle"
+  ],
+  "name": "impairedpreshiptie.rle",
+  "creationData": "",
+  "topleft": null,
+  "width": 11,
+  "height": 10,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [4, 0],
+    [3, -1],
+    [5, -1],
+    [6, -1],
+    [3, -2],
+    [10, -2],
+    [1, -3],
+    [2, -3],
+    [8, -3],
+    [10, -3],
+    [0, -4],
+    [8, -4],
+    [1, -5],
+    [9, -5],
+    [1, -6],
+    [7, -6],
+    [8, -6],
+    [6, -7],
+    [3, -8],
+    [4, -8],
+    [6, -8],
+    [5, -9]
+  ],
+  "hashLines": [
+    {
+      "content": "impairedpreshiptie.rle",
+      "id": "N",
+      "full": "#N impairedpreshiptie.rle"
+    },
+    {
+      "content": "https://conwaylife.com/wiki/Boat_tie_ship",
+      "id": "C",
+      "full": "#C https://conwaylife.com/wiki/Boat_tie_ship"
+    },
+    {
+      "content": "https://www.conwaylife.com/patterns/impairedpreshiptie.rle",
+      "id": "C",
+      "full": "#C https://www.conwaylife.com/patterns/impairedpreshiptie.rle"
+    }
+  ]
+}

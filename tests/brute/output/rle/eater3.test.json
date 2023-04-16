@@ -1,0 +1,61 @@
+{
+  "format": "rle",
+  "comments": [
+    "A 31-cell still life and symmetric eater.",
+    "https://www.conwaylife.com/wiki/index.php?title=Eater_3"
+  ],
+  "name": "Eater 3",
+  "creationData": "David Buckingham",
+  "topleft": null,
+  "width": 12,
+  "height": 12,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [9, 0],
+    [10, 0],
+    [4, -1],
+    [5, -1],
+    [8, -1],
+    [11, -1],
+    [1, -2],
+    [4, -2],
+    [9, -2],
+    [11, -2],
+    [0, -3],
+    [2, -3],
+    [4, -3],
+    [10, -3],
+    [1, -4],
+    [4, -4],
+    [6, -4],
+    [7, -4],
+    [4, -5],
+    [7, -5],
+    [5, -6],
+    [10, -6],
+    [6, -7],
+    [7, -7],
+    [8, -7],
+    [9, -7],
+    [10, -7],
+    [8, -9],
+    [7, -10],
+    [9, -10],
+    [8, -11]
+  ],
+  "hashLines": [
+    {"content": "Eater 3", "id": "N", "full": "#N Eater 3"},
+    {"content": "David Buckingham", "id": "O", "full": "#O David Buckingham"},
+    {
+      "content": "A 31-cell still life and symmetric eater.",
+      "id": "C",
+      "full": "#C A 31-cell still life and symmetric eater."
+    },
+    {
+      "content": "https://www.conwaylife.com/wiki/index.php?title=Eater_3",
+      "id": "C",
+      "full": "#C https://www.conwaylife.com/wiki/index.php?title=Eater_3"
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "format": "rle",
+  "comments": [
+    "https://conwaylife.com/wiki/Boat-tie",
+    "https://www.conwaylife.com/patterns/2ttetrominoes.rle"
+  ],
+  "name": "2ttetrominoes.rle",
+  "creationData": "",
+  "topleft": null,
+  "width": 8,
+  "height": 7,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [1, 0],
+    [0, -1],
+    [1, -1],
+    [2, -1],
+    [6, -5],
+    [5, -6],
+    [6, -6],
+    [7, -6]
+  ],
+  "hashLines": [
+    {"content": "2ttetrominoes.rle", "id": "N", "full": "#N 2ttetrominoes.rle"},
+    {
+      "content": "https://conwaylife.com/wiki/Boat-tie",
+      "id": "C",
+      "full": "#C https://conwaylife.com/wiki/Boat-tie"
+    },
+    {
+      "content": "https://www.conwaylife.com/patterns/2ttetrominoes.rle",
+      "id": "C",
+      "full": "#C https://www.conwaylife.com/patterns/2ttetrominoes.rle"
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "format": "plaintext",
+  "name": "HWSS",
+  "description": [
+    "Author: John Conway",
+    "The fourth most common spaceship (after the glider, lightweight spaceship and middleweight spaceship).",
+    "www.conwaylife.com/wiki/index.php?title=Heavyweight_spaceship"
+  ],
+  "matrix": [
+    [0, 0, 0, 1, 1, 0, 0],
+    [0, 1, 0, 0, 0, 0, 1],
+    [1, 0, 0, 0, 0, 0, 0],
+    [1, 0, 0, 0, 0, 0, 1],
+    [1, 1, 1, 1, 1, 1, 0]
+  ],
+  "liveCoordinates": [
+    [3, 0],
+    [4, 0],
+    [1, -1],
+    [6, -1],
+    [0, -2],
+    [0, -3],
+    [6, -3],
+    [0, -4],
+    [1, -4],
+    [2, -4],
+    [3, -4],
+    [4, -4],
+    [5, -4]
+  ]
+}

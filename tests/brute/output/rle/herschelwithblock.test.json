@@ -1,0 +1,44 @@
+{
+  "format": "rle",
+  "comments": [
+    "https://conwaylife.com/wiki/List_of_common_evolutionary_sequences",
+    "https://www.conwaylife.com/patterns/herschelwithblock.rle"
+  ],
+  "name": "herschelwithblock.rle",
+  "creationData": "",
+  "topleft": null,
+  "width": 14,
+  "height": 4,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [0, 0],
+    [12, 0],
+    [13, 0],
+    [0, -1],
+    [1, -1],
+    [2, -1],
+    [12, -1],
+    [13, -1],
+    [0, -2],
+    [2, -2],
+    [2, -3]
+  ],
+  "hashLines": [
+    {
+      "content": "herschelwithblock.rle",
+      "id": "N",
+      "full": "#N herschelwithblock.rle"
+    },
+    {
+      "content": "https://conwaylife.com/wiki/List_of_common_evolutionary_sequences",
+      "id": "C",
+      "full": "#C https://conwaylife.com/wiki/List_of_common_evolutionary_sequences"
+    },
+    {
+      "content": "https://www.conwaylife.com/patterns/herschelwithblock.rle",
+      "id": "C",
+      "full": "#C https://www.conwaylife.com/patterns/herschelwithblock.rle"
+    }
+  ]
+}

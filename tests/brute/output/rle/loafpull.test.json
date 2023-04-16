@@ -1,0 +1,41 @@
+{
+  "format": "rle",
+  "comments": [
+    "https://conwaylife.com/wiki/Loaf_pull",
+    "https://www.conwaylife.com/patterns/loafpull.rle"
+  ],
+  "name": "loafpull.rle",
+  "creationData": "",
+  "topleft": null,
+  "width": 17,
+  "height": 19,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [1, 0],
+    [0, -1],
+    [2, -1],
+    [0, -2],
+    [3, -2],
+    [1, -3],
+    [2, -3],
+    [14, -16],
+    [15, -16],
+    [16, -16],
+    [14, -17],
+    [15, -18]
+  ],
+  "hashLines": [
+    {"content": "loafpull.rle", "id": "N", "full": "#N loafpull.rle"},
+    {
+      "content": "https://conwaylife.com/wiki/Loaf_pull",
+      "id": "C",
+      "full": "#C https://conwaylife.com/wiki/Loaf_pull"
+    },
+    {
+      "content": "https://www.conwaylife.com/patterns/loafpull.rle",
+      "id": "C",
+      "full": "#C https://www.conwaylife.com/patterns/loafpull.rle"
+    }
+  ]
+}

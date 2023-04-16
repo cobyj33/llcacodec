@@ -1,0 +1,94 @@
+{
+  "format": "rle",
+  "comments": [
+    "7-glider synthesis of odd test tube baby",
+    "https://conwaylife.com/wiki/Odd_test_tube_baby",
+    "https://conwaylife.com/forums/viewtopic.php?p=51666#p51666"
+  ],
+  "name": "oddtesttubebaby_synth.rle",
+  "creationData": "Goldtiger997, 6 October 2017",
+  "topleft": null,
+  "width": 45,
+  "height": 22,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [12, 0],
+    [10, -1],
+    [12, -1],
+    [11, -2],
+    [12, -2],
+    [6, -12],
+    [24, -12],
+    [4, -13],
+    [6, -13],
+    [23, -13],
+    [5, -14],
+    [6, -14],
+    [23, -14],
+    [24, -14],
+    [25, -14],
+    [1, -15],
+    [2, -15],
+    [27, -15],
+    [28, -15],
+    [29, -15],
+    [37, -15],
+    [0, -16],
+    [2, -16],
+    [14, -16],
+    [15, -16],
+    [27, -16],
+    [36, -16],
+    [38, -16],
+    [43, -16],
+    [44, -16],
+    [2, -17],
+    [14, -17],
+    [16, -17],
+    [28, -17],
+    [37, -17],
+    [39, -17],
+    [42, -17],
+    [44, -17],
+    [14, -18],
+    [39, -18],
+    [42, -18],
+    [11, -19],
+    [12, -19],
+    [39, -19],
+    [42, -19],
+    [10, -20],
+    [12, -20],
+    [40, -20],
+    [41, -20],
+    [12, -21]
+  ],
+  "hashLines": [
+    {
+      "content": "oddtesttubebaby_synth.rle",
+      "id": "N",
+      "full": "#N oddtesttubebaby_synth.rle"
+    },
+    {
+      "content": "Goldtiger997, 6 October 2017",
+      "id": "O",
+      "full": "#O Goldtiger997, 6 October 2017"
+    },
+    {
+      "content": "7-glider synthesis of odd test tube baby",
+      "id": "C",
+      "full": "#C 7-glider synthesis of odd test tube baby"
+    },
+    {
+      "content": "https://conwaylife.com/wiki/Odd_test_tube_baby",
+      "id": "C",
+      "full": "#C https://conwaylife.com/wiki/Odd_test_tube_baby"
+    },
+    {
+      "content": "https://conwaylife.com/forums/viewtopic.php?p=51666#p51666",
+      "id": "C",
+      "full": "#C https://conwaylife.com/forums/viewtopic.php?p=51666#p51666"
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "format": "rle",
+  "comments": [
+    "https://conwaylife.com/wiki/Two-glider_octomino",
+    "https://www.conwaylife.com/patterns/2glideroctominofromblockandt.rle"
+  ],
+  "name": "2glideroctominofromblockandt.rle",
+  "creationData": "",
+  "topleft": null,
+  "width": 6,
+  "height": 5,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [1, 0],
+    [0, -1],
+    [1, -1],
+    [1, -2],
+    [4, -3],
+    [5, -3],
+    [4, -4],
+    [5, -4]
+  ],
+  "hashLines": [
+    {
+      "content": "2glideroctominofromblockandt.rle",
+      "id": "N",
+      "full": "#N 2glideroctominofromblockandt.rle"
+    },
+    {
+      "content": "https://conwaylife.com/wiki/Two-glider_octomino",
+      "id": "C",
+      "full": "#C https://conwaylife.com/wiki/Two-glider_octomino"
+    },
+    {
+      "content": "https://www.conwaylife.com/patterns/2glideroctominofromblockandt.rle",
+      "id": "C",
+      "full": "#C https://www.conwaylife.com/patterns/2glideroctominofromblockandt.rle"
+    }
+  ]
+}

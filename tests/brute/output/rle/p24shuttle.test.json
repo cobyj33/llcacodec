@@ -1,0 +1,68 @@
+{
+  "format": "rle",
+  "comments": [
+    "A period 24 shuttle oscillator found by Karel Suhajda.",
+    "https://conwaylife.com/wiki/P24_shuttle"
+  ],
+  "name": "p24 shuttle",
+  "creationData": "Karel Suhajda",
+  "topleft": null,
+  "width": 20,
+  "height": 20,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [7, 0],
+    [8, 0],
+    [7, -1],
+    [8, -1],
+    [11, -5],
+    [6, -6],
+    [11, -6],
+    [12, -6],
+    [0, -7],
+    [1, -7],
+    [5, -7],
+    [7, -7],
+    [13, -7],
+    [0, -8],
+    [1, -8],
+    [4, -8],
+    [5, -8],
+    [7, -8],
+    [13, -8],
+    [14, -8],
+    [5, -9],
+    [6, -9],
+    [18, -11],
+    [19, -11],
+    [11, -12],
+    [12, -12],
+    [18, -12],
+    [19, -12],
+    [10, -13],
+    [13, -13],
+    [10, -14],
+    [11, -14],
+    [12, -14],
+    [11, -15],
+    [11, -18],
+    [12, -18],
+    [11, -19],
+    [12, -19]
+  ],
+  "hashLines": [
+    {"content": "p24 shuttle", "id": "N", "full": "#N p24 shuttle"},
+    {"content": "Karel Suhajda", "id": "O", "full": "#O Karel Suhajda"},
+    {
+      "content": "A period 24 shuttle oscillator found by Karel Suhajda.",
+      "id": "C",
+      "full": "#C A period 24 shuttle oscillator found by Karel Suhajda."
+    },
+    {
+      "content": "https://conwaylife.com/wiki/P24_shuttle",
+      "id": "C",
+      "full": "#C https://conwaylife.com/wiki/P24_shuttle"
+    }
+  ]
+}

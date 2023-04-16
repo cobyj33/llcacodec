@@ -1,0 +1,31 @@
+{
+  "format": "plaintext",
+  "name": "cisbeaconontable.cells",
+  "description": [
+    "https://conwaylife.com/wiki/Cis-beacon_on_table",
+    "https://www.conwaylife.com/patterns/cisbeaconontable.cells"
+  ],
+  "matrix": [
+    [0, 0, 1, 1],
+    [0, 0, 0, 1],
+    [1, 0, 0, 0],
+    [1, 1, 0, 0],
+    [0, 0, 0, 0],
+    [1, 1, 1, 1],
+    [1, 0, 0, 1]
+  ],
+  "liveCoordinates": [
+    [2, 0],
+    [3, 0],
+    [3, -1],
+    [0, -2],
+    [0, -3],
+    [1, -3],
+    [0, -5],
+    [1, -5],
+    [2, -5],
+    [3, -5],
+    [0, -6],
+    [3, -6]
+  ]
+}

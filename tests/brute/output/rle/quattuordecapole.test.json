@@ -1,0 +1,49 @@
+{
+  "format": "rle",
+  "comments": [
+    "The barberpole of length 14.",
+    "https://conwaylife.com/wiki/Quattuordecapole"
+  ],
+  "name": "Quattuordecapole",
+  "creationData": "",
+  "topleft": null,
+  "width": 17,
+  "height": 17,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [15, 0],
+    [16, 0],
+    [14, -1],
+    [16, -1],
+    [12, -3],
+    [14, -3],
+    [10, -5],
+    [12, -5],
+    [8, -7],
+    [10, -7],
+    [6, -9],
+    [8, -9],
+    [4, -11],
+    [6, -11],
+    [2, -13],
+    [4, -13],
+    [0, -15],
+    [2, -15],
+    [0, -16],
+    [1, -16]
+  ],
+  "hashLines": [
+    {"content": "Quattuordecapole", "id": "N", "full": "#N Quattuordecapole"},
+    {
+      "content": "The barberpole of length 14.",
+      "id": "C",
+      "full": "#C The barberpole of length 14."
+    },
+    {
+      "content": "https://conwaylife.com/wiki/Quattuordecapole",
+      "id": "C",
+      "full": "#C https://conwaylife.com/wiki/Quattuordecapole"
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "format": "rle",
+  "comments": ["A period 5 oscillator.", "www.conwaylife.com/wiki/Pentoad_1H2"],
+  "name": "Pentoad 1H2",
+  "creationData": "",
+  "topleft": null,
+  "width": 15,
+  "height": 12,
+  "ruleString": "b3/s23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [8, 0],
+    [9, 0],
+    [8, -1],
+    [10, -1],
+    [13, -1],
+    [14, -1],
+    [9, -2],
+    [10, -2],
+    [11, -2],
+    [13, -2],
+    [14, -2],
+    [5, -4],
+    [6, -4],
+    [6, -5],
+    [6, -6],
+    [6, -7],
+    [7, -7],
+    [2, -8],
+    [3, -8],
+    [1, -9],
+    [3, -9],
+    [1, -10],
+    [0, -11],
+    [1, -11]
+  ],
+  "hashLines": [
+    {"content": "Pentoad 1H2", "id": "N", "full": "#N Pentoad 1H2"},
+    {
+      "content": "A period 5 oscillator.",
+      "id": "C",
+      "full": "#C A period 5 oscillator."
+    },
+    {
+      "content": "www.conwaylife.com/wiki/Pentoad_1H2",
+      "id": "C",
+      "full": "#C www.conwaylife.com/wiki/Pentoad_1H2"
+    }
+  ]
+}

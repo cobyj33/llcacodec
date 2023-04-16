@@ -1,0 +1,37 @@
+{
+  "format": "rle",
+  "comments": [
+    "https://conwaylife.com/wiki/Long_bookend",
+    "https://www.conwaylife.com/patterns/longbookend.rle"
+  ],
+  "name": "longbookend.rle",
+  "creationData": "",
+  "topleft": null,
+  "width": 5,
+  "height": 3,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [3, 0],
+    [4, 0],
+    [0, -1],
+    [4, -1],
+    [0, -2],
+    [1, -2],
+    [2, -2],
+    [3, -2]
+  ],
+  "hashLines": [
+    {"content": "longbookend.rle", "id": "N", "full": "#N longbookend.rle"},
+    {
+      "content": "https://conwaylife.com/wiki/Long_bookend",
+      "id": "C",
+      "full": "#C https://conwaylife.com/wiki/Long_bookend"
+    },
+    {
+      "content": "https://www.conwaylife.com/patterns/longbookend.rle",
+      "id": "C",
+      "full": "#C https://www.conwaylife.com/patterns/longbookend.rle"
+    }
+  ]
+}

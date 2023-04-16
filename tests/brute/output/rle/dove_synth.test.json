@@ -1,0 +1,44 @@
+{
+  "format": "rle",
+  "comments": [
+    "https://conwaylife.com/wiki/Dove",
+    "https://www.conwaylife.com/patterns/dove_synth.rle"
+  ],
+  "name": "dove_synth.rle",
+  "creationData": "",
+  "topleft": null,
+  "width": 8,
+  "height": 11,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [6, 0],
+    [2, -1],
+    [5, -1],
+    [0, -2],
+    [2, -2],
+    [5, -2],
+    [6, -2],
+    [7, -2],
+    [1, -3],
+    [2, -3],
+    [2, -8],
+    [3, -8],
+    [4, -8],
+    [2, -9],
+    [3, -10]
+  ],
+  "hashLines": [
+    {"content": "dove_synth.rle", "id": "N", "full": "#N dove_synth.rle"},
+    {
+      "content": "https://conwaylife.com/wiki/Dove",
+      "id": "C",
+      "full": "#C https://conwaylife.com/wiki/Dove"
+    },
+    {
+      "content": "https://www.conwaylife.com/patterns/dove_synth.rle",
+      "id": "C",
+      "full": "#C https://www.conwaylife.com/patterns/dove_synth.rle"
+    }
+  ]
+}

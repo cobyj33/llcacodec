@@ -1,0 +1,68 @@
+{
+  "format": "rle",
+  "comments": [
+    "A thumb sparker found in June 2000.",
+    "www.conwaylife.com/wiki/index.php?title=Thumb"
+  ],
+  "name": "Thumb 2",
+  "creationData": "David Eppstein",
+  "topleft": null,
+  "width": 11,
+  "height": 11,
+  "ruleString": "23/3",
+  "rule": {"survival": [2, 3], "birth": [3]},
+  "liveCoordinates": [
+    [5, 0],
+    [1, -1],
+    [2, -1],
+    [6, -1],
+    [1, -2],
+    [7, -2],
+    [2, -3],
+    [3, -3],
+    [4, -3],
+    [6, -3],
+    [8, -3],
+    [9, -3],
+    [7, -4],
+    [8, -4],
+    [10, -4],
+    [0, -5],
+    [1, -5],
+    [2, -5],
+    [3, -5],
+    [4, -5],
+    [5, -5],
+    [10, -5],
+    [0, -6],
+    [5, -6],
+    [6, -6],
+    [7, -6],
+    [8, -6],
+    [9, -6],
+    [3, -7],
+    [2, -8],
+    [4, -8],
+    [5, -8],
+    [6, -8],
+    [7, -8],
+    [2, -9],
+    [4, -9],
+    [7, -9],
+    [3, -10]
+  ],
+  "hashLines": [
+    {"content": "Thumb 2", "id": "N", "full": "#N Thumb 2"},
+    {"content": "David Eppstein", "id": "O", "full": "#O David Eppstein"},
+    {
+      "content": "A thumb sparker found in June 2000.",
+      "id": "C",
+      "full": "#C A thumb sparker found in June 2000."
+    },
+    {
+      "content": "www.conwaylife.com/wiki/index.php?title=Thumb",
+      "id": "C",
+      "full": "#C www.conwaylife.com/wiki/index.php?title=Thumb"
+    }
+  ]
+}

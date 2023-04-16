@@ -1,0 +1,31 @@
+{
+  "format": "plaintext",
+  "name": "snakesiameselongsnake.cells",
+  "description": [
+    "https://conwaylife.com/wiki/Snake_siamese_long_snake",
+    "https://www.conwaylife.com/patterns/snakesiameselongsnake.cells"
+  ],
+  "matrix": [
+    [0, 1, 1],
+    [0, 0, 1],
+    [0, 1, 0],
+    [0, 1, 1],
+    [0, 0, 1],
+    [0, 1, 0],
+    [1, 0, 0],
+    [1, 1, 0]
+  ],
+  "liveCoordinates": [
+    [1, 0],
+    [2, 0],
+    [2, -1],
+    [1, -2],
+    [1, -3],
+    [2, -3],
+    [2, -4],
+    [1, -5],
+    [0, -6],
+    [0, -7],
+    [1, -7]
+  ]
+}

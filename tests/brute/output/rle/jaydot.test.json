@@ -1,0 +1,39 @@
+{
+  "format": "rle",
+  "comments": [
+    "https://conwaylife.com/wiki/Jaydot",
+    "https://conwaylife.com/patterns/jaydot.rle"
+  ],
+  "name": "Jaydot",
+  "creationData": "Kazyan",
+  "topleft": null,
+  "width": 3,
+  "height": 6,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [1, 0],
+    [2, 0],
+    [0, -1],
+    [1, -1],
+    [2, -1],
+    [1, -3],
+    [1, -4],
+    [2, -4],
+    [0, -5]
+  ],
+  "hashLines": [
+    {"content": "Jaydot", "id": "N", "full": "#N Jaydot"},
+    {"content": "Kazyan", "id": "O", "full": "#O Kazyan"},
+    {
+      "content": "https://conwaylife.com/wiki/Jaydot",
+      "id": "C",
+      "full": "#C https://conwaylife.com/wiki/Jaydot"
+    },
+    {
+      "content": "https://conwaylife.com/patterns/jaydot.rle",
+      "id": "C",
+      "full": "#C https://conwaylife.com/patterns/jaydot.rle"
+    }
+  ]
+}

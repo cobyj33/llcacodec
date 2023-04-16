@@ -1,0 +1,61 @@
+{
+  "format": "rle",
+  "comments": [
+    "https://conwaylife.com/wiki/LWSS-glider_bounce",
+    "https://www.conwaylife.com/patterns/lwssgliderbounce.rle"
+  ],
+  "name": "lwssgliderbounce.rle",
+  "creationData": "",
+  "topleft": null,
+  "width": 43,
+  "height": 15,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [1, 0],
+    [2, 0],
+    [3, 0],
+    [4, 0],
+    [21, 0],
+    [22, 0],
+    [23, 0],
+    [24, 0],
+    [0, -1],
+    [4, -1],
+    [20, -1],
+    [24, -1],
+    [4, -2],
+    [24, -2],
+    [30, -2],
+    [31, -2],
+    [32, -2],
+    [0, -3],
+    [3, -3],
+    [20, -3],
+    [23, -3],
+    [30, -3],
+    [31, -4],
+    [40, -12],
+    [41, -12],
+    [42, -12],
+    [40, -13],
+    [41, -14]
+  ],
+  "hashLines": [
+    {
+      "content": "lwssgliderbounce.rle",
+      "id": "N",
+      "full": "#N lwssgliderbounce.rle"
+    },
+    {
+      "content": "https://conwaylife.com/wiki/LWSS-glider_bounce",
+      "id": "C",
+      "full": "#C https://conwaylife.com/wiki/LWSS-glider_bounce"
+    },
+    {
+      "content": "https://www.conwaylife.com/patterns/lwssgliderbounce.rle",
+      "id": "C",
+      "full": "#C https://www.conwaylife.com/patterns/lwssgliderbounce.rle"
+    }
+  ]
+}

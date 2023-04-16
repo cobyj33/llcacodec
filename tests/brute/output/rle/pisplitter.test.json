@@ -1,0 +1,67 @@
+{
+  "format": "rle",
+  "comments": [
+    "https://conwaylife.com/wiki/Regenerative_loop",
+    "https://www.conwaylife.com/patterns/pisplitter.rle"
+  ],
+  "name": "pisplitter.rle",
+  "creationData": "",
+  "topleft": null,
+  "width": 20,
+  "height": 14,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [15, 0],
+    [14, -1],
+    [16, -1],
+    [14, -2],
+    [16, -2],
+    [13, -3],
+    [14, -3],
+    [16, -3],
+    [17, -3],
+    [12, -4],
+    [15, -4],
+    [18, -4],
+    [0, -5],
+    [1, -5],
+    [2, -5],
+    [11, -5],
+    [13, -5],
+    [15, -5],
+    [17, -5],
+    [19, -5],
+    [2, -6],
+    [12, -6],
+    [14, -6],
+    [16, -6],
+    [18, -6],
+    [0, -7],
+    [1, -7],
+    [2, -7],
+    [14, -7],
+    [16, -7],
+    [14, -8],
+    [17, -8],
+    [15, -9],
+    [16, -9],
+    [14, -12],
+    [15, -12],
+    [14, -13],
+    [15, -13]
+  ],
+  "hashLines": [
+    {"content": "pisplitter.rle", "id": "N", "full": "#N pisplitter.rle"},
+    {
+      "content": "https://conwaylife.com/wiki/Regenerative_loop",
+      "id": "C",
+      "full": "#C https://conwaylife.com/wiki/Regenerative_loop"
+    },
+    {
+      "content": "https://www.conwaylife.com/patterns/pisplitter.rle",
+      "id": "C",
+      "full": "#C https://www.conwaylife.com/patterns/pisplitter.rle"
+    }
+  ]
+}

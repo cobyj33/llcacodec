@@ -1,0 +1,41 @@
+{
+  "format": "rle",
+  "comments": [
+    "https://conwaylife.com/wiki/List_of_common_evolutionary_sequences",
+    "https://www.conwaylife.com/patterns/trafficlighthitsblock3.rle"
+  ],
+  "name": "trafficlighthitsblock3.rle",
+  "creationData": "",
+  "topleft": null,
+  "width": 8,
+  "height": 4,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [0, 0],
+    [1, 0],
+    [0, -1],
+    [1, -1],
+    [6, -2],
+    [5, -3],
+    [6, -3],
+    [7, -3]
+  ],
+  "hashLines": [
+    {
+      "content": "trafficlighthitsblock3.rle",
+      "id": "N",
+      "full": "#N trafficlighthitsblock3.rle"
+    },
+    {
+      "content": "https://conwaylife.com/wiki/List_of_common_evolutionary_sequences",
+      "id": "C",
+      "full": "#C https://conwaylife.com/wiki/List_of_common_evolutionary_sequences"
+    },
+    {
+      "content": "https://www.conwaylife.com/patterns/trafficlighthitsblock3.rle",
+      "id": "C",
+      "full": "#C https://www.conwaylife.com/patterns/trafficlighthitsblock3.rle"
+    }
+  ]
+}

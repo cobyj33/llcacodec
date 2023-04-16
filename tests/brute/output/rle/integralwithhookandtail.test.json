@@ -1,0 +1,45 @@
+{
+  "format": "rle",
+  "comments": [
+    "https://conwaylife.com/wiki/Integral_with_hook_and_tail",
+    "https://conwaylife.com/patterns/integralwithhookandtail.rle"
+  ],
+  "name": "integralwithhookandtail.rle",
+  "creationData": "",
+  "topleft": null,
+  "width": 7,
+  "height": 5,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [4, 0],
+    [6, 0],
+    [0, -1],
+    [1, -1],
+    [3, -1],
+    [5, -1],
+    [6, -1],
+    [1, -2],
+    [3, -2],
+    [1, -3],
+    [3, -3],
+    [2, -4]
+  ],
+  "hashLines": [
+    {
+      "content": "integralwithhookandtail.rle",
+      "id": "N",
+      "full": "#N integralwithhookandtail.rle"
+    },
+    {
+      "content": "https://conwaylife.com/wiki/Integral_with_hook_and_tail",
+      "id": "C",
+      "full": "#C https://conwaylife.com/wiki/Integral_with_hook_and_tail"
+    },
+    {
+      "content": "https://conwaylife.com/patterns/integralwithhookandtail.rle",
+      "id": "C",
+      "full": "#C https://conwaylife.com/patterns/integralwithhookandtail.rle"
+    }
+  ]
+}

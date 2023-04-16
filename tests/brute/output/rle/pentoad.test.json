@@ -1,0 +1,50 @@
+{
+  "format": "rle",
+  "comments": [
+    "A period 5 oscillator found in June 1977.",
+    "www.conwaylife.com/wiki/index.php?title=Pentoad"
+  ],
+  "name": "Pentoad",
+  "creationData": "Bill Gosper",
+  "topleft": null,
+  "width": 13,
+  "height": 12,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [11, 0],
+    [12, 0],
+    [11, -1],
+    [9, -2],
+    [11, -2],
+    [9, -3],
+    [10, -3],
+    [5, -4],
+    [6, -4],
+    [6, -5],
+    [6, -6],
+    [6, -7],
+    [7, -7],
+    [2, -8],
+    [3, -8],
+    [1, -9],
+    [3, -9],
+    [1, -10],
+    [0, -11],
+    [1, -11]
+  ],
+  "hashLines": [
+    {"content": "Pentoad", "id": "N", "full": "#N Pentoad"},
+    {"content": "Bill Gosper", "id": "O", "full": "#O Bill Gosper"},
+    {
+      "content": "A period 5 oscillator found in June 1977.",
+      "id": "C",
+      "full": "#C A period 5 oscillator found in June 1977."
+    },
+    {
+      "content": "www.conwaylife.com/wiki/index.php?title=Pentoad",
+      "id": "C",
+      "full": "#C www.conwaylife.com/wiki/index.php?title=Pentoad"
+    }
+  ]
+}

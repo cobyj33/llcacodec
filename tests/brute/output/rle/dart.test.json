@@ -1,0 +1,64 @@
+{
+  "format": "rle",
+  "comments": [
+    "An orthogonal period 3 spaceship with speed c/3 that was found in May 1992.",
+    "www.conwaylife.com/wiki/index.php?title=Dart"
+  ],
+  "name": "Dart",
+  "creationData": "David Bell",
+  "topleft": null,
+  "width": 15,
+  "height": 10,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [7, 0],
+    [6, -1],
+    [8, -1],
+    [5, -2],
+    [9, -2],
+    [6, -3],
+    [7, -3],
+    [8, -3],
+    [4, -5],
+    [5, -5],
+    [9, -5],
+    [10, -5],
+    [2, -6],
+    [6, -6],
+    [8, -6],
+    [12, -6],
+    [1, -7],
+    [2, -7],
+    [6, -7],
+    [8, -7],
+    [12, -7],
+    [13, -7],
+    [0, -8],
+    [6, -8],
+    [8, -8],
+    [14, -8],
+    [1, -9],
+    [3, -9],
+    [4, -9],
+    [6, -9],
+    [8, -9],
+    [10, -9],
+    [11, -9],
+    [13, -9]
+  ],
+  "hashLines": [
+    {"content": "Dart", "id": "N", "full": "#N Dart"},
+    {"content": "David Bell", "id": "O", "full": "#O David Bell"},
+    {
+      "content": "An orthogonal period 3 spaceship with speed c/3 that was found in May 1992.",
+      "id": "C",
+      "full": "#C An orthogonal period 3 spaceship with speed c/3 that was found in May 1992."
+    },
+    {
+      "content": "www.conwaylife.com/wiki/index.php?title=Dart",
+      "id": "C",
+      "full": "#C www.conwaylife.com/wiki/index.php?title=Dart"
+    }
+  ]
+}

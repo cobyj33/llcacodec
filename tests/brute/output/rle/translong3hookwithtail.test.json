@@ -1,0 +1,44 @@
+{
+  "format": "rle",
+  "comments": [
+    "https://conwaylife.com/wiki/Trans-long%5E3_hook_with_tail",
+    "https://www.conwaylife.com/patterns/translong3hookwithtail.rle"
+  ],
+  "name": "translong3hookwithtail.rle",
+  "creationData": "",
+  "topleft": null,
+  "width": 8,
+  "height": 5,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [5, 0],
+    [4, -1],
+    [6, -1],
+    [3, -2],
+    [6, -2],
+    [0, -3],
+    [2, -3],
+    [6, -3],
+    [7, -3],
+    [0, -4],
+    [1, -4]
+  ],
+  "hashLines": [
+    {
+      "content": "translong3hookwithtail.rle",
+      "id": "N",
+      "full": "#N translong3hookwithtail.rle"
+    },
+    {
+      "content": "https://conwaylife.com/wiki/Trans-long%5E3_hook_with_tail",
+      "id": "C",
+      "full": "#C https://conwaylife.com/wiki/Trans-long%5E3_hook_with_tail"
+    },
+    {
+      "content": "https://www.conwaylife.com/patterns/translong3hookwithtail.rle",
+      "id": "C",
+      "full": "#C https://www.conwaylife.com/patterns/translong3hookwithtail.rle"
+    }
+  ]
+}

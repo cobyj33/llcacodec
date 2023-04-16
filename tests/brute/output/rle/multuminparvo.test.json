@@ -1,0 +1,37 @@
+{
+  "format": "rle",
+  "comments": [
+    "A methuselah with lifespan 3933.",
+    "www.conwaylife.com/wiki/index.php?title=Multum_in_parvo"
+  ],
+  "name": "Multum in parvo",
+  "creationData": "Charles Corderman",
+  "topleft": null,
+  "width": 6,
+  "height": 4,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [3, 0],
+    [4, 0],
+    [5, 0],
+    [2, -1],
+    [5, -1],
+    [1, -2],
+    [0, -3]
+  ],
+  "hashLines": [
+    {"content": "Multum in parvo", "id": "N", "full": "#N Multum in parvo"},
+    {"content": "Charles Corderman", "id": "O", "full": "#O Charles Corderman"},
+    {
+      "content": "A methuselah with lifespan 3933.",
+      "id": "C",
+      "full": "#C A methuselah with lifespan 3933."
+    },
+    {
+      "content": "www.conwaylife.com/wiki/index.php?title=Multum_in_parvo",
+      "id": "C",
+      "full": "#C www.conwaylife.com/wiki/index.php?title=Multum_in_parvo"
+    }
+  ]
+}

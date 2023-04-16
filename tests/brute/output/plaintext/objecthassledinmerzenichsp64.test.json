@@ -1,0 +1,23 @@
+{
+  "format": "plaintext",
+  "name": "objecthassledinmerzenichsp64.cells",
+  "description": [
+    "https://conwaylife.com/wiki/List_of_common_evolutionary_sequences",
+    "https://www.conwaylife.com/patterns/objecthassledinmerzenichsp64.cells"
+  ],
+  "matrix": [
+    [1, 1, 0, 0, 0],
+    [1, 0, 1, 0, 0],
+    [0, 0, 1, 1, 0],
+    [0, 0, 0, 0, 1]
+  ],
+  "liveCoordinates": [
+    [0, 0],
+    [1, 0],
+    [0, -1],
+    [2, -1],
+    [2, -2],
+    [3, -2],
+    [4, -3]
+  ]
+}

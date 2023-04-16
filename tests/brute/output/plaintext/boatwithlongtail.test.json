@@ -1,0 +1,26 @@
+{
+  "format": "plaintext",
+  "name": "Boat with long tail",
+  "description": [
+    "A small still life.",
+    "https://www.conwaylife.com/wiki/index.php?title=Boat_with_long_tail"
+  ],
+  "matrix": [
+    [1, 1, 0, 0, 0, 0],
+    [1, 0, 1, 0, 0, 0],
+    [0, 1, 0, 0, 1, 1],
+    [0, 0, 1, 1, 0, 1]
+  ],
+  "liveCoordinates": [
+    [0, 0],
+    [1, 0],
+    [0, -1],
+    [2, -1],
+    [1, -2],
+    [4, -2],
+    [5, -2],
+    [2, -3],
+    [3, -3],
+    [5, -3]
+  ]
+}

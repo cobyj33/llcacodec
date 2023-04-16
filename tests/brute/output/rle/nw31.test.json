@@ -1,0 +1,54 @@
+{
+  "format": "rle",
+  "comments": [
+    "https://conwaylife.com/wiki/NW31",
+    "https://www.conwaylife.com/patterns/nw31.rle"
+  ],
+  "name": "nw31.rle",
+  "creationData": "",
+  "topleft": null,
+  "width": 25,
+  "height": 25,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [0, 0],
+    [1, 0],
+    [1, -1],
+    [1, -2],
+    [3, -2],
+    [2, -3],
+    [3, -3],
+    [23, -7],
+    [24, -7],
+    [23, -8],
+    [24, -8],
+    [2, -10],
+    [2, -11],
+    [4, -11],
+    [2, -12],
+    [3, -12],
+    [4, -12],
+    [4, -13],
+    [11, -21],
+    [12, -21],
+    [12, -22],
+    [9, -23],
+    [10, -23],
+    [11, -23],
+    [9, -24]
+  ],
+  "hashLines": [
+    {"content": "nw31.rle", "id": "N", "full": "#N nw31.rle"},
+    {
+      "content": "https://conwaylife.com/wiki/NW31",
+      "id": "C",
+      "full": "#C https://conwaylife.com/wiki/NW31"
+    },
+    {
+      "content": "https://www.conwaylife.com/patterns/nw31.rle",
+      "id": "C",
+      "full": "#C https://www.conwaylife.com/patterns/nw31.rle"
+    }
+  ]
+}

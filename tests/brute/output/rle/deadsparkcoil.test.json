@@ -1,0 +1,47 @@
+{
+  "format": "rle",
+  "comments": [
+    "An 18-cell still life.",
+    "https://www.conwaylife.com/wiki/index.php?title=Dead_spark_coil"
+  ],
+  "name": "Dead spark coil",
+  "creationData": "",
+  "topleft": null,
+  "width": 7,
+  "height": 5,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [0, 0],
+    [1, 0],
+    [5, 0],
+    [6, 0],
+    [0, -1],
+    [2, -1],
+    [4, -1],
+    [6, -1],
+    [2, -2],
+    [4, -2],
+    [0, -3],
+    [2, -3],
+    [4, -3],
+    [6, -3],
+    [0, -4],
+    [1, -4],
+    [5, -4],
+    [6, -4]
+  ],
+  "hashLines": [
+    {"content": "Dead spark coil", "id": "N", "full": "#N Dead spark coil"},
+    {
+      "content": "An 18-cell still life.",
+      "id": "C",
+      "full": "#C An 18-cell still life."
+    },
+    {
+      "content": "https://www.conwaylife.com/wiki/index.php?title=Dead_spark_coil",
+      "id": "C",
+      "full": "#C https://www.conwaylife.com/wiki/index.php?title=Dead_spark_coil"
+    }
+  ]
+}

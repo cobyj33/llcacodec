@@ -1,0 +1,25 @@
+{
+  "format": "plaintext",
+  "name": "hookednine.cells",
+  "description": [
+    "https://conwaylife.com/wiki/Hooked_nine",
+    "https://www.conwaylife.com/patterns/hookednine.cells"
+  ],
+  "matrix": [
+    [1, 1, 0, 0, 0],
+    [0, 0, 1, 0, 0],
+    [0, 0, 1, 0, 0],
+    [0, 0, 1, 0, 1],
+    [0, 0, 0, 1, 1]
+  ],
+  "liveCoordinates": [
+    [0, 0],
+    [1, 0],
+    [2, -1],
+    [2, -2],
+    [2, -3],
+    [4, -3],
+    [3, -4],
+    [4, -4]
+  ]
+}

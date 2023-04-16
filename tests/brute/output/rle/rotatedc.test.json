@@ -1,0 +1,48 @@
+{
+  "format": "rle",
+  "comments": [
+    "https://conwaylife.com/wiki/Rotated_C",
+    "https://conwaylife.com/patterns/rotatedc.rle"
+  ],
+  "name": "Rotated C",
+  "creationData": "Unknown",
+  "topleft": null,
+  "width": 7,
+  "height": 7,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [0, 0],
+    [1, 0],
+    [0, -1],
+    [2, -1],
+    [2, -2],
+    [5, -2],
+    [6, -2],
+    [0, -3],
+    [2, -3],
+    [4, -3],
+    [6, -3],
+    [0, -4],
+    [1, -4],
+    [4, -4],
+    [4, -5],
+    [6, -5],
+    [5, -6],
+    [6, -6]
+  ],
+  "hashLines": [
+    {"content": "Rotated C", "id": "N", "full": "#N Rotated C"},
+    {"content": "Unknown", "id": "O", "full": "#O Unknown"},
+    {
+      "content": "https://conwaylife.com/wiki/Rotated_C",
+      "id": "C",
+      "full": "#C https://conwaylife.com/wiki/Rotated_C"
+    },
+    {
+      "content": "https://conwaylife.com/patterns/rotatedc.rle",
+      "id": "C",
+      "full": "#C https://conwaylife.com/patterns/rotatedc.rle"
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "format": "rle",
+  "comments": [
+    "https://conwaylife.com/wiki/Block_on_cap",
+    "https://www.conwaylife.com/patterns/blockoncap.rle"
+  ],
+  "name": "blockoncap.rle",
+  "creationData": "",
+  "topleft": null,
+  "width": 4,
+  "height": 6,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [1, 0],
+    [2, 0],
+    [0, -1],
+    [3, -1],
+    [0, -2],
+    [1, -2],
+    [2, -2],
+    [3, -2],
+    [0, -4],
+    [1, -4],
+    [0, -5],
+    [1, -5]
+  ],
+  "hashLines": [
+    {"content": "blockoncap.rle", "id": "N", "full": "#N blockoncap.rle"},
+    {
+      "content": "https://conwaylife.com/wiki/Block_on_cap",
+      "id": "C",
+      "full": "#C https://conwaylife.com/wiki/Block_on_cap"
+    },
+    {
+      "content": "https://www.conwaylife.com/patterns/blockoncap.rle",
+      "id": "C",
+      "full": "#C https://www.conwaylife.com/patterns/blockoncap.rle"
+    }
+  ]
+}

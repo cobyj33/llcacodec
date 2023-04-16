@@ -1,0 +1,46 @@
+{
+  "format": "rle",
+  "comments": [
+    "https://conwaylife.com/wiki/Decapole",
+    "https://conwaylife.com/patterns/decapole.rle"
+  ],
+  "name": "Decapole",
+  "creationData": "Unknown",
+  "topleft": null,
+  "width": 13,
+  "height": 13,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [11, 0],
+    [12, 0],
+    [10, -1],
+    [12, -1],
+    [8, -3],
+    [10, -3],
+    [6, -5],
+    [8, -5],
+    [4, -7],
+    [6, -7],
+    [2, -9],
+    [4, -9],
+    [0, -11],
+    [2, -11],
+    [0, -12],
+    [1, -12]
+  ],
+  "hashLines": [
+    {"content": "Decapole", "id": "N", "full": "#N Decapole"},
+    {"content": "Unknown", "id": "O", "full": "#O Unknown"},
+    {
+      "content": "https://conwaylife.com/wiki/Decapole",
+      "id": "C",
+      "full": "#C https://conwaylife.com/wiki/Decapole"
+    },
+    {
+      "content": "https://conwaylife.com/patterns/decapole.rle",
+      "id": "C",
+      "full": "#C https://conwaylife.com/patterns/decapole.rle"
+    }
+  ]
+}

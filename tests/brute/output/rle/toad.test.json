@@ -1,0 +1,29 @@
+{
+  "format": "rle",
+  "comments": [
+    "A period 2 oscillator. The second most common oscillator (after the blinker).",
+    "www.conwaylife.com/wiki/index.php?title=Toad"
+  ],
+  "name": "Toad",
+  "creationData": "Simon Norton",
+  "topleft": null,
+  "width": 4,
+  "height": 2,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [[1, 0], [2, 0], [3, 0], [0, -1], [1, -1], [2, -1]],
+  "hashLines": [
+    {"content": "Toad", "id": "N", "full": "#N Toad"},
+    {"content": "Simon Norton", "id": "O", "full": "#O Simon Norton"},
+    {
+      "content": "A period 2 oscillator. The second most common oscillator (after the blinker).",
+      "id": "C",
+      "full": "#C A period 2 oscillator. The second most common oscillator (after the blinker)."
+    },
+    {
+      "content": "www.conwaylife.com/wiki/index.php?title=Toad",
+      "id": "C",
+      "full": "#C www.conwaylife.com/wiki/index.php?title=Toad"
+    }
+  ]
+}

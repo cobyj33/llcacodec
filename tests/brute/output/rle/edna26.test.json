@@ -1,0 +1,60 @@
+{
+  "format": "rle",
+  "comments": [
+    "A methuselah with lifespan 31,082.",
+    "www.conwaylife.com/wiki/index.php?title=Edna"
+  ],
+  "name": "Edna 26",
+  "creationData": "Erik de Neve and Matthias M.",
+  "topleft": null,
+  "width": 43,
+  "height": 26,
+  "ruleString": "b3/s23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [0, 0],
+    [1, 0],
+    [0, -1],
+    [0, -2],
+    [12, -2],
+    [12, -3],
+    [13, -3],
+    [14, -3],
+    [29, -3],
+    [30, -3],
+    [31, -3],
+    [3, -8],
+    [4, -8],
+    [3, -9],
+    [29, -21],
+    [41, -21],
+    [29, -22],
+    [30, -22],
+    [31, -22],
+    [42, -22],
+    [42, -23],
+    [25, -24],
+    [41, -24],
+    [42, -24],
+    [24, -25],
+    [25, -25]
+  ],
+  "hashLines": [
+    {"content": "Edna 26", "id": "N", "full": "#N Edna 26"},
+    {
+      "content": "Erik de Neve and Matthias M.",
+      "id": "O",
+      "full": "#O Erik de Neve and Matthias M."
+    },
+    {
+      "content": "A methuselah with lifespan 31,082.",
+      "id": "C",
+      "full": "#C A methuselah with lifespan 31,082."
+    },
+    {
+      "content": "www.conwaylife.com/wiki/index.php?title=Edna",
+      "id": "C",
+      "full": "#C www.conwaylife.com/wiki/index.php?title=Edna"
+    }
+  ]
+}

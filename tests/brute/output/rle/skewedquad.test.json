@@ -1,0 +1,45 @@
+{
+  "format": "rle",
+  "comments": [
+    "A period 2 oscillator and muttering moat.",
+    "www.conwaylife.com/wiki/index.php?title=Skewed_quad"
+  ],
+  "name": "Skewed quad",
+  "creationData": "",
+  "topleft": null,
+  "width": 7,
+  "height": 7,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [1, 0],
+    [2, 0],
+    [1, -1],
+    [5, -1],
+    [6, -1],
+    [2, -2],
+    [4, -2],
+    [6, -2],
+    [0, -4],
+    [2, -4],
+    [4, -4],
+    [0, -5],
+    [1, -5],
+    [5, -5],
+    [4, -6],
+    [5, -6]
+  ],
+  "hashLines": [
+    {"content": "Skewed quad", "id": "N", "full": "#N Skewed quad"},
+    {
+      "content": "A period 2 oscillator and muttering moat.",
+      "id": "C",
+      "full": "#C A period 2 oscillator and muttering moat."
+    },
+    {
+      "content": "www.conwaylife.com/wiki/index.php?title=Skewed_quad",
+      "id": "C",
+      "full": "#C www.conwaylife.com/wiki/index.php?title=Skewed_quad"
+    }
+  ]
+}

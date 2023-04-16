@@ -1,0 +1,39 @@
+{
+  "format": "rle",
+  "comments": [
+    "https://conwaylife.com/wiki/Phi_spark",
+    "https://www.conwaylife.com/patterns/phispark.rle"
+  ],
+  "name": "phispark.rle",
+  "creationData": "",
+  "topleft": null,
+  "width": 5,
+  "height": 4,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [1, 0],
+    [2, 0],
+    [3, 0],
+    [0, -1],
+    [4, -1],
+    [0, -2],
+    [4, -2],
+    [1, -3],
+    [2, -3],
+    [3, -3]
+  ],
+  "hashLines": [
+    {"content": "phispark.rle", "id": "N", "full": "#N phispark.rle"},
+    {
+      "content": "https://conwaylife.com/wiki/Phi_spark",
+      "id": "C",
+      "full": "#C https://conwaylife.com/wiki/Phi_spark"
+    },
+    {
+      "content": "https://www.conwaylife.com/patterns/phispark.rle",
+      "id": "C",
+      "full": "#C https://www.conwaylife.com/patterns/phispark.rle"
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "format": "plaintext",
+  "name": "Snake with feather",
+  "description": [
+    "A small 11-bit still life.",
+    "https://conwaylife.com/wiki/Snake_with_feather"
+  ],
+  "matrix": [
+    [1, 1, 0, 0, 0, 0, 0],
+    [1, 0, 0, 1, 1, 0, 1],
+    [0, 1, 0, 1, 0, 1, 1],
+    [0, 0, 1, 0, 0, 0, 0]
+  ],
+  "liveCoordinates": [
+    [0, 0],
+    [1, 0],
+    [0, -1],
+    [3, -1],
+    [4, -1],
+    [6, -1],
+    [1, -2],
+    [3, -2],
+    [5, -2],
+    [6, -2],
+    [2, -3]
+  ]
+}

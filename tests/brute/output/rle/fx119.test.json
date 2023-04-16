@@ -1,0 +1,72 @@
+{
+  "format": "rle",
+  "comments": [
+    "Repeat time 231 ticks -- can be reduced with additional catalysts",
+    "https://conwaylife.com/wiki/Fx119",
+    "https://www.conwaylife.com/patterns/fx119.rle"
+  ],
+  "name": "Fx119",
+  "creationData": "Dave Buckingham, September 1996",
+  "topleft": null,
+  "width": 23,
+  "height": 24,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [0, 0],
+    [0, -1],
+    [2, -1],
+    [0, -2],
+    [1, -2],
+    [2, -2],
+    [2, -3],
+    [9, -15],
+    [10, -15],
+    [22, -15],
+    [4, -16],
+    [5, -16],
+    [9, -16],
+    [10, -16],
+    [20, -16],
+    [21, -16],
+    [22, -16],
+    [4, -17],
+    [5, -17],
+    [20, -17],
+    [20, -18],
+    [3, -20],
+    [4, -20],
+    [4, -21],
+    [9, -21],
+    [10, -21],
+    [1, -22],
+    [2, -22],
+    [3, -22],
+    [9, -22],
+    [10, -22],
+    [1, -23]
+  ],
+  "hashLines": [
+    {"content": "Fx119", "id": "N", "full": "#N Fx119"},
+    {
+      "content": "Dave Buckingham, September 1996",
+      "id": "O",
+      "full": "#O Dave Buckingham, September 1996"
+    },
+    {
+      "content": "Repeat time 231 ticks -- can be reduced with additional catalysts",
+      "id": "C",
+      "full": "#C Repeat time 231 ticks -- can be reduced with additional catalysts"
+    },
+    {
+      "content": "https://conwaylife.com/wiki/Fx119",
+      "id": "C",
+      "full": "#C https://conwaylife.com/wiki/Fx119"
+    },
+    {
+      "content": "https://www.conwaylife.com/patterns/fx119.rle",
+      "id": "C",
+      "full": "#C https://www.conwaylife.com/patterns/fx119.rle"
+    }
+  ]
+}

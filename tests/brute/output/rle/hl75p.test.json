@@ -1,0 +1,70 @@
+{
+  "format": "rle",
+  "comments": [
+    "https://conwaylife.com/wiki/HL75P",
+    "https://www.conwaylife.com/patterns/hl75p.rle"
+  ],
+  "name": "hl75p.rle",
+  "creationData": "",
+  "topleft": null,
+  "width": 28,
+  "height": 26,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [14, 0],
+    [15, 0],
+    [6, -1],
+    [14, -1],
+    [15, -1],
+    [6, -2],
+    [7, -2],
+    [8, -2],
+    [9, -3],
+    [8, -4],
+    [9, -4],
+    [0, -6],
+    [1, -6],
+    [1, -7],
+    [1, -8],
+    [3, -8],
+    [2, -9],
+    [3, -9],
+    [25, -10],
+    [26, -10],
+    [27, -11],
+    [25, -12],
+    [26, -12],
+    [2, -16],
+    [2, -17],
+    [4, -17],
+    [2, -18],
+    [3, -18],
+    [4, -18],
+    [4, -19],
+    [14, -21],
+    [15, -21],
+    [14, -22],
+    [15, -22],
+    [18, -22],
+    [19, -22],
+    [18, -23],
+    [20, -23],
+    [20, -24],
+    [20, -25],
+    [21, -25]
+  ],
+  "hashLines": [
+    {"content": "hl75p.rle", "id": "N", "full": "#N hl75p.rle"},
+    {
+      "content": "https://conwaylife.com/wiki/HL75P",
+      "id": "C",
+      "full": "#C https://conwaylife.com/wiki/HL75P"
+    },
+    {
+      "content": "https://www.conwaylife.com/patterns/hl75p.rle",
+      "id": "C",
+      "full": "#C https://www.conwaylife.com/patterns/hl75p.rle"
+    }
+  ]
+}

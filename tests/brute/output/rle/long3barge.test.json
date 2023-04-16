@@ -1,0 +1,41 @@
+{
+  "format": "rle",
+  "comments": [
+    "https://conwaylife.com/wiki/Long%5E3_barge",
+    "https://www.conwaylife.com/patterns/long3barge.rle"
+  ],
+  "name": "long3barge.rle",
+  "creationData": "",
+  "topleft": null,
+  "width": 7,
+  "height": 7,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [5, 0],
+    [4, -1],
+    [6, -1],
+    [3, -2],
+    [5, -2],
+    [2, -3],
+    [4, -3],
+    [1, -4],
+    [3, -4],
+    [0, -5],
+    [2, -5],
+    [1, -6]
+  ],
+  "hashLines": [
+    {"content": "long3barge.rle", "id": "N", "full": "#N long3barge.rle"},
+    {
+      "content": "https://conwaylife.com/wiki/Long%5E3_barge",
+      "id": "C",
+      "full": "#C https://conwaylife.com/wiki/Long%5E3_barge"
+    },
+    {
+      "content": "https://www.conwaylife.com/patterns/long3barge.rle",
+      "id": "C",
+      "full": "#C https://www.conwaylife.com/patterns/long3barge.rle"
+    }
+  ]
+}

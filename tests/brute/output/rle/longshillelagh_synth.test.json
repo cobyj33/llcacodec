@@ -1,0 +1,73 @@
+{
+  "format": "rle",
+  "comments": [
+    "4-glider synthesis of long shillelagh",
+    "https://conwaylife.com/wiki/Long_shillelagh",
+    "https://conwaylife.com/forums/viewtopic.php?p=12406#p12406"
+  ],
+  "name": "longshillelagh_synth.rle",
+  "creationData": "Bob Shemyakin, 28 June 2014",
+  "topleft": null,
+  "width": 26,
+  "height": 16,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [8, 0],
+    [6, -1],
+    [7, -1],
+    [7, -2],
+    [8, -2],
+    [2, -5],
+    [6, -5],
+    [0, -6],
+    [2, -6],
+    [5, -6],
+    [1, -7],
+    [2, -7],
+    [5, -7],
+    [6, -7],
+    [7, -7],
+    [20, -7],
+    [21, -7],
+    [24, -7],
+    [25, -7],
+    [20, -8],
+    [23, -8],
+    [25, -8],
+    [21, -9],
+    [22, -9],
+    [12, -13],
+    [13, -13],
+    [11, -14],
+    [12, -14],
+    [13, -15]
+  ],
+  "hashLines": [
+    {
+      "content": "longshillelagh_synth.rle",
+      "id": "N",
+      "full": "#N longshillelagh_synth.rle"
+    },
+    {
+      "content": "Bob Shemyakin, 28 June 2014",
+      "id": "O",
+      "full": "#O Bob Shemyakin, 28 June 2014"
+    },
+    {
+      "content": "4-glider synthesis of long shillelagh",
+      "id": "C",
+      "full": "#C 4-glider synthesis of long shillelagh"
+    },
+    {
+      "content": "https://conwaylife.com/wiki/Long_shillelagh",
+      "id": "C",
+      "full": "#C https://conwaylife.com/wiki/Long_shillelagh"
+    },
+    {
+      "content": "https://conwaylife.com/forums/viewtopic.php?p=12406#p12406",
+      "id": "C",
+      "full": "#C https://conwaylife.com/forums/viewtopic.php?p=12406#p12406"
+    }
+  ]
+}

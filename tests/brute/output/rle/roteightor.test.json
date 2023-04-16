@@ -1,0 +1,69 @@
+{
+  "format": "rle",
+  "comments": [
+    "A period 8 oscillator that was found in 1972.",
+    "www.conwaylife.com/wiki/index.php?title=Roteightor"
+  ],
+  "name": "Roteightor",
+  "creationData": "Robert Wainwright",
+  "topleft": null,
+  "width": 14,
+  "height": 14,
+  "ruleString": "23/3",
+  "rule": {"survival": [2, 3], "birth": [3]},
+  "liveCoordinates": [
+    [1, 0],
+    [1, -1],
+    [2, -1],
+    [3, -1],
+    [12, -1],
+    [13, -1],
+    [4, -2],
+    [12, -2],
+    [3, -3],
+    [4, -3],
+    [10, -3],
+    [12, -3],
+    [10, -4],
+    [11, -4],
+    [6, -6],
+    [7, -6],
+    [5, -7],
+    [6, -7],
+    [8, -7],
+    [6, -8],
+    [7, -8],
+    [8, -8],
+    [2, -9],
+    [3, -9],
+    [7, -9],
+    [8, -9],
+    [9, -9],
+    [1, -10],
+    [3, -10],
+    [9, -10],
+    [10, -10],
+    [1, -11],
+    [9, -11],
+    [0, -12],
+    [1, -12],
+    [10, -12],
+    [11, -12],
+    [12, -12],
+    [12, -13]
+  ],
+  "hashLines": [
+    {"content": "Roteightor", "id": "N", "full": "#N Roteightor"},
+    {"content": "Robert Wainwright", "id": "O", "full": "#O Robert Wainwright"},
+    {
+      "content": "A period 8 oscillator that was found in 1972.",
+      "id": "C",
+      "full": "#C A period 8 oscillator that was found in 1972."
+    },
+    {
+      "content": "www.conwaylife.com/wiki/index.php?title=Roteightor",
+      "id": "C",
+      "full": "#C www.conwaylife.com/wiki/index.php?title=Roteightor"
+    }
+  ]
+}

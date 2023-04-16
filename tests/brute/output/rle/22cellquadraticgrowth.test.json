@@ -1,0 +1,56 @@
+{
+  "format": "rle",
+  "comments": [
+    "https://conwaylife.com/wiki/22-cell_quadratic_growth",
+    "https://www.conwaylife.com/patterns/22cellquadraticgrowth.rle"
+  ],
+  "name": "22cellquadraticgrowth.rle",
+  "creationData": "dani, 2022",
+  "topleft": null,
+  "width": 170,
+  "height": 216,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [168, 0],
+    [167, -1],
+    [167, -2],
+    [168, -2],
+    [169, -2],
+    [9, -143],
+    [8, -144],
+    [9, -144],
+    [10, -144],
+    [10, -145],
+    [40, -207],
+    [39, -208],
+    [41, -208],
+    [40, -209],
+    [2, -210],
+    [3, -210],
+    [4, -210],
+    [0, -211],
+    [1, -212],
+    [2, -213],
+    [1, -214],
+    [0, -215]
+  ],
+  "hashLines": [
+    {
+      "content": "22cellquadraticgrowth.rle",
+      "id": "N",
+      "full": "#N 22cellquadraticgrowth.rle"
+    },
+    {"content": "dani, 2022", "id": "O", "full": "#O dani, 2022"},
+    {
+      "content": "https://conwaylife.com/wiki/22-cell_quadratic_growth",
+      "id": "C",
+      "full": "#C https://conwaylife.com/wiki/22-cell_quadratic_growth"
+    },
+    {
+      "content": "https://www.conwaylife.com/patterns/22cellquadraticgrowth.rle",
+      "id": "C",
+      "full": "#C https://www.conwaylife.com/patterns/22cellquadraticgrowth.rle"
+    }
+  ]
+}

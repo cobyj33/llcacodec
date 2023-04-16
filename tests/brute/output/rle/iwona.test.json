@@ -1,0 +1,49 @@
+{
+  "format": "rle",
+  "comments": [
+    "A methuselah with lifespan 28786. Found on August 20, 2004.",
+    "www.conwaylife.com/wiki/index.php?title=Iwona"
+  ],
+  "name": "Iwona",
+  "creationData": "Andrew Okrasinski",
+  "topleft": null,
+  "width": 20,
+  "height": 21,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [14, 0],
+    [15, 0],
+    [16, 0],
+    [2, -6],
+    [3, -7],
+    [4, -7],
+    [3, -8],
+    [18, -8],
+    [18, -9],
+    [18, -10],
+    [19, -11],
+    [18, -12],
+    [19, -12],
+    [7, -13],
+    [8, -13],
+    [8, -14],
+    [0, -19],
+    [1, -19],
+    [1, -20]
+  ],
+  "hashLines": [
+    {"content": "Iwona", "id": "N", "full": "#N Iwona"},
+    {"content": "Andrew Okrasinski", "id": "O", "full": "#O Andrew Okrasinski"},
+    {
+      "content": "A methuselah with lifespan 28786. Found on August 20, 2004.",
+      "id": "C",
+      "full": "#C A methuselah with lifespan 28786. Found on August 20, 2004."
+    },
+    {
+      "content": "www.conwaylife.com/wiki/index.php?title=Iwona",
+      "id": "C",
+      "full": "#C www.conwaylife.com/wiki/index.php?title=Iwona"
+    }
+  ]
+}

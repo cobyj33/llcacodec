@@ -1,0 +1,43 @@
+{
+  "format": "rle",
+  "comments": [
+    "A period 3 oscillator.",
+    "www.conwaylife.com/wiki/index.php?title=Jam"
+  ],
+  "name": "Jam",
+  "creationData": "Achim Flammenkamp",
+  "topleft": null,
+  "width": 6,
+  "height": 7,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [3, 0],
+    [4, 0],
+    [2, -1],
+    [5, -1],
+    [0, -2],
+    [3, -2],
+    [5, -2],
+    [0, -3],
+    [4, -3],
+    [0, -4],
+    [3, -5],
+    [1, -6],
+    [2, -6]
+  ],
+  "hashLines": [
+    {"content": "Jam", "id": "N", "full": "#N Jam"},
+    {"content": "Achim Flammenkamp", "id": "O", "full": "#O Achim Flammenkamp"},
+    {
+      "content": "A period 3 oscillator.",
+      "id": "C",
+      "full": "#C A period 3 oscillator."
+    },
+    {
+      "content": "www.conwaylife.com/wiki/index.php?title=Jam",
+      "id": "C",
+      "full": "#C www.conwaylife.com/wiki/index.php?title=Jam"
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "format": "rle",
+  "comments": [
+    "https://conwaylife.com/wiki/Phoenix_with_cavity",
+    "https://www.conwaylife.com/patterns/phoenixwithcavity.rle"
+  ],
+  "name": "phoenixwithcavity.rle",
+  "creationData": "",
+  "topleft": null,
+  "width": 9,
+  "height": 8,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [3, 0],
+    [3, -1],
+    [5, -1],
+    [1, -2],
+    [7, -2],
+    [6, -3],
+    [8, -3],
+    [0, -4],
+    [1, -4],
+    [8, -4],
+    [6, -5],
+    [7, -5],
+    [2, -6],
+    [4, -6],
+    [4, -7]
+  ],
+  "hashLines": [
+    {
+      "content": "phoenixwithcavity.rle",
+      "id": "N",
+      "full": "#N phoenixwithcavity.rle"
+    },
+    {
+      "content": "https://conwaylife.com/wiki/Phoenix_with_cavity",
+      "id": "C",
+      "full": "#C https://conwaylife.com/wiki/Phoenix_with_cavity"
+    },
+    {
+      "content": "https://www.conwaylife.com/patterns/phoenixwithcavity.rle",
+      "id": "C",
+      "full": "#C https://www.conwaylife.com/patterns/phoenixwithcavity.rle"
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "format": "rle",
+  "comments": [
+    "https://conwaylife.com/wiki/Eater_head_siamese_snake",
+    "https://conwaylife.com/patterns/eaterheadsiamesesnake.rle"
+  ],
+  "name": "Eater head siamese snake",
+  "creationData": "Unknown",
+  "topleft": null,
+  "width": 7,
+  "height": 4,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [2, 0],
+    [3, 0],
+    [5, 0],
+    [6, 0],
+    [1, -1],
+    [3, -1],
+    [4, -1],
+    [6, -1],
+    [1, -2],
+    [0, -3],
+    [1, -3]
+  ],
+  "hashLines": [
+    {
+      "content": "Eater head siamese snake",
+      "id": "N",
+      "full": "#N Eater head siamese snake"
+    },
+    {"content": "Unknown", "id": "O", "full": "#O Unknown"},
+    {
+      "content": "https://conwaylife.com/wiki/Eater_head_siamese_snake",
+      "id": "C",
+      "full": "#C https://conwaylife.com/wiki/Eater_head_siamese_snake"
+    },
+    {
+      "content": "https://conwaylife.com/patterns/eaterheadsiamesesnake.rle",
+      "id": "C",
+      "full": "#C https://conwaylife.com/patterns/eaterheadsiamesesnake.rle"
+    }
+  ]
+}

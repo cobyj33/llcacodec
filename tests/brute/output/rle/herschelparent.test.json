@@ -1,0 +1,28 @@
+{
+  "format": "rle",
+  "comments": [
+    "A parent of the herschel.",
+    "https://www.conwaylife.com/wiki/index.php?title=Herschel_parent"
+  ],
+  "name": "Herschel parent",
+  "creationData": "",
+  "topleft": null,
+  "width": 5,
+  "height": 4,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [[2, 0], [0, -1], [1, -1], [2, -2], [4, -2], [4, -3]],
+  "hashLines": [
+    {"content": "Herschel parent", "id": "N", "full": "#N Herschel parent"},
+    {
+      "content": "A parent of the herschel.",
+      "id": "C",
+      "full": "#C A parent of the herschel."
+    },
+    {
+      "content": "https://www.conwaylife.com/wiki/index.php?title=Herschel_parent",
+      "id": "C",
+      "full": "#C https://www.conwaylife.com/wiki/index.php?title=Herschel_parent"
+    }
+  ]
+}

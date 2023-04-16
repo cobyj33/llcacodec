@@ -1,0 +1,48 @@
+{
+  "format": "rle",
+  "comments": [
+    "https://conwaylife.com/wiki/Boat_tie_quadpole",
+    "https://www.conwaylife.com/patterns/boattiequadpole.rle"
+  ],
+  "name": "boattiequadpole.rle",
+  "creationData": "",
+  "topleft": null,
+  "width": 10,
+  "height": 10,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [1, 0],
+    [0, -1],
+    [2, -1],
+    [1, -2],
+    [2, -2],
+    [3, -3],
+    [4, -3],
+    [3, -4],
+    [5, -4],
+    [5, -6],
+    [7, -6],
+    [7, -8],
+    [9, -8],
+    [8, -9],
+    [9, -9]
+  ],
+  "hashLines": [
+    {
+      "content": "boattiequadpole.rle",
+      "id": "N",
+      "full": "#N boattiequadpole.rle"
+    },
+    {
+      "content": "https://conwaylife.com/wiki/Boat_tie_quadpole",
+      "id": "C",
+      "full": "#C https://conwaylife.com/wiki/Boat_tie_quadpole"
+    },
+    {
+      "content": "https://www.conwaylife.com/patterns/boattiequadpole.rle",
+      "id": "C",
+      "full": "#C https://www.conwaylife.com/patterns/boattiequadpole.rle"
+    }
+  ]
+}

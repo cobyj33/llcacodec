@@ -1,0 +1,45 @@
+{
+  "format": "rle",
+  "comments": [
+    "https://conwaylife.com/wiki/Long_hook_line_tub",
+    "https://www.conwaylife.com/patterns/longhooklinetub.rle"
+  ],
+  "name": "longhooklinetub.rle",
+  "creationData": "",
+  "topleft": null,
+  "width": 8,
+  "height": 6,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [6, 0],
+    [5, -1],
+    [7, -1],
+    [4, -2],
+    [6, -2],
+    [0, -3],
+    [1, -3],
+    [4, -3],
+    [0, -4],
+    [2, -4],
+    [4, -4],
+    [3, -5]
+  ],
+  "hashLines": [
+    {
+      "content": "longhooklinetub.rle",
+      "id": "N",
+      "full": "#N longhooklinetub.rle"
+    },
+    {
+      "content": "https://conwaylife.com/wiki/Long_hook_line_tub",
+      "id": "C",
+      "full": "#C https://conwaylife.com/wiki/Long_hook_line_tub"
+    },
+    {
+      "content": "https://www.conwaylife.com/patterns/longhooklinetub.rle",
+      "id": "C",
+      "full": "#C https://www.conwaylife.com/patterns/longhooklinetub.rle"
+    }
+  ]
+}

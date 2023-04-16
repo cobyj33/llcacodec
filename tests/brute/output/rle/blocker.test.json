@@ -1,0 +1,45 @@
+{
+  "format": "rle",
+  "comments": [
+    "A period 8 oscillator.",
+    "www.conwaylife.com/wiki/index.php?title=Blocker"
+  ],
+  "name": "Blocker",
+  "creationData": "Robert Wainwright",
+  "topleft": null,
+  "width": 10,
+  "height": 5,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [6, 0],
+    [8, 0],
+    [5, -1],
+    [0, -2],
+    [1, -2],
+    [4, -2],
+    [9, -2],
+    [0, -3],
+    [1, -3],
+    [3, -3],
+    [6, -3],
+    [8, -3],
+    [9, -3],
+    [4, -4],
+    [5, -4]
+  ],
+  "hashLines": [
+    {"content": "Blocker", "id": "N", "full": "#N Blocker"},
+    {"content": "Robert Wainwright", "id": "O", "full": "#O Robert Wainwright"},
+    {
+      "content": "A period 8 oscillator.",
+      "id": "C",
+      "full": "#C A period 8 oscillator."
+    },
+    {
+      "content": "www.conwaylife.com/wiki/index.php?title=Blocker",
+      "id": "C",
+      "full": "#C www.conwaylife.com/wiki/index.php?title=Blocker"
+    }
+  ]
+}

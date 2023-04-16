@@ -1,0 +1,56 @@
+{
+  "format": "rle",
+  "comments": [
+    "A period 10 oscillator composed of a bipole and a pseudo-barberpole. The smallest period 10 oscillator, though it is usually considered trivial.",
+    "www.conwaylife.com/wiki/index.php?title=Bipole_bridge_pseudo-barberpole"
+  ],
+  "name": "Bipole bridge pseudo-barberpole",
+  "creationData": "",
+  "topleft": null,
+  "width": 17,
+  "height": 17,
+  "ruleString": "b3/s23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [15, 0],
+    [16, 0],
+    [14, -1],
+    [16, -1],
+    [12, -3],
+    [14, -3],
+    [12, -4],
+    [13, -4],
+    [10, -5],
+    [11, -5],
+    [11, -6],
+    [9, -7],
+    [7, -8],
+    [9, -8],
+    [5, -10],
+    [7, -10],
+    [3, -12],
+    [5, -12],
+    [2, -14],
+    [3, -14],
+    [0, -15],
+    [0, -16],
+    [1, -16]
+  ],
+  "hashLines": [
+    {
+      "content": "Bipole bridge pseudo-barberpole",
+      "id": "N",
+      "full": "#N Bipole bridge pseudo-barberpole"
+    },
+    {
+      "content": "A period 10 oscillator composed of a bipole and a pseudo-barberpole. The smallest period 10 oscillator, though it is usually considered trivial.",
+      "id": "C",
+      "full": "#C A period 10 oscillator composed of a bipole and a pseudo-barberpole. The smallest period 10 oscillator, though it is usually considered trivial."
+    },
+    {
+      "content": "www.conwaylife.com/wiki/index.php?title=Bipole_bridge_pseudo-barberpole",
+      "id": "C",
+      "full": "#C www.conwaylife.com/wiki/index.php?title=Bipole_bridge_pseudo-barberpole"
+    }
+  ]
+}

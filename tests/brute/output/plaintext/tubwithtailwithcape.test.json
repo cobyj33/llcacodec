@@ -1,0 +1,29 @@
+{
+  "format": "plaintext",
+  "name": "tubwithtailwithcape.cells",
+  "description": [
+    "https://conwaylife.com/wiki/Tub_with_tail_with_cape",
+    "https://conwaylife.com/patterns/tubwithtailwithcape.cells"
+  ],
+  "matrix": [
+    [0, 1, 0, 0, 0, 0, 0],
+    [1, 0, 1, 0, 0, 1, 1],
+    [0, 1, 0, 1, 0, 0, 1],
+    [0, 0, 0, 1, 0, 1, 0],
+    [0, 0, 0, 1, 1, 0, 0]
+  ],
+  "liveCoordinates": [
+    [1, 0],
+    [0, -1],
+    [2, -1],
+    [5, -1],
+    [6, -1],
+    [1, -2],
+    [3, -2],
+    [6, -2],
+    [3, -3],
+    [5, -3],
+    [3, -4],
+    [4, -4]
+  ]
+}

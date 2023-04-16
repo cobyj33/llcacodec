@@ -1,0 +1,32 @@
+{
+  "format": "rle",
+  "comments": [
+    "https://conwaylife.com/wiki/U-turner",
+    "https://www.conwaylife.com/patterns/uturnerpredecessor.rle"
+  ],
+  "name": "uturnerpredecessor.rle",
+  "creationData": "",
+  "topleft": null,
+  "width": 3,
+  "height": 6,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [[0, 0], [0, -1], [0, -2], [0, -4], [1, -4], [2, -5]],
+  "hashLines": [
+    {
+      "content": "uturnerpredecessor.rle",
+      "id": "N",
+      "full": "#N uturnerpredecessor.rle"
+    },
+    {
+      "content": "https://conwaylife.com/wiki/U-turner",
+      "id": "C",
+      "full": "#C https://conwaylife.com/wiki/U-turner"
+    },
+    {
+      "content": "https://www.conwaylife.com/patterns/uturnerpredecessor.rle",
+      "id": "C",
+      "full": "#C https://www.conwaylife.com/patterns/uturnerpredecessor.rle"
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "format": "plaintext",
+  "name": "Stairstep hexomino",
+  "description": [
+    "One of 35 hexominoes. It is a predecessor of the blockade.",
+    "www.conwaylife.com/wiki/index.php?title=Stairstep_hexomino"
+  ],
+  "matrix": [[1, 1, 0, 0], [0, 1, 1, 0], [0, 0, 1, 1]],
+  "liveCoordinates": [[0, 0], [1, 0], [1, -1], [2, -1], [2, -2], [3, -2]]
+}

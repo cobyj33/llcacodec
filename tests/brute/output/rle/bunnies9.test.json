@@ -1,0 +1,45 @@
+{
+  "format": "rle",
+  "comments": [
+    "A methuselah with lifespan 17410 that evolves similarly to bunnies",
+    "after generation 91.",
+    "www.conwaylife.com/wiki/index.php?title=Bunnies_9"
+  ],
+  "name": "Bunnies 9",
+  "creationData": "Paul Callahan",
+  "topleft": null,
+  "width": 8,
+  "height": 7,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [1, 0],
+    [0, -1],
+    [1, -1],
+    [7, -1],
+    [6, -2],
+    [6, -3],
+    [5, -4],
+    [4, -5],
+    [4, -6]
+  ],
+  "hashLines": [
+    {"content": "Bunnies 9", "id": "N", "full": "#N Bunnies 9"},
+    {"content": "Paul Callahan", "id": "O", "full": "#O Paul Callahan"},
+    {
+      "content": "A methuselah with lifespan 17410 that evolves similarly to bunnies",
+      "id": "C",
+      "full": "#C A methuselah with lifespan 17410 that evolves similarly to bunnies"
+    },
+    {
+      "content": "after generation 91.",
+      "id": "C",
+      "full": "#C after generation 91."
+    },
+    {
+      "content": "www.conwaylife.com/wiki/index.php?title=Bunnies_9",
+      "id": "C",
+      "full": "#C www.conwaylife.com/wiki/index.php?title=Bunnies_9"
+    }
+  ]
+}

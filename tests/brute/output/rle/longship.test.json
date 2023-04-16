@@ -1,0 +1,37 @@
+{
+  "format": "rle",
+  "comments": [
+    "An 8-cell still life.",
+    "https://www.conwaylife.com/wiki/index.php?title=Long_ship"
+  ],
+  "name": "Long ship",
+  "creationData": "",
+  "topleft": null,
+  "width": 4,
+  "height": 4,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [0, 0],
+    [1, 0],
+    [0, -1],
+    [2, -1],
+    [1, -2],
+    [3, -2],
+    [2, -3],
+    [3, -3]
+  ],
+  "hashLines": [
+    {"content": "Long ship", "id": "N", "full": "#N Long ship"},
+    {
+      "content": "An 8-cell still life.",
+      "id": "C",
+      "full": "#C An 8-cell still life."
+    },
+    {
+      "content": "https://www.conwaylife.com/wiki/index.php?title=Long_ship",
+      "id": "C",
+      "full": "#C https://www.conwaylife.com/wiki/index.php?title=Long_ship"
+    }
+  ]
+}

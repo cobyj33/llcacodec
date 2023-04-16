@@ -1,0 +1,44 @@
+{
+  "format": "rle",
+  "comments": [
+    "An 11-bit still life.",
+    "www.conwaylife.com/wiki/Long_claw_with_tail"
+  ],
+  "name": "Long claw with tail",
+  "creationData": "",
+  "topleft": null,
+  "width": 7,
+  "height": 4,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [0, 0],
+    [1, 0],
+    [1, -1],
+    [4, -1],
+    [5, -1],
+    [1, -2],
+    [3, -2],
+    [6, -2],
+    [2, -3],
+    [5, -3],
+    [6, -3]
+  ],
+  "hashLines": [
+    {
+      "content": "Long claw with tail",
+      "id": "N",
+      "full": "#N Long claw with tail"
+    },
+    {
+      "content": "An 11-bit still life.",
+      "id": "C",
+      "full": "#C An 11-bit still life."
+    },
+    {
+      "content": "www.conwaylife.com/wiki/Long_claw_with_tail",
+      "id": "C",
+      "full": "#C www.conwaylife.com/wiki/Long_claw_with_tail"
+    }
+  ]
+}

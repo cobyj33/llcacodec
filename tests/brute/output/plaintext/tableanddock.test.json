@@ -1,0 +1,35 @@
+{
+  "format": "plaintext",
+  "name": "Table and dock",
+  "description": [
+    "Unknown",
+    "https://conwaylife.com/wiki/Table_and_dock",
+    "https://conwaylife.com/patterns/tableanddock.cells"
+  ],
+  "matrix": [
+    [1, 1, 0, 0, 1, 1],
+    [1, 0, 0, 0, 0, 1],
+    [0, 1, 1, 1, 1, 0],
+    [0, 0, 0, 0, 0, 0],
+    [0, 1, 1, 1, 1, 0],
+    [0, 1, 0, 0, 1, 0]
+  ],
+  "liveCoordinates": [
+    [0, 0],
+    [1, 0],
+    [4, 0],
+    [5, 0],
+    [0, -1],
+    [5, -1],
+    [1, -2],
+    [2, -2],
+    [3, -2],
+    [4, -2],
+    [1, -4],
+    [2, -4],
+    [3, -4],
+    [4, -4],
+    [1, -5],
+    [4, -5]
+  ]
+}

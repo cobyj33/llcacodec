@@ -1,0 +1,43 @@
+{
+  "format": "rle",
+  "comments": ["https://conwaylife.com/ref/mniemiec/10/10gm.rle"],
+  "name": "10gm.rle",
+  "creationData": "",
+  "topleft": null,
+  "width": 87,
+  "height": 8,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [84, 0],
+    [82, -1],
+    [85, -1],
+    [3, -2],
+    [5, -2],
+    [86, -2],
+    [4, -3],
+    [5, -3],
+    [81, -3],
+    [86, -3],
+    [4, -4],
+    [81, -4],
+    [86, -4],
+    [0, -5],
+    [1, -5],
+    [2, -5],
+    [81, -5],
+    [85, -5],
+    [2, -6],
+    [82, -6],
+    [84, -6],
+    [1, -7]
+  ],
+  "hashLines": [
+    {"content": "10gm.rle", "id": "N", "full": "#N 10gm.rle"},
+    {
+      "content": "https://conwaylife.com/ref/mniemiec/10/10gm.rle",
+      "id": "C",
+      "full": "#C https://conwaylife.com/ref/mniemiec/10/10gm.rle"
+    }
+  ]
+}

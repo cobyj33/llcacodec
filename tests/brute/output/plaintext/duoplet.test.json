@@ -1,0 +1,11 @@
+{
+  "format": "plaintext",
+  "name": "Duoplet",
+  "description": [
+    "Unknown",
+    "https://conwaylife.com/wiki/Duoplet",
+    "https://conwaylife.com/patterns/duoplet.cells"
+  ],
+  "matrix": [[0, 1], [1, 0]],
+  "liveCoordinates": [[1, 0], [0, -1]]
+}

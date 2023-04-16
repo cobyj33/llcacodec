@@ -1,0 +1,45 @@
+{
+  "format": "rle",
+  "comments": [
+    "https://conwaylife.com/wiki/Cis-barge_with_nine",
+    "https://conwaylife.com/patterns/cisbargewithnine.rle"
+  ],
+  "name": "cisbargewithnine.rle",
+  "creationData": "",
+  "topleft": null,
+  "width": 6,
+  "height": 7,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [3, 0],
+    [2, -1],
+    [4, -1],
+    [3, -2],
+    [5, -2],
+    [4, -3],
+    [1, -4],
+    [2, -4],
+    [3, -4],
+    [0, -5],
+    [0, -6],
+    [1, -6]
+  ],
+  "hashLines": [
+    {
+      "content": "cisbargewithnine.rle",
+      "id": "N",
+      "full": "#N cisbargewithnine.rle"
+    },
+    {
+      "content": "https://conwaylife.com/wiki/Cis-barge_with_nine",
+      "id": "C",
+      "full": "#C https://conwaylife.com/wiki/Cis-barge_with_nine"
+    },
+    {
+      "content": "https://conwaylife.com/patterns/cisbargewithnine.rle",
+      "id": "C",
+      "full": "#C https://conwaylife.com/patterns/cisbargewithnine.rle"
+    }
+  ]
+}

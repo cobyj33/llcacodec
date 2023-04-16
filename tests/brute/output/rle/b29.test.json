@@ -1,0 +1,65 @@
+{
+  "format": "rle",
+  "comments": [
+    "A small c/4 diagonal spaceship with an isolated domino spark; disco",
+    "vered in September 2004",
+    "https://www.conwaylife.com/wiki/index.php?title=B29"
+  ],
+  "name": "B29",
+  "creationData": "Hartmut Holzwart",
+  "topleft": null,
+  "width": 8,
+  "height": 16,
+  "ruleString": "b3/s23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [3, 0],
+    [4, 0],
+    [2, -1],
+    [3, -1],
+    [4, -2],
+    [6, -3],
+    [7, -3],
+    [5, -4],
+    [4, -6],
+    [7, -6],
+    [1, -7],
+    [2, -7],
+    [4, -7],
+    [0, -8],
+    [1, -8],
+    [6, -8],
+    [2, -9],
+    [4, -9],
+    [7, -9],
+    [7, -10],
+    [4, -11],
+    [7, -11],
+    [5, -12],
+    [7, -12],
+    [5, -13],
+    [7, -13],
+    [6, -14],
+    [7, -14],
+    [6, -15]
+  ],
+  "hashLines": [
+    {"content": "B29", "id": "N", "full": "#N B29"},
+    {"content": "Hartmut Holzwart", "id": "O", "full": "#O Hartmut Holzwart"},
+    {
+      "content": "A small c/4 diagonal spaceship with an isolated domino spark; disco",
+      "id": "C",
+      "full": "#C A small c/4 diagonal spaceship with an isolated domino spark; disco"
+    },
+    {
+      "content": "vered in September 2004",
+      "id": "C",
+      "full": "#C vered in September 2004"
+    },
+    {
+      "content": "https://www.conwaylife.com/wiki/index.php?title=B29",
+      "id": "C",
+      "full": "#C https://www.conwaylife.com/wiki/index.php?title=B29"
+    }
+  ]
+}

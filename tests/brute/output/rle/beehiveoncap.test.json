@@ -1,0 +1,43 @@
+{
+  "format": "rle",
+  "comments": [
+    "https://conwaylife.com/wiki/Beehive_on_cap",
+    "https://www.conwaylife.com/patterns/beehiveoncap.rle"
+  ],
+  "name": "beehiveoncap.rle",
+  "creationData": "",
+  "topleft": null,
+  "width": 5,
+  "height": 7,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [1, 0],
+    [2, 0],
+    [0, -1],
+    [3, -1],
+    [0, -2],
+    [1, -2],
+    [2, -2],
+    [3, -2],
+    [2, -4],
+    [3, -4],
+    [1, -5],
+    [4, -5],
+    [2, -6],
+    [3, -6]
+  ],
+  "hashLines": [
+    {"content": "beehiveoncap.rle", "id": "N", "full": "#N beehiveoncap.rle"},
+    {
+      "content": "https://conwaylife.com/wiki/Beehive_on_cap",
+      "id": "C",
+      "full": "#C https://conwaylife.com/wiki/Beehive_on_cap"
+    },
+    {
+      "content": "https://www.conwaylife.com/patterns/beehiveoncap.rle",
+      "id": "C",
+      "full": "#C https://www.conwaylife.com/patterns/beehiveoncap.rle"
+    }
+  ]
+}

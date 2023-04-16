@@ -1,0 +1,18 @@
+{
+  "format": "plaintext",
+  "name": "sevenblinkers.cells",
+  "description": [
+    "https://conwaylife.com/wiki/List_of_common_evolutionary_sequences",
+    "https://www.conwaylife.com/patterns/sevenblinkers.cells"
+  ],
+  "matrix": [[1, 0, 0, 0, 0], [1, 0, 1, 0, 0], [1, 1, 0, 1, 1]],
+  "liveCoordinates": [
+    [0, 0],
+    [0, -1],
+    [2, -1],
+    [0, -2],
+    [1, -2],
+    [3, -2],
+    [4, -2]
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "format": "rle",
+  "comments": [
+    "Glider synthesis of Noah's ark.",
+    "https://www.conwaylife.com/wiki/Noah%27s_ark"
+  ],
+  "name": "noahsark_synth",
+  "creationData": "Ian07",
+  "topleft": null,
+  "width": 23,
+  "height": 23,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [9, 0],
+    [11, 0],
+    [10, -1],
+    [11, -1],
+    [10, -2],
+    [17, -2],
+    [16, -3],
+    [16, -4],
+    [17, -4],
+    [18, -4],
+    [20, -5],
+    [21, -5],
+    [20, -6],
+    [22, -6],
+    [20, -7],
+    [0, -9],
+    [1, -10],
+    [2, -10],
+    [0, -11],
+    [1, -11],
+    [3, -16],
+    [4, -16],
+    [2, -17],
+    [4, -17],
+    [4, -18],
+    [5, -20],
+    [6, -20],
+    [7, -20],
+    [5, -21],
+    [6, -22]
+  ],
+  "hashLines": [
+    {"content": "noahsark_synth", "id": "N", "full": "#N noahsark_synth"},
+    {"content": "Ian07", "id": "O", "full": "#O Ian07"},
+    {
+      "content": "Glider synthesis of Noah's ark.",
+      "id": "C",
+      "full": "#C Glider synthesis of Noah's ark."
+    },
+    {
+      "content": "https://www.conwaylife.com/wiki/Noah%27s_ark",
+      "id": "C",
+      "full": "#C https://www.conwaylife.com/wiki/Noah%27s_ark"
+    }
+  ]
+}

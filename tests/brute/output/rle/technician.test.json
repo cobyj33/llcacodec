@@ -1,0 +1,63 @@
+{
+  "format": "rle",
+  "comments": [
+    "A period 5 oscillator found in January 1973.",
+    "www.conwaylife.com/wiki/index.php?title=Technician"
+  ],
+  "name": "Technician",
+  "creationData": "David Buckingham",
+  "topleft": null,
+  "width": 11,
+  "height": 12,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [5, 0],
+    [4, -1],
+    [6, -1],
+    [4, -2],
+    [5, -2],
+    [2, -3],
+    [3, -3],
+    [1, -4],
+    [5, -4],
+    [6, -4],
+    [7, -4],
+    [0, -5],
+    [3, -5],
+    [4, -5],
+    [8, -5],
+    [10, -5],
+    [1, -6],
+    [2, -6],
+    [7, -6],
+    [9, -6],
+    [10, -6],
+    [3, -7],
+    [5, -7],
+    [7, -7],
+    [3, -8],
+    [7, -8],
+    [4, -9],
+    [5, -9],
+    [6, -9],
+    [6, -10],
+    [8, -10],
+    [7, -11],
+    [8, -11]
+  ],
+  "hashLines": [
+    {"content": "Technician", "id": "N", "full": "#N Technician"},
+    {"content": "David Buckingham", "id": "O", "full": "#O David Buckingham"},
+    {
+      "content": "A period 5 oscillator found in January 1973.",
+      "id": "C",
+      "full": "#C A period 5 oscillator found in January 1973."
+    },
+    {
+      "content": "www.conwaylife.com/wiki/index.php?title=Technician",
+      "id": "C",
+      "full": "#C www.conwaylife.com/wiki/index.php?title=Technician"
+    }
+  ]
+}

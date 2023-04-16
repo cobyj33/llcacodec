@@ -1,0 +1,45 @@
+{
+  "format": "rle",
+  "comments": [
+    "https://conwaylife.com/wiki/Boat_with_very_long_tail",
+    "https://conwaylife.com/patterns/boatwithverylongtail.rle"
+  ],
+  "name": "Boat with very long tail",
+  "creationData": "Unknown",
+  "topleft": null,
+  "width": 7,
+  "height": 4,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [0, 0],
+    [1, 0],
+    [0, -1],
+    [2, -1],
+    [5, -1],
+    [6, -1],
+    [1, -2],
+    [4, -2],
+    [6, -2],
+    [2, -3],
+    [3, -3]
+  ],
+  "hashLines": [
+    {
+      "content": "Boat with very long tail",
+      "id": "N",
+      "full": "#N Boat with very long tail"
+    },
+    {"content": "Unknown", "id": "O", "full": "#O Unknown"},
+    {
+      "content": "https://conwaylife.com/wiki/Boat_with_very_long_tail",
+      "id": "C",
+      "full": "#C https://conwaylife.com/wiki/Boat_with_very_long_tail"
+    },
+    {
+      "content": "https://conwaylife.com/patterns/boatwithverylongtail.rle",
+      "id": "C",
+      "full": "#C https://conwaylife.com/patterns/boatwithverylongtail.rle"
+    }
+  ]
+}

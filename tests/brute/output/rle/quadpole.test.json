@@ -1,0 +1,39 @@
+{
+  "format": "rle",
+  "comments": [
+    "The barberpole of length 4 and thus a period 2 oscillator.",
+    "www.conwaylife.com/wiki/index.php?title=Quadpole"
+  ],
+  "name": "Quadpole",
+  "creationData": "",
+  "topleft": null,
+  "width": 7,
+  "height": 7,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [0, 0],
+    [1, 0],
+    [0, -1],
+    [2, -1],
+    [2, -3],
+    [4, -3],
+    [4, -5],
+    [6, -5],
+    [5, -6],
+    [6, -6]
+  ],
+  "hashLines": [
+    {"content": "Quadpole", "id": "N", "full": "#N Quadpole"},
+    {
+      "content": "The barberpole of length 4 and thus a period 2 oscillator.",
+      "id": "C",
+      "full": "#C The barberpole of length 4 and thus a period 2 oscillator."
+    },
+    {
+      "content": "www.conwaylife.com/wiki/index.php?title=Quadpole",
+      "id": "C",
+      "full": "#C www.conwaylife.com/wiki/index.php?title=Quadpole"
+    }
+  ]
+}

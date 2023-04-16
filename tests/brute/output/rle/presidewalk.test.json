@@ -1,0 +1,41 @@
+{
+  "format": "rle",
+  "comments": [
+    "https://conwaylife.com/wiki/Sidewalk",
+    "https://www.conwaylife.com/patterns/presidewalk.rle"
+  ],
+  "name": "presidewalk.rle",
+  "creationData": "",
+  "topleft": null,
+  "width": 7,
+  "height": 4,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [5, 0],
+    [6, 0],
+    [0, -1],
+    [1, -1],
+    [4, -1],
+    [5, -1],
+    [1, -2],
+    [2, -2],
+    [5, -2],
+    [6, -2],
+    [0, -3],
+    [1, -3]
+  ],
+  "hashLines": [
+    {"content": "presidewalk.rle", "id": "N", "full": "#N presidewalk.rle"},
+    {
+      "content": "https://conwaylife.com/wiki/Sidewalk",
+      "id": "C",
+      "full": "#C https://conwaylife.com/wiki/Sidewalk"
+    },
+    {
+      "content": "https://www.conwaylife.com/patterns/presidewalk.rle",
+      "id": "C",
+      "full": "#C https://www.conwaylife.com/patterns/presidewalk.rle"
+    }
+  ]
+}

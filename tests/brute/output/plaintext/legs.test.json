@@ -1,0 +1,19 @@
+{
+  "format": "plaintext",
+  "name": "legs.cells",
+  "description": [
+    "https://conwaylife.com/wiki/Legs",
+    "https://www.conwaylife.com/patterns/legs.cells"
+  ],
+  "matrix": [[1, 1, 0, 0], [1, 0, 0, 0], [1, 0, 0, 1], [0, 1, 1, 1]],
+  "liveCoordinates": [
+    [0, 0],
+    [1, 0],
+    [0, -1],
+    [0, -2],
+    [3, -2],
+    [1, -3],
+    [2, -3],
+    [3, -3]
+  ]
+}

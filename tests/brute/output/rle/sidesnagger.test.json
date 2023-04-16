@@ -1,0 +1,41 @@
+{
+  "format": "rle",
+  "comments": ["https://conwaylife.com/wiki/Sidesnagger"],
+  "name": "Sidesnagger",
+  "creationData": "",
+  "topleft": null,
+  "width": 13,
+  "height": 9,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [6, 0],
+    [5, -1],
+    [7, -1],
+    [4, -2],
+    [7, -2],
+    [11, -2],
+    [12, -2],
+    [5, -3],
+    [6, -3],
+    [11, -3],
+    [12, -3],
+    [1, -4],
+    [0, -5],
+    [2, -5],
+    [0, -6],
+    [1, -6],
+    [6, -7],
+    [7, -7],
+    [6, -8],
+    [7, -8]
+  ],
+  "hashLines": [
+    {"content": "Sidesnagger", "id": "N", "full": "#N Sidesnagger"},
+    {
+      "content": "https://conwaylife.com/wiki/Sidesnagger",
+      "id": "C",
+      "full": "#C https://conwaylife.com/wiki/Sidesnagger"
+    }
+  ]
+}

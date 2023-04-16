@@ -1,0 +1,29 @@
+{
+  "format": "rle",
+  "comments": [
+    "https://conwaylife.com/wiki/Hook",
+    "https://conwaylife.com/patterns/hook.rle"
+  ],
+  "name": "Hook",
+  "creationData": "Unknown",
+  "topleft": null,
+  "width": 3,
+  "height": 2,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [[0, 0], [2, 0], [1, -1], [2, -1]],
+  "hashLines": [
+    {"content": "Hook", "id": "N", "full": "#N Hook"},
+    {"content": "Unknown", "id": "O", "full": "#O Unknown"},
+    {
+      "content": "https://conwaylife.com/wiki/Hook",
+      "id": "C",
+      "full": "#C https://conwaylife.com/wiki/Hook"
+    },
+    {
+      "content": "https://conwaylife.com/patterns/hook.rle",
+      "id": "C",
+      "full": "#C https://conwaylife.com/patterns/hook.rle"
+    }
+  ]
+}

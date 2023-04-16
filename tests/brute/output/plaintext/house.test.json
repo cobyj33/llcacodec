@@ -1,0 +1,20 @@
+{
+  "format": "plaintext",
+  "name": "House",
+  "description": [
+    "An induction coil.",
+    "https://www.conwaylife.com/wiki/index.php?title=House"
+  ],
+  "matrix": [[0, 1, 1, 1, 0], [1, 0, 0, 0, 1], [1, 1, 0, 1, 1]],
+  "liveCoordinates": [
+    [1, 0],
+    [2, 0],
+    [3, 0],
+    [0, -1],
+    [4, -1],
+    [0, -2],
+    [1, -2],
+    [3, -2],
+    [4, -2]
+  ]
+}

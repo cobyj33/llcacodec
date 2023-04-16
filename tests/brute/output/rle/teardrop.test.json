@@ -1,0 +1,38 @@
+{
+  "format": "rle",
+  "comments": [
+    "An induction coil that evolves into two beehives after 20 generations.",
+    "https://www.conwaylife.com/wiki/index.php?title=Teardrop"
+  ],
+  "name": "Teardrop",
+  "creationData": "",
+  "topleft": null,
+  "width": 4,
+  "height": 4,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [1, 0],
+    [2, 0],
+    [3, 0],
+    [0, -1],
+    [3, -1],
+    [0, -2],
+    [3, -2],
+    [1, -3],
+    [2, -3]
+  ],
+  "hashLines": [
+    {"content": "Teardrop", "id": "N", "full": "#N Teardrop"},
+    {
+      "content": "An induction coil that evolves into two beehives after 20 generations.",
+      "id": "C",
+      "full": "#C An induction coil that evolves into two beehives after 20 generations."
+    },
+    {
+      "content": "https://www.conwaylife.com/wiki/index.php?title=Teardrop",
+      "id": "C",
+      "full": "#C https://www.conwaylife.com/wiki/index.php?title=Teardrop"
+    }
+  ]
+}

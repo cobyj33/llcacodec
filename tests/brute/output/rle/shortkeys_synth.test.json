@@ -1,0 +1,90 @@
+{
+  "format": "rle",
+  "comments": [
+    "6-glider synthesis of short keys",
+    "https://conwaylife.com/wiki/Short_keys",
+    "https://conwaylife.com/forums/viewtopic.php?p=12616#p12600"
+  ],
+  "name": "shortkeys_synth.rle",
+  "creationData": "Bob Shemyakin, 12 July 2014",
+  "topleft": null,
+  "width": 37,
+  "height": 8,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [3, 0],
+    [18, 0],
+    [4, -1],
+    [17, -1],
+    [2, -2],
+    [3, -2],
+    [4, -2],
+    [17, -2],
+    [18, -2],
+    [19, -2],
+    [26, -2],
+    [35, -2],
+    [25, -3],
+    [27, -3],
+    [28, -3],
+    [29, -3],
+    [32, -3],
+    [33, -3],
+    [34, -3],
+    [36, -3],
+    [26, -4],
+    [29, -4],
+    [32, -4],
+    [35, -4],
+    [1, -5],
+    [6, -5],
+    [7, -5],
+    [8, -5],
+    [13, -5],
+    [14, -5],
+    [15, -5],
+    [20, -5],
+    [29, -5],
+    [32, -5],
+    [1, -6],
+    [2, -6],
+    [8, -6],
+    [13, -6],
+    [19, -6],
+    [20, -6],
+    [0, -7],
+    [2, -7],
+    [7, -7],
+    [14, -7],
+    [19, -7],
+    [21, -7]
+  ],
+  "hashLines": [
+    {
+      "content": "shortkeys_synth.rle",
+      "id": "N",
+      "full": "#N shortkeys_synth.rle"
+    },
+    {
+      "content": "Bob Shemyakin, 12 July 2014",
+      "id": "O",
+      "full": "#O Bob Shemyakin, 12 July 2014"
+    },
+    {
+      "content": "6-glider synthesis of short keys",
+      "id": "C",
+      "full": "#C 6-glider synthesis of short keys"
+    },
+    {
+      "content": "https://conwaylife.com/wiki/Short_keys",
+      "id": "C",
+      "full": "#C https://conwaylife.com/wiki/Short_keys"
+    },
+    {
+      "content": "https://conwaylife.com/forums/viewtopic.php?p=12616#p12600",
+      "id": "C",
+      "full": "#C https://conwaylife.com/forums/viewtopic.php?p=12616#p12600"
+    }
+  ]
+}

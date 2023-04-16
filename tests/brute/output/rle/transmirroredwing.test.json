@@ -1,0 +1,49 @@
+{
+  "format": "rle",
+  "comments": [
+    "https://conwaylife.com/wiki/Trans-mirrored_wing",
+    "https://www.conwaylife.com/patterns/transmirroredwing.rle"
+  ],
+  "name": "transmirroredwing.rle",
+  "creationData": "",
+  "topleft": null,
+  "width": 9,
+  "height": 5,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [1, 0],
+    [2, 0],
+    [0, -1],
+    [3, -1],
+    [5, -1],
+    [6, -1],
+    [1, -2],
+    [3, -2],
+    [5, -2],
+    [7, -2],
+    [2, -3],
+    [3, -3],
+    [5, -3],
+    [8, -3],
+    [6, -4],
+    [7, -4]
+  ],
+  "hashLines": [
+    {
+      "content": "transmirroredwing.rle",
+      "id": "N",
+      "full": "#N transmirroredwing.rle"
+    },
+    {
+      "content": "https://conwaylife.com/wiki/Trans-mirrored_wing",
+      "id": "C",
+      "full": "#C https://conwaylife.com/wiki/Trans-mirrored_wing"
+    },
+    {
+      "content": "https://www.conwaylife.com/patterns/transmirroredwing.rle",
+      "id": "C",
+      "full": "#C https://www.conwaylife.com/patterns/transmirroredwing.rle"
+    }
+  ]
+}

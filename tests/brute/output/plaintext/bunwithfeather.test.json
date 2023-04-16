@@ -1,0 +1,29 @@
+{
+  "format": "plaintext",
+  "name": "bunwithfeather.cells",
+  "description": [
+    "https://conwaylife.com/wiki/Bun_with_feather",
+    "https://www.conwaylife.com/patterns/bunwithfeather.cells"
+  ],
+  "matrix": [
+    [0, 0, 0, 1, 0, 0],
+    [1, 0, 1, 0, 1, 0],
+    [1, 1, 0, 1, 0, 1],
+    [0, 0, 0, 1, 0, 1],
+    [0, 0, 0, 1, 1, 0]
+  ],
+  "liveCoordinates": [
+    [3, 0],
+    [0, -1],
+    [2, -1],
+    [4, -1],
+    [0, -2],
+    [1, -2],
+    [3, -2],
+    [5, -2],
+    [3, -3],
+    [5, -3],
+    [3, -4],
+    [4, -4]
+  ]
+}

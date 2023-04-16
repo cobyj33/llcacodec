@@ -1,0 +1,57 @@
+{
+  "format": "rle",
+  "comments": [
+    "https://conwaylife.com/wiki/Composers",
+    "https://www.conwaylife.com/patterns/4eaters.rle"
+  ],
+  "name": "4eaters.rle",
+  "creationData": "",
+  "topleft": null,
+  "width": 15,
+  "height": 15,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [3, 0],
+    [11, 0],
+    [1, -1],
+    [2, -1],
+    [3, -1],
+    [11, -1],
+    [12, -1],
+    [13, -1],
+    [0, -2],
+    [14, -2],
+    [0, -3],
+    [1, -3],
+    [13, -3],
+    [14, -3],
+    [0, -11],
+    [1, -11],
+    [13, -11],
+    [14, -11],
+    [0, -12],
+    [14, -12],
+    [1, -13],
+    [2, -13],
+    [3, -13],
+    [11, -13],
+    [12, -13],
+    [13, -13],
+    [3, -14],
+    [11, -14]
+  ],
+  "hashLines": [
+    {"content": "4eaters.rle", "id": "N", "full": "#N 4eaters.rle"},
+    {
+      "content": "https://conwaylife.com/wiki/Composers",
+      "id": "C",
+      "full": "#C https://conwaylife.com/wiki/Composers"
+    },
+    {
+      "content": "https://www.conwaylife.com/patterns/4eaters.rle",
+      "id": "C",
+      "full": "#C https://www.conwaylife.com/patterns/4eaters.rle"
+    }
+  ]
+}

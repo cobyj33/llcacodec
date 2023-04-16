@@ -1,0 +1,47 @@
+{
+  "format": "rle",
+  "comments": [
+    "A period 2 oscillator composed of a beacon and a long hook.",
+    "www.conwaylife.com/wiki/index.php?title=Beacon_and_long_hook"
+  ],
+  "name": "Cis-beacon up and long hook",
+  "creationData": "",
+  "topleft": null,
+  "width": 5,
+  "height": 8,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [2, 0],
+    [3, 0],
+    [3, -1],
+    [0, -2],
+    [0, -3],
+    [1, -3],
+    [0, -5],
+    [1, -5],
+    [2, -5],
+    [3, -5],
+    [0, -6],
+    [4, -6],
+    [3, -7],
+    [4, -7]
+  ],
+  "hashLines": [
+    {
+      "content": "Cis-beacon up and long hook",
+      "id": "N",
+      "full": "#N Cis-beacon up and long hook"
+    },
+    {
+      "content": "A period 2 oscillator composed of a beacon and a long hook.",
+      "id": "C",
+      "full": "#C A period 2 oscillator composed of a beacon and a long hook."
+    },
+    {
+      "content": "www.conwaylife.com/wiki/index.php?title=Beacon_and_long_hook",
+      "id": "C",
+      "full": "#C www.conwaylife.com/wiki/index.php?title=Beacon_and_long_hook"
+    }
+  ]
+}

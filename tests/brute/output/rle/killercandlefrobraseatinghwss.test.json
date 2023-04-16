@@ -1,0 +1,85 @@
+{
+  "format": "rle",
+  "comments": [
+    "Killer candlefrobras, a period 3 oscillator made up of two candlefrobras that act in some ways like killer toads, about to eat an approaching HWSS.",
+    "https://conwaylife.com/wiki/Killer_candlefrobras",
+    "https://conwaylife.com/wiki/File:Killercandlefrobraseatinghwss.png"
+  ],
+  "name": "Killer candlefrobras eating a HWSS",
+  "creationData": "Robert Wainwright",
+  "topleft": null,
+  "width": 21,
+  "height": 14,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [4, 0],
+    [16, 0],
+    [0, -1],
+    [1, -1],
+    [3, -1],
+    [5, -1],
+    [6, -1],
+    [8, -1],
+    [12, -1],
+    [14, -1],
+    [15, -1],
+    [17, -1],
+    [19, -1],
+    [20, -1],
+    [0, -2],
+    [1, -2],
+    [3, -2],
+    [7, -2],
+    [9, -2],
+    [11, -2],
+    [13, -2],
+    [17, -2],
+    [19, -2],
+    [20, -2],
+    [3, -3],
+    [8, -3],
+    [12, -3],
+    [17, -3],
+    [3, -4],
+    [4, -4],
+    [16, -4],
+    [17, -4],
+    [9, -7],
+    [10, -7],
+    [11, -7],
+    [9, -8],
+    [12, -8],
+    [9, -9],
+    [9, -10],
+    [13, -10],
+    [9, -11],
+    [13, -11],
+    [9, -12],
+    [10, -13],
+    [12, -13]
+  ],
+  "hashLines": [
+    {
+      "content": "Killer candlefrobras eating a HWSS",
+      "id": "N",
+      "full": "#N Killer candlefrobras eating a HWSS"
+    },
+    {"content": "Robert Wainwright", "id": "O", "full": "#O Robert Wainwright"},
+    {
+      "content": "Killer candlefrobras, a period 3 oscillator made up of two candlefrobras that act in some ways like killer toads, about to eat an approaching HWSS.",
+      "id": "C",
+      "full": "#C Killer candlefrobras, a period 3 oscillator made up of two candlefrobras that act in some ways like killer toads, about to eat an approaching HWSS."
+    },
+    {
+      "content": "https://conwaylife.com/wiki/Killer_candlefrobras",
+      "id": "C",
+      "full": "#C https://conwaylife.com/wiki/Killer_candlefrobras"
+    },
+    {
+      "content": "https://conwaylife.com/wiki/File:Killercandlefrobraseatinghwss.png",
+      "id": "C",
+      "full": "#C https://conwaylife.com/wiki/File:Killercandlefrobraseatinghwss.png"
+    }
+  ]
+}

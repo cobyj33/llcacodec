@@ -1,0 +1,27 @@
+{
+  "format": "plaintext",
+  "name": "cisboatontable.cells",
+  "description": [
+    "https://conwaylife.com/wiki/Cis-boat_on_table",
+    "https://conwaylife.com/patterns/cisboatontable.cells"
+  ],
+  "matrix": [
+    [0, 1, 1, 0, 1, 1],
+    [1, 0, 1, 0, 1, 0],
+    [0, 1, 0, 0, 1, 0],
+    [0, 0, 0, 0, 1, 1]
+  ],
+  "liveCoordinates": [
+    [1, 0],
+    [2, 0],
+    [4, 0],
+    [5, 0],
+    [0, -1],
+    [2, -1],
+    [4, -1],
+    [1, -2],
+    [4, -2],
+    [4, -3],
+    [5, -3]
+  ]
+}

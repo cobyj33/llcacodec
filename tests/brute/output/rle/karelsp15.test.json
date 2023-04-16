@@ -1,0 +1,58 @@
+{
+  "format": "rle",
+  "comments": [
+    "A period 15 oscillator discovered on December 11, 2002",
+    "https://www.conwaylife.com/wiki/index.php?title=Karel's_p15"
+  ],
+  "name": "Karel's p15",
+  "creationData": "Karel Suhajda",
+  "topleft": null,
+  "width": 10,
+  "height": 11,
+  "ruleString": "b3/s23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [2, 0],
+    [7, 0],
+    [2, -1],
+    [3, -1],
+    [4, -1],
+    [5, -1],
+    [6, -1],
+    [7, -1],
+    [2, -2],
+    [7, -2],
+    [2, -6],
+    [3, -6],
+    [4, -6],
+    [5, -6],
+    [6, -6],
+    [7, -6],
+    [1, -7],
+    [8, -7],
+    [0, -8],
+    [9, -8],
+    [1, -9],
+    [8, -9],
+    [2, -10],
+    [3, -10],
+    [4, -10],
+    [5, -10],
+    [6, -10],
+    [7, -10]
+  ],
+  "hashLines": [
+    {"content": "Karel's p15", "id": "N", "full": "#N Karel's p15"},
+    {"content": "Karel Suhajda", "id": "O", "full": "#O Karel Suhajda"},
+    {
+      "content": "A period 15 oscillator discovered on December 11, 2002",
+      "id": "C",
+      "full": "#C A period 15 oscillator discovered on December 11, 2002"
+    },
+    {
+      "content": "https://www.conwaylife.com/wiki/index.php?title=Karel's_p15",
+      "id": "C",
+      "full": "#C https://www.conwaylife.com/wiki/index.php?title=Karel's_p15"
+    }
+  ]
+}

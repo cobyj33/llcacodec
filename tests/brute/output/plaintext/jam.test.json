@@ -1,0 +1,33 @@
+{
+  "format": "plaintext",
+  "name": "Jam",
+  "description": [
+    "Author: Achim Flammenkamp",
+    "A period 3 oscillator.",
+    "www.conwaylife.com/wiki/index.php?title=Jam"
+  ],
+  "matrix": [
+    [0, 0, 0, 1, 1, 0],
+    [0, 0, 1, 0, 0, 1],
+    [1, 0, 0, 1, 0, 1],
+    [1, 0, 0, 0, 1, 0],
+    [1, 0, 0, 0, 0, 0],
+    [0, 0, 0, 1, 0, 0],
+    [0, 1, 1, 0, 0, 0]
+  ],
+  "liveCoordinates": [
+    [3, 0],
+    [4, 0],
+    [2, -1],
+    [5, -1],
+    [0, -2],
+    [3, -2],
+    [5, -2],
+    [0, -3],
+    [4, -3],
+    [0, -4],
+    [3, -5],
+    [1, -6],
+    [2, -6]
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "format": "plaintext",
+  "name": "Beehive and cap",
+  "description": [
+    "The 85th most common still life.",
+    "https://www.conwaylife.com/wiki/index.php?title=Beehive_and_cap"
+  ],
+  "matrix": [
+    [0, 1, 1, 0, 0],
+    [1, 0, 0, 1, 0],
+    [1, 1, 1, 1, 0],
+    [0, 0, 0, 0, 0],
+    [0, 0, 1, 1, 0],
+    [0, 1, 0, 0, 1],
+    [0, 0, 1, 1, 0]
+  ],
+  "liveCoordinates": [
+    [1, 0],
+    [2, 0],
+    [0, -1],
+    [3, -1],
+    [0, -2],
+    [1, -2],
+    [2, -2],
+    [3, -2],
+    [2, -4],
+    [3, -4],
+    [1, -5],
+    [4, -5],
+    [2, -6],
+    [3, -6]
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "format": "rle",
+  "comments": [
+    "https://conwaylife.com/wiki/Cis-bun_and_dove",
+    "https://www.conwaylife.com/patterns/cisbunanddove.rle"
+  ],
+  "name": "cisbunanddove.rle",
+  "creationData": "",
+  "topleft": null,
+  "width": 8,
+  "height": 5,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [6, 0],
+    [1, -1],
+    [5, -1],
+    [7, -1],
+    [0, -2],
+    [2, -2],
+    [4, -2],
+    [7, -2],
+    [0, -3],
+    [2, -3],
+    [4, -3],
+    [6, -3],
+    [1, -4],
+    [2, -4],
+    [4, -4],
+    [5, -4]
+  ],
+  "hashLines": [
+    {"content": "cisbunanddove.rle", "id": "N", "full": "#N cisbunanddove.rle"},
+    {
+      "content": "https://conwaylife.com/wiki/Cis-bun_and_dove",
+      "id": "C",
+      "full": "#C https://conwaylife.com/wiki/Cis-bun_and_dove"
+    },
+    {
+      "content": "https://www.conwaylife.com/patterns/cisbunanddove.rle",
+      "id": "C",
+      "full": "#C https://www.conwaylife.com/patterns/cisbunanddove.rle"
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "format": "rle",
+  "comments": [
+    "https://conwaylife.com/wiki/Boat_with_hooked_nine",
+    "https://www.conwaylife.com/patterns/boatwithhookednine.rle"
+  ],
+  "name": "boatwithhookednine.rle",
+  "creationData": "",
+  "topleft": null,
+  "width": 7,
+  "height": 5,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [2, 0],
+    [3, 0],
+    [1, -1],
+    [4, -1],
+    [0, -2],
+    [2, -2],
+    [4, -2],
+    [1, -3],
+    [2, -3],
+    [4, -3],
+    [6, -3],
+    [5, -4],
+    [6, -4]
+  ],
+  "hashLines": [
+    {
+      "content": "boatwithhookednine.rle",
+      "id": "N",
+      "full": "#N boatwithhookednine.rle"
+    },
+    {
+      "content": "https://conwaylife.com/wiki/Boat_with_hooked_nine",
+      "id": "C",
+      "full": "#C https://conwaylife.com/wiki/Boat_with_hooked_nine"
+    },
+    {
+      "content": "https://www.conwaylife.com/patterns/boatwithhookednine.rle",
+      "id": "C",
+      "full": "#C https://www.conwaylife.com/patterns/boatwithhookednine.rle"
+    }
+  ]
+}

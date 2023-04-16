@@ -1,0 +1,56 @@
+{
+  "format": "rle",
+  "comments": [
+    "https://conwaylife.com/wiki/Boat_tie_spark_coil",
+    "https://www.conwaylife.com/patterns/boattiesparkcoil.rle"
+  ],
+  "name": "boattiesparkcoil.rle",
+  "creationData": "",
+  "topleft": null,
+  "width": 8,
+  "height": 11,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [0, 0],
+    [1, 0],
+    [3, 0],
+    [4, 0],
+    [0, -1],
+    [4, -1],
+    [1, -2],
+    [2, -2],
+    [3, -2],
+    [1, -5],
+    [2, -5],
+    [3, -5],
+    [0, -6],
+    [4, -6],
+    [0, -7],
+    [1, -7],
+    [3, -7],
+    [4, -7],
+    [5, -8],
+    [6, -8],
+    [5, -9],
+    [7, -9],
+    [6, -10]
+  ],
+  "hashLines": [
+    {
+      "content": "boattiesparkcoil.rle",
+      "id": "N",
+      "full": "#N boattiesparkcoil.rle"
+    },
+    {
+      "content": "https://conwaylife.com/wiki/Boat_tie_spark_coil",
+      "id": "C",
+      "full": "#C https://conwaylife.com/wiki/Boat_tie_spark_coil"
+    },
+    {
+      "content": "https://www.conwaylife.com/patterns/boattiesparkcoil.rle",
+      "id": "C",
+      "full": "#C https://www.conwaylife.com/patterns/boattiesparkcoil.rle"
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "format": "plaintext",
+  "name": "Integral with two tubs",
+  "description": [
+    "Unknown",
+    "https://conwaylife.com/wiki/Integral_with_two_tubs",
+    "https://conwaylife.com/patterns/integralwithtwotubs.cells"
+  ],
+  "matrix": [
+    [0, 0, 0, 0, 0, 1, 0],
+    [0, 0, 0, 0, 1, 0, 1],
+    [0, 0, 0, 0, 0, 1, 0],
+    [0, 0, 1, 1, 1, 0, 0],
+    [0, 1, 0, 0, 0, 0, 0],
+    [1, 0, 1, 0, 0, 0, 0],
+    [0, 1, 0, 0, 0, 0, 0]
+  ],
+  "liveCoordinates": [
+    [5, 0],
+    [4, -1],
+    [6, -1],
+    [5, -2],
+    [2, -3],
+    [3, -3],
+    [4, -3],
+    [1, -4],
+    [0, -5],
+    [2, -5],
+    [1, -6]
+  ]
+}

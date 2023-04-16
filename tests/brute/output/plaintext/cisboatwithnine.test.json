@@ -1,0 +1,30 @@
+{
+  "format": "plaintext",
+  "name": "Cis-boat with nine",
+  "description": [
+    "Unknown",
+    "https://conwaylife.com/wiki/Cis-boat_with_nine",
+    "https://conwaylife.com/patterns/cisboatwithnine.cells"
+  ],
+  "matrix": [
+    [0, 0, 0, 0, 1, 0],
+    [0, 0, 0, 1, 0, 1],
+    [0, 0, 1, 0, 1, 1],
+    [0, 0, 1, 0, 0, 0],
+    [1, 0, 1, 0, 0, 0],
+    [1, 1, 0, 0, 0, 0]
+  ],
+  "liveCoordinates": [
+    [4, 0],
+    [3, -1],
+    [5, -1],
+    [2, -2],
+    [4, -2],
+    [5, -2],
+    [2, -3],
+    [0, -4],
+    [2, -4],
+    [0, -5],
+    [1, -5]
+  ]
+}

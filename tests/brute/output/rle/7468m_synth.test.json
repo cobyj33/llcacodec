@@ -1,0 +1,44 @@
+{
+  "format": "rle",
+  "comments": [
+    "Glider synthesis of 7468M.",
+    "https://conwaylife.com/wiki/7468M"
+  ],
+  "name": "7468m_synth.rle",
+  "creationData": "",
+  "topleft": null,
+  "width": 12,
+  "height": 23,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [1, 0],
+    [2, -1],
+    [0, -2],
+    [1, -2],
+    [2, -2],
+    [1, -5],
+    [2, -5],
+    [3, -5],
+    [3, -6],
+    [2, -7],
+    [9, -20],
+    [10, -20],
+    [11, -20],
+    [9, -21],
+    [10, -22]
+  ],
+  "hashLines": [
+    {"content": "7468m_synth.rle", "id": "N", "full": "#N 7468m_synth.rle"},
+    {
+      "content": "Glider synthesis of 7468M.",
+      "id": "C",
+      "full": "#C Glider synthesis of 7468M."
+    },
+    {
+      "content": "https://conwaylife.com/wiki/7468M",
+      "id": "C",
+      "full": "#C https://conwaylife.com/wiki/7468M"
+    }
+  ]
+}

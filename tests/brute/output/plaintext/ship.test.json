@@ -1,0 +1,10 @@
+{
+  "format": "plaintext",
+  "name": "Ship",
+  "description": [
+    "A still life.",
+    "www.conwaylife.com/wiki/index.php?title=Ship"
+  ],
+  "matrix": [[1, 1, 0], [1, 0, 1], [0, 1, 1]],
+  "liveCoordinates": [[0, 0], [1, 0], [0, -1], [2, -1], [1, -2], [2, -2]]
+}

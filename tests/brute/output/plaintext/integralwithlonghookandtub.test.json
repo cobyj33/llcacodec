@@ -1,0 +1,32 @@
+{
+  "format": "plaintext",
+  "name": "integralwithlonghookandtub.cells",
+  "description": [
+    "https://conwaylife.com/wiki/Integral_with_long_hook_and_tub",
+    "https://conwaylife.com/patterns/integralwithlonghookandtub.cells"
+  ],
+  "matrix": [
+    [0, 1, 1, 0, 0, 0],
+    [0, 0, 1, 0, 0, 0],
+    [0, 1, 0, 0, 0, 0],
+    [1, 0, 0, 0, 0, 0],
+    [0, 1, 1, 1, 0, 0],
+    [0, 0, 0, 0, 1, 0],
+    [0, 0, 0, 1, 0, 1],
+    [0, 0, 0, 0, 1, 0]
+  ],
+  "liveCoordinates": [
+    [1, 0],
+    [2, 0],
+    [2, -1],
+    [1, -2],
+    [0, -3],
+    [1, -4],
+    [2, -4],
+    [3, -4],
+    [4, -5],
+    [3, -6],
+    [5, -6],
+    [4, -7]
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "format": "rle",
+  "comments": [
+    "https://conwaylife.com/wiki/Long_snake_with_feather",
+    "https://www.conwaylife.com/patterns/longsnakewithfeather.rle"
+  ],
+  "name": "longsnakewithfeather.rle",
+  "creationData": "",
+  "topleft": null,
+  "width": 4,
+  "height": 8,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [2, 0],
+    [3, 0],
+    [1, -1],
+    [3, -1],
+    [0, -2],
+    [1, -3],
+    [2, -3],
+    [2, -4],
+    [1, -5],
+    [0, -6],
+    [0, -7],
+    [1, -7]
+  ],
+  "hashLines": [
+    {
+      "content": "longsnakewithfeather.rle",
+      "id": "N",
+      "full": "#N longsnakewithfeather.rle"
+    },
+    {
+      "content": "https://conwaylife.com/wiki/Long_snake_with_feather",
+      "id": "C",
+      "full": "#C https://conwaylife.com/wiki/Long_snake_with_feather"
+    },
+    {
+      "content": "https://www.conwaylife.com/patterns/longsnakewithfeather.rle",
+      "id": "C",
+      "full": "#C https://www.conwaylife.com/patterns/longsnakewithfeather.rle"
+    }
+  ]
+}

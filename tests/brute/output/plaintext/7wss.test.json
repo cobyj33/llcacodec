@@ -1,0 +1,33 @@
+{
+  "format": "plaintext",
+  "name": "7wss.cells",
+  "description": [
+    "John Conway, 1970",
+    "https://conwaylife.com/wiki/Overweight_spaceship",
+    "https://www.conwaylife.com/patterns/7wss.cells"
+  ],
+  "matrix": [
+    [0, 0, 0, 1, 1, 1, 0, 0],
+    [0, 1, 0, 0, 0, 0, 0, 1],
+    [1, 0, 0, 0, 0, 0, 0, 0],
+    [1, 0, 0, 0, 0, 0, 0, 1],
+    [1, 1, 1, 1, 1, 1, 1, 0]
+  ],
+  "liveCoordinates": [
+    [3, 0],
+    [4, 0],
+    [5, 0],
+    [1, -1],
+    [7, -1],
+    [0, -2],
+    [0, -3],
+    [7, -3],
+    [0, -4],
+    [1, -4],
+    [2, -4],
+    [3, -4],
+    [4, -4],
+    [5, -4],
+    [6, -4]
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "format": "rle",
+  "comments": [
+    "https://conwaylife.com/wiki/Dot",
+    "https://www.conwaylife.com/patterns/dot.rle"
+  ],
+  "name": "dot.rle",
+  "creationData": "John Conway, 1969",
+  "topleft": null,
+  "width": 1,
+  "height": 1,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [[0, 0]],
+  "hashLines": [
+    {"content": "dot.rle", "id": "N", "full": "#N dot.rle"},
+    {"content": "John Conway, 1969", "id": "O", "full": "#O John Conway, 1969"},
+    {
+      "content": "https://conwaylife.com/wiki/Dot",
+      "id": "C",
+      "full": "#C https://conwaylife.com/wiki/Dot"
+    },
+    {
+      "content": "https://www.conwaylife.com/patterns/dot.rle",
+      "id": "C",
+      "full": "#C https://www.conwaylife.com/patterns/dot.rle"
+    }
+  ]
+}

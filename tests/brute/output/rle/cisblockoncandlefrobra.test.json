@@ -1,0 +1,49 @@
+{
+  "format": "rle",
+  "comments": [
+    "https://conwaylife.com/wiki/Cis-block_on_candlefrobra",
+    "https://www.conwaylife.com/patterns/cisblockoncandlefrobra.rle"
+  ],
+  "name": "cisblockoncandlefrobra.rle",
+  "creationData": "",
+  "topleft": null,
+  "width": 5,
+  "height": 10,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [2, 0],
+    [3, 0],
+    [2, -1],
+    [3, -1],
+    [0, -3],
+    [1, -3],
+    [2, -3],
+    [3, -3],
+    [0, -4],
+    [4, -4],
+    [3, -5],
+    [3, -6],
+    [2, -7],
+    [1, -8],
+    [3, -8],
+    [2, -9]
+  ],
+  "hashLines": [
+    {
+      "content": "cisblockoncandlefrobra.rle",
+      "id": "N",
+      "full": "#N cisblockoncandlefrobra.rle"
+    },
+    {
+      "content": "https://conwaylife.com/wiki/Cis-block_on_candlefrobra",
+      "id": "C",
+      "full": "#C https://conwaylife.com/wiki/Cis-block_on_candlefrobra"
+    },
+    {
+      "content": "https://www.conwaylife.com/patterns/cisblockoncandlefrobra.rle",
+      "id": "C",
+      "full": "#C https://www.conwaylife.com/patterns/cisblockoncandlefrobra.rle"
+    }
+  ]
+}

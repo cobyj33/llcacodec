@@ -1,0 +1,32 @@
+{
+  "format": "plaintext",
+  "name": "Pond on pond",
+  "description": [
+    "A 16-cell pseudo still life made up of two ponds.",
+    "www.conwaylife.com/wiki/index.php?title=Pond_on_pond"
+  ],
+  "matrix": [
+    [0, 1, 1, 0, 0, 0, 1, 1, 0],
+    [1, 0, 0, 1, 0, 1, 0, 0, 1],
+    [1, 0, 0, 1, 0, 1, 0, 0, 1],
+    [0, 1, 1, 0, 0, 0, 1, 1, 0]
+  ],
+  "liveCoordinates": [
+    [1, 0],
+    [2, 0],
+    [6, 0],
+    [7, 0],
+    [0, -1],
+    [3, -1],
+    [5, -1],
+    [8, -1],
+    [0, -2],
+    [3, -2],
+    [5, -2],
+    [8, -2],
+    [1, -3],
+    [2, -3],
+    [6, -3],
+    [7, -3]
+  ]
+}

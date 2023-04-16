@@ -1,0 +1,56 @@
+{
+  "format": "rle",
+  "comments": [
+    "Glider synthesis of two-glider mess.",
+    "https://www.conwaylife.com/ref/mniemiec/glider-2.htm"
+  ],
+  "name": "Two-glider mess_synth",
+  "creationData": "Mark D. Niemiec",
+  "topleft": null,
+  "width": 27,
+  "height": 8,
+  "ruleString": "23/3",
+  "rule": {"survival": [2, 3], "birth": [3]},
+  "liveCoordinates": [
+    [24, 0],
+    [22, -1],
+    [25, -1],
+    [3, -2],
+    [5, -2],
+    [26, -2],
+    [4, -3],
+    [5, -3],
+    [21, -3],
+    [26, -3],
+    [4, -4],
+    [21, -4],
+    [26, -4],
+    [0, -5],
+    [1, -5],
+    [2, -5],
+    [21, -5],
+    [25, -5],
+    [2, -6],
+    [22, -6],
+    [24, -6],
+    [1, -7]
+  ],
+  "hashLines": [
+    {
+      "content": "Two-glider mess_synth",
+      "id": "N",
+      "full": "#N Two-glider mess_synth"
+    },
+    {"content": "Mark D. Niemiec", "id": "O", "full": "#O Mark D. Niemiec"},
+    {
+      "content": "Glider synthesis of two-glider mess.",
+      "id": "C",
+      "full": "#C Glider synthesis of two-glider mess."
+    },
+    {
+      "content": "https://www.conwaylife.com/ref/mniemiec/glider-2.htm",
+      "id": "C",
+      "full": "#C https://www.conwaylife.com/ref/mniemiec/glider-2.htm"
+    }
+  ]
+}

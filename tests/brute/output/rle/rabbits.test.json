@@ -1,0 +1,39 @@
+{
+  "format": "rle",
+  "comments": [
+    "A methuselah with lifespan 17331.",
+    "https://www.conwaylife.com/wiki/index.php?title=Rabbits"
+  ],
+  "name": "Rabbits",
+  "creationData": "Andrew Trevorrow",
+  "topleft": null,
+  "width": 7,
+  "height": 3,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [0, 0],
+    [4, 0],
+    [5, 0],
+    [6, 0],
+    [0, -1],
+    [1, -1],
+    [2, -1],
+    [5, -1],
+    [1, -2]
+  ],
+  "hashLines": [
+    {"content": "Rabbits", "id": "N", "full": "#N Rabbits"},
+    {"content": "Andrew Trevorrow", "id": "O", "full": "#O Andrew Trevorrow"},
+    {
+      "content": "A methuselah with lifespan 17331.",
+      "id": "C",
+      "full": "#C A methuselah with lifespan 17331."
+    },
+    {
+      "content": "https://www.conwaylife.com/wiki/index.php?title=Rabbits",
+      "id": "C",
+      "full": "#C https://www.conwaylife.com/wiki/index.php?title=Rabbits"
+    }
+  ]
+}

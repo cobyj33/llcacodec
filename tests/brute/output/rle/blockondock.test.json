@@ -1,0 +1,43 @@
+{
+  "format": "rle",
+  "comments": [
+    "https://conwaylife.com/wiki/Block_on_dock",
+    "https://conwaylife.com/patterns/blockondock.rle"
+  ],
+  "name": "blockondock.rle",
+  "creationData": "",
+  "topleft": null,
+  "width": 6,
+  "height": 6,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [0, 0],
+    [1, 0],
+    [0, -1],
+    [2, -1],
+    [4, -1],
+    [5, -1],
+    [2, -2],
+    [4, -2],
+    [5, -2],
+    [2, -3],
+    [0, -4],
+    [2, -4],
+    [0, -5],
+    [1, -5]
+  ],
+  "hashLines": [
+    {"content": "blockondock.rle", "id": "N", "full": "#N blockondock.rle"},
+    {
+      "content": "https://conwaylife.com/wiki/Block_on_dock",
+      "id": "C",
+      "full": "#C https://conwaylife.com/wiki/Block_on_dock"
+    },
+    {
+      "content": "https://conwaylife.com/patterns/blockondock.rle",
+      "id": "C",
+      "full": "#C https://conwaylife.com/patterns/blockondock.rle"
+    }
+  ]
+}

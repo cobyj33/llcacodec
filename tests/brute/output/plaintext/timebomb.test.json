@@ -1,0 +1,37 @@
+{
+  "format": "plaintext",
+  "name": "Time bomb",
+  "description": [
+    "Doug Petrie",
+    "An infinite-growth mechanism that is a predecessor of the diagonal period 384 c/12 glider-producing switch engine.",
+    "www.conwaylife.com/wiki/index.php?title=Glider-producing_switch_eng",
+    "ine"
+  ],
+  "matrix": [
+    [0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1],
+    [1, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1],
+    [0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0],
+    [0, 0, 1, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1, 0, 0],
+    [0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0],
+    [0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  ],
+  "liveCoordinates": [
+    [1, 0],
+    [13, 0],
+    [14, 0],
+    [0, -1],
+    [2, -1],
+    [7, -1],
+    [14, -1],
+    [7, -2],
+    [12, -2],
+    [2, -3],
+    [5, -3],
+    [9, -3],
+    [12, -3],
+    [2, -4],
+    [3, -4],
+    [10, -4],
+    [3, -5]
+  ]
+}

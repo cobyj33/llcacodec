@@ -1,0 +1,49 @@
+{
+  "format": "rle",
+  "comments": [
+    "https://conwaylife.com/wiki/LWSS_on_MWSS_1",
+    "https://www.conwaylife.com/patterns/lwssonmwss1.rle"
+  ],
+  "name": "lwssonmwss1.rle",
+  "creationData": "",
+  "topleft": null,
+  "width": 6,
+  "height": 12,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [1, 0],
+    [4, 0],
+    [0, -1],
+    [0, -2],
+    [4, -2],
+    [0, -3],
+    [1, -3],
+    [2, -3],
+    [3, -3],
+    [0, -7],
+    [1, -7],
+    [2, -7],
+    [3, -7],
+    [4, -7],
+    [0, -8],
+    [5, -8],
+    [0, -9],
+    [1, -10],
+    [5, -10],
+    [3, -11]
+  ],
+  "hashLines": [
+    {"content": "lwssonmwss1.rle", "id": "N", "full": "#N lwssonmwss1.rle"},
+    {
+      "content": "https://conwaylife.com/wiki/LWSS_on_MWSS_1",
+      "id": "C",
+      "full": "#C https://conwaylife.com/wiki/LWSS_on_MWSS_1"
+    },
+    {
+      "content": "https://www.conwaylife.com/patterns/lwssonmwss1.rle",
+      "id": "C",
+      "full": "#C https://www.conwaylife.com/patterns/lwssonmwss1.rle"
+    }
+  ]
+}

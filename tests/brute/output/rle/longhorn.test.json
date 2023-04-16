@@ -1,0 +1,45 @@
+{
+  "format": "rle",
+  "comments": ["A 19-bit still life.", "https://conwaylife.com/wiki/Longhorn"],
+  "name": "Longhorn",
+  "creationData": "",
+  "topleft": null,
+  "width": 9,
+  "height": 6,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [1, 0],
+    [2, 0],
+    [6, 0],
+    [7, 0],
+    [0, -1],
+    [3, -1],
+    [5, -1],
+    [8, -1],
+    [0, -2],
+    [1, -2],
+    [3, -2],
+    [5, -2],
+    [7, -2],
+    [8, -2],
+    [3, -3],
+    [5, -3],
+    [3, -4],
+    [5, -4],
+    [4, -5]
+  ],
+  "hashLines": [
+    {"content": "Longhorn", "id": "N", "full": "#N Longhorn"},
+    {
+      "content": "A 19-bit still life.",
+      "id": "C",
+      "full": "#C A 19-bit still life."
+    },
+    {
+      "content": "https://conwaylife.com/wiki/Longhorn",
+      "id": "C",
+      "full": "#C https://conwaylife.com/wiki/Longhorn"
+    }
+  ]
+}

@@ -1,13 +1,17 @@
 
 # llcacodec Changelog
 
-# April 15: Version 0.1.5
+## April 16: Version 0.15
+
+Added llcacodec-test-data submodule to test/brute/
+
+## April 15: Version 0.1.5
 
 Readme tutorial for reading files added
 
 Add exports for decoding and encoding object types
 
-# April 14: Version 0.1.5
+## April 14: Version 0.1.5
 
 Remove "foundTopLeft" property of RLEDecodedData
 

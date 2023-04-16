@@ -1,0 +1,41 @@
+{
+  "format": "rle",
+  "comments": [
+    "A pattern that lays a beehive on either side of itself before exploding.",
+    "www.conwaylife.com/wiki/index.php?title=Queen_bee"
+  ],
+  "name": "Queen bee",
+  "creationData": "",
+  "topleft": null,
+  "width": 7,
+  "height": 5,
+  "ruleString": "b3/s23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [3, 0],
+    [2, -1],
+    [4, -1],
+    [1, -2],
+    [5, -2],
+    [2, -3],
+    [3, -3],
+    [4, -3],
+    [0, -4],
+    [1, -4],
+    [5, -4],
+    [6, -4]
+  ],
+  "hashLines": [
+    {"content": "Queen bee", "id": "N", "full": "#N Queen bee"},
+    {
+      "content": "A pattern that lays a beehive on either side of itself before exploding.",
+      "id": "C",
+      "full": "#C A pattern that lays a beehive on either side of itself before exploding."
+    },
+    {
+      "content": "www.conwaylife.com/wiki/index.php?title=Queen_bee",
+      "id": "C",
+      "full": "#C www.conwaylife.com/wiki/index.php?title=Queen_bee"
+    }
+  ]
+}

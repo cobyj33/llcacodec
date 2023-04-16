@@ -1,0 +1,28 @@
+{
+  "format": "plaintext",
+  "name": "Long long barge",
+  "description": [
+    "A still life.",
+    "www.conwaylife.com/wiki/index.php?title=Long_long_barge"
+  ],
+  "matrix": [
+    [0, 1, 0, 0, 0, 0],
+    [1, 0, 1, 0, 0, 0],
+    [0, 1, 0, 1, 0, 0],
+    [0, 0, 1, 0, 1, 0],
+    [0, 0, 0, 1, 0, 1],
+    [0, 0, 0, 0, 1, 0]
+  ],
+  "liveCoordinates": [
+    [1, 0],
+    [0, -1],
+    [2, -1],
+    [1, -2],
+    [3, -2],
+    [2, -3],
+    [4, -3],
+    [3, -4],
+    [5, -4],
+    [4, -5]
+  ]
+}

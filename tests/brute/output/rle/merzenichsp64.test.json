@@ -1,0 +1,68 @@
+{
+  "format": "rle",
+  "comments": [
+    "The smallest known period-64 oscillator.",
+    "https://conwaylife.com/wiki/Merzenich%27s_p64"
+  ],
+  "name": "Merzenich's p64",
+  "creationData": "Matthias Merzenich",
+  "topleft": null,
+  "width": 21,
+  "height": 21,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [5, 0],
+    [6, 0],
+    [5, -1],
+    [6, -1],
+    [8, -4],
+    [9, -4],
+    [9, -5],
+    [10, -5],
+    [19, -5],
+    [20, -5],
+    [19, -6],
+    [20, -6],
+    [10, -8],
+    [12, -8],
+    [9, -9],
+    [13, -9],
+    [8, -10],
+    [12, -10],
+    [7, -11],
+    [11, -11],
+    [8, -12],
+    [10, -12],
+    [0, -14],
+    [1, -14],
+    [0, -15],
+    [1, -15],
+    [10, -15],
+    [11, -15],
+    [11, -16],
+    [12, -16],
+    [14, -19],
+    [15, -19],
+    [14, -20],
+    [15, -20]
+  ],
+  "hashLines": [
+    {"content": "Merzenich's p64", "id": "N", "full": "#N Merzenich's p64"},
+    {
+      "content": "Matthias Merzenich",
+      "id": "O",
+      "full": "#O Matthias Merzenich"
+    },
+    {
+      "content": "The smallest known period-64 oscillator.",
+      "id": "C",
+      "full": "#C The smallest known period-64 oscillator."
+    },
+    {
+      "content": "https://conwaylife.com/wiki/Merzenich%27s_p64",
+      "id": "C",
+      "full": "#C https://conwaylife.com/wiki/Merzenich%27s_p64"
+    }
+  ]
+}

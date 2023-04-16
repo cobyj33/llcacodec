@@ -1,0 +1,37 @@
+{
+  "format": "rle",
+  "comments": [
+    "A methuselah with lifespan 5206.",
+    "www.conwaylife.com/wiki/index.php?title=Acorn"
+  ],
+  "name": "Acorn",
+  "creationData": "Charles Corderman",
+  "topleft": null,
+  "width": 7,
+  "height": 3,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [1, 0],
+    [3, -1],
+    [0, -2],
+    [1, -2],
+    [4, -2],
+    [5, -2],
+    [6, -2]
+  ],
+  "hashLines": [
+    {"content": "Acorn", "id": "N", "full": "#N Acorn"},
+    {"content": "Charles Corderman", "id": "O", "full": "#O Charles Corderman"},
+    {
+      "content": "A methuselah with lifespan 5206.",
+      "id": "C",
+      "full": "#C A methuselah with lifespan 5206."
+    },
+    {
+      "content": "www.conwaylife.com/wiki/index.php?title=Acorn",
+      "id": "C",
+      "full": "#C www.conwaylife.com/wiki/index.php?title=Acorn"
+    }
+  ]
+}

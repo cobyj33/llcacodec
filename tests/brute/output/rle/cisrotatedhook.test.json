@@ -1,0 +1,44 @@
+{
+  "format": "rle",
+  "comments": [
+    "https://conwaylife.com/wiki/Cis-rotated_hook",
+    "https://conwaylife.com/patterns/cisrotatedhook.rle"
+  ],
+  "name": "Cis-rotated hook",
+  "creationData": "Unknown",
+  "topleft": null,
+  "width": 7,
+  "height": 5,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [1, 0],
+    [2, 0],
+    [2, -1],
+    [5, -1],
+    [6, -1],
+    [0, -2],
+    [2, -2],
+    [4, -2],
+    [6, -2],
+    [0, -3],
+    [1, -3],
+    [4, -3],
+    [4, -4],
+    [5, -4]
+  ],
+  "hashLines": [
+    {"content": "Cis-rotated hook", "id": "N", "full": "#N Cis-rotated hook"},
+    {"content": "Unknown", "id": "O", "full": "#O Unknown"},
+    {
+      "content": "https://conwaylife.com/wiki/Cis-rotated_hook",
+      "id": "C",
+      "full": "#C https://conwaylife.com/wiki/Cis-rotated_hook"
+    },
+    {
+      "content": "https://conwaylife.com/patterns/cisrotatedhook.rle",
+      "id": "C",
+      "full": "#C https://conwaylife.com/patterns/cisrotatedhook.rle"
+    }
+  ]
+}

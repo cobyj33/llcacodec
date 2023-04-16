@@ -1,0 +1,92 @@
+{
+  "format": "rle",
+  "comments": [
+    "https://conwaylife.com/wiki/P58_pi-heptomino_hassler",
+    "https://www.conwaylife.com/patterns/p58piheptominohassler.rle"
+  ],
+  "name": "p58piheptominohassler.rle",
+  "creationData": "Luke Kiernan, 2022",
+  "topleft": null,
+  "width": 23,
+  "height": 30,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [7, 0],
+    [5, -1],
+    [6, -1],
+    [7, -1],
+    [4, -2],
+    [4, -3],
+    [5, -3],
+    [12, -3],
+    [13, -3],
+    [12, -4],
+    [10, -5],
+    [12, -5],
+    [21, -5],
+    [22, -5],
+    [10, -6],
+    [11, -6],
+    [21, -6],
+    [22, -6],
+    [2, -9],
+    [3, -9],
+    [1, -10],
+    [3, -10],
+    [1, -11],
+    [1, -12],
+    [3, -12],
+    [2, -13],
+    [3, -13],
+    [19, -16],
+    [20, -16],
+    [19, -17],
+    [21, -17],
+    [21, -18],
+    [19, -19],
+    [21, -19],
+    [19, -20],
+    [20, -20],
+    [0, -23],
+    [1, -23],
+    [11, -23],
+    [12, -23],
+    [0, -24],
+    [1, -24],
+    [10, -24],
+    [12, -24],
+    [10, -25],
+    [9, -26],
+    [10, -26],
+    [17, -26],
+    [18, -26],
+    [18, -27],
+    [15, -28],
+    [16, -28],
+    [17, -28],
+    [15, -29]
+  ],
+  "hashLines": [
+    {
+      "content": "p58piheptominohassler.rle",
+      "id": "N",
+      "full": "#N p58piheptominohassler.rle"
+    },
+    {
+      "content": "Luke Kiernan, 2022",
+      "id": "O",
+      "full": "#O Luke Kiernan, 2022"
+    },
+    {
+      "content": "https://conwaylife.com/wiki/P58_pi-heptomino_hassler",
+      "id": "C",
+      "full": "#C https://conwaylife.com/wiki/P58_pi-heptomino_hassler"
+    },
+    {
+      "content": "https://www.conwaylife.com/patterns/p58piheptominohassler.rle",
+      "id": "C",
+      "full": "#C https://www.conwaylife.com/patterns/p58piheptominohassler.rle"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "format": "plaintext",
+  "name": "eheptominoancestor2.cells",
+  "description": [
+    "https://conwaylife.com/wiki/E-heptomino",
+    "https://www.conwaylife.com/patterns/eheptominoancestor2.cells"
+  ],
+  "matrix": [
+    [0, 0, 1, 0, 0],
+    [0, 1, 0, 1, 1],
+    [1, 0, 0, 0, 1],
+    [0, 1, 0, 1, 0],
+    [0, 0, 1, 0, 0]
+  ],
+  "liveCoordinates": [
+    [2, 0],
+    [1, -1],
+    [3, -1],
+    [4, -1],
+    [0, -2],
+    [4, -2],
+    [1, -3],
+    [3, -3],
+    [2, -4]
+  ]
+}

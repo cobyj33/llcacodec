@@ -1,0 +1,47 @@
+{
+  "format": "rle",
+  "comments": [
+    "https://conwaylife.com/wiki/Very_long_ship",
+    "https://www.conwaylife.com/patterns/verylongshipgenerator.rle"
+  ],
+  "name": "verylongshipgenerator.rle",
+  "creationData": "",
+  "topleft": null,
+  "width": 7,
+  "height": 6,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [1, 0],
+    [2, 0],
+    [3, 0],
+    [0, -1],
+    [4, -1],
+    [0, -2],
+    [5, -2],
+    [0, -3],
+    [6, -3],
+    [1, -4],
+    [5, -4],
+    [2, -5],
+    [3, -5],
+    [4, -5]
+  ],
+  "hashLines": [
+    {
+      "content": "verylongshipgenerator.rle",
+      "id": "N",
+      "full": "#N verylongshipgenerator.rle"
+    },
+    {
+      "content": "https://conwaylife.com/wiki/Very_long_ship",
+      "id": "C",
+      "full": "#C https://conwaylife.com/wiki/Very_long_ship"
+    },
+    {
+      "content": "https://www.conwaylife.com/patterns/verylongshipgenerator.rle",
+      "id": "C",
+      "full": "#C https://www.conwaylife.com/patterns/verylongshipgenerator.rle"
+    }
+  ]
+}

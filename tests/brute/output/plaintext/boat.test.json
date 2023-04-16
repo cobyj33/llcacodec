@@ -1,0 +1,10 @@
+{
+  "format": "plaintext",
+  "name": "Boat",
+  "description": [
+    "The only 5-cell still life.",
+    "www.conwaylife.com/wiki/index.php?title=Boat"
+  ],
+  "matrix": [[1, 1, 0], [1, 0, 1], [0, 1, 0]],
+  "liveCoordinates": [[0, 0], [1, 0], [0, -1], [2, -1], [1, -2]]
+}

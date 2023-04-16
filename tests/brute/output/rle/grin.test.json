@@ -1,0 +1,28 @@
+{
+  "format": "rle",
+  "comments": [
+    "A common parent of the block.",
+    "https://www.conwaylife.com/wiki/index.php?title=Grin"
+  ],
+  "name": "Grin",
+  "creationData": "",
+  "topleft": null,
+  "width": 4,
+  "height": 2,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [[0, 0], [3, 0], [1, -1], [2, -1]],
+  "hashLines": [
+    {"content": "Grin", "id": "N", "full": "#N Grin"},
+    {
+      "content": "A common parent of the block.",
+      "id": "C",
+      "full": "#C A common parent of the block."
+    },
+    {
+      "content": "https://www.conwaylife.com/wiki/index.php?title=Grin",
+      "id": "C",
+      "full": "#C https://www.conwaylife.com/wiki/index.php?title=Grin"
+    }
+  ]
+}

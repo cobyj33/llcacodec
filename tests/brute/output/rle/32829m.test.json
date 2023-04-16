@@ -1,0 +1,45 @@
+{
+  "format": "rle",
+  "comments": [
+    "15-cell 32829-generation methuselah",
+    "found by Richard Wobus with Nathaniel Johnston's soup search",
+    "on Oct. 7, 2010"
+  ],
+  "name": "",
+  "creationData": "",
+  "topleft": null,
+  "width": 23,
+  "height": 31,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [0, 0],
+    [1, 0],
+    [2, 0],
+    [3, -20],
+    [3, -21],
+    [3, -22],
+    [20, -27],
+    [21, -27],
+    [22, -27],
+    [9, -28],
+    [10, -28],
+    [11, -28],
+    [22, -28],
+    [22, -29],
+    [21, -30]
+  ],
+  "hashLines": [
+    {
+      "content": "15-cell 32829-generation methuselah",
+      "id": "C",
+      "full": "#C 15-cell 32829-generation methuselah"
+    },
+    {
+      "content": "found by Richard Wobus with Nathaniel Johnston's soup search",
+      "id": "C",
+      "full": "#C found by Richard Wobus with Nathaniel Johnston's soup search"
+    },
+    {"content": "on Oct. 7, 2010", "id": "C", "full": "#C   on Oct. 7, 2010"}
+  ]
+}

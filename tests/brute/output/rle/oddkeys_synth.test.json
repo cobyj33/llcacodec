@@ -1,0 +1,79 @@
+{
+  "format": "rle",
+  "comments": [
+    "Glider synthesis of odd keys",
+    "https://www.conwaylife.com/wiki/Odd_keys"
+  ],
+  "name": "oddkeys_synth",
+  "creationData": "Goldtiger997, Dave Greene",
+  "topleft": null,
+  "width": 91,
+  "height": 90,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [1, 0],
+    [2, -1],
+    [0, -2],
+    [1, -2],
+    [2, -2],
+    [20, -7],
+    [22, -7],
+    [21, -8],
+    [22, -8],
+    [48, -8],
+    [21, -9],
+    [48, -9],
+    [50, -9],
+    [48, -10],
+    [49, -10],
+    [26, -20],
+    [24, -21],
+    [26, -21],
+    [25, -22],
+    [26, -22],
+    [28, -25],
+    [33, -25],
+    [29, -26],
+    [31, -26],
+    [32, -26],
+    [27, -27],
+    [28, -27],
+    [29, -27],
+    [32, -27],
+    [33, -27],
+    [11, -32],
+    [12, -32],
+    [12, -33],
+    [13, -33],
+    [11, -34],
+    [55, -61],
+    [56, -61],
+    [57, -61],
+    [55, -62],
+    [56, -63],
+    [88, -87],
+    [89, -87],
+    [90, -87],
+    [88, -88],
+    [89, -89]
+  ],
+  "hashLines": [
+    {"content": "oddkeys_synth", "id": "N", "full": "#N oddkeys_synth"},
+    {
+      "content": "Goldtiger997, Dave Greene",
+      "id": "O",
+      "full": "#O Goldtiger997, Dave Greene"
+    },
+    {
+      "content": "Glider synthesis of odd keys",
+      "id": "C",
+      "full": "#C Glider synthesis of odd keys"
+    },
+    {
+      "content": "https://www.conwaylife.com/wiki/Odd_keys",
+      "id": "C",
+      "full": "#C https://www.conwaylife.com/wiki/Odd_keys"
+    }
+  ]
+}

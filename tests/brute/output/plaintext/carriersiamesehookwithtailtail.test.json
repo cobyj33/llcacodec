@@ -1,0 +1,29 @@
+{
+  "format": "plaintext",
+  "name": "carriersiamesehookwithtailtail.cells",
+  "description": [
+    "https://conwaylife.com/wiki/Carrier_siamese_hook-with-tail_tail",
+    "https://conwaylife.com/patterns/carriersiamesehookwithtailtail.cells"
+  ],
+  "matrix": [
+    [1, 1, 0, 0, 0, 0, 0],
+    [0, 1, 0, 0, 0, 0, 0],
+    [1, 0, 0, 0, 0, 1, 1],
+    [0, 1, 1, 1, 0, 0, 1],
+    [0, 0, 0, 1, 1, 0, 0]
+  ],
+  "liveCoordinates": [
+    [0, 0],
+    [1, 0],
+    [1, -1],
+    [0, -2],
+    [5, -2],
+    [6, -2],
+    [1, -3],
+    [2, -3],
+    [3, -3],
+    [6, -3],
+    [3, -4],
+    [4, -4]
+  ]
+}

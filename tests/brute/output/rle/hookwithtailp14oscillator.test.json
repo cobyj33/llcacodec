@@ -1,0 +1,81 @@
+{
+  "format": "rle",
+  "comments": [
+    "https://conwaylife.com/wiki/Hook_with_tail",
+    "https://www.conwaylife.com/patterns/hookwithtailp14oscillator.rle"
+  ],
+  "name": "hookwithtailp14oscillator.rle",
+  "creationData": "",
+  "topleft": null,
+  "width": 21,
+  "height": 21,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [12, 0],
+    [13, 0],
+    [12, -1],
+    [9, -2],
+    [10, -2],
+    [12, -2],
+    [9, -3],
+    [11, -3],
+    [10, -6],
+    [0, -7],
+    [9, -7],
+    [11, -7],
+    [12, -7],
+    [0, -8],
+    [1, -8],
+    [2, -8],
+    [7, -8],
+    [3, -9],
+    [7, -9],
+    [13, -9],
+    [17, -9],
+    [18, -9],
+    [2, -10],
+    [6, -10],
+    [14, -10],
+    [18, -10],
+    [2, -11],
+    [3, -11],
+    [7, -11],
+    [13, -11],
+    [17, -11],
+    [13, -12],
+    [18, -12],
+    [19, -12],
+    [20, -12],
+    [8, -13],
+    [9, -13],
+    [11, -13],
+    [20, -13],
+    [10, -14],
+    [9, -17],
+    [11, -17],
+    [8, -18],
+    [10, -18],
+    [11, -18],
+    [8, -19],
+    [7, -20],
+    [8, -20]
+  ],
+  "hashLines": [
+    {
+      "content": "hookwithtailp14oscillator.rle",
+      "id": "N",
+      "full": "#N hookwithtailp14oscillator.rle"
+    },
+    {
+      "content": "https://conwaylife.com/wiki/Hook_with_tail",
+      "id": "C",
+      "full": "#C https://conwaylife.com/wiki/Hook_with_tail"
+    },
+    {
+      "content": "https://www.conwaylife.com/patterns/hookwithtailp14oscillator.rle",
+      "id": "C",
+      "full": "#C https://www.conwaylife.com/patterns/hookwithtailp14oscillator.rle"
+    }
+  ]
+}

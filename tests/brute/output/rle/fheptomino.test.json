@@ -1,0 +1,36 @@
+{
+  "format": "rle",
+  "comments": [
+    "https://conwaylife.com/wiki/F-heptomino",
+    "https://conwaylife.com/patterns/fheptomino.rle"
+  ],
+  "name": "fheptomino.rle",
+  "creationData": "",
+  "topleft": null,
+  "width": 4,
+  "height": 4,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [0, 0],
+    [1, 0],
+    [1, -1],
+    [1, -2],
+    [1, -3],
+    [2, -3],
+    [3, -3]
+  ],
+  "hashLines": [
+    {"content": "fheptomino.rle", "id": "N", "full": "#N fheptomino.rle"},
+    {
+      "content": "https://conwaylife.com/wiki/F-heptomino",
+      "id": "C",
+      "full": "#C https://conwaylife.com/wiki/F-heptomino"
+    },
+    {
+      "content": "https://conwaylife.com/patterns/fheptomino.rle",
+      "id": "C",
+      "full": "#C https://conwaylife.com/patterns/fheptomino.rle"
+    }
+  ]
+}

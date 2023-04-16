@@ -1,0 +1,43 @@
+{
+  "format": "rle",
+  "comments": [
+    "A 10-cell still life.",
+    "www.conwaylife.com/wiki/index.php?title=Long_long_hook_with_tail"
+  ],
+  "name": "Long long hook with tail",
+  "creationData": "",
+  "topleft": null,
+  "width": 7,
+  "height": 4,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [0, 0],
+    [1, 0],
+    [5, 0],
+    [6, 0],
+    [1, -1],
+    [4, -1],
+    [6, -1],
+    [1, -2],
+    [3, -2],
+    [2, -3]
+  ],
+  "hashLines": [
+    {
+      "content": "Long long hook with tail",
+      "id": "N",
+      "full": "#N Long long hook with tail"
+    },
+    {
+      "content": "A 10-cell still life.",
+      "id": "C",
+      "full": "#C A 10-cell still life."
+    },
+    {
+      "content": "www.conwaylife.com/wiki/index.php?title=Long_long_hook_with_tail",
+      "id": "C",
+      "full": "#C www.conwaylife.com/wiki/index.php?title=Long_long_hook_with_tail"
+    }
+  ]
+}

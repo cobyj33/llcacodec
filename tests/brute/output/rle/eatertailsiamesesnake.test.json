@@ -1,0 +1,45 @@
+{
+  "format": "rle",
+  "comments": [
+    "https://conwaylife.com/wiki/Eater_tail_siamese_snake",
+    "https://conwaylife.com/patterns/eatertailsiamesesnake.rle"
+  ],
+  "name": "Eater tail siamese snake",
+  "creationData": "Unknown",
+  "topleft": null,
+  "width": 4,
+  "height": 7,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [2, 0],
+    [3, 0],
+    [1, -1],
+    [3, -1],
+    [1, -2],
+    [0, -3],
+    [1, -3],
+    [0, -4],
+    [1, -5],
+    [0, -6],
+    [1, -6]
+  ],
+  "hashLines": [
+    {
+      "content": "Eater tail siamese snake",
+      "id": "N",
+      "full": "#N Eater tail siamese snake"
+    },
+    {"content": "Unknown", "id": "O", "full": "#O Unknown"},
+    {
+      "content": "https://conwaylife.com/wiki/Eater_tail_siamese_snake",
+      "id": "C",
+      "full": "#C https://conwaylife.com/wiki/Eater_tail_siamese_snake"
+    },
+    {
+      "content": "https://conwaylife.com/patterns/eatertailsiamesesnake.rle",
+      "id": "C",
+      "full": "#C https://conwaylife.com/patterns/eatertailsiamesesnake.rle"
+    }
+  ]
+}

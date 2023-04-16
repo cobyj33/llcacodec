@@ -1,0 +1,44 @@
+{
+  "format": "rle",
+  "comments": [
+    "A simple 15-cell still life.",
+    "www.conwaylife.com/wiki/index.php?title=Moose_antlers"
+  ],
+  "name": "Moose antlers",
+  "creationData": "",
+  "topleft": null,
+  "width": 9,
+  "height": 5,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [0, 0],
+    [1, 0],
+    [7, 0],
+    [8, 0],
+    [0, -1],
+    [8, -1],
+    [1, -2],
+    [2, -2],
+    [3, -2],
+    [5, -2],
+    [6, -2],
+    [7, -2],
+    [3, -3],
+    [5, -3],
+    [4, -4]
+  ],
+  "hashLines": [
+    {"content": "Moose antlers", "id": "N", "full": "#N Moose antlers"},
+    {
+      "content": "A simple 15-cell still life.",
+      "id": "C",
+      "full": "#C A simple 15-cell still life."
+    },
+    {
+      "content": "www.conwaylife.com/wiki/index.php?title=Moose_antlers",
+      "id": "C",
+      "full": "#C www.conwaylife.com/wiki/index.php?title=Moose_antlers"
+    }
+  ]
+}

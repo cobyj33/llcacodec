@@ -1,0 +1,45 @@
+{
+  "format": "rle",
+  "comments": [
+    "https://conwaylife.com/wiki/Trans-aircraft_carrier_up_on_table",
+    "https://conwaylife.com/patterns/transcarrierupontable.rle"
+  ],
+  "name": "transcarrierupontable.rle",
+  "creationData": "",
+  "topleft": null,
+  "width": 7,
+  "height": 4,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [5, 0],
+    [6, 0],
+    [0, -1],
+    [1, -1],
+    [5, -1],
+    [0, -2],
+    [3, -2],
+    [5, -2],
+    [2, -3],
+    [3, -3],
+    [5, -3],
+    [6, -3]
+  ],
+  "hashLines": [
+    {
+      "content": "transcarrierupontable.rle",
+      "id": "N",
+      "full": "#N transcarrierupontable.rle"
+    },
+    {
+      "content": "https://conwaylife.com/wiki/Trans-aircraft_carrier_up_on_table",
+      "id": "C",
+      "full": "#C https://conwaylife.com/wiki/Trans-aircraft_carrier_up_on_table"
+    },
+    {
+      "content": "https://conwaylife.com/patterns/transcarrierupontable.rle",
+      "id": "C",
+      "full": "#C https://conwaylife.com/patterns/transcarrierupontable.rle"
+    }
+  ]
+}

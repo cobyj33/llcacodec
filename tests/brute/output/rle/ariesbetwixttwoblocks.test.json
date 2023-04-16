@@ -1,0 +1,64 @@
+{
+  "format": "rle",
+  "comments": [
+    "The most common naturally-occurring 31-bit still life.",
+    "https://conwaylife.com/wiki/Aries_betwixt_two_blocks"
+  ],
+  "name": "Aries betwixt two blocks",
+  "creationData": "",
+  "topleft": null,
+  "width": 9,
+  "height": 8,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [1, 0],
+    [2, 0],
+    [6, 0],
+    [7, 0],
+    [0, -1],
+    [3, -1],
+    [5, -1],
+    [8, -1],
+    [0, -2],
+    [1, -2],
+    [3, -2],
+    [5, -2],
+    [7, -2],
+    [8, -2],
+    [3, -3],
+    [5, -3],
+    [3, -4],
+    [5, -4],
+    [0, -5],
+    [1, -5],
+    [3, -5],
+    [5, -5],
+    [7, -5],
+    [8, -5],
+    [0, -6],
+    [1, -6],
+    [3, -6],
+    [5, -6],
+    [7, -6],
+    [8, -6],
+    [4, -7]
+  ],
+  "hashLines": [
+    {
+      "content": "Aries betwixt two blocks",
+      "id": "N",
+      "full": "#N Aries betwixt two blocks"
+    },
+    {
+      "content": "The most common naturally-occurring 31-bit still life.",
+      "id": "C",
+      "full": "#C The most common naturally-occurring 31-bit still life."
+    },
+    {
+      "content": "https://conwaylife.com/wiki/Aries_betwixt_two_blocks",
+      "id": "C",
+      "full": "#C https://conwaylife.com/wiki/Aries_betwixt_two_blocks"
+    }
+  ]
+}

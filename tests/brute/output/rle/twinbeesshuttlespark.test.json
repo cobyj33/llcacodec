@@ -1,0 +1,45 @@
+{
+  "format": "rle",
+  "comments": [
+    "https://conwaylife.com/wiki/Twin_bees_shuttle_spark",
+    "https://www.conwaylife.com/patterns/twinbeesshuttlespark.rle"
+  ],
+  "name": "twinbeesshuttlespark.rle",
+  "creationData": "",
+  "topleft": null,
+  "width": 5,
+  "height": 5,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [2, 0],
+    [3, 0],
+    [2, -1],
+    [3, -1],
+    [1, -2],
+    [4, -2],
+    [0, -3],
+    [2, -3],
+    [3, -3],
+    [0, -4],
+    [2, -4],
+    [3, -4]
+  ],
+  "hashLines": [
+    {
+      "content": "twinbeesshuttlespark.rle",
+      "id": "N",
+      "full": "#N twinbeesshuttlespark.rle"
+    },
+    {
+      "content": "https://conwaylife.com/wiki/Twin_bees_shuttle_spark",
+      "id": "C",
+      "full": "#C https://conwaylife.com/wiki/Twin_bees_shuttle_spark"
+    },
+    {
+      "content": "https://www.conwaylife.com/patterns/twinbeesshuttlespark.rle",
+      "id": "C",
+      "full": "#C https://www.conwaylife.com/patterns/twinbeesshuttlespark.rle"
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "format": "rle",
+  "comments": [
+    "https://conwaylife.com/wiki/Amphisbaena",
+    "https://conwaylife.com/patterns/amphisbaena.rle"
+  ],
+  "name": "Amphisbaena",
+  "creationData": "Unknown",
+  "topleft": null,
+  "width": 7,
+  "height": 5,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [0, 0],
+    [2, 0],
+    [0, -1],
+    [1, -1],
+    [3, -1],
+    [3, -2],
+    [3, -3],
+    [5, -3],
+    [6, -3],
+    [4, -4],
+    [6, -4]
+  ],
+  "hashLines": [
+    {"content": "Amphisbaena", "id": "N", "full": "#N Amphisbaena"},
+    {"content": "Unknown", "id": "O", "full": "#O Unknown"},
+    {
+      "content": "https://conwaylife.com/wiki/Amphisbaena",
+      "id": "C",
+      "full": "#C https://conwaylife.com/wiki/Amphisbaena"
+    },
+    {
+      "content": "https://conwaylife.com/patterns/amphisbaena.rle",
+      "id": "C",
+      "full": "#C https://conwaylife.com/patterns/amphisbaena.rle"
+    }
+  ]
+}

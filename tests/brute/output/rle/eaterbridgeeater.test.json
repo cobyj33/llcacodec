@@ -1,0 +1,47 @@
+{
+  "format": "rle",
+  "comments": [
+    "https://conwaylife.com/wiki/Eater_bridge_eater",
+    "https://www.conwaylife.com/patterns/eaterbridgeeater.rle"
+  ],
+  "name": "eater bridge eater",
+  "creationData": "",
+  "topleft": null,
+  "width": 8,
+  "height": 5,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [0, 0],
+    [1, 0],
+    [0, -1],
+    [6, -1],
+    [7, -1],
+    [1, -2],
+    [2, -2],
+    [3, -2],
+    [5, -2],
+    [7, -2],
+    [3, -3],
+    [5, -3],
+    [4, -4],
+    [5, -4]
+  ],
+  "hashLines": [
+    {
+      "content": "eater bridge eater",
+      "id": "N",
+      "full": "#N eater bridge eater"
+    },
+    {
+      "content": "https://conwaylife.com/wiki/Eater_bridge_eater",
+      "id": "C",
+      "full": "#C https://conwaylife.com/wiki/Eater_bridge_eater"
+    },
+    {
+      "content": "https://www.conwaylife.com/patterns/eaterbridgeeater.rle",
+      "id": "C",
+      "full": "#C https://www.conwaylife.com/patterns/eaterbridgeeater.rle"
+    }
+  ]
+}

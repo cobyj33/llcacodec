@@ -1,0 +1,45 @@
+{
+  "format": "rle",
+  "comments": [
+    "https://conwaylife.com/wiki/Boat_tie_long_boat",
+    "https://www.conwaylife.com/patterns/boattielongboat.rle"
+  ],
+  "name": "boattielongboat.rle",
+  "creationData": "",
+  "topleft": null,
+  "width": 7,
+  "height": 7,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [5, 0],
+    [4, -1],
+    [6, -1],
+    [4, -2],
+    [5, -2],
+    [2, -3],
+    [3, -3],
+    [1, -4],
+    [3, -4],
+    [0, -5],
+    [2, -5],
+    [1, -6]
+  ],
+  "hashLines": [
+    {
+      "content": "boattielongboat.rle",
+      "id": "N",
+      "full": "#N boattielongboat.rle"
+    },
+    {
+      "content": "https://conwaylife.com/wiki/Boat_tie_long_boat",
+      "id": "C",
+      "full": "#C https://conwaylife.com/wiki/Boat_tie_long_boat"
+    },
+    {
+      "content": "https://www.conwaylife.com/patterns/boattielongboat.rle",
+      "id": "C",
+      "full": "#C https://www.conwaylife.com/patterns/boattielongboat.rle"
+    }
+  ]
+}

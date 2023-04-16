@@ -1,0 +1,45 @@
+{
+  "format": "rle",
+  "comments": [
+    "https://conwaylife.com/wiki/Integral_with_cis-hook",
+    "https://conwaylife.com/patterns/integralwithcishook.rle"
+  ],
+  "name": "integralwithcishook.rle",
+  "creationData": "",
+  "topleft": null,
+  "width": 7,
+  "height": 5,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [0, 0],
+    [1, 0],
+    [5, 0],
+    [6, 0],
+    [0, -1],
+    [2, -1],
+    [6, -1],
+    [2, -2],
+    [5, -2],
+    [2, -3],
+    [4, -3],
+    [3, -4]
+  ],
+  "hashLines": [
+    {
+      "content": "integralwithcishook.rle",
+      "id": "N",
+      "full": "#N integralwithcishook.rle"
+    },
+    {
+      "content": "https://conwaylife.com/wiki/Integral_with_cis-hook",
+      "id": "C",
+      "full": "#C https://conwaylife.com/wiki/Integral_with_cis-hook"
+    },
+    {
+      "content": "https://conwaylife.com/patterns/integralwithcishook.rle",
+      "id": "C",
+      "full": "#C https://conwaylife.com/patterns/integralwithcishook.rle"
+    }
+  ]
+}

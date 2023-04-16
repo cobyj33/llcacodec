@@ -1,0 +1,46 @@
+{
+  "format": "rle",
+  "comments": [
+    "https://conwaylife.com/wiki/Beehive_bridge_bun",
+    "https://www.conwaylife.com/patterns/beehivebridgebun.rle"
+  ],
+  "name": "beehivebridgebun.rle",
+  "creationData": "",
+  "topleft": null,
+  "width": 6,
+  "height": 7,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [4, 0],
+    [3, -1],
+    [5, -1],
+    [3, -2],
+    [5, -2],
+    [1, -3],
+    [3, -3],
+    [4, -3],
+    [0, -4],
+    [2, -4],
+    [0, -5],
+    [2, -5],
+    [1, -6]
+  ],
+  "hashLines": [
+    {
+      "content": "beehivebridgebun.rle",
+      "id": "N",
+      "full": "#N beehivebridgebun.rle"
+    },
+    {
+      "content": "https://conwaylife.com/wiki/Beehive_bridge_bun",
+      "id": "C",
+      "full": "#C https://conwaylife.com/wiki/Beehive_bridge_bun"
+    },
+    {
+      "content": "https://www.conwaylife.com/patterns/beehivebridgebun.rle",
+      "id": "C",
+      "full": "#C https://www.conwaylife.com/patterns/beehivebridgebun.rle"
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "format": "plaintext",
+  "name": "boattieship.cells",
+  "description": [
+    "https://conwaylife.com/wiki/Boat_tie_ship",
+    "https://www.conwaylife.com/patterns/boattieship.cells"
+  ],
+  "matrix": [
+    [1, 1, 0, 0, 0, 0],
+    [1, 0, 1, 0, 0, 0],
+    [0, 1, 1, 0, 0, 0],
+    [0, 0, 0, 1, 1, 0],
+    [0, 0, 0, 1, 0, 1],
+    [0, 0, 0, 0, 1, 0]
+  ],
+  "liveCoordinates": [
+    [0, 0],
+    [1, 0],
+    [0, -1],
+    [2, -1],
+    [1, -2],
+    [2, -2],
+    [3, -3],
+    [4, -3],
+    [3, -4],
+    [5, -4],
+    [4, -5]
+  ]
+}

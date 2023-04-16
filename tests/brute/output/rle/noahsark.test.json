@@ -1,0 +1,46 @@
+{
+  "format": "rle",
+  "comments": [
+    "A diagonal period 1344 c/12 puffer made up of two switch engines that was found in 1971.",
+    "www.conwaylife.com/wiki/index.php?title=Noah's_ark"
+  ],
+  "name": "Noah's ark",
+  "creationData": "Charles Corderman",
+  "topleft": null,
+  "width": 15,
+  "height": 15,
+  "ruleString": "23/3",
+  "rule": {"survival": [2, 3], "birth": [3]},
+  "liveCoordinates": [
+    [10, 0],
+    [12, 0],
+    [9, -1],
+    [10, -2],
+    [13, -2],
+    [12, -3],
+    [13, -3],
+    [14, -3],
+    [1, -9],
+    [0, -10],
+    [2, -10],
+    [0, -12],
+    [3, -12],
+    [2, -13],
+    [3, -13],
+    [3, -14]
+  ],
+  "hashLines": [
+    {"content": "Noah's ark", "id": "N", "full": "#N Noah's ark"},
+    {"content": "Charles Corderman", "id": "O", "full": "#O Charles Corderman"},
+    {
+      "content": "A diagonal period 1344 c/12 puffer made up of two switch engines that was found in 1971.",
+      "id": "C",
+      "full": "#C A diagonal period 1344 c/12 puffer made up of two switch engines that was found in 1971."
+    },
+    {
+      "content": "www.conwaylife.com/wiki/index.php?title=Noah's_ark",
+      "id": "C",
+      "full": "#C www.conwaylife.com/wiki/index.php?title=Noah's_ark"
+    }
+  ]
+}

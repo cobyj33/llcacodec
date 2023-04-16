@@ -1,0 +1,63 @@
+{
+  "format": "rle",
+  "comments": [
+    "The smallest known pattern, that exhibits quadratic population",
+    "growth, as of December 2014.",
+    "www.conwaylife.com/wiki/Switch_engine_ping-pong"
+  ],
+  "name": "Switch engine ping-pong",
+  "creationData": "Michael Simkin",
+  "topleft": null,
+  "width": 210515,
+  "height": 183739,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [1148, 0],
+    [1148, -1],
+    [1149, -1],
+    [145, -1077],
+    [144, -1078],
+    [144, -1079],
+    [145, -1079],
+    [146, -1079],
+    [3, -1237],
+    [1, -1238],
+    [2, -1238],
+    [0, -1239],
+    [1, -1240],
+    [210513, -183593],
+    [210512, -183594],
+    [210512, -183595],
+    [210513, -183595],
+    [210514, -183595],
+    [210354, -183736],
+    [210353, -183737],
+    [210354, -183737],
+    [210355, -183737],
+    [210355, -183738]
+  ],
+  "hashLines": [
+    {
+      "content": "Switch engine ping-pong",
+      "id": "N",
+      "full": "#N Switch engine ping-pong"
+    },
+    {"content": "Michael Simkin", "id": "O", "full": "#O Michael Simkin"},
+    {
+      "content": "The smallest known pattern, that exhibits quadratic population",
+      "id": "C",
+      "full": "#C The smallest known pattern, that exhibits quadratic population"
+    },
+    {
+      "content": "growth, as of December 2014.",
+      "id": "C",
+      "full": "#C growth, as of December 2014."
+    },
+    {
+      "content": "www.conwaylife.com/wiki/Switch_engine_ping-pong",
+      "id": "C",
+      "full": "#C www.conwaylife.com/wiki/Switch_engine_ping-pong"
+    }
+  ]
+}

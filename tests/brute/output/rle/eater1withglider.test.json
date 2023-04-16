@@ -1,0 +1,45 @@
+{
+  "format": "rle",
+  "comments": [
+    "An eater 1 about to eat a glider.",
+    "www.conwaylife.com/wiki/index.php?title=Eater_1"
+  ],
+  "name": "Eater 1 with glider",
+  "creationData": "",
+  "topleft": null,
+  "width": 8,
+  "height": 7,
+  "ruleString": "b3/s23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [2, 0],
+    [0, -1],
+    [2, -1],
+    [1, -2],
+    [2, -2],
+    [4, -3],
+    [5, -3],
+    [4, -4],
+    [6, -4],
+    [6, -5],
+    [6, -6],
+    [7, -6]
+  ],
+  "hashLines": [
+    {
+      "content": "Eater 1 with glider",
+      "id": "N",
+      "full": "#N Eater 1 with glider"
+    },
+    {
+      "content": "An eater 1 about to eat a glider.",
+      "id": "C",
+      "full": "#C An eater 1 about to eat a glider."
+    },
+    {
+      "content": "www.conwaylife.com/wiki/index.php?title=Eater_1",
+      "id": "C",
+      "full": "#C www.conwaylife.com/wiki/index.php?title=Eater_1"
+    }
+  ]
+}

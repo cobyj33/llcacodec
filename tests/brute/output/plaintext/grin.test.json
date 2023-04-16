@@ -1,0 +1,10 @@
+{
+  "format": "plaintext",
+  "name": "Grin",
+  "description": [
+    "A common parent of the block.",
+    "https://www.conwaylife.com/wiki/index.php?title=Grin"
+  ],
+  "matrix": [[1, 0, 0, 1], [0, 1, 1, 0]],
+  "liveCoordinates": [[0, 0], [3, 0], [1, -1], [2, -1]]
+}

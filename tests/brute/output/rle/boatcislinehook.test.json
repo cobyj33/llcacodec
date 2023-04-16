@@ -1,0 +1,45 @@
+{
+  "format": "rle",
+  "comments": [
+    "https://conwaylife.com/wiki/Cis-boat_trans-line_hook",
+    "https://www.conwaylife.com/patterns/boatcislinehook.rle"
+  ],
+  "name": "boatcislinehook.rle",
+  "creationData": "",
+  "topleft": null,
+  "width": 4,
+  "height": 6,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [0, 0],
+    [2, 0],
+    [0, -1],
+    [1, -1],
+    [3, -1],
+    [3, -2],
+    [0, -3],
+    [1, -3],
+    [3, -3],
+    [0, -4],
+    [2, -4],
+    [1, -5]
+  ],
+  "hashLines": [
+    {
+      "content": "boatcislinehook.rle",
+      "id": "N",
+      "full": "#N boatcislinehook.rle"
+    },
+    {
+      "content": "https://conwaylife.com/wiki/Cis-boat_trans-line_hook",
+      "id": "C",
+      "full": "#C https://conwaylife.com/wiki/Cis-boat_trans-line_hook"
+    },
+    {
+      "content": "https://www.conwaylife.com/patterns/boatcislinehook.rle",
+      "id": "C",
+      "full": "#C https://www.conwaylife.com/patterns/boatcislinehook.rle"
+    }
+  ]
+}

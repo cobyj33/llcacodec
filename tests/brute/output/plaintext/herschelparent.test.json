@@ -1,0 +1,15 @@
+{
+  "format": "plaintext",
+  "name": "Herschel parent",
+  "description": [
+    "A parent of the herschel.",
+    "https://www.conwaylife.com/wiki/index.php?title=Herschel_parent"
+  ],
+  "matrix": [
+    [0, 0, 1, 0, 0],
+    [1, 1, 0, 0, 0],
+    [0, 0, 1, 0, 1],
+    [0, 0, 0, 0, 1]
+  ],
+  "liveCoordinates": [[2, 0], [0, -1], [1, -1], [2, -2], [4, -2], [4, -3]]
+}

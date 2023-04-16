@@ -1,0 +1,33 @@
+{
+  "format": "rle",
+  "comments": ["https://conwaylife.com/wiki/Tablecloth"],
+  "name": "Tablecloth agar",
+  "creationData": "",
+  "topleft": null,
+  "width": 4,
+  "height": 4,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [0, 0],
+    [1, 0],
+    [2, 0],
+    [3, 0],
+    [0, -1],
+    [3, -1],
+    [0, -2],
+    [3, -2],
+    [0, -3],
+    [1, -3],
+    [2, -3],
+    [3, -3]
+  ],
+  "hashLines": [
+    {"content": "Tablecloth agar", "id": "N", "full": "#N Tablecloth agar"},
+    {
+      "content": "https://conwaylife.com/wiki/Tablecloth",
+      "id": "C",
+      "full": "#C https://conwaylife.com/wiki/Tablecloth"
+    }
+  ]
+}

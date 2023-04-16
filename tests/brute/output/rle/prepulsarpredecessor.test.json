@@ -1,0 +1,41 @@
+{
+  "format": "rle",
+  "comments": [
+    "A common four-generation predecessor of the pre-pulsar.",
+    "www.conwaylife.com/wiki/index.php?title=Pre-pulsar"
+  ],
+  "name": "Pre-pulsar predecessor",
+  "creationData": "",
+  "topleft": null,
+  "width": 9,
+  "height": 2,
+  "ruleString": "23/3",
+  "rule": {"survival": [2, 3], "birth": [3]},
+  "liveCoordinates": [
+    [1, 0],
+    [7, 0],
+    [0, -1],
+    [1, -1],
+    [2, -1],
+    [6, -1],
+    [7, -1],
+    [8, -1]
+  ],
+  "hashLines": [
+    {
+      "content": "Pre-pulsar predecessor",
+      "id": "N",
+      "full": "#N Pre-pulsar predecessor"
+    },
+    {
+      "content": "A common four-generation predecessor of the pre-pulsar.",
+      "id": "C",
+      "full": "#C A common four-generation predecessor of the pre-pulsar."
+    },
+    {
+      "content": "www.conwaylife.com/wiki/index.php?title=Pre-pulsar",
+      "id": "C",
+      "full": "#C www.conwaylife.com/wiki/index.php?title=Pre-pulsar"
+    }
+  ]
+}

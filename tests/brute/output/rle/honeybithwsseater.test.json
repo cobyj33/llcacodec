@@ -1,0 +1,58 @@
+{
+  "format": "rle",
+  "comments": [
+    "https://conwaylife.com/wiki/Honeybit",
+    "https://www.conwaylife.com/patterns/honeybithwsseater.rle"
+  ],
+  "name": "honeybithwsseater.rle",
+  "creationData": "",
+  "topleft": null,
+  "width": 25,
+  "height": 9,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [2, 0],
+    [3, 0],
+    [0, -1],
+    [5, -1],
+    [22, -1],
+    [23, -1],
+    [6, -2],
+    [21, -2],
+    [24, -2],
+    [0, -3],
+    [6, -3],
+    [21, -3],
+    [24, -3],
+    [1, -4],
+    [2, -4],
+    [3, -4],
+    [4, -4],
+    [5, -4],
+    [6, -4],
+    [22, -4],
+    [23, -4],
+    [21, -7],
+    [22, -7],
+    [21, -8],
+    [22, -8]
+  ],
+  "hashLines": [
+    {
+      "content": "honeybithwsseater.rle",
+      "id": "N",
+      "full": "#N honeybithwsseater.rle"
+    },
+    {
+      "content": "https://conwaylife.com/wiki/Honeybit",
+      "id": "C",
+      "full": "#C https://conwaylife.com/wiki/Honeybit"
+    },
+    {
+      "content": "https://www.conwaylife.com/patterns/honeybithwsseater.rle",
+      "id": "C",
+      "full": "#C https://www.conwaylife.com/patterns/honeybithwsseater.rle"
+    }
+  ]
+}

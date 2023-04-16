@@ -1,0 +1,29 @@
+{
+  "format": "plaintext",
+  "name": "longtubclawwithtail.cells",
+  "description": [
+    "https://conwaylife.com/wiki/Long_tub-claw_with_tail",
+    "https://conwaylife.com/patterns/longtubclawwithtail.cells"
+  ],
+  "matrix": [
+    [1, 1, 0, 0, 0, 0, 0, 0],
+    [0, 1, 0, 0, 1, 1, 0, 0],
+    [0, 1, 0, 1, 0, 0, 1, 0],
+    [0, 0, 1, 0, 0, 1, 0, 1],
+    [0, 0, 0, 0, 0, 0, 1, 0]
+  ],
+  "liveCoordinates": [
+    [0, 0],
+    [1, 0],
+    [1, -1],
+    [4, -1],
+    [5, -1],
+    [1, -2],
+    [3, -2],
+    [6, -2],
+    [2, -3],
+    [5, -3],
+    [7, -3],
+    [6, -4]
+  ]
+}

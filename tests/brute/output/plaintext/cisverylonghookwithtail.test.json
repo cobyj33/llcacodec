@@ -1,0 +1,27 @@
+{
+  "format": "plaintext",
+  "name": "cisverylonghookwithtail.cells",
+  "description": [
+    "https://conwaylife.com/wiki/Cis-very_long_hook_with_tail",
+    "https://www.conwaylife.com/patterns/cisverylonghookwithtail.cells"
+  ],
+  "matrix": [
+    [0, 0, 0, 1, 0, 0],
+    [0, 0, 1, 0, 1, 0],
+    [0, 1, 0, 0, 1, 0],
+    [1, 0, 0, 0, 1, 1],
+    [1, 1, 0, 0, 0, 0]
+  ],
+  "liveCoordinates": [
+    [3, 0],
+    [2, -1],
+    [4, -1],
+    [1, -2],
+    [4, -2],
+    [0, -3],
+    [4, -3],
+    [5, -3],
+    [0, -4],
+    [1, -4]
+  ]
+}

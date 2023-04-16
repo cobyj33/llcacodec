@@ -1,0 +1,26 @@
+{
+  "format": "plaintext",
+  "name": "Long long hook with tail",
+  "description": [
+    "A small still life.",
+    "https://www.conwaylife.com/wiki/index.php?title=Long_long_hook_with_tail"
+  ],
+  "matrix": [
+    [1, 1, 0, 0, 0, 1, 1],
+    [0, 1, 0, 0, 1, 0, 1],
+    [0, 1, 0, 1, 0, 0, 0],
+    [0, 0, 1, 0, 0, 0, 0]
+  ],
+  "liveCoordinates": [
+    [0, 0],
+    [1, 0],
+    [5, 0],
+    [6, 0],
+    [1, -1],
+    [4, -1],
+    [6, -1],
+    [1, -2],
+    [3, -2],
+    [2, -3]
+  ]
+}

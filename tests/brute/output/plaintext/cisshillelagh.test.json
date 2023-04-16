@@ -1,0 +1,27 @@
+{
+  "format": "plaintext",
+  "name": "Cis-shillelagh",
+  "description": [
+    "A small still life similar to the long long shillelagh.",
+    "https://www.conwaylife.com/wiki/index.php?title=Cis-shillelagh"
+  ],
+  "matrix": [
+    [0, 0, 0, 0, 1, 1],
+    [0, 0, 0, 0, 0, 1],
+    [1, 1, 0, 0, 1, 0],
+    [1, 0, 0, 1, 0, 0],
+    [0, 1, 1, 0, 0, 0]
+  ],
+  "liveCoordinates": [
+    [4, 0],
+    [5, 0],
+    [5, -1],
+    [0, -2],
+    [1, -2],
+    [4, -2],
+    [0, -3],
+    [3, -3],
+    [1, -4],
+    [2, -4]
+  ]
+}

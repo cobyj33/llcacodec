@@ -1,0 +1,40 @@
+{
+  "format": "rle",
+  "comments": [
+    "https://conwaylife.com/wiki/Long%5E5_snake",
+    "https://www.conwaylife.com/patterns/long5snake.rle"
+  ],
+  "name": "long5snake.rle",
+  "creationData": "",
+  "topleft": null,
+  "width": 7,
+  "height": 9,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [5, 0],
+    [6, 0],
+    [6, -1],
+    [5, -2],
+    [4, -3],
+    [3, -4],
+    [2, -5],
+    [1, -6],
+    [0, -7],
+    [0, -8],
+    [1, -8]
+  ],
+  "hashLines": [
+    {"content": "long5snake.rle", "id": "N", "full": "#N long5snake.rle"},
+    {
+      "content": "https://conwaylife.com/wiki/Long%5E5_snake",
+      "id": "C",
+      "full": "#C https://conwaylife.com/wiki/Long%5E5_snake"
+    },
+    {
+      "content": "https://www.conwaylife.com/patterns/long5snake.rle",
+      "id": "C",
+      "full": "#C https://www.conwaylife.com/patterns/long5snake.rle"
+    }
+  ]
+}

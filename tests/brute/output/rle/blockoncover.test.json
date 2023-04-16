@@ -1,0 +1,41 @@
+{
+  "format": "rle",
+  "comments": [
+    "https://conwaylife.com/wiki/Block_on_cover",
+    "https://www.conwaylife.com/patterns/blockoncover.rle"
+  ],
+  "name": "blockoncover.rle",
+  "creationData": "",
+  "topleft": null,
+  "width": 5,
+  "height": 5,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [0, 0],
+    [1, 0],
+    [3, 0],
+    [4, 0],
+    [0, -1],
+    [1, -1],
+    [3, -1],
+    [3, -2],
+    [0, -3],
+    [1, -3],
+    [2, -3],
+    [0, -4]
+  ],
+  "hashLines": [
+    {"content": "blockoncover.rle", "id": "N", "full": "#N blockoncover.rle"},
+    {
+      "content": "https://conwaylife.com/wiki/Block_on_cover",
+      "id": "C",
+      "full": "#C https://conwaylife.com/wiki/Block_on_cover"
+    },
+    {
+      "content": "https://www.conwaylife.com/patterns/blockoncover.rle",
+      "id": "C",
+      "full": "#C https://www.conwaylife.com/patterns/blockoncover.rle"
+    }
+  ]
+}

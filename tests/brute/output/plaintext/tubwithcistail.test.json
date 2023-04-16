@@ -1,0 +1,29 @@
+{
+  "format": "plaintext",
+  "name": "Tub with cis-tail",
+  "description": [
+    "Unknown",
+    "https://conwaylife.com/wiki/Tub_with_cis-tail",
+    "https://conwaylife.com/patterns/tubwithcistail.cells"
+  ],
+  "matrix": [
+    [1, 1, 0, 0, 0, 0, 0],
+    [1, 0, 0, 0, 0, 1, 0],
+    [0, 1, 0, 0, 1, 0, 1],
+    [0, 0, 1, 0, 0, 1, 0],
+    [0, 0, 0, 1, 1, 0, 0]
+  ],
+  "liveCoordinates": [
+    [0, 0],
+    [1, 0],
+    [0, -1],
+    [5, -1],
+    [1, -2],
+    [4, -2],
+    [6, -2],
+    [2, -3],
+    [5, -3],
+    [3, -4],
+    [4, -4]
+  ]
+}

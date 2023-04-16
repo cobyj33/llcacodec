@@ -1,0 +1,52 @@
+{
+  "format": "rle",
+  "comments": [
+    "A period 3 oscillator found in July 1973.",
+    "www.conwaylife.com/wiki/index.php?title=Two_pulsar_quadrants"
+  ],
+  "name": "Two pulsar quadrants",
+  "creationData": "David Buckingham",
+  "topleft": null,
+  "width": 9,
+  "height": 9,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [4, 0],
+    [4, -1],
+    [3, -2],
+    [4, -2],
+    [2, -3],
+    [0, -4],
+    [3, -4],
+    [6, -4],
+    [7, -4],
+    [8, -4],
+    [0, -5],
+    [4, -5],
+    [6, -5],
+    [0, -6],
+    [5, -6],
+    [2, -8],
+    [3, -8],
+    [4, -8]
+  ],
+  "hashLines": [
+    {
+      "content": "Two pulsar quadrants",
+      "id": "N",
+      "full": "#N Two pulsar quadrants"
+    },
+    {"content": "David Buckingham", "id": "O", "full": "#O David Buckingham"},
+    {
+      "content": "A period 3 oscillator found in July 1973.",
+      "id": "C",
+      "full": "#C A period 3 oscillator found in July 1973."
+    },
+    {
+      "content": "www.conwaylife.com/wiki/index.php?title=Two_pulsar_quadrants",
+      "id": "C",
+      "full": "#C www.conwaylife.com/wiki/index.php?title=Two_pulsar_quadrants"
+    }
+  ]
+}

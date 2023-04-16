@@ -1,0 +1,33 @@
+{
+  "format": "plaintext",
+  "name": "Beacon and two tails",
+  "description": [
+    "The 55th-most common oscillator.",
+    "https://www.conwaylife.com/wiki/index.php?title=Beacon_and_two_tails"
+  ],
+  "matrix": [
+    [1, 1, 0, 0, 0, 0, 0],
+    [1, 0, 0, 0, 0, 0, 0],
+    [0, 0, 0, 1, 0, 1, 1],
+    [0, 0, 1, 1, 0, 1, 0],
+    [0, 0, 0, 0, 0, 1, 0],
+    [0, 0, 1, 1, 1, 0, 0],
+    [0, 0, 1, 0, 0, 0, 0]
+  ],
+  "liveCoordinates": [
+    [0, 0],
+    [1, 0],
+    [0, -1],
+    [3, -2],
+    [5, -2],
+    [6, -2],
+    [2, -3],
+    [3, -3],
+    [5, -3],
+    [5, -4],
+    [2, -5],
+    [3, -5],
+    [4, -5],
+    [2, -6]
+  ]
+}

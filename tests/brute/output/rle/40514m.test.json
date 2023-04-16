@@ -1,0 +1,64 @@
+{
+  "format": "rle",
+  "comments": [
+    "18-cell 40514-generation methuselah",
+    "based on Richard Wobus' 15-cell 32829M",
+    "https://conwaylife.com/wiki/40514M",
+    "https://conwaylife.com/patterns/40514m.rle"
+  ],
+  "name": "40514m.rle",
+  "creationData": "Emerson J. Perkins, 1 May 2011",
+  "topleft": null,
+  "width": 78,
+  "height": 54,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [77, 0],
+    [77, -1],
+    [77, -2],
+    [0, -23],
+    [1, -23],
+    [2, -23],
+    [3, -43],
+    [3, -44],
+    [3, -45],
+    [20, -50],
+    [21, -50],
+    [22, -50],
+    [9, -51],
+    [10, -51],
+    [11, -51],
+    [22, -51],
+    [22, -52],
+    [21, -53]
+  ],
+  "hashLines": [
+    {"content": "40514m.rle", "id": "N", "full": "#N 40514m.rle"},
+    {
+      "content": "Emerson J. Perkins, 1 May 2011",
+      "id": "O",
+      "full": "#O Emerson J. Perkins, 1 May 2011"
+    },
+    {
+      "content": "18-cell 40514-generation methuselah",
+      "id": "C",
+      "full": "#C 18-cell 40514-generation methuselah"
+    },
+    {
+      "content": "based on Richard Wobus' 15-cell 32829M",
+      "id": "C",
+      "full": "#C based on Richard Wobus' 15-cell 32829M"
+    },
+    {
+      "content": "https://conwaylife.com/wiki/40514M",
+      "id": "C",
+      "full": "#C https://conwaylife.com/wiki/40514M"
+    },
+    {
+      "content": "https://conwaylife.com/patterns/40514m.rle",
+      "id": "C",
+      "full": "#C https://conwaylife.com/patterns/40514m.rle"
+    }
+  ]
+}

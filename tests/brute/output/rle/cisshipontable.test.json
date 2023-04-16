@@ -1,0 +1,45 @@
+{
+  "format": "rle",
+  "comments": [
+    "https://conwaylife.com/wiki/Cis-ship_on_table",
+    "https://conwaylife.com/patterns/cisshipontable.rle"
+  ],
+  "name": "cisshipontable.rle",
+  "creationData": "",
+  "topleft": null,
+  "width": 6,
+  "height": 4,
+  "ruleString": "B3/S23",
+  "rule": {"birth": [3], "survival": [2, 3]},
+  "liveCoordinates": [
+    [1, 0],
+    [2, 0],
+    [4, 0],
+    [5, 0],
+    [0, -1],
+    [2, -1],
+    [4, -1],
+    [0, -2],
+    [1, -2],
+    [4, -2],
+    [4, -3],
+    [5, -3]
+  ],
+  "hashLines": [
+    {
+      "content": "cisshipontable.rle",
+      "id": "N",
+      "full": "#N cisshipontable.rle"
+    },
+    {
+      "content": "https://conwaylife.com/wiki/Cis-ship_on_table",
+      "id": "C",
+      "full": "#C https://conwaylife.com/wiki/Cis-ship_on_table"
+    },
+    {
+      "content": "https://conwaylife.com/patterns/cisshipontable.rle",
+      "id": "C",
+      "full": "#C https://conwaylife.com/patterns/cisshipontable.rle"
+    }
+  ]
+}

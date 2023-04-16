@@ -1,0 +1,10 @@
+{
+  "format": "plaintext",
+  "name": "iwonaactiveregion.cells",
+  "description": [
+    "https://conwaylife.com/wiki/List_of_common_evolutionary_sequences",
+    "https://www.conwaylife.com/patterns/iwonaactiveregion.cells"
+  ],
+  "matrix": [[1, 0, 1, 1, 1], [1, 1, 0, 0, 0]],
+  "liveCoordinates": [[0, 0], [2, 0], [3, 0], [4, 0], [0, -1], [1, -1]]
+}

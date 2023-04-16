@@ -1,0 +1,30 @@
+{
+  "format": "plaintext",
+  "name": "diehardpredecessor2.cells",
+  "description": [
+    "https://conwaylife.com/wiki/Die_hard",
+    "https://www.conwaylife.com/patterns/diehardpredecessor2.cells"
+  ],
+  "matrix": [
+    [0, 1, 1, 0],
+    [0, 1, 1, 0],
+    [0, 0, 0, 0],
+    [0, 0, 0, 0],
+    [0, 0, 0, 0],
+    [0, 1, 1, 1],
+    [1, 0, 1, 0],
+    [0, 1, 0, 0]
+  ],
+  "liveCoordinates": [
+    [1, 0],
+    [2, 0],
+    [1, -1],
+    [2, -1],
+    [1, -5],
+    [2, -5],
+    [3, -5],
+    [0, -6],
+    [2, -6],
+    [1, -7]
+  ]
+}
